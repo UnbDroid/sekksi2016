@@ -1,1 +1,5 @@
 teste_do_kit.txt
+
+o luan esteve aqui
+
+a natalia esteve aqui
