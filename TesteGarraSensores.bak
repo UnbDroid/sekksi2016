@@ -1,0 +1,15 @@
+#define GARRA OUT_A
+#define BttnGarra IN_1
+
+task main()
+{
+
+     SetSensorTouch(BttnGarra);
+     while(true)
+     {
+      if(SensorBoolean(BttnGarra))
+      OnFwd(GARRA,60);
+      Wait(50);
+     }
+
+}
