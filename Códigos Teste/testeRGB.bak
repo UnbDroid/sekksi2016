@@ -1,0 +1,28 @@
+#define CLRSen IN_1
+#define RGB IN_3
+
+task main(){
+
+  SetSensorLowspeed(CLRSen);
+
+  SetSensorColorRed(RGB);
+  while(true){
+      ClearScreen();
+      TextOut(0, LCD_LINE1, "HT : ",0);
+      NumOut(0, LCD_LINE2, SensorHTColorNum(CLRSen),0);
+      TextOut(0, LCD_LINE3, "RGB : ",0);
+      NumOut(0, LCD_LINE4, SensorHTColorNum(CLRSen),0);
+      Wait(100);
+    }
+
+
+}
+
+
+
+sub void declareSens(){
+}
+
+sub void showData(){
+
+}
