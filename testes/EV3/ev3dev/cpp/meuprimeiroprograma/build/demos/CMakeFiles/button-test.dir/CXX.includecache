@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+..//ev3dev.h
+map
+-
+set
+-
+string
+-
+vector
+-
+algorithm
+-
+functional
+-
+memory
+-
+
+/home/luan/Droid_repositorios/sekksi2016/testes/EV3/ev3dev/cpp/meuprimeiroprograma/demos/button-test.cpp
+unistd.h
+-
+cstdio
+-
+ev3dev.h
+/home/luan/Droid_repositorios/sekksi2016/testes/EV3/ev3dev/cpp/meuprimeiroprograma/demos/ev3dev.h
+
