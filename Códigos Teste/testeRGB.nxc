@@ -12,7 +12,7 @@ task main(){
       NumOut(0, LCD_LINE2, SensorHTColorNum(CLRSen),0);
       TextOut(0, LCD_LINE3, "RGB : ",0);
       NumOut(0, LCD_LINE4, SensorRaw(RGB),0);
-      Wait(100);
+      Wait(50);
     }
 
 

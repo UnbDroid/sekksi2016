@@ -11,7 +11,7 @@ task main(){
       TextOut(0, LCD_LINE1, "HT : ",0);
       NumOut(0, LCD_LINE2, SensorHTColorNum(CLRSen),0);
       TextOut(0, LCD_LINE3, "RGB : ",0);
-      NumOut(0, LCD_LINE4, SensorHTColorNum(CLRSen),0);
+      NumOut(0, LCD_LINE4, SensorRaw(RGB),0);
       Wait(100);
     }
 
@@ -19,10 +19,3 @@ task main(){
 }
 
 
-
-sub void declareSens(){
-}
-
-sub void showData(){
-
-}
