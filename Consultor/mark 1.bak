@@ -1,0 +1,18 @@
+
+#define RGB_DIREITO IN_1
+#define RGB_ESQUERDO IN_2
+#define RGB_MEIO IN_3
+#define US_FRENTE IN_4
+#define MOTOR_GARRA OUT_A
+
+#define COR_PRETA_MIN 100
+#define COR_PRETA_MAX 130
+#define COR_BRANCA_MIN 300
+#define COR_BRANCA_MAX 600
+#define COR_BASE_MIN 200
+#define COR_BASE_MAX 250
+
+task main()
+{
+
+}
