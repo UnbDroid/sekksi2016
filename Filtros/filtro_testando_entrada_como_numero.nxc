@@ -1,0 +1,28 @@
+#define RGB_DIR IN_1
+#define RGB_ESQ IN_2
+#define RGB_MEIO IN_3
+#define US_FRENTE IN_4
+
+
+float filter (int s) /*passar o sensor como parametro*/
+{
+     float media = 0, alfa = 0.01 ;
+     int leitura,i=0;
+     leitura = SensorRaw(s);
+     media = leitura ;
+     while(i<900)
+     {
+          leitura = SensorRaw(s);
+          media = (1-alfa)*media + alfa*leitura ;
+          NumOut(0, LCD_LINE1, media);
+          Wait(2);
+          ClearScreen();
+          i++;
+     }
+}
+task main(){
+      SetSensorColorRed(RGB_ESQ);
+      SetSensorColorRed(RGB_DIR);
+      SetSensorColorRed(RGB_MEIO);
+      filter (0);
+}

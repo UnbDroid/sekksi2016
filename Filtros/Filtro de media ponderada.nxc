@@ -1,0 +1,21 @@
+// Filtro legal sensacional que funciona lindamente!
+
+#define RGB IN_1
+
+task main()
+{
+     SetSensorColorRed(RGB);
+     float media = 0, alfa = 0.01 ;
+     int leitura,i=0;
+     leitura = SensorRaw(RGB);
+     media = leitura ;
+     while(i<900)
+     {
+          leitura = SensorRaw(RGB);
+          media = (1-alfa)*media + alfa*leitura ;
+          NumOut(0, LCD_LINE1, media);
+          Wait(2);
+          ClearScreen();
+          i++;
+     }
+}

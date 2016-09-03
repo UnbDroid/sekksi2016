@@ -1,0 +1,16 @@
+#define RGB IN_1
+
+task main()
+{
+     SetSensorColorRed(RGB);
+     float i=0;
+     i = OUT_C;
+     while(true)
+     {
+          NumOut(0, LCD_LINE1, i);
+          Wait(5);
+          ClearScreen();
+     }
+}
+
+
