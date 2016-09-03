@@ -1,6 +1,6 @@
 // Defines de sensores
-#define RGB_DIREITO IN_1
-#define RGB_ESQUERDO IN_2
+#define RGB_DIR IN_1
+#define RGB_ESQ IN_2
 #define RGB_MEIO IN_3
 #define US_FRENTE IN_4
 
@@ -39,33 +39,69 @@
 #define COR_BASE_DIR_MIN 240
 #define COR_BASE_DIR_MAX 260
 
+// definoes misc
+#define I_MAXIMO_DE_TEMPO_FILTRO 200
+
 //Declaraçoes de funçoes
-int inicializa();
-int VerificaCondiçaoDeParada();
+int identificar_alien(int w);
+int testar_cor();
+float filter (int s);
 
 
-int VerificaCondiçaoDeParada()
+
+float filter (int s) /*passar o sensor como parametro (s = X-1 (de INT_X))*/
 {
-    if( SensorRaw(RGB_DIREITO) > COR_BASE_DIR_MAX || SensorRaw(RGB_DIREITO) < COR_BASE_DIR_MIN ||  SensorRaw(RGB_ESQUERDO) > COR_BASE_ESQ_MAX || SensorRaw(RGB_ESQUERDO) < COR_BASE_ESQ_MIN){
-        return 0;
-    }else{
-        return 1;
-    }
+     float media = 0, alfa = 0.01 ;
+     int leitura,i=0;
+     leitura = SensorRaw(s);
+     media = leitura ;
+     while(i<I_MAXIMO_DE_TEMPO_FILTRO)
+     {
+          leitura = SensorRaw(s);
+          media = (1-alfa)*media + alfa*leitura ;
+          NumOut(0, LCD_LINE1, media);
+          Wait(10);
+          ClearScreen();
+          i++;
+     }
 }
 
-int inicializa()
+void identificar_alien(int w)
 {
-   while(VerificaCondiçaoDeParada()){
-   }
+    int z = w;
+    if( SensorRaw(RGB_DIR) > COR_BASE_DIR_MAX || SensorRaw(RGB_DIR) < COR_BASE_DIR_MIN)
+    {
+         //parar de andar (executivo)
+         OnFwd(MOTOR_GARRA, 50);
+         Wait(300);
+         testar_cor();
+    }
+    else
+    {
+         //continua andando e procurando
+    }
+    return 0;
+}
+
+int testar_cor()
+{
+    if( SensorRaw(RGB_MEIO) > 2 && SensorRaw(RGB_MEIO) < 2 )
+    {
+         //entrar na rotina de descastar a bolinha
+    }
+    else
+    {
+         //entrar na rotina de selecionar a bolinha
+    }
 }
 
 task main()
 {
-  SetSensorColorRed(RGB_DIREITO);
-  SetSensorColorRed(RGB_ESQUERDO);
+  SetSensorColorRed(RGB_DIR);
+  SetSensorColorRed(RGB_ESQ);
   SetSensorColorRed(RGB_MEIO);
   SetSensorLowspeed(US_FRENTE);
-  
-  
+  filter(2);
+
 
 }

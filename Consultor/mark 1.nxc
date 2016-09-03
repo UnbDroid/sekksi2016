@@ -7,15 +7,65 @@
 // Defines de motores
 #define MOTOR_GARRA OUT_A
 
-// Defines de leitura de cores
-#define COR_PRETA_MIN 100
-#define COR_PRETA_MAX 130
-#define COR_BRANCA_MIN 300
-#define COR_BRANCA_MAX 600
-#define COR_BASE_MIN 200
-#define COR_BASE_MAX 250
+// Defines de leitura do RGB do meio (ainda precisa testar mais)
+#define COR_PRETA_MEIO_MIN 55
+#define COR_PRETA_MEIO_MAX 150
+#define COR_BRANCA_MEIO_MIN 290
+#define COR_BRANCA_MEIO_MAX 630
+#define COR_BASE_MEIO_MIN 185
+#define COR_BASE_MEIO_MAX 260
+
+// Defines de leitura do RGB da esquerda do robô
+#define COR_PRETA_ESQ_PERTO_MIN 75
+#define COR_PRETA_ESQ_PERTO_MAX 100
+#define COR_PRETA_ESQ_LONGE_MIN 120
+#define COR_PRETA_ESQ_LONGE_MAX 160
+#define COR_BRANCA_ESQ_PERTO_MIN 470
+#define COR_BRANCA_ESQ_PERTO_MAX 495
+#define COR_BRANCA_ESQ_LONGE_MIN 212
+#define COR_BRANCA_ESQ_LONGE_MAX 245
+#define COR_BASE_ESQ_MIN 195
+#define COR_BASE_ESQ_MAX 210
+
+// Defines de leitura do RGB da direita do robô
+#define COR_PRETA_DIR_PERTO_MIN 130
+#define COR_PRETA_DIR_PERTO_MAX 160
+#define COR_PRETA_DIR_LONGE_MIN 185
+#define COR_PRETA_DIR_LONGE_MAX 210
+#define COR_BRANCA_DIR_PERTO_MIN 385
+#define COR_BRANCA_DIR_PERTO_MAX 420
+#define COR_BRANCA_DIR_LONGE_MIN 240
+#define COR_BRANCA_DIR_LONGE_MAX 280
+#define COR_BASE_DIR_MIN 240
+#define COR_BASE_DIR_MAX 260
+
+//Declaraçoes de funçoes
+int inicializa();
+int VerificaCondiçaoDeParada();
+
+
+int VerificaCondiçaoDeParada()
+{
+    if( SensorRaw(RGB_DIREITO) > COR_BASE_DIR_MAX || SensorRaw(RGB_DIREITO) < COR_BASE_DIR_MIN ||  SensorRaw(RGB_ESQUERDO) > COR_BASE_ESQ_MAX || SensorRaw(RGB_ESQUERDO) < COR_BASE_ESQ_MIN){
+        return 0;
+    }else{
+        return 1;
+    }
+}
+
+int inicializa()
+{
+   while(VerificaCondiçaoDeParada()){
+   }
+}
 
 task main()
 {
+  SetSensorColorRed(RGB_DIREITO);
+  SetSensorColorRed(RGB_ESQUERDO);
+  SetSensorColorRed(RGB_MEIO);
+  SetSensorLowspeed(US_FRENTE);
+  
+  
 
 }

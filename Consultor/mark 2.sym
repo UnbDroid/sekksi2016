@@ -1,0 +1,461 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__DU0SetSensorLowspeed_inline_main	5	1	0	4	2
+1	__signed_stack_001filter	6	1	4	4	4
+2	__signed_stack_002filter	6	1	8	4	2
+3	__D0SetSensorLowspeed_inline_main	6	1	12	4	3
+4	__D0identificar_alien	6	1	16	4	40
+5	__DF0identificar_alien	10	1	20	4	2
+6	__D0testar_cor	6	1	24	4	9
+7	__float_stack_001filter	10	1	28	4	4
+8	__filter_7qG2_media_7qG2_000	10	1	32	4	5
+9	__filter_7qG2_alfa_7qG2_000	10	1	36	4	3
+10	__constValf0P01	10	0	40	4	1
+11	__signed_stack_002testar_cor	6	1	44	4	2
+12	__signed_stack_001identificar_alien	6	1	48	4	16
+13	__signed_stack_002identificar_alien	6	1	52	4	10
+14	__signed_stack_001testar_cor	6	1	56	4	4
+15	__DF0filter	10	1	60	4	6
+16	__D0filter	6	1	64	4	3
+17	__filter_7qG2_i_7qG2_000	4	1	68	2	4
+18	__filter_7qG2_s_7qG2_000	4	1	70	2	4
+19	__constVal128	4	0	72	2	3
+20	__filter_7qG2_leitura_7qG2_000	4	1	74	2	4
+21	__constVal200	4	0	76	2	2
+22	__constVal63	2	0	78	1	1
+23	__testar_cor_return	1	1	79	1	3
+24	__constVal96	2	0	80	1	1
+25	__constVal32	2	0	81	1	3
+26	__identificar_alien_return	1	1	82	1	4
+27	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	83	1	2
+28	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	84	1	2
+29	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	85	1	2
+30	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	86	1	2
+31	__SetSensorColorRed_7qG2_port_7qG2_000_inline_main	1	1	87	1	12
+32	____initialize_global_data_return	1	1	88	1	3
+33	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	89	1	2
+34	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	90	1	4
+35	__constVal2	2	0	91	1	2
+36	__zfidentificar_alien	1	1	92	1	31
+37	__zffilter	1	1	93	1	3
+38	__zftestar_cor	1	1	94	1	7
+39	__constVal14	2	0	95	1	3
+40	__zfSetSensorLowspeed_inline_main	1	1	96	1	2
+41	____ResetSensorSubroutine_return	1	1	97	1	6
+42	__filter_return	1	1	98	1	4
+43	__constVal0	2	1	99	1	10
+44	__constVal1	2	0	100	1	9
+45	__ResetSensorTmp	1	1	101	1	2
+46	__ResetSensorPort	1	1	102	1	6
+47	__constVal3	2	0	103	1	1
+48	__TextOutArgs	8	0	4	16	5
+49	__TextOutArgs.Result	2	1	104	1	5
+50	__TextOutArgs.Location	8	0	2	4	5
+51	__TextOutArgs.Location.X	4	1	108	2	5
+52	__TextOutArgs.Location.Y	4	1	110	2	5
+53	__TextOutArgs.Text	7	0	112	4	5
+54	__TextOutArgs.Text.Text_type	1	0	0	1	0
+55	__TextOutArgs.Options	5	1	116	4	5
+56	__PointOutArgs	8	0	3	12	4
+57	__PointOutArgs.Result	2	1	120	1	4
+58	__PointOutArgs.Location	8	0	2	4	4
+59	__PointOutArgs.Location.X	4	1	124	2	4
+60	__PointOutArgs.Location.Y	4	1	126	2	4
+61	__PointOutArgs.Options	5	1	128	4	4
+#SOURCES
+Clump	Line	PC	Source
+0	105	0	#line 105 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	106	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	105	2	#line 105 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	105	2	#line 105 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	106	2		set __SetSensorColorRed_7qG2_port_7qG2_000_inline_main, 0
+0	105	5	#line 105 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	3812	5	#line 3812 "NXCDefs.h"
+0	3813	5	#pragma macro 6
+0	3813	5		setin __constVal14, __SetSensorColorRed_7qG2_port_7qG2_000_inline_main, 0
+0	3813	9		setin __constVal128, __SetSensorColorRed_7qG2_port_7qG2_000_inline_main, 1
+0	3813	13		mov __ResetSensorPort, __SetSensorColorRed_7qG2_port_7qG2_000_inline_main
+0	3813	15		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	6764	17	#line 6764 "NXCDefs.h"
+0	3812	17	#line 3812 "NXCDefs.h"
+0	106	17	#line 106 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	106	17	#line 106 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	107	17		set __SetSensorColorRed_7qG2_port_7qG2_000_inline_main, 1
+0	106	20	#line 106 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	3812	20	#line 3812 "NXCDefs.h"
+0	3813	20	#pragma macro 6
+0	3813	20		setin __constVal14, __SetSensorColorRed_7qG2_port_7qG2_000_inline_main, 0
+0	3813	24		setin __constVal128, __SetSensorColorRed_7qG2_port_7qG2_000_inline_main, 1
+0	3813	28		mov __ResetSensorPort, __SetSensorColorRed_7qG2_port_7qG2_000_inline_main
+0	3813	30		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	6774	32	#line 6774 "NXCDefs.h"
+0	3812	32	#line 3812 "NXCDefs.h"
+0	107	32	#line 107 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	107	32	#line 107 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	108	32		set __SetSensorColorRed_7qG2_port_7qG2_000_inline_main, 2
+0	107	35	#line 107 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	3812	35	#line 3812 "NXCDefs.h"
+0	3813	35	#pragma macro 6
+0	3813	35		setin __constVal14, __SetSensorColorRed_7qG2_port_7qG2_000_inline_main, 0
+0	3813	39		setin __constVal128, __SetSensorColorRed_7qG2_port_7qG2_000_inline_main, 1
+0	3813	43		mov __ResetSensorPort, __SetSensorColorRed_7qG2_port_7qG2_000_inline_main
+0	3813	45		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	6784	47	#line 6784 "NXCDefs.h"
+0	3812	47	#line 3812 "NXCDefs.h"
+0	108	47	#line 108 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	108	47	#line 108 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	109	47		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 3
+0	108	50	#line 108 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	109	50	#line 109 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	110	50		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	3758	52	#line 3758 "NXCDefs.h"
+0	3759	52		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3758	54	#line 3758 "NXCDefs.h"
+0	3758	54	#line 3758 "NXCDefs.h"
+0	3759	54		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	3758	56	#line 3758 "NXCDefs.h"
+0	3759	56		tst 5, __zfSetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	3758	59	#line 3758 "NXCDefs.h"
+0	3759	59		brtst 4, __004__NXC_Label_36, __zfSetSensorLowspeed_inline_main
+0	3758	62	#line 3758 "NXCDefs.h"
+0	3759	62		set __D0SetSensorLowspeed_inline_main, 11
+0	3758	65	#line 3758 "NXCDefs.h"
+0	3759	65		jmp __004__NXC_Label_37
+0	3758	67	#line 3758 "NXCDefs.h"
+0	3759	67		set __D0SetSensorLowspeed_inline_main, 10
+0	3758	70	#line 3758 "NXCDefs.h"
+0	3759	70		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __D0SetSensorLowspeed_inline_main
+0	3663	72	#line 3663 "NXCDefs.h"
+0	3664	72		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3663	76	#line 3663 "NXCDefs.h"
+0	3759	76	#line 3759 "NXCDefs.h"
+0	3759	76	#line 3759 "NXCDefs.h"
+0	3760	76		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3759	78	#line 3759 "NXCDefs.h"
+0	3759	78	#line 3759 "NXCDefs.h"
+0	3760	78		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3759	81	#line 3759 "NXCDefs.h"
+0	3676	81	#line 3676 "NXCDefs.h"
+0	3677	81		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	3676	85	#line 3676 "NXCDefs.h"
+0	3760	85	#line 3760 "NXCDefs.h"
+0	3760	85	#line 3760 "NXCDefs.h"
+0	3760	85	#line 3760 "NXCDefs.h"
+0	3694	85	#line 3694 "NXCDefs.h"
+0	3695	85	#pragma macro 4
+0	3695	85		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3695	87		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	6878	89	#line 6878 "NXCDefs.h"
+0	3694	89	#line 3694 "NXCDefs.h"
+0	3761	89	#line 3761 "NXCDefs.h"
+0	109	89	#line 109 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	112	89	#line 112 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	113	89		subcall identificar_alien, __identificar_alien_return
+0	112	91	#line 112 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	112	91	#line 112 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	113	91		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	50	0	#line 50 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	50	0	#line 50 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	51	0		mov __filter_7qG2_media_7qG2_000, __constVal0
+2	51	2	#line 51 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	52	2		mov __filter_7qG2_alfa_7qG2_000, __constValf0P01
+2	51	4	#line 51 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	52	4	#line 52 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	53	4		mov __filter_7qG2_i_7qG2_000, __constVal0
+2	52	6	#line 52 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	53	6	#line 53 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	54	6		getin __filter_7qG2_leitura_7qG2_000, __filter_7qG2_s_7qG2_000, 2
+2	53	10	#line 53 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	53	10	#line 53 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	54	10	#line 54 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	55	10		mov __filter_7qG2_media_7qG2_000, __filter_7qG2_leitura_7qG2_000
+2	54	12	#line 54 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	54	12	#line 54 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	54	12	#line 54 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	55	12		mov __signed_stack_001filter, __filter_7qG2_i_7qG2_000
+2	54	14	#line 54 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	55	14	#line 55 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	56	14		set __D0filter, 900
+2	55	17	#line 55 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	56	17		cmp 0, __zffilter, __signed_stack_001filter, __D0filter
+2	55	21	#line 55 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	56	21		mov __D0filter, __zffilter
+2	56	23	#line 56 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	57	23		brtst 4, __NXC_Label_615, __zffilter
+2	57	26	#line 57 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	58	26		getin __filter_7qG2_leitura_7qG2_000, __filter_7qG2_s_7qG2_000, 2
+2	57	30	#line 57 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	57	30	#line 57 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	57	30	#line 57 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	57	30	#line 57 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	57	30	#line 57 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	57	30	#line 57 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	58	30		sub __float_stack_001filter, __constVal1, __filter_7qG2_alfa_7qG2_000
+2	57	34	#line 57 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	57	34	#line 57 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	57	34	#line 57 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	58	34		mul __float_stack_001filter, __float_stack_001filter, __filter_7qG2_media_7qG2_000
+2	57	38	#line 57 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	57	38	#line 57 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	57	38	#line 57 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	58	38	#line 58 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	58	38	#line 58 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	59	38		mul __DF0filter, __filter_7qG2_alfa_7qG2_000, __filter_7qG2_leitura_7qG2_000
+2	58	42	#line 58 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	59	42		add __filter_7qG2_media_7qG2_000, __float_stack_001filter, __DF0filter
+2	58	46	#line 58 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	58	46	#line 58 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	58	46	#line 58 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	59	46		set __signed_stack_001filter, 0
+2	58	49	#line 58 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	58	49	#line 58 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	59	49		set __signed_stack_002filter, 56
+2	58	52	#line 58 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	58	52	#line 58 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	59	52		mov __DF0filter, __filter_7qG2_media_7qG2_000
+2	59	54	#line 59 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	59	54	#line 59 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	60	54		mov __TextOutArgs.Location.X, __signed_stack_001filter
+2	59	56	#line 59 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	60	56		mov __TextOutArgs.Location.Y, __signed_stack_002filter
+2	59	58	#line 59 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	60	58		set __TextOutArgs.Options, 0
+2	59	61	#line 59 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	60	61		numtostr __TextOutArgs.Text, __DF0filter
+2	59	64	#line 59 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	60	64		syscall 13, __TextOutArgs
+2	59	67	#line 59 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	59	67	#line 59 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	59	67	#line 59 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	59	67	#line 59 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	59	67	#line 59 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	7921	67	#line 7921 "NXCDefs.h"
+2	7922	67		wait 2
+2	7921	69	#line 7921 "NXCDefs.h"
+2	60	69	#line 60 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	6069	69	#line 6069 "NXCDefs.h"
+2	6070	69	#pragma macro 6
+2	6070	69		mov __PointOutArgs.Location.X, __constVal200
+2	6070	71		mov __PointOutArgs.Location.Y, __constVal200
+2	6070	73		mov __PointOutArgs.Options, __constVal1
+2	6070	75		syscall 14, __PointOutArgs
+2	6482	78	#line 6482 "NXCDefs.h"
+2	6069	78	#line 6069 "NXCDefs.h"
+2	61	78	#line 61 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	62	78	#line 62 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	63	78		add __filter_7qG2_i_7qG2_000, __filter_7qG2_i_7qG2_000, __constVal1
+2	62	82	#line 62 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	65	82	#line 65 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	66	82		jmp __NXC_Label_614
+2	65	84	#line 65 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	65	84	#line 65 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	66	84		subret __filter_return
+3	67	0	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	68	0		getin __signed_stack_001identificar_alien, __constVal0, 2
+3	67	4	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	67	4	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	68	4		set __D0identificar_alien, 260
+3	67	7	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	68	7		cmp 1, __zfidentificar_alien, __signed_stack_001identificar_alien, __D0identificar_alien
+3	67	11	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	68	11		mov __D0identificar_alien, __zfidentificar_alien
+3	67	13	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	68	13		brtst 5, __NXC_Label_632, __zfidentificar_alien
+3	67	16	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	68	16		mov __signed_stack_001identificar_alien, __D0identificar_alien
+3	67	18	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	68	18		getin __signed_stack_002identificar_alien, __constVal0, 2
+3	67	22	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	67	22	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	68	22		set __D0identificar_alien, 240
+3	67	25	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	68	25		cmp 0, __zfidentificar_alien, __signed_stack_002identificar_alien, __D0identificar_alien
+3	67	29	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	67	29	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	68	29		or __D0identificar_alien, __signed_stack_001identificar_alien, __zfidentificar_alien
+3	67	33	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	68	33		tst 5, __zfidentificar_alien, __D0identificar_alien
+3	67	36	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	68	36		mov __D0identificar_alien, __zfidentificar_alien
+3	67	38	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	68	38		brtst 5, __NXC_Label_632, __zfidentificar_alien
+3	67	41	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	68	41		mov __signed_stack_001identificar_alien, __D0identificar_alien
+3	67	43	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	68	43		getin __signed_stack_002identificar_alien, __constVal1, 2
+3	67	47	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	67	47	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	68	47		set __D0identificar_alien, 210
+3	67	50	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	68	50		cmp 1, __zfidentificar_alien, __signed_stack_002identificar_alien, __D0identificar_alien
+3	67	54	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	67	54	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	68	54		or __D0identificar_alien, __signed_stack_001identificar_alien, __zfidentificar_alien
+3	67	58	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	68	58		tst 5, __zfidentificar_alien, __D0identificar_alien
+3	67	61	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	68	61		mov __D0identificar_alien, __zfidentificar_alien
+3	67	63	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	68	63		brtst 5, __NXC_Label_632, __zfidentificar_alien
+3	67	66	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	68	66		mov __signed_stack_001identificar_alien, __D0identificar_alien
+3	67	68	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	68	68		getin __signed_stack_002identificar_alien, __constVal1, 2
+3	67	72	#line 67 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	68	72	#line 68 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	69	72		set __D0identificar_alien, 195
+3	68	75	#line 68 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	69	75		cmp 0, __zfidentificar_alien, __signed_stack_002identificar_alien, __D0identificar_alien
+3	68	79	#line 68 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	68	79	#line 68 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	69	79		or __D0identificar_alien, __signed_stack_001identificar_alien, __zfidentificar_alien
+3	71	83	#line 71 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	72	83		tst 5, __zfidentificar_alien, __D0identificar_alien
+3	71	86	#line 71 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	72	86		brtst 4, __NXC_Label_637, __zfidentificar_alien
+3	71	89	#line 71 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	72	89		getin __signed_stack_001identificar_alien, __constVal0, 2
+3	71	93	#line 71 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	71	93	#line 71 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	72	93		set __D0identificar_alien, 260
+3	71	96	#line 71 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	72	96		cmp 1, __zfidentificar_alien, __signed_stack_001identificar_alien, __D0identificar_alien
+3	71	100	#line 71 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	72	100		mov __D0identificar_alien, __zfidentificar_alien
+3	71	102	#line 71 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	72	102		brtst 5, __NXC_Label_638, __zfidentificar_alien
+3	71	105	#line 71 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	72	105		mov __signed_stack_001identificar_alien, __D0identificar_alien
+3	71	107	#line 71 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	72	107		getin __signed_stack_002identificar_alien, __constVal0, 2
+3	71	111	#line 71 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	71	111	#line 71 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	72	111		set __D0identificar_alien, 240
+3	71	114	#line 71 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	72	114		cmp 0, __zfidentificar_alien, __signed_stack_002identificar_alien, __D0identificar_alien
+3	71	118	#line 71 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	71	118	#line 71 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	72	118		or __D0identificar_alien, __signed_stack_001identificar_alien, __zfidentificar_alien
+3	72	122	#line 72 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	73	122		tst 5, __zfidentificar_alien, __D0identificar_alien
+3	72	125	#line 72 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	73	125		brtst 4, __NXC_Label_641, __zfidentificar_alien
+3	72	128	#line 72 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	73	128		set __filter_7qG2_s_7qG2_000, 0
+3	72	131	#line 72 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	73	131	#line 73 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	74	131		subcall filter, __filter_return
+3	73	133	#line 73 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	74	133		mov __DF0identificar_alien, __DF0filter
+3	73	135	#line 73 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	75	135	#line 75 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	75	135	#line 75 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	76	135		getin __signed_stack_001identificar_alien, __constVal1, 2
+3	75	139	#line 75 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	75	139	#line 75 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	76	139		set __D0identificar_alien, 210
+3	75	142	#line 75 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	76	142		cmp 1, __zfidentificar_alien, __signed_stack_001identificar_alien, __D0identificar_alien
+3	75	146	#line 75 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	76	146		mov __D0identificar_alien, __zfidentificar_alien
+3	75	148	#line 75 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	76	148		brtst 5, __NXC_Label_644, __zfidentificar_alien
+3	75	151	#line 75 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	76	151		mov __signed_stack_001identificar_alien, __D0identificar_alien
+3	75	153	#line 75 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	76	153		getin __signed_stack_002identificar_alien, __constVal1, 2
+3	75	157	#line 75 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	75	157	#line 75 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	76	157		set __D0identificar_alien, 195
+3	75	160	#line 75 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	76	160		cmp 0, __zfidentificar_alien, __signed_stack_002identificar_alien, __D0identificar_alien
+3	75	164	#line 75 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	75	164	#line 75 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	76	164		or __D0identificar_alien, __signed_stack_001identificar_alien, __zfidentificar_alien
+3	76	168	#line 76 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	77	168		tst 5, __zfidentificar_alien, __D0identificar_alien
+3	76	171	#line 76 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	77	171		brtst 4, __NXC_Label_647, __zfidentificar_alien
+3	76	174	#line 76 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	77	174		set __filter_7qG2_s_7qG2_000, 1
+3	76	177	#line 76 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	77	177	#line 77 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	78	177		subcall filter, __filter_return
+3	77	179	#line 77 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	78	179		mov __DF0identificar_alien, __DF0filter
+3	77	181	#line 77 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	80	181	#line 80 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	80	181	#line 80 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	81	181		set __D0identificar_alien, 50
+3	81	184	#line 81 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	82	184	#pragma macro 7
+3	82	184		setout __constVal0, 2, __D0identificar_alien, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	6669	207	#line 6669 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	81	207	#line 81 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	81	207	#line 81 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	81	207	#line 81 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	7921	207	#line 7921 "NXCDefs.h"
+3	7922	207		wait 300
+3	7921	209	#line 7921 "NXCDefs.h"
+3	82	209	#line 82 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	83	209	#line 83 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	84	209		subcall testar_cor, __testar_cor_return
+3	83	211	#line 83 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	84	211		mov __D0identificar_alien, __D0testar_cor
+3	83	213	#line 83 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	87	213	#line 87 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	88	213		jmp __NXC_Label_654
+3	88	215	#line 88 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	89	215	#line 89 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	90	215		set __D0identificar_alien, 0
+3	89	218	#line 89 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	90	218		subret __identificar_alien_return
+3	89	220	#line 89 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	91	220	#line 91 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	92	220		subret __identificar_alien_return
+4	93	0	#line 93 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	94	0		getin __signed_stack_001testar_cor, __constVal2, 2
+4	93	4	#line 93 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	93	4	#line 93 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	94	4		set __D0testar_cor, 2
+4	93	7	#line 93 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	94	7		cmp 1, __zftestar_cor, __signed_stack_001testar_cor, __D0testar_cor
+4	93	11	#line 93 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	94	11		mov __D0testar_cor, __zftestar_cor
+4	93	13	#line 93 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	94	13		brtst 4, __NXC_Label_658, __zftestar_cor
+4	93	16	#line 93 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	94	16		mov __signed_stack_001testar_cor, __D0testar_cor
+4	93	18	#line 93 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	94	18		getin __signed_stack_002testar_cor, __constVal2, 2
+4	93	22	#line 93 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	94	22	#line 94 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	95	22		set __D0testar_cor, 2
+4	94	25	#line 94 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	95	25		cmp 0, __zftestar_cor, __signed_stack_002testar_cor, __D0testar_cor
+4	94	29	#line 94 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	94	29	#line 94 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	95	29		and __D0testar_cor, __signed_stack_001testar_cor, __zftestar_cor
+4	96	33	#line 96 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	97	33		tst 5, __zftestar_cor, __D0testar_cor
+4	96	36	#line 96 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	97	36		brtst 4, __NXC_Label_659, __zftestar_cor
+4	100	39	#line 100 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	101	39		jmp __NXC_Label_660
+4	103	41	#line 103 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	103	41	#line 103 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	104	41		subret __testar_cor_return
+5	115	0	#line 115 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+5	116	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\natia\AppData\Local\Temp\temp.nxc
+1	__ResetSensorSubroutine	94	NXTDefs.h
+2	filter	107	C:\Users\natia\AppData\Local\Temp\temp.nxc
+3	identificar_alien	193	C:\Users\natia\AppData\Local\Temp\temp.nxc
+4	testar_cor	415	C:\Users\natia\AppData\Local\Temp\temp.nxc
+5	__initialize_global_data	458	C:\Users\natia\AppData\Local\Temp\temp.nxc
