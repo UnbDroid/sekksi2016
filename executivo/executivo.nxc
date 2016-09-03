@@ -7,13 +7,13 @@
 //PARAMETROS (REGULAR!!!! SEMPRE!!!!!)
 
 //SENSORES E MOTORES
-#define me OUT_A //motor da direita
-#define md OUT_B //motor da esquerda
-#define mp OUT_C //motor da porta
-#define usd IN_1 //Utrasonico da direita
-#define use IN_2 //Utrasonico da esquerda
-#define htd IN_3//hitech da direita
-#define hte IN_4//hitech da esquerda
+#define ME OUT_A //motor da direita
+#define MD OUT_B //motor da esquerda
+#define MP OUT_C //motor da porta
+#define USD IN_1 //Utrasonico da direita
+#define USE IN_2 //Utrasonico da esquerda
+#define HTD IN_3//hitech da direita
+#define HTE IN_4//hitech da esquerda
 
 
 
@@ -32,10 +32,9 @@ task main()
     //variáveis locais
     
     //inicializando os sensores
-    SetSensorLowspeed(US);
+    SetSensorLowspeed(USD);
     
-
-    reto_parede_direta();
+    reto_parede_direita();
 
 }
 
@@ -44,6 +43,16 @@ void reto_parede_direita(void)
 {
     //variáveis locais
     int d, oul_d;
+    OnFwd(MD,90);
+    OnFwd(ME,90);
+    while(1)
+    {
+      ClearScreen();
+      d = SensorUS(USD);
+      NumOut(0,LCD_LINE1,d);
+      Wait(500);
+      
+    }
     
     
 }
