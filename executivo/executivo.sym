@@ -1,75 +1,62 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__signed_stack_002reto_parede_direita	6	1	0	4	2
-1	__signed_stack_001reto_parede_direita	6	1	4	4	2
-2	__CLSWMutex0	9	0	8	4	2
-3	__CLSRMutex0	9	0	12	4	2
-4	__D0SetSensorLowspeed_inline_main	6	1	16	4	2
-5	__D0reto_parede_direita	6	1	20	4	13
-6	__DU0SetSensorLowspeed_inline_main	5	1	24	4	5
-7	__RLSBmutex0	9	0	28	4	2
-8	__CLSCSMutex0	9	0	32	4	2
-9	__Wait_7qG2_ms_7qG2_000_inline_reto_parede_direita	5	1	36	4	2
-10	__reto_parede_direita_7qG2_d_7qG2_000	4	1	40	2	2
-11	__constVal200	4	0	42	2	2
-12	__reto_parede_direita_return	1	1	44	1	3
-13	__constVal63	2	0	45	1	2
-14	__constVal96	2	0	46	1	2
-15	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	47	1	2
-16	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	48	1	2
-17	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	49	1	2
-18	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	50	1	2
-19	____initialize_global_data_return	1	1	51	1	3
-20	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	52	1	4
-21	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	53	1	2
-22	__RLSBIterations0	1	1	54	1	4
-23	__ResetSensorPort	1	1	55	1	3
-24	__constVal3	2	0	56	1	2
-25	__LSWriteOptions0	1	1	57	1	1
-26	____ResetSensorSubroutine_return	1	1	58	1	3
-27	__ResetSensorTmp	1	1	59	1	2
-28	__constVal0	2	1	60	1	9
-29	__RLSBytesCount0	1	1	61	1	7
-30	__constVal32	2	0	62	1	6
-31	__RLSBResult0	2	1	63	1	7
-32	____ReadLSBytes0_return	1	1	64	1	3
-33	__constVal1	2	0	65	1	5
-34	__CLSCSArgs0	8	0	3	4	4
-35	__CLSCSArgs0.Result	2	1	68	1	4
-36	__CLSCSArgs0.Port	1	1	69	1	4
-37	__CLSCSArgs0.BytesReady	1	1	70	1	4
-38	__TextOutArgs	8	0	4	16	6
-39	__TextOutArgs.Result	2	1	72	1	6
-40	__TextOutArgs.Location	8	0	2	4	6
-41	__TextOutArgs.Location.X	4	1	76	2	6
-42	__TextOutArgs.Location.Y	4	1	78	2	6
-43	__TextOutArgs.Text	7	0	80	4	6
-44	__TextOutArgs.Text.Text_type	1	0	0	1	0
-45	__TextOutArgs.Options	5	1	84	4	6
-46	__PointOutArgs	8	0	3	12	4
-47	__PointOutArgs.Result	2	1	88	1	4
-48	__PointOutArgs.Location	8	0	2	4	4
-49	__PointOutArgs.Location.X	4	1	92	2	4
-50	__PointOutArgs.Location.Y	4	1	94	2	4
-51	__PointOutArgs.Options	5	1	96	4	4
-52	__CLSWArgs0	8	0	4	12	5
-53	__CLSWArgs0.Result	2	1	100	1	5
-54	__CLSWArgs0.Port	1	1	101	1	5
-55	__CLSWArgs0.Buffer	7	0	102	4	5
-56	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
-57	__CLSWArgs0.ReturnLen	1	1	104	1	5
-58	__CLSRArgs0	8	0	4	12	5
-59	__CLSRArgs0.Result	2	1	108	1	5
-60	__CLSRArgs0.Port	1	1	109	1	5
-61	__CLSRArgs0.Buffer	7	0	110	4	5
-62	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
-63	__CLSRArgs0.BufferLen	1	1	112	1	5
-64	__RLSReadBuf0	7	0	114	4	8
-65	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
-66	__RLSLastGoodRead0	7	0	116	4	2
-67	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
-68	__RLSBbufLSWrite1	7	0	118	4	1
-69	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+0	__signed_stack_001reto_parede_direita	6	1	0	4	4
+1	__CLSCSMutex0	9	0	4	4	2
+2	__DU0SetSensorLowspeed_inline_main	5	1	8	4	5
+3	__RLSBmutex0	9	0	12	4	4
+4	__CLSRMutex0	9	0	16	4	2
+5	__CLSWMutex0	9	0	20	4	2
+6	__D0SetSensorLowspeed_inline_main	6	1	24	4	2
+7	__D0reto_parede_direita	6	1	28	4	24
+8	__Wait_7qG2_ms_7qG2_000_inline_reto_parede_direita	5	1	32	4	2
+9	__reto_parede_direita_7qG2_d_7qG2_000	4	1	36	2	6
+10	__reto_parede_direita_7qG2_old_d_7qG2_000	4	1	38	2	4
+11	__reto_parede_direita_7qG2_pote_7qG2_000	4	1	40	2	5
+12	__reto_parede_direita_7qG2_potd_7qG2_000	4	1	42	2	5
+13	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	44	1	4
+14	____initialize_global_data_return	1	1	45	1	3
+15	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	46	1	2
+16	__reto_parede_direita_return	1	1	47	1	3
+17	__constVal96	2	0	48	1	4
+18	__constVal63	2	0	49	1	4
+19	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	50	1	2
+20	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	51	1	2
+21	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	52	1	2
+22	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	53	1	2
+23	__constVal3	2	0	54	1	4
+24	__LSWriteOptions0	1	1	55	1	1
+25	__constVal0	2	1	56	1	16
+26	____ResetSensorSubroutine_return	1	1	57	1	3
+27	__ResetSensorTmp	1	1	58	1	2
+28	__ResetSensorPort	1	1	59	1	3
+29	__RLSBytesCount0	1	1	60	1	8
+30	__RLSBIterations0	1	1	61	1	4
+31	__constVal32	2	0	62	1	12
+32	____ReadLSBytes0_return	1	1	63	1	4
+33	__constVal1	2	0	64	1	7
+34	__RLSBResult0	2	1	65	1	7
+35	__CLSRArgs0	8	0	4	12	5
+36	__CLSRArgs0.Result	2	1	68	1	5
+37	__CLSRArgs0.Port	1	1	69	1	5
+38	__CLSRArgs0.Buffer	7	0	70	4	5
+39	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+40	__CLSRArgs0.BufferLen	1	1	72	1	5
+41	__CLSWArgs0	8	0	4	12	5
+42	__CLSWArgs0.Result	2	1	76	1	5
+43	__CLSWArgs0.Port	1	1	77	1	5
+44	__CLSWArgs0.Buffer	7	0	78	4	5
+45	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+46	__CLSWArgs0.ReturnLen	1	1	80	1	5
+47	__CLSCSArgs0	8	0	3	4	4
+48	__CLSCSArgs0.Result	2	1	84	1	4
+49	__CLSCSArgs0.Port	1	1	85	1	4
+50	__CLSCSArgs0.BytesReady	1	1	86	1	4
+51	__RLSReadBuf0	7	0	88	4	10
+52	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
+53	__RLSLastGoodRead0	7	0	90	4	2
+54	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
+55	__RLSBbufLSWrite1	7	0	92	4	2
+56	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
 0	34	0	#line 34 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
@@ -119,7 +106,7 @@ Clump	Line	PC	Source
 0	4279	40	#pragma macro 4
 0	4279	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
 0	4279	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-0	6121	44	#line 6121 "NXCDefs.h"
+0	6043	44	#line 6043 "NXCDefs.h"
 0	4278	44	#line 4278 "NXCDefs.h"
 0	4345	44	#line 4345 "NXCDefs.h"
 0	36	44	#line 36 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
@@ -173,90 +160,132 @@ Clump	Line	PC	Source
 2	6303	78		mov __RLSReadBuf0, __RLSLastGoodRead0
 2	6305	80		arrsize __RLSBytesCount0, __RLSReadBuf0
 2	6307	83		subret ____ReadLSBytes0_return
-3	45	0	#line 45 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	46	0		set __D0reto_parede_direita, 90
-3	46	3	#line 46 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	47	3	#pragma macro 7
-3	47	3		setout __constVal1, 2, __D0reto_parede_direita, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	6142	26	#line 6142 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	46	26	#line 46 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	46	26	#line 46 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	47	26		set __D0reto_parede_direita, 90
-3	47	29	#line 47 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	48	29	#pragma macro 7
-3	48	29		setout __constVal0, 2, __D0reto_parede_direita, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	6147	52	#line 6147 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	47	52	#line 47 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	48	52	#line 48 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	49	52		set __D0reto_parede_direita, 1
-3	49	55	#line 49 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	50	55		tst 5, __D0reto_parede_direita, __D0reto_parede_direita
-3	49	58	#line 49 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	50	58		brtst 4, __ASM_Label_611, __D0reto_parede_direita
-3	6678	61	#line 6678 "NXCDefs.h"
-3	6679	61	#pragma macro 6
-3	6679	61		mov __PointOutArgs.Location.X, __constVal200
-3	6679	63		mov __PointOutArgs.Location.Y, __constVal200
-3	6679	65		mov __PointOutArgs.Options, __constVal1
-3	6679	67		syscall 14, __PointOutArgs
-3	6157	70	#line 6157 "NXCDefs.h"
-3	6678	70	#line 6678 "NXCDefs.h"
-3	50	70	#line 50 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	50	70	#line 50 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	51	70	#pragma macro 26
-3	51	70		acquire __RLSBmutex0
-3	51	71		mov __RLSReadBuf0, __RLSBbufLSWrite1
-3	51	73		set __RLSBytesCount0, 1
-3	51	76		wait 15
-3	51	78		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-3	51	80		index __D0reto_parede_direita, __RLSReadBuf0, 65535
-3	51	84		release __RLSBmutex0
-3	6161	85	#line 6161 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	50	85	#line 50 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	51	85		mov __reto_parede_direita_7qG2_d_7qG2_000, __D0reto_parede_direita
-3	50	87	#line 50 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	50	87	#line 50 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	51	87	#line 51 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	52	87		set __signed_stack_001reto_parede_direita, 0
-3	51	90	#line 51 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	51	90	#line 51 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	52	90		set __signed_stack_002reto_parede_direita, 56
-3	51	93	#line 51 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	51	93	#line 51 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	52	93		mov __D0reto_parede_direita, __reto_parede_direita_7qG2_d_7qG2_000
-3	52	95	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	52	95	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	53	95		mov __TextOutArgs.Location.X, __signed_stack_001reto_parede_direita
-3	52	97	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	53	97		mov __TextOutArgs.Location.Y, __signed_stack_002reto_parede_direita
-3	52	99	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	53	99		set __TextOutArgs.Options, 0
-3	52	102	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	53	102		numtostr __TextOutArgs.Text, __D0reto_parede_direita
-3	52	105	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	53	105		syscall 13, __TextOutArgs
-3	52	108	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	53	108		mov __D0reto_parede_direita, __TextOutArgs.Result
-3	52	110	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	52	110	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	52	110	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	53	110		set __Wait_7qG2_ms_7qG2_000_inline_reto_parede_direita, 500
-3	52	113	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	8551	113	#line 8551 "NXCDefs.h"
-3	8552	113		waitv __Wait_7qG2_ms_7qG2_000_inline_reto_parede_direita
-3	8551	115	#line 8551 "NXCDefs.h"
-3	54	115	#line 54 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	59	115	#line 59 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	60	115		jmp __ASM_Label_610
-3	59	117	#line 59 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	59	117	#line 59 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-3	60	117		subret __reto_parede_direita_return
-4	60	0	#line 60 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
-4	61	0		subret ____initialize_global_data_return
+3	48	0	#line 48 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	49	0		set __reto_parede_direita_7qG2_potd_7qG2_000, 90
+3	48	3	#line 48 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	48	3	#line 48 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	50	3	#line 50 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	51	3		set __reto_parede_direita_7qG2_pote_7qG2_000, 90
+3	50	6	#line 50 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	50	6	#line 50 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	50	6	#line 50 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	51	6		mov __D0reto_parede_direita, __reto_parede_direita_7qG2_potd_7qG2_000
+3	51	8	#line 51 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	52	8	#pragma macro 7
+3	52	8		setout __constVal1, 2, __D0reto_parede_direita, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	6084	31	#line 6084 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	51	31	#line 51 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	51	31	#line 51 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	52	31		mov __D0reto_parede_direita, __reto_parede_direita_7qG2_pote_7qG2_000
+3	52	33	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	53	33	#pragma macro 7
+3	53	33		setout __constVal0, 2, __D0reto_parede_direita, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	6091	56	#line 6091 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	52	56	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	52	56	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	53	56	#pragma macro 26
+3	53	56		acquire __RLSBmutex0
+3	53	57		mov __RLSReadBuf0, __RLSBbufLSWrite1
+3	53	59		set __RLSBytesCount0, 1
+3	53	62		wait 15
+3	53	64		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+3	53	66		index __D0reto_parede_direita, __RLSReadBuf0, 65535
+3	53	70		release __RLSBmutex0
+3	6094	71	#line 6094 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	52	71	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	53	71		mov __reto_parede_direita_7qG2_d_7qG2_000, __D0reto_parede_direita
+3	52	73	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	52	73	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	54	73	#line 54 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	55	73		mov __reto_parede_direita_7qG2_old_d_7qG2_000, __reto_parede_direita_7qG2_d_7qG2_000
+3	54	75	#line 54 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	54	75	#line 54 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	55	75	#line 55 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	56	75		set __D0reto_parede_direita, 1
+3	56	78	#line 56 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	57	78		tst 5, __D0reto_parede_direita, __D0reto_parede_direita
+3	56	81	#line 56 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	57	81		brtst 4, __ASM_Label_619, __D0reto_parede_direita
+3	57	84	#line 57 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	58	84		mov __reto_parede_direita_7qG2_old_d_7qG2_000, __reto_parede_direita_7qG2_d_7qG2_000
+3	57	86	#line 57 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	57	86	#line 57 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	57	86	#line 57 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	58	86	#pragma macro 26
+3	58	86		acquire __RLSBmutex0
+3	58	87		mov __RLSReadBuf0, __RLSBbufLSWrite1
+3	58	89		set __RLSBytesCount0, 1
+3	58	92		wait 15
+3	58	94		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+3	58	96		index __D0reto_parede_direita, __RLSReadBuf0, 65535
+3	58	100		release __RLSBmutex0
+3	6123	101	#line 6123 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	57	101	#line 57 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	58	101		mov __reto_parede_direita_7qG2_d_7qG2_000, __D0reto_parede_direita
+3	57	103	#line 57 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	57	103	#line 57 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	58	103	#line 58 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	59	103		mov __signed_stack_001reto_parede_direita, __reto_parede_direita_7qG2_d_7qG2_000
+3	58	105	#line 58 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	59	105	#line 59 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	60	105		mov __D0reto_parede_direita, __reto_parede_direita_7qG2_old_d_7qG2_000
+3	59	107	#line 59 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	60	107		cmp 4, __D0reto_parede_direita, __signed_stack_001reto_parede_direita, __D0reto_parede_direita
+3	60	111	#line 60 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	61	111		brtst 4, __ASM_Label_628, __D0reto_parede_direita
+3	60	114	#line 60 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	61	114		set __Wait_7qG2_ms_7qG2_000_inline_reto_parede_direita, 300
+3	60	117	#line 60 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	8551	117	#line 8551 "NXCDefs.h"
+3	8552	117		waitv __Wait_7qG2_ms_7qG2_000_inline_reto_parede_direita
+3	8551	119	#line 8551 "NXCDefs.h"
+3	61	119	#line 61 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	64	119	#line 64 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	65	119		jmp __ASM_Label_631
+3	64	121	#line 64 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	65	121		mov __signed_stack_001reto_parede_direita, __reto_parede_direita_7qG2_d_7qG2_000
+3	64	123	#line 64 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	65	123	#line 65 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	66	123		mov __D0reto_parede_direita, __reto_parede_direita_7qG2_old_d_7qG2_000
+3	65	125	#line 65 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	66	125		cmp 0, __D0reto_parede_direita, __signed_stack_001reto_parede_direita, __D0reto_parede_direita
+3	65	129	#line 65 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	66	129		brtst 4, __ASM_Label_634, __D0reto_parede_direita
+3	66	132	#line 66 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	67	132		sub __reto_parede_direita_7qG2_pote_7qG2_000, __reto_parede_direita_7qG2_pote_7qG2_000, __constVal1
+3	66	136	#line 66 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	67	136	#line 67 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	68	136		jmp __ASM_Label_635
+3	69	138	#line 69 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	70	138		sub __reto_parede_direita_7qG2_potd_7qG2_000, __reto_parede_direita_7qG2_potd_7qG2_000, __constVal1
+3	69	142	#line 69 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	69	142	#line 69 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	69	142	#line 69 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	70	142		mov __D0reto_parede_direita, __reto_parede_direita_7qG2_potd_7qG2_000
+3	70	144	#line 70 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	71	144	#pragma macro 7
+3	71	144		setout __constVal1, 2, __D0reto_parede_direita, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	6189	167	#line 6189 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	70	167	#line 70 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	70	167	#line 70 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	71	167		mov __D0reto_parede_direita, __reto_parede_direita_7qG2_pote_7qG2_000
+3	71	169	#line 71 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	72	169	#pragma macro 7
+3	72	169		setout __constVal0, 2, __D0reto_parede_direita, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	6196	192	#line 6196 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	71	192	#line 71 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	76	192	#line 76 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	78	192	#line 78 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	79	192		jmp __ASM_Label_618
+3	78	194	#line 78 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	78	194	#line 78 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+3	79	194		subret __reto_parede_direita_return
+4	79	0	#line 79 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc"
+4	80	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc
 1	__ResetSensorSubroutine	49	NXTDefs.h
 2	__ReadLSBytes0	62	NXTDefs.h
 3	reto_parede_direita	147	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc
-4	__initialize_global_data	266	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc
+4	__initialize_global_data	343	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\executivo.nxc

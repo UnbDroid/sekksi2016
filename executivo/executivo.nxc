@@ -42,15 +42,34 @@ task main()
 void reto_parede_direita(void)
 {
     //variáveis locais
-    int d, oul_d;
-    OnFwd(MD,90);
-    OnFwd(ME,90);
+    int d, old_d;
+    int potd, pote;
+    
+    potd = 90;
+    pote = 90;
+    
+    OnFwd(MD,potd);
+    OnFwd(ME,pote);
+    d = SensorUS(USD);
+    old_d = d;
     while(1)
     {
-      ClearScreen();
+      old_d = d;
       d = SensorUS(USD);
-      NumOut(0,LCD_LINE1,d);
-      Wait(500);
+      if(d == old_d)
+      {
+          Wait(300);
+      }
+      else
+      {
+          if(d<old_d)
+              pote--;
+          else
+              potd--;
+
+          OnFwd(MD,potd);
+          OnFwd(ME,pote);
+      }
       
     }
     
