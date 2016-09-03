@@ -1,4 +1,50 @@
+/*
+    Código Principal do cerebro execultivo responsável pela locomação do robo da
+    quipe SEK ksi da DROID na LARC 2016
+*/
+
+//MACROS
+//PARAMETROS (REGULAR!!!! SEMPRE!!!!!)
+
+//SENSORES E MOTORES
+#define me OUT_A //motor da direita
+#define md OUT_B //motor da esquerda
+#define mp OUT_C //motor da porta
+#define usd IN_1 //Utrasonico da direita
+#define use IN_2 //Utrasonico da esquerda
+#define htd IN_3//hitech da direita
+#define hte IN_4//hitech da esquerda
+
+
+
+//Variáveis Globais
+
+//declaração das funções
+void reto_parede_direita(void);
+
+
+
+
+
+//função principal
 task main()
 {
+    //variáveis locais
+    
+    //inicializando os sensores
+    SetSensorLowspeed(US);
+    
+
+    reto_parede_direta();
 
 }
+
+//assinatura das funções
+void reto_parede_direita(void)
+{
+    //variáveis locais
+    int d, oul_d;
+    
+    
+}
+
