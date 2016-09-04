@@ -32,7 +32,6 @@
 //LOGICA
 #define direita 1
 #define esquerda 2
-#define tempoVirada 300
 
 
 //SENSORES E MOTORES
@@ -44,10 +43,6 @@
 #define HTD IN_3//hitech da direita
 #define HTE IN_4//hitech da esquerda
 
-//COMUNICACAO BLUETOOTH
-#define BT_CONN 1
-#define INBOX 1
-#define OUTBOX 5
 
 
 //Var Globais
@@ -59,11 +54,7 @@ void inicializaSensores(void);
 void retoParedeDireita(void);
 void lerSensores(void);
 void andaRetoEDaUmaViradinha(void);
-void retoParedeSel(int direcao);
-bool BTCheck(int conn);
-void vira(int direcao);
-byte comunicaBlue(void);
-
+void retoParedeSel(int a);
 
 //funcoes de debug
 void lerSensores(){
@@ -81,22 +72,14 @@ void lerSensores(){
     }
 }
 
-bool BTCheck(int conn){
- if (!BluetoothStatus(conn)==NO_ERR){
- TextOut(5,LCD_LINE2,"Error");
- Wait(100);
- //Stop(true);
- return true;
- }
-}
+
 
 //funcao principal
 task main()
 {
     inicializaSensores();
     lerSensores();
-    vira(direita);
-    retoParedeSel(esquerda);
+    //retoParedeDireita();
 
 }
 
@@ -110,44 +93,6 @@ void inicializaSensores()
 }
 
 
-void vira(int direcao){
-  int potd = 90, pote = 90;
-   
-   if(esquerda){
-    OnFwd(MD,potd);
-    OnFwd(ME,-pote);
-   } 
-   else if(direita){
-    OnFwd(MD,-potd);
-    OnFwd(ME,+pote);
-   }
-
-   Wait(tempoVirada);
-     
-}
-
-//Decide se o robo deve virar
-byte comunicaBlue(){
-   string sinalUSFRENTE = "";
-   string sinalGarraPara = "";
-   string sinalGarraContinua = "";
-   while(BTCheck(BT_CONN)){
-      ReceiveRemoteString(INBOX, true, sinalUSFRENTE);
-      ReceiveRemoteString(INBOX, true, sinalGarraPara);
-      ReceiveRemoteString(INBOX, true, sinalGarraContinua);
-
-      //verifica se tem Parede
-      if(sinalUSFRENTE == "1"){
-        return 1;//Manda sinal do ultrassom pro robo
-      }else if(sinalGarraPara = "1"){//verifica se precisa parar o robo pra garra pegar o alien
-        OffEx(MD,0);
-        OffEx(ME,0);
-        while(sinalGarraContinua != "1");
-        return 2;//Parou o robo
-      } 
-     }
-     return 0;// erro bluetooth
-}
 
 void retoParedeSel(int direcao)
 {
@@ -162,30 +107,19 @@ void retoParedeSel(int direcao)
     OnFwd(ME,pote);
     d = SensorUS(USD);
     old_d = d;
-    
-
     while(1)
     {
-      //Carrega e da upload no valor da distancia
-
       old_d = d;
       d = SensorUS(USD);
-
-      //Chama funcao bluetooth pra saber se vira, ou então para
-      if(comunicaBlue()==1){//viu Parede ou boneco com USFRENTE
-        if(direcao == direita)
-          vira(esquerda);
-        else if(direcao == esquerda)
-          vira(direita);
-      }
-      else if(d == old_d)
+      if(d == old_d)
       {
           Wait(300);
       }
       else
       {
-        switch(direcao){
-          case direita:
+        switch(direcao)
+        {
+          case 1://direita
             if(d<old_d){
                 pote--;
               if(potd<90)
@@ -200,7 +134,7 @@ void retoParedeSel(int direcao)
             OnFwd(ME,pote);
           break;
 
-          case esquerda:
+          case 2://esquerda
             if(d<old_d){
                 potd--;
                 if(pote<90)
@@ -214,7 +148,8 @@ void retoParedeSel(int direcao)
             OnFwd(MD,potd);
             OnFwd(ME,pote);
             break;
-        }
+
+          }
       }
     } 
 }

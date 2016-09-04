@@ -1,0 +1,92 @@
+/*
+    Codigo da equipe KSI da SEK 2016 do cérebro EXECUTIVO
+    */
+
+//Funcoes necessarias:
+/*
+  - Andar reto
+  - Curva 90 graus
+  - Comunicacao bluetooth com Consultor
+  - Armazenar posicao em matriz
+
+  -DEBUG
+    - Ler todos os sensores
+
+
+*/
+
+
+//MACROS
+//PARAMETROS (REGULAR!!!! SEMPRE!!!!!)
+
+//CORES
+#define AZUL 2
+#define VERDE 4
+#define BRANCO_MIN 12
+#define BRANCO_MAX 17
+#define PRETO 0
+
+//DIST
+#define distMinParede 8
+
+//LOGICA
+#define direita 1
+#define esquerda 2
+
+
+//SENSORES E MOTORES
+#define MD OUT_A //motor da direita
+#define ME OUT_B //motor da esquerda
+#define MP OUT_C //motor da porta
+#define USD IN_1 //Utrasonico da direita
+#define USE IN_2 //Utrasonico da esquerda
+#define HTD IN_3//hitech da direita
+#define HTE IN_4//hitech da esquerda
+
+
+
+//Var Globais
+
+
+
+//declaracoes de funcoes
+void inicializaSensores(void);
+void lerSensores(void);
+
+//funcoes de debug
+void lerSensores(){
+  while(true){
+      ClearScreen();
+      TextOut(0, LCD_LINE1, "HTD : ",0);
+      NumOut(0, LCD_LINE2, SensorHTColorNum(HTD),0);
+      TextOut(0, LCD_LINE3, "HTE : ",0);
+      NumOut(0, LCD_LINE4, SensorHTColorNum(HTE),0);
+      TextOut(0, LCD_LINE5, "USD : ",0);
+      NumOut(0, LCD_LINE6, SensorUS(USD),0);
+      TextOut(0, LCD_LINE7, "USE : ",0);
+      NumOut(0, LCD_LINE8, SensorUS(USE),0);
+      Wait(50);
+    }
+}
+
+
+
+//funcao principal
+task main()
+{
+    inicializaSensores();
+    lerSensores();
+    //retoParedeDireita();
+
+}
+
+//assinatura das funcoes
+void inicializaSensores()
+{
+  SetSensorLowspeed(USD);
+  SetSensorLowspeed(USE);
+  SetSensorLowspeed(HTD);
+  SetSensorLowspeed(HTE);
+}
+
+

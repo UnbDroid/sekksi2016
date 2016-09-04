@@ -22,22 +22,26 @@ task main(){
  
  BTCheck(BT_CONN); //check slave connection
  while(true){
- timeNow = CurrentTick();
- iStr = NumToStr(i);
- out = StrCat("M",iStr);
- TextOut(10,LCD_LINE1,"Master Test");
- TextOut(0,LCD_LINE2,"IN:");
- TextOut(0,LCD_LINE4,"OUT:");
- ReceiveRemoteString(INBOX, true, in);
- SendRemoteString(BT_CONN,OUTBOX,out);
- timeLater = CurrentTick();
- 
-   TextOut(10,LCD_LINE3,in);
-   TextOut(10,LCD_LINE5,out);
-   TextOut(10, LCD_LINE6, "Delay:");
-   NumOut(10, LCD_LINE7, timeLater - timeNow);
-   
- Wait(100);
- i++;
+	 timeNow = CurrentTick();
+	 
+	 iStr = NumToStr(i);
+	 out = StrCat("M",iStr);
+	 
+	 TextOut(10,LCD_LINE1,"Master Test");
+	 TextOut(0,LCD_LINE2,"IN:");
+	 TextOut(0,LCD_LINE4,"OUT:");
+	 
+	 ReceiveRemoteString(INBOX, true, in);
+	 SendRemoteString(BT_CONN,OUTBOX,out);
+	 
+	 timeLater = CurrentTick();
+	 
+	   TextOut(10,LCD_LINE3,in);
+	   TextOut(10,LCD_LINE5,out);
+	   TextOut(10, LCD_LINE6, "Delay:");
+	   NumOut(10, LCD_LINE7, timeLater - timeNow);
+	   
+	 Wait(100);
+	 i++;
  }
 }

@@ -1,0 +1,829 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__CLSRMutex3	9	0	0	4	2
+1	__CLSWMutex3	9	0	4	4	2
+2	__RLSBmutex1	9	0	8	4	2
+3	__RLSBmutex0	9	0	12	4	2
+4	__CLSWMutex2	9	0	16	4	2
+5	__CLSCSMutex2	9	0	20	4	2
+6	__CLSCSMutex3	9	0	24	4	2
+7	__CLSRMutex2	9	0	28	4	2
+8	__RLSBmutex2	9	0	32	4	2
+9	__signed_stack_002lerSensores	6	1	36	4	16
+10	__signed_stack_001lerSensores	6	1	40	4	16
+11	__Wait_7qG2_ms_7qG2_000_inline_lerSensores	5	1	44	4	2
+12	__signed_stack_003lerSensores	6	1	48	4	8
+13	__D0lerSensores	6	1	52	4	28
+14	__RLSBmutex3	9	0	56	4	2
+15	__DU0SetSensorLowspeed_inline_inicializaSensores	5	1	60	4	20
+16	__D0SetSensorLowspeed_inline_inicializaSensores	6	1	64	4	8
+17	__CLSRMutex1	9	0	68	4	2
+18	__CLSCSMutex1	9	0	72	4	2
+19	__CLSWMutex0	9	0	76	4	2
+20	__CLSRMutex0	9	0	80	4	2
+21	__CLSCSMutex0	9	0	84	4	2
+22	__CLSWMutex1	9	0	88	4	2
+23	__constVal200	4	0	92	2	2
+24	__RLSBIterations3	1	1	94	1	4
+25	__RLSBResult2	2	1	95	1	7
+26	__constVal15	2	0	96	1	2
+27	____ResetSensorSubroutine_return	1	1	97	1	6
+28	__ResetSensorTmp	1	1	98	1	2
+29	__RLSBIterations2	1	1	99	1	4
+30	____ReadLSBytes3_return	1	1	100	1	3
+31	__constVal2	2	0	101	1	2
+32	__RLSBytesCount3	1	1	102	1	7
+33	__RLSBResult3	2	1	103	1	7
+34	__RLSBytesCount2	1	1	104	1	7
+35	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	105	1	8
+36	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores	1	1	106	1	8
+37	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	107	1	20
+38	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	108	1	8
+39	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	109	1	4
+40	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	110	1	8
+41	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	111	1	8
+42	__constVal0	2	1	112	1	6
+43	__constVal3	2	0	113	1	2
+44	__ResetSensorPort	1	1	114	1	6
+45	__lerSensores_return	1	1	115	1	3
+46	__inicializaSensores_return	1	1	116	1	3
+47	____initialize_global_data_return	1	1	117	1	3
+48	__constVal1	2	0	118	1	12
+49	____ReadLSBytes2_return	1	1	119	1	3
+50	____ReadLSBytes1_return	1	1	120	1	3
+51	__RLSBResult1	2	1	121	1	7
+52	__RLSBResult0	2	1	122	1	7
+53	__RLSBytesCount0	1	1	123	1	7
+54	__RLSBIterations0	1	1	124	1	4
+55	__LSWriteOptionsVar	1	1	125	1	8
+56	__RLSBIterations1	1	1	126	1	4
+57	____ReadLSBytes0_return	1	1	127	1	3
+58	__RLSBytesCount1	1	1	128	1	7
+59	__PointOutArgs	8	0	3	12	4
+60	__PointOutArgs.Result	2	1	132	1	4
+61	__PointOutArgs.Location	8	0	2	4	4
+62	__PointOutArgs.Location.X	4	1	136	2	4
+63	__PointOutArgs.Location.Y	4	1	138	2	4
+64	__PointOutArgs.Options	5	1	140	4	4
+65	__CLSCSArgs1	8	0	3	4	4
+66	__CLSCSArgs1.Result	2	1	144	1	4
+67	__CLSCSArgs1.Port	1	1	145	1	4
+68	__CLSCSArgs1.BytesReady	1	1	146	1	4
+69	__CLSRArgs3	8	0	4	12	5
+70	__CLSRArgs3.Result	2	1	148	1	5
+71	__CLSRArgs3.Port	1	1	149	1	5
+72	__CLSRArgs3.Buffer	7	0	150	4	5
+73	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
+74	__CLSRArgs3.BufferLen	1	1	152	1	5
+75	__TextOutArgs	8	0	4	16	40
+76	__TextOutArgs.Result	2	1	156	1	40
+77	__TextOutArgs.Location	8	0	2	4	40
+78	__TextOutArgs.Location.X	4	1	160	2	40
+79	__TextOutArgs.Location.Y	4	1	162	2	40
+80	__TextOutArgs.Text	7	0	164	4	40
+81	__TextOutArgs.Text.Text_type	1	0	0	1	0
+82	__TextOutArgs.Options	5	1	168	4	40
+83	__CLSWArgs2	8	0	4	12	5
+84	__CLSWArgs2.Result	2	1	172	1	5
+85	__CLSWArgs2.Port	1	1	173	1	5
+86	__CLSWArgs2.Buffer	7	0	174	4	5
+87	__CLSWArgs2.Buffer.Buffer_type	1	0	0	1	0
+88	__CLSWArgs2.ReturnLen	1	1	176	1	5
+89	__CLSRArgs1	8	0	4	12	5
+90	__CLSRArgs1.Result	2	1	180	1	5
+91	__CLSRArgs1.Port	1	1	181	1	5
+92	__CLSRArgs1.Buffer	7	0	182	4	5
+93	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
+94	__CLSRArgs1.BufferLen	1	1	184	1	5
+95	__CLSCSArgs2	8	0	3	4	4
+96	__CLSCSArgs2.Result	2	1	188	1	4
+97	__CLSCSArgs2.Port	1	1	189	1	4
+98	__CLSCSArgs2.BytesReady	1	1	190	1	4
+99	__CLSRArgs2	8	0	4	12	5
+100	__CLSRArgs2.Result	2	1	192	1	5
+101	__CLSRArgs2.Port	1	1	193	1	5
+102	__CLSRArgs2.Buffer	7	0	194	4	5
+103	__CLSRArgs2.Buffer.Buffer_type	1	0	0	1	0
+104	__CLSRArgs2.BufferLen	1	1	196	1	5
+105	__CLSWArgs3	8	0	4	12	5
+106	__CLSWArgs3.Result	2	1	200	1	5
+107	__CLSWArgs3.Port	1	1	201	1	5
+108	__CLSWArgs3.Buffer	7	0	202	4	5
+109	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
+110	__CLSWArgs3.ReturnLen	1	1	204	1	5
+111	__CLSCSArgs3	8	0	3	4	4
+112	__CLSCSArgs3.Result	2	1	208	1	4
+113	__CLSCSArgs3.Port	1	1	209	1	4
+114	__CLSCSArgs3.BytesReady	1	1	210	1	4
+115	__CLSWArgs1	8	0	4	12	5
+116	__CLSWArgs1.Result	2	1	212	1	5
+117	__CLSWArgs1.Port	1	1	213	1	5
+118	__CLSWArgs1.Buffer	7	0	214	4	5
+119	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
+120	__CLSWArgs1.ReturnLen	1	1	216	1	5
+121	__CLSCSArgs0	8	0	3	4	4
+122	__CLSCSArgs0.Result	2	1	220	1	4
+123	__CLSCSArgs0.Port	1	1	221	1	4
+124	__CLSCSArgs0.BytesReady	1	1	222	1	4
+125	__CLSRArgs0	8	0	4	12	5
+126	__CLSRArgs0.Result	2	1	224	1	5
+127	__CLSRArgs0.Port	1	1	225	1	5
+128	__CLSRArgs0.Buffer	7	0	226	4	5
+129	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+130	__CLSRArgs0.BufferLen	1	1	228	1	5
+131	__CLSWArgs0	8	0	4	12	5
+132	__CLSWArgs0.Result	2	1	232	1	5
+133	__CLSWArgs0.Port	1	1	233	1	5
+134	__CLSWArgs0.Buffer	7	0	234	4	5
+135	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+136	__CLSWArgs0.ReturnLen	1	1	236	1	5
+137	__RLSLastGoodRead3	7	0	238	4	2
+138	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
+139	__RLSReadBuf0	7	0	240	4	8
+140	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
+141	__RLSReadBuf3	7	0	242	4	8
+142	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
+143	__RLSLastGoodRead1	7	0	244	4	2
+144	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
+145	__RLSLastGoodRead2	7	0	246	4	2
+146	__RLSLastGoodRead2.__RLSLastGoodRead2_type	1	0	0	1	0
+147	__RLSReadBuf1	7	0	248	4	8
+148	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
+149	__RLSReadBuf2	7	0	250	4	8
+150	__RLSReadBuf2.__RLSReadBuf2_type	1	0	0	1	0
+151	__constStr0009	7	0	252	4	1
+152	__constStr0009.__constStr0009_type	1	1	0	1	0
+153	__constStr0010	7	0	254	4	1
+154	__constStr0010.__constStr0010_type	1	1	0	1	0
+155	__RLSBbufLSWrite1	7	0	256	4	4
+156	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+157	__strbuflerSensores	7	0	258	4	8
+158	__strbuflerSensores.__strbuflerSensores_type	1	0	0	1	0
+159	__LSWriteOptions	7	0	260	4	4
+160	__LSWriteOptions.__LSWriteOptions_type	1	0	0	1	0
+161	__RLSLastGoodRead0	7	0	262	4	2
+162	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
+163	__constStr0011	7	0	264	4	1
+164	__constStr0011.__constStr0011_type	1	1	0	1	0
+165	__constStr0012	7	0	266	4	1
+166	__constStr0012.__constStr0012_type	1	1	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	76	0	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+0	77	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	76	2	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+0	76	2	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+0	77	2		subcall inicializaSensores, __inicializaSensores_return
+0	76	4	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+0	77	4	#line 77 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+0	78	4		subcall lerSensores, __lerSensores_return
+0	77	6	#line 77 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+0	78	6		exit -1, -1
+1	5724	0		setin __constVal1, __ResetSensorPort, 5
+1	5726	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5727	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5728	11		subret ____ResetSensorSubroutine_return
+2	6520	0	#pragma macro 27
+2	6520	0		acquire __CLSWMutex0
+2	6520	1		index __LSWriteOptionsVar, __LSWriteOptions, __constVal0
+2	6520	5		or __CLSWArgs0.Port, __constVal0, __LSWriteOptionsVar
+2	6520	9		mov __CLSWArgs0.ReturnLen, __RLSBytesCount0
+2	6520	11		mov __CLSWArgs0.Buffer, __RLSReadBuf0
+2	6520	13		syscall 21, __CLSWArgs0
+2	6520	16		mov __RLSBResult0, __CLSWArgs0.Result
+2	6520	18		release __CLSWMutex0
+2	6521	19	#line 6521 "NXTDefs.h"
+2	6522	19		brtst 5, __RLSBError0, __RLSBResult0
+2	6523	22		set __RLSBIterations0, 60
+2	6525	25	#pragma macro 23
+2	6525	25		acquire __CLSCSMutex0
+2	6525	26		set __CLSCSArgs0.Port, 0
+2	6525	29		syscall 23, __CLSCSArgs0
+2	6525	32		mov __RLSBytesCount0, __CLSCSArgs0.BytesReady
+2	6525	34		mov __RLSBResult0, __CLSCSArgs0.Result
+2	6525	36		release __CLSCSMutex0
+2	6525	37	#line 6525 "NXTDefs.h"
+2	6526	37		sub __RLSBIterations0, __RLSBIterations0, __constVal1
+2	6527	41		brtst 2, __RLSBError0, __RLSBIterations0
+2	6528	44		brtst 0, __RLSBError0, __RLSBResult0
+2	6529	47		brtst 4, __RLSBReadyToRead0, __RLSBResult0
+2	6531	50		wait 1
+2	6532	52		jmp __RLSBDoCheckStatus0
+2	6534	54		brtst 4, __RLSBReturn0, __RLSBytesCount0
+2	6535	57		arrinit __RLSReadBuf0, __constVal0, __RLSBytesCount0
+2	6537	61	#pragma macro 25
+2	6537	61		acquire __CLSRMutex0
+2	6537	62		set __CLSRArgs0.Port, 0
+2	6537	65		mov __CLSRArgs0.BufferLen, __RLSBytesCount0
+2	6537	67		syscall 22, __CLSRArgs0
+2	6537	70		mov __RLSReadBuf0, __CLSRArgs0.Buffer
+2	6537	72		mov __RLSBResult0, __CLSRArgs0.Result
+2	6537	74		release __CLSRMutex0
+2	6537	75	#line 6537 "NXTDefs.h"
+2	6538	75		brtst 5, __RLSBError0, __RLSBResult0
+2	6539	78		mov __RLSLastGoodRead0, __RLSReadBuf0
+2	6540	80		jmp __RLSBDone0
+2	6542	82		mov __RLSReadBuf0, __RLSLastGoodRead0
+2	6544	84		arrsize __RLSBytesCount0, __RLSReadBuf0
+2	6546	87		subret ____ReadLSBytes0_return
+3	6558	0	#pragma macro 27
+3	6558	0		acquire __CLSWMutex1
+3	6558	1		index __LSWriteOptionsVar, __LSWriteOptions, __constVal1
+3	6558	5		or __CLSWArgs1.Port, __constVal1, __LSWriteOptionsVar
+3	6558	9		mov __CLSWArgs1.ReturnLen, __RLSBytesCount1
+3	6558	11		mov __CLSWArgs1.Buffer, __RLSReadBuf1
+3	6558	13		syscall 21, __CLSWArgs1
+3	6558	16		mov __RLSBResult1, __CLSWArgs1.Result
+3	6558	18		release __CLSWMutex1
+3	6558	19	#line 6558 "NXTDefs.h"
+3	6559	19		brtst 5, __RLSBError1, __RLSBResult1
+3	6560	22		set __RLSBIterations1, 60
+3	6562	25	#pragma macro 23
+3	6562	25		acquire __CLSCSMutex1
+3	6562	26		set __CLSCSArgs1.Port, 1
+3	6562	29		syscall 23, __CLSCSArgs1
+3	6562	32		mov __RLSBytesCount1, __CLSCSArgs1.BytesReady
+3	6562	34		mov __RLSBResult1, __CLSCSArgs1.Result
+3	6562	36		release __CLSCSMutex1
+3	6562	37	#line 6562 "NXTDefs.h"
+3	6563	37		sub __RLSBIterations1, __RLSBIterations1, __constVal1
+3	6564	41		brtst 2, __RLSBError1, __RLSBIterations1
+3	6565	44		brtst 0, __RLSBError1, __RLSBResult1
+3	6566	47		brtst 4, __RLSBReadyToRead1, __RLSBResult1
+3	6568	50		wait 1
+3	6569	52		jmp __RLSBDoCheckStatus1
+3	6571	54		brtst 4, __RLSBReturn1, __RLSBytesCount1
+3	6572	57		arrinit __RLSReadBuf1, __constVal0, __RLSBytesCount1
+3	6574	61	#pragma macro 25
+3	6574	61		acquire __CLSRMutex1
+3	6574	62		set __CLSRArgs1.Port, 1
+3	6574	65		mov __CLSRArgs1.BufferLen, __RLSBytesCount1
+3	6574	67		syscall 22, __CLSRArgs1
+3	6574	70		mov __RLSReadBuf1, __CLSRArgs1.Buffer
+3	6574	72		mov __RLSBResult1, __CLSRArgs1.Result
+3	6574	74		release __CLSRMutex1
+3	6574	75	#line 6574 "NXTDefs.h"
+3	6575	75		brtst 5, __RLSBError1, __RLSBResult1
+3	6576	78		mov __RLSLastGoodRead1, __RLSReadBuf1
+3	6577	80		jmp __RLSBDone1
+3	6579	82		mov __RLSReadBuf1, __RLSLastGoodRead1
+3	6581	84		arrsize __RLSBytesCount1, __RLSReadBuf1
+3	6583	87		subret ____ReadLSBytes1_return
+4	6595	0	#pragma macro 27
+4	6595	0		acquire __CLSWMutex2
+4	6595	1		index __LSWriteOptionsVar, __LSWriteOptions, __constVal2
+4	6595	5		or __CLSWArgs2.Port, __constVal2, __LSWriteOptionsVar
+4	6595	9		mov __CLSWArgs2.ReturnLen, __RLSBytesCount2
+4	6595	11		mov __CLSWArgs2.Buffer, __RLSReadBuf2
+4	6595	13		syscall 21, __CLSWArgs2
+4	6595	16		mov __RLSBResult2, __CLSWArgs2.Result
+4	6595	18		release __CLSWMutex2
+4	6595	19	#line 6595 "NXTDefs.h"
+4	6596	19		brtst 5, __RLSBError2, __RLSBResult2
+4	6597	22		set __RLSBIterations2, 60
+4	6599	25	#pragma macro 23
+4	6599	25		acquire __CLSCSMutex2
+4	6599	26		set __CLSCSArgs2.Port, 2
+4	6599	29		syscall 23, __CLSCSArgs2
+4	6599	32		mov __RLSBytesCount2, __CLSCSArgs2.BytesReady
+4	6599	34		mov __RLSBResult2, __CLSCSArgs2.Result
+4	6599	36		release __CLSCSMutex2
+4	6599	37	#line 6599 "NXTDefs.h"
+4	6600	37		sub __RLSBIterations2, __RLSBIterations2, __constVal1
+4	6601	41		brtst 2, __RLSBError2, __RLSBIterations2
+4	6602	44		brtst 0, __RLSBError2, __RLSBResult2
+4	6603	47		brtst 4, __RLSBReadyToRead2, __RLSBResult2
+4	6605	50		wait 1
+4	6606	52		jmp __RLSBDoCheckStatus2
+4	6608	54		brtst 4, __RLSBReturn2, __RLSBytesCount2
+4	6609	57		arrinit __RLSReadBuf2, __constVal0, __RLSBytesCount2
+4	6611	61	#pragma macro 25
+4	6611	61		acquire __CLSRMutex2
+4	6611	62		set __CLSRArgs2.Port, 2
+4	6611	65		mov __CLSRArgs2.BufferLen, __RLSBytesCount2
+4	6611	67		syscall 22, __CLSRArgs2
+4	6611	70		mov __RLSReadBuf2, __CLSRArgs2.Buffer
+4	6611	72		mov __RLSBResult2, __CLSRArgs2.Result
+4	6611	74		release __CLSRMutex2
+4	6611	75	#line 6611 "NXTDefs.h"
+4	6612	75		brtst 5, __RLSBError2, __RLSBResult2
+4	6613	78		mov __RLSLastGoodRead2, __RLSReadBuf2
+4	6614	80		jmp __RLSBDone2
+4	6616	82		mov __RLSReadBuf2, __RLSLastGoodRead2
+4	6618	84		arrsize __RLSBytesCount2, __RLSReadBuf2
+4	6620	87		subret ____ReadLSBytes2_return
+5	6632	0	#pragma macro 27
+5	6632	0		acquire __CLSWMutex3
+5	6632	1		index __LSWriteOptionsVar, __LSWriteOptions, __constVal3
+5	6632	5		or __CLSWArgs3.Port, __constVal3, __LSWriteOptionsVar
+5	6632	9		mov __CLSWArgs3.ReturnLen, __RLSBytesCount3
+5	6632	11		mov __CLSWArgs3.Buffer, __RLSReadBuf3
+5	6632	13		syscall 21, __CLSWArgs3
+5	6632	16		mov __RLSBResult3, __CLSWArgs3.Result
+5	6632	18		release __CLSWMutex3
+5	6632	19	#line 6632 "NXTDefs.h"
+5	6633	19		brtst 5, __RLSBError3, __RLSBResult3
+5	6634	22		set __RLSBIterations3, 60
+5	6636	25	#pragma macro 23
+5	6636	25		acquire __CLSCSMutex3
+5	6636	26		set __CLSCSArgs3.Port, 3
+5	6636	29		syscall 23, __CLSCSArgs3
+5	6636	32		mov __RLSBytesCount3, __CLSCSArgs3.BytesReady
+5	6636	34		mov __RLSBResult3, __CLSCSArgs3.Result
+5	6636	36		release __CLSCSMutex3
+5	6636	37	#line 6636 "NXTDefs.h"
+5	6637	37		sub __RLSBIterations3, __RLSBIterations3, __constVal1
+5	6638	41		brtst 2, __RLSBError3, __RLSBIterations3
+5	6639	44		brtst 0, __RLSBError3, __RLSBResult3
+5	6640	47		brtst 4, __RLSBReadyToRead3, __RLSBResult3
+5	6642	50		wait 1
+5	6643	52		jmp __RLSBDoCheckStatus3
+5	6645	54		brtst 4, __RLSBReturn3, __RLSBytesCount3
+5	6646	57		arrinit __RLSReadBuf3, __constVal0, __RLSBytesCount3
+5	6648	61	#pragma macro 25
+5	6648	61		acquire __CLSRMutex3
+5	6648	62		set __CLSRArgs3.Port, 3
+5	6648	65		mov __CLSRArgs3.BufferLen, __RLSBytesCount3
+5	6648	67		syscall 22, __CLSRArgs3
+5	6648	70		mov __RLSReadBuf3, __CLSRArgs3.Buffer
+5	6648	72		mov __RLSBResult3, __CLSRArgs3.Result
+5	6648	74		release __CLSRMutex3
+5	6648	75	#line 6648 "NXTDefs.h"
+5	6649	75		brtst 5, __RLSBError3, __RLSBResult3
+5	6650	78		mov __RLSLastGoodRead3, __RLSReadBuf3
+5	6651	80		jmp __RLSBDone3
+5	6653	82		mov __RLSReadBuf3, __RLSLastGoodRead3
+5	6655	84		arrsize __RLSBytesCount3, __RLSReadBuf3
+5	6657	87		subret ____ReadLSBytes3_return
+6	57	0	#line 57 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	58	0		set __D0lerSensores, 1
+6	58	3	#line 58 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	59	3		tst 5, __D0lerSensores, __D0lerSensores
+6	58	6	#line 58 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	59	6		brtst 4, __ASM_Label_615, __D0lerSensores
+6	6921	9	#line 6921 "NXCDefs.h"
+6	6922	9	#pragma macro 6
+6	6922	9		mov __PointOutArgs.Location.X, __constVal200
+6	6922	11		mov __PointOutArgs.Location.Y, __constVal200
+6	6922	13		mov __PointOutArgs.Options, __constVal1
+6	6922	15		syscall 14, __PointOutArgs
+6	6365	18	#line 6365 "NXCDefs.h"
+6	6921	18	#line 6921 "NXCDefs.h"
+6	58	18	#line 58 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	59	18	#line 59 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	60	18		set __signed_stack_001lerSensores, 0
+6	59	21	#line 59 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	59	21	#line 59 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	60	21		set __signed_stack_002lerSensores, 56
+6	59	24	#line 59 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	59	24	#line 59 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	60	24		strcat __strbuflerSensores, __constStr0009
+6	59	28	#line 59 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	60	28		set __D0lerSensores, 0
+6	59	31	#line 59 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	59	31	#line 59 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	60	31		mov __TextOutArgs.Location.X, __signed_stack_001lerSensores
+6	59	33	#line 59 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	60	33		mov __TextOutArgs.Location.Y, __signed_stack_002lerSensores
+6	59	35	#line 59 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	60	35		mov __TextOutArgs.Options, __D0lerSensores
+6	59	37	#line 59 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	60	37		mov __TextOutArgs.Text, __strbuflerSensores
+6	59	39	#line 59 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	60	39		syscall 13, __TextOutArgs
+6	59	42	#line 59 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	59	42	#line 59 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	59	42	#line 59 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	60	42	#line 60 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	61	42		set __signed_stack_001lerSensores, 0
+6	60	45	#line 60 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	60	45	#line 60 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	61	45		set __signed_stack_002lerSensores, 48
+6	60	48	#line 60 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	60	48	#line 60 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	61	48	#pragma macro 24
+6	61	48		acquire __RLSBmutex2
+6	61	49		mov __RLSReadBuf2, __RLSBbufLSWrite1
+6	61	51		set __RLSBytesCount2, 1
+6	61	54		subcall __ReadLSBytes2, ____ReadLSBytes2_return
+6	61	56		index __D0lerSensores, __RLSReadBuf2, 65535
+6	61	60		release __RLSBmutex2
+6	6412	61	#line 6412 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	60	61	#line 60 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	61	61		mov __signed_stack_003lerSensores, __D0lerSensores
+6	60	63	#line 60 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	61	63		set __D0lerSensores, 0
+6	60	66	#line 60 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	60	66	#line 60 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	61	66		mov __TextOutArgs.Location.X, __signed_stack_001lerSensores
+6	60	68	#line 60 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	61	68		mov __TextOutArgs.Location.Y, __signed_stack_002lerSensores
+6	60	70	#line 60 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	61	70		mov __TextOutArgs.Options, __D0lerSensores
+6	60	72	#line 60 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	61	72		numtostr __TextOutArgs.Text, __signed_stack_003lerSensores
+6	60	75	#line 60 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	61	75		syscall 13, __TextOutArgs
+6	60	78	#line 60 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	60	78	#line 60 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	60	78	#line 60 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	60	78	#line 60 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	61	78	#line 61 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	62	78		set __signed_stack_001lerSensores, 0
+6	61	81	#line 61 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	61	81	#line 61 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	62	81		set __signed_stack_002lerSensores, 40
+6	61	84	#line 61 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	61	84	#line 61 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	62	84		strcat __strbuflerSensores, __constStr0010
+6	61	88	#line 61 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	62	88		set __D0lerSensores, 0
+6	61	91	#line 61 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	61	91	#line 61 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	62	91		mov __TextOutArgs.Location.X, __signed_stack_001lerSensores
+6	61	93	#line 61 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	62	93		mov __TextOutArgs.Location.Y, __signed_stack_002lerSensores
+6	61	95	#line 61 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	62	95		mov __TextOutArgs.Options, __D0lerSensores
+6	61	97	#line 61 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	62	97		mov __TextOutArgs.Text, __strbuflerSensores
+6	61	99	#line 61 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	62	99		syscall 13, __TextOutArgs
+6	61	102	#line 61 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	61	102	#line 61 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	61	102	#line 61 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	62	102	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	63	102		set __signed_stack_001lerSensores, 0
+6	62	105	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	62	105	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	63	105		set __signed_stack_002lerSensores, 32
+6	62	108	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	62	108	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	63	108	#pragma macro 24
+6	63	108		acquire __RLSBmutex3
+6	63	109		mov __RLSReadBuf3, __RLSBbufLSWrite1
+6	63	111		set __RLSBytesCount3, 1
+6	63	114		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+6	63	116		index __D0lerSensores, __RLSReadBuf3, 65535
+6	63	120		release __RLSBmutex3
+6	6485	121	#line 6485 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	62	121	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	63	121		mov __signed_stack_003lerSensores, __D0lerSensores
+6	62	123	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	63	123		set __D0lerSensores, 0
+6	62	126	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	62	126	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	63	126		mov __TextOutArgs.Location.X, __signed_stack_001lerSensores
+6	62	128	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	63	128		mov __TextOutArgs.Location.Y, __signed_stack_002lerSensores
+6	62	130	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	63	130		mov __TextOutArgs.Options, __D0lerSensores
+6	62	132	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	63	132		numtostr __TextOutArgs.Text, __signed_stack_003lerSensores
+6	62	135	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	63	135		syscall 13, __TextOutArgs
+6	62	138	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	62	138	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	62	138	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	62	138	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	63	138	#line 63 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	64	138		set __signed_stack_001lerSensores, 0
+6	63	141	#line 63 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	63	141	#line 63 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	64	141		set __signed_stack_002lerSensores, 24
+6	63	144	#line 63 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	63	144	#line 63 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	64	144		strcat __strbuflerSensores, __constStr0011
+6	63	148	#line 63 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	64	148		set __D0lerSensores, 0
+6	63	151	#line 63 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	63	151	#line 63 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	64	151		mov __TextOutArgs.Location.X, __signed_stack_001lerSensores
+6	63	153	#line 63 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	64	153		mov __TextOutArgs.Location.Y, __signed_stack_002lerSensores
+6	63	155	#line 63 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	64	155		mov __TextOutArgs.Options, __D0lerSensores
+6	63	157	#line 63 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	64	157		mov __TextOutArgs.Text, __strbuflerSensores
+6	63	159	#line 63 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	64	159		syscall 13, __TextOutArgs
+6	63	162	#line 63 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	63	162	#line 63 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	63	162	#line 63 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	64	162	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	65	162		set __signed_stack_001lerSensores, 0
+6	64	165	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	64	165	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	65	165		set __signed_stack_002lerSensores, 16
+6	64	168	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	64	168	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	65	168	#pragma macro 26
+6	65	168		acquire __RLSBmutex0
+6	65	169		mov __RLSReadBuf0, __RLSBbufLSWrite1
+6	65	171		set __RLSBytesCount0, 1
+6	65	174		waitv __constVal15
+6	65	176		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+6	65	178		index __D0lerSensores, __RLSReadBuf0, 65535
+6	65	182		release __RLSBmutex0
+6	6558	183	#line 6558 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	64	183	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	65	183		mov __signed_stack_003lerSensores, __D0lerSensores
+6	64	185	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	65	185		set __D0lerSensores, 0
+6	64	188	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	64	188	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	65	188		mov __TextOutArgs.Location.X, __signed_stack_001lerSensores
+6	64	190	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	65	190		mov __TextOutArgs.Location.Y, __signed_stack_002lerSensores
+6	64	192	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	65	192		mov __TextOutArgs.Options, __D0lerSensores
+6	64	194	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	65	194		numtostr __TextOutArgs.Text, __signed_stack_003lerSensores
+6	64	197	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	65	197		syscall 13, __TextOutArgs
+6	64	200	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	64	200	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	64	200	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	64	200	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	65	200	#line 65 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	66	200		set __signed_stack_001lerSensores, 0
+6	65	203	#line 65 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	65	203	#line 65 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	66	203		set __signed_stack_002lerSensores, 8
+6	65	206	#line 65 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	65	206	#line 65 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	66	206		strcat __strbuflerSensores, __constStr0012
+6	65	210	#line 65 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	66	210		set __D0lerSensores, 0
+6	65	213	#line 65 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	65	213	#line 65 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	66	213		mov __TextOutArgs.Location.X, __signed_stack_001lerSensores
+6	65	215	#line 65 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	66	215		mov __TextOutArgs.Location.Y, __signed_stack_002lerSensores
+6	65	217	#line 65 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	66	217		mov __TextOutArgs.Options, __D0lerSensores
+6	65	219	#line 65 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	66	219		mov __TextOutArgs.Text, __strbuflerSensores
+6	65	221	#line 65 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	66	221		syscall 13, __TextOutArgs
+6	65	224	#line 65 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	65	224	#line 65 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	65	224	#line 65 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	66	224	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	67	224		set __signed_stack_001lerSensores, 0
+6	66	227	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	66	227	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	67	227		set __signed_stack_002lerSensores, 0
+6	66	230	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	66	230	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	67	230	#pragma macro 26
+6	67	230		acquire __RLSBmutex1
+6	67	231		mov __RLSReadBuf1, __RLSBbufLSWrite1
+6	67	233		set __RLSBytesCount1, 1
+6	67	236		waitv __constVal15
+6	67	238		subcall __ReadLSBytes1, ____ReadLSBytes1_return
+6	67	240		index __D0lerSensores, __RLSReadBuf1, 65535
+6	67	244		release __RLSBmutex1
+6	6631	245	#line 6631 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	66	245	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	67	245		mov __signed_stack_003lerSensores, __D0lerSensores
+6	66	247	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	67	247		set __D0lerSensores, 0
+6	66	250	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	66	250	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	67	250		mov __TextOutArgs.Location.X, __signed_stack_001lerSensores
+6	66	252	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	67	252		mov __TextOutArgs.Location.Y, __signed_stack_002lerSensores
+6	66	254	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	67	254		mov __TextOutArgs.Options, __D0lerSensores
+6	66	256	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	67	256		numtostr __TextOutArgs.Text, __signed_stack_003lerSensores
+6	66	259	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	67	259		syscall 13, __TextOutArgs
+6	66	262	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	66	262	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	66	262	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	66	262	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	67	262	#line 67 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	68	262		set __Wait_7qG2_ms_7qG2_000_inline_lerSensores, 50
+6	67	265	#line 67 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	8869	265	#line 8869 "NXCDefs.h"
+6	8870	265		waitv __Wait_7qG2_ms_7qG2_000_inline_lerSensores
+6	8869	267	#line 8869 "NXCDefs.h"
+6	67	267	#line 67 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	74	267	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	75	267		jmp __ASM_Label_614
+6	74	269	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	74	269	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+6	75	269		subret __lerSensores_return
+7	85	0	#line 85 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+7	86	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 0
+7	85	3	#line 85 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+7	85	3	#line 85 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+7	86	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+7	4523	5	#line 4523 "NXCDefs.h"
+7	4524	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+7	4523	7	#line 4523 "NXCDefs.h"
+7	4523	7	#line 4523 "NXCDefs.h"
+7	4524	7		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+7	4523	9	#line 4523 "NXCDefs.h"
+7	4524	9		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+7	4523	12	#line 4523 "NXCDefs.h"
+7	4524	12		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+7	4523	15	#line 4523 "NXCDefs.h"
+7	4524	15		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+7	4523	18	#line 4523 "NXCDefs.h"
+7	4523	18	#line 4523 "NXCDefs.h"
+7	4524	18		jmp __004__ASM_Label_37
+7	4523	20	#line 4523 "NXCDefs.h"
+7	4524	20		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+7	4523	23	#line 4523 "NXCDefs.h"
+7	4523	23	#line 4523 "NXCDefs.h"
+7	4524	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+7	4428	25	#line 4428 "NXCDefs.h"
+7	4429	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+7	4428	29	#line 4428 "NXCDefs.h"
+7	4523	29	#line 4523 "NXCDefs.h"
+7	4524	29	#line 4524 "NXCDefs.h"
+7	4525	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+7	4524	31	#line 4524 "NXCDefs.h"
+7	4524	31	#line 4524 "NXCDefs.h"
+7	4525	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+7	4524	34	#line 4524 "NXCDefs.h"
+7	4441	34	#line 4441 "NXCDefs.h"
+7	4442	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+7	4441	38	#line 4441 "NXCDefs.h"
+7	4524	38	#line 4524 "NXCDefs.h"
+7	4525	38	#line 4525 "NXCDefs.h"
+7	4526	38		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+7	4525	40	#line 4525 "NXCDefs.h"
+7	4459	40	#line 4459 "NXCDefs.h"
+7	4460	40	#pragma macro 4
+7	4460	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+7	4460	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+7	6781	44	#line 6781 "NXCDefs.h"
+7	4459	44	#line 4459 "NXCDefs.h"
+7	4525	44	#line 4525 "NXCDefs.h"
+7	85	44	#line 85 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+7	86	44	#line 86 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+7	87	44		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 1
+7	86	47	#line 86 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+7	86	47	#line 86 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+7	87	47		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+7	4523	49	#line 4523 "NXCDefs.h"
+7	4524	49		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+7	4523	51	#line 4523 "NXCDefs.h"
+7	4523	51	#line 4523 "NXCDefs.h"
+7	4524	51		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+7	4523	53	#line 4523 "NXCDefs.h"
+7	4524	53		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+7	4523	56	#line 4523 "NXCDefs.h"
+7	4524	56		brtst 4, __005__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+7	4523	59	#line 4523 "NXCDefs.h"
+7	4524	59		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+7	4523	62	#line 4523 "NXCDefs.h"
+7	4523	62	#line 4523 "NXCDefs.h"
+7	4524	62		jmp __005__ASM_Label_37
+7	4523	64	#line 4523 "NXCDefs.h"
+7	4524	64		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+7	4523	67	#line 4523 "NXCDefs.h"
+7	4523	67	#line 4523 "NXCDefs.h"
+7	4524	67		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+7	4428	69	#line 4428 "NXCDefs.h"
+7	4429	69		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+7	4428	73	#line 4428 "NXCDefs.h"
+7	4523	73	#line 4523 "NXCDefs.h"
+7	4524	73	#line 4524 "NXCDefs.h"
+7	4525	73		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+7	4524	75	#line 4524 "NXCDefs.h"
+7	4524	75	#line 4524 "NXCDefs.h"
+7	4525	75		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+7	4524	78	#line 4524 "NXCDefs.h"
+7	4441	78	#line 4441 "NXCDefs.h"
+7	4442	78		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+7	4441	82	#line 4441 "NXCDefs.h"
+7	4524	82	#line 4524 "NXCDefs.h"
+7	4525	82	#line 4525 "NXCDefs.h"
+7	4526	82		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+7	4525	84	#line 4525 "NXCDefs.h"
+7	4459	84	#line 4459 "NXCDefs.h"
+7	4460	84	#pragma macro 4
+7	4460	84		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+7	4460	86		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+7	6844	88	#line 6844 "NXCDefs.h"
+7	4459	88	#line 4459 "NXCDefs.h"
+7	4525	88	#line 4525 "NXCDefs.h"
+7	86	88	#line 86 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+7	87	88	#line 87 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+7	88	88		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 2
+7	87	91	#line 87 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+7	87	91	#line 87 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+7	88	91		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+7	4523	93	#line 4523 "NXCDefs.h"
+7	4524	93		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+7	4523	95	#line 4523 "NXCDefs.h"
+7	4523	95	#line 4523 "NXCDefs.h"
+7	4524	95		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+7	4523	97	#line 4523 "NXCDefs.h"
+7	4524	97		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+7	4523	100	#line 4523 "NXCDefs.h"
+7	4524	100		brtst 4, __006__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+7	4523	103	#line 4523 "NXCDefs.h"
+7	4524	103		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+7	4523	106	#line 4523 "NXCDefs.h"
+7	4523	106	#line 4523 "NXCDefs.h"
+7	4524	106		jmp __006__ASM_Label_37
+7	4523	108	#line 4523 "NXCDefs.h"
+7	4524	108		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+7	4523	111	#line 4523 "NXCDefs.h"
+7	4523	111	#line 4523 "NXCDefs.h"
+7	4524	111		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+7	4428	113	#line 4428 "NXCDefs.h"
+7	4429	113		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+7	4428	117	#line 4428 "NXCDefs.h"
+7	4523	117	#line 4523 "NXCDefs.h"
+7	4524	117	#line 4524 "NXCDefs.h"
+7	4525	117		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+7	4524	119	#line 4524 "NXCDefs.h"
+7	4524	119	#line 4524 "NXCDefs.h"
+7	4525	119		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+7	4524	122	#line 4524 "NXCDefs.h"
+7	4441	122	#line 4441 "NXCDefs.h"
+7	4442	122		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+7	4441	126	#line 4441 "NXCDefs.h"
+7	4524	126	#line 4524 "NXCDefs.h"
+7	4525	126	#line 4525 "NXCDefs.h"
+7	4526	126		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+7	4525	128	#line 4525 "NXCDefs.h"
+7	4459	128	#line 4459 "NXCDefs.h"
+7	4460	128	#pragma macro 4
+7	4460	128		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+7	4460	130		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+7	6907	132	#line 6907 "NXCDefs.h"
+7	4459	132	#line 4459 "NXCDefs.h"
+7	4525	132	#line 4525 "NXCDefs.h"
+7	87	132	#line 87 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+7	88	132	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+7	89	132		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 3
+7	88	135	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+7	88	135	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+7	89	135		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+7	4523	137	#line 4523 "NXCDefs.h"
+7	4524	137		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+7	4523	139	#line 4523 "NXCDefs.h"
+7	4523	139	#line 4523 "NXCDefs.h"
+7	4524	139		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+7	4523	141	#line 4523 "NXCDefs.h"
+7	4524	141		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+7	4523	144	#line 4523 "NXCDefs.h"
+7	4524	144		brtst 4, __007__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+7	4523	147	#line 4523 "NXCDefs.h"
+7	4524	147		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+7	4523	150	#line 4523 "NXCDefs.h"
+7	4523	150	#line 4523 "NXCDefs.h"
+7	4524	150		jmp __007__ASM_Label_37
+7	4523	152	#line 4523 "NXCDefs.h"
+7	4524	152		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+7	4523	155	#line 4523 "NXCDefs.h"
+7	4523	155	#line 4523 "NXCDefs.h"
+7	4524	155		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+7	4428	157	#line 4428 "NXCDefs.h"
+7	4429	157		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+7	4428	161	#line 4428 "NXCDefs.h"
+7	4523	161	#line 4523 "NXCDefs.h"
+7	4524	161	#line 4524 "NXCDefs.h"
+7	4525	161		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+7	4524	163	#line 4524 "NXCDefs.h"
+7	4524	163	#line 4524 "NXCDefs.h"
+7	4525	163		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+7	4524	166	#line 4524 "NXCDefs.h"
+7	4441	166	#line 4441 "NXCDefs.h"
+7	4442	166		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+7	4441	170	#line 4441 "NXCDefs.h"
+7	4524	170	#line 4524 "NXCDefs.h"
+7	4525	170	#line 4525 "NXCDefs.h"
+7	4526	170		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+7	4525	172	#line 4525 "NXCDefs.h"
+7	4459	172	#line 4459 "NXCDefs.h"
+7	4460	172	#pragma macro 4
+7	4460	172		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+7	4460	174		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+7	6970	176	#line 6970 "NXCDefs.h"
+7	4459	176	#line 4459 "NXCDefs.h"
+7	4525	176	#line 4525 "NXCDefs.h"
+7	88	176	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+7	92	176	#line 92 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+7	93	176		subret __inicializaSensores_return
+8	93	0	#line 93 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc"
+8	94	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc
+1	__ResetSensorSubroutine	9	NXTDefs.h
+2	__ReadLSBytes0	22	NXTDefs.h
+3	__ReadLSBytes1	111	NXTDefs.h
+4	__ReadLSBytes2	200	NXTDefs.h
+5	__ReadLSBytes3	289	NXTDefs.h
+6	lerSensores	378	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc
+7	inicializaSensores	649	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc
+8	__initialize_global_data	827	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\executivoSensoresLeitura.nxc
