@@ -1,0 +1,320 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0SetSensorLowspeed_inline_inicializaSensores	6	1	0	4	12
+1	__D0vira	6	1	4	4	9
+2	__D0distanciaGiro	6	1	8	4	2
+3	__signed_stack_001vira	6	1	12	4	6
+4	__signed_stack_001distanciaGiro	6	1	16	4	2
+5	__DU0SetSensorLowspeed_inline_inicializaSensores	5	1	20	4	8
+6	__distanciaGiro_7qG2_grau_7qG2_000	4	1	24	2	2
+7	__constVal172	4	0	26	2	1
+8	__constVal1420	4	0	28	2	1
+9	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	30	1	8
+10	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	31	1	4
+11	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	32	1	8
+12	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	33	1	8
+13	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	34	1	8
+14	__vira_return	1	1	35	1	3
+15	____initialize_global_data_return	1	1	36	1	3
+16	__distanciaGiro_return	1	1	37	1	4
+17	__constVal96	2	0	38	1	4
+18	__constVal63	2	0	39	1	4
+19	__ResetSensorPort	1	1	40	1	6
+20	__zfvira	1	1	41	1	3
+21	__constVal3	2	0	42	1	4
+22	____ResetSensorSubroutine_return	1	1	43	1	6
+23	__constVal2	2	0	44	1	1
+24	__ResetSensorTmp	1	1	45	1	2
+25	__constVal0	2	1	46	1	17
+26	__inicializaSensores_return	1	1	47	1	3
+27	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	48	1	20
+28	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores	1	1	49	1	8
+29	__zfSetSensorLowspeed_inline_inicializaSensores	1	1	50	1	8
+30	__constVal1	2	0	51	1	8
+31	__constVal32	2	0	52	1	12
+#SOURCES
+Clump	Line	PC	Source
+0	107	0	#line 107 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	108	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	107	2	#line 107 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	108	2	#line 108 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	109	2		subcall inicializaSensores, __inicializaSensores_return
+0	108	4	#line 108 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	108	4	#line 108 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	108	4	#line 108 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	109	4	#line 109 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	110	4		subcall vira, __vira_return
+0	109	6	#line 109 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	110	6		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	43	0	#line 43 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	44	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 0
+2	43	3	#line 43 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	44	3	#line 44 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	45	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+2	3758	5	#line 3758 "NXCDefs.h"
+2	3759	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3758	7	#line 3758 "NXCDefs.h"
+2	3758	7	#line 3758 "NXCDefs.h"
+2	3759	7		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+2	3758	9	#line 3758 "NXCDefs.h"
+2	3759	9		tst 5, __zfSetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+2	3758	12	#line 3758 "NXCDefs.h"
+2	3759	12		brtst 4, __004__NXC_Label_36, __zfSetSensorLowspeed_inline_inicializaSensores
+2	3758	15	#line 3758 "NXCDefs.h"
+2	3759	15		set __D0SetSensorLowspeed_inline_inicializaSensores, 11
+2	3758	18	#line 3758 "NXCDefs.h"
+2	3759	18		jmp __004__NXC_Label_37
+2	3758	20	#line 3758 "NXCDefs.h"
+2	3759	20		set __D0SetSensorLowspeed_inline_inicializaSensores, 10
+2	3758	23	#line 3758 "NXCDefs.h"
+2	3759	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __D0SetSensorLowspeed_inline_inicializaSensores
+2	3663	25	#line 3663 "NXCDefs.h"
+2	3664	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+2	3663	29	#line 3663 "NXCDefs.h"
+2	3759	29	#line 3759 "NXCDefs.h"
+2	3759	29	#line 3759 "NXCDefs.h"
+2	3760	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3759	31	#line 3759 "NXCDefs.h"
+2	3759	31	#line 3759 "NXCDefs.h"
+2	3760	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+2	3759	34	#line 3759 "NXCDefs.h"
+2	3676	34	#line 3676 "NXCDefs.h"
+2	3677	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+2	3676	38	#line 3676 "NXCDefs.h"
+2	3760	38	#line 3760 "NXCDefs.h"
+2	3760	38	#line 3760 "NXCDefs.h"
+2	3761	38		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3760	40	#line 3760 "NXCDefs.h"
+2	3694	40	#line 3694 "NXCDefs.h"
+2	3695	40	#pragma macro 4
+2	3695	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3695	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+2	6274	44	#line 6274 "NXCDefs.h"
+2	3694	44	#line 3694 "NXCDefs.h"
+2	3761	44	#line 3761 "NXCDefs.h"
+2	44	44	#line 44 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	44	44	#line 44 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	45	44		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 1
+2	44	47	#line 44 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	45	47	#line 45 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	46	47		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+2	3758	49	#line 3758 "NXCDefs.h"
+2	3759	49		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3758	51	#line 3758 "NXCDefs.h"
+2	3758	51	#line 3758 "NXCDefs.h"
+2	3759	51		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+2	3758	53	#line 3758 "NXCDefs.h"
+2	3759	53		tst 5, __zfSetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+2	3758	56	#line 3758 "NXCDefs.h"
+2	3759	56		brtst 4, __005__NXC_Label_36, __zfSetSensorLowspeed_inline_inicializaSensores
+2	3758	59	#line 3758 "NXCDefs.h"
+2	3759	59		set __D0SetSensorLowspeed_inline_inicializaSensores, 11
+2	3758	62	#line 3758 "NXCDefs.h"
+2	3759	62		jmp __005__NXC_Label_37
+2	3758	64	#line 3758 "NXCDefs.h"
+2	3759	64		set __D0SetSensorLowspeed_inline_inicializaSensores, 10
+2	3758	67	#line 3758 "NXCDefs.h"
+2	3759	67		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __D0SetSensorLowspeed_inline_inicializaSensores
+2	3663	69	#line 3663 "NXCDefs.h"
+2	3664	69		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+2	3663	73	#line 3663 "NXCDefs.h"
+2	3759	73	#line 3759 "NXCDefs.h"
+2	3759	73	#line 3759 "NXCDefs.h"
+2	3760	73		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3759	75	#line 3759 "NXCDefs.h"
+2	3759	75	#line 3759 "NXCDefs.h"
+2	3760	75		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+2	3759	78	#line 3759 "NXCDefs.h"
+2	3676	78	#line 3676 "NXCDefs.h"
+2	3677	78		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+2	3676	82	#line 3676 "NXCDefs.h"
+2	3760	82	#line 3760 "NXCDefs.h"
+2	3760	82	#line 3760 "NXCDefs.h"
+2	3761	82		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3760	84	#line 3760 "NXCDefs.h"
+2	3694	84	#line 3694 "NXCDefs.h"
+2	3695	84	#pragma macro 4
+2	3695	84		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3695	86		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+2	6341	88	#line 6341 "NXCDefs.h"
+2	3694	88	#line 3694 "NXCDefs.h"
+2	3761	88	#line 3761 "NXCDefs.h"
+2	45	88	#line 45 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	45	88	#line 45 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	46	88		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 2
+2	45	91	#line 45 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	46	91	#line 46 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	47	91		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+2	3758	93	#line 3758 "NXCDefs.h"
+2	3759	93		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3758	95	#line 3758 "NXCDefs.h"
+2	3758	95	#line 3758 "NXCDefs.h"
+2	3759	95		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+2	3758	97	#line 3758 "NXCDefs.h"
+2	3759	97		tst 5, __zfSetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+2	3758	100	#line 3758 "NXCDefs.h"
+2	3759	100		brtst 4, __006__NXC_Label_36, __zfSetSensorLowspeed_inline_inicializaSensores
+2	3758	103	#line 3758 "NXCDefs.h"
+2	3759	103		set __D0SetSensorLowspeed_inline_inicializaSensores, 11
+2	3758	106	#line 3758 "NXCDefs.h"
+2	3759	106		jmp __006__NXC_Label_37
+2	3758	108	#line 3758 "NXCDefs.h"
+2	3759	108		set __D0SetSensorLowspeed_inline_inicializaSensores, 10
+2	3758	111	#line 3758 "NXCDefs.h"
+2	3759	111		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __D0SetSensorLowspeed_inline_inicializaSensores
+2	3663	113	#line 3663 "NXCDefs.h"
+2	3664	113		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+2	3663	117	#line 3663 "NXCDefs.h"
+2	3759	117	#line 3759 "NXCDefs.h"
+2	3759	117	#line 3759 "NXCDefs.h"
+2	3760	117		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3759	119	#line 3759 "NXCDefs.h"
+2	3759	119	#line 3759 "NXCDefs.h"
+2	3760	119		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+2	3759	122	#line 3759 "NXCDefs.h"
+2	3676	122	#line 3676 "NXCDefs.h"
+2	3677	122		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+2	3676	126	#line 3676 "NXCDefs.h"
+2	3760	126	#line 3760 "NXCDefs.h"
+2	3760	126	#line 3760 "NXCDefs.h"
+2	3761	126		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3760	128	#line 3760 "NXCDefs.h"
+2	3694	128	#line 3694 "NXCDefs.h"
+2	3695	128	#pragma macro 4
+2	3695	128		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3695	130		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+2	6408	132	#line 6408 "NXCDefs.h"
+2	3694	132	#line 3694 "NXCDefs.h"
+2	3761	132	#line 3761 "NXCDefs.h"
+2	46	132	#line 46 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	46	132	#line 46 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	47	132		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 3
+2	46	135	#line 46 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	47	135	#line 47 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	48	135		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+2	3758	137	#line 3758 "NXCDefs.h"
+2	3759	137		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3758	139	#line 3758 "NXCDefs.h"
+2	3758	139	#line 3758 "NXCDefs.h"
+2	3759	139		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+2	3758	141	#line 3758 "NXCDefs.h"
+2	3759	141		tst 5, __zfSetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+2	3758	144	#line 3758 "NXCDefs.h"
+2	3759	144		brtst 4, __007__NXC_Label_36, __zfSetSensorLowspeed_inline_inicializaSensores
+2	3758	147	#line 3758 "NXCDefs.h"
+2	3759	147		set __D0SetSensorLowspeed_inline_inicializaSensores, 11
+2	3758	150	#line 3758 "NXCDefs.h"
+2	3759	150		jmp __007__NXC_Label_37
+2	3758	152	#line 3758 "NXCDefs.h"
+2	3759	152		set __D0SetSensorLowspeed_inline_inicializaSensores, 10
+2	3758	155	#line 3758 "NXCDefs.h"
+2	3759	155		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __D0SetSensorLowspeed_inline_inicializaSensores
+2	3663	157	#line 3663 "NXCDefs.h"
+2	3664	157		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+2	3663	161	#line 3663 "NXCDefs.h"
+2	3759	161	#line 3759 "NXCDefs.h"
+2	3759	161	#line 3759 "NXCDefs.h"
+2	3760	161		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3759	163	#line 3759 "NXCDefs.h"
+2	3759	163	#line 3759 "NXCDefs.h"
+2	3760	163		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+2	3759	166	#line 3759 "NXCDefs.h"
+2	3676	166	#line 3676 "NXCDefs.h"
+2	3677	166		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+2	3676	170	#line 3676 "NXCDefs.h"
+2	3760	170	#line 3760 "NXCDefs.h"
+2	3760	170	#line 3760 "NXCDefs.h"
+2	3761	170		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3760	172	#line 3760 "NXCDefs.h"
+2	3694	172	#line 3694 "NXCDefs.h"
+2	3695	172	#pragma macro 4
+2	3695	172		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3695	174		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+2	6475	176	#line 6475 "NXCDefs.h"
+2	3694	176	#line 3694 "NXCDefs.h"
+2	3761	176	#line 3761 "NXCDefs.h"
+2	47	176	#line 47 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	49	176	#line 49 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	50	176		subret __inicializaSensores_return
+3	91	0	#line 91 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	91	0	#line 91 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	91	0	#line 91 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	91	0	#line 91 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	92	0		mul __signed_stack_001distanciaGiro, __distanciaGiro_7qG2_grau_7qG2_000, __constVal172
+3	91	4	#line 91 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	91	4	#line 91 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	91	4	#line 91 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	92	4		div __D0distanciaGiro, __signed_stack_001distanciaGiro, __constVal1420
+3	92	8	#line 92 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	93	8		subret __distanciaGiro_return
+3	92	10	#line 92 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	94	10	#line 94 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	95	10		subret __distanciaGiro_return
+4	95	0	#line 95 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	96	0		set __D0vira, 90
+4	96	3	#line 96 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	97	3	#pragma macro 7
+4	97	3		setout __constVal1, 2, __D0vira, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	6761	26	#line 6761 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	96	26	#line 96 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	96	26	#line 96 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	97	26		set __D0vira, -90
+4	98	29	#line 98 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	99	29	#pragma macro 7
+4	99	29		setout __constVal0, 2, __D0vira, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	6768	52	#line 6768 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	98	52	#line 98 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	98	52	#line 98 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	99	52		getout __signed_stack_001vira, __constVal1, 4
+4	98	56	#line 98 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	98	56	#line 98 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	99	56		getout __D0vira, __constVal0, 4
+4	98	60	#line 98 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	99	60		sub __signed_stack_001vira, __signed_stack_001vira, __D0vira
+4	98	64	#line 98 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	98	64	#line 98 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	98	64	#line 98 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	99	64		div __distanciaGiro_7qG2_grau_7qG2_000, __signed_stack_001vira, __constVal2
+4	98	68	#line 98 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	98	68	#line 98 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	99	68		subcall distanciaGiro, __distanciaGiro_return
+4	98	70	#line 98 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	99	70		mov __signed_stack_001vira, __D0distanciaGiro
+4	98	72	#line 98 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	99	72	#line 99 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	100	72		set __D0vira, 90
+4	99	75	#line 99 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	100	75		cmp 0, __zfvira, __signed_stack_001vira, __D0vira
+4	99	79	#line 99 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	100	79		mov __D0vira, __zfvira
+4	101	81	#line 101 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	102	81		brtst 4, __NXC_Label_674, __zfvira
+4	102	84	#line 102 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	103	84		jmp __NXC_Label_673
+4	102	86	#line 102 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	103	86	#line 103 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	104	86	#pragma macro 7
+4	104	86		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	6812	109	#line 6812 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	103	109	#line 103 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	104	109	#line 104 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	105	109	#pragma macro 7
+4	105	109		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	6815	132	#line 6815 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	104	132	#line 104 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	106	132	#line 106 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	107	132		subret __vira_return
+5	112	0	#line 112 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+5	113	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\natia\AppData\Local\Temp\temp.nxc
+1	__ResetSensorSubroutine	9	NXTDefs.h
+2	inicializaSensores	22	C:\Users\natia\AppData\Local\Temp\temp.nxc
+3	distanciaGiro	200	C:\Users\natia\AppData\Local\Temp\temp.nxc
+4	vira	212	C:\Users\natia\AppData\Local\Temp\temp.nxc
+5	__initialize_global_data	346	C:\Users\natia\AppData\Local\Temp\temp.nxc

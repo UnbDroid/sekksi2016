@@ -1,8 +1,8 @@
 /*
-    Codigo da equipe KSI da SEK 2016 do cérebro EXECUTIVO
+    Codigo da equipe KSI da SEK 2016 do cÃ©rebro EXECUTIVO
     */
 
-//Funcoes necessarias:
+//Funcoes necessarias
 /*
   - Andar reto
   - Curva 90 graus
@@ -171,7 +171,7 @@ void retoParedeSel(int direcao)
       old_d = d;
       d = SensorUS(USD);
 
-      //Chama funcao bluetooth pra saber se vira, ou então para
+      //Chama funcao bluetooth pra saber se vira, ou entÃ£o para
       if(comunicaBlue()==1){//viu Parede ou boneco com USFRENTE
         if(direcao == direita)
           vira(esquerda);
