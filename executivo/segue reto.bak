@@ -34,8 +34,13 @@
 int my_tc_d;
 int my_tc_e;
 
+// DECLARAÇÃO DE FUNÇÕES
 int distanciaTachoCount(int grau);
-
+void andaRetoDireita(int dist);
+void inicializaSensores();
+int distanciaGiro(int grau);
+void viraEsq(int angulo);
+void viraDir(int angulo);
 
 
 
@@ -47,52 +52,48 @@ void inicializaSensores()
   SetSensorLowspeed(HTE);
 }
 
-void andaRetoDireita(int dist){
-	int distanciaAtual, potd, pote;
-	my_tc_d = 0;
-	my_tc_e = 0;
+void andaRetoDireita(int dist){ // função que faz o robô andar à distância "dist" recebida
+	   int distanciaAtual, potd, pote;
+	   my_tc_d = 0;
+	   my_tc_e = 0;
 
-
-	while(distanciaTachoCount((my_tc_d + my_tc_e)/2)<10000){
-		distanciaAtual = SensorUS(USD);
+	   while(distanciaTachoCount((my_tc_d + my_tc_e)/2) < 10000){
+	 	   distanciaAtual = SensorUS(USD);
 		
-		if (distanciaAtual == dist){
-			potd = 90;
-			pote = 90;
-		}
-		else if(distanciaAtual > dist){
-			pote = 90;
-			potd = 70;
-		}
-		else if(distanciaAtual < dist){
-			pote = 70;
-			potd = 90;
-		}
+		   if (distanciaAtual == dist){
+			   potd = 90;
+			   pote = 90;
+		   }
+		   else if(distanciaAtual > dist){
+			   pote = 90;
+			   potd = 70;
+		   }
+		   else if(distanciaAtual < dist){
+			   pote = 70;
+		   	 potd = 90;
+		   }
 
-    my_tc_d += MotorTachoCount(MD);
-		OnFwd(MD, potd);
-		my_tc_e += MotorTachoCount(ME);
-		OnFwd(ME, pote);
+       my_tc_d += MotorTachoCount(MD);
+		   OnFwd(MD, potd);
+		   my_tc_e += MotorTachoCount(ME);
+	   	 OnFwd(ME, pote);
 
+	   }
 
-	}
-
-	
-	Off(MD);
-	Off(ME);
-
+	   Off(MD);
+	   Off(ME);
 
 }
 
 int distanciaTachoCount(int grau){
-	return (3*grau);                   //Distancia a ser percorrid/Raio da roda
+	   return (3*grau);                   //Distancia a ser percorrid/Raio da roda
 }
 
 int distanciaGiro(int grau){
-	return (((grau*172)/1420)); // COMO FOI FEITA ESSA CONVERSÃO??   No chute mesmo
+	   return (((grau*172)/1420)); // COMO FOI FEITA ESSA CONVERSÃO???
 }
 
-void viraEsq(int angulo){ // função que gira para a Esq o ângulo recebido
+void viraEsq(int angulo){ // função que faz o robô girar para a esquerda o ângulo recebido
      OnFwd(MD, 90);
      OnFwd(ME, -90);
 
@@ -104,7 +105,7 @@ void viraEsq(int angulo){ // função que gira para a Esq o ângulo recebido
      Off(ME);
 }
 
-void viraDir(int angulo){ // função que gira para a direita o ângulo recebido
+void viraDir(int angulo){ // função que faz o robô girar para a direita o ângulo recebido
      OnFwd(MD, -90);
      OnFwd(ME, 90);
 
@@ -117,6 +118,6 @@ void viraDir(int angulo){ // função que gira para a direita o ângulo recebido
 }
 
 task main(){
-	inicializaSensores();
-  vira(90);
+	   inicializaSensores();
+     andaRetoDireita(20);
 }
