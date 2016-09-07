@@ -1,3 +1,5 @@
+//ComunicaBluetooth
+
 //MACROS
 //PARAMETROS (REGULAR!!!! SEMPRE!!!!!)
 
@@ -30,7 +32,8 @@
 
 #define BT_CONN 1
 #define INBOX 1
-#define OUTBOX 
+#define OUTBOX 2
+
 #define VALOR_BOOL 1
 #define PORTA_EXECUTIVO 1
 #define APAGA_NAOAPAGA true //apaga valor do bluetooth depois de ler, usado na ReceiveRemoteBool
@@ -45,10 +48,6 @@ int my_tc_e;
 
 int distanciaTachoCount(int grau);
 void inicializaSensores(void);
-void andaRetoDireita(int dist);
-int distanciaTachoCount(int grau);
-int distanciaGiro(int grau);
-void vira(int angulo);
 bool BTCheck(int conn);
 void ConectaBT(void);
 
@@ -76,24 +75,22 @@ void ConectaBT()
      {
           SysCommBTConnection(DADOS_BT);
           Wait(2000);
-     }while(!BluetoothStatus(conn)==NO_ERR)/**/
+     }while(!BluetoothStatus(1)==NO_ERR)/**/
 //sugestão a ser acrescentada: colocar um contador de tempo, para que, caso a conexão
 //demore tempo demais a ser criada, ambos os cérebros comecem suas rotinas independentemente
+
+
 }
-
-
-
-
-
 
 bool recebeUSFRENTE(){
 	//SendRemoteBool(PORTA_EXECUTIVO, VALOR_BUFFER, VALOR_BOOL);
-	byte valor = 0;
+	byte valor;
 	ReceiveRemoteNumber(PORTA_EXECUTIVO, APAGA_NAOAPAGA, valor);
+  NumOut(0, LCD_LINE1, valor);
 	if (valor == 1)
 		return true;
-	else 
-		return false; 
+	else
+		return false;
 }
 
 //=====================================
@@ -105,59 +102,28 @@ void inicializaSensores()
   SetSensorLowspeed(HTE);
 }
 
-void andaRetoDireita(int dist){
-	int distanciaAtual, potd, pote;
-	my_tc_d = 0;
-	my_tc_e = 0;
+task main(){
 
+	inicializaSensores();
 
-	while(distanciaTachoCount((my_tc_d + my_tc_e)/2)<10000){
-		distanciaAtual = SensorUS(USD);
-		
-		if (distanciaAtual == dist){
-			potd = 90;
-			pote = 90;
-		}
-		else if(distanciaAtual > dist){
-			pote = 90;
-			potd = 70;
-		}
-		else if(distanciaAtual < dist){
-			pote = 70;
-			potd = 90;
-		}
+	ConectaBT();
 
-    my_tc_d += MotorTachoCount(MD);
-		OnFwd(MD, potd);
-		my_tc_e += MotorTachoCount(ME);
-		OnFwd(ME, pote);
+  SendRemoteNumber(BT_CONN, OUTBOX, 1);
+
+  while(true){
+  /*if(!BTCheck(1)){
+		do{
+			ConectaBT();
+			SendRemoteBool(BT_CONN, OUTBOX, 1);
+		}while(!BTCheck(1));
+	} */
+
+	OnFwd(MD, 90);
+	OnFwd(ME, 90);
+	while(recebeUSFRENTE() == false){
+	}
+	OffEx(MD,0);
+	OffEx(ME,0);
 	}
 
-	Off(MD);
-	Off(ME);
-}
-
-int distanciaTachoCount(int grau){
-	return (3*grau);
-}
-
-int distanciaGiro(int grau){
-	return (((grau*172)/1420));
-}
-
-void vira(int angulo){
-     OnFwd(MD, 90);
-     OnFwd(ME, -90);
-
-     while(distanciaGiro((MotorTachoCount(MD) - MotorTachoCount(ME))/2) < 1800)
-     {
-      //lol
-     }
-     Off(MD);
-     Off(ME);
-}
-
-task main(){
-	inicializaSensores();
-  vira(90);
 }

@@ -36,8 +36,8 @@
 
 
 //SENSORES E MOTORES
-#define MD OUT_A //motor da direita
-#define ME OUT_B //motor da esquerda
+#define MD OUT_B //motor da direita
+#define ME OUT_A //motor da esquerda
 #define MP OUT_C //motor da porta
 #define USD IN_1 //Utrasonico da direita
 #define USE IN_2 //Utrasonico da esquerda
@@ -89,6 +89,8 @@ bool BTCheck(int conn){
  return true;
  }
 }
+
+
 
 //funcao principal
 task main()

@@ -1,0 +1,522 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0SetSensorLowspeed_inline_inicializaSensores	6	1	0	4	4
+1	__DU0recebeUSFRENTE	5	1	4	4	5
+2	__D0SetSensorLowspeed_inline_SetSensorUltrasonic	6	1	8	4	4
+3	__DU0SetSensorLowspeed_inline_inicializaSensores	5	1	12	4	10
+4	__D0ConectaBT	6	1	16	4	6
+5	__SRSTmpLongVal	6	1	20	4	2
+6	__D0recebeUSFRENTE	6	1	24	4	5
+7	__D0main	6	1	28	4	14
+8	__unsigned_stack_001recebeUSFRENTE	5	1	32	4	2
+9	__signed_stack_002recebeUSFRENTE	6	1	36	4	2
+10	__Wait_7qG2_ms_7qG2_000_inline_recebeUSFRENTE	5	1	40	4	2
+11	__Wait_7qG2_ms_7qG2_000_inline_ConectaBT	5	1	44	4	2
+12	__signed_stack_001ConectaBT	6	1	48	4	2
+13	__DU0SetSensorLowspeed_inline_SetSensorUltrasonic	5	1	52	4	10
+14	__signed_stack_001recebeUSFRENTE	6	1	56	4	2
+15	__unsigned_stack_001main	5	1	60	4	2
+16	__CBTCSMutex	9	0	64	4	2
+17	__RRNTmpVal	6	1	68	4	4
+18	__TextOutMutex	9	0	72	4	2
+19	__inicializaSensores_return	1	1	76	1	3
+20	__constVal32	2	0	77	1	12
+21	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	78	1	4
+22	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_inicializaSensores	1	1	79	1	10
+23	__SetSensorUltrasonic_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	80	1	4
+24	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	81	1	4
+25	__ConectaBT_return	1	1	82	1	3
+26	__constVal1	2	0	83	1	13
+27	__recebeUSFRENTE_7qG2_valor_7qG2_000	1	1	84	1	3
+28	__recebeUSFRENTE_return	1	1	85	1	5
+29	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_inicializaSensores	1	1	86	1	2
+30	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_inicializaSensores	1	1	87	1	4
+31	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	88	1	10
+32	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	89	1	4
+33	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores	1	1	90	1	4
+34	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	91	1	4
+35	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_inicializaSensores	1	1	92	1	4
+36	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_inicializaSensores	1	1	93	1	4
+37	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_inicializaSensores	1	1	94	1	4
+38	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_inicializaSensores	1	1	95	1	4
+39	__constVal63	2	0	96	1	2
+40	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	97	1	2
+41	__constVal23	2	0	98	1	2
+42	__constVal2	2	0	99	1	2
+43	____initialize_global_data_return	1	1	100	1	3
+44	__constVal96	2	0	101	1	4
+45	__RRNErr	1	1	102	1	1
+46	__WFRRTmpByte	1	1	103	1	2
+47	__constVal4	2	0	104	1	2
+48	__constVal3	2	0	105	1	5
+49	__constVal0	2	1	106	1	17
+50	__constVal5	2	0	107	1	1
+51	____ResetSensorSubroutine_return	1	1	108	1	6
+52	__ResetSensorTmp	1	1	109	1	2
+53	__ResetSensorPort	1	1	110	1	6
+54	__CBTWArgs	8	0	3	8	4
+55	__CBTWArgs.Result	2	1	112	1	4
+56	__CBTWArgs.Connection	1	1	113	1	4
+57	__CBTWArgs.Buffer	7	0	114	4	4
+58	__CBTWArgs.Buffer.Buffer_type	1	0	0	1	0
+59	__CBTCSArgs	8	0	2	4	3
+60	__CBTCSArgs.Result	2	1	116	1	3
+61	__CBTCSArgs.Connection	1	1	117	1	3
+62	__TextOutArgs	8	0	4	16	6
+63	__TextOutArgs.Result	2	1	120	1	6
+64	__TextOutArgs.Location	8	0	2	4	6
+65	__TextOutArgs.Location.X	4	1	124	2	6
+66	__TextOutArgs.Location.Y	4	1	126	2	6
+67	__TextOutArgs.Text	7	0	128	4	6
+68	__TextOutArgs.Text.Text_type	1	0	0	1	0
+69	__TextOutArgs.Options	5	1	132	4	6
+70	__ConectaBT_7qG2_DADOS_BT_7qG2_000	8	0	4	12	5
+71	__ConectaBT_7qG2_DADOS_BT_7qG2_000.Result	3	1	136	2	5
+72	__ConectaBT_7qG2_DADOS_BT_7qG2_000.Action	1	1	138	1	5
+73	__ConectaBT_7qG2_DADOS_BT_7qG2_000.Name	7	0	140	4	5
+74	__ConectaBT_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
+75	__ConectaBT_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	142	1	5
+76	__CHSWArgs	8	0	3	12	3
+77	__CHSWArgs.Status	2	1	144	1	3
+78	__CHSWArgs.Buffer	7	0	146	4	3
+79	__CHSWArgs.Buffer.Buffer_type	1	0	0	1	0
+80	__CHSWArgs.BufferLen	1	1	148	1	3
+81	__MRArgs	8	0	4	8	4
+82	__MRArgs.Result	2	1	152	1	4
+83	__MRArgs.QueueID	1	1	153	1	4
+84	__MRArgs.Remove	1	1	154	1	4
+85	__MRArgs.Message	7	0	156	4	4
+86	__MRArgs.Message.Message_type	1	0	0	1	0
+87	__SRSFlattenBuf	7	0	158	4	2
+88	__SRSFlattenBuf.__SRSFlattenBuf_type	1	0	0	1	0
+89	__SRSSendBuf	7	0	160	4	3
+90	__SRSSendBuf.__SRSSendBuf_type	1	0	0	1	0
+91	__SRSTmpBuf	7	0	162	4	6
+92	__SRSTmpBuf.__SRSTmpBuf_type	1	0	0	1	0
+93	__constStr0010	7	0	164	4	1
+94	__constStr0010.__constStr0010_type	1	1	0	1	0
+95	__strbufConectaBT	7	0	166	4	2
+96	__strbufConectaBT.__strbufConectaBT_type	1	0	0	1	0
+97	__DCMessageWritePacket	7	0	168	4	1
+98	__DCMessageWritePacket.__DCMessageWritePacket_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	107	0	#line 107 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	108	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	107	2	#line 107 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	107	2	#line 107 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	108	2		subcall inicializaSensores, __inicializaSensores_return
+0	107	4	#line 107 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	109	4	#line 109 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	110	4		subcall ConectaBT, __ConectaBT_return
+0	109	6	#line 109 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	111	6	#line 111 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	112	6	#pragma macro 25
+0	112	6		mov __SRSTmpBuf, __DCMessageWritePacket
+0	112	8		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
+0	112	13		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+0	112	18		mov __SRSTmpLongVal, __constVal1
+0	112	20		flatten __SRSFlattenBuf, __SRSTmpLongVal
+0	112	23		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+0	112	28		brcmp 0, __ConnWrite_Else0, __constVal1, __constVal4
+0	112	32		sub __WFRRTmpByte, __constVal1, __constVal4
+0	112	36		arrbuild __CHSWArgs.Buffer, __WFRRTmpByte, __SRSSendBuf
+0	112	41		syscall 37, __CHSWArgs
+0	112	44		mov __D0main, __CHSWArgs.Status
+0	112	46		jmp __ConnWrite_EndIf0
+0	112	48		mov __CBTWArgs.Connection, __constVal1
+0	112	50		mov __CBTWArgs.Buffer, __SRSSendBuf
+0	112	52		syscall 29, __CBTWArgs
+0	112	55		mov __D0main, __CBTWArgs.Result
+0	7347	57	#line 7347 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	111	57	#line 111 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	111	57	#line 111 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	113	57	#line 113 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	114	57		set __D0main, 1
+0	120	60	#line 120 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	121	60		tst 5, __D0main, __D0main
+0	120	63	#line 120 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	121	63		brtst 4, __ASM_Label_663, __D0main
+0	120	66	#line 120 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	121	66		set __D0main, 90
+0	120	69	#line 120 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	121	69	#pragma macro 7
+0	121	69		setout __constVal1, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	7360	92	#line 7360 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	120	92	#line 120 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	121	92	#line 121 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	122	92		set __D0main, 90
+0	121	95	#line 121 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	122	95	#pragma macro 7
+0	122	95		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	7365	118	#line 7365 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	121	118	#line 121 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	122	118	#line 122 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	123	118		subcall recebeUSFRENTE, __recebeUSFRENTE_return
+0	122	120	#line 122 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	123	120		mov __unsigned_stack_001main, __DU0recebeUSFRENTE
+0	122	122	#line 122 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	122	122	#line 122 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	123	122		set __D0main, 0
+0	122	125	#line 122 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	123	125		cmp 4, __D0main, __unsigned_stack_001main, __D0main
+0	123	129	#line 123 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	124	129		brtst 4, __ASM_Label_671, __D0main
+0	124	132	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	125	132		jmp __ASM_Label_670
+0	124	134	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	124	134	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	125	134	#pragma macro 7
+0	125	134		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal23
+0	7389	157	#line 7389 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	124	157	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	125	157	#line 125 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	126	157	#pragma macro 7
+0	126	157		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal23
+0	7392	180	#line 7392 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	125	180	#line 125 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	130	180	#line 130 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	131	180		jmp __ASM_Label_662
+0	130	182	#line 130 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+0	131	182		exit -1, -1
+1	5724	0		setin __constVal1, __ResetSensorPort, 5
+1	5726	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5727	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5728	11		subret ____ResetSensorSubroutine_return
+2	69	0	#line 69 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	70	0		strcat __strbufConectaBT, __constStr0010
+2	69	4	#line 69 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	70	4		mov __ConectaBT_7qG2_DADOS_BT_7qG2_000.Name, __strbufConectaBT
+2	69	6	#line 69 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	70	6	#line 70 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	71	6		set __ConectaBT_7qG2_DADOS_BT_7qG2_000.ConnectionSlot, 1
+2	70	9	#line 70 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	70	9	#line 70 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	71	9	#line 71 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	72	9		set __ConectaBT_7qG2_DADOS_BT_7qG2_000.Action, 1
+2	71	12	#line 71 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	71	12	#line 71 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	76	12	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	77	12	#pragma macro 4
+2	77	12	#line 77 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	77	12		syscall 36, __ConectaBT_7qG2_DADOS_BT_7qG2_000
+2	75	15	#line 75 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	75	15	#line 75 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	75	15	#line 75 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	75	15	#line 75 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	76	15	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	76	15	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	76	15	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	77	15		set __Wait_7qG2_ms_7qG2_000_inline_ConectaBT, 2000
+2	76	18	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	8869	18	#line 8869 "NXCDefs.h"
+2	8870	18		waitv __Wait_7qG2_ms_7qG2_000_inline_ConectaBT
+2	8869	20	#line 8869 "NXCDefs.h"
+2	76	20	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	77	20	#line 77 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	78	20	#pragma macro 5
+2	78	20		acquire __CBTCSMutex
+2	78	21		mov __CBTCSArgs.Connection, __constVal1
+2	78	23		syscall 28, __CBTCSArgs
+2	78	26		mov __D0ConectaBT, __CBTCSArgs.Result
+2	78	28		release __CBTCSMutex
+2	6890	29	#line 6890 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	77	29	#line 77 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	78	29		not __signed_stack_001ConectaBT, __D0ConectaBT
+2	77	32	#line 77 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	82	32	#line 82 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	83	32		set __D0ConectaBT, 0
+2	82	35	#line 82 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	83	35		cmp 4, __D0ConectaBT, __signed_stack_001ConectaBT, __D0ConectaBT
+2	84	39	#line 84 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	85	39		brtst 4, __ASM_Label_633, __D0ConectaBT
+2	84	42	#line 84 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	85	42		jmp __ASM_Label_632
+2	84	44	#line 84 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	84	44	#line 84 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+2	85	44		subret __ConectaBT_return
+3	87	0	#line 87 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	88	0	#pragma macro 9
+3	88	0		mov __MRArgs.QueueID, __constVal1
+3	88	2		mov __MRArgs.Remove, __constVal0
+3	88	4		set __RRNTmpVal, 0
+3	88	7		syscall 27, __MRArgs
+3	88	10		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+3	88	15		mov __recebeUSFRENTE_7qG2_valor_7qG2_000, __RRNTmpVal
+3	6919	17	#line 6919 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	87	17	#line 87 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	87	17	#line 87 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	88	17	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	89	17		set __signed_stack_001recebeUSFRENTE, 0
+3	88	20	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	88	20	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	89	20		set __signed_stack_002recebeUSFRENTE, 56
+3	88	23	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	88	23	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	89	23		mov __DU0recebeUSFRENTE, __recebeUSFRENTE_7qG2_valor_7qG2_000
+3	88	25	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	89	25		acquire __TextOutMutex
+3	88	26	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	89	26		mov __TextOutArgs.Location.X, __signed_stack_001recebeUSFRENTE
+3	88	28	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	89	28		mov __TextOutArgs.Location.Y, __signed_stack_002recebeUSFRENTE
+3	88	30	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	89	30		set __TextOutArgs.Options, 0
+3	88	33	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	89	33		numtostr __TextOutArgs.Text, __DU0recebeUSFRENTE
+3	88	36	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	89	36		syscall 13, __TextOutArgs
+3	88	39	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	89	39		mov __D0recebeUSFRENTE, __TextOutArgs.Result
+3	88	41	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	89	41		release __TextOutMutex
+3	88	42	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	89	42	#line 89 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	90	42		set __Wait_7qG2_ms_7qG2_000_inline_recebeUSFRENTE, 1000
+3	89	45	#line 89 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	8869	45	#line 8869 "NXCDefs.h"
+3	8870	45		waitv __Wait_7qG2_ms_7qG2_000_inline_recebeUSFRENTE
+3	8869	47	#line 8869 "NXCDefs.h"
+3	89	47	#line 89 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	90	47	#line 90 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	91	47		mov __unsigned_stack_001recebeUSFRENTE, __recebeUSFRENTE_7qG2_valor_7qG2_000
+3	90	49	#line 90 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	91	49	#line 91 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	92	49		set __D0recebeUSFRENTE, 1
+3	91	52	#line 91 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	92	52		cmp 4, __D0recebeUSFRENTE, __unsigned_stack_001recebeUSFRENTE, __D0recebeUSFRENTE
+3	91	56	#line 91 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	92	56		brtst 4, __ASM_Label_648, __D0recebeUSFRENTE
+3	91	59	#line 91 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	92	59		set __DU0recebeUSFRENTE, 1
+3	91	62	#line 91 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	91	62	#line 91 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	92	62		subret __recebeUSFRENTE_return
+3	91	64	#line 91 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	93	64	#line 93 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	94	64		jmp __ASM_Label_651
+3	93	66	#line 93 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	94	66		set __DU0recebeUSFRENTE, 0
+3	93	69	#line 93 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	93	69	#line 93 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	94	69		subret __recebeUSFRENTE_return
+3	93	71	#line 93 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	93	71	#line 93 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	97	71	#line 97 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+3	98	71		subret __recebeUSFRENTE_return
+4	99	0	#line 99 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+4	100	0		set __SetSensorUltrasonic_7qG2_port_7qG2_000_inline_inicializaSensores, 0
+4	99	3	#line 99 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+4	4533	3	#line 4533 "NXCDefs.h"
+4	4534	3		mov __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_inicializaSensores, __SetSensorUltrasonic_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4533	5	#line 4533 "NXCDefs.h"
+4	4533	5	#line 4533 "NXCDefs.h"
+4	4534	5		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_inicializaSensores, __constVal1
+4	4523	7	#line 4523 "NXCDefs.h"
+4	4524	7		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_inicializaSensores
+4	4523	9	#line 4523 "NXCDefs.h"
+4	4523	9	#line 4523 "NXCDefs.h"
+4	4524	9		mov __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_inicializaSensores
+4	4523	11	#line 4523 "NXCDefs.h"
+4	4524	11		tst 5, __D0SetSensorLowspeed_inline_SetSensorUltrasonic, __DU0SetSensorLowspeed_inline_SetSensorUltrasonic
+4	4523	14	#line 4523 "NXCDefs.h"
+4	4524	14		brtst 4, __001__001__ASM_Label_36, __D0SetSensorLowspeed_inline_SetSensorUltrasonic
+4	4523	17	#line 4523 "NXCDefs.h"
+4	4524	17		set __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, 11
+4	4523	20	#line 4523 "NXCDefs.h"
+4	4523	20	#line 4523 "NXCDefs.h"
+4	4524	20		jmp __001__001__ASM_Label_37
+4	4523	22	#line 4523 "NXCDefs.h"
+4	4524	22		set __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, 10
+4	4523	25	#line 4523 "NXCDefs.h"
+4	4523	25	#line 4523 "NXCDefs.h"
+4	4524	25		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_SetSensorUltrasonic
+4	4428	27	#line 4428 "NXCDefs.h"
+4	4429	27		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_inicializaSensores, 0
+4	4428	31	#line 4428 "NXCDefs.h"
+4	4523	31	#line 4523 "NXCDefs.h"
+4	4524	31	#line 4524 "NXCDefs.h"
+4	4525	31		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_inicializaSensores
+4	4524	33	#line 4524 "NXCDefs.h"
+4	4524	33	#line 4524 "NXCDefs.h"
+4	4525	33		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_inicializaSensores, 0
+4	4524	36	#line 4524 "NXCDefs.h"
+4	4441	36	#line 4441 "NXCDefs.h"
+4	4442	36		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_inicializaSensores, 1
+4	4441	40	#line 4441 "NXCDefs.h"
+4	4524	40	#line 4524 "NXCDefs.h"
+4	4525	40	#line 4525 "NXCDefs.h"
+4	4526	40		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_inicializaSensores
+4	4525	42	#line 4525 "NXCDefs.h"
+4	4459	42	#line 4459 "NXCDefs.h"
+4	4460	42	#pragma macro 4
+4	4460	42		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_inicializaSensores
+4	4460	44		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+4	7102	46	#line 7102 "NXCDefs.h"
+4	4459	46	#line 4459 "NXCDefs.h"
+4	4525	46	#line 4525 "NXCDefs.h"
+4	4533	46	#line 4533 "NXCDefs.h"
+4	99	46	#line 99 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+4	100	46	#line 100 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+4	101	46		set __SetSensorUltrasonic_7qG2_port_7qG2_000_inline_inicializaSensores, 1
+4	100	49	#line 100 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+4	4533	49	#line 4533 "NXCDefs.h"
+4	4534	49		mov __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_inicializaSensores, __SetSensorUltrasonic_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4533	51	#line 4533 "NXCDefs.h"
+4	4533	51	#line 4533 "NXCDefs.h"
+4	4534	51		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_inicializaSensores, __constVal1
+4	4523	53	#line 4523 "NXCDefs.h"
+4	4524	53		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_inicializaSensores
+4	4523	55	#line 4523 "NXCDefs.h"
+4	4523	55	#line 4523 "NXCDefs.h"
+4	4524	55		mov __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_inicializaSensores
+4	4523	57	#line 4523 "NXCDefs.h"
+4	4524	57		tst 5, __D0SetSensorLowspeed_inline_SetSensorUltrasonic, __DU0SetSensorLowspeed_inline_SetSensorUltrasonic
+4	4523	60	#line 4523 "NXCDefs.h"
+4	4524	60		brtst 4, __001__002__ASM_Label_36, __D0SetSensorLowspeed_inline_SetSensorUltrasonic
+4	4523	63	#line 4523 "NXCDefs.h"
+4	4524	63		set __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, 11
+4	4523	66	#line 4523 "NXCDefs.h"
+4	4523	66	#line 4523 "NXCDefs.h"
+4	4524	66		jmp __001__002__ASM_Label_37
+4	4523	68	#line 4523 "NXCDefs.h"
+4	4524	68		set __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, 10
+4	4523	71	#line 4523 "NXCDefs.h"
+4	4523	71	#line 4523 "NXCDefs.h"
+4	4524	71		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_SetSensorUltrasonic
+4	4428	73	#line 4428 "NXCDefs.h"
+4	4429	73		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_inicializaSensores, 0
+4	4428	77	#line 4428 "NXCDefs.h"
+4	4523	77	#line 4523 "NXCDefs.h"
+4	4524	77	#line 4524 "NXCDefs.h"
+4	4525	77		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_inicializaSensores
+4	4524	79	#line 4524 "NXCDefs.h"
+4	4524	79	#line 4524 "NXCDefs.h"
+4	4525	79		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_inicializaSensores, 0
+4	4524	82	#line 4524 "NXCDefs.h"
+4	4441	82	#line 4441 "NXCDefs.h"
+4	4442	82		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_inicializaSensores, 1
+4	4441	86	#line 4441 "NXCDefs.h"
+4	4524	86	#line 4524 "NXCDefs.h"
+4	4525	86	#line 4525 "NXCDefs.h"
+4	4526	86		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_inicializaSensores
+4	4525	88	#line 4525 "NXCDefs.h"
+4	4459	88	#line 4459 "NXCDefs.h"
+4	4460	88	#pragma macro 4
+4	4460	88		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_inicializaSensores
+4	4460	90		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+4	7172	92	#line 7172 "NXCDefs.h"
+4	4459	92	#line 4459 "NXCDefs.h"
+4	4525	92	#line 4525 "NXCDefs.h"
+4	4533	92	#line 4533 "NXCDefs.h"
+4	100	92	#line 100 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+4	101	92	#line 101 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+4	102	92		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 2
+4	101	95	#line 101 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+4	101	95	#line 101 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+4	102	95		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+4	4523	97	#line 4523 "NXCDefs.h"
+4	4524	97		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4523	99	#line 4523 "NXCDefs.h"
+4	4523	99	#line 4523 "NXCDefs.h"
+4	4524	99		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+4	4523	101	#line 4523 "NXCDefs.h"
+4	4524	101		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4523	104	#line 4523 "NXCDefs.h"
+4	4524	104		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+4	4523	107	#line 4523 "NXCDefs.h"
+4	4524	107		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+4	4523	110	#line 4523 "NXCDefs.h"
+4	4523	110	#line 4523 "NXCDefs.h"
+4	4524	110		jmp __004__ASM_Label_37
+4	4523	112	#line 4523 "NXCDefs.h"
+4	4524	112		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+4	4523	115	#line 4523 "NXCDefs.h"
+4	4523	115	#line 4523 "NXCDefs.h"
+4	4524	115		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4428	117	#line 4428 "NXCDefs.h"
+4	4429	117		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4428	121	#line 4428 "NXCDefs.h"
+4	4523	121	#line 4523 "NXCDefs.h"
+4	4524	121	#line 4524 "NXCDefs.h"
+4	4525	121		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4524	123	#line 4524 "NXCDefs.h"
+4	4524	123	#line 4524 "NXCDefs.h"
+4	4525	123		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4524	126	#line 4524 "NXCDefs.h"
+4	4441	126	#line 4441 "NXCDefs.h"
+4	4442	126		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+4	4441	130	#line 4441 "NXCDefs.h"
+4	4524	130	#line 4524 "NXCDefs.h"
+4	4525	130	#line 4525 "NXCDefs.h"
+4	4526	130		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4525	132	#line 4525 "NXCDefs.h"
+4	4459	132	#line 4459 "NXCDefs.h"
+4	4460	132	#pragma macro 4
+4	4460	132		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4460	134		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+4	7264	136	#line 7264 "NXCDefs.h"
+4	4459	136	#line 4459 "NXCDefs.h"
+4	4525	136	#line 4525 "NXCDefs.h"
+4	101	136	#line 101 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+4	102	136	#line 102 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+4	103	136		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 3
+4	102	139	#line 102 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+4	102	139	#line 102 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+4	103	139		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+4	4523	141	#line 4523 "NXCDefs.h"
+4	4524	141		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4523	143	#line 4523 "NXCDefs.h"
+4	4523	143	#line 4523 "NXCDefs.h"
+4	4524	143		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+4	4523	145	#line 4523 "NXCDefs.h"
+4	4524	145		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4523	148	#line 4523 "NXCDefs.h"
+4	4524	148		brtst 4, __005__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+4	4523	151	#line 4523 "NXCDefs.h"
+4	4524	151		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+4	4523	154	#line 4523 "NXCDefs.h"
+4	4523	154	#line 4523 "NXCDefs.h"
+4	4524	154		jmp __005__ASM_Label_37
+4	4523	156	#line 4523 "NXCDefs.h"
+4	4524	156		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+4	4523	159	#line 4523 "NXCDefs.h"
+4	4523	159	#line 4523 "NXCDefs.h"
+4	4524	159		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4428	161	#line 4428 "NXCDefs.h"
+4	4429	161		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4428	165	#line 4428 "NXCDefs.h"
+4	4523	165	#line 4523 "NXCDefs.h"
+4	4524	165	#line 4524 "NXCDefs.h"
+4	4525	165		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4524	167	#line 4524 "NXCDefs.h"
+4	4524	167	#line 4524 "NXCDefs.h"
+4	4525	167		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4524	170	#line 4524 "NXCDefs.h"
+4	4441	170	#line 4441 "NXCDefs.h"
+4	4442	170		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+4	4441	174	#line 4441 "NXCDefs.h"
+4	4524	174	#line 4524 "NXCDefs.h"
+4	4525	174	#line 4525 "NXCDefs.h"
+4	4526	174		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4525	176	#line 4525 "NXCDefs.h"
+4	4459	176	#line 4459 "NXCDefs.h"
+4	4460	176	#pragma macro 4
+4	4460	176		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4460	178		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+4	7327	180	#line 7327 "NXCDefs.h"
+4	4459	180	#line 4459 "NXCDefs.h"
+4	4525	180	#line 4525 "NXCDefs.h"
+4	102	180	#line 102 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+4	105	180	#line 105 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+4	106	180		subret __inicializaSensores_return
+5	131	0	#line 131 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc"
+5	132	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc
+1	__ResetSensorSubroutine	185	NXTDefs.h
+2	ConectaBT	198	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc
+3	recebeUSFRENTE	244	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc
+4	inicializaSensores	317	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc
+5	__initialize_global_data	499	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\ComunicacaoBluetoothUSFRENTE.nxc

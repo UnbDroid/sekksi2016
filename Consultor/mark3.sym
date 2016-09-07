@@ -1,0 +1,324 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__CLSRMutex3	9	0	0	4	2
+1	__PointOutMutex	9	0	4	4	2
+2	__CLSWMutex3	9	0	8	4	2
+3	__Wait_7qG2_ms_7qG2_000_inline_lerSensores	5	1	12	4	2
+4	__signed_stack_002lerSensores	6	1	16	4	4
+5	__signed_stack_001lerSensores	6	1	20	4	4
+6	__signed_stack_003lerSensores	6	1	24	4	2
+7	__TextOutMutex	9	0	28	4	4
+8	__DU0SetSensorLowspeed_inline_main	5	1	32	4	5
+9	__RLSBmutex3	9	0	36	4	2
+10	__D0lerSensores	6	1	40	4	12
+11	__CLSCSMutex3	9	0	44	4	2
+12	__D0SetSensorLowspeed_inline_main	6	1	48	4	2
+13	__constVal128	4	0	52	2	3
+14	__constVal200	4	0	54	2	2
+15	__constVal15	2	0	56	1	1
+16	__constVal14	2	0	57	1	3
+17	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	58	1	2
+18	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	59	1	2
+19	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	60	1	2
+20	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	61	1	2
+21	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	62	1	2
+22	____initialize_global_data_return	1	1	63	1	3
+23	__lerSensores_return	1	1	64	1	3
+24	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	65	1	4
+25	__SetSensorColorRed_7qG2_port_7qG2_000_inline_main	1	1	66	1	12
+26	__ResetSensorTmp	1	1	67	1	2
+27	____ResetSensorSubroutine_return	1	1	68	1	6
+28	__LSWriteOptionsVar	1	1	69	1	2
+29	__ResetSensorPort	1	1	70	1	6
+30	__constVal1	2	0	71	1	4
+31	__constVal0	2	1	72	1	1
+32	__constVal3	2	0	73	1	2
+33	__RLSBResult3	2	1	74	1	7
+34	____ReadLSBytes3_return	1	1	75	1	3
+35	__RLSBIterations3	1	1	76	1	4
+36	__RLSBytesCount3	1	1	77	1	7
+37	__CLSWArgs3	8	0	4	12	5
+38	__CLSWArgs3.Result	2	1	80	1	5
+39	__CLSWArgs3.Port	1	1	81	1	5
+40	__CLSWArgs3.Buffer	7	0	82	4	5
+41	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
+42	__CLSWArgs3.ReturnLen	1	1	84	1	5
+43	__CLSCSArgs3	8	0	3	4	4
+44	__CLSCSArgs3.Result	2	1	88	1	4
+45	__CLSCSArgs3.Port	1	1	89	1	4
+46	__CLSCSArgs3.BytesReady	1	1	90	1	4
+47	__CLSRArgs3	8	0	4	12	5
+48	__CLSRArgs3.Result	2	1	92	1	5
+49	__CLSRArgs3.Port	1	1	93	1	5
+50	__CLSRArgs3.Buffer	7	0	94	4	5
+51	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
+52	__CLSRArgs3.BufferLen	1	1	96	1	5
+53	__PointOutArgs	8	0	3	12	4
+54	__PointOutArgs.Result	2	1	100	1	4
+55	__PointOutArgs.Location	8	0	2	4	4
+56	__PointOutArgs.Location.X	4	1	104	2	4
+57	__PointOutArgs.Location.Y	4	1	106	2	4
+58	__PointOutArgs.Options	5	1	108	4	4
+59	__TextOutArgs	8	0	4	16	12
+60	__TextOutArgs.Result	2	1	112	1	12
+61	__TextOutArgs.Location	8	0	2	4	12
+62	__TextOutArgs.Location.X	4	1	116	2	12
+63	__TextOutArgs.Location.Y	4	1	118	2	12
+64	__TextOutArgs.Text	7	0	120	4	12
+65	__TextOutArgs.Text.Text_type	1	0	0	1	0
+66	__TextOutArgs.Options	5	1	124	4	12
+67	__RLSReadBuf3	7	0	128	4	8
+68	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
+69	__RLSBbufLSWrite1	7	0	130	4	1
+70	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+71	__LSWriteOptions	7	0	132	4	1
+72	__LSWriteOptions.__LSWriteOptions_type	1	0	0	1	0
+73	__constStr0010	7	0	134	4	1
+74	__constStr0010.__constStr0010_type	1	1	0	1	0
+75	__RLSLastGoodRead3	7	0	136	4	2
+76	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
+77	__strbuflerSensores	7	0	138	4	2
+78	__strbuflerSensores.__strbuflerSensores_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	109	0	#line 109 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+0	110	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	109	2	#line 109 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+0	109	2	#line 109 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+0	110	2		set __SetSensorColorRed_7qG2_port_7qG2_000_inline_main, 0
+0	109	5	#line 109 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+0	4577	5	#line 4577 "NXCDefs.h"
+0	4578	5	#pragma macro 6
+0	4578	5		setin __constVal14, __SetSensorColorRed_7qG2_port_7qG2_000_inline_main, 0
+0	4578	9		setin __constVal128, __SetSensorColorRed_7qG2_port_7qG2_000_inline_main, 1
+0	4578	13		mov __ResetSensorPort, __SetSensorColorRed_7qG2_port_7qG2_000_inline_main
+0	4578	15		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	7446	17	#line 7446 "NXCDefs.h"
+0	4577	17	#line 4577 "NXCDefs.h"
+0	109	17	#line 109 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+0	110	17	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+0	111	17		set __SetSensorColorRed_7qG2_port_7qG2_000_inline_main, 1
+0	110	20	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+0	4577	20	#line 4577 "NXCDefs.h"
+0	4578	20	#pragma macro 6
+0	4578	20		setin __constVal14, __SetSensorColorRed_7qG2_port_7qG2_000_inline_main, 0
+0	4578	24		setin __constVal128, __SetSensorColorRed_7qG2_port_7qG2_000_inline_main, 1
+0	4578	28		mov __ResetSensorPort, __SetSensorColorRed_7qG2_port_7qG2_000_inline_main
+0	4578	30		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	7454	32	#line 7454 "NXCDefs.h"
+0	4577	32	#line 4577 "NXCDefs.h"
+0	110	32	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+0	111	32	#line 111 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+0	112	32		set __SetSensorColorRed_7qG2_port_7qG2_000_inline_main, 2
+0	111	35	#line 111 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+0	4577	35	#line 4577 "NXCDefs.h"
+0	4578	35	#pragma macro 6
+0	4578	35		setin __constVal14, __SetSensorColorRed_7qG2_port_7qG2_000_inline_main, 0
+0	4578	39		setin __constVal128, __SetSensorColorRed_7qG2_port_7qG2_000_inline_main, 1
+0	4578	43		mov __ResetSensorPort, __SetSensorColorRed_7qG2_port_7qG2_000_inline_main
+0	4578	45		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	7462	47	#line 7462 "NXCDefs.h"
+0	4577	47	#line 4577 "NXCDefs.h"
+0	111	47	#line 111 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+0	112	47	#line 112 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+0	113	47		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 3
+0	112	50	#line 112 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+0	112	50	#line 112 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+0	113	50		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	4523	52	#line 4523 "NXCDefs.h"
+0	4524	52		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4523	54	#line 4523 "NXCDefs.h"
+0	4523	54	#line 4523 "NXCDefs.h"
+0	4524	54		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	4523	56	#line 4523 "NXCDefs.h"
+0	4524	56		tst 5, __D0SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	4523	59	#line 4523 "NXCDefs.h"
+0	4524	59		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_main
+0	4523	62	#line 4523 "NXCDefs.h"
+0	4524	62		set __DU0SetSensorLowspeed_inline_main, 11
+0	4523	65	#line 4523 "NXCDefs.h"
+0	4523	65	#line 4523 "NXCDefs.h"
+0	4524	65		jmp __004__ASM_Label_37
+0	4523	67	#line 4523 "NXCDefs.h"
+0	4524	67		set __DU0SetSensorLowspeed_inline_main, 10
+0	4523	70	#line 4523 "NXCDefs.h"
+0	4523	70	#line 4523 "NXCDefs.h"
+0	4524	70		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	4428	72	#line 4428 "NXCDefs.h"
+0	4429	72		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	4428	76	#line 4428 "NXCDefs.h"
+0	4523	76	#line 4523 "NXCDefs.h"
+0	4524	76	#line 4524 "NXCDefs.h"
+0	4525	76		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4524	78	#line 4524 "NXCDefs.h"
+0	4524	78	#line 4524 "NXCDefs.h"
+0	4525	78		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	4524	81	#line 4524 "NXCDefs.h"
+0	4441	81	#line 4441 "NXCDefs.h"
+0	4442	81		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	4441	85	#line 4441 "NXCDefs.h"
+0	4524	85	#line 4524 "NXCDefs.h"
+0	4525	85	#line 4525 "NXCDefs.h"
+0	4525	85	#line 4525 "NXCDefs.h"
+0	4459	85	#line 4459 "NXCDefs.h"
+0	4460	85	#pragma macro 4
+0	4460	85		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4460	87		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	7552	89	#line 7552 "NXCDefs.h"
+0	4459	89	#line 4459 "NXCDefs.h"
+0	4525	89	#line 4525 "NXCDefs.h"
+0	112	89	#line 112 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+0	114	89	#line 114 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+0	115	89		subcall lerSensores, __lerSensores_return
+0	114	91	#line 114 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+0	115	91		exit -1, -1
+1	5724	0		setin __constVal1, __ResetSensorPort, 5
+1	5726	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5727	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5728	11		subret ____ResetSensorSubroutine_return
+2	6632	0	#pragma macro 27
+2	6632	0		acquire __CLSWMutex3
+2	6632	1		index __LSWriteOptionsVar, __LSWriteOptions, __constVal3
+2	6632	5		or __CLSWArgs3.Port, __constVal3, __LSWriteOptionsVar
+2	6632	9		mov __CLSWArgs3.ReturnLen, __RLSBytesCount3
+2	6632	11		mov __CLSWArgs3.Buffer, __RLSReadBuf3
+2	6632	13		syscall 21, __CLSWArgs3
+2	6632	16		mov __RLSBResult3, __CLSWArgs3.Result
+2	6632	18		release __CLSWMutex3
+2	6632	19	#line 6632 "NXTDefs.h"
+2	6633	19		brtst 5, __RLSBError3, __RLSBResult3
+2	6634	22		set __RLSBIterations3, 60
+2	6636	25	#pragma macro 23
+2	6636	25		acquire __CLSCSMutex3
+2	6636	26		set __CLSCSArgs3.Port, 3
+2	6636	29		syscall 23, __CLSCSArgs3
+2	6636	32		mov __RLSBytesCount3, __CLSCSArgs3.BytesReady
+2	6636	34		mov __RLSBResult3, __CLSCSArgs3.Result
+2	6636	36		release __CLSCSMutex3
+2	6636	37	#line 6636 "NXTDefs.h"
+2	6637	37		sub __RLSBIterations3, __RLSBIterations3, __constVal1
+2	6638	41		brtst 2, __RLSBError3, __RLSBIterations3
+2	6639	44		brtst 0, __RLSBError3, __RLSBResult3
+2	6640	47		brtst 4, __RLSBReadyToRead3, __RLSBResult3
+2	6642	50		wait 1
+2	6643	52		jmp __RLSBDoCheckStatus3
+2	6645	54		brtst 4, __RLSBReturn3, __RLSBytesCount3
+2	6646	57		arrinit __RLSReadBuf3, __constVal0, __RLSBytesCount3
+2	6648	61	#pragma macro 25
+2	6648	61		acquire __CLSRMutex3
+2	6648	62		set __CLSRArgs3.Port, 3
+2	6648	65		mov __CLSRArgs3.BufferLen, __RLSBytesCount3
+2	6648	67		syscall 22, __CLSRArgs3
+2	6648	70		mov __RLSReadBuf3, __CLSRArgs3.Buffer
+2	6648	72		mov __RLSBResult3, __CLSRArgs3.Result
+2	6648	74		release __CLSRMutex3
+2	6648	75	#line 6648 "NXTDefs.h"
+2	6649	75		brtst 5, __RLSBError3, __RLSBResult3
+2	6650	78		mov __RLSLastGoodRead3, __RLSReadBuf3
+2	6651	80		jmp __RLSBDone3
+2	6653	82		mov __RLSReadBuf3, __RLSLastGoodRead3
+2	6655	84		arrsize __RLSBytesCount3, __RLSReadBuf3
+2	6657	87		subret ____ReadLSBytes3_return
+3	74	0	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	75	0		set __D0lerSensores, 1
+3	75	3	#line 75 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	76	3		tst 5, __D0lerSensores, __D0lerSensores
+3	75	6	#line 75 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	76	6		brtst 4, __ASM_Label_654, __D0lerSensores
+3	6921	9	#line 6921 "NXCDefs.h"
+3	6922	9	#pragma macro 6
+3	6922	9		acquire __PointOutMutex
+3	6922	10		mov __PointOutArgs.Location.X, __constVal200
+3	6922	12		mov __PointOutArgs.Location.Y, __constVal200
+3	6922	14		mov __PointOutArgs.Options, __constVal1
+3	6922	16		syscall 14, __PointOutArgs
+3	6922	19		release __PointOutMutex
+3	7236	20	#line 7236 "NXCDefs.h"
+3	6921	20	#line 6921 "NXCDefs.h"
+3	75	20	#line 75 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	76	20	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	77	20		set __signed_stack_001lerSensores, 0
+3	76	23	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	76	23	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	77	23		set __signed_stack_002lerSensores, 8
+3	76	26	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	76	26	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	77	26		strcat __strbuflerSensores, __constStr0010
+3	76	30	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	77	30		set __D0lerSensores, 0
+3	76	33	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	77	33		acquire __TextOutMutex
+3	76	34	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	77	34		mov __TextOutArgs.Location.X, __signed_stack_001lerSensores
+3	76	36	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	77	36		mov __TextOutArgs.Location.Y, __signed_stack_002lerSensores
+3	76	38	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	77	38		mov __TextOutArgs.Options, __D0lerSensores
+3	76	40	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	77	40		mov __TextOutArgs.Text, __strbuflerSensores
+3	76	42	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	77	42		syscall 13, __TextOutArgs
+3	76	45	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	77	45		mov __D0lerSensores, __TextOutArgs.Result
+3	76	47	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	77	47		release __TextOutMutex
+3	76	48	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	77	48	#line 77 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	78	48		set __signed_stack_001lerSensores, 0
+3	77	51	#line 77 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	77	51	#line 77 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	78	51		set __signed_stack_002lerSensores, 0
+3	77	54	#line 77 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	77	54	#line 77 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	78	54	#pragma macro 26
+3	78	54		acquire __RLSBmutex3
+3	78	55		mov __RLSReadBuf3, __RLSBbufLSWrite1
+3	78	57		set __RLSBytesCount3, 1
+3	78	60		waitv __constVal15
+3	78	62		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+3	78	64		index __D0lerSensores, __RLSReadBuf3, 65535
+3	78	68		release __RLSBmutex3
+3	7283	69	#line 7283 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	77	69	#line 77 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	78	69		mov __signed_stack_003lerSensores, __D0lerSensores
+3	77	71	#line 77 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	78	71		set __D0lerSensores, 0
+3	77	74	#line 77 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	78	74		acquire __TextOutMutex
+3	77	75	#line 77 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	78	75		mov __TextOutArgs.Location.X, __signed_stack_001lerSensores
+3	77	77	#line 77 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	78	77		mov __TextOutArgs.Location.Y, __signed_stack_002lerSensores
+3	77	79	#line 77 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	78	79		mov __TextOutArgs.Options, __D0lerSensores
+3	77	81	#line 77 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	78	81		numtostr __TextOutArgs.Text, __signed_stack_003lerSensores
+3	77	84	#line 77 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	78	84		syscall 13, __TextOutArgs
+3	77	87	#line 77 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	78	87		mov __D0lerSensores, __TextOutArgs.Result
+3	77	89	#line 77 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	78	89		release __TextOutMutex
+3	77	90	#line 77 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	77	90	#line 77 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	78	90	#line 78 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	79	90		set __Wait_7qG2_ms_7qG2_000_inline_lerSensores, 70
+3	78	93	#line 78 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	8869	93	#line 8869 "NXCDefs.h"
+3	8870	93		waitv __Wait_7qG2_ms_7qG2_000_inline_lerSensores
+3	8869	95	#line 8869 "NXCDefs.h"
+3	78	95	#line 78 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	81	95	#line 81 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	82	95		jmp __ASM_Label_653
+3	81	97	#line 81 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	81	97	#line 81 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+3	82	97		subret __lerSensores_return
+4	121	0	#line 121 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc"
+4	122	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc
+1	__ResetSensorSubroutine	94	NXTDefs.h
+2	__ReadLSBytes3	107	NXTDefs.h
+3	lerSensores	196	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc
+4	__initialize_global_data	295	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark3.nxc
