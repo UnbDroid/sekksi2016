@@ -89,14 +89,26 @@ int distanciaTachoCount(int grau){
 }
 
 int distanciaGiro(int grau){
-	return (((grau*172)/1420));// COMO FOI FEITA ESSA CONVERSÃO??
+	return (((grau*172)/1420)); // COMO FOI FEITA ESSA CONVERSÃO??   No chute mesmo
 }
 
-void vira(int angulo){
+void viraEsq(int angulo){ // função que gira para a Esq o ângulo recebido
      OnFwd(MD, 90);
      OnFwd(ME, -90);
 
-     while(distanciaGiro((MotorTachoCount(MD) + MotorTachoCount(ME))/2) < 1800)
+     while(distanciaGiro((MotorTachoCount(MD) - MotorTachoCount(ME))/2) < angulo)
+     {
+      //lol
+     }
+     Off(MD);
+     Off(ME);
+}
+
+void viraDir(int angulo){ // função que gira para a direita o ângulo recebido
+     OnFwd(MD, -90);
+     OnFwd(ME, 90);
+
+     while(distanciaGiro((- MotorTachoCount(MD) + MotorTachoCount(ME))/2) < angulo)
      {
       //lol
      }
@@ -106,5 +118,5 @@ void vira(int angulo){
 
 task main(){
 	inicializaSensores();
-  vira(90);
+  viraDir(90);
 }
