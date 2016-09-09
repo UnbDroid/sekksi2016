@@ -52,12 +52,25 @@ void inicializaSensores()
   SetSensorLowspeed(HTE);
 }
 
-void andaRetoDireita(int dist){ // função que faz o robô andar à distância "dist" recebida
+void andaReto(){
+        OnFwd(MD, 70);
+        OnFwd(ME, 70);
+        Wait(10000);
+        NumOut(0, LCD_LINE1, MotorTachoCount(MD));
+        NumOut(0, LCD_LINE2, MotorTachoCount(ME));
+        Off(MD);
+        Off(ME);
+        
+        while(1){}
+}
+     
+
+void andaRetoDireita(int dist){ // função que faz o robô andar à "dist" centímetros da parede
 	   int distanciaAtual, potd, pote;
 	   my_tc_d = 0;
 	   my_tc_e = 0;
 
-	   while(distanciaTachoCount((my_tc_d + my_tc_e)/2) < 10000){
+	   while(distanciaTachoCount((my_tc_d + my_tc_e)/2) < (dist*100)){
 	 	   distanciaAtual = SensorUS(USD);
 		
 		   if (distanciaAtual == dist){
@@ -119,5 +132,6 @@ void viraDir(int angulo){ // função que faz o robô girar para a direita o ângulo
 
 task main(){
 	   inicializaSensores();
-     andaRetoDireita(20);
+	   
+     andaReto();
 }

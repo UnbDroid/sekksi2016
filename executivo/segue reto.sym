@@ -1,487 +1,337 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__RLSBmutex0	9	0	0	4	2
-1	__D0andaRetoDireita	6	1	4	4	23
-2	__CLSWMutex0	9	0	8	4	2
-3	__CLSRMutex0	9	0	12	4	2
-4	__DU0SetSensorLowspeed_inline_inicializaSensores	5	1	16	4	8
-5	__signed_stack_001andaRetoDireita	6	1	20	4	10
-6	__D0distanciaTachoCount	6	1	24	4	2
-7	__D0SetSensorLowspeed_inline_inicializaSensores	6	1	28	4	12
-8	__CLSCSMutex0	9	0	32	4	2
-9	__andaRetoDireita_7qG2_pote_7qG2_000	4	1	36	2	4
-10	__andaRetoDireita_7qG2_potd_7qG2_000	4	1	38	2	4
-11	__andaRetoDireita_7qG2_distanciaAtual_7qG2_000	4	1	40	2	3
-12	__andaRetoDireita_7qG2_dist_7qG2_000	4	1	42	2	4
-13	my_tc_d	4	1	44	2	4
-14	my_tc_e	4	1	46	2	4
-15	__distanciaTachoCount_7qG2_grau_7qG2_000	4	1	48	2	2
-16	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores	1	1	50	1	8
-17	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	51	1	8
-18	__inicializaSensores_return	1	1	52	1	3
-19	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	53	1	20
-20	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	54	1	8
-21	__constVal96	2	0	55	1	4
-22	__distanciaTachoCount_return	1	1	56	1	4
-23	____initialize_global_data_return	1	1	57	1	3
-24	__constVal63	2	0	58	1	4
-25	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	59	1	8
-26	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	60	1	8
-27	__andaRetoDireita_return	1	1	61	1	3
-28	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	62	1	4
-29	__RLSBytesCount0	1	1	63	1	7
-30	__RLSBIterations0	1	1	64	1	4
-31	__constVal2	2	0	65	1	1
-32	__RLSBResult0	2	1	66	1	7
-33	____ResetSensorSubroutine_return	1	1	67	1	6
-34	____ReadLSBytes0_return	1	1	68	1	3
-35	__ResetSensorTmp	1	1	69	1	2
-36	__constVal1	2	0	70	1	9
-37	__constVal0	2	1	71	1	18
-38	__constVal32	2	0	72	1	12
-39	__zfSetSensorLowspeed_inline_inicializaSensores	1	1	73	1	8
-40	__zfandaRetoDireita	1	1	74	1	12
-41	__ResetSensorPort	1	1	75	1	6
-42	__constVal3	2	0	76	1	5
-43	__CLSRArgs0	8	0	4	12	5
-44	__CLSRArgs0.Result	2	1	80	1	5
-45	__CLSRArgs0.Port	1	1	81	1	5
-46	__CLSRArgs0.Buffer	7	0	82	4	5
-47	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
-48	__CLSRArgs0.BufferLen	1	1	84	1	5
-49	__CLSWArgs0	8	0	4	12	5
-50	__CLSWArgs0.Result	2	1	88	1	5
-51	__CLSWArgs0.Port	1	1	89	1	5
-52	__CLSWArgs0.Buffer	7	0	90	4	5
-53	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
-54	__CLSWArgs0.ReturnLen	1	1	92	1	5
-55	__CLSCSArgs0	8	0	3	4	4
-56	__CLSCSArgs0.Result	2	1	96	1	4
-57	__CLSCSArgs0.Port	1	1	97	1	4
-58	__CLSCSArgs0.BytesReady	1	1	98	1	4
-59	__RLSLastGoodRead0	7	0	100	4	2
-60	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
-61	__RLSReadBuf0	7	0	102	4	8
-62	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
-63	__RLSBbufLSWrite1	7	0	104	4	1
-64	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+0	__D0SetSensorLowspeed_inline_inicializaSensores	6	1	0	4	12
+1	__D0andaReto	6	1	4	4	11
+2	__DU0SetSensorLowspeed_inline_inicializaSensores	5	1	8	4	8
+3	__signed_stack_002andaReto	6	1	12	4	4
+4	__signed_stack_001andaReto	6	1	16	4	4
+5	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	20	1	8
+6	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	21	1	8
+7	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	22	1	8
+8	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	23	1	20
+9	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores	1	1	24	1	8
+10	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	25	1	8
+11	__constVal63	2	0	26	1	4
+12	____initialize_global_data_return	1	1	27	1	3
+13	__constVal96	2	0	28	1	4
+14	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	29	1	4
+15	__andaReto_return	1	1	30	1	3
+16	__zfandaReto	1	1	31	1	2
+17	__constVal3	2	0	32	1	4
+18	__ResetSensorPort	1	1	33	1	6
+19	__ResetSensorTmp	1	1	34	1	2
+20	____ResetSensorSubroutine_return	1	1	35	1	6
+21	__constVal32	2	0	36	1	12
+22	__inicializaSensores_return	1	1	37	1	3
+23	__constVal1	2	0	38	1	8
+24	__constVal0	2	1	39	1	17
+25	__zfSetSensorLowspeed_inline_inicializaSensores	1	1	40	1	8
+26	__TextOutArgs	8	0	4	16	11
+27	__TextOutArgs.Result	2	1	44	1	11
+28	__TextOutArgs.Location	8	0	2	4	11
+29	__TextOutArgs.Location.X	4	1	48	2	11
+30	__TextOutArgs.Location.Y	4	1	50	2	11
+31	__TextOutArgs.Text	7	0	52	4	11
+32	__TextOutArgs.Text.Text_type	1	0	0	1	0
+33	__TextOutArgs.Options	5	1	56	4	11
 #SOURCES
 Clump	Line	PC	Source
-0	124	0	#line 124 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-0	125	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	124	2	#line 124 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-0	125	2	#line 125 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-0	126	2		subcall inicializaSensores, __inicializaSensores_return
-0	125	4	#line 125 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-0	125	4	#line 125 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-0	126	4		set __andaRetoDireita_7qG2_dist_7qG2_000, 20
-0	125	7	#line 125 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-0	126	7	#line 126 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-0	127	7		subcall andaRetoDireita, __andaRetoDireita_return
-0	126	9	#line 126 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-0	127	9		exit -1, -1
+0	133	0	#line 133 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+0	134	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	133	2	#line 133 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+0	135	2	#line 135 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+0	136	2		subcall inicializaSensores, __inicializaSensores_return
+0	135	4	#line 135 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+0	136	4	#line 136 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+0	137	4		subcall andaReto, __andaReto_return
+0	136	6	#line 136 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+0	137	6		exit -1, -1
 1	4885	0		setin __constVal1, __ResetSensorPort, 5
 1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
 1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
 1	4889	11		subret ____ResetSensorSubroutine_return
-2	5672	0	#pragma macro 25
-2	5672	0		acquire __CLSWMutex0
-2	5672	1		set __CLSWArgs0.Port, 0
-2	5672	4		mov __CLSWArgs0.ReturnLen, __RLSBytesCount0
-2	5672	6		mov __CLSWArgs0.Buffer, __RLSReadBuf0
-2	5672	8		syscall 21, __CLSWArgs0
-2	5672	11		mov __RLSBResult0, __CLSWArgs0.Result
-2	5672	13		release __CLSWMutex0
-2	5673	14	#line 5673 "NXTDefs.h"
-2	5674	14		brtst 4, __RLSBReturn0, __RLSBytesCount0
-2	5675	17		arrinit __RLSReadBuf0, __constVal0, __RLSBytesCount0
-2	5676	21		brtst 5, __RLSBError0, __RLSBResult0
-2	5677	24		set __RLSBIterations0, 4
-2	5679	27	#pragma macro 23
-2	5679	27		acquire __CLSCSMutex0
-2	5679	28		set __CLSCSArgs0.Port, 0
-2	5679	31		syscall 23, __CLSCSArgs0
-2	5679	34		mov __RLSBytesCount0, __CLSCSArgs0.BytesReady
-2	5679	36		mov __RLSBResult0, __CLSCSArgs0.Result
-2	5679	38		release __CLSCSMutex0
-2	5679	39	#line 5679 "NXTDefs.h"
-2	5680	39		sub __RLSBIterations0, __RLSBIterations0, __constVal1
-2	5681	43		brtst 2, __RLSBError0, __RLSBIterations0
-2	5682	46		brtst 0, __RLSBError0, __RLSBResult0
-2	5683	49		brtst 4, __RLSBReadyToRead0, __RLSBResult0
-2	5685	52		wait 15
-2	5686	54		jmp __RLSBDoCheckStatus0
-2	5689	56	#pragma macro 25
-2	5689	56		acquire __CLSRMutex0
-2	5689	57		set __CLSRArgs0.Port, 0
-2	5689	60		mov __CLSRArgs0.BufferLen, __RLSBytesCount0
-2	5689	62		syscall 22, __CLSRArgs0
-2	5689	65		mov __RLSReadBuf0, __CLSRArgs0.Buffer
-2	5689	67		mov __RLSBResult0, __CLSRArgs0.Result
-2	5689	69		release __CLSRMutex0
-2	5689	70	#line 5689 "NXTDefs.h"
-2	5690	70		brtst 5, __RLSBError0, __RLSBResult0
-2	5691	73		mov __RLSLastGoodRead0, __RLSReadBuf0
-2	5692	75		jmp __RLSBDone0
-2	5694	77		mov __RLSReadBuf0, __RLSLastGoodRead0
-2	5696	79		arrsize __RLSBytesCount0, __RLSReadBuf0
-2	5698	82		subret ____ReadLSBytes0_return
-3	48	0	#line 48 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-3	49	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 0
-3	48	3	#line 48 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-3	49	3	#line 49 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-3	50	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
-3	3758	5	#line 3758 "NXCDefs.h"
-3	3759	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	3758	7	#line 3758 "NXCDefs.h"
-3	3758	7	#line 3758 "NXCDefs.h"
-3	3759	7		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
-3	3758	9	#line 3758 "NXCDefs.h"
-3	3759	9		tst 5, __zfSetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-3	3758	12	#line 3758 "NXCDefs.h"
-3	3759	12		brtst 4, __004__NXC_Label_36, __zfSetSensorLowspeed_inline_inicializaSensores
-3	3758	15	#line 3758 "NXCDefs.h"
-3	3759	15		set __D0SetSensorLowspeed_inline_inicializaSensores, 11
-3	3758	18	#line 3758 "NXCDefs.h"
-3	3759	18		jmp __004__NXC_Label_37
-3	3758	20	#line 3758 "NXCDefs.h"
-3	3759	20		set __D0SetSensorLowspeed_inline_inicializaSensores, 10
-3	3758	23	#line 3758 "NXCDefs.h"
-3	3759	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __D0SetSensorLowspeed_inline_inicializaSensores
-3	3663	25	#line 3663 "NXCDefs.h"
-3	3664	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-3	3663	29	#line 3663 "NXCDefs.h"
-3	3759	29	#line 3759 "NXCDefs.h"
-3	3759	29	#line 3759 "NXCDefs.h"
-3	3760	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	3759	31	#line 3759 "NXCDefs.h"
-3	3759	31	#line 3759 "NXCDefs.h"
-3	3760	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-3	3759	34	#line 3759 "NXCDefs.h"
-3	3676	34	#line 3676 "NXCDefs.h"
-3	3677	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
-3	3676	38	#line 3676 "NXCDefs.h"
-3	3760	38	#line 3760 "NXCDefs.h"
-3	3760	38	#line 3760 "NXCDefs.h"
-3	3761	38		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	3760	40	#line 3760 "NXCDefs.h"
-3	3694	40	#line 3694 "NXCDefs.h"
-3	3695	40	#pragma macro 4
-3	3695	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	3695	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-3	6368	44	#line 6368 "NXCDefs.h"
-3	3694	44	#line 3694 "NXCDefs.h"
-3	3761	44	#line 3761 "NXCDefs.h"
-3	49	44	#line 49 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-3	49	44	#line 49 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-3	50	44		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 1
-3	49	47	#line 49 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-3	50	47	#line 50 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-3	51	47		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
-3	3758	49	#line 3758 "NXCDefs.h"
-3	3759	49		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	3758	51	#line 3758 "NXCDefs.h"
-3	3758	51	#line 3758 "NXCDefs.h"
-3	3759	51		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
-3	3758	53	#line 3758 "NXCDefs.h"
-3	3759	53		tst 5, __zfSetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-3	3758	56	#line 3758 "NXCDefs.h"
-3	3759	56		brtst 4, __005__NXC_Label_36, __zfSetSensorLowspeed_inline_inicializaSensores
-3	3758	59	#line 3758 "NXCDefs.h"
-3	3759	59		set __D0SetSensorLowspeed_inline_inicializaSensores, 11
-3	3758	62	#line 3758 "NXCDefs.h"
-3	3759	62		jmp __005__NXC_Label_37
-3	3758	64	#line 3758 "NXCDefs.h"
-3	3759	64		set __D0SetSensorLowspeed_inline_inicializaSensores, 10
-3	3758	67	#line 3758 "NXCDefs.h"
-3	3759	67		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __D0SetSensorLowspeed_inline_inicializaSensores
-3	3663	69	#line 3663 "NXCDefs.h"
-3	3664	69		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-3	3663	73	#line 3663 "NXCDefs.h"
-3	3759	73	#line 3759 "NXCDefs.h"
-3	3759	73	#line 3759 "NXCDefs.h"
-3	3760	73		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	3759	75	#line 3759 "NXCDefs.h"
-3	3759	75	#line 3759 "NXCDefs.h"
-3	3760	75		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-3	3759	78	#line 3759 "NXCDefs.h"
-3	3676	78	#line 3676 "NXCDefs.h"
-3	3677	78		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
-3	3676	82	#line 3676 "NXCDefs.h"
-3	3760	82	#line 3760 "NXCDefs.h"
-3	3760	82	#line 3760 "NXCDefs.h"
-3	3761	82		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	3760	84	#line 3760 "NXCDefs.h"
-3	3694	84	#line 3694 "NXCDefs.h"
-3	3695	84	#pragma macro 4
-3	3695	84		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	3695	86		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-3	6435	88	#line 6435 "NXCDefs.h"
-3	3694	88	#line 3694 "NXCDefs.h"
-3	3761	88	#line 3761 "NXCDefs.h"
-3	50	88	#line 50 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-3	50	88	#line 50 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-3	51	88		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 2
-3	50	91	#line 50 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-3	51	91	#line 51 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-3	52	91		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
-3	3758	93	#line 3758 "NXCDefs.h"
-3	3759	93		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	3758	95	#line 3758 "NXCDefs.h"
-3	3758	95	#line 3758 "NXCDefs.h"
-3	3759	95		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
-3	3758	97	#line 3758 "NXCDefs.h"
-3	3759	97		tst 5, __zfSetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-3	3758	100	#line 3758 "NXCDefs.h"
-3	3759	100		brtst 4, __006__NXC_Label_36, __zfSetSensorLowspeed_inline_inicializaSensores
-3	3758	103	#line 3758 "NXCDefs.h"
-3	3759	103		set __D0SetSensorLowspeed_inline_inicializaSensores, 11
-3	3758	106	#line 3758 "NXCDefs.h"
-3	3759	106		jmp __006__NXC_Label_37
-3	3758	108	#line 3758 "NXCDefs.h"
-3	3759	108		set __D0SetSensorLowspeed_inline_inicializaSensores, 10
-3	3758	111	#line 3758 "NXCDefs.h"
-3	3759	111		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __D0SetSensorLowspeed_inline_inicializaSensores
-3	3663	113	#line 3663 "NXCDefs.h"
-3	3664	113		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-3	3663	117	#line 3663 "NXCDefs.h"
-3	3759	117	#line 3759 "NXCDefs.h"
-3	3759	117	#line 3759 "NXCDefs.h"
-3	3760	117		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	3759	119	#line 3759 "NXCDefs.h"
-3	3759	119	#line 3759 "NXCDefs.h"
-3	3760	119		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-3	3759	122	#line 3759 "NXCDefs.h"
-3	3676	122	#line 3676 "NXCDefs.h"
-3	3677	122		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
-3	3676	126	#line 3676 "NXCDefs.h"
-3	3760	126	#line 3760 "NXCDefs.h"
-3	3760	126	#line 3760 "NXCDefs.h"
-3	3761	126		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	3760	128	#line 3760 "NXCDefs.h"
-3	3694	128	#line 3694 "NXCDefs.h"
-3	3695	128	#pragma macro 4
-3	3695	128		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	3695	130		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-3	6502	132	#line 6502 "NXCDefs.h"
-3	3694	132	#line 3694 "NXCDefs.h"
-3	3761	132	#line 3761 "NXCDefs.h"
-3	51	132	#line 51 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-3	51	132	#line 51 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-3	52	132		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 3
-3	51	135	#line 51 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-3	52	135	#line 52 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-3	53	135		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
-3	3758	137	#line 3758 "NXCDefs.h"
-3	3759	137		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	3758	139	#line 3758 "NXCDefs.h"
-3	3758	139	#line 3758 "NXCDefs.h"
-3	3759	139		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
-3	3758	141	#line 3758 "NXCDefs.h"
-3	3759	141		tst 5, __zfSetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-3	3758	144	#line 3758 "NXCDefs.h"
-3	3759	144		brtst 4, __007__NXC_Label_36, __zfSetSensorLowspeed_inline_inicializaSensores
-3	3758	147	#line 3758 "NXCDefs.h"
-3	3759	147		set __D0SetSensorLowspeed_inline_inicializaSensores, 11
-3	3758	150	#line 3758 "NXCDefs.h"
-3	3759	150		jmp __007__NXC_Label_37
-3	3758	152	#line 3758 "NXCDefs.h"
-3	3759	152		set __D0SetSensorLowspeed_inline_inicializaSensores, 10
-3	3758	155	#line 3758 "NXCDefs.h"
-3	3759	155		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __D0SetSensorLowspeed_inline_inicializaSensores
-3	3663	157	#line 3663 "NXCDefs.h"
-3	3664	157		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-3	3663	161	#line 3663 "NXCDefs.h"
-3	3759	161	#line 3759 "NXCDefs.h"
-3	3759	161	#line 3759 "NXCDefs.h"
-3	3760	161		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	3759	163	#line 3759 "NXCDefs.h"
-3	3759	163	#line 3759 "NXCDefs.h"
-3	3760	163		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-3	3759	166	#line 3759 "NXCDefs.h"
-3	3676	166	#line 3676 "NXCDefs.h"
-3	3677	166		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
-3	3676	170	#line 3676 "NXCDefs.h"
-3	3760	170	#line 3760 "NXCDefs.h"
-3	3760	170	#line 3760 "NXCDefs.h"
-3	3761	170		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	3760	172	#line 3760 "NXCDefs.h"
-3	3694	172	#line 3694 "NXCDefs.h"
-3	3695	172	#pragma macro 4
-3	3695	172		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	3695	174		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-3	6569	176	#line 6569 "NXCDefs.h"
-3	3694	176	#line 3694 "NXCDefs.h"
-3	3761	176	#line 3761 "NXCDefs.h"
-3	52	176	#line 52 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-3	54	176	#line 54 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-3	55	176		subret __inicializaSensores_return
-4	57	0	#line 57 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	58	0		set my_tc_d, 0
-4	57	3	#line 57 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	57	3	#line 57 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	60	3	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	61	3		set my_tc_e, 0
-4	60	6	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	60	6	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	60	6	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	60	6	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	60	6	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	60	6	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	61	6		add __signed_stack_001andaRetoDireita, my_tc_d, my_tc_e
-4	60	10	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	60	10	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	60	10	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	61	10		div __distanciaTachoCount_7qG2_grau_7qG2_000, __signed_stack_001andaRetoDireita, __constVal2
-4	60	14	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	60	14	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	61	14		subcall distanciaTachoCount, __distanciaTachoCount_return
-4	60	16	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	61	16		mov __signed_stack_001andaRetoDireita, __D0distanciaTachoCount
-4	60	18	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	60	18	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	61	18		set __D0andaRetoDireita, 10000
-4	60	21	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	61	21		cmp 0, __zfandaRetoDireita, __signed_stack_001andaRetoDireita, __D0andaRetoDireita
-4	60	25	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	61	25		mov __D0andaRetoDireita, __zfandaRetoDireita
-4	61	27	#line 61 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	62	27		brtst 4, __NXC_Label_617, __zfandaRetoDireita
-4	61	30	#line 61 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	62	30	#pragma macro 26
-4	62	30		acquire __RLSBmutex0
-4	62	31		mov __RLSReadBuf0, __RLSBbufLSWrite1
-4	62	33		set __RLSBytesCount0, 1
-4	62	36		wait 15
-4	62	38		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-4	62	40		index __D0andaRetoDireita, __RLSReadBuf0, 65535
-4	62	44		release __RLSBmutex0
-4	6642	45	#line 6642 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	61	45	#line 61 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	62	45		mov __andaRetoDireita_7qG2_distanciaAtual_7qG2_000, __D0andaRetoDireita
-4	61	47	#line 61 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	61	47	#line 61 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	63	47	#line 63 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	64	47		mov __signed_stack_001andaRetoDireita, __D0andaRetoDireita
-4	63	49	#line 63 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	63	49	#line 63 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	64	49		mov __D0andaRetoDireita, __andaRetoDireita_7qG2_dist_7qG2_000
-4	63	51	#line 63 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	64	51		cmp 4, __zfandaRetoDireita, __signed_stack_001andaRetoDireita, __D0andaRetoDireita
-4	63	55	#line 63 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	64	55		mov __D0andaRetoDireita, __zfandaRetoDireita
-4	64	57	#line 64 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	65	57		brtst 4, __NXC_Label_628, __zfandaRetoDireita
-4	65	60	#line 65 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	66	60		set __andaRetoDireita_7qG2_potd_7qG2_000, 90
-4	65	63	#line 65 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	65	63	#line 65 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	66	63	#line 66 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	67	63		set __andaRetoDireita_7qG2_pote_7qG2_000, 90
-4	66	66	#line 66 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	66	66	#line 66 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	67	66	#line 67 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	68	66		jmp __NXC_Label_633
-4	67	68	#line 67 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	68	68		mov __signed_stack_001andaRetoDireita, __andaRetoDireita_7qG2_distanciaAtual_7qG2_000
-4	67	70	#line 67 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	67	70	#line 67 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	68	70		mov __D0andaRetoDireita, __andaRetoDireita_7qG2_dist_7qG2_000
-4	67	72	#line 67 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	68	72		cmp 1, __zfandaRetoDireita, __signed_stack_001andaRetoDireita, __D0andaRetoDireita
-4	67	76	#line 67 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	68	76		mov __D0andaRetoDireita, __zfandaRetoDireita
-4	68	78	#line 68 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	69	78		brtst 4, __NXC_Label_636, __zfandaRetoDireita
-4	69	81	#line 69 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	70	81		set __andaRetoDireita_7qG2_pote_7qG2_000, 90
-4	69	84	#line 69 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	69	84	#line 69 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	70	84	#line 70 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	71	84		set __andaRetoDireita_7qG2_potd_7qG2_000, 70
-4	70	87	#line 70 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	70	87	#line 70 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	71	87	#line 71 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	72	87		jmp __NXC_Label_641
-4	71	89	#line 71 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	72	89		mov __signed_stack_001andaRetoDireita, __andaRetoDireita_7qG2_distanciaAtual_7qG2_000
-4	71	91	#line 71 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	71	91	#line 71 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	72	91		mov __D0andaRetoDireita, __andaRetoDireita_7qG2_dist_7qG2_000
-4	71	93	#line 71 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	72	93		cmp 0, __zfandaRetoDireita, __signed_stack_001andaRetoDireita, __D0andaRetoDireita
-4	71	97	#line 71 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	72	97		mov __D0andaRetoDireita, __zfandaRetoDireita
-4	72	99	#line 72 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	73	99		brtst 4, __NXC_Label_644, __zfandaRetoDireita
-4	73	102	#line 73 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	74	102		set __andaRetoDireita_7qG2_pote_7qG2_000, 70
-4	73	105	#line 73 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	73	105	#line 73 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	74	105	#line 74 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	75	105		set __andaRetoDireita_7qG2_potd_7qG2_000, 90
-4	74	108	#line 74 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	74	108	#line 74 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	76	108	#line 76 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	76	108	#line 76 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	76	108	#line 76 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	77	108	#line 77 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	78	108		getout __D0andaRetoDireita, __constVal1, 4
-4	77	112	#line 77 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	78	112		add my_tc_d, my_tc_d, __D0andaRetoDireita
-4	77	116	#line 77 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	77	116	#line 77 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	78	116		mov __D0andaRetoDireita, __andaRetoDireita_7qG2_potd_7qG2_000
-4	78	118	#line 78 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	79	118	#pragma macro 7
-4	79	118		setout __constVal1, 2, __D0andaRetoDireita, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	6757	141	#line 6757 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	78	141	#line 78 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	79	141	#line 79 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	80	141		getout __D0andaRetoDireita, __constVal0, 4
-4	79	145	#line 79 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	80	145		add my_tc_e, my_tc_e, __D0andaRetoDireita
-4	79	149	#line 79 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	79	149	#line 79 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	80	149		mov __D0andaRetoDireita, __andaRetoDireita_7qG2_pote_7qG2_000
-4	82	151	#line 82 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	83	151	#pragma macro 7
-4	83	151		setout __constVal0, 2, __D0andaRetoDireita, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	6771	174	#line 6771 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	82	174	#line 82 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	85	174	#line 85 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	86	174		jmp __NXC_Label_616
-4	85	176	#line 85 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	86	176	#line 86 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	87	176	#pragma macro 7
-4	87	176		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	6778	199	#line 6778 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	86	199	#line 86 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	89	199	#line 89 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	90	199	#pragma macro 7
-4	90	199		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	6781	222	#line 6781 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	89	222	#line 89 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	91	222	#line 91 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-4	92	222		subret __andaRetoDireita_return
-5	92	0	#line 92 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-5	92	0	#line 92 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-5	92	0	#line 92 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-5	92	0	#line 92 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-5	93	0		mul __D0distanciaTachoCount, __constVal3, __distanciaTachoCount_7qG2_grau_7qG2_000
-5	93	4	#line 93 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-5	94	4		subret __distanciaTachoCount_return
-5	93	6	#line 93 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-5	95	6	#line 95 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-5	96	6		subret __distanciaTachoCount_return
-6	129	0	#line 129 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
-6	130	0		subret ____initialize_global_data_return
+2	48	0	#line 48 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+2	49	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 0
+2	48	3	#line 48 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+2	49	3	#line 49 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+2	50	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+2	3758	5	#line 3758 "NXCDefs.h"
+2	3759	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3758	7	#line 3758 "NXCDefs.h"
+2	3758	7	#line 3758 "NXCDefs.h"
+2	3759	7		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+2	3758	9	#line 3758 "NXCDefs.h"
+2	3759	9		tst 5, __zfSetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+2	3758	12	#line 3758 "NXCDefs.h"
+2	3759	12		brtst 4, __004__NXC_Label_36, __zfSetSensorLowspeed_inline_inicializaSensores
+2	3758	15	#line 3758 "NXCDefs.h"
+2	3759	15		set __D0SetSensorLowspeed_inline_inicializaSensores, 11
+2	3758	18	#line 3758 "NXCDefs.h"
+2	3759	18		jmp __004__NXC_Label_37
+2	3758	20	#line 3758 "NXCDefs.h"
+2	3759	20		set __D0SetSensorLowspeed_inline_inicializaSensores, 10
+2	3758	23	#line 3758 "NXCDefs.h"
+2	3759	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __D0SetSensorLowspeed_inline_inicializaSensores
+2	3663	25	#line 3663 "NXCDefs.h"
+2	3664	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+2	3663	29	#line 3663 "NXCDefs.h"
+2	3759	29	#line 3759 "NXCDefs.h"
+2	3759	29	#line 3759 "NXCDefs.h"
+2	3760	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3759	31	#line 3759 "NXCDefs.h"
+2	3759	31	#line 3759 "NXCDefs.h"
+2	3760	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+2	3759	34	#line 3759 "NXCDefs.h"
+2	3676	34	#line 3676 "NXCDefs.h"
+2	3677	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+2	3676	38	#line 3676 "NXCDefs.h"
+2	3760	38	#line 3760 "NXCDefs.h"
+2	3760	38	#line 3760 "NXCDefs.h"
+2	3761	38		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3760	40	#line 3760 "NXCDefs.h"
+2	3694	40	#line 3694 "NXCDefs.h"
+2	3695	40	#pragma macro 4
+2	3695	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3695	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+2	6524	44	#line 6524 "NXCDefs.h"
+2	3694	44	#line 3694 "NXCDefs.h"
+2	3761	44	#line 3761 "NXCDefs.h"
+2	49	44	#line 49 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+2	49	44	#line 49 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+2	50	44		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 1
+2	49	47	#line 49 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+2	50	47	#line 50 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+2	51	47		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+2	3758	49	#line 3758 "NXCDefs.h"
+2	3759	49		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3758	51	#line 3758 "NXCDefs.h"
+2	3758	51	#line 3758 "NXCDefs.h"
+2	3759	51		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+2	3758	53	#line 3758 "NXCDefs.h"
+2	3759	53		tst 5, __zfSetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+2	3758	56	#line 3758 "NXCDefs.h"
+2	3759	56		brtst 4, __005__NXC_Label_36, __zfSetSensorLowspeed_inline_inicializaSensores
+2	3758	59	#line 3758 "NXCDefs.h"
+2	3759	59		set __D0SetSensorLowspeed_inline_inicializaSensores, 11
+2	3758	62	#line 3758 "NXCDefs.h"
+2	3759	62		jmp __005__NXC_Label_37
+2	3758	64	#line 3758 "NXCDefs.h"
+2	3759	64		set __D0SetSensorLowspeed_inline_inicializaSensores, 10
+2	3758	67	#line 3758 "NXCDefs.h"
+2	3759	67		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __D0SetSensorLowspeed_inline_inicializaSensores
+2	3663	69	#line 3663 "NXCDefs.h"
+2	3664	69		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+2	3663	73	#line 3663 "NXCDefs.h"
+2	3759	73	#line 3759 "NXCDefs.h"
+2	3759	73	#line 3759 "NXCDefs.h"
+2	3760	73		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3759	75	#line 3759 "NXCDefs.h"
+2	3759	75	#line 3759 "NXCDefs.h"
+2	3760	75		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+2	3759	78	#line 3759 "NXCDefs.h"
+2	3676	78	#line 3676 "NXCDefs.h"
+2	3677	78		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+2	3676	82	#line 3676 "NXCDefs.h"
+2	3760	82	#line 3760 "NXCDefs.h"
+2	3760	82	#line 3760 "NXCDefs.h"
+2	3761	82		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3760	84	#line 3760 "NXCDefs.h"
+2	3694	84	#line 3694 "NXCDefs.h"
+2	3695	84	#pragma macro 4
+2	3695	84		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3695	86		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+2	6591	88	#line 6591 "NXCDefs.h"
+2	3694	88	#line 3694 "NXCDefs.h"
+2	3761	88	#line 3761 "NXCDefs.h"
+2	50	88	#line 50 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+2	50	88	#line 50 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+2	51	88		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 2
+2	50	91	#line 50 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+2	51	91	#line 51 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+2	52	91		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+2	3758	93	#line 3758 "NXCDefs.h"
+2	3759	93		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3758	95	#line 3758 "NXCDefs.h"
+2	3758	95	#line 3758 "NXCDefs.h"
+2	3759	95		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+2	3758	97	#line 3758 "NXCDefs.h"
+2	3759	97		tst 5, __zfSetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+2	3758	100	#line 3758 "NXCDefs.h"
+2	3759	100		brtst 4, __006__NXC_Label_36, __zfSetSensorLowspeed_inline_inicializaSensores
+2	3758	103	#line 3758 "NXCDefs.h"
+2	3759	103		set __D0SetSensorLowspeed_inline_inicializaSensores, 11
+2	3758	106	#line 3758 "NXCDefs.h"
+2	3759	106		jmp __006__NXC_Label_37
+2	3758	108	#line 3758 "NXCDefs.h"
+2	3759	108		set __D0SetSensorLowspeed_inline_inicializaSensores, 10
+2	3758	111	#line 3758 "NXCDefs.h"
+2	3759	111		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __D0SetSensorLowspeed_inline_inicializaSensores
+2	3663	113	#line 3663 "NXCDefs.h"
+2	3664	113		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+2	3663	117	#line 3663 "NXCDefs.h"
+2	3759	117	#line 3759 "NXCDefs.h"
+2	3759	117	#line 3759 "NXCDefs.h"
+2	3760	117		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3759	119	#line 3759 "NXCDefs.h"
+2	3759	119	#line 3759 "NXCDefs.h"
+2	3760	119		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+2	3759	122	#line 3759 "NXCDefs.h"
+2	3676	122	#line 3676 "NXCDefs.h"
+2	3677	122		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+2	3676	126	#line 3676 "NXCDefs.h"
+2	3760	126	#line 3760 "NXCDefs.h"
+2	3760	126	#line 3760 "NXCDefs.h"
+2	3761	126		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3760	128	#line 3760 "NXCDefs.h"
+2	3694	128	#line 3694 "NXCDefs.h"
+2	3695	128	#pragma macro 4
+2	3695	128		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3695	130		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+2	6658	132	#line 6658 "NXCDefs.h"
+2	3694	132	#line 3694 "NXCDefs.h"
+2	3761	132	#line 3761 "NXCDefs.h"
+2	51	132	#line 51 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+2	51	132	#line 51 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+2	52	132		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 3
+2	51	135	#line 51 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+2	52	135	#line 52 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+2	53	135		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+2	3758	137	#line 3758 "NXCDefs.h"
+2	3759	137		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3758	139	#line 3758 "NXCDefs.h"
+2	3758	139	#line 3758 "NXCDefs.h"
+2	3759	139		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+2	3758	141	#line 3758 "NXCDefs.h"
+2	3759	141		tst 5, __zfSetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+2	3758	144	#line 3758 "NXCDefs.h"
+2	3759	144		brtst 4, __007__NXC_Label_36, __zfSetSensorLowspeed_inline_inicializaSensores
+2	3758	147	#line 3758 "NXCDefs.h"
+2	3759	147		set __D0SetSensorLowspeed_inline_inicializaSensores, 11
+2	3758	150	#line 3758 "NXCDefs.h"
+2	3759	150		jmp __007__NXC_Label_37
+2	3758	152	#line 3758 "NXCDefs.h"
+2	3759	152		set __D0SetSensorLowspeed_inline_inicializaSensores, 10
+2	3758	155	#line 3758 "NXCDefs.h"
+2	3759	155		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __D0SetSensorLowspeed_inline_inicializaSensores
+2	3663	157	#line 3663 "NXCDefs.h"
+2	3664	157		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+2	3663	161	#line 3663 "NXCDefs.h"
+2	3759	161	#line 3759 "NXCDefs.h"
+2	3759	161	#line 3759 "NXCDefs.h"
+2	3760	161		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3759	163	#line 3759 "NXCDefs.h"
+2	3759	163	#line 3759 "NXCDefs.h"
+2	3760	163		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+2	3759	166	#line 3759 "NXCDefs.h"
+2	3676	166	#line 3676 "NXCDefs.h"
+2	3677	166		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+2	3676	170	#line 3676 "NXCDefs.h"
+2	3760	170	#line 3760 "NXCDefs.h"
+2	3760	170	#line 3760 "NXCDefs.h"
+2	3761	170		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3760	172	#line 3760 "NXCDefs.h"
+2	3694	172	#line 3694 "NXCDefs.h"
+2	3695	172	#pragma macro 4
+2	3695	172		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+2	3695	174		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+2	6725	176	#line 6725 "NXCDefs.h"
+2	3694	176	#line 3694 "NXCDefs.h"
+2	3761	176	#line 3761 "NXCDefs.h"
+2	52	176	#line 52 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+2	54	176	#line 54 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+2	55	176		subret __inicializaSensores_return
+3	55	0	#line 55 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	56	0		set __D0andaReto, 70
+3	56	3	#line 56 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	57	3	#pragma macro 7
+3	57	3		setout __constVal1, 2, __D0andaReto, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	6739	26	#line 6739 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	56	26	#line 56 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	56	26	#line 56 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	57	26		set __D0andaReto, 70
+3	57	29	#line 57 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	58	29	#pragma macro 7
+3	58	29		setout __constVal0, 2, __D0andaReto, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	6746	52	#line 6746 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	57	52	#line 57 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	57	52	#line 57 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	57	52	#line 57 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	7921	52	#line 7921 "NXCDefs.h"
+3	7922	52		wait 10000
+3	7921	54	#line 7921 "NXCDefs.h"
+3	58	54	#line 58 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	58	54	#line 58 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	59	54		set __signed_stack_001andaReto, 0
+3	58	57	#line 58 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	58	57	#line 58 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	59	57		set __signed_stack_002andaReto, 56
+3	58	60	#line 58 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	58	60	#line 58 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	59	60		getout __D0andaReto, __constVal1, 4
+3	59	64	#line 59 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	59	64	#line 59 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	60	64		mov __TextOutArgs.Location.X, __signed_stack_001andaReto
+3	59	66	#line 59 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	60	66		mov __TextOutArgs.Location.Y, __signed_stack_002andaReto
+3	59	68	#line 59 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	60	68		set __TextOutArgs.Options, 0
+3	59	71	#line 59 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	60	71		numtostr __TextOutArgs.Text, __D0andaReto
+3	59	74	#line 59 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	60	74		syscall 13, __TextOutArgs
+3	59	77	#line 59 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	59	77	#line 59 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	59	77	#line 59 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	59	77	#line 59 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	60	77		set __signed_stack_001andaReto, 0
+3	59	80	#line 59 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	59	80	#line 59 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	60	80		set __signed_stack_002andaReto, 48
+3	59	83	#line 59 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	59	83	#line 59 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	60	83		getout __D0andaReto, __constVal0, 4
+3	60	87	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	60	87	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	61	87		mov __TextOutArgs.Location.X, __signed_stack_001andaReto
+3	60	89	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	61	89		mov __TextOutArgs.Location.Y, __signed_stack_002andaReto
+3	60	91	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	61	91		set __TextOutArgs.Options, 0
+3	60	94	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	61	94		numtostr __TextOutArgs.Text, __D0andaReto
+3	60	97	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	61	97		syscall 13, __TextOutArgs
+3	60	100	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	61	100		mov __D0andaReto, __TextOutArgs.Result
+3	60	102	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	60	102	#line 60 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	61	102	#line 61 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	62	102	#pragma macro 7
+3	62	102		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	6829	125	#line 6829 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	61	125	#line 61 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	63	125	#line 63 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	64	125	#pragma macro 7
+3	64	125		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	6832	148	#line 6832 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	63	148	#line 63 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	63	148	#line 63 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	64	148		set __D0andaReto, 1
+3	63	151	#line 63 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	64	151		tst 5, __zfandaReto, __D0andaReto
+3	63	154	#line 63 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	64	154		brtst 4, __NXC_Label_631, __zfandaReto
+3	67	157	#line 67 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	68	157		jmp __NXC_Label_630
+3	67	159	#line 67 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	67	159	#line 67 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+3	68	159		subret __andaReto_return
+4	139	0	#line 139 "C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc"
+4	140	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc
-1	__ResetSensorSubroutine	12	NXTDefs.h
-2	__ReadLSBytes0	25	NXTDefs.h
-3	inicializaSensores	109	C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc
-4	andaRetoDireita	287	C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc
-5	distanciaTachoCount	511	C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc
-6	__initialize_global_data	519	C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc
+1	__ResetSensorSubroutine	9	NXTDefs.h
+2	inicializaSensores	22	C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc
+3	andaReto	200	C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc
+4	__initialize_global_data	361	C:\Users\natia\OneDrive\Documentos\GitHub\sekksi2016\Executivo\segue reto.nxc
