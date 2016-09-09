@@ -43,6 +43,20 @@ void viraEsq(int angulo);
 void viraDir(int angulo);
 
 
+/*
+10 segundos
+dir: 3468   70
+esq: 3144   70
+
+dir: 3369  70
+esq: 2925  71
+
+dir: 3402  70
+esq: 3094  75
+
+dir:
+esq:
+*/
 
 void inicializaSensores()
 {
@@ -53,11 +67,64 @@ void inicializaSensores()
 }
 
 void andaReto(){
-        OnFwd(MD, 70);
-        OnFwd(ME, 70);
-        Wait(10000);
+        int potd, pote;
+
+        potd = 70;
+        pote = 70;
+
+        OnFwd(MD, potd);
+        OnFwd(ME, pote);
+        Wait(200);
+        
+        if(MotorTachoCount(MD) > MotorTachoCount(ME)){
+          while(MotorTachoCount(MD) > MotorTachoCount(ME))
+          {
+             pote+=5;
+             if(pote>=90){
+                          //PAU!!!
+                          Off(MD);
+                          Off(ME);
+                          while(1){}
+             }
+              OnFwd(MD, potd);
+              OnFwd(ME, pote);
+              Wait(200);
+          }
+
+        }
+        else{
+           while(MotorTachoCount(MD) < MotorTachoCount(ME))
+           {
+             potd+=5;
+             if(potd>=90){
+                          //PAU!!!
+                           Off(MD);
+                          Off(ME);
+                          while(1){}
+             }
+              OnFwd(MD, potd);
+              OnFwd(ME, pote);
+              Wait(200);
+           }
+
+        }
+        
+       // Off(MD);
+        //Off(ME);
         NumOut(0, LCD_LINE1, MotorTachoCount(MD));
         NumOut(0, LCD_LINE2, MotorTachoCount(ME));
+        NumOut(0, LCD_LINE3, potd);
+        NumOut(0, LCD_LINE4, pote);
+        
+        OnFwd(MD, potd);
+        OnFwd(ME, pote);
+        Wait(10000);
+        
+        ClearScreen();
+        NumOut(0, LCD_LINE1, MotorTachoCount(MD));
+        NumOut(0, LCD_LINE2, MotorTachoCount(ME));
+        NumOut(0, LCD_LINE3, potd);
+        NumOut(0, LCD_LINE4, pote);
         Off(MD);
         Off(ME);
         
