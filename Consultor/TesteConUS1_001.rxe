@@ -1,0 +1,29 @@
+#define CONEXAO 0
+#define INBOX 2
+#define OUTBOX 1
+task main()
+{
+     int x, i;
+     int aux=0;
+     SetSensorUltrasonic(IN_4);
+     TextOut(30, LCD_LINE1, "passei1");
+     while(aux==0)
+     {
+          ReceiveRemoteNumber(INBOX, 0, aux);
+          Wait(20);
+     }
+     SendRemoteNumber(CONEXAO, OUTBOX, 1);
+     TextOut(30, LCD_LINE2, "passei2");
+     while(TRUE)
+     {
+          x = SensorUS(IN_4);
+          NumOut(30, LCD_LINE4, x);
+          if(x<15)
+          {
+               SendRemoteNumber(CONEXAO, OUTBOX, 1);
+               TextOut(30, LCD_LINE3, "passei3");
+               Wait(200);
+          }
+          Wait(20);
+     }
+}

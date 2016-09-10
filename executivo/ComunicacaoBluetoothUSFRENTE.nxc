@@ -109,21 +109,22 @@ task main(){
 
 	ConectaBT();
 
-  SendRemoteNumber(BT_CONN, OUTBOX, 1);
+    SendRemoteNumber(BT_CONN, OUTBOX, 1);
 
-  while(true){
-  /*if(!BTCheck(1)){
-		do{
-			ConectaBT();
-			SendRemoteBool(BT_CONN, OUTBOX, 1);
-		}while(!BTCheck(1));
-	} */
-	OnFwd(MD, 90);
-	OnFwd(ME, 90);
-	while(recebeUSFRENTE() == false){
-	}
-	OffEx(MD,0);
-	OffEx(ME,0);
+	while(true){
+	  /*if(!BTCheck(1)){
+			do{
+				ConectaBT();
+				SendRemoteBool(BT_CONN, OUTBOX, 1);
+			}while(!BTCheck(1));
+		} */
+		OnFwd(MD, 90);
+		OnFwd(ME, 90);
+		while(recebeUSFRENTE() == false){
+		}
+		OffEx(MD,0);
+		OffEx(ME,0);
+		while(1);
 	}
 
 }

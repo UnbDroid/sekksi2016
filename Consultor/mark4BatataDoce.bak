@@ -34,21 +34,28 @@
 #define COR_BRANCA_DIR_LONGE_MAX 280
 #define COR_BASE_DIR_MIN 240
 #define COR_BASE_DIR_MAX 260
+
 // definoes misc
+
 #define I_MAXIMO_DE_TEMPO_FILTRO 200
+
 //Declaraçoes de funçoes
+
 int identificar_alien();
 int testar_cor();
 float filter (int s);
 bool BTCheck(int conn);
 void lerSensores();
+
 //Para o consultor, somente manda o sensor US
+
 #define CONEXAO 0
 #define OUTBOX 1
 #define INBOX 2
+
 task main()
 {
-     bool aux,aux1=0;
+     int aux,aux1=0;
      SetSensorUltrasonic(US_FRENTE);
     //do{
       Wait(80);
@@ -65,7 +72,6 @@ task main()
               NumOut(0, LCD_LINE1, SensorUS(US_FRENTE));
               SendRemoteNumber(CONEXAO, OUTBOX, 1);
               TextOut(0, LCD_LINE5, "FOIFOI12");
-              ClearScreen();
               Wait(50);
           }
      }

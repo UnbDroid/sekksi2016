@@ -1,64 +1,64 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
 0	__CLSWMutex3	9	0	0	4	2
-1	__unsigned_stack_001main	5	1	4	4	2
+1	__CLSRMutex3	9	0	4	4	2
 2	__CLSCSMutex3	9	0	8	4	2
 3	__signed_stack_002main	6	1	12	4	4
-4	__CLSRMutex3	9	0	16	4	2
-5	__PointOutMutex	9	0	20	4	4
-6	__RLSBmutex3	9	0	24	4	4
-7	__RRNTmpVal	6	1	28	4	7
-8	__TextOutMutex	9	0	32	4	4
-9	__DU0SetSensorLowspeed_inline_SetSensorUltrasonic	5	1	36	4	5
-10	__D0SetSensorLowspeed_inline_SetSensorUltrasonic	6	1	40	4	2
-11	__D0main	6	1	44	4	18
-12	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	48	4	4
-13	__signed_stack_001main	6	1	52	4	6
-14	__SRSTmpLongVal	6	1	56	4	2
-15	__constVal200	4	0	60	2	4
-16	__RLSBIterations3	1	1	62	1	4
-17	__RLSBytesCount3	1	1	63	1	8
-18	__RLSBResult3	2	1	64	1	7
-19	__constVal15	2	0	65	1	2
-20	__WFRRTmpByte	1	1	66	1	2
-21	__RRNErr	1	1	67	1	2
-22	__main_7qG2_aux1_7qG2_000	1	1	68	1	3
-23	____initialize_global_data_return	1	1	69	1	3
-24	__SetSensorUltrasonic_7qG2_port_7qG2_000_inline_main	1	1	70	1	2
-25	__ResetSensorPort	1	1	71	1	3
-26	__constVal5	2	0	72	1	1
-27	____ResetSensorSubroutine_return	1	1	73	1	3
-28	__ResetSensorTmp	1	1	74	1	2
-29	__constVal0	2	1	75	1	4
-30	__constVal1	2	0	76	1	9
-31	__constVal4	2	0	77	1	2
-32	__constVal3	2	0	78	1	4
-33	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	79	1	2
-34	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main	1	1	80	1	4
-35	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_main	1	1	81	1	2
-36	____ReadLSBytes3_return	1	1	82	1	4
-37	__constVal2	2	0	83	1	2
-38	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	84	1	2
-39	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	85	1	2
-40	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	86	1	2
-41	__LSWriteOptionsVar	1	1	87	1	2
-42	__MRArgs	8	0	4	8	10
-43	__MRArgs.Result	2	1	88	1	10
-44	__MRArgs.QueueID	1	1	89	1	10
-45	__MRArgs.Remove	1	1	90	1	10
-46	__MRArgs.Message	7	0	92	4	10
+4	__PointOutMutex	9	0	16	4	2
+5	__RLSBmutex3	9	0	20	4	4
+6	__RRNTmpVal	6	1	24	4	9
+7	__TextOutMutex	9	0	28	4	4
+8	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	32	4	4
+9	__D0SetSensorLowspeed_inline_SetSensorUltrasonic	6	1	36	4	2
+10	__D0main	6	1	40	4	21
+11	__DU0SetSensorLowspeed_inline_SetSensorUltrasonic	5	1	44	4	5
+12	__signed_stack_001main	6	1	48	4	10
+13	__SRSTmpLongVal	6	1	52	4	2
+14	__main_7qG2_aux1_7qG2_000	4	1	56	2	3
+15	__constVal200	4	0	58	2	2
+16	__main_7qG2_aux_7qG2_000	4	1	60	2	2
+17	__RLSBIterations3	1	1	62	1	4
+18	__RLSBResult3	2	1	63	1	7
+19	__RLSBytesCount3	1	1	64	1	8
+20	__RRNErr	1	1	65	1	2
+21	____initialize_global_data_return	1	1	66	1	3
+22	__constVal15	2	0	67	1	2
+23	__WFRRTmpByte	1	1	68	1	2
+24	__SetSensorUltrasonic_7qG2_port_7qG2_000_inline_main	1	1	69	1	2
+25	__ResetSensorPort	1	1	70	1	3
+26	__constVal5	2	0	71	1	1
+27	____ResetSensorSubroutine_return	1	1	72	1	3
+28	__ResetSensorTmp	1	1	73	1	2
+29	__constVal0	2	1	74	1	4
+30	__constVal1	2	0	75	1	8
+31	__constVal4	2	0	76	1	2
+32	__constVal3	2	0	77	1	4
+33	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	78	1	2
+34	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main	1	1	79	1	4
+35	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_main	1	1	80	1	2
+36	____ReadLSBytes3_return	1	1	81	1	4
+37	__constVal2	2	0	82	1	2
+38	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	83	1	2
+39	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	84	1	2
+40	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main	1	1	85	1	2
+41	__LSWriteOptionsVar	1	1	86	1	2
+42	__MRArgs	8	0	4	8	9
+43	__MRArgs.Result	2	1	88	1	9
+44	__MRArgs.QueueID	1	1	89	1	9
+45	__MRArgs.Remove	1	1	90	1	9
+46	__MRArgs.Message	7	0	92	4	9
 47	__MRArgs.Message.Message_type	1	0	0	1	0
 48	__CBTWArgs	8	0	3	8	4
 49	__CBTWArgs.Result	2	1	96	1	4
 50	__CBTWArgs.Connection	1	1	97	1	4
 51	__CBTWArgs.Buffer	7	0	98	4	4
 52	__CBTWArgs.Buffer.Buffer_type	1	0	0	1	0
-53	__PointOutArgs	8	0	3	12	8
-54	__PointOutArgs.Result	2	1	100	1	8
-55	__PointOutArgs.Location	8	0	2	4	8
-56	__PointOutArgs.Location.X	4	1	104	2	8
-57	__PointOutArgs.Location.Y	4	1	106	2	8
-58	__PointOutArgs.Options	5	1	108	4	8
+53	__PointOutArgs	8	0	3	12	4
+54	__PointOutArgs.Result	2	1	100	1	4
+55	__PointOutArgs.Location	8	0	2	4	4
+56	__PointOutArgs.Location.X	4	1	104	2	4
+57	__PointOutArgs.Location.Y	4	1	106	2	4
+58	__PointOutArgs.Options	5	1	108	4	4
 59	__TextOutArgs	8	0	4	16	12
 60	__TextOutArgs.Result	2	1	112	1	12
 61	__TextOutArgs.Location	8	0	2	4	12
@@ -110,235 +110,240 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 107	__SRSTmpBuf.__SRSTmpBuf_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	50	0	#line 50 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	51	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	50	2	#line 50 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	50	2	#line 50 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	51	2		set __main_7qG2_aux1_7qG2_000, 0
-0	50	5	#line 50 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	51	5	#line 51 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	52	5		set __SetSensorUltrasonic_7qG2_port_7qG2_000_inline_main, 3
-0	51	8	#line 51 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	4533	8	#line 4533 "NXCDefs.h"
-0	4534	8		mov __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main, __SetSensorUltrasonic_7qG2_port_7qG2_000_inline_main
-0	4533	10	#line 4533 "NXCDefs.h"
-0	4533	10	#line 4533 "NXCDefs.h"
-0	4534	10		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_main, __constVal1
-0	4523	12	#line 4523 "NXCDefs.h"
-0	4524	12		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main
-0	4523	14	#line 4523 "NXCDefs.h"
-0	4523	14	#line 4523 "NXCDefs.h"
-0	4524	14		mov __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_main
-0	4523	16	#line 4523 "NXCDefs.h"
-0	4524	16		tst 5, __D0SetSensorLowspeed_inline_SetSensorUltrasonic, __DU0SetSensorLowspeed_inline_SetSensorUltrasonic
+0	57	0	#line 57 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	58	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	57	2	#line 57 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	57	2	#line 57 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	58	2		set __main_7qG2_aux_7qG2_000, 0
+0	57	5	#line 57 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	57	5	#line 57 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	58	5		set __main_7qG2_aux1_7qG2_000, 0
+0	57	8	#line 57 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	58	8	#line 58 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	59	8		set __SetSensorUltrasonic_7qG2_port_7qG2_000_inline_main, 3
+0	58	11	#line 58 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	4533	11	#line 4533 "NXCDefs.h"
+0	4534	11		mov __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main, __SetSensorUltrasonic_7qG2_port_7qG2_000_inline_main
+0	4533	13	#line 4533 "NXCDefs.h"
+0	4533	13	#line 4533 "NXCDefs.h"
+0	4534	13		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_main, __constVal1
+0	4523	15	#line 4523 "NXCDefs.h"
+0	4524	15		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main
+0	4523	17	#line 4523 "NXCDefs.h"
+0	4523	17	#line 4523 "NXCDefs.h"
+0	4524	17		mov __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_SetSensorUltrasonic_inline_main
 0	4523	19	#line 4523 "NXCDefs.h"
-0	4524	19		brtst 4, __001__001__ASM_Label_36, __D0SetSensorLowspeed_inline_SetSensorUltrasonic
+0	4524	19		tst 5, __D0SetSensorLowspeed_inline_SetSensorUltrasonic, __DU0SetSensorLowspeed_inline_SetSensorUltrasonic
 0	4523	22	#line 4523 "NXCDefs.h"
-0	4524	22		set __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, 11
+0	4524	22		brtst 4, __001__001__ASM_Label_36, __D0SetSensorLowspeed_inline_SetSensorUltrasonic
 0	4523	25	#line 4523 "NXCDefs.h"
-0	4523	25	#line 4523 "NXCDefs.h"
-0	4524	25		jmp __001__001__ASM_Label_37
-0	4523	27	#line 4523 "NXCDefs.h"
-0	4524	27		set __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, 10
+0	4524	25		set __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, 11
+0	4523	28	#line 4523 "NXCDefs.h"
+0	4523	28	#line 4523 "NXCDefs.h"
+0	4524	28		jmp __001__001__ASM_Label_37
 0	4523	30	#line 4523 "NXCDefs.h"
-0	4523	30	#line 4523 "NXCDefs.h"
-0	4524	30		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __DU0SetSensorLowspeed_inline_SetSensorUltrasonic
-0	4428	32	#line 4428 "NXCDefs.h"
-0	4429	32		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, 0
-0	4428	36	#line 4428 "NXCDefs.h"
-0	4523	36	#line 4523 "NXCDefs.h"
-0	4524	36	#line 4524 "NXCDefs.h"
-0	4525	36		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main
-0	4524	38	#line 4524 "NXCDefs.h"
-0	4524	38	#line 4524 "NXCDefs.h"
-0	4525	38		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, 0
+0	4524	30		set __DU0SetSensorLowspeed_inline_SetSensorUltrasonic, 10
+0	4523	33	#line 4523 "NXCDefs.h"
+0	4523	33	#line 4523 "NXCDefs.h"
+0	4524	33		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __DU0SetSensorLowspeed_inline_SetSensorUltrasonic
+0	4428	35	#line 4428 "NXCDefs.h"
+0	4429	35		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, 0
+0	4428	39	#line 4428 "NXCDefs.h"
+0	4523	39	#line 4523 "NXCDefs.h"
+0	4524	39	#line 4524 "NXCDefs.h"
+0	4525	39		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main
 0	4524	41	#line 4524 "NXCDefs.h"
-0	4441	41	#line 4441 "NXCDefs.h"
-0	4442	41		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, 1
-0	4441	45	#line 4441 "NXCDefs.h"
-0	4524	45	#line 4524 "NXCDefs.h"
-0	4525	45	#line 4525 "NXCDefs.h"
-0	4525	45	#line 4525 "NXCDefs.h"
-0	4459	45	#line 4459 "NXCDefs.h"
-0	4460	45	#pragma macro 4
-0	4460	45		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main
-0	4460	47		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-0	7180	49	#line 7180 "NXCDefs.h"
-0	4459	49	#line 4459 "NXCDefs.h"
-0	4525	49	#line 4525 "NXCDefs.h"
-0	4533	49	#line 4533 "NXCDefs.h"
-0	51	49	#line 51 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	53	49	#line 53 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	54	49		set __Wait_7qG2_ms_7qG2_000_inline_main, 80
-0	53	52	#line 53 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	8869	52	#line 8869 "NXCDefs.h"
-0	8870	52		waitv __Wait_7qG2_ms_7qG2_000_inline_main
-0	8869	54	#line 8869 "NXCDefs.h"
-0	53	54	#line 53 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	54	54	#line 54 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	55	54	#pragma macro 9
-0	55	54		mov __MRArgs.QueueID, __constVal2
-0	55	56		mov __MRArgs.Remove, __constVal1
-0	55	58		set __RRNTmpVal, 0
-0	55	61		syscall 27, __MRArgs
-0	55	64		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-0	55	69		mov __D0main, __MRArgs.Result
-0	7198	71	#line 7198 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	54	71	#line 54 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	54	71	#line 54 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	58	71	#line 58 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	59	71		mov __unsigned_stack_001main, __main_7qG2_aux1_7qG2_000
-0	58	73	#line 58 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	59	73	#line 59 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	60	73		set __D0main, 0
-0	59	76	#line 59 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	60	76		cmp 4, __D0main, __unsigned_stack_001main, __D0main
-0	60	80	#line 60 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	61	80		brtst 4, __ASM_Label_621, __D0main
-0	60	83	#line 60 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	61	83	#pragma macro 9
-0	61	83		mov __MRArgs.QueueID, __constVal3
-0	61	85		mov __MRArgs.Remove, __constVal1
-0	61	87		set __RRNTmpVal, 0
-0	61	90		syscall 27, __MRArgs
-0	61	93		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-0	61	98		mov __main_7qG2_aux1_7qG2_000, __RRNTmpVal
-0	61	100		mov __D0main, __MRArgs.Result
-0	7217	102	#line 7217 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	60	102	#line 60 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	60	102	#line 60 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	62	102	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	63	102	#pragma macro 26
-0	63	102		acquire __RLSBmutex3
-0	63	103		mov __RLSReadBuf3, __RLSBbufLSWrite1
-0	63	105		set __RLSBytesCount3, 1
-0	63	108		waitv __constVal15
-0	63	110		subcall __ReadLSBytes3, ____ReadLSBytes3_return
-0	63	112		index __D0main, __RLSReadBuf3, 65535
-0	63	116		release __RLSBmutex3
-0	7221	117	#line 7221 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	62	117	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	63	117		mov __signed_stack_001main, __D0main
-0	62	119	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	63	119		set __D0main, 20
-0	62	122	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	63	122		cmp 0, __D0main, __signed_stack_001main, __D0main
-0	63	126	#line 63 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	64	126		brtst 4, __ASM_Label_626, __D0main
-0	6921	129	#line 6921 "NXCDefs.h"
-0	6922	129	#pragma macro 6
-0	6922	129		acquire __PointOutMutex
-0	6922	130		mov __PointOutArgs.Location.X, __constVal200
-0	6922	132		mov __PointOutArgs.Location.Y, __constVal200
-0	6922	134		mov __PointOutArgs.Options, __constVal1
-0	6922	136		syscall 14, __PointOutArgs
-0	6922	139		release __PointOutMutex
-0	7235	140	#line 7235 "NXCDefs.h"
-0	6921	140	#line 6921 "NXCDefs.h"
-0	63	140	#line 63 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	64	140	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	65	140		set __signed_stack_001main, 0
-0	64	143	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	64	143	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	65	143		set __signed_stack_002main, 56
-0	64	146	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	64	146	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	65	146	#pragma macro 26
-0	65	146		acquire __RLSBmutex3
-0	65	147		mov __RLSReadBuf3, __RLSBbufLSWrite1
-0	65	149		set __RLSBytesCount3, 1
-0	65	152		waitv __constVal15
-0	65	154		subcall __ReadLSBytes3, ____ReadLSBytes3_return
-0	65	156		index __D0main, __RLSReadBuf3, 65535
-0	65	160		release __RLSBmutex3
-0	7249	161	#line 7249 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	64	161	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	65	161		acquire __TextOutMutex
-0	64	162	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	65	162		mov __TextOutArgs.Location.X, __signed_stack_001main
-0	64	164	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	65	164		mov __TextOutArgs.Location.Y, __signed_stack_002main
-0	64	166	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	65	166		set __TextOutArgs.Options, 0
-0	64	169	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	65	169		numtostr __TextOutArgs.Text, __D0main
-0	64	172	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	65	172		syscall 13, __TextOutArgs
-0	64	175	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	65	175		mov __D0main, __TextOutArgs.Result
-0	64	177	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	65	177		release __TextOutMutex
-0	64	178	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	64	178	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	65	178	#line 65 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	66	178	#pragma macro 25
-0	66	178		mov __SRSTmpBuf, __DCMessageWritePacket
-0	66	180		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
-0	66	185		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-0	66	190		mov __SRSTmpLongVal, __constVal1
-0	66	192		flatten __SRSFlattenBuf, __SRSTmpLongVal
-0	66	195		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-0	66	200		brcmp 0, __ConnWrite_Else0, __constVal0, __constVal4
-0	66	204		sub __WFRRTmpByte, __constVal0, __constVal4
-0	66	208		arrbuild __CHSWArgs.Buffer, __WFRRTmpByte, __SRSSendBuf
-0	66	213		syscall 37, __CHSWArgs
-0	66	216		mov __D0main, __CHSWArgs.Status
-0	66	218		jmp __ConnWrite_EndIf0
-0	66	220		mov __CBTWArgs.Connection, __constVal0
-0	66	222		mov __CBTWArgs.Buffer, __SRSSendBuf
-0	66	224		syscall 29, __CBTWArgs
-0	66	227		mov __D0main, __CBTWArgs.Result
-0	7273	229	#line 7273 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	65	229	#line 65 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	65	229	#line 65 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	66	229	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	67	229		set __signed_stack_001main, 0
-0	66	232	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	66	232	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	67	232		set __signed_stack_002main, 24
-0	66	235	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	66	235	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	67	235		strcat __strbufmain, __constStr0009
-0	66	239	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	67	239		acquire __TextOutMutex
-0	66	240	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	67	240		mov __TextOutArgs.Location.X, __signed_stack_001main
-0	66	242	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	67	242		mov __TextOutArgs.Location.Y, __signed_stack_002main
-0	66	244	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	67	244		set __TextOutArgs.Options, 0
-0	66	247	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	67	247		mov __TextOutArgs.Text, __strbufmain
-0	66	249	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	67	249		syscall 13, __TextOutArgs
-0	66	252	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	67	252		mov __D0main, __TextOutArgs.Result
-0	66	254	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	67	254		release __TextOutMutex
-0	66	255	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	6921	255	#line 6921 "NXCDefs.h"
-0	6922	255	#pragma macro 6
-0	6922	255		acquire __PointOutMutex
-0	6922	256		mov __PointOutArgs.Location.X, __constVal200
-0	6922	258		mov __PointOutArgs.Location.Y, __constVal200
-0	6922	260		mov __PointOutArgs.Options, __constVal1
-0	6922	262		syscall 14, __PointOutArgs
-0	6922	265		release __PointOutMutex
-0	7308	266	#line 7308 "NXCDefs.h"
-0	6921	266	#line 6921 "NXCDefs.h"
-0	67	266	#line 67 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	68	266	#line 68 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	69	266		set __Wait_7qG2_ms_7qG2_000_inline_main, 50
-0	68	269	#line 68 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	8869	269	#line 8869 "NXCDefs.h"
-0	8870	269		waitv __Wait_7qG2_ms_7qG2_000_inline_main
-0	8869	271	#line 8869 "NXCDefs.h"
-0	68	271	#line 68 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	71	271	#line 71 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	72	271	#line 72 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	73	271		jmp __ASM_Label_620
-0	72	273	#line 72 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-0	73	273		exit -1, -1
+0	4524	41	#line 4524 "NXCDefs.h"
+0	4525	41		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, 0
+0	4524	44	#line 4524 "NXCDefs.h"
+0	4441	44	#line 4441 "NXCDefs.h"
+0	4442	44		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_SetSensorUltrasonic_inline_main, 1
+0	4441	48	#line 4441 "NXCDefs.h"
+0	4524	48	#line 4524 "NXCDefs.h"
+0	4525	48	#line 4525 "NXCDefs.h"
+0	4525	48	#line 4525 "NXCDefs.h"
+0	4459	48	#line 4459 "NXCDefs.h"
+0	4460	48	#pragma macro 4
+0	4460	48		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_SetSensorUltrasonic_inline_main
+0	4460	50		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	7184	52	#line 7184 "NXCDefs.h"
+0	4459	52	#line 4459 "NXCDefs.h"
+0	4525	52	#line 4525 "NXCDefs.h"
+0	4533	52	#line 4533 "NXCDefs.h"
+0	58	52	#line 58 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	61	52	#line 61 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	62	52		set __Wait_7qG2_ms_7qG2_000_inline_main, 80
+0	61	55	#line 61 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	8869	55	#line 8869 "NXCDefs.h"
+0	8870	55		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8869	57	#line 8869 "NXCDefs.h"
+0	61	57	#line 61 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	62	57	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	63	57	#pragma macro 9
+0	63	57		mov __MRArgs.QueueID, __constVal2
+0	63	59		mov __MRArgs.Remove, __constVal1
+0	63	61		set __RRNTmpVal, 0
+0	63	64		syscall 27, __MRArgs
+0	63	67		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+0	63	72		mov __main_7qG2_aux_7qG2_000, __RRNTmpVal
+0	7203	74	#line 7203 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	62	74	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	62	74	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	64	74	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	65	74		mov __signed_stack_001main, __RRNTmpVal
+0	64	76	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	64	76	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	65	76		set __D0main, 1
+0	64	79	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	65	79		cmp 5, __D0main, __signed_stack_001main, __D0main
+0	64	83	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	65	83		brtst 4, __ASM_Label_621, __D0main
+0	64	86	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	65	86		jmp __ASM_Label_620
+0	64	88	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	64	88	#line 64 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	66	88	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	67	88		mov __signed_stack_001main, __main_7qG2_aux1_7qG2_000
+0	66	90	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	67	90	#line 67 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	68	90		set __D0main, 0
+0	67	93	#line 67 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	68	93		cmp 4, __D0main, __signed_stack_001main, __D0main
+0	68	97	#line 68 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	69	97		brtst 4, __ASM_Label_627, __D0main
+0	68	100	#line 68 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	69	100	#pragma macro 9
+0	69	100		mov __MRArgs.QueueID, __constVal3
+0	69	102		mov __MRArgs.Remove, __constVal1
+0	69	104		set __RRNTmpVal, 0
+0	69	107		syscall 27, __MRArgs
+0	69	110		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+0	69	115		mov __main_7qG2_aux1_7qG2_000, __RRNTmpVal
+0	69	117		mov __D0main, __MRArgs.Result
+0	7241	119	#line 7241 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	68	119	#line 68 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	68	119	#line 68 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	70	119	#line 70 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	71	119	#pragma macro 26
+0	71	119		acquire __RLSBmutex3
+0	71	120		mov __RLSReadBuf3, __RLSBbufLSWrite1
+0	71	122		set __RLSBytesCount3, 1
+0	71	125		waitv __constVal15
+0	71	127		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+0	71	129		index __D0main, __RLSReadBuf3, 65535
+0	71	133		release __RLSBmutex3
+0	7245	134	#line 7245 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	70	134	#line 70 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	71	134		mov __signed_stack_001main, __D0main
+0	70	136	#line 70 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	71	136		set __D0main, 20
+0	70	139	#line 70 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	71	139		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	71	143	#line 71 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	72	143		brtst 4, __ASM_Label_632, __D0main
+0	6921	146	#line 6921 "NXCDefs.h"
+0	6922	146	#pragma macro 6
+0	6922	146		acquire __PointOutMutex
+0	6922	147		mov __PointOutArgs.Location.X, __constVal200
+0	6922	149		mov __PointOutArgs.Location.Y, __constVal200
+0	6922	151		mov __PointOutArgs.Options, __constVal1
+0	6922	153		syscall 14, __PointOutArgs
+0	6922	156		release __PointOutMutex
+0	7259	157	#line 7259 "NXCDefs.h"
+0	6921	157	#line 6921 "NXCDefs.h"
+0	71	157	#line 71 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	72	157	#line 72 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	73	157		set __signed_stack_001main, 0
+0	72	160	#line 72 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	72	160	#line 72 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	73	160		set __signed_stack_002main, 56
+0	72	163	#line 72 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	72	163	#line 72 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	73	163	#pragma macro 26
+0	73	163		acquire __RLSBmutex3
+0	73	164		mov __RLSReadBuf3, __RLSBbufLSWrite1
+0	73	166		set __RLSBytesCount3, 1
+0	73	169		waitv __constVal15
+0	73	171		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+0	73	173		index __D0main, __RLSReadBuf3, 65535
+0	73	177		release __RLSBmutex3
+0	7273	178	#line 7273 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	72	178	#line 72 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	73	178		acquire __TextOutMutex
+0	72	179	#line 72 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	73	179		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	72	181	#line 72 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	73	181		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	72	183	#line 72 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	73	183		set __TextOutArgs.Options, 0
+0	72	186	#line 72 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	73	186		numtostr __TextOutArgs.Text, __D0main
+0	72	189	#line 72 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	73	189		syscall 13, __TextOutArgs
+0	72	192	#line 72 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	73	192		mov __D0main, __TextOutArgs.Result
+0	72	194	#line 72 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	73	194		release __TextOutMutex
+0	72	195	#line 72 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	72	195	#line 72 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	73	195	#line 73 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	74	195	#pragma macro 25
+0	74	195		mov __SRSTmpBuf, __DCMessageWritePacket
+0	74	197		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
+0	74	202		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+0	74	207		mov __SRSTmpLongVal, __constVal1
+0	74	209		flatten __SRSFlattenBuf, __SRSTmpLongVal
+0	74	212		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+0	74	217		brcmp 0, __ConnWrite_Else0, __constVal0, __constVal4
+0	74	221		sub __WFRRTmpByte, __constVal0, __constVal4
+0	74	225		arrbuild __CHSWArgs.Buffer, __WFRRTmpByte, __SRSSendBuf
+0	74	230		syscall 37, __CHSWArgs
+0	74	233		mov __D0main, __CHSWArgs.Status
+0	74	235		jmp __ConnWrite_EndIf0
+0	74	237		mov __CBTWArgs.Connection, __constVal0
+0	74	239		mov __CBTWArgs.Buffer, __SRSSendBuf
+0	74	241		syscall 29, __CBTWArgs
+0	74	244		mov __D0main, __CBTWArgs.Result
+0	7297	246	#line 7297 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	73	246	#line 73 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	73	246	#line 73 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	74	246	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	75	246		set __signed_stack_001main, 0
+0	74	249	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	74	249	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	75	249		set __signed_stack_002main, 24
+0	74	252	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	74	252	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	75	252		strcat __strbufmain, __constStr0009
+0	74	256	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	75	256		acquire __TextOutMutex
+0	74	257	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	75	257		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	74	259	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	75	259		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	74	261	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	75	261		set __TextOutArgs.Options, 0
+0	74	264	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	75	264		mov __TextOutArgs.Text, __strbufmain
+0	74	266	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	75	266		syscall 13, __TextOutArgs
+0	74	269	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	75	269		mov __D0main, __TextOutArgs.Result
+0	74	271	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	75	271		release __TextOutMutex
+0	74	272	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	75	272	#line 75 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	76	272		set __Wait_7qG2_ms_7qG2_000_inline_main, 50
+0	75	275	#line 75 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	8869	275	#line 8869 "NXCDefs.h"
+0	8870	275		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8869	277	#line 8869 "NXCDefs.h"
+0	75	277	#line 75 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	78	277	#line 78 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	79	277	#line 79 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	80	277		jmp __ASM_Label_626
+0	79	279	#line 79 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+0	80	279		exit -1, -1
 1	5724	0		setin __constVal1, __ResetSensorPort, 5
 1	5726	4		getin __ResetSensorTmp, __ResetSensorPort, 5
 1	5727	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
@@ -386,11 +391,11 @@ Clump	Line	PC	Source
 2	6653	82		mov __RLSReadBuf3, __RLSLastGoodRead3
 2	6655	84		arrsize __RLSBytesCount3, __RLSReadBuf3
 2	6657	87		subret ____ReadLSBytes3_return
-3	145	0	#line 145 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
-3	146	0		subret ____initialize_global_data_return
+3	152	0	#line 152 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc"
+3	153	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc
-1	__ResetSensorSubroutine	276	NXTDefs.h
-2	__ReadLSBytes3	289	NXTDefs.h
-3	__initialize_global_data	378	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc
+1	__ResetSensorSubroutine	282	NXTDefs.h
+2	__ReadLSBytes3	295	NXTDefs.h
+3	__initialize_global_data	384	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\mark4BatataDoce.nxc
