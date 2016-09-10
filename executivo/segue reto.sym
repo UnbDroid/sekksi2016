@@ -1,71 +1,74 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__DU0SetSensorLowspeed_inline_inicializaSensores	5	1	0	4	8
-1	__D0SetSensorLowspeed_inline_inicializaSensores	6	1	4	4	12
-2	__D0andaReto	6	1	8	4	54
-3	__Wait_7qG2_ms_7qG2_000_inline_andaReto	5	1	12	4	4
-4	__signed_stack_002andaReto	6	1	16	4	16
-5	__signed_stack_001andaReto	6	1	20	4	26
-6	__constVal200	4	0	24	2	2
-7	__andaReto_7qG2_pote_7qG2_000	4	1	26	2	10
-8	__andaReto_7qG2_potd_7qG2_000	4	1	28	2	10
-9	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	30	1	8
-10	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	31	1	8
-11	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	32	1	8
-12	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores	1	1	33	1	8
-13	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	34	1	8
-14	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	35	1	4
-15	__constVal63	2	0	36	1	14
-16	__constVal96	2	0	37	1	14
-17	__constVal32	2	0	38	1	42
-18	__andaReto_return	1	1	39	1	3
-19	____initialize_global_data_return	1	1	40	1	3
-20	__zfandaReto	1	1	41	1	21
-21	__constVal5	2	0	42	1	2
-22	__ResetSensorPort	1	1	43	1	6
-23	__ResetSensorTmp	1	1	44	1	2
-24	____ResetSensorSubroutine_return	1	1	45	1	6
-25	__constVal3	2	0	46	1	14
-26	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	47	1	20
-27	__inicializaSensores_return	1	1	48	1	3
-28	__constVal1	2	0	49	1	18
-29	__zfSetSensorLowspeed_inline_inicializaSensores	1	1	50	1	8
-30	__constVal0	2	1	51	1	60
-31	__PointOutArgs	8	0	3	12	4
-32	__PointOutArgs.Result	2	1	52	1	4
-33	__PointOutArgs.Location	8	0	2	4	4
-34	__PointOutArgs.Location.X	4	1	56	2	4
-35	__PointOutArgs.Location.Y	4	1	58	2	4
-36	__PointOutArgs.Options	5	1	60	4	4
-37	__TextOutArgs	8	0	4	16	41
-38	__TextOutArgs.Result	2	1	64	1	41
-39	__TextOutArgs.Location	8	0	2	4	41
-40	__TextOutArgs.Location.X	4	1	68	2	41
-41	__TextOutArgs.Location.Y	4	1	70	2	41
-42	__TextOutArgs.Text	7	0	72	4	41
-43	__TextOutArgs.Text.Text_type	1	0	0	1	0
-44	__TextOutArgs.Options	5	1	76	4	41
+0	__D0SetSensorLowspeed_inline_inicializaSensores	6	1	0	4	12
+1	__DU0SetSensorLowspeed_inline_inicializaSensores	5	1	4	4	8
+2	__DF0andaReto2	10	1	8	4	24
+3	__PointOutMutex	9	0	12	4	2
+4	__D0andaReto2	6	1	16	4	27
+5	__andaReto2_7qG2_pote_7qG2_000	10	1	20	4	9
+6	__Wait_7qG2_ms_7qG2_000_inline_andaReto2	5	1	24	4	4
+7	__andaReto2_7qG2_potd_7qG2_000	10	1	28	4	9
+8	__signed_stack_001andaReto2	6	1	32	4	22
+9	__signed_stack_002andaReto2	6	1	36	4	16
+10	__TextOutMutex	9	0	40	4	16
+11	__constVal200	4	0	44	2	2
+12	__constVal96	2	0	46	1	10
+13	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	47	1	4
+14	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	48	1	8
+15	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	49	1	8
+16	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	50	1	8
+17	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	51	1	8
+18	__constVal1	2	0	52	1	18
+19	__constVal32	2	0	53	1	30
+20	____initialize_global_data_return	1	1	54	1	3
+21	__constVal63	2	0	55	1	10
+22	__andaReto2_return	1	1	56	1	3
+23	__constVal0	2	1	57	1	42
+24	__ResetSensorTmp	1	1	58	1	2
+25	__zfSetSensorLowspeed_inline_inicializaSensores	1	1	59	1	8
+26	____ResetSensorSubroutine_return	1	1	60	1	6
+27	__constVal90	2	0	61	1	2
+28	__zfandaReto2	1	1	62	1	11
+29	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	63	1	20
+30	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores	1	1	64	1	8
+31	__inicializaSensores_return	1	1	65	1	3
+32	__ResetSensorPort	1	1	66	1	6
+33	__constVal3	2	0	67	1	10
+34	__PointOutArgs	8	0	3	12	4
+35	__PointOutArgs.Result	2	1	68	1	4
+36	__PointOutArgs.Location	8	0	2	4	4
+37	__PointOutArgs.Location.X	4	1	72	2	4
+38	__PointOutArgs.Location.Y	4	1	74	2	4
+39	__PointOutArgs.Options	5	1	76	4	4
+40	__TextOutArgs	8	0	4	16	48
+41	__TextOutArgs.Result	2	1	80	1	48
+42	__TextOutArgs.Location	8	0	2	4	48
+43	__TextOutArgs.Location.X	4	1	84	2	48
+44	__TextOutArgs.Location.Y	4	1	86	2	48
+45	__TextOutArgs.Text	7	0	88	4	48
+46	__TextOutArgs.Text.Text_type	1	0	0	1	0
+47	__TextOutArgs.Options	5	1	92	4	48
 #SOURCES
 Clump	Line	PC	Source
-0	200	0	#line 200 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-0	201	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	200	2	#line 200 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-0	202	2	#line 202 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-0	203	2		subcall inicializaSensores, __inicializaSensores_return
-0	202	4	#line 202 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-0	203	4	#line 203 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-0	204	4		subcall andaReto, __andaReto_return
-0	203	6	#line 203 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-0	204	6		exit -1, -1
+0	242	0	#line 242 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	243	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	242	2	#line 242 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	244	2	#line 244 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	245	2		subcall inicializaSensores, __inicializaSensores_return
+0	244	4	#line 244 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	245	4	#line 245 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	246	4		subcall andaReto2, __andaReto2_return
+0	245	6	#line 245 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	246	6		exit -1, -1
 1	4885	0		setin __constVal1, __ResetSensorPort, 5
 1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
 1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
 1	4889	11		subret ____ResetSensorSubroutine_return
-2	62	0	#line 62 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-2	63	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 0
-2	62	3	#line 62 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-2	63	3	#line 63 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-2	64	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+2	49	0	#line 49 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	50	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 0
+2	49	3	#line 49 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	50	3	#line 50 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	51	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
 2	3758	5	#line 3758 "NXCDefs.h"
 2	3759	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
 2	3758	7	#line 3758 "NXCDefs.h"
@@ -104,15 +107,15 @@ Clump	Line	PC	Source
 2	3695	40	#pragma macro 4
 2	3695	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
 2	3695	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-2	6602	44	#line 6602 "NXCDefs.h"
+2	6836	44	#line 6836 "NXCDefs.h"
 2	3694	44	#line 3694 "NXCDefs.h"
 2	3761	44	#line 3761 "NXCDefs.h"
-2	63	44	#line 63 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-2	63	44	#line 63 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-2	64	44		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 1
-2	63	47	#line 63 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-2	64	47	#line 64 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-2	65	47		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+2	50	44	#line 50 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	50	44	#line 50 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	51	44		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 1
+2	50	47	#line 50 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	51	47	#line 51 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	52	47		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
 2	3758	49	#line 3758 "NXCDefs.h"
 2	3759	49		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
 2	3758	51	#line 3758 "NXCDefs.h"
@@ -151,15 +154,15 @@ Clump	Line	PC	Source
 2	3695	84	#pragma macro 4
 2	3695	84		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
 2	3695	86		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-2	6669	88	#line 6669 "NXCDefs.h"
+2	6903	88	#line 6903 "NXCDefs.h"
 2	3694	88	#line 3694 "NXCDefs.h"
 2	3761	88	#line 3761 "NXCDefs.h"
-2	64	88	#line 64 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-2	64	88	#line 64 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-2	65	88		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 2
-2	64	91	#line 64 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-2	65	91	#line 65 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-2	66	91		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+2	51	88	#line 51 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	51	88	#line 51 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	52	88		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 2
+2	51	91	#line 51 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	52	91	#line 52 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	53	91		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
 2	3758	93	#line 3758 "NXCDefs.h"
 2	3759	93		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
 2	3758	95	#line 3758 "NXCDefs.h"
@@ -198,15 +201,15 @@ Clump	Line	PC	Source
 2	3695	128	#pragma macro 4
 2	3695	128		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
 2	3695	130		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-2	6736	132	#line 6736 "NXCDefs.h"
+2	6970	132	#line 6970 "NXCDefs.h"
 2	3694	132	#line 3694 "NXCDefs.h"
 2	3761	132	#line 3761 "NXCDefs.h"
-2	65	132	#line 65 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-2	65	132	#line 65 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-2	66	132		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 3
-2	65	135	#line 65 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-2	66	135	#line 66 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-2	67	135		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+2	52	132	#line 52 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	52	132	#line 52 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	53	132		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 3
+2	52	135	#line 52 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	53	135	#line 53 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	54	135		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
 2	3758	137	#line 3758 "NXCDefs.h"
 2	3759	137		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
 2	3758	139	#line 3758 "NXCDefs.h"
@@ -245,429 +248,392 @@ Clump	Line	PC	Source
 2	3695	172	#pragma macro 4
 2	3695	172		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
 2	3695	174		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-2	6803	176	#line 6803 "NXCDefs.h"
+2	7037	176	#line 7037 "NXCDefs.h"
 2	3694	176	#line 3694 "NXCDefs.h"
 2	3761	176	#line 3761 "NXCDefs.h"
-2	66	176	#line 66 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-2	68	176	#line 68 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-2	69	176		subret __inicializaSensores_return
-3	72	0	#line 72 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	73	0		set __andaReto_7qG2_potd_7qG2_000, 70
-3	72	3	#line 72 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	72	3	#line 72 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	74	3	#line 74 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	75	3		set __andaReto_7qG2_pote_7qG2_000, 70
-3	74	6	#line 74 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	74	6	#line 74 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	74	6	#line 74 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	75	6		mov __D0andaReto, __andaReto_7qG2_potd_7qG2_000
-3	75	8	#line 75 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	76	8	#pragma macro 7
-3	76	8		setout __constVal1, 2, __D0andaReto, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	6839	31	#line 6839 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	75	31	#line 75 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	75	31	#line 75 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	76	31		mov __D0andaReto, __andaReto_7qG2_pote_7qG2_000
-3	76	33	#line 76 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	77	33	#pragma macro 7
-3	77	33		setout __constVal0, 2, __D0andaReto, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	6846	56	#line 6846 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	76	56	#line 76 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	76	56	#line 76 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	77	56		set __Wait_7qG2_ms_7qG2_000_inline_andaReto, 200
-3	76	59	#line 76 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	53	176	#line 53 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	55	176	#line 55 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+2	56	176		subret __inicializaSensores_return
+3	124	0	#line 124 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	124	0	#line 124 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	125	0		mov __andaReto2_7qG2_potd_7qG2_000, __constVal90
+3	124	2	#line 124 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	126	2	#line 126 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	126	2	#line 126 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	127	2		mov __andaReto2_7qG2_pote_7qG2_000, __constVal90
+3	126	4	#line 126 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	126	4	#line 126 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	127	4		mov __DF0andaReto2, __andaReto2_7qG2_potd_7qG2_000
+3	127	6	#line 127 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	128	6	#pragma macro 7
+3	128	6		setout __constVal1, 2, __DF0andaReto2, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	7628	29	#line 7628 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	127	29	#line 127 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	127	29	#line 127 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	128	29		mov __DF0andaReto2, __andaReto2_7qG2_pote_7qG2_000
+3	128	31	#line 128 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	129	31	#pragma macro 7
+3	129	31		setout __constVal0, 2, __DF0andaReto2, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	7635	54	#line 7635 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	128	54	#line 128 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	128	54	#line 128 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	129	54		set __Wait_7qG2_ms_7qG2_000_inline_andaReto2, 500
+3	128	57	#line 128 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	7921	57	#line 7921 "NXCDefs.h"
+3	7922	57		wait 500
 3	7921	59	#line 7921 "NXCDefs.h"
-3	7922	59		wait 200
-3	7921	61	#line 7921 "NXCDefs.h"
-3	78	61	#line 78 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	78	61	#line 78 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	79	61		getout __signed_stack_001andaReto, __constVal1, 4
-3	78	65	#line 78 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	78	65	#line 78 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	79	65		getout __D0andaReto, __constVal0, 4
-3	78	69	#line 78 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	79	69		cmp 1, __zfandaReto, __signed_stack_001andaReto, __D0andaReto
-3	78	73	#line 78 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	79	73		mov __D0andaReto, __zfandaReto
-3	79	75	#line 79 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	80	75		brtst 4, __NXC_Label_624, __zfandaReto
-3	79	78	#line 79 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	80	78		getout __signed_stack_001andaReto, __constVal1, 4
-3	79	82	#line 79 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	80	82	#line 80 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	81	82		getout __D0andaReto, __constVal0, 4
-3	80	86	#line 80 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	81	86		cmp 1, __zfandaReto, __signed_stack_001andaReto, __D0andaReto
-3	80	90	#line 80 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	81	90		mov __D0andaReto, __zfandaReto
-3	81	92	#line 81 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	82	92		brtst 4, __NXC_Label_626, __zfandaReto
-3	82	95	#line 82 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	82	95	#line 82 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	83	95		add __andaReto_7qG2_pote_7qG2_000, __andaReto_7qG2_pote_7qG2_000, __constVal5
-3	82	99	#line 82 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	82	99	#line 82 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	83	99		mov __signed_stack_001andaReto, __andaReto_7qG2_pote_7qG2_000
-3	82	101	#line 82 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	82	101	#line 82 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	83	101		set __D0andaReto, 90
-3	82	104	#line 82 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	83	104		cmp 3, __zfandaReto, __signed_stack_001andaReto, __D0andaReto
-3	82	108	#line 82 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	83	108		mov __D0andaReto, __zfandaReto
-3	84	110	#line 84 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	85	110		brtst 4, __NXC_Label_633, __zfandaReto
-3	85	113	#line 85 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	86	113	#pragma macro 7
-3	86	113		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	6913	136	#line 6913 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	85	136	#line 85 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	86	136	#line 86 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	87	136	#pragma macro 7
-3	87	136		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	6916	159	#line 6916 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	86	159	#line 86 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	86	159	#line 86 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	87	159		set __D0andaReto, 1
-3	86	162	#line 86 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	87	162		tst 5, __zfandaReto, __D0andaReto
-3	86	165	#line 86 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	87	165		brtst 4, __NXC_Label_635, __zfandaReto
-3	88	168	#line 88 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	89	168		jmp __NXC_Label_634
-3	88	170	#line 88 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	88	170	#line 88 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	88	170	#line 88 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	89	170		mov __D0andaReto, __andaReto_7qG2_potd_7qG2_000
-3	89	172	#line 89 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	90	172	#pragma macro 7
-3	90	172		setout __constVal1, 2, __D0andaReto, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	6938	195	#line 6938 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	89	195	#line 89 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	89	195	#line 89 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	90	195		mov __D0andaReto, __andaReto_7qG2_pote_7qG2_000
-3	90	197	#line 90 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	91	197	#pragma macro 7
-3	91	197		setout __constVal0, 2, __D0andaReto, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	6945	220	#line 6945 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	90	220	#line 90 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	90	220	#line 90 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	91	220		set __Wait_7qG2_ms_7qG2_000_inline_andaReto, 200
-3	90	223	#line 90 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	7921	223	#line 7921 "NXCDefs.h"
-3	7922	223		wait 200
-3	7921	225	#line 7921 "NXCDefs.h"
-3	91	225	#line 91 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	94	225	#line 94 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	95	225		jmp __NXC_Label_625
-3	94	227	#line 94 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	95	227	#line 95 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	96	227		jmp __NXC_Label_644
-3	95	229	#line 95 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	96	229		getout __signed_stack_001andaReto, __constVal1, 4
-3	95	233	#line 95 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	96	233	#line 96 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	97	233		getout __D0andaReto, __constVal0, 4
-3	96	237	#line 96 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	97	237		cmp 0, __zfandaReto, __signed_stack_001andaReto, __D0andaReto
-3	96	241	#line 96 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	97	241		mov __D0andaReto, __zfandaReto
-3	97	243	#line 97 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	98	243		brtst 4, __NXC_Label_646, __zfandaReto
-3	98	246	#line 98 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	98	246	#line 98 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	99	246		add __andaReto_7qG2_potd_7qG2_000, __andaReto_7qG2_potd_7qG2_000, __constVal5
-3	98	250	#line 98 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	98	250	#line 98 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	99	250		mov __signed_stack_001andaReto, __andaReto_7qG2_potd_7qG2_000
-3	98	252	#line 98 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	98	252	#line 98 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	99	252		set __D0andaReto, 90
-3	98	255	#line 98 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	99	255		cmp 3, __zfandaReto, __signed_stack_001andaReto, __D0andaReto
-3	98	259	#line 98 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	99	259		mov __D0andaReto, __zfandaReto
-3	100	261	#line 100 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	101	261		brtst 4, __NXC_Label_653, __zfandaReto
-3	101	264	#line 101 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	102	264	#pragma macro 7
-3	102	264		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	7001	287	#line 7001 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	101	287	#line 101 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	102	287	#line 102 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	103	287	#pragma macro 7
-3	103	287		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	7004	310	#line 7004 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	102	310	#line 102 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	102	310	#line 102 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	103	310		set __D0andaReto, 1
-3	102	313	#line 102 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	103	313		tst 5, __zfandaReto, __D0andaReto
-3	102	316	#line 102 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	103	316		brtst 4, __NXC_Label_655, __zfandaReto
-3	104	319	#line 104 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	105	319		jmp __NXC_Label_654
-3	104	321	#line 104 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	104	321	#line 104 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	104	321	#line 104 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	105	321		mov __D0andaReto, __andaReto_7qG2_potd_7qG2_000
-3	105	323	#line 105 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	106	323	#pragma macro 7
-3	106	323		setout __constVal1, 2, __D0andaReto, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	7026	346	#line 7026 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	105	346	#line 105 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	105	346	#line 105 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	106	346		mov __D0andaReto, __andaReto_7qG2_pote_7qG2_000
-3	106	348	#line 106 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	107	348	#pragma macro 7
-3	107	348		setout __constVal0, 2, __D0andaReto, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	7033	371	#line 7033 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	106	371	#line 106 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	106	371	#line 106 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	107	371		set __Wait_7qG2_ms_7qG2_000_inline_andaReto, 200
-3	106	374	#line 106 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	7921	374	#line 7921 "NXCDefs.h"
-3	7922	374		wait 200
-3	7921	376	#line 7921 "NXCDefs.h"
-3	107	376	#line 107 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	113	376	#line 113 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	114	376		jmp __NXC_Label_645
-3	113	378	#line 113 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	113	378	#line 113 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	113	378	#line 113 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	114	378		set __signed_stack_001andaReto, 0
-3	113	381	#line 113 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	113	381	#line 113 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	114	381		set __signed_stack_002andaReto, 56
-3	113	384	#line 113 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	113	384	#line 113 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	114	384		getout __D0andaReto, __constVal1, 4
-3	114	388	#line 114 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	114	388	#line 114 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	115	388		mov __TextOutArgs.Location.X, __signed_stack_001andaReto
-3	114	390	#line 114 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	115	390		mov __TextOutArgs.Location.Y, __signed_stack_002andaReto
-3	114	392	#line 114 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	115	392		set __TextOutArgs.Options, 0
-3	114	395	#line 114 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	115	395		numtostr __TextOutArgs.Text, __D0andaReto
-3	114	398	#line 114 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	115	398		syscall 13, __TextOutArgs
-3	114	401	#line 114 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	114	401	#line 114 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	114	401	#line 114 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	114	401	#line 114 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	115	401		set __signed_stack_001andaReto, 0
-3	114	404	#line 114 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	114	404	#line 114 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	115	404		set __signed_stack_002andaReto, 48
-3	114	407	#line 114 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	114	407	#line 114 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	115	407		getout __D0andaReto, __constVal0, 4
-3	115	411	#line 115 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	115	411	#line 115 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	116	411		mov __TextOutArgs.Location.X, __signed_stack_001andaReto
-3	115	413	#line 115 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	116	413		mov __TextOutArgs.Location.Y, __signed_stack_002andaReto
-3	115	415	#line 115 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	116	415		set __TextOutArgs.Options, 0
-3	115	418	#line 115 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	116	418		numtostr __TextOutArgs.Text, __D0andaReto
-3	115	421	#line 115 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	116	421		syscall 13, __TextOutArgs
-3	115	424	#line 115 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	115	424	#line 115 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	115	424	#line 115 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	115	424	#line 115 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	116	424		set __signed_stack_001andaReto, 0
-3	115	427	#line 115 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	115	427	#line 115 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	116	427		set __signed_stack_002andaReto, 40
-3	115	430	#line 115 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	115	430	#line 115 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	116	430		mov __D0andaReto, __andaReto_7qG2_potd_7qG2_000
-3	116	432	#line 116 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	116	432	#line 116 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	117	432		mov __TextOutArgs.Location.X, __signed_stack_001andaReto
-3	116	434	#line 116 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	117	434		mov __TextOutArgs.Location.Y, __signed_stack_002andaReto
-3	116	436	#line 116 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	117	436		set __TextOutArgs.Options, 0
-3	116	439	#line 116 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	117	439		numtostr __TextOutArgs.Text, __D0andaReto
-3	116	442	#line 116 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	117	442		syscall 13, __TextOutArgs
-3	116	445	#line 116 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	116	445	#line 116 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	116	445	#line 116 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	116	445	#line 116 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	117	445		set __signed_stack_001andaReto, 0
-3	116	448	#line 116 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	116	448	#line 116 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	117	448		set __signed_stack_002andaReto, 32
-3	116	451	#line 116 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	116	451	#line 116 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	117	451		mov __D0andaReto, __andaReto_7qG2_pote_7qG2_000
-3	118	453	#line 118 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	118	453	#line 118 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	119	453		mov __TextOutArgs.Location.X, __signed_stack_001andaReto
-3	118	455	#line 118 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	119	455		mov __TextOutArgs.Location.Y, __signed_stack_002andaReto
-3	118	457	#line 118 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	119	457		set __TextOutArgs.Options, 0
-3	118	460	#line 118 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	119	460		numtostr __TextOutArgs.Text, __D0andaReto
-3	118	463	#line 118 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	119	463		syscall 13, __TextOutArgs
-3	118	466	#line 118 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	118	466	#line 118 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	118	466	#line 118 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	118	466	#line 118 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	119	466		mov __D0andaReto, __andaReto_7qG2_potd_7qG2_000
-3	119	468	#line 119 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	120	468	#pragma macro 7
-3	120	468		setout __constVal1, 2, __D0andaReto, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	7188	491	#line 7188 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	119	491	#line 119 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	119	491	#line 119 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	120	491		mov __D0andaReto, __andaReto_7qG2_pote_7qG2_000
-3	120	493	#line 120 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	121	493	#pragma macro 7
-3	121	493		setout __constVal0, 2, __D0andaReto, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	7195	516	#line 7195 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	120	516	#line 120 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	120	516	#line 120 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	121	516		set __Wait_7qG2_ms_7qG2_000_inline_andaReto, 10000
-3	120	519	#line 120 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	7921	519	#line 7921 "NXCDefs.h"
-3	7922	519		wait 10000
-3	7921	521	#line 7921 "NXCDefs.h"
-3	122	521	#line 122 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	6069	521	#line 6069 "NXCDefs.h"
-3	6070	521	#pragma macro 6
-3	6070	521		mov __PointOutArgs.Location.X, __constVal200
-3	6070	523		mov __PointOutArgs.Location.Y, __constVal200
-3	6070	525		mov __PointOutArgs.Options, __constVal1
-3	6070	527		syscall 14, __PointOutArgs
-3	7208	530	#line 7208 "NXCDefs.h"
-3	6069	530	#line 6069 "NXCDefs.h"
-3	123	530	#line 123 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	123	530	#line 123 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	124	530		set __signed_stack_001andaReto, 0
-3	123	533	#line 123 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	123	533	#line 123 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	124	533		set __signed_stack_002andaReto, 56
-3	123	536	#line 123 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	123	536	#line 123 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	124	536		getout __D0andaReto, __constVal1, 4
-3	124	540	#line 124 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	124	540	#line 124 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	125	540		mov __TextOutArgs.Location.X, __signed_stack_001andaReto
-3	124	542	#line 124 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	125	542		mov __TextOutArgs.Location.Y, __signed_stack_002andaReto
-3	124	544	#line 124 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	125	544		set __TextOutArgs.Options, 0
-3	124	547	#line 124 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	125	547		numtostr __TextOutArgs.Text, __D0andaReto
-3	124	550	#line 124 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	125	550		syscall 13, __TextOutArgs
-3	124	553	#line 124 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	124	553	#line 124 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	124	553	#line 124 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	124	553	#line 124 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	125	553		set __signed_stack_001andaReto, 0
-3	124	556	#line 124 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	124	556	#line 124 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	125	556		set __signed_stack_002andaReto, 48
-3	124	559	#line 124 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	124	559	#line 124 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	125	559		getout __D0andaReto, __constVal0, 4
-3	125	563	#line 125 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	125	563	#line 125 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	126	563		mov __TextOutArgs.Location.X, __signed_stack_001andaReto
-3	125	565	#line 125 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	126	565		mov __TextOutArgs.Location.Y, __signed_stack_002andaReto
-3	125	567	#line 125 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	126	567		set __TextOutArgs.Options, 0
-3	125	570	#line 125 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	126	570		numtostr __TextOutArgs.Text, __D0andaReto
-3	125	573	#line 125 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	126	573		syscall 13, __TextOutArgs
-3	125	576	#line 125 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	125	576	#line 125 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	125	576	#line 125 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	125	576	#line 125 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	126	576		set __signed_stack_001andaReto, 0
-3	125	579	#line 125 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	125	579	#line 125 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	126	579		set __signed_stack_002andaReto, 40
-3	125	582	#line 125 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	125	582	#line 125 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	126	582		mov __D0andaReto, __andaReto_7qG2_potd_7qG2_000
-3	126	584	#line 126 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	126	584	#line 126 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	127	584		mov __TextOutArgs.Location.X, __signed_stack_001andaReto
-3	126	586	#line 126 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	127	586		mov __TextOutArgs.Location.Y, __signed_stack_002andaReto
-3	126	588	#line 126 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	127	588		set __TextOutArgs.Options, 0
-3	126	591	#line 126 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	127	591		numtostr __TextOutArgs.Text, __D0andaReto
-3	126	594	#line 126 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	127	594		syscall 13, __TextOutArgs
-3	126	597	#line 126 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	126	597	#line 126 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	126	597	#line 126 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	126	597	#line 126 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	127	597		set __signed_stack_001andaReto, 0
-3	126	600	#line 126 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	126	600	#line 126 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	127	600		set __signed_stack_002andaReto, 32
-3	126	603	#line 126 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	126	603	#line 126 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	127	603		mov __D0andaReto, __andaReto_7qG2_pote_7qG2_000
-3	127	605	#line 127 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	127	605	#line 127 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	128	605		mov __TextOutArgs.Location.X, __signed_stack_001andaReto
-3	127	607	#line 127 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	128	607		mov __TextOutArgs.Location.Y, __signed_stack_002andaReto
-3	127	609	#line 127 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	128	609		set __TextOutArgs.Options, 0
-3	127	612	#line 127 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	128	612		numtostr __TextOutArgs.Text, __D0andaReto
-3	127	615	#line 127 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	128	615		syscall 13, __TextOutArgs
-3	127	618	#line 127 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	128	618		mov __D0andaReto, __TextOutArgs.Result
-3	127	620	#line 127 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	127	620	#line 127 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	128	620	#line 128 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	129	620	#pragma macro 7
-3	129	620		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	7344	643	#line 7344 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	128	643	#line 128 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	130	643	#line 130 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	131	643	#pragma macro 7
-3	131	643		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	7347	666	#line 7347 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	130	666	#line 130 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	130	666	#line 130 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	131	666		set __D0andaReto, 1
-3	130	669	#line 130 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	131	669		tst 5, __zfandaReto, __D0andaReto
-3	130	672	#line 130 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	131	672		brtst 4, __NXC_Label_719, __zfandaReto
-3	134	675	#line 134 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	135	675		jmp __NXC_Label_718
-3	134	677	#line 134 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	134	677	#line 134 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-3	135	677		subret __andaReto_return
-4	206	0	#line 206 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
-4	207	0		subret ____initialize_global_data_return
+3	130	59	#line 130 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	130	59	#line 130 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	131	59		getout __signed_stack_001andaReto2, __constVal1, 4
+3	130	63	#line 130 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	130	63	#line 130 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	131	63		getout __D0andaReto2, __constVal0, 4
+3	130	67	#line 130 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	131	67		cmp 1, __zfandaReto2, __signed_stack_001andaReto2, __D0andaReto2
+3	130	71	#line 130 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	131	71		mov __D0andaReto2, __zfandaReto2
+3	131	73	#line 131 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	132	73		brtst 4, __NXC_Label_734, __zfandaReto2
+3	131	76	#line 131 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	132	76		getout __signed_stack_001andaReto2, __constVal1, 4
+3	131	80	#line 131 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	132	80	#line 132 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	133	80		getout __D0andaReto2, __constVal0, 4
+3	132	84	#line 132 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	133	84		cmp 1, __zfandaReto2, __signed_stack_001andaReto2, __D0andaReto2
+3	132	88	#line 132 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	133	88		mov __D0andaReto2, __zfandaReto2
+3	133	90	#line 133 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	134	90		brtst 4, __NXC_Label_736, __zfandaReto2
+3	135	93	#line 135 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	135	93	#line 135 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	136	93		sub __andaReto2_7qG2_potd_7qG2_000, __andaReto2_7qG2_potd_7qG2_000, __constVal1
+3	135	97	#line 135 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	135	97	#line 135 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	136	97		mov __DF0andaReto2, __andaReto2_7qG2_potd_7qG2_000
+3	136	99	#line 136 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	137	99	#pragma macro 7
+3	137	99		setout __constVal1, 2, __DF0andaReto2, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	7692	122	#line 7692 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	136	122	#line 136 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	136	122	#line 136 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	137	122		mov __DF0andaReto2, __andaReto2_7qG2_pote_7qG2_000
+3	137	124	#line 137 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	138	124	#pragma macro 7
+3	138	124		setout __constVal0, 2, __DF0andaReto2, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	7699	147	#line 7699 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	137	147	#line 137 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	137	147	#line 137 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	138	147		set __Wait_7qG2_ms_7qG2_000_inline_andaReto2, 200
+3	137	150	#line 137 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	7921	150	#line 7921 "NXCDefs.h"
+3	7922	150		wait 200
+3	7921	152	#line 7921 "NXCDefs.h"
+3	138	152	#line 138 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	141	152	#line 141 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	142	152		jmp __NXC_Label_735
+3	141	154	#line 141 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	142	154	#line 142 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	143	154		jmp __NXC_Label_747
+3	142	156	#line 142 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	143	156		getout __signed_stack_001andaReto2, __constVal1, 4
+3	142	160	#line 142 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	143	160	#line 143 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	144	160		getout __D0andaReto2, __constVal0, 4
+3	143	164	#line 143 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	144	164		cmp 0, __zfandaReto2, __signed_stack_001andaReto2, __D0andaReto2
+3	143	168	#line 143 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	144	168		mov __D0andaReto2, __zfandaReto2
+3	144	170	#line 144 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	145	170		brtst 4, __NXC_Label_749, __zfandaReto2
+3	146	173	#line 146 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	146	173	#line 146 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	147	173		sub __andaReto2_7qG2_pote_7qG2_000, __andaReto2_7qG2_pote_7qG2_000, __constVal1
+3	146	177	#line 146 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	146	177	#line 146 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	147	177		mov __DF0andaReto2, __andaReto2_7qG2_potd_7qG2_000
+3	147	179	#line 147 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	148	179	#pragma macro 7
+3	148	179		setout __constVal1, 2, __DF0andaReto2, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	7745	202	#line 7745 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	147	202	#line 147 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	147	202	#line 147 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	148	202		mov __DF0andaReto2, __andaReto2_7qG2_pote_7qG2_000
+3	148	204	#line 148 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	149	204	#pragma macro 7
+3	149	204		setout __constVal0, 2, __DF0andaReto2, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	7752	227	#line 7752 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	148	227	#line 148 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	148	227	#line 148 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	149	227		set __Wait_7qG2_ms_7qG2_000_inline_andaReto2, 200
+3	148	230	#line 148 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	7921	230	#line 7921 "NXCDefs.h"
+3	7922	230		wait 200
+3	7921	232	#line 7921 "NXCDefs.h"
+3	149	232	#line 149 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	155	232	#line 155 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	156	232		jmp __NXC_Label_748
+3	155	234	#line 155 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	155	234	#line 155 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	155	234	#line 155 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	156	234		set __signed_stack_001andaReto2, 0
+3	155	237	#line 155 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	155	237	#line 155 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	156	237		set __signed_stack_002andaReto2, 56
+3	155	240	#line 155 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	155	240	#line 155 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	156	240		getout __D0andaReto2, __constVal1, 4
+3	156	244	#line 156 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	157	244		acquire __TextOutMutex
+3	156	245	#line 156 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	157	245		mov __TextOutArgs.Location.X, __signed_stack_001andaReto2
+3	156	247	#line 156 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	157	247		mov __TextOutArgs.Location.Y, __signed_stack_002andaReto2
+3	156	249	#line 156 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	157	249		set __TextOutArgs.Options, 0
+3	156	252	#line 156 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	157	252		numtostr __TextOutArgs.Text, __D0andaReto2
+3	156	255	#line 156 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	157	255		syscall 13, __TextOutArgs
+3	156	258	#line 156 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	157	258		mov __D0andaReto2, __TextOutArgs.Result
+3	156	260	#line 156 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	157	260		release __TextOutMutex
+3	156	261	#line 156 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	156	261	#line 156 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	157	261		set __signed_stack_001andaReto2, 0
+3	156	264	#line 156 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	156	264	#line 156 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	157	264		set __signed_stack_002andaReto2, 48
+3	156	267	#line 156 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	156	267	#line 156 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	157	267		getout __D0andaReto2, __constVal0, 4
+3	157	271	#line 157 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	158	271		acquire __TextOutMutex
+3	157	272	#line 157 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	158	272		mov __TextOutArgs.Location.X, __signed_stack_001andaReto2
+3	157	274	#line 157 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	158	274		mov __TextOutArgs.Location.Y, __signed_stack_002andaReto2
+3	157	276	#line 157 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	158	276		set __TextOutArgs.Options, 0
+3	157	279	#line 157 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	158	279		numtostr __TextOutArgs.Text, __D0andaReto2
+3	157	282	#line 157 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	158	282		syscall 13, __TextOutArgs
+3	157	285	#line 157 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	158	285		mov __D0andaReto2, __TextOutArgs.Result
+3	157	287	#line 157 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	158	287		release __TextOutMutex
+3	157	288	#line 157 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	157	288	#line 157 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	158	288		set __signed_stack_001andaReto2, 0
+3	157	291	#line 157 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	157	291	#line 157 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	158	291		set __signed_stack_002andaReto2, 40
+3	157	294	#line 157 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	157	294	#line 157 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	158	294		mov __DF0andaReto2, __andaReto2_7qG2_potd_7qG2_000
+3	158	296	#line 158 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	159	296		acquire __TextOutMutex
+3	158	297	#line 158 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	159	297		mov __TextOutArgs.Location.X, __signed_stack_001andaReto2
+3	158	299	#line 158 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	159	299		mov __TextOutArgs.Location.Y, __signed_stack_002andaReto2
+3	158	301	#line 158 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	159	301		set __TextOutArgs.Options, 0
+3	158	304	#line 158 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	159	304		numtostr __TextOutArgs.Text, __DF0andaReto2
+3	158	307	#line 158 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	159	307		syscall 13, __TextOutArgs
+3	158	310	#line 158 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	159	310		mov __D0andaReto2, __TextOutArgs.Result
+3	158	312	#line 158 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	159	312		release __TextOutMutex
+3	158	313	#line 158 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	158	313	#line 158 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	159	313		set __signed_stack_001andaReto2, 0
+3	158	316	#line 158 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	158	316	#line 158 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	159	316		set __signed_stack_002andaReto2, 32
+3	158	319	#line 158 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	158	319	#line 158 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	159	319		mov __DF0andaReto2, __andaReto2_7qG2_pote_7qG2_000
+3	160	321	#line 160 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	161	321		acquire __TextOutMutex
+3	160	322	#line 160 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	161	322		mov __TextOutArgs.Location.X, __signed_stack_001andaReto2
+3	160	324	#line 160 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	161	324		mov __TextOutArgs.Location.Y, __signed_stack_002andaReto2
+3	160	326	#line 160 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	161	326		set __TextOutArgs.Options, 0
+3	160	329	#line 160 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	161	329		numtostr __TextOutArgs.Text, __DF0andaReto2
+3	160	332	#line 160 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	161	332		syscall 13, __TextOutArgs
+3	160	335	#line 160 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	161	335		mov __D0andaReto2, __TextOutArgs.Result
+3	160	337	#line 160 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	161	337		release __TextOutMutex
+3	160	338	#line 160 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	160	338	#line 160 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	161	338		mov __DF0andaReto2, __andaReto2_7qG2_potd_7qG2_000
+3	161	340	#line 161 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	162	340	#pragma macro 7
+3	162	340		setout __constVal1, 2, __DF0andaReto2, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	7907	363	#line 7907 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	161	363	#line 161 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	161	363	#line 161 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	162	363		mov __DF0andaReto2, __andaReto2_7qG2_pote_7qG2_000
+3	162	365	#line 162 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	163	365	#pragma macro 7
+3	163	365		setout __constVal0, 2, __DF0andaReto2, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	7914	388	#line 7914 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	162	388	#line 162 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	162	388	#line 162 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	163	388		set __Wait_7qG2_ms_7qG2_000_inline_andaReto2, 5000
+3	162	391	#line 162 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	7921	391	#line 7921 "NXCDefs.h"
+3	7922	391		wait 5000
+3	7921	393	#line 7921 "NXCDefs.h"
+3	164	393	#line 164 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	6069	393	#line 6069 "NXCDefs.h"
+3	6070	393	#pragma macro 6
+3	6070	393		acquire __PointOutMutex
+3	6070	394		mov __PointOutArgs.Location.X, __constVal200
+3	6070	396		mov __PointOutArgs.Location.Y, __constVal200
+3	6070	398		mov __PointOutArgs.Options, __constVal1
+3	6070	400		syscall 14, __PointOutArgs
+3	6070	403		release __PointOutMutex
+3	7927	404	#line 7927 "NXCDefs.h"
+3	6069	404	#line 6069 "NXCDefs.h"
+3	165	404	#line 165 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	165	404	#line 165 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	166	404		set __signed_stack_001andaReto2, 0
+3	165	407	#line 165 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	165	407	#line 165 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	166	407		set __signed_stack_002andaReto2, 56
+3	165	410	#line 165 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	165	410	#line 165 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	166	410		getout __D0andaReto2, __constVal1, 4
+3	166	414	#line 166 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	167	414		acquire __TextOutMutex
+3	166	415	#line 166 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	167	415		mov __TextOutArgs.Location.X, __signed_stack_001andaReto2
+3	166	417	#line 166 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	167	417		mov __TextOutArgs.Location.Y, __signed_stack_002andaReto2
+3	166	419	#line 166 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	167	419		set __TextOutArgs.Options, 0
+3	166	422	#line 166 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	167	422		numtostr __TextOutArgs.Text, __D0andaReto2
+3	166	425	#line 166 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	167	425		syscall 13, __TextOutArgs
+3	166	428	#line 166 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	167	428		mov __D0andaReto2, __TextOutArgs.Result
+3	166	430	#line 166 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	167	430		release __TextOutMutex
+3	166	431	#line 166 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	166	431	#line 166 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	167	431		set __signed_stack_001andaReto2, 0
+3	166	434	#line 166 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	166	434	#line 166 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	167	434		set __signed_stack_002andaReto2, 48
+3	166	437	#line 166 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	166	437	#line 166 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	167	437		getout __D0andaReto2, __constVal0, 4
+3	167	441	#line 167 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	168	441		acquire __TextOutMutex
+3	167	442	#line 167 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	168	442		mov __TextOutArgs.Location.X, __signed_stack_001andaReto2
+3	167	444	#line 167 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	168	444		mov __TextOutArgs.Location.Y, __signed_stack_002andaReto2
+3	167	446	#line 167 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	168	446		set __TextOutArgs.Options, 0
+3	167	449	#line 167 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	168	449		numtostr __TextOutArgs.Text, __D0andaReto2
+3	167	452	#line 167 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	168	452		syscall 13, __TextOutArgs
+3	167	455	#line 167 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	168	455		mov __D0andaReto2, __TextOutArgs.Result
+3	167	457	#line 167 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	168	457		release __TextOutMutex
+3	167	458	#line 167 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	167	458	#line 167 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	168	458		set __signed_stack_001andaReto2, 0
+3	167	461	#line 167 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	167	461	#line 167 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	168	461		set __signed_stack_002andaReto2, 40
+3	167	464	#line 167 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	167	464	#line 167 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	168	464		mov __DF0andaReto2, __andaReto2_7qG2_potd_7qG2_000
+3	168	466	#line 168 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	169	466		acquire __TextOutMutex
+3	168	467	#line 168 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	169	467		mov __TextOutArgs.Location.X, __signed_stack_001andaReto2
+3	168	469	#line 168 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	169	469		mov __TextOutArgs.Location.Y, __signed_stack_002andaReto2
+3	168	471	#line 168 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	169	471		set __TextOutArgs.Options, 0
+3	168	474	#line 168 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	169	474		numtostr __TextOutArgs.Text, __DF0andaReto2
+3	168	477	#line 168 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	169	477		syscall 13, __TextOutArgs
+3	168	480	#line 168 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	169	480		mov __D0andaReto2, __TextOutArgs.Result
+3	168	482	#line 168 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	169	482		release __TextOutMutex
+3	168	483	#line 168 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	168	483	#line 168 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	169	483		set __signed_stack_001andaReto2, 0
+3	168	486	#line 168 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	168	486	#line 168 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	169	486		set __signed_stack_002andaReto2, 32
+3	168	489	#line 168 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	168	489	#line 168 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	169	489		mov __DF0andaReto2, __andaReto2_7qG2_pote_7qG2_000
+3	169	491	#line 169 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	170	491		acquire __TextOutMutex
+3	169	492	#line 169 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	170	492		mov __TextOutArgs.Location.X, __signed_stack_001andaReto2
+3	169	494	#line 169 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	170	494		mov __TextOutArgs.Location.Y, __signed_stack_002andaReto2
+3	169	496	#line 169 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	170	496		set __TextOutArgs.Options, 0
+3	169	499	#line 169 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	170	499		numtostr __TextOutArgs.Text, __DF0andaReto2
+3	169	502	#line 169 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	170	502		syscall 13, __TextOutArgs
+3	169	505	#line 169 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	170	505		mov __D0andaReto2, __TextOutArgs.Result
+3	169	507	#line 169 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	170	507		release __TextOutMutex
+3	169	508	#line 169 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	170	508	#line 170 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	171	508	#pragma macro 7
+3	171	508		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	8063	531	#line 8063 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	170	531	#line 170 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	172	531	#line 172 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	173	531	#pragma macro 7
+3	173	531		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	8066	554	#line 8066 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	172	554	#line 172 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	172	554	#line 172 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	173	554		set __D0andaReto2, 1
+3	172	557	#line 172 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	173	557		tst 5, __zfandaReto2, __D0andaReto2
+3	172	560	#line 172 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	173	560		brtst 4, __NXC_Label_815, __zfandaReto2
+3	176	563	#line 176 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	177	563		jmp __NXC_Label_814
+3	176	565	#line 176 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	176	565	#line 176 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	177	565		subret __andaReto2_return
+4	248	0	#line 248 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	249	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\natia\AppData\Local\Temp\temp.nxc
 1	__ResetSensorSubroutine	9	NXTDefs.h
 2	inicializaSensores	22	C:\Users\natia\AppData\Local\Temp\temp.nxc
-3	andaReto	200	C:\Users\natia\AppData\Local\Temp\temp.nxc
-4	__initialize_global_data	879	C:\Users\natia\AppData\Local\Temp\temp.nxc
+3	andaReto2	200	C:\Users\natia\AppData\Local\Temp\temp.nxc
+4	__initialize_global_data	767	C:\Users\natia\AppData\Local\Temp\temp.nxc

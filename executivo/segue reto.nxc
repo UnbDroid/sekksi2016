@@ -41,22 +41,9 @@ void inicializaSensores();
 int distanciaGiro(int grau);
 void viraEsq(int angulo);
 void viraDir(int angulo);
+void andaReto1();
+void andaReto2();
 
-
-/*
-10 segundos
-dir: 3468   70
-esq: 3144   70
-
-dir: 3369  70
-esq: 2925  71
-
-dir: 3402  70
-esq: 3094  75
-
-dir:
-esq:
-*/
 
 void inicializaSensores()
 {
@@ -66,7 +53,7 @@ void inicializaSensores()
   SetSensorLowspeed(HTE);
 }
 
-void andaReto(){  // função que faz ele andar reto
+void andaReto1(){  // função que faz ele andar reto aumentando a potência do motor mais lento
         int potd, pote;
 
         potd = 70;
@@ -128,6 +115,61 @@ void andaReto(){  // função que faz ele andar reto
         Off(MD);
         Off(ME);
         
+        while(1){}
+}
+
+void andaReto2(){  // função que faz ele andar reto reduzindo a potência do motor mais rápido
+        float potd, pote;
+
+        potd = 90;
+        pote = 90;
+
+        OnFwd(MD, potd);
+        OnFwd(ME, pote);
+        Wait(500);
+
+        if(MotorTachoCount(MD) > MotorTachoCount(ME)){
+          while(MotorTachoCount(MD) > MotorTachoCount(ME))
+          {
+             potd-=1;
+
+              OnFwd(MD, potd);
+              OnFwd(ME, pote);
+              Wait(200);
+          }
+
+        }
+        else{
+           while(MotorTachoCount(MD) < MotorTachoCount(ME))
+           {
+             pote-=1;
+
+              OnFwd(MD, potd);
+              OnFwd(ME, pote);
+              Wait(200);
+           }
+
+        }
+
+       // Off(MD);
+        //Off(ME);
+        NumOut(0, LCD_LINE1, MotorTachoCount(MD));
+        NumOut(0, LCD_LINE2, MotorTachoCount(ME));
+        NumOut(0, LCD_LINE3, potd);
+        NumOut(0, LCD_LINE4, pote);
+
+        OnFwd(MD, potd);
+        OnFwd(ME, pote);
+        Wait(5000);
+
+        ClearScreen();
+        NumOut(0, LCD_LINE1, MotorTachoCount(MD));
+        NumOut(0, LCD_LINE2, MotorTachoCount(ME));
+        NumOut(0, LCD_LINE3, potd);
+        NumOut(0, LCD_LINE4, pote);
+        Off(MD);
+        Off(ME);
+
         while(1){}
 }
      
@@ -200,5 +242,5 @@ void viraDir(int angulo){ // função que faz o robô girar para a direita o ângulo
 task main(){
 	   inicializaSensores();
 	   
-     andaReto();
+     andaReto2();
 }
