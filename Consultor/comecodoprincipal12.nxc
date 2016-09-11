@@ -1,0 +1,226 @@
+// Defines de sensores
+#define RGB_DIR IN_1
+#define RGB_ESQ IN_2
+#define RGB_MEIO IN_3
+#define US_FRENTE IN_4
+
+// Defines de motores
+#define MOTOR_GARRA OUT_A
+
+// Defines de leitura do RGB do meio (ainda precisa testar mais)
+#define COR_PRETA_MEIO_MIN 55
+#define COR_PRETA_MEIO_MAX 150
+#define COR_BRANCA_MEIO_MIN 290
+#define COR_BRANCA_MEIO_MAX 630
+#define COR_BASE_MEIO_MIN 185
+#define COR_BASE_MEIO_MAX 260
+
+// Defines de leitura do RGB da esquerda do robô
+#define COR_PRETA_ESQ_PERTO_MIN 75
+#define COR_PRETA_ESQ_PERTO_MAX 100
+#define COR_PRETA_ESQ_LONGE_MIN 120
+#define COR_PRETA_ESQ_LONGE_MAX 160
+#define COR_BRANCA_ESQ_PERTO_MIN 470
+#define COR_BRANCA_ESQ_PERTO_MAX 495
+#define COR_BRANCA_ESQ_LONGE_MIN 212
+#define COR_BRANCA_ESQ_LONGE_MAX 245
+#define COR_BASE_ESQ_MIN 195
+#define COR_BASE_ESQ_MAX 210
+
+// Defines de leitura do RGB da direita do robô
+#define COR_PRETA_DIR_PERTO_MIN 130
+#define COR_PRETA_DIR_PERTO_MAX 160
+#define COR_PRETA_DIR_LONGE_MIN 185
+#define COR_PRETA_DIR_LONGE_MAX 210
+#define COR_BRANCA_DIR_PERTO_MIN 385
+#define COR_BRANCA_DIR_PERTO_MAX 420
+#define COR_BRANCA_DIR_LONGE_MIN 240
+#define COR_BRANCA_DIR_LONGE_MAX 280
+#define COR_BASE_DIR_MIN 240
+#define COR_BASE_DIR_MAX 260
+
+//potencias
+#define POTENCIA_MAXIMA_GARRA 80
+
+//Tempos
+#define TEMPO_ATE_A_GARRA_TRAVAR 2000
+#define TEMPO_ATE_JOGAR_DENTRO 3750
+#define TEMPO_ATE_A_GARRA_VOLTAR 2000 //estou usando tempo... rola de usar por angulos depois
+#define TEMPO_DEPOIS_DE_JOGAR_DENTRO_GARANTIA 800
+
+//misc
+#define MENOR_DISTANCIA_US 20
+
+//Declarações das funções
+void Vai(int x);
+void ChamaVai(int x); //função para realizar a recursividade
+int filterRGB (int s);
+int filterUS (int s);
+int NadaTaDiferente();
+int VerificaLeitura();
+int condicao();
+int IdentificaBoneco(int x);
+void InicializaSensores();
+void pega();
+void NaoPega();
+
+
+void InicializaSensores(){
+	SetSensorColorRed(RGB_DIR);
+    SetSensorColorRed(RGB_ESQ);
+    SetSensorColorRed(RGB_MEIO);
+    SetSensorLowspeed(US_FRENTE);
+}
+
+void NaoPega(){
+	OnFwd(MOTOR_GARRA,-POTENCIA_MAXIMA_GARRA);
+	Wait(TEMPO_ATE_A_GARRA_TRAVAR);
+	Off(MOTOR_GARRA);
+}
+
+void pega(){
+	OnFwd(MOTOR_GARRA,POTENCIA_MAXIMA_GARRA);
+	Wait(TEMPO_ATE_JOGAR_DENTRO);
+	Off(MOTOR_GARRA);
+	Wait(TEMPO_DEPOIS_DE_JOGAR_DENTRO_GARANTIA);
+	OnFwd(MOTOR_GARRA,-POTENCIA_MAXIMA_GARRA);
+	Wait(TEMPO_ATE_A_GARRA_VOLTAR);
+	Off(MOTOR_GARRA);
+}
+
+int IdentificaBoneco(int x){
+/* x refere a qual cor temos que pegar 0 branco 1 preto*/
+	OnFwd(MOTOR_GARRA,POTENCIA_MAXIMA_GARRA);
+	Wait(TEMPO_ATE_A_GARRA_TRAVAR);
+	Off(MOTOR_GARRA);
+	if(x == 0){
+		if(SensorRaw(RGB_MEIO) > COR_BRANCA_MEIO_MIN && SensorRaw(RGB_MEIO) < COR_BRANCA_MEIO_MAX){
+			pega();	
+		}else{
+			/*avisa pro robo que temos boneco errado na garra e espera ele girar*/
+			NaoPega();
+		}	
+	}else if(x == 1){
+		if(SensorRaw(RGB_MEIO) > COR_PRETA_MEIO_MIN && SensorRaw(RGB_MEIO) < COR_PRETA_MEIO_MAX){
+			pega();
+		}else{
+			/*avisa pro robo que temos boneco errado na garra e espera ele girar*/
+			NaoPega();
+		}	
+	}
+	/*avisa pro robo que o processo de pegar o boneco acabou pra ele andar de novo*/
+	Vai(x);	
+}
+
+int filterRGB(int s){
+	 /*passar o sensor como parametro (s = X-1 (de INT_X))*/
+    float media = 0, alfa = 0.01 ;
+    int leitura;
+    unsigned int x;
+    leitura = SensorRaw(s);
+    media = leitura ;
+    //condiçao de loop de 2segundos para pegar leituras e filtrar elas
+    while( (x=CurrentTick())<(x+2)){
+        leitura = SensorRaw(s);
+        media = ((1-alfa)*media) + (alfa*leitura) ;
+        //NumOut(0, LCD_LINE1, media);
+        //Wait(10);
+        //ClearScreen();
+    }
+    if (s == 0){
+    	if (media > COR_BASE_DIR_MAX && media < COR_BASE_DIR_MIN){
+    		return 0;
+    	}else{
+    		return 1;	
+    	}	  
+    }else if(s == 1){
+    	if (media > COR_BASE_ESQ_MAX && media < COR_BASE_ESQ_MIN){
+    		return 0;
+    	}else{
+    		return 1;	
+    	}	  
+    }
+
+}
+/*nao esta pronto ainda, tenho que implementar ele direito pra US*/
+int filterUS(int s){
+    float media = 0, alfa = 0.01 ;
+    int leitura;
+    unsigned int x;
+    leitura = SensorRaw(s);
+    media = leitura ;
+    //condiçao de loop de 1segundo para pegar leituras e filtrar elas
+    while( (x=CurrentTick())<(x+1)){
+        leitura = SensorRaw(s);
+        media = ((1-alfa)*media) + (alfa*leitura) ;
+        //NumOut(0, LCD_LINE1, media);
+        //Wait(10);
+        //ClearScreen();
+    }
+    if (media < MENOR_DISTANCIA_US){
+    		return 0;
+    }else{
+    		return 1;	
+    }	  
+}
+
+int VerificaLeitura(){
+    if(SensorRaw(RGB_ESQ) > COR_BASE_ESQ_MAX && SensorRaw(RGB_ESQ) < COR_BASE_ESQ_MIN){
+    	return 1;
+    }else if(SensorRaw(RGB_DIR) > COR_BASE_DIR_MAX && SensorRaw(RGB_DIR) < COR_BASE_DIR_MAX){
+    	return 2;
+    }else if(SensorUS(US_FRENTE) < MENOR_DISTANCIA_US){
+    	return 3;
+    }
+}
+
+int condicao(){
+	if ((SensorRaw(RGB_ESQ) > COR_BASE_ESQ_MAX && SensorRaw(RGB_ESQ) < COR_BASE_ESQ_MIN )|| (SensorRaw(RGB_DIR)> COR_BASE_DIR_MAX && SensorRaw(RGB_DIR) < COR_BASE_DIR_MAX)){
+		return 1;
+	}else{
+		return 0;
+	}
+}
+
+void ChamaVai(int x){
+	Vai(x);
+}
+
+void Vai(int x){
+    int aux = 4;//valor aleatorio pra continuar a função se a funão verifica nao retornar um valor esperado
+    while(condicao()){
+    }
+    aux = VerificaLeitura();
+    if(aux==2){/*se eh o sensor da direita*/
+    	if(filterRGB(RGB_DIR)){
+    		/*manda sinal para parar o robo*/
+    		IdentificaBoneco(x);
+    	}else{
+    		ChamaVai(x);
+    	}
+
+    }else if(aux == 1){/*se eh o sensor da esquerda*/
+    	if(filterRGB(RGB_ESQ)){
+    		/*manda sinal para parar o robo*/
+    		IdentificaBoneco(x);
+    	}else{
+    		ChamaVai(x);
+    	}
+    }else if(aux == 3){/*se eh o US*/
+    	if(filterUS(US_FRENTE)){
+    		/*manda sinal para parar o robo*/
+
+    	}else{
+    		ChamaVai(x);
+    	}
+    }
+    ChamaVai(x);
+}
+
+task main(){
+	InicializaSensores();
+    //conexao bluetooth com a verificacao que esta funcionando
+    //pegar com o outro cerebro qual cor que temos que catar e guardar em x
+    int x;
+    Vai(x);
+}
