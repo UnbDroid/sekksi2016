@@ -30,7 +30,7 @@
 int distanciaGiro(int grau);
 void viraEsq(int angulo);
 void viraDir(int angulo);
-void iniciaBlue();
+void iniciaBlue(void);
 
 void iniciaBlue(){// FUNCAO INICIA COMUNICACAO BLUETOOTH
 
