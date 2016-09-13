@@ -47,6 +47,20 @@ void iniciaBlue(){// FUNCAO INICIA COMUNICACAO BLUETOOTH
      TextOut(0, LCD_LINE1, "Conectou Bluetooth");
 }
 
+void desligaBlue(){
+     CommBTConnectionType DADOS_BT;
+     DADOS_BT.Name = CONSULTOR;
+     DADOS_BT.ConnectionSlot = CONEXAO;
+     DADOS_BT.Action = DESCONECTA;
+     do{
+        SysCommBTConnection(DADOS_BT);
+
+        Wait(30);//30 ms eh o tempo de comunicacao minima bluetooth entre dois bricks
+
+     }while(BluetoothStatus(CONEXAO)== NO_ERR);
+     TextOut(0, LCD_LINE1, "Desligou Bluetooth");
+}
+
 
 int distanciaGiro(int grau){
 	   return (((grau*172)/1420)); // COMO FOI FEITA ESSA CONVERSÃO???

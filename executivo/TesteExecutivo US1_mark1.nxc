@@ -95,8 +95,8 @@ void viraDir(int angulo){ // função que faz o robô girar para a direita o ângulo
 task main()// programa simples de teste
 {
       int aux1 = 0, aux = 0;
-
-     iniciaBlue();
+      desconectaBlue();
+      iniciaBlue();
 
      while(aux1==0)
      {

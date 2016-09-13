@@ -15,6 +15,11 @@
 #define direita 1
 #define esquerda 2
 #define tempoVirada 300
+#define modoTempo 1
+#define modoDist 2
+#define modoSensorUS 3
+#define modoSensorCHAO 4
+#define modoAchaOPRETO 5
 
 
 //SENSORES E MOTORES
@@ -31,8 +36,18 @@
 #define INBOX 1
 #define OUTBOX 5
 
+
+
+
+//VARIAVEIS GLOBAIS
 int my_tc_d;
 int my_tc_e;
+
+int potdGlobal = 90;
+int poteGlobal = 80;
+
+
+
 
 // DECLARAÇÃO DE FUNÇÕES
 int distanciaTachoCount(int grau);
@@ -53,7 +68,7 @@ void inicializaSensores()
   SetSensorLowspeed(HTE);
 }
 
-void andaReto1(){  // função que faz ele andar reto
+void andaReto1(){  // função que faz ele andar reto aumentando a potência do motor mais lento
         int potd, pote;
 
         potd = 70;
@@ -118,15 +133,15 @@ void andaReto1(){  // função que faz ele andar reto
         while(1){}
 }
 
-void andaReto2(){  // função que faz ele andar reto
-        float potd, pote;
+void andaReto2(){  // função que faz ele andar reto reduzindo a potência do motor mais rápido
+        int potd, pote;
 
         potd = 90;
         pote = 90;
 
         OnFwd(MD, potd);
         OnFwd(ME, pote);
-        Wait(500);
+        Wait(250);
 
         if(MotorTachoCount(MD) > MotorTachoCount(ME)){
           while(MotorTachoCount(MD) > MotorTachoCount(ME))
@@ -160,17 +175,139 @@ void andaReto2(){  // função que faz ele andar reto
 
         OnFwd(MD, potd);
         OnFwd(ME, pote);
-        Wait(5000);
+        Wait(10000);
 
         ClearScreen();
         NumOut(0, LCD_LINE1, MotorTachoCount(MD));
         NumOut(0, LCD_LINE2, MotorTachoCount(ME));
         NumOut(0, LCD_LINE3, potd);
         NumOut(0, LCD_LINE4, pote);
+
+        TextOut(0, LCD_LINE5, "POkemon");
         Off(MD);
         Off(ME);
 
         while(1){}
+}
+
+void andaReto3(){
+
+
+        int potd, pote;
+        potd = 90;
+        pote = 90;
+
+        OnFwd(MD, potd);
+        OnFwd(ME, pote);
+        Wait(350);
+
+
+        if(MotorTachoCount(MD) > MotorTachoCount(ME)){
+            potd -= 8;
+            for(int c = 4; c >= 1; c/=2){
+                    OnFwd(MD, potd);
+                    OnFwd(ME, pote);
+                    Wait(250);
+                    if(MotorTachoCount(MD) == MotorTachoCount(ME)){
+                       c = 0;
+                    }else if(MotorTachoCount(MD) > MotorTachoCount(ME)){
+                          potd -= c;
+                    }else{
+                         potd += c;
+                    }
+             }
+
+        }else if(MotorTachoCount(MD) < MotorTachoCount(ME)){
+            pote -= 8;
+            for(int c = 4; c >= 1; c/=2){
+                    OnFwd(MD, potd);
+                    OnFwd(ME, pote);
+                    Wait(250);
+                    if(MotorTachoCount(MD) == MotorTachoCount(ME)){
+                       c = 0;
+                    }else if(MotorTachoCount(ME) > MotorTachoCount(MD)){
+                          pote -= c;
+                    }else{
+                         pote += c;
+                    }
+             }
+        }
+
+
+
+        NumOut(0, LCD_LINE1, MotorTachoCount(MD));
+        NumOut(0, LCD_LINE2, MotorTachoCount(ME));
+        NumOut(0, LCD_LINE3, potd);
+        NumOut(0, LCD_LINE4, pote);
+
+        OnFwd(MD, potd);
+        OnFwd(ME, pote);
+        Wait(10000);
+
+        ClearScreen();
+        NumOut(0, LCD_LINE1, MotorTachoCount(MD));
+        NumOut(0, LCD_LINE2, MotorTachoCount(ME));
+        NumOut(0, LCD_LINE3, potd);
+        NumOut(0, LCD_LINE4, pote);
+        TextOut(0, LCD_LINE5, "POkemon");
+        Off(MD);
+        Off(ME);
+
+        while(1){}
+
+
+}
+
+
+void Regula(){
+     if(MotorTachoCount(MD) > MotorTachoCount(ME)){
+         if(poteGlobal < 90){
+            poteGlobal += 1;
+         }else
+              potdGlobal -= 1;
+
+     }else if(MotorTachoCount(MD) < MotorTachoCount(ME)){
+         if(potdGlobal < 90){
+            potdGlobal += 1;
+         }else
+              poteGlobal -= 1;
+     }
+}
+
+void Reto(int modo, int var){
+
+     int temp0, temp1;
+
+
+     switch(modo){
+        case modoTempo:
+             temp0 = CurrentTick();
+
+
+
+             while(CurrentTick() - temp0 <= var){
+                  OnFwd(MD, potdGlobal);
+
+
+                  OnFwd(ME, poteGlobal);
+                  temp1 = CurrentTick();
+                    PlaySound(SOUND_LOW_BEEP);
+                    Wait(MS_500);
+                    PlaySound(SOUND_FAST_UP);
+  
+                  while(CurrentTick() - temp1 <= 200){
+                        //CHECAR OS INBOXs AQUI!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                  }
+                  Regula();
+             }
+             Off(MD);
+             Off(ME);
+
+
+        break;
+     }
+
+
 }
      
 
@@ -241,6 +378,7 @@ void viraDir(int angulo){ // função que faz o robô girar para a direita o ângulo
 
 task main(){
 	   inicializaSensores();
-	   
-     andaReto2();
+
+     Reto(modoTempo, 10000);
+     //andaReto2();
 }
