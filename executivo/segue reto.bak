@@ -9,7 +9,8 @@
 #define PRETO 0
 
 //DIST
-#define distMinParede 8
+#define DIST_DA_PAREDE 8
+#define DIST_BASE 40
 
 //LOGICA
 #define direita 1
@@ -20,6 +21,7 @@
 #define modoSensorUS 3
 #define modoSensorCHAO 4
 #define modoAchaOPRETO 5
+
 
 
 //SENSORES E MOTORES
@@ -58,6 +60,12 @@ void viraEsq(int angulo);
 void viraDir(int angulo);
 void andaReto1();
 void andaReto2();
+void vira(int angulo, int direcao);
+void Para();
+void Regula(int iteracoes);
+void AndaReto();
+void Reto(int modo, int var);
+void iniciaReto();
 
 
 void inicializaSensores()
@@ -259,36 +267,102 @@ void andaReto3(){
 }
 
 
-void Regula(){
-     if(MotorTachoCount(MD) > MotorTachoCount(ME)){
-         if(poteGlobal < 90){
-            poteGlobal += 1;
-         }else
-              potdGlobal -= 1;
+void Para(){
+     /*do{
+        ResetTachoCount(MD);
+        ResetTachoCount(ME);
+      }while((MotorTachoCount(MD) != 0)&&(MotorTachoCount(ME) != 0));
 
-     }else if(MotorTachoCount(MD) < MotorTachoCount(ME)){
-         if(potdGlobal < 90){
-            potdGlobal += 1;
-         }else
-              poteGlobal -= 1;
+     while((MotorTachoCount(MD) != -90)&&(MotorTachoCount(ME) != -90)){
+         if(MotorTachoCount(MD) >= -90)
+            OnRev(MD, 10);
+         else if(MotorTachoCount(MD)  < -90)
+              Off(MD);
+
+         if(MotorTachoCount(ME) >= -90)
+            OnRev(ME, 10);
+         else if(MotorTachoCount(ME)  < -90)
+              Off(ME);
+     }
+     */
+     Off(ME);
+     Off(MD);
+}
+
+void Regula(int iteracoes){
+     int i;
+
+     while(i < iteracoes){
+        if(MotorTachoCount(MD) > MotorTachoCount(ME)){
+            if(poteGlobal < 90){
+               poteGlobal += 1;
+            }else
+               potdGlobal -= 1;
+
+        }else if(MotorTachoCount(MD) < MotorTachoCount(ME)){
+            if(potdGlobal < 90){
+               potdGlobal += 1;
+            }else
+               poteGlobal -= 1;
+        }
+        i++;
+     }
+     
+     
+}
+
+
+void AndaReto(){
+     OnFwd(MD, potdGlobal);
+     OnFwd(ME, poteGlobal);
+}
+
+
+
+void iniciaReto(){
+     int tachoD = 0;
+     int tachoE = 0;
+     
+     Off(MD);
+     Off(ME);
+
+     /*do{
+        ResetTachoCount(MD);
+        ResetTachoCount(ME);
+     }while((MotorTachoCount(MD) != 0)&&(MotorTachoCount(ME) != 0));
+       */
+     while(distanciaTachoCount((tachoD + tachoE)/2) < (DIST_BASE + DIST_DA_PAREDE)){
+        tachoD = MotorTachoCount(MD);
+        tachoE = MotorTachoCount(ME);
+        OnFwd(MD, potdGlobal);
+        OnFwd(ME, poteGlobal);
+        PlaySound(SOUND_LOW_BEEP);
+        Wait(MS_500);
+        PlaySound(SOUND_FAST_UP);
+
+        Regula(1);
      }
 }
+
+
+
+
+
 
 void Reto(int modo, int var){
 
      int temp0, temp1;
 
+     Off(MD);
+     Off(ME);
 
      switch(modo){
         case modoTempo:
              temp0 = CurrentTick();
-
-
-
              while(CurrentTick() - temp0 <= var){
                   OnFwd(MD, potdGlobal);
 
-
+                  //TERMINAR
                   OnFwd(ME, poteGlobal);
                   temp1 = CurrentTick();
                     PlaySound(SOUND_LOW_BEEP);
@@ -298,12 +372,10 @@ void Reto(int modo, int var){
                   while(CurrentTick() - temp1 <= 200){
                         //CHECAR OS INBOXs AQUI!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                   }
-                  Regula();
+                  Regula(5);
              }
              Off(MD);
              Off(ME);
-
-
         break;
      }
 
@@ -352,6 +424,31 @@ int distanciaGiro(int grau){
 	   return (((grau*172)/1420)); // COMO FOI FEITA ESSA CONVERSÃO???
 }
 
+void vira(int angulo, int direcao){  //TESTE
+     if(direcao == esquerda){
+        OnFwd(MD, 90);
+        OnFwd(ME, -90);
+
+        while(distanciaGiro((MotorTachoCount(MD) - MotorTachoCount(ME))/2) < angulo)
+        {
+        //lol
+        }
+        Off(MD);
+        Off(ME);
+
+     }else if(direcao == direita){
+        OnFwd(MD, -90);
+        OnFwd(ME, 90);
+
+        while(distanciaGiro((- MotorTachoCount(MD) + MotorTachoCount(ME))/2) < angulo)
+        {
+        //lol
+        }
+        Off(MD);
+        Off(ME);
+     }
+}
+
 void viraEsq(int angulo){ // função que faz o robô girar para a esquerda o ângulo recebido
      OnFwd(MD, 90);
      OnFwd(ME, -90);
@@ -363,6 +460,7 @@ void viraEsq(int angulo){ // função que faz o robô girar para a esquerda o ângul
      Off(MD);
      Off(ME);
 }
+
 
 void viraDir(int angulo){ // função que faz o robô girar para a direita o ângulo recebido
      OnFwd(MD, -90);
@@ -379,6 +477,23 @@ void viraDir(int angulo){ // função que faz o robô girar para a direita o ângulo
 task main(){
 	   inicializaSensores();
 
-     Reto(modoTempo, 10000);
+     //iniciaReto();
+
+     OnFwd(MD, 90);
+     OnFwd(ME, 81);
+     Wait(2000);
+     Para();
+     vira(90, esquerda);
+     vira(90, direita);
+     
+     NumOut(0, LCD_LINE3, potdGlobal);//90
+     NumOut(0, LCD_LINE4, poteGlobal);//81
+     
+     while(1);
+
+     //AndaReto();
+     
+
+     //Reto(modoTempo, 10000);
      //andaReto2();
 }
