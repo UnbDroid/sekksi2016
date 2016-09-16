@@ -204,6 +204,7 @@ void ChamaVai(int x){
 void Vai(int x){
     int aux = 4;//valor aleatorio pra continuar a função se a funcão verifica nao retornar um valor esperado
     while(condicao()){
+        //aqui tem que ter uma checagem dos inbox, pq é onde ele mais vai estar do código Ass: Luan
     }
     aux = VerificaLeitura();
     if(aux==direita){/*se eh o sensor da direita*/
@@ -236,6 +237,6 @@ task main(){
 	InicializaSensores();
     //conexao bluetooth com a verificacao que esta funcionando
     //pegar com o outro cerebro qual cor que temos que catar e guardar em x
-    int x;
+    int x;//que poha de variavel é essa!?!?! põe um nome mnemonico nessa porra!!!! ass Luan
     Vai(x);
 }
