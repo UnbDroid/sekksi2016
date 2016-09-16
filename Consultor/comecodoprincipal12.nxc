@@ -15,7 +15,7 @@
 #define COR_BASE_MEIO_MIN 185
 #define COR_BASE_MEIO_MAX 260
 
-// Defines de leitura do RGB da esquerda do robÙ
+// Defines de leitura do RGB da esquerda do rob√¥
 #define COR_PRETA_ESQ_PERTO_MIN 75
 #define COR_PRETA_ESQ_PERTO_MAX 100
 #define COR_PRETA_ESQ_LONGE_MIN 120
@@ -27,7 +27,7 @@
 #define COR_BASE_ESQ_MIN 195
 #define COR_BASE_ESQ_MAX 210
 
-// Defines de leitura do RGB da direita do robÙ
+// Defines de leitura do RGB da direita do rob√¥
 #define COR_PRETA_DIR_PERTO_MIN 130
 #define COR_PRETA_DIR_PERTO_MAX 160
 #define COR_PRETA_DIR_LONGE_MIN 185
@@ -55,10 +55,17 @@
 #define direita 1
 #define esquerda 2
 
+//defines dos buffers utilizados na comunica√ß√£o, com cada um sendo utilizado para uma atividade espec√≠fica
+#define OUTBOX_INICIALIZA 0  /*buffers referentes ao processo de conectar os c√©rebros*/
+#define INBOX_INICIALIZA 1
+#define OUTBOX_USFRENTE 2   /*buffers referentes aos processos relacionados com o sensor US frontal*/
+#define INBOX_USFRENTE 3
+#define OUTBOX_GARRA 4   /*buffers referentes aos processos relacionados com as garras*/
+#define INBOX_GARRA 5
 
-//DeclaraÁıes das funÁıes
+//Declara√ß√µes das fun√ß√µes
 void Vai(int x);
-void ChamaVai(int x); //funÁ„o para realizar a recursividade
+void ChamaVai(int x); //fun√ß√£o para realizar a recursividade
 int filterRGB (int s);
 int filterUS (int s);
 int NadaTaDiferente();
@@ -78,9 +85,12 @@ void InicializaSensores(){
 }
 
 void NaoPega(){
+	/*manda um sinal pro executivo iniciar a rotina pra descartar boneco, espera a resposta dele para abrir 
+	a garra e deixar o boneco no lugar*/
 	OnFwd(MOTOR_GARRA,-POTENCIA_MAXIMA_GARRA);
 	Wait(TEMPO_ATE_A_GARRA_TRAVAR);
 	Off(MOTOR_GARRA);
+	/*manda resposta para confirmar que a garra est√° aberta, para o executivo se afastar do boneco e seguindo parede*/
 }
 
 void pega(){
@@ -124,7 +134,7 @@ int filterRGB(int s){
     unsigned int x;
     leitura = SensorRaw(s);
     media = leitura ;
-    //condiÁao de loop de 2segundos para pegar leituras e filtrar elas
+    //condi√ßao de loop de 2segundos para pegar leituras e filtrar elas
     while( (x=CurrentTick())<(x+2)){
         leitura = SensorRaw(s);
         media = ((1-alfa)*media) + (alfa*leitura) ;
@@ -148,13 +158,13 @@ int filterRGB(int s){
 
 }
 /*nao esta pronto ainda, tenho que implementar ele direito pra US*/
-int filterUS(int s){// ABDU, S” TEM 1 US, por que n„o tirar esse par‚metro int s e colocar na funÁ„o SensorRaw somente (US_FRENTE)???
+int filterUS(int s){// ABDU, S√ì TEM 1 US, por que n√£o tirar esse par√¢metro int s e colocar na fun√ß√£o SensorRaw somente (US_FRENTE)???
     float media = 0, alfa = 0.01 ;
     int leitura;
     unsigned int x;
     leitura = SensorRaw(s);
     media = leitura ;
-    //condiÁao de loop de 1segundo para pegar leituras e filtrar elas
+    //condi√ßao de loop de 1segundo para pegar leituras e filtrar elas
     while( (x=CurrentTick())<(x+1)){
         leitura = SensorRaw(s);
         media = ((1-alfa)*media) + (alfa*leitura) ;
@@ -192,7 +202,7 @@ void ChamaVai(int x){
 }
 
 void Vai(int x){
-    int aux = 4;//valor aleatorio pra continuar a funÁ„o se a func„o verifica nao retornar um valor esperado
+    int aux = 4;//valor aleatorio pra continuar a fun√ß√£o se a func√£o verifica nao retornar um valor esperado
     while(condicao()){
     }
     aux = VerificaLeitura();
