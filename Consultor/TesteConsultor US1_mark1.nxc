@@ -1,12 +1,36 @@
 #define CONEXAO 0
+
+//INBOX PARA CADA ATIVIDADE
 #define INBOX 2
+
 #define OUTBOX 1
-task main()
-{
+
+//LOGICA
+#define SIM 1
+#define SIM_US 1
+#define SIM_GARRA 2
+  //Bluetooth
+#define PARADO 0
+#define LeGARRA_SENSOR 3
+  //dist
+#define DIST_RE 30
+#define DIST_DA_PAREDE 8
+  //cores
+#define COR_VERDE 
+#define COR_AZUL
+#define COR_PRETA
+#define COR_NEUTRA
+
+void teste1(void);
+void teste2(void);
+
+void teste1(){
      int x, i;
      int aux=0;
+     
      SetSensorUltrasonic(IN_4);
      TextOut(30, LCD_LINE1, "passei1");
+     
      while(aux==0)
      {
           ReceiveRemoteNumber(INBOX, 0, aux);
@@ -30,4 +54,13 @@ task main()
           }
           Wait(30);
      }
+}
+
+void teste2(){
+
+}
+
+task main()
+{
+     
 }

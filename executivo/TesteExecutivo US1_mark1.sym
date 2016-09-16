@@ -1,594 +1,741 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__D0viraDir	6	1	0	4	14
-1	__D0viraEsq	6	1	4	4	12
-2	__signed_stack_001distanciaGiro	6	1	8	4	4
-3	__D0main	6	1	12	4	30
-4	__SRSTmpLongVal	6	1	16	4	2
-5	__D0distanciaGiro	6	1	20	4	7
-6	__D0iniciaBlue	6	1	24	4	5
-7	__signed_stack_001iniciaBlue	6	1	28	4	4
-8	__signed_stack_001viraEsq	6	1	32	4	6
-9	__Wait_7qG2_ms_7qG2_000_inline_iniciaBlue	5	1	36	4	2
-10	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	40	4	14
-11	__signed_stack_001viraDir	6	1	44	4	8
-12	__signed_stack_002iniciaBlue	6	1	48	4	2
-13	__signed_stack_001main	6	1	52	4	14
-14	__signed_stack_002main	6	1	56	4	6
-15	__TextOutMutex	9	0	60	4	8
-16	__RRNTmpVal	6	1	64	4	12
-17	__distanciaGiro_7qG2_grau_7qG2_000	4	1	68	2	3
-18	__viraEsq_7qG2_angulo_7qG2_000	4	1	70	2	2
-19	__main_7qG2_aux_7qG2_000	4	1	72	2	6
-20	__main_7qG2_aux1_7qG2_000	4	1	74	2	3
-21	__viraDir_7qG2_angulo_7qG2_000	4	1	76	2	2
-22	__distanciaGiro_return	1	1	78	1	5
-23	__viraEsq_return	1	1	79	1	3
-24	__constVal1	2	0	80	1	19
-25	__constVal0	2	1	81	1	50
-26	__iniciaBlue_return	1	1	82	1	3
-27	__constVal96	2	0	83	1	12
-28	____initialize_global_data_return	1	1	84	1	3
-29	__constVal32	2	0	85	1	36
-30	__viraDir_return	1	1	86	1	3
-31	__constVal63	2	0	87	1	12
-32	__constValNeg90	2	0	88	1	2
-33	__constVal3	2	0	89	1	13
-34	__WFRRTmpByte	1	1	90	1	2
-35	__constVal5	2	0	91	1	1
-36	__RRNErr	1	1	92	1	3
-37	__constVal2	2	0	93	1	2
-38	__constVal4	2	0	94	1	2
-39	__MRArgs	8	0	4	8	13
-40	__MRArgs.Result	2	1	96	1	13
-41	__MRArgs.QueueID	1	1	97	1	13
-42	__MRArgs.Remove	1	1	98	1	13
-43	__MRArgs.Message	7	0	100	4	13
-44	__MRArgs.Message.Message_type	1	0	0	1	0
-45	__CHSWArgs	8	0	3	12	3
-46	__CHSWArgs.Status	2	1	104	1	3
-47	__CHSWArgs.Buffer	7	0	106	4	3
-48	__CHSWArgs.Buffer.Buffer_type	1	0	0	1	0
-49	__CHSWArgs.BufferLen	1	1	108	1	3
-50	__CBTCSArgs	8	0	2	4	3
-51	__CBTCSArgs.Result	2	1	112	1	3
-52	__CBTCSArgs.Connection	1	1	113	1	3
-53	__CBTWArgs	8	0	3	8	4
-54	__CBTWArgs.Result	2	1	116	1	4
-55	__CBTWArgs.Connection	1	1	117	1	4
-56	__CBTWArgs.Buffer	7	0	118	4	4
-57	__CBTWArgs.Buffer.Buffer_type	1	0	0	1	0
-58	__TextOutArgs	8	0	4	16	24
-59	__TextOutArgs.Result	2	1	120	1	24
-60	__TextOutArgs.Location	8	0	2	4	24
-61	__TextOutArgs.Location.X	4	1	124	2	24
-62	__TextOutArgs.Location.Y	4	1	126	2	24
-63	__TextOutArgs.Text	7	0	128	4	24
-64	__TextOutArgs.Text.Text_type	1	0	0	1	0
-65	__TextOutArgs.Options	5	1	132	4	24
-66	__iniciaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	5
-67	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Result	3	1	136	2	5
-68	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	138	1	5
-69	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	140	4	5
-70	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
-71	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	142	1	5
-72	__SRSFlattenBuf	7	0	144	4	2
-73	__SRSFlattenBuf.__SRSFlattenBuf_type	1	0	0	1	0
-74	__SRSSendBuf	7	0	146	4	3
-75	__SRSSendBuf.__SRSSendBuf_type	1	0	0	1	0
-76	__constStr0013	7	0	148	4	1
-77	__constStr0013.__constStr0013_type	1	1	0	1	0
-78	__constStr0012	7	0	150	4	1
-79	__constStr0012.__constStr0012_type	1	1	0	1	0
-80	__constStr0011	7	0	152	4	1
-81	__constStr0011.__constStr0011_type	1	1	0	1	0
-82	__SRSTmpBuf	7	0	154	4	6
-83	__SRSTmpBuf.__SRSTmpBuf_type	1	0	0	1	0
-84	__DCMessageWritePacket	7	0	156	4	1
-85	__DCMessageWritePacket.__DCMessageWritePacket_type	1	0	0	1	0
-86	__constStr0010	7	0	158	4	1
-87	__constStr0010.__constStr0010_type	1	1	0	1	0
-88	__constStr0009	7	0	160	4	1
-89	__constStr0009.__constStr0009_type	1	1	0	1	0
-90	__strbufiniciaBlue	7	0	162	4	4
-91	__strbufiniciaBlue.__strbufiniciaBlue_type	1	0	0	1	0
-92	__strbufmain	7	0	164	4	6
-93	__strbufmain.__strbufmain_type	1	0	0	1	0
+0	__D0teste1	6	1	0	4	32
+1	__D0iniciaBlue	6	1	4	4	7
+2	__signed_stack_001desligaBlue	6	1	8	4	4
+3	__D0vira	6	1	12	4	34
+4	__D0distanciaGiro	6	1	16	4	7
+5	__RemoteMutex	9	0	20	4	2
+6	__SRSTmpLongVal	6	1	24	4	2
+7	__D0desligaBlue	6	1	28	4	7
+8	__CHSWMutex	9	0	32	4	2
+9	__signed_stack_002desligaBlue	6	1	36	4	2
+10	__Wait_7qG2_ms_7qG2_000_inline_iniciaBlue	5	1	40	4	2
+11	__signed_stack_001vira	6	1	44	4	18
+12	__Wait_7qG2_ms_7qG2_000_inline_teste1	5	1	48	4	14
+13	__Wait_7qG2_ms_7qG2_000_inline_desligaBlue	5	1	52	4	2
+14	__signed_stack_002teste1	6	1	56	4	6
+15	__signed_stack_001iniciaBlue	6	1	60	4	4
+16	__signed_stack_001distanciaGiro	6	1	64	4	4
+17	__signed_stack_001teste1	6	1	68	4	14
+18	__signed_stack_002iniciaBlue	6	1	72	4	2
+19	__TextOutMutex	9	0	76	4	10
+20	__CBTWMutex	9	0	80	4	2
+21	__MRMutex	9	0	84	4	6
+22	__CBTCSMutex	9	0	88	4	4
+23	__RRNTmpVal	6	1	92	4	12
+24	__teste1_7qG2_aux1_7qG2_000	4	1	96	2	3
+25	__teste1_7qG2_aux_7qG2_000	4	1	98	2	6
+26	__vira_7qG2_direcao_7qG2_000	4	1	100	2	4
+27	__distanciaGiro_7qG2_grau_7qG2_000	4	1	102	2	3
+28	__vira_7qG2_angulo_7qG2_000	4	1	104	2	4
+29	__constVal32	2	0	106	1	36
+30	__iniciaBlue_return	1	1	107	1	3
+31	__constVal96	2	0	108	1	12
+32	__constVal4	2	0	109	1	2
+33	__constVal3	2	0	110	1	13
+34	__vira_return	1	1	111	1	4
+35	__constVal1	2	0	112	1	20
+36	__teste1_return	1	1	113	1	3
+37	__desligaBlue_return	1	1	114	1	3
+38	__constVal0	2	1	115	1	50
+39	__distanciaGiro_return	1	1	116	1	5
+40	__RRNErr	1	1	117	1	3
+41	__constVal2	2	0	118	1	2
+42	__constVal63	2	0	119	1	12
+43	__constValNeg90	2	0	120	1	2
+44	__WFRRTmpByte	1	1	121	1	2
+45	__constVal5	2	0	122	1	1
+46	____initialize_global_data_return	1	1	123	1	3
+47	__desligaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	5
+48	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Result	3	1	124	2	5
+49	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	126	1	5
+50	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	128	4	5
+51	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
+52	__desligaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	130	1	5
+53	__CBTCSArgs	8	0	2	4	6
+54	__CBTCSArgs.Result	2	1	132	1	6
+55	__CBTCSArgs.Connection	1	1	133	1	6
+56	__TextOutArgs	8	0	4	16	30
+57	__TextOutArgs.Result	2	1	136	1	30
+58	__TextOutArgs.Location	8	0	2	4	30
+59	__TextOutArgs.Location.X	4	1	140	2	30
+60	__TextOutArgs.Location.Y	4	1	142	2	30
+61	__TextOutArgs.Text	7	0	144	4	30
+62	__TextOutArgs.Text.Text_type	1	0	0	1	0
+63	__TextOutArgs.Options	5	1	148	4	30
+64	__CHSWArgs	8	0	3	12	3
+65	__CHSWArgs.Status	2	1	152	1	3
+66	__CHSWArgs.Buffer	7	0	154	4	3
+67	__CHSWArgs.Buffer.Buffer_type	1	0	0	1	0
+68	__CHSWArgs.BufferLen	1	1	156	1	3
+69	__CBTWArgs	8	0	3	8	4
+70	__CBTWArgs.Result	2	1	160	1	4
+71	__CBTWArgs.Connection	1	1	161	1	4
+72	__CBTWArgs.Buffer	7	0	162	4	4
+73	__CBTWArgs.Buffer.Buffer_type	1	0	0	1	0
+74	__MRArgs	8	0	4	8	15
+75	__MRArgs.Result	2	1	164	1	15
+76	__MRArgs.QueueID	1	1	165	1	15
+77	__MRArgs.Remove	1	1	166	1	15
+78	__MRArgs.Message	7	0	168	4	15
+79	__MRArgs.Message.Message_type	1	0	0	1	0
+80	__iniciaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	5
+81	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Result	3	1	172	2	5
+82	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	174	1	5
+83	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	176	4	5
+84	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
+85	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	178	1	5
+86	__constStr0013	7	0	180	4	1
+87	__constStr0013.__constStr0013_type	1	1	0	1	0
+88	__constStr0014	7	0	182	4	1
+89	__constStr0014.__constStr0014_type	1	1	0	1	0
+90	__constStr0012	7	0	184	4	1
+91	__constStr0012.__constStr0012_type	1	1	0	1	0
+92	__SRSFlattenBuf	7	0	186	4	2
+93	__SRSFlattenBuf.__SRSFlattenBuf_type	1	0	0	1	0
+94	__SRSSendBuf	7	0	188	4	3
+95	__SRSSendBuf.__SRSSendBuf_type	1	0	0	1	0
+96	__strbufdesligaBlue	7	0	190	4	4
+97	__strbufdesligaBlue.__strbufdesligaBlue_type	1	0	0	1	0
+98	__DCMessageWritePacket	7	0	192	4	1
+99	__DCMessageWritePacket.__DCMessageWritePacket_type	1	0	0	1	0
+100	__strbufiniciaBlue	7	0	194	4	4
+101	__strbufiniciaBlue.__strbufiniciaBlue_type	1	0	0	1	0
+102	__strbufteste1	7	0	196	4	6
+103	__strbufteste1.__strbufteste1_type	1	0	0	1	0
+104	__constStr0010	7	0	198	4	1
+105	__constStr0010.__constStr0010_type	1	1	0	1	0
+106	__constStr0011	7	0	200	4	1
+107	__constStr0011.__constStr0011_type	1	1	0	1	0
+108	__SRSTmpBuf	7	0	202	4	6
+109	__SRSTmpBuf.__SRSTmpBuf_type	1	0	0	1	0
+110	__constStr0009	7	0	204	4	2
+111	__constStr0009.__constStr0009_type	1	1	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	82	0	#line 82 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	83	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	82	2	#line 82 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	82	2	#line 82 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	83	2		set __main_7qG2_aux1_7qG2_000, 0
-0	82	5	#line 82 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	82	5	#line 82 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	83	5		set __main_7qG2_aux_7qG2_000, 0
-0	82	8	#line 82 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	84	8	#line 84 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	85	8		subcall iniciaBlue, __iniciaBlue_return
-0	84	10	#line 84 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	86	10	#line 86 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	87	10		mov __signed_stack_001main, __main_7qG2_aux1_7qG2_000
-0	86	12	#line 86 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	87	12	#line 87 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	88	12		set __D0main, 0
-0	87	15	#line 87 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	88	15		cmp 4, __D0main, __signed_stack_001main, __D0main
-0	88	19	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	89	19		brtst 4, __ASM_Label_665, __D0main
-0	88	22	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	89	22	#pragma macro 25
-0	89	22		mov __SRSTmpBuf, __DCMessageWritePacket
-0	89	24		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
-0	89	29		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-0	89	34		mov __SRSTmpLongVal, __constVal1
-0	89	36		flatten __SRSFlattenBuf, __SRSTmpLongVal
-0	89	39		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-0	89	44		brcmp 0, __ConnWrite_Else0, __constVal1, __constVal4
-0	89	48		sub __WFRRTmpByte, __constVal1, __constVal4
-0	89	52		arrbuild __CHSWArgs.Buffer, __WFRRTmpByte, __SRSSendBuf
-0	89	57		syscall 37, __CHSWArgs
-0	89	60		mov __D0main, __CHSWArgs.Status
-0	89	62		jmp __ConnWrite_EndIf0
-0	89	64		mov __CBTWArgs.Connection, __constVal1
-0	89	66		mov __CBTWArgs.Buffer, __SRSSendBuf
-0	89	68		syscall 29, __CBTWArgs
-0	89	71		mov __D0main, __CBTWArgs.Result
-0	6758	73	#line 6758 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	88	73	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	88	73	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	89	73	#line 89 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	90	73	#pragma macro 9
-0	90	73		mov __MRArgs.QueueID, __constVal1
-0	90	75		mov __MRArgs.Remove, __constVal1
-0	90	77		set __RRNTmpVal, 0
-0	90	80		syscall 27, __MRArgs
-0	90	83		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-0	90	88		mov __main_7qG2_aux1_7qG2_000, __RRNTmpVal
-0	6762	90	#line 6762 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	89	90	#line 89 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	89	90	#line 89 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	90	90	#line 90 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	91	90		set __Wait_7qG2_ms_7qG2_000_inline_main, 30
-0	90	93	#line 90 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	8869	93	#line 8869 "NXCDefs.h"
-0	8870	93		waitv __Wait_7qG2_ms_7qG2_000_inline_main
-0	8869	95	#line 8869 "NXCDefs.h"
-0	90	95	#line 90 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	92	95	#line 92 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	93	95		jmp __ASM_Label_664
-0	92	97	#line 92 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	92	97	#line 92 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	93	97		set __signed_stack_001main, 30
-0	92	100	#line 92 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	92	100	#line 92 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	93	100		set __signed_stack_002main, 48
-0	92	103	#line 92 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	92	103	#line 92 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	93	103		strcat __strbufmain, __constStr0011
-0	92	107	#line 92 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	93	107		acquire __TextOutMutex
-0	92	108	#line 92 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	93	108		mov __TextOutArgs.Location.X, __signed_stack_001main
-0	92	110	#line 92 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	93	110		mov __TextOutArgs.Location.Y, __signed_stack_002main
-0	92	112	#line 92 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	93	112		set __TextOutArgs.Options, 0
-0	92	115	#line 92 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	93	115		mov __TextOutArgs.Text, __strbufmain
-0	92	117	#line 92 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	93	117		syscall 13, __TextOutArgs
-0	92	120	#line 92 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	93	120		mov __D0main, __TextOutArgs.Result
-0	92	122	#line 92 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	93	122		release __TextOutMutex
-0	92	123	#line 92 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	98	123	#line 98 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	99	123		mov __signed_stack_001main, __main_7qG2_aux_7qG2_000
-0	98	125	#line 98 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	99	125	#line 99 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	100	125		set __D0main, 0
-0	99	128	#line 99 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	100	128		cmp 4, __D0main, __signed_stack_001main, __D0main
-0	100	132	#line 100 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	101	132		brtst 4, __ASM_Label_677, __D0main
-0	100	135	#line 100 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	101	135		set __D0main, 60
-0	100	138	#line 100 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	101	138	#pragma macro 7
-0	101	138		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	6831	161	#line 6831 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	100	161	#line 100 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	101	161	#line 101 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	102	161		set __D0main, 60
-0	101	164	#line 101 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	102	164	#pragma macro 7
-0	102	164		setout __constVal1, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	6836	187	#line 6836 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	101	187	#line 101 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	102	187	#line 102 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	103	187		set __Wait_7qG2_ms_7qG2_000_inline_main, 20
-0	102	190	#line 102 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	8869	190	#line 8869 "NXCDefs.h"
-0	8870	190		waitv __Wait_7qG2_ms_7qG2_000_inline_main
-0	8869	192	#line 8869 "NXCDefs.h"
-0	102	192	#line 102 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	103	192	#line 103 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	104	192	#pragma macro 9
-0	104	192		mov __MRArgs.QueueID, __constVal1
-0	104	194		mov __MRArgs.Remove, __constVal1
-0	104	196		set __RRNTmpVal, 0
-0	104	199		syscall 27, __MRArgs
-0	104	202		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-0	104	207		mov __main_7qG2_aux_7qG2_000, __RRNTmpVal
-0	104	209		mov __D0main, __MRArgs.Result
-0	6847	211	#line 6847 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	103	211	#line 103 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	103	211	#line 103 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	105	211	#line 105 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	106	211		jmp __ASM_Label_676
-0	105	213	#line 105 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	105	213	#line 105 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	106	213		mov __signed_stack_001main, __main_7qG2_aux_7qG2_000
-0	105	215	#line 105 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	105	215	#line 105 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	106	215		set __D0main, 1
-0	105	218	#line 105 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	106	218		cmp 4, __D0main, __signed_stack_001main, __D0main
-0	106	222	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	107	222		brtst 4, __ASM_Label_688, __D0main
-0	106	225	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	107	225		set __signed_stack_001main, 30
-0	106	228	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	106	228	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	107	228		set __signed_stack_002main, 40
-0	106	231	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	106	231	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	107	231		strcat __strbufmain, __constStr0012
-0	106	235	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	107	235		acquire __TextOutMutex
-0	106	236	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	107	236		mov __TextOutArgs.Location.X, __signed_stack_001main
-0	106	238	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	107	238		mov __TextOutArgs.Location.Y, __signed_stack_002main
-0	106	240	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	107	240		set __TextOutArgs.Options, 0
-0	106	243	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	107	243		mov __TextOutArgs.Text, __strbufmain
-0	106	245	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	107	245		syscall 13, __TextOutArgs
-0	106	248	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	107	248		mov __D0main, __TextOutArgs.Result
-0	106	250	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	107	250		release __TextOutMutex
-0	106	251	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	107	251	#line 107 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	108	251		set __viraDir_7qG2_angulo_7qG2_000, 90
-0	107	254	#line 107 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	107	254	#line 107 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	108	254		subcall viraDir, __viraDir_return
-0	107	256	#line 107 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	108	256	#line 108 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	109	256		set __Wait_7qG2_ms_7qG2_000_inline_main, 100
-0	108	259	#line 108 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	8869	259	#line 8869 "NXCDefs.h"
-0	8870	259		waitv __Wait_7qG2_ms_7qG2_000_inline_main
-0	8869	261	#line 8869 "NXCDefs.h"
-0	108	261	#line 108 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	109	261	#line 109 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	110	261	#pragma macro 9
-0	110	261		mov __MRArgs.QueueID, __constVal1
-0	110	263		mov __MRArgs.Remove, __constVal1
-0	110	265		set __RRNTmpVal, 0
-0	110	268		syscall 27, __MRArgs
-0	110	271		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-0	110	276		mov __main_7qG2_aux_7qG2_000, __RRNTmpVal
-0	6915	278	#line 6915 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	109	278	#line 109 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	109	278	#line 109 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	110	278	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	111	278		set __Wait_7qG2_ms_7qG2_000_inline_main, 40
-0	110	281	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	8869	281	#line 8869 "NXCDefs.h"
-0	8870	281		waitv __Wait_7qG2_ms_7qG2_000_inline_main
-0	8869	283	#line 8869 "NXCDefs.h"
-0	110	283	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	111	283	#line 111 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	112	283		mov __signed_stack_001main, __main_7qG2_aux_7qG2_000
-0	111	285	#line 111 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	111	285	#line 111 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	112	285		set __D0main, 1
-0	111	288	#line 111 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	112	288		cmp 4, __D0main, __signed_stack_001main, __D0main
-0	112	292	#line 112 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	113	292		brtst 4, __ASM_Label_701, __D0main
-0	112	295	#line 112 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	113	295		set __viraEsq_7qG2_angulo_7qG2_000, 180
-0	112	298	#line 112 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	112	298	#line 112 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	113	298		subcall viraEsq, __viraEsq_return
-0	112	300	#line 112 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	113	300	#line 113 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	114	300		set __Wait_7qG2_ms_7qG2_000_inline_main, 100
-0	113	303	#line 113 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	8869	303	#line 8869 "NXCDefs.h"
-0	8870	303		waitv __Wait_7qG2_ms_7qG2_000_inline_main
-0	8869	305	#line 8869 "NXCDefs.h"
-0	113	305	#line 113 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	116	305	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	117	305		jmp __ASM_Label_706
-0	116	307	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	117	307		set __signed_stack_001main, 30
-0	116	310	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	116	310	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	117	310		set __signed_stack_002main, 32
-0	116	313	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	116	313	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	117	313		strcat __strbufmain, __constStr0013
-0	116	317	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	117	317		acquire __TextOutMutex
-0	116	318	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	117	318		mov __TextOutArgs.Location.X, __signed_stack_001main
-0	116	320	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	117	320		mov __TextOutArgs.Location.Y, __signed_stack_002main
-0	116	322	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	117	322		set __TextOutArgs.Options, 0
-0	116	325	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	117	325		mov __TextOutArgs.Text, __strbufmain
-0	116	327	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	117	327		syscall 13, __TextOutArgs
-0	116	330	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	117	330		mov __D0main, __TextOutArgs.Result
-0	116	332	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	117	332		release __TextOutMutex
-0	116	333	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	117	333	#line 117 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	118	333		set __Wait_7qG2_ms_7qG2_000_inline_main, 100
-0	117	336	#line 117 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	8869	336	#line 8869 "NXCDefs.h"
-0	8870	336		waitv __Wait_7qG2_ms_7qG2_000_inline_main
-0	8869	338	#line 8869 "NXCDefs.h"
-0	117	338	#line 117 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	121	338	#line 121 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	121	338	#line 121 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	121	338	#line 121 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	122	338	#pragma macro 7
-0	122	338		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	7002	361	#line 7002 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	121	361	#line 121 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	122	361	#line 122 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	123	361	#pragma macro 7
-0	123	361		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	7005	384	#line 7005 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	122	384	#line 122 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	124	384	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	125	384		set __Wait_7qG2_ms_7qG2_000_inline_main, 100
-0	124	387	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	8869	387	#line 8869 "NXCDefs.h"
-0	8870	387		waitv __Wait_7qG2_ms_7qG2_000_inline_main
-0	8869	389	#line 8869 "NXCDefs.h"
-0	124	389	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	126	389	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	127	389		set __D0main, 1
-0	126	392	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	127	392		tst 5, __D0main, __D0main
-0	126	395	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	127	395		brtst 4, __ASM_Label_675, __D0main
-0	126	398	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	127	398		jmp __ASM_Label_674
-0	126	400	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	126	400	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-0	127	400		exit -1, -1
-1	37	0	#line 37 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	38	0		strcat __strbufiniciaBlue, __constStr0009
-1	37	4	#line 37 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	38	4		mov __iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name, __strbufiniciaBlue
-1	37	6	#line 37 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	38	6	#line 38 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	39	6		set __iniciaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot, 1
-1	38	9	#line 38 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	38	9	#line 38 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	39	9	#line 39 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	40	9		set __iniciaBlue_7qG2_DADOS_BT_7qG2_000.Action, 1
-1	39	12	#line 39 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	39	12	#line 39 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	42	12	#line 42 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	43	12	#pragma macro 4
-1	43	12	#line 43 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	43	12		syscall 36, __iniciaBlue_7qG2_DADOS_BT_7qG2_000
-1	41	15	#line 41 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	41	15	#line 41 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	41	15	#line 41 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	41	15	#line 41 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	43	15	#line 43 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	42	15	#line 42 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	43	15	#line 43 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	44	15		set __Wait_7qG2_ms_7qG2_000_inline_iniciaBlue, 30
-1	43	18	#line 43 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+0	368	0	#line 368 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+0	369	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	368	2	#line 368 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+0	368	2	#line 368 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+0	369	2		subcall teste1, __teste1_return
+0	368	4	#line 368 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+0	369	4		exit -1, -1
+1	98	0	#line 98 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	99	0		strcat __strbufiniciaBlue, __constStr0009
+1	98	4	#line 98 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	99	4		mov __iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name, __strbufiniciaBlue
+1	98	6	#line 98 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	99	6	#line 99 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	100	6		set __iniciaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot, 1
+1	99	9	#line 99 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	99	9	#line 99 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	100	9	#line 100 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	101	9		set __iniciaBlue_7qG2_DADOS_BT_7qG2_000.Action, 1
+1	100	12	#line 100 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	100	12	#line 100 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	103	12	#line 103 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	104	12	#pragma macro 4
+1	104	12	#line 104 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	104	12		syscall 36, __iniciaBlue_7qG2_DADOS_BT_7qG2_000
+1	102	15	#line 102 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	102	15	#line 102 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	102	15	#line 102 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	102	15	#line 102 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	104	15	#line 104 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	103	15	#line 103 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	104	15	#line 104 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	105	15		set __Wait_7qG2_ms_7qG2_000_inline_iniciaBlue, 30
+1	104	18	#line 104 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
 1	8869	18	#line 8869 "NXCDefs.h"
 1	8870	18		waitv __Wait_7qG2_ms_7qG2_000_inline_iniciaBlue
 1	8869	20	#line 8869 "NXCDefs.h"
-1	43	20	#line 43 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	45	20	#line 45 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	46	20	#pragma macro 5
-1	46	20		mov __CBTCSArgs.Connection, __constVal1
-1	46	22		syscall 28, __CBTCSArgs
-1	46	25		mov __signed_stack_001iniciaBlue, __CBTCSArgs.Result
-1	6491	27	#line 6491 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	45	27	#line 45 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	45	27	#line 45 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	46	27		set __D0iniciaBlue, 0
-1	45	30	#line 45 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	46	30		cmp 5, __D0iniciaBlue, __signed_stack_001iniciaBlue, __D0iniciaBlue
-1	45	34	#line 45 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	46	34		brtst 4, __ASM_Label_619, __D0iniciaBlue
-1	45	37	#line 45 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	46	37		jmp __ASM_Label_618
-1	45	39	#line 45 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	45	39	#line 45 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	46	39	#line 46 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	47	39		set __signed_stack_001iniciaBlue, 0
-1	46	42	#line 46 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	46	42	#line 46 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	47	42		set __signed_stack_002iniciaBlue, 56
-1	46	45	#line 46 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	46	45	#line 46 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	47	45		strcat __strbufiniciaBlue, __constStr0010
-1	46	49	#line 46 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	47	49		acquire __TextOutMutex
-1	46	50	#line 46 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	47	50		mov __TextOutArgs.Location.X, __signed_stack_001iniciaBlue
-1	46	52	#line 46 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	47	52		mov __TextOutArgs.Location.Y, __signed_stack_002iniciaBlue
-1	46	54	#line 46 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	47	54		set __TextOutArgs.Options, 0
-1	46	57	#line 46 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	47	57		mov __TextOutArgs.Text, __strbufiniciaBlue
-1	46	59	#line 46 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	47	59		syscall 13, __TextOutArgs
-1	46	62	#line 46 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	47	62		mov __D0iniciaBlue, __TextOutArgs.Result
-1	46	64	#line 46 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	47	64		release __TextOutMutex
-1	46	65	#line 46 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	50	65	#line 50 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-1	51	65		subret __iniciaBlue_return
-2	51	0	#line 51 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-2	52	0		mov __signed_stack_001distanciaGiro, __distanciaGiro_7qG2_grau_7qG2_000
-2	51	2	#line 51 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-2	51	2	#line 51 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-2	52	2		set __D0distanciaGiro, 172
-2	51	5	#line 51 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-2	52	5		mul __signed_stack_001distanciaGiro, __signed_stack_001distanciaGiro, __D0distanciaGiro
-2	51	9	#line 51 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-2	51	9	#line 51 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-2	52	9		set __D0distanciaGiro, 1420
-2	51	12	#line 51 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-2	52	12		div __D0distanciaGiro, __signed_stack_001distanciaGiro, __D0distanciaGiro
-2	51	16	#line 51 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-2	52	16		subret __distanciaGiro_return
-2	51	18	#line 51 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-2	54	18	#line 54 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-2	55	18		subret __distanciaGiro_return
-3	55	0	#line 55 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	56	0		set __D0viraEsq, 90
-3	55	3	#line 55 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	56	3	#pragma macro 7
-3	56	3		setout __constVal1, 2, __D0viraEsq, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	6582	26	#line 6582 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	55	26	#line 55 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	56	26	#line 56 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	57	26		mov __D0viraEsq, __constValNeg90
-3	56	28	#line 56 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	57	28	#pragma macro 7
-3	57	28		setout __constVal0, 2, __D0viraEsq, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	6587	51	#line 6587 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	56	51	#line 56 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	58	51	#line 58 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	59	51		getout __signed_stack_001viraEsq, __constVal1, 4
-3	58	55	#line 58 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	58	55	#line 58 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	59	55		getout __D0viraEsq, __constVal0, 4
-3	58	59	#line 58 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	59	59		sub __signed_stack_001viraEsq, __signed_stack_001viraEsq, __D0viraEsq
-3	58	63	#line 58 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	58	63	#line 58 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	59	63		set __D0viraEsq, 2
-3	58	66	#line 58 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	59	66		div __distanciaGiro_7qG2_grau_7qG2_000, __signed_stack_001viraEsq, __D0viraEsq
-3	58	70	#line 58 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	58	70	#line 58 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	59	70		subcall distanciaGiro, __distanciaGiro_return
-3	58	72	#line 58 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	59	72		mov __signed_stack_001viraEsq, __D0distanciaGiro
-3	58	74	#line 58 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	59	74	#line 59 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	60	74		mov __D0viraEsq, __viraEsq_7qG2_angulo_7qG2_000
-3	59	76	#line 59 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	60	76		cmp 0, __D0viraEsq, __signed_stack_001viraEsq, __D0viraEsq
-3	61	80	#line 61 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	62	80		brtst 4, __ASM_Label_641, __D0viraEsq
-3	62	83	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	63	83		jmp __ASM_Label_640
-3	62	85	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	62	85	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	63	85	#pragma macro 7
-3	63	85		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	6635	108	#line 6635 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	62	108	#line 62 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	63	108	#line 63 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	64	108	#pragma macro 7
-3	64	108		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-3	6638	131	#line 6638 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	63	131	#line 63 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	66	131	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-3	67	131		subret __viraEsq_return
-4	67	0	#line 67 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	68	0		mov __D0viraDir, __constValNeg90
-4	67	2	#line 67 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	68	2	#pragma macro 7
-4	68	2		setout __constVal1, 2, __D0viraDir, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	6648	25	#line 6648 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	67	25	#line 67 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	68	25	#line 68 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	69	25		set __D0viraDir, 90
-4	68	28	#line 68 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	69	28	#pragma macro 7
-4	69	28		setout __constVal0, 2, __D0viraDir, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	6653	51	#line 6653 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	68	51	#line 68 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	70	51	#line 70 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	71	51		set __signed_stack_001viraDir, 0
-4	70	54	#line 70 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	70	54	#line 70 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	71	54		getout __D0viraDir, __constVal1, 4
-4	70	58	#line 70 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	71	58		sub __signed_stack_001viraDir, __signed_stack_001viraDir, __D0viraDir
-4	70	62	#line 70 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	70	62	#line 70 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	71	62		getout __D0viraDir, __constVal0, 4
-4	70	66	#line 70 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	71	66		add __signed_stack_001viraDir, __signed_stack_001viraDir, __D0viraDir
-4	70	70	#line 70 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	70	70	#line 70 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	71	70		set __D0viraDir, 2
-4	70	73	#line 70 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	71	73		div __distanciaGiro_7qG2_grau_7qG2_000, __signed_stack_001viraDir, __D0viraDir
-4	70	77	#line 70 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	70	77	#line 70 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	71	77		subcall distanciaGiro, __distanciaGiro_return
-4	70	79	#line 70 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	71	79		mov __signed_stack_001viraDir, __D0distanciaGiro
-4	70	81	#line 70 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	71	81	#line 71 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	72	81		mov __D0viraDir, __viraDir_7qG2_angulo_7qG2_000
-4	71	83	#line 71 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	72	83		cmp 0, __D0viraDir, __signed_stack_001viraDir, __D0viraDir
-4	73	87	#line 73 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	74	87		brtst 4, __ASM_Label_653, __D0viraDir
-4	74	90	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	75	90		jmp __ASM_Label_652
-4	74	92	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	74	92	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	75	92	#pragma macro 7
-4	75	92		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	6709	115	#line 6709 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	74	115	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	75	115	#line 75 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	76	115	#pragma macro 7
-4	76	115		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	6712	138	#line 6712 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	75	138	#line 75 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	80	138	#line 80 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-4	81	138		subret __viraDir_return
-5	130	0	#line 130 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
-5	131	0		subret ____initialize_global_data_return
+1	104	20	#line 104 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	106	20	#line 106 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	107	20	#pragma macro 5
+1	107	20		acquire __CBTCSMutex
+1	107	21		mov __CBTCSArgs.Connection, __constVal1
+1	107	23		syscall 28, __CBTCSArgs
+1	107	26		mov __D0iniciaBlue, __CBTCSArgs.Result
+1	107	28		release __CBTCSMutex
+1	8324	29	#line 8324 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	106	29	#line 106 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	107	29		mov __signed_stack_001iniciaBlue, __D0iniciaBlue
+1	106	31	#line 106 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	107	31		set __D0iniciaBlue, 0
+1	106	34	#line 106 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	107	34		cmp 5, __D0iniciaBlue, __signed_stack_001iniciaBlue, __D0iniciaBlue
+1	106	38	#line 106 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	107	38		brtst 4, __ASM_Label_631, __D0iniciaBlue
+1	106	41	#line 106 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	107	41		jmp __ASM_Label_630
+1	106	43	#line 106 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	106	43	#line 106 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	107	43	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	108	43		set __signed_stack_001iniciaBlue, 0
+1	107	46	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	107	46	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	108	46		set __signed_stack_002iniciaBlue, 56
+1	107	49	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	107	49	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	108	49		strcat __strbufiniciaBlue, __constStr0010
+1	107	53	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	108	53		acquire __TextOutMutex
+1	107	54	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	108	54		mov __TextOutArgs.Location.X, __signed_stack_001iniciaBlue
+1	107	56	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	108	56		mov __TextOutArgs.Location.Y, __signed_stack_002iniciaBlue
+1	107	58	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	108	58		set __TextOutArgs.Options, 0
+1	107	61	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	108	61		mov __TextOutArgs.Text, __strbufiniciaBlue
+1	107	63	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	108	63		syscall 13, __TextOutArgs
+1	107	66	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	108	66		mov __D0iniciaBlue, __TextOutArgs.Result
+1	107	68	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	108	68		release __TextOutMutex
+1	107	69	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	110	69	#line 110 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+1	111	69		subret __iniciaBlue_return
+2	112	0	#line 112 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	113	0		strcat __strbufdesligaBlue, __constStr0009
+2	112	4	#line 112 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	113	4		mov __desligaBlue_7qG2_DADOS_BT_7qG2_000.Name, __strbufdesligaBlue
+2	112	6	#line 112 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	113	6	#line 113 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	114	6		set __desligaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot, 1
+2	113	9	#line 113 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	113	9	#line 113 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	114	9	#line 114 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	115	9		set __desligaBlue_7qG2_DADOS_BT_7qG2_000.Action, 0
+2	114	12	#line 114 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	114	12	#line 114 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	117	12	#line 117 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	118	12	#pragma macro 4
+2	118	12	#line 118 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	118	12		syscall 36, __desligaBlue_7qG2_DADOS_BT_7qG2_000
+2	116	15	#line 116 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	116	15	#line 116 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	116	15	#line 116 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	116	15	#line 116 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	118	15	#line 118 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	117	15	#line 117 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	118	15	#line 118 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	119	15		set __Wait_7qG2_ms_7qG2_000_inline_desligaBlue, 30
+2	118	18	#line 118 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	8869	18	#line 8869 "NXCDefs.h"
+2	8870	18		waitv __Wait_7qG2_ms_7qG2_000_inline_desligaBlue
+2	8869	20	#line 8869 "NXCDefs.h"
+2	118	20	#line 118 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	120	20	#line 120 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	121	20	#pragma macro 5
+2	121	20		acquire __CBTCSMutex
+2	121	21		mov __CBTCSArgs.Connection, __constVal1
+2	121	23		syscall 28, __CBTCSArgs
+2	121	26		mov __D0desligaBlue, __CBTCSArgs.Result
+2	121	28		release __CBTCSMutex
+2	8422	29	#line 8422 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	120	29	#line 120 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	121	29		mov __signed_stack_001desligaBlue, __D0desligaBlue
+2	120	31	#line 120 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	121	31		set __D0desligaBlue, 0
+2	120	34	#line 120 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	121	34		cmp 4, __D0desligaBlue, __signed_stack_001desligaBlue, __D0desligaBlue
+2	120	38	#line 120 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	121	38		brtst 4, __ASM_Label_645, __D0desligaBlue
+2	120	41	#line 120 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	121	41		jmp __ASM_Label_644
+2	120	43	#line 120 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	120	43	#line 120 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	121	43	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	122	43		set __signed_stack_001desligaBlue, 0
+2	121	46	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	121	46	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	122	46		set __signed_stack_002desligaBlue, 56
+2	121	49	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	121	49	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	122	49		strcat __strbufdesligaBlue, __constStr0011
+2	121	53	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	122	53		acquire __TextOutMutex
+2	121	54	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	122	54		mov __TextOutArgs.Location.X, __signed_stack_001desligaBlue
+2	121	56	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	122	56		mov __TextOutArgs.Location.Y, __signed_stack_002desligaBlue
+2	121	58	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	122	58		set __TextOutArgs.Options, 0
+2	121	61	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	122	61		mov __TextOutArgs.Text, __strbufdesligaBlue
+2	121	63	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	122	63		syscall 13, __TextOutArgs
+2	121	66	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	122	66		mov __D0desligaBlue, __TextOutArgs.Result
+2	121	68	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	122	68		release __TextOutMutex
+2	121	69	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	127	69	#line 127 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+2	128	69		subret __desligaBlue_return
+3	128	0	#line 128 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+3	129	0		mov __signed_stack_001distanciaGiro, __distanciaGiro_7qG2_grau_7qG2_000
+3	128	2	#line 128 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+3	128	2	#line 128 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+3	129	2		set __D0distanciaGiro, 172
+3	128	5	#line 128 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+3	129	5		mul __signed_stack_001distanciaGiro, __signed_stack_001distanciaGiro, __D0distanciaGiro
+3	128	9	#line 128 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+3	128	9	#line 128 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+3	129	9		set __D0distanciaGiro, 1420
+3	128	12	#line 128 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+3	129	12		div __D0distanciaGiro, __signed_stack_001distanciaGiro, __D0distanciaGiro
+3	128	16	#line 128 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+3	129	16		subret __distanciaGiro_return
+3	128	18	#line 128 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+3	131	18	#line 131 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+3	132	18		subret __distanciaGiro_return
+4	132	0	#line 132 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	133	0		mov __signed_stack_001vira, __vira_7qG2_direcao_7qG2_000
+4	132	2	#line 132 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	132	2	#line 132 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	133	2		set __D0vira, 2
+4	132	5	#line 132 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	133	5		cmp 4, __D0vira, __signed_stack_001vira, __D0vira
+4	133	9	#line 133 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	134	9		brtst 4, __ASM_Label_664, __D0vira
+4	133	12	#line 133 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	134	12		set __D0vira, 90
+4	133	15	#line 133 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	134	15	#pragma macro 7
+4	134	15		setout __constVal1, 2, __D0vira, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	8527	38	#line 8527 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	133	38	#line 133 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	134	38	#line 134 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	135	38		mov __D0vira, __constValNeg90
+4	134	40	#line 134 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	135	40	#pragma macro 7
+4	135	40		setout __constVal0, 2, __D0vira, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	8532	63	#line 8532 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	134	63	#line 134 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	136	63	#line 136 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	137	63		getout __signed_stack_001vira, __constVal1, 4
+4	136	67	#line 136 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	136	67	#line 136 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	137	67		getout __D0vira, __constVal0, 4
+4	136	71	#line 136 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	137	71		sub __signed_stack_001vira, __signed_stack_001vira, __D0vira
+4	136	75	#line 136 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	136	75	#line 136 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	137	75		set __D0vira, 2
+4	136	78	#line 136 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	137	78		div __distanciaGiro_7qG2_grau_7qG2_000, __signed_stack_001vira, __D0vira
+4	136	82	#line 136 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	136	82	#line 136 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	137	82		subcall distanciaGiro, __distanciaGiro_return
+4	136	84	#line 136 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	137	84		mov __signed_stack_001vira, __D0distanciaGiro
+4	136	86	#line 136 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	137	86	#line 137 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	138	86		mov __D0vira, __vira_7qG2_angulo_7qG2_000
+4	137	88	#line 137 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	138	88		cmp 0, __D0vira, __signed_stack_001vira, __D0vira
+4	139	92	#line 139 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	140	92		brtst 4, __ASM_Label_670, __D0vira
+4	140	95	#line 140 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	141	95		jmp __ASM_Label_669
+4	140	97	#line 140 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	140	97	#line 140 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	141	97	#pragma macro 7
+4	141	97		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	8580	120	#line 8580 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	140	120	#line 140 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	141	120	#line 141 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	142	120	#pragma macro 7
+4	142	120		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	8583	143	#line 8583 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	141	143	#line 141 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	143	143	#line 143 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	144	143		jmp __ASM_Label_677
+4	143	145	#line 143 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	144	145		mov __signed_stack_001vira, __vira_7qG2_direcao_7qG2_000
+4	143	147	#line 143 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	143	147	#line 143 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	144	147		set __D0vira, 1
+4	143	150	#line 143 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	144	150		cmp 4, __D0vira, __signed_stack_001vira, __D0vira
+4	144	154	#line 144 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	145	154		brtst 4, __ASM_Label_680, __D0vira
+4	144	157	#line 144 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	145	157		mov __D0vira, __constValNeg90
+4	144	159	#line 144 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	145	159	#pragma macro 7
+4	145	159		setout __constVal1, 2, __D0vira, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	8605	182	#line 8605 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	144	182	#line 144 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	145	182	#line 145 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	146	182		set __D0vira, 90
+4	145	185	#line 145 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	146	185	#pragma macro 7
+4	146	185		setout __constVal0, 2, __D0vira, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	8610	208	#line 8610 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	145	208	#line 145 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	147	208	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	148	208		set __signed_stack_001vira, 0
+4	147	211	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	147	211	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	148	211		getout __D0vira, __constVal1, 4
+4	147	215	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	148	215		sub __signed_stack_001vira, __signed_stack_001vira, __D0vira
+4	147	219	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	147	219	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	148	219		getout __D0vira, __constVal0, 4
+4	147	223	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	148	223		add __signed_stack_001vira, __signed_stack_001vira, __D0vira
+4	147	227	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	147	227	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	148	227		set __D0vira, 2
+4	147	230	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	148	230		div __distanciaGiro_7qG2_grau_7qG2_000, __signed_stack_001vira, __D0vira
+4	147	234	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	147	234	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	148	234		subcall distanciaGiro, __distanciaGiro_return
+4	147	236	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	148	236		mov __signed_stack_001vira, __D0distanciaGiro
+4	147	238	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	148	238	#line 148 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	149	238		mov __D0vira, __vira_7qG2_angulo_7qG2_000
+4	148	240	#line 148 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	149	240		cmp 0, __D0vira, __signed_stack_001vira, __D0vira
+4	150	244	#line 150 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	151	244		brtst 4, __ASM_Label_686, __D0vira
+4	151	247	#line 151 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	152	247		jmp __ASM_Label_685
+4	151	249	#line 151 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	151	249	#line 151 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	152	249	#pragma macro 7
+4	152	249		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	8666	272	#line 8666 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	151	272	#line 151 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	152	272	#line 152 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	153	272	#pragma macro 7
+4	153	272		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	8669	295	#line 8669 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	152	295	#line 152 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	157	295	#line 157 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	157	295	#line 157 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	157	295	#line 157 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+4	158	295		subret __vira_return
+5	302	0	#line 302 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	303	0		set __teste1_7qG2_aux1_7qG2_000, 0
+5	302	3	#line 302 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	302	3	#line 302 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	303	3		set __teste1_7qG2_aux_7qG2_000, 0
+5	302	6	#line 302 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	303	6	#line 303 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	304	6		subcall desligaBlue, __desligaBlue_return
+5	303	8	#line 303 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	304	8	#line 304 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	305	8		subcall iniciaBlue, __iniciaBlue_return
+5	304	10	#line 304 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	306	10	#line 306 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	307	10		mov __signed_stack_001teste1, __teste1_7qG2_aux1_7qG2_000
+5	306	12	#line 306 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	307	12	#line 307 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	308	12		set __D0teste1, 0
+5	307	15	#line 307 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	308	15		cmp 4, __D0teste1, __signed_stack_001teste1, __D0teste1
+5	308	19	#line 308 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	309	19		brtst 4, __ASM_Label_858, __D0teste1
+5	308	22	#line 308 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	309	22	#pragma macro 25
+5	309	22		acquire __RemoteMutex
+5	309	23		mov __SRSTmpBuf, __DCMessageWritePacket
+5	309	25		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
+5	309	30		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+5	309	35		mov __SRSTmpLongVal, __constVal1
+5	309	37		flatten __SRSFlattenBuf, __SRSTmpLongVal
+5	309	40		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+5	309	45		brcmp 0, __ConnWrite_Else0, __constVal1, __constVal4
+5	309	49		acquire __CHSWMutex
+5	309	50		sub __WFRRTmpByte, __constVal1, __constVal4
+5	309	54		arrbuild __CHSWArgs.Buffer, __WFRRTmpByte, __SRSSendBuf
+5	309	59		syscall 37, __CHSWArgs
+5	309	62		mov __D0teste1, __CHSWArgs.Status
+5	309	64		release __CHSWMutex
+5	309	65		jmp __ConnWrite_EndIf0
+5	309	67		acquire __CBTWMutex
+5	309	68		mov __CBTWArgs.Connection, __constVal1
+5	309	70		mov __CBTWArgs.Buffer, __SRSSendBuf
+5	309	72		syscall 29, __CBTWArgs
+5	309	75		mov __D0teste1, __CBTWArgs.Result
+5	309	77		release __CBTWMutex
+5	309	78		release __RemoteMutex
+5	9569	79	#line 9569 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	308	79	#line 308 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	308	79	#line 308 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	309	79	#line 309 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	310	79	#pragma macro 9
+5	310	79		acquire __MRMutex
+5	310	80		mov __MRArgs.QueueID, __constVal1
+5	310	82		mov __MRArgs.Remove, __constVal1
+5	310	84		set __RRNTmpVal, 0
+5	310	87		syscall 27, __MRArgs
+5	310	90		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+5	310	95		mov __teste1_7qG2_aux1_7qG2_000, __RRNTmpVal
+5	310	97		mov __D0teste1, __MRArgs.Result
+5	310	99		release __MRMutex
+5	9573	100	#line 9573 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	309	100	#line 309 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	309	100	#line 309 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	310	100	#line 310 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	311	100		set __Wait_7qG2_ms_7qG2_000_inline_teste1, 30
+5	310	103	#line 310 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	8869	103	#line 8869 "NXCDefs.h"
+5	8870	103		waitv __Wait_7qG2_ms_7qG2_000_inline_teste1
+5	8869	105	#line 8869 "NXCDefs.h"
+5	310	105	#line 310 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	312	105	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	313	105		jmp __ASM_Label_857
+5	312	107	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	312	107	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	313	107		set __signed_stack_001teste1, 30
+5	312	110	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	312	110	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	313	110		set __signed_stack_002teste1, 48
+5	312	113	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	312	113	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	313	113		strcat __strbufteste1, __constStr0012
+5	312	117	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	313	117		acquire __TextOutMutex
+5	312	118	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	313	118		mov __TextOutArgs.Location.X, __signed_stack_001teste1
+5	312	120	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	313	120		mov __TextOutArgs.Location.Y, __signed_stack_002teste1
+5	312	122	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	313	122		set __TextOutArgs.Options, 0
+5	312	125	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	313	125		mov __TextOutArgs.Text, __strbufteste1
+5	312	127	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	313	127		syscall 13, __TextOutArgs
+5	312	130	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	313	130		mov __D0teste1, __TextOutArgs.Result
+5	312	132	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	313	132		release __TextOutMutex
+5	312	133	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	318	133	#line 318 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	319	133		mov __signed_stack_001teste1, __teste1_7qG2_aux_7qG2_000
+5	318	135	#line 318 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	319	135	#line 319 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	320	135		set __D0teste1, 0
+5	319	138	#line 319 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	320	138		cmp 4, __D0teste1, __signed_stack_001teste1, __D0teste1
+5	320	142	#line 320 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	321	142		brtst 4, __ASM_Label_870, __D0teste1
+5	320	145	#line 320 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	321	145		set __D0teste1, 60
+5	320	148	#line 320 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	321	148	#pragma macro 7
+5	321	148		setout __constVal0, 2, __D0teste1, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	9642	171	#line 9642 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	320	171	#line 320 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	321	171	#line 321 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	322	171		set __D0teste1, 60
+5	321	174	#line 321 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	322	174	#pragma macro 7
+5	322	174		setout __constVal1, 2, __D0teste1, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	9647	197	#line 9647 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	321	197	#line 321 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	322	197	#line 322 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	323	197		set __Wait_7qG2_ms_7qG2_000_inline_teste1, 20
+5	322	200	#line 322 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	8869	200	#line 8869 "NXCDefs.h"
+5	8870	200		waitv __Wait_7qG2_ms_7qG2_000_inline_teste1
+5	8869	202	#line 8869 "NXCDefs.h"
+5	322	202	#line 322 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	323	202	#line 323 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	324	202	#pragma macro 9
+5	324	202		acquire __MRMutex
+5	324	203		mov __MRArgs.QueueID, __constVal1
+5	324	205		mov __MRArgs.Remove, __constVal1
+5	324	207		set __RRNTmpVal, 0
+5	324	210		syscall 27, __MRArgs
+5	324	213		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+5	324	218		mov __teste1_7qG2_aux_7qG2_000, __RRNTmpVal
+5	324	220		mov __D0teste1, __MRArgs.Result
+5	324	222		release __MRMutex
+5	9658	223	#line 9658 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	323	223	#line 323 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	323	223	#line 323 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	325	223	#line 325 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	326	223		jmp __ASM_Label_869
+5	325	225	#line 325 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	325	225	#line 325 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	326	225		mov __signed_stack_001teste1, __teste1_7qG2_aux_7qG2_000
+5	325	227	#line 325 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	325	227	#line 325 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	326	227		set __D0teste1, 1
+5	325	230	#line 325 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	326	230		cmp 4, __D0teste1, __signed_stack_001teste1, __D0teste1
+5	326	234	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	327	234		brtst 4, __ASM_Label_881, __D0teste1
+5	326	237	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	327	237		set __signed_stack_001teste1, 30
+5	326	240	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	326	240	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	327	240		set __signed_stack_002teste1, 40
+5	326	243	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	326	243	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	327	243		strcat __strbufteste1, __constStr0013
+5	326	247	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	327	247		acquire __TextOutMutex
+5	326	248	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	327	248		mov __TextOutArgs.Location.X, __signed_stack_001teste1
+5	326	250	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	327	250		mov __TextOutArgs.Location.Y, __signed_stack_002teste1
+5	326	252	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	327	252		set __TextOutArgs.Options, 0
+5	326	255	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	327	255		mov __TextOutArgs.Text, __strbufteste1
+5	326	257	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	327	257		syscall 13, __TextOutArgs
+5	326	260	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	327	260		mov __D0teste1, __TextOutArgs.Result
+5	326	262	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	327	262		release __TextOutMutex
+5	326	263	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	327	263	#line 327 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	328	263		set __vira_7qG2_angulo_7qG2_000, 90
+5	327	266	#line 327 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	327	266	#line 327 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	328	266		set __vira_7qG2_direcao_7qG2_000, 1
+5	327	269	#line 327 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	327	269	#line 327 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	328	269		subcall vira, __vira_return
+5	327	271	#line 327 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	328	271	#line 328 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	329	271		set __Wait_7qG2_ms_7qG2_000_inline_teste1, 100
+5	328	274	#line 328 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	8869	274	#line 8869 "NXCDefs.h"
+5	8870	274		waitv __Wait_7qG2_ms_7qG2_000_inline_teste1
+5	8869	276	#line 8869 "NXCDefs.h"
+5	328	276	#line 328 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	329	276	#line 329 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	330	276	#pragma macro 9
+5	330	276		acquire __MRMutex
+5	330	277		mov __MRArgs.QueueID, __constVal1
+5	330	279		mov __MRArgs.Remove, __constVal1
+5	330	281		set __RRNTmpVal, 0
+5	330	284		syscall 27, __MRArgs
+5	330	287		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+5	330	292		mov __teste1_7qG2_aux_7qG2_000, __RRNTmpVal
+5	330	294		mov __D0teste1, __MRArgs.Result
+5	330	296		release __MRMutex
+5	9730	297	#line 9730 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	329	297	#line 329 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	329	297	#line 329 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	330	297	#line 330 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	331	297		set __Wait_7qG2_ms_7qG2_000_inline_teste1, 40
+5	330	300	#line 330 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	8869	300	#line 8869 "NXCDefs.h"
+5	8870	300		waitv __Wait_7qG2_ms_7qG2_000_inline_teste1
+5	8869	302	#line 8869 "NXCDefs.h"
+5	330	302	#line 330 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	331	302	#line 331 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	332	302		mov __signed_stack_001teste1, __teste1_7qG2_aux_7qG2_000
+5	331	304	#line 331 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	331	304	#line 331 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	332	304		set __D0teste1, 1
+5	331	307	#line 331 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	332	307		cmp 4, __D0teste1, __signed_stack_001teste1, __D0teste1
+5	332	311	#line 332 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	333	311		brtst 4, __ASM_Label_896, __D0teste1
+5	332	314	#line 332 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	333	314		set __vira_7qG2_angulo_7qG2_000, 180
+5	332	317	#line 332 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	332	317	#line 332 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	333	317		set __vira_7qG2_direcao_7qG2_000, 2
+5	332	320	#line 332 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	332	320	#line 332 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	333	320		subcall vira, __vira_return
+5	332	322	#line 332 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	333	322	#line 333 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	334	322		set __Wait_7qG2_ms_7qG2_000_inline_teste1, 100
+5	333	325	#line 333 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	8869	325	#line 8869 "NXCDefs.h"
+5	8870	325		waitv __Wait_7qG2_ms_7qG2_000_inline_teste1
+5	8869	327	#line 8869 "NXCDefs.h"
+5	333	327	#line 333 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	336	327	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	337	327		jmp __ASM_Label_903
+5	336	329	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	337	329		set __signed_stack_001teste1, 30
+5	336	332	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	336	332	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	337	332		set __signed_stack_002teste1, 32
+5	336	335	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	336	335	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	337	335		strcat __strbufteste1, __constStr0014
+5	336	339	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	337	339		acquire __TextOutMutex
+5	336	340	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	337	340		mov __TextOutArgs.Location.X, __signed_stack_001teste1
+5	336	342	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	337	342		mov __TextOutArgs.Location.Y, __signed_stack_002teste1
+5	336	344	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	337	344		set __TextOutArgs.Options, 0
+5	336	347	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	337	347		mov __TextOutArgs.Text, __strbufteste1
+5	336	349	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	337	349		syscall 13, __TextOutArgs
+5	336	352	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	337	352		mov __D0teste1, __TextOutArgs.Result
+5	336	354	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	337	354		release __TextOutMutex
+5	336	355	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	337	355	#line 337 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	338	355		set __Wait_7qG2_ms_7qG2_000_inline_teste1, 100
+5	337	358	#line 337 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	8869	358	#line 8869 "NXCDefs.h"
+5	8870	358		waitv __Wait_7qG2_ms_7qG2_000_inline_teste1
+5	8869	360	#line 8869 "NXCDefs.h"
+5	337	360	#line 337 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	341	360	#line 341 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	341	360	#line 341 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	341	360	#line 341 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	342	360	#pragma macro 7
+5	342	360		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	9821	383	#line 9821 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	341	383	#line 341 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	342	383	#line 342 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	343	383	#pragma macro 7
+5	343	383		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	9824	406	#line 9824 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	342	406	#line 342 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	344	406	#line 344 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	345	406		set __Wait_7qG2_ms_7qG2_000_inline_teste1, 100
+5	344	409	#line 344 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	8869	409	#line 8869 "NXCDefs.h"
+5	8870	409		waitv __Wait_7qG2_ms_7qG2_000_inline_teste1
+5	8869	411	#line 8869 "NXCDefs.h"
+5	344	411	#line 344 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	346	411	#line 346 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	347	411		set __D0teste1, 1
+5	346	414	#line 346 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	347	414		tst 5, __D0teste1, __D0teste1
+5	346	417	#line 346 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	347	417		brtst 4, __ASM_Label_868, __D0teste1
+5	346	420	#line 346 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	347	420		jmp __ASM_Label_867
+5	346	422	#line 346 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	346	422	#line 346 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	349	422	#line 349 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+5	350	422		subret __teste1_return
+6	372	0	#line 372 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
+6	373	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
-0	main	0	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc
-1	iniciaBlue	403	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc
-2	distanciaGiro	470	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc
-3	viraEsq	490	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc
-4	viraDir	623	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc
-5	__initialize_global_data	763	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc
+0	main	0	C:\Users\Lucas\AppData\Local\Temp\temp.nxc
+1	iniciaBlue	7	C:\Users\Lucas\AppData\Local\Temp\temp.nxc
+2	desligaBlue	78	C:\Users\Lucas\AppData\Local\Temp\temp.nxc
+3	distanciaGiro	149	C:\Users\Lucas\AppData\Local\Temp\temp.nxc
+4	vira	169	C:\Users\Lucas\AppData\Local\Temp\temp.nxc
+5	teste1	466	C:\Users\Lucas\AppData\Local\Temp\temp.nxc
+6	__initialize_global_data	890	C:\Users\Lucas\AppData\Local\Temp\temp.nxc

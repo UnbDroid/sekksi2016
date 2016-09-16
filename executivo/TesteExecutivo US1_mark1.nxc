@@ -7,6 +7,28 @@
 #define HTD IN_3//hitech da direita
 #define HTE IN_4//hitech da esquerda
 
+//LOGICA
+
+#define direita 1
+#define esquerda 2
+
+#define SIM 1
+#define SIM_US 1
+#define SIM_GARRA 2
+  //Bluetooth
+#define PARADO 0
+#define LeGARRA_SENSOR 3
+  //dist
+#define DIST_RE 30
+#define DIST_DA_PAREDE 8
+  //cores
+#define COR_VERDE 0
+#define COR_AZUL 0
+#define COR_PRETA 0
+#define COR_NEUTRA 0
+
+
+
 //DEFINES BLUETOOTH
 
 #define CONECTA TRUE
@@ -23,14 +45,53 @@
 #define ACAO CONECTA
 #define CONEXAO 1
 
+//VARIAVEIS GLOBAIS
+int my_tc_d = 0;
+int my_tc_e = 0;
+int potdGlobal = 90;
+int poteGlobal = 83;
+
 
 
 //declaracao de funf
 
-int distanciaGiro(int grau);
-void viraEsq(int angulo);
-void viraDir(int angulo);
 void iniciaBlue(void);
+void desligaBlue(void);
+void inicializaSensores(void);
+
+
+int distanciaGiro(int grau);
+int distanciaTachoCount(int grau);
+
+void andaRetoDireita(int dist);
+void Para(void);
+void vira(int angulo, int direcao);
+
+void LeUSFRENTE();
+void LeGARRA();
+void ChecaParada();
+
+void CorDoChao(int corEsq, int corDir);
+void IniciaCorDoChao(int corEsq, int corDir);
+void DaReh();
+void RetornaBoneco(int cor);
+
+//DEBUG
+void teste1(void);
+
+
+int distanciaTachoCount(int grau){
+     return (3*grau);                   //Distancia a ser percorrid/Raio da roda
+}
+
+void inicializaSensores()
+{
+  SetSensorLowspeed(USD);
+  SetSensorLowspeed(USE);
+  SetSensorLowspeed(HTD);
+  SetSensorLowspeed(HTE);
+}
+
 
 void iniciaBlue(){// FUNCAO INICIA COMUNICACAO BLUETOOTH
 
@@ -62,40 +123,185 @@ void desligaBlue(){
 }
 
 
+
+
 int distanciaGiro(int grau){
-	   return (((grau*172)/1420)); // COMO FOI FEITA ESSA CONVERSÃO???
+	   return (((grau*172)/1420)); // COMO FOI FEITA ESSA CONVERSÃƒO???
 }
 
-void viraEsq(int angulo){ // função que faz o robô girar para a esquerda o ângulo recebido
-     OnFwd(MD, 90);
-     OnFwd(ME, -90);
+void vira(int angulo, int direcao){  //TESTE
+     if(direcao == esquerda){
+        OnFwd(MD, 90);
+        OnFwd(ME, -90);
 
-     while(distanciaGiro((MotorTachoCount(MD) - MotorTachoCount(ME))/2) < angulo)
-     {
-      //lol
+        while(distanciaGiro((MotorTachoCount(MD) - MotorTachoCount(ME))/2) < angulo)
+        {
+        //lol
+        }
+        Off(MD);
+        Off(ME);
+
+     }else if(direcao == direita){
+        OnFwd(MD, -90);
+        OnFwd(ME, 90);
+
+        while(distanciaGiro((- MotorTachoCount(MD) + MotorTachoCount(ME))/2) < angulo)
+        {
+        //lol
+        }
+        Off(MD);
+        Off(ME);
      }
+}
+
+
+void Para(){
+     Off(ME);
+     Off(MD);
+}
+
+void ChecaParada(){//TESTAR SE PARA QUANDO DEVE, E SE NAO DEMORA MUITO
+  int leitura;
+
+  SendRemoteNumber(CONEXAO, OUTBOX, LeGARRA_SENSOR);
+  ReceiveRemoteNumber(INBOX, true, leitura);
+  Wait(30);
+
+  if(leitura == SIM_US){
+    LeUSFRENTE();
+  }else if(leitura == SIM_GARRA){
+    LeGARRA();
+  }
+
+}
+
+void LeUSFRENTE(){// TESTE SE PARA QUANDO DEVE, E CONTINUA QUANDO DEVE
+  int verifica = 0, continua = 0;
+  do{
+      Para();
+      SendRemoteNumber(CONEXAO, OUTBOX, PARADO);
+      ReceiveRemoteNumber(INBOX, true, verifica);
+      Wait(30);
+  }while(verifica != SIM);
+
+  do{
+    SendRemoteNumber(CONEXAO, OUTBOX, PARADO);
+    ReceiveRemoteNumber(INBOX, true, continua);
+    Wait(30);
+  }while(continua != SIM);
+  
+}
+
+void LeGARRA(){// TESTE SE PARA QUANDO DEVE, E CONTINUA QUANDO DEVE
+  int verifica = 0, continua = 0;
+  
+  do{
+      Para();
+      SendRemoteNumber(CONEXAO, OUTBOX, PARADO);
+      ReceiveRemoteNumber(INBOX, true, verifica);
+      Wait(30);
+  }while(verifica != SIM);
+
+  do{
+      SendRemoteNumber(CONEXAO, OUTBOX, PARADO);
+      ReceiveRemoteNumber(INBOX, true, continua);
+      Wait(30);
+  }while(continua != SIM);
+  
+}
+
+void DaReh(){ //TESTAR SE SAI DO DOWHILE
+  
+  int tachoCountD = 0, tachoCountE = 0;
+  OnRev(MD, potdGlobal);
+  OnRev(ME, poteGlobal);
+  do{
+    tachoCountE = MotorTachoCount(ME);
+    tachoCountD = MotorTachoCount(MD);
+  }while(distanciaTachoCount((tachoCountD + tachoCountE)/2) != DIST_RE*100);
+  
+  Off(MD);
+  Off(ME);
+}
+
+void IniciaCorDoChao(int corEsq, int corDir){//TESTAR SE CHAMA A FUNCAO DENTRO DO IF E CONTINUA O CODIGO
+  
+  corEsq = SensorHTColorNum(HTE);
+  corDir = SensorHTColorNum(HTD);
+  
+  if((corDir == COR_VERDE) || (corEsq == COR_VERDE)){
+    RetornaBoneco(COR_VERDE);
+  }else if((corDir == COR_AZUL) || (corEsq == COR_AZUL)){
+    RetornaBoneco(COR_AZUL);
+  }
+}
+
+void CorDoChao(int corEsq, int corDir){
+  
+  corEsq = SensorHTColorNum(HTE);
+  corDir = SensorHTColorNum(HTD);
+  
+  if((corDir == COR_PRETA)||(corEsq == COR_PRETA)){//AREA KIEFAS == FOOOOOGE NEGADAA
+    DaReh();
+  }  
+}
+
+void RetornaBoneco(int cor){//TESTAR COMUNICACAO
+    int passei;
+    
+    do{
+      if(cor == COR_AZUL){//BONECO COR BRANCA
+        SendRemoteNumber(CONEXAO, OUTBOX, 1);
+        ReceiveRemoteNumber(INBOX, true, passei);
+        Wait(30);
+      }else if(cor == COR_VERDE){//BONECO COR PRETA
+        SendRemoteNumber(CONEXAO, OUTBOX, 2);
+        ReceiveRemoteNumber(INBOX, true, passei);
+        Wait(30);
+      }
+  }while(passei != SIM);
+}
+
+
+void andaRetoDireita(int dist){ // funÃ§Ã£o que faz o robÃ´ andar Ã  "dist" centÃ­metros da parede
+     int distanciaAtual, potd, pote;
+     my_tc_d = 0;
+     my_tc_e = 0;
+
+     while(distanciaTachoCount((my_tc_d + my_tc_e)/2) < (dist*100)){
+       distanciaAtual = SensorUS(USD);
+    
+       if (distanciaAtual == dist){
+         potd = 90;
+         pote = 90;
+       }
+       else if(distanciaAtual > dist){
+         pote = 90;
+         potd = 70;
+       }
+       else if(distanciaAtual < dist){
+         pote = 70;
+         potd = 90;
+       }
+
+       my_tc_d += MotorTachoCount(MD);
+       OnFwd(MD, potd);
+       my_tc_e += MotorTachoCount(ME);
+       OnFwd(ME, pote);
+
+     }
+
      Off(MD);
      Off(ME);
-}
 
-void viraDir(int angulo){ // função que faz o robô girar para a direita o ângulo recebido
-     OnFwd(MD, -90);
-     OnFwd(ME, 90);
-
-     while(distanciaGiro((- MotorTachoCount(MD) + MotorTachoCount(ME))/2) < angulo)
-     {
-      //lol
-     }
-     Off(MD);
-     Off(ME);
 }
 
 
-
-task main()// programa simples de teste
-{
+//========================================================================
+//FUNCOES DEBUG
+void teste1(){
       int aux1 = 0, aux = 0;
-      desconectaBlue();
+      desligaBlue();
       iniciaBlue();
 
      while(aux1==0)
@@ -110,33 +316,55 @@ task main()// programa simples de teste
      
      do{
 
-     while(aux==0)
-     {
-          OnFwd(OUT_A, 60);
-          OnFwd(OUT_B, 60);
-          Wait(20);
-          ReceiveRemoteNumber(INBOX, true, aux);
-     }
-     if(aux == 1){
-          TextOut(30, LCD_LINE3, "passei3");
-          viraDir(90);
-          Wait(100);
-          ReceiveRemoteNumber(INBOX, true, aux);
-          Wait(40);
+          while(aux==0)
+          {
+               OnFwd(OUT_A, 60);
+               OnFwd(OUT_B, 60);
+               Wait(20);
+               ReceiveRemoteNumber(INBOX, true, aux);
+          }
           if(aux == 1){
-               viraEsq(180);
+               TextOut(30, LCD_LINE3, "passei3");
+               vira(90, direita);
                Wait(100);
+               ReceiveRemoteNumber(INBOX, true, aux);
+               Wait(40);
+               if(aux == 1){
+                    vira(180, esquerda);
+                    Wait(100);
+               }
+               else{
+                    TextOut(30, LCD_LINE4, "funfou");
+                    Wait(100);
+               }
           }
-          else{
-               TextOut(30, LCD_LINE4, "funfou");
-               Wait(100);
-          }
-     }
 
-     Off(OUT_A);
-     Off(OUT_B);
+          Off(OUT_A);
+          Off(OUT_B);
 
-     Wait(100);
+          Wait(100);
 
      }while(1);
+}
+
+void teste2COMUNICA(){
+  int corDir = 0, corEsq = 0;
+
+  inicializaSensores();
+  desligaBlue();
+  iniciaBlue();
+
+  IniciaCorDoChao(corEsq, corDir);
+
+  do{
+    ChecaParada();
+    CorDoChao(corEsq, corDir);
+    andaRetoDireita(DIST_DA_PAREDE);
+  }while(SIM);
+
+}
+
+task main()// programa simples de teste
+{
+  teste1();
 }
