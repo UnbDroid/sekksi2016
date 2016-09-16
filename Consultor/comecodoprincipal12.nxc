@@ -62,6 +62,8 @@
 #define INBOX_USFRENTE 3
 #define OUTBOX_GARRA 4   /*buffers referentes aos processos relacionados com as garras*/
 #define INBOX_GARRA 5
+#define OUTBOX_BONECO 6   /*buffers utilizados quando algum dos RGBs informa a presença de algum boneco na garra*/
+#define INBOX_BONECO 7
 
 //Declarações das funções
 void Vai(int x);
@@ -112,30 +114,32 @@ int IdentificaBoneco(int x){
 		if(SensorRaw(RGB_MEIO) > COR_BRANCA_MEIO_MIN && SensorRaw(RGB_MEIO) < COR_BRANCA_MEIO_MAX){
 			pega();	
 		}else{
-			/*avisa pro robo que temos boneco errado na garra e espera ele girar*/
 			NaoPega();
 		}	
 	}else if(x == 1){
 		if(SensorRaw(RGB_MEIO) > COR_PRETA_MEIO_MIN && SensorRaw(RGB_MEIO) < COR_PRETA_MEIO_MAX){
 			pega();
 		}else{
-			/*avisa pro robo que temos boneco errado na garra e espera ele girar*/
 			NaoPega();
 		}	
 	}
-	/*avisa pro robo que o processo de pegar o boneco acabou pra ele andar de novo*/
 	Vai(x);	
 }
 
 int filterRGB(int s){
 	 /*passar o sensor como parametro (s = X-1 (de INT_X))*/
     float media = 0, alfa = 0.01 ;
-    int leitura;
-    unsigned int x;
-    leitura = SensorRaw(s);
-    media = leitura ;
+    int leitura, i;
+    unsigned int x=0, aux;
+    
+    for(i=0;i<5;i++){
+        media=media+SensorRaw(s);
+        Wait(10);
+    }
     //condiçao de loop de 2segundos para pegar leituras e filtrar elas
-    while( (x=CurrentTick())<(x+2)){
+    aux=CurrentTick();
+    while(x<=1900){
+        x=CurrentTick()-aux;
         leitura = SensorRaw(s);
         media = ((1-alfa)*media) + (alfa*leitura) ;
         //NumOut(0, LCD_LINE1, media);
@@ -143,17 +147,17 @@ int filterRGB(int s){
         //ClearScreen();
     }
     if (s == 0){
-    	if (media > COR_BASE_DIR_MAX && media < COR_BASE_DIR_MIN){
-    		return 0;
+    	if (media > COR_BASE_DIR_MAX || media < COR_BASE_DIR_MIN){
+    		return 1;
     	}else{
-    		return 1;	
-    	}	  
+    		return 0;
+    	}
     }else if(s == 1){
-    	if (media > COR_BASE_ESQ_MAX && media < COR_BASE_ESQ_MIN){
-    		return 0;
+    	if (media > COR_BASE_ESQ_MAX || media < COR_BASE_ESQ_MIN){
+    		return 1;
     	}else{
-    		return 1;	
-    	}	  
+    		return 0;
+    	}
     }
 
 }
