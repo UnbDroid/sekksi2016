@@ -51,6 +51,11 @@
 //misc
 #define MENOR_DISTANCIA_US 20
 
+//LOGICA
+#define direita 1
+#define esquerda 2
+
+
 //Declarações das funções
 void Vai(int x);
 void ChamaVai(int x); //função para realizar a recursividade
@@ -143,7 +148,7 @@ int filterRGB(int s){
 
 }
 /*nao esta pronto ainda, tenho que implementar ele direito pra US*/
-int filterUS(int s){
+int filterUS(int s){// ABDU, SÓ TEM 1 US, por que não tirar esse parâmetro int s e colocar na função SensorRaw somente (US_FRENTE)???
     float media = 0, alfa = 0.01 ;
     int leitura;
     unsigned int x;
@@ -166,9 +171,9 @@ int filterUS(int s){
 
 int VerificaLeitura(){
     if(SensorRaw(RGB_ESQ) > COR_BASE_ESQ_MAX && SensorRaw(RGB_ESQ) < COR_BASE_ESQ_MIN){
-    	return 1;
+    	return esquerda;
     }else if(SensorRaw(RGB_DIR) > COR_BASE_DIR_MAX && SensorRaw(RGB_DIR) < COR_BASE_DIR_MAX){
-    	return 2;
+    	return direita;
     }else if(SensorUS(US_FRENTE) < MENOR_DISTANCIA_US){
     	return 3;
     }
@@ -187,11 +192,11 @@ void ChamaVai(int x){
 }
 
 void Vai(int x){
-    int aux = 4;//valor aleatorio pra continuar a função se a funão verifica nao retornar um valor esperado
+    int aux = 4;//valor aleatorio pra continuar a função se a funcão verifica nao retornar um valor esperado
     while(condicao()){
     }
     aux = VerificaLeitura();
-    if(aux==2){/*se eh o sensor da direita*/
+    if(aux==direita){/*se eh o sensor da direita*/
     	if(filterRGB(RGB_DIR)){
     		/*manda sinal para parar o robo*/
     		IdentificaBoneco(x);
@@ -199,7 +204,7 @@ void Vai(int x){
     		ChamaVai(x);
     	}
 
-    }else if(aux == 1){/*se eh o sensor da esquerda*/
+    }else if(aux == esquerda){/*se eh o sensor da esquerda*/
     	if(filterRGB(RGB_ESQ)){
     		/*manda sinal para parar o robo*/
     		IdentificaBoneco(x);

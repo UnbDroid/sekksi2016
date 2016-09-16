@@ -1,28 +1,203 @@
-#define CONEXAO 0
 
-//INBOX PARA CADA ATIVIDADE
-#define INBOX 2
+//DEFINES
 
-#define OUTBOX 1
+     //Bluetooth
+     #define CONEXAO 0
+     #define INBOX 2
+     #define OUTBOX 1
 
-//LOGICA
-#define SIM 1
-#define SIM_US 1
-#define SIM_GARRA 2
-  //Bluetooth
-#define PARADO 0
-#define LeGARRA_SENSOR 3
-  //dist
-#define DIST_RE 30
-#define DIST_DA_PAREDE 8
-  //cores
-#define COR_VERDE 
-#define COR_AZUL
-#define COR_PRETA
-#define COR_NEUTRA
+     // Defines de sensores
+     #define RGB_DIR IN_1
+     #define RGB_ESQ IN_2
+     #define RGB_MEIO IN_3
+     #define US_FRENTE IN_4
+
+     // Defines de motores
+     #define MOTOR_GARRA OUT_A
+
+
+     //LOGICA
+
+     #define direita 1
+     #define esquerda 2
+
+     #define SIM 5
+     #define SIM_US 1
+     #define SIM_GARRA 2
+     #define NAO 0
+     #define CONTINUA 6
+     #define VIRANDO 7
+       //Bluetooth
+     #define PARADO 0
+     #define BONECO_BRANCO 4
+     #define BONECO_PRETO 5
+     #define LeGARRA_SENSOR 3
+       //dist
+     #define DIST_RE 30
+     #define DIST_DA_PAREDE 8
+       //cores
+     #define COR_VERDE 5 
+     #define COR_AZUL 3 // 3 ou 14, 3 eh mais certo
+     #define COR_PRETA 12 //12 ou 17, 12 eh mais certo
+     #define COR_NEUTRA 13//BRANCO fica acima de 13
 
 void teste1(void);
 void teste2(void);
+void InicializaSensores(void);
+void filterUS(void);
+int filterRGB(int s);
+void pega(void);
+
+void InicializaSensores(){
+    SetSensorColorRed(RGB_DIR);
+    SetSensorColorRed(RGB_ESQ);
+    SetSensorColorRed(RGB_MEIO);
+    SetSensorLowspeed(US_FRENTE);
+}
+
+
+int filterUS(){//TIREI PARAMETRO int s
+    float media = 0, alfa = 0.01 ;
+    int leitura;
+    unsigned int x;
+    leitura = SensorRaw(US_FRENTE);
+    media = leitura ;
+    //condiçao de loop de 1segundo para pegar leituras e filtrar elas
+    while( (x=CurrentTick())<(x+1)){
+        leitura = SensorRaw(US_FRENTE);
+        media = ((1-alfa)*media) + (alfa*leitura) ;
+        //NumOut(0, LCD_LINE1, media);
+        //Wait(10);
+        //ClearScreen();
+    }
+    if (media < MENOR_DISTANCIA_US){
+          return 0;
+    }else{
+          return 1; 
+    }       
+}
+
+int filterRGB(int s){
+      /*passar o sensor como parametro (s = X-1 (de INT_X))*/
+    float media = 0, alfa = 0.01 ;
+    int leitura;
+    unsigned int x;
+    leitura = SensorRaw(s);
+    media = leitura ;
+    //condiçao de loop de 2segundos para pegar leituras e filtrar elas
+    while( (x=CurrentTick())<(x+2)){
+        leitura = SensorRaw(s);
+        media = ((1-alfa)*media) + (alfa*leitura) ;
+        //NumOut(0, LCD_LINE1, media);
+        //Wait(10);
+        //ClearScreen();
+    }
+    if (s == 0){
+     if (media > COR_BASE_DIR_MAX && media < COR_BASE_DIR_MIN){
+          return 0;
+     }else{
+          return 1; 
+     }      
+    }else if(s == 1){
+     if (media > COR_BASE_ESQ_MAX && media < COR_BASE_ESQ_MIN){
+          return 0;
+     }else{
+          return 1; 
+     }      
+    }
+
+}
+
+int RecebeBoneco(){
+     int sinInicial = 0;     
+     do{  
+          ReceiveRemoteNumber(INBOX, 0, sinInicial);
+          Wait(30);    
+     }while(sinInicial == 0);
+     SendRemoteNumber(CONEXAO, OUTBOX, SIM);
+     Wait(30);
+     
+     if(sinInicial == BONECO_PRETO)
+          return BONECO_PRETO;
+     else if(sinInicial == BONECO_BRANCO)
+          return BONECO_BRANCO;
+}
+
+void EnviaUSFrente(){
+     int sinalUS = 0, verifica = 0;
+     sinalUS = filterUS();
+     if(sinalUS != 0){
+          do{  
+               ReceiveRemoteNumber(INBOX, 0, verifica);
+               Wait(30);    
+          }while(verifica == 0);
+
+          if(verifica == LeGARRA_SENSOR){
+               SendRemoteNumber(CONEXAO, OUTBOX, SIM_US);
+               do{
+                    ReceiveRemoteNumber(INBOX, 0, verifica);
+                    Wait(30);
+               }while(verifica!= PARADO);
+               SendRemoteNumber(CONEXAO, OUTBOX, SIM);   //RECEBEU QUE ESTA PARADO            
+          }
+
+          do{
+               ReceiveRemoteNumber(INBOX, 0, verifica);
+               Wait(30);
+          }while(verifica != VIRANDO);
+          SendRemoteNumber(CONEXAO, OUTBOX, SIM);   //RECEBEU QUE ESTA VIRANDO
+
+          MandaExecutivoContinuar();
+     }
+}
+
+void pega(){
+     OnFwd(MOTOR_GARRA,POTENCIA_MAXIMA_GARRA);
+     Wait(TEMPO_ATE_JOGAR_DENTRO);
+     Off(MOTOR_GARRA);
+     Wait(TEMPO_DEPOIS_DE_JOGAR_DENTRO_GARANTIA);
+     OnFwd(MOTOR_GARRA,-POTENCIA_MAXIMA_GARRA);
+     Wait(TEMPO_ATE_A_GARRA_VOLTAR);
+     Off(MOTOR_GARRA);
+}
+
+void EnviaGarra(){
+     int sinalRGBE = 0,sinalRGBC = 0,sinalRGBD = 0, verifica = 0;
+     sinalRGBE = filterRGB(RGB_ESQ);
+     sinalRGBC = filterRGB(RGB_MEIO);
+     sinalRGBD = filterRGB(RGB_DIR);
+
+     if((sinalRGBD != 0)||(sinalRGBC != 0)||(sinalRGBE != 0)){
+
+     do{  
+               ReceiveRemoteNumber(INBOX, 0, verifica);
+               Wait(30);    
+          }while(verifica == 0);
+
+          if(verifica == LeGARRA_SENSOR){
+               SendRemoteNumber(CONEXAO, OUTBOX, SIM_GARRA);
+               do{
+                    ReceiveRemoteNumber(INBOX, 0, verifica);
+                    Wait(30);
+               }while(verifica!= PARADO);
+               SendRemoteNumber(CONEXAO, OUTBOX, SIM_GARRA);   //RECEBEU QUE ESTA PARADO          
+          }
+          //FUNÇAO DE PEGAR BONECO
+
+     }
+}
+
+void MandaExecutivoContinuar(){
+     int verifica = 0;
+     do{
+          ReceiveRemoteNumber(INBOX, 0, verifica);
+          if(verifica == PARADO){
+               SendRemoteNumber(CONEXAO, OUTBOX, CONTINUA);     
+          }
+          Wait(30);
+     }while(verifica!= PARADO);//MANDA CONTINUAR
+}
+
 
 void teste1(){
      int x, i;
@@ -44,12 +219,12 @@ void teste1(){
           NumOut(30, LCD_LINE4, x);
           if(x<15)
           {
-               SendRemoteNumber(CONEXAO, OUTBOX, 1);
+               SendRemoteNumber(CONEXAO, OUTBOX, SIM);
                TextOut(30, LCD_LINE3, "passei3");
                Wait(200);
           }
           else{
-               SendRemoteNumber(CONEXAO, OUTBOX, 0);
+               SendRemoteNumber(CONEXAO, OUTBOX, NAO);
                Wait(200);
           }
           Wait(30);
@@ -57,10 +232,24 @@ void teste1(){
 }
 
 void teste2(){
+     int bonecoAlvo = 0; 
+     InicializaSensores();
+     bonecoAlvo = RecebeBoneco();   
+     
+     if(bonecoAlvo == BONECO_BRANCO){
+          PlaySound(SOUND_UP);
+          PlaySound(SOUND_DOWN);
+          Wait(SEC_1);
+     }else if(bonecoAlvo == BONECO_PRETO){
+          PlaySound(SOUND_LOW_BEEP);
+          Wait(MS_500);
+          PlaySound(SOUND_FAST_UP);
+     }
 
+     EnviaUSFrente();          
 }
 
 task main()
 {
-     
+     teste2();
 }

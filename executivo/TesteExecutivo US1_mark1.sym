@@ -1,741 +1,841 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__D0teste1	6	1	0	4	32
-1	__D0iniciaBlue	6	1	4	4	7
-2	__signed_stack_001desligaBlue	6	1	8	4	4
-3	__D0vira	6	1	12	4	34
-4	__D0distanciaGiro	6	1	16	4	7
-5	__RemoteMutex	9	0	20	4	2
-6	__SRSTmpLongVal	6	1	24	4	2
-7	__D0desligaBlue	6	1	28	4	7
-8	__CHSWMutex	9	0	32	4	2
-9	__signed_stack_002desligaBlue	6	1	36	4	2
-10	__Wait_7qG2_ms_7qG2_000_inline_iniciaBlue	5	1	40	4	2
-11	__signed_stack_001vira	6	1	44	4	18
-12	__Wait_7qG2_ms_7qG2_000_inline_teste1	5	1	48	4	14
-13	__Wait_7qG2_ms_7qG2_000_inline_desligaBlue	5	1	52	4	2
-14	__signed_stack_002teste1	6	1	56	4	6
-15	__signed_stack_001iniciaBlue	6	1	60	4	4
-16	__signed_stack_001distanciaGiro	6	1	64	4	4
-17	__signed_stack_001teste1	6	1	68	4	14
-18	__signed_stack_002iniciaBlue	6	1	72	4	2
-19	__TextOutMutex	9	0	76	4	10
-20	__CBTWMutex	9	0	80	4	2
-21	__MRMutex	9	0	84	4	6
-22	__CBTCSMutex	9	0	88	4	4
-23	__RRNTmpVal	6	1	92	4	12
-24	__teste1_7qG2_aux1_7qG2_000	4	1	96	2	3
-25	__teste1_7qG2_aux_7qG2_000	4	1	98	2	6
-26	__vira_7qG2_direcao_7qG2_000	4	1	100	2	4
-27	__distanciaGiro_7qG2_grau_7qG2_000	4	1	102	2	3
-28	__vira_7qG2_angulo_7qG2_000	4	1	104	2	4
-29	__constVal32	2	0	106	1	36
-30	__iniciaBlue_return	1	1	107	1	3
-31	__constVal96	2	0	108	1	12
-32	__constVal4	2	0	109	1	2
-33	__constVal3	2	0	110	1	13
-34	__vira_return	1	1	111	1	4
-35	__constVal1	2	0	112	1	20
-36	__teste1_return	1	1	113	1	3
-37	__desligaBlue_return	1	1	114	1	3
-38	__constVal0	2	1	115	1	50
-39	__distanciaGiro_return	1	1	116	1	5
-40	__RRNErr	1	1	117	1	3
-41	__constVal2	2	0	118	1	2
-42	__constVal63	2	0	119	1	12
-43	__constValNeg90	2	0	120	1	2
-44	__WFRRTmpByte	1	1	121	1	2
-45	__constVal5	2	0	122	1	1
-46	____initialize_global_data_return	1	1	123	1	3
-47	__desligaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	5
-48	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Result	3	1	124	2	5
-49	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	126	1	5
-50	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	128	4	5
-51	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
-52	__desligaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	130	1	5
-53	__CBTCSArgs	8	0	2	4	6
-54	__CBTCSArgs.Result	2	1	132	1	6
-55	__CBTCSArgs.Connection	1	1	133	1	6
-56	__TextOutArgs	8	0	4	16	30
-57	__TextOutArgs.Result	2	1	136	1	30
-58	__TextOutArgs.Location	8	0	2	4	30
-59	__TextOutArgs.Location.X	4	1	140	2	30
-60	__TextOutArgs.Location.Y	4	1	142	2	30
-61	__TextOutArgs.Text	7	0	144	4	30
-62	__TextOutArgs.Text.Text_type	1	0	0	1	0
-63	__TextOutArgs.Options	5	1	148	4	30
-64	__CHSWArgs	8	0	3	12	3
-65	__CHSWArgs.Status	2	1	152	1	3
-66	__CHSWArgs.Buffer	7	0	154	4	3
-67	__CHSWArgs.Buffer.Buffer_type	1	0	0	1	0
-68	__CHSWArgs.BufferLen	1	1	156	1	3
-69	__CBTWArgs	8	0	3	8	4
-70	__CBTWArgs.Result	2	1	160	1	4
-71	__CBTWArgs.Connection	1	1	161	1	4
-72	__CBTWArgs.Buffer	7	0	162	4	4
-73	__CBTWArgs.Buffer.Buffer_type	1	0	0	1	0
-74	__MRArgs	8	0	4	8	15
-75	__MRArgs.Result	2	1	164	1	15
-76	__MRArgs.QueueID	1	1	165	1	15
-77	__MRArgs.Remove	1	1	166	1	15
-78	__MRArgs.Message	7	0	168	4	15
-79	__MRArgs.Message.Message_type	1	0	0	1	0
-80	__iniciaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	5
-81	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Result	3	1	172	2	5
-82	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	174	1	5
-83	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	176	4	5
-84	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
-85	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	178	1	5
-86	__constStr0013	7	0	180	4	1
-87	__constStr0013.__constStr0013_type	1	1	0	1	0
-88	__constStr0014	7	0	182	4	1
-89	__constStr0014.__constStr0014_type	1	1	0	1	0
-90	__constStr0012	7	0	184	4	1
-91	__constStr0012.__constStr0012_type	1	1	0	1	0
-92	__SRSFlattenBuf	7	0	186	4	2
-93	__SRSFlattenBuf.__SRSFlattenBuf_type	1	0	0	1	0
-94	__SRSSendBuf	7	0	188	4	3
-95	__SRSSendBuf.__SRSSendBuf_type	1	0	0	1	0
-96	__strbufdesligaBlue	7	0	190	4	4
-97	__strbufdesligaBlue.__strbufdesligaBlue_type	1	0	0	1	0
-98	__DCMessageWritePacket	7	0	192	4	1
-99	__DCMessageWritePacket.__DCMessageWritePacket_type	1	0	0	1	0
-100	__strbufiniciaBlue	7	0	194	4	4
-101	__strbufiniciaBlue.__strbufiniciaBlue_type	1	0	0	1	0
-102	__strbufteste1	7	0	196	4	6
-103	__strbufteste1.__strbufteste1_type	1	0	0	1	0
-104	__constStr0010	7	0	198	4	1
-105	__constStr0010.__constStr0010_type	1	1	0	1	0
-106	__constStr0011	7	0	200	4	1
-107	__constStr0011.__constStr0011_type	1	1	0	1	0
-108	__SRSTmpBuf	7	0	202	4	6
-109	__SRSTmpBuf.__SRSTmpBuf_type	1	0	0	1	0
-110	__constStr0009	7	0	204	4	2
-111	__constStr0009.__constStr0009_type	1	1	0	1	0
+0	__CLSRMutex3	9	0	0	4	2
+1	__CLSWMutex3	9	0	4	4	2
+2	__RLSBmutex0	9	0	8	4	2
+3	__TextOutMutex	9	0	12	4	16
+4	__CLSWMutex2	9	0	16	4	2
+5	__CLSCSMutex2	9	0	20	4	2
+6	__CLSCSMutex3	9	0	24	4	2
+7	__CLSRMutex2	9	0	28	4	2
+8	__RLSBmutex1	9	0	32	4	2
+9	__signed_stack_001PrintaSensores	6	1	36	4	16
+10	__DU0SetSensorLowspeed_inline_inicializaSensores	5	1	40	4	20
+11	__Wait_7qG2_ms_7qG2_000_inline_PrintaSensores	5	1	44	4	2
+12	__signed_stack_002PrintaSensores	6	1	48	4	16
+13	__RLSBmutex3	9	0	52	4	2
+14	__RLSBmutex2	9	0	56	4	2
+15	__D0SetSensorLowspeed_inline_inicializaSensores	6	1	60	4	8
+16	__D0PrintaSensores	6	1	64	4	20
+17	__CLSRMutex1	9	0	68	4	2
+18	__CLSWMutex1	9	0	72	4	2
+19	__CLSCSMutex1	9	0	76	4	2
+20	__CLSWMutex0	9	0	80	4	2
+21	__CLSRMutex0	9	0	84	4	2
+22	__CLSCSMutex0	9	0	88	4	2
+23	__constVal200	4	0	92	2	2
+24	____ResetSensorSubroutine_return	1	1	94	1	6
+25	__RLSBytesCount3	1	1	95	1	7
+26	__RLSBIterations3	1	1	96	1	4
+27	__constVal15	2	0	97	1	2
+28	__RLSBytesCount2	1	1	98	1	7
+29	__RLSBResult2	2	1	99	1	7
+30	____ReadLSBytes2_return	1	1	100	1	3
+31	__RLSBIterations2	1	1	101	1	4
+32	__RLSBResult3	2	1	102	1	7
+33	____ReadLSBytes3_return	1	1	103	1	3
+34	__constVal2	2	0	104	1	2
+35	__ResetSensorTmp	1	1	105	1	2
+36	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	106	1	8
+37	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	107	1	8
+38	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	108	1	8
+39	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	109	1	4
+40	____initialize_global_data_return	1	1	110	1	3
+41	__constVal1	2	0	111	1	12
+42	__PrintaSensores_return	1	1	112	1	3
+43	__constVal0	2	1	113	1	6
+44	__constVal3	2	0	114	1	2
+45	__ResetSensorPort	1	1	115	1	6
+46	__inicializaSensores_return	1	1	116	1	3
+47	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	117	1	8
+48	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores	1	1	118	1	8
+49	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	119	1	20
+50	__RLSBIterations0	1	1	120	1	4
+51	__LSWriteOptionsVar	1	1	121	1	8
+52	____ReadLSBytes1_return	1	1	122	1	3
+53	____ReadLSBytes0_return	1	1	123	1	3
+54	__RLSBResult0	2	1	124	1	7
+55	__RLSBytesCount0	1	1	125	1	7
+56	__RLSBResult1	2	1	126	1	7
+57	__RLSBytesCount1	1	1	127	1	7
+58	__RLSBIterations1	1	1	128	1	4
+59	__CLSWArgs3	8	0	4	12	5
+60	__CLSWArgs3.Result	2	1	132	1	5
+61	__CLSWArgs3.Port	1	1	133	1	5
+62	__CLSWArgs3.Buffer	7	0	134	4	5
+63	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
+64	__CLSWArgs3.ReturnLen	1	1	136	1	5
+65	__CLSCSArgs3	8	0	3	4	4
+66	__CLSCSArgs3.Result	2	1	140	1	4
+67	__CLSCSArgs3.Port	1	1	141	1	4
+68	__CLSCSArgs3.BytesReady	1	1	142	1	4
+69	__CLSRArgs2	8	0	4	12	5
+70	__CLSRArgs2.Result	2	1	144	1	5
+71	__CLSRArgs2.Port	1	1	145	1	5
+72	__CLSRArgs2.Buffer	7	0	146	4	5
+73	__CLSRArgs2.Buffer.Buffer_type	1	0	0	1	0
+74	__CLSRArgs2.BufferLen	1	1	148	1	5
+75	__PointOutArgs	8	0	3	12	4
+76	__PointOutArgs.Result	2	1	152	1	4
+77	__PointOutArgs.Location	8	0	2	4	4
+78	__PointOutArgs.Location.X	4	1	156	2	4
+79	__PointOutArgs.Location.Y	4	1	158	2	4
+80	__PointOutArgs.Options	5	1	160	4	4
+81	__CLSWArgs1	8	0	4	12	5
+82	__CLSWArgs1.Result	2	1	164	1	5
+83	__CLSWArgs1.Port	1	1	165	1	5
+84	__CLSWArgs1.Buffer	7	0	166	4	5
+85	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
+86	__CLSWArgs1.ReturnLen	1	1	168	1	5
+87	__CLSRArgs3	8	0	4	12	5
+88	__CLSRArgs3.Result	2	1	172	1	5
+89	__CLSRArgs3.Port	1	1	173	1	5
+90	__CLSRArgs3.Buffer	7	0	174	4	5
+91	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
+92	__CLSRArgs3.BufferLen	1	1	176	1	5
+93	__CLSCSArgs1	8	0	3	4	4
+94	__CLSCSArgs1.Result	2	1	180	1	4
+95	__CLSCSArgs1.Port	1	1	181	1	4
+96	__CLSCSArgs1.BytesReady	1	1	182	1	4
+97	__TextOutArgs	8	0	4	16	48
+98	__TextOutArgs.Result	2	1	184	1	48
+99	__TextOutArgs.Location	8	0	2	4	48
+100	__TextOutArgs.Location.X	4	1	188	2	48
+101	__TextOutArgs.Location.Y	4	1	190	2	48
+102	__TextOutArgs.Text	7	0	192	4	48
+103	__TextOutArgs.Text.Text_type	1	0	0	1	0
+104	__TextOutArgs.Options	5	1	196	4	48
+105	__CLSRArgs0	8	0	4	12	5
+106	__CLSRArgs0.Result	2	1	200	1	5
+107	__CLSRArgs0.Port	1	1	201	1	5
+108	__CLSRArgs0.Buffer	7	0	202	4	5
+109	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+110	__CLSRArgs0.BufferLen	1	1	204	1	5
+111	__iniciaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	1
+112	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Result	3	1	208	2	1
+113	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	210	1	1
+114	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	212	4	1
+115	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
+116	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	214	1	1
+117	__CLSWArgs0	8	0	4	12	5
+118	__CLSWArgs0.Result	2	1	216	1	5
+119	__CLSWArgs0.Port	1	1	217	1	5
+120	__CLSWArgs0.Buffer	7	0	218	4	5
+121	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+122	__CLSWArgs0.ReturnLen	1	1	220	1	5
+123	__CLSCSArgs0	8	0	3	4	4
+124	__CLSCSArgs0.Result	2	1	224	1	4
+125	__CLSCSArgs0.Port	1	1	225	1	4
+126	__CLSCSArgs0.BytesReady	1	1	226	1	4
+127	__CLSCSArgs2	8	0	3	4	4
+128	__CLSCSArgs2.Result	2	1	228	1	4
+129	__CLSCSArgs2.Port	1	1	229	1	4
+130	__CLSCSArgs2.BytesReady	1	1	230	1	4
+131	__CLSRArgs1	8	0	4	12	5
+132	__CLSRArgs1.Result	2	1	232	1	5
+133	__CLSRArgs1.Port	1	1	233	1	5
+134	__CLSRArgs1.Buffer	7	0	234	4	5
+135	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
+136	__CLSRArgs1.BufferLen	1	1	236	1	5
+137	__CLSWArgs2	8	0	4	12	5
+138	__CLSWArgs2.Result	2	1	240	1	5
+139	__CLSWArgs2.Port	1	1	241	1	5
+140	__CLSWArgs2.Buffer	7	0	242	4	5
+141	__CLSWArgs2.Buffer.Buffer_type	1	0	0	1	0
+142	__CLSWArgs2.ReturnLen	1	1	244	1	5
+143	__desligaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	1
+144	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Result	3	1	248	2	1
+145	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	250	1	1
+146	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	252	4	1
+147	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
+148	__desligaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	254	1	1
+149	__constStr0018	7	0	256	4	1
+150	__constStr0018.__constStr0018_type	1	1	0	1	0
+151	__constStr0016	7	0	258	4	1
+152	__constStr0016.__constStr0016_type	1	1	0	1	0
+153	__constStr0015	7	0	260	4	1
+154	__constStr0015.__constStr0015_type	1	1	0	1	0
+155	__constStr0017	7	0	262	4	1
+156	__constStr0017.__constStr0017_type	1	1	0	1	0
+157	__RLSReadBuf2	7	0	264	4	8
+158	__RLSReadBuf2.__RLSReadBuf2_type	1	0	0	1	0
+159	__RLSLastGoodRead3	7	0	266	4	2
+160	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
+161	__RLSLastGoodRead1	7	0	268	4	2
+162	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
+163	__RLSReadBuf1	7	0	270	4	8
+164	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
+165	__RLSLastGoodRead2	7	0	272	4	2
+166	__RLSLastGoodRead2.__RLSLastGoodRead2_type	1	0	0	1	0
+167	__RLSReadBuf0	7	0	274	4	8
+168	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
+169	__RLSBbufLSWrite1	7	0	276	4	4
+170	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+171	__LSWriteOptions	7	0	278	4	4
+172	__LSWriteOptions.__LSWriteOptions_type	1	0	0	1	0
+173	__strbufPrintaSensores	7	0	280	4	8
+174	__strbufPrintaSensores.__strbufPrintaSensores_type	1	0	0	1	0
+175	__RLSReadBuf3	7	0	282	4	8
+176	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
+177	__RLSLastGoodRead0	7	0	284	4	2
+178	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	368	0	#line 368 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-0	369	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	368	2	#line 368 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-0	368	2	#line 368 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-0	369	2		subcall teste1, __teste1_return
-0	368	4	#line 368 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-0	369	4		exit -1, -1
-1	98	0	#line 98 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	99	0		strcat __strbufiniciaBlue, __constStr0009
-1	98	4	#line 98 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	99	4		mov __iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name, __strbufiniciaBlue
-1	98	6	#line 98 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	99	6	#line 99 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	100	6		set __iniciaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot, 1
-1	99	9	#line 99 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	99	9	#line 99 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	100	9	#line 100 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	101	9		set __iniciaBlue_7qG2_DADOS_BT_7qG2_000.Action, 1
-1	100	12	#line 100 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	100	12	#line 100 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	103	12	#line 103 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	104	12	#pragma macro 4
-1	104	12	#line 104 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	104	12		syscall 36, __iniciaBlue_7qG2_DADOS_BT_7qG2_000
-1	102	15	#line 102 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	102	15	#line 102 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	102	15	#line 102 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	102	15	#line 102 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	104	15	#line 104 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	103	15	#line 103 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	104	15	#line 104 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	105	15		set __Wait_7qG2_ms_7qG2_000_inline_iniciaBlue, 30
-1	104	18	#line 104 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	8869	18	#line 8869 "NXCDefs.h"
-1	8870	18		waitv __Wait_7qG2_ms_7qG2_000_inline_iniciaBlue
-1	8869	20	#line 8869 "NXCDefs.h"
-1	104	20	#line 104 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	106	20	#line 106 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	107	20	#pragma macro 5
-1	107	20		acquire __CBTCSMutex
-1	107	21		mov __CBTCSArgs.Connection, __constVal1
-1	107	23		syscall 28, __CBTCSArgs
-1	107	26		mov __D0iniciaBlue, __CBTCSArgs.Result
-1	107	28		release __CBTCSMutex
-1	8324	29	#line 8324 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	106	29	#line 106 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	107	29		mov __signed_stack_001iniciaBlue, __D0iniciaBlue
-1	106	31	#line 106 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	107	31		set __D0iniciaBlue, 0
-1	106	34	#line 106 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	107	34		cmp 5, __D0iniciaBlue, __signed_stack_001iniciaBlue, __D0iniciaBlue
-1	106	38	#line 106 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	107	38		brtst 4, __ASM_Label_631, __D0iniciaBlue
-1	106	41	#line 106 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	107	41		jmp __ASM_Label_630
-1	106	43	#line 106 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	106	43	#line 106 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	107	43	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	108	43		set __signed_stack_001iniciaBlue, 0
-1	107	46	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	107	46	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	108	46		set __signed_stack_002iniciaBlue, 56
-1	107	49	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	107	49	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	108	49		strcat __strbufiniciaBlue, __constStr0010
-1	107	53	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	108	53		acquire __TextOutMutex
-1	107	54	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	108	54		mov __TextOutArgs.Location.X, __signed_stack_001iniciaBlue
-1	107	56	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	108	56		mov __TextOutArgs.Location.Y, __signed_stack_002iniciaBlue
-1	107	58	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	108	58		set __TextOutArgs.Options, 0
-1	107	61	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	108	61		mov __TextOutArgs.Text, __strbufiniciaBlue
-1	107	63	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	108	63		syscall 13, __TextOutArgs
-1	107	66	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	108	66		mov __D0iniciaBlue, __TextOutArgs.Result
-1	107	68	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	108	68		release __TextOutMutex
-1	107	69	#line 107 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	110	69	#line 110 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-1	111	69		subret __iniciaBlue_return
-2	112	0	#line 112 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	113	0		strcat __strbufdesligaBlue, __constStr0009
-2	112	4	#line 112 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	113	4		mov __desligaBlue_7qG2_DADOS_BT_7qG2_000.Name, __strbufdesligaBlue
-2	112	6	#line 112 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	113	6	#line 113 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	114	6		set __desligaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot, 1
-2	113	9	#line 113 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	113	9	#line 113 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	114	9	#line 114 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	115	9		set __desligaBlue_7qG2_DADOS_BT_7qG2_000.Action, 0
-2	114	12	#line 114 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	114	12	#line 114 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	117	12	#line 117 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	118	12	#pragma macro 4
-2	118	12	#line 118 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	118	12		syscall 36, __desligaBlue_7qG2_DADOS_BT_7qG2_000
-2	116	15	#line 116 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	116	15	#line 116 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	116	15	#line 116 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	116	15	#line 116 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	118	15	#line 118 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	117	15	#line 117 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	118	15	#line 118 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	119	15		set __Wait_7qG2_ms_7qG2_000_inline_desligaBlue, 30
-2	118	18	#line 118 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	8869	18	#line 8869 "NXCDefs.h"
-2	8870	18		waitv __Wait_7qG2_ms_7qG2_000_inline_desligaBlue
-2	8869	20	#line 8869 "NXCDefs.h"
-2	118	20	#line 118 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	120	20	#line 120 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	121	20	#pragma macro 5
-2	121	20		acquire __CBTCSMutex
-2	121	21		mov __CBTCSArgs.Connection, __constVal1
-2	121	23		syscall 28, __CBTCSArgs
-2	121	26		mov __D0desligaBlue, __CBTCSArgs.Result
-2	121	28		release __CBTCSMutex
-2	8422	29	#line 8422 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	120	29	#line 120 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	121	29		mov __signed_stack_001desligaBlue, __D0desligaBlue
-2	120	31	#line 120 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	121	31		set __D0desligaBlue, 0
-2	120	34	#line 120 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	121	34		cmp 4, __D0desligaBlue, __signed_stack_001desligaBlue, __D0desligaBlue
-2	120	38	#line 120 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	121	38		brtst 4, __ASM_Label_645, __D0desligaBlue
-2	120	41	#line 120 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	121	41		jmp __ASM_Label_644
-2	120	43	#line 120 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	120	43	#line 120 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	121	43	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	122	43		set __signed_stack_001desligaBlue, 0
-2	121	46	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	121	46	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	122	46		set __signed_stack_002desligaBlue, 56
-2	121	49	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	121	49	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	122	49		strcat __strbufdesligaBlue, __constStr0011
-2	121	53	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	122	53		acquire __TextOutMutex
-2	121	54	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	122	54		mov __TextOutArgs.Location.X, __signed_stack_001desligaBlue
-2	121	56	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	122	56		mov __TextOutArgs.Location.Y, __signed_stack_002desligaBlue
-2	121	58	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	122	58		set __TextOutArgs.Options, 0
-2	121	61	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	122	61		mov __TextOutArgs.Text, __strbufdesligaBlue
-2	121	63	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	122	63		syscall 13, __TextOutArgs
-2	121	66	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	122	66		mov __D0desligaBlue, __TextOutArgs.Result
-2	121	68	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	122	68		release __TextOutMutex
-2	121	69	#line 121 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	127	69	#line 127 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-2	128	69		subret __desligaBlue_return
-3	128	0	#line 128 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-3	129	0		mov __signed_stack_001distanciaGiro, __distanciaGiro_7qG2_grau_7qG2_000
-3	128	2	#line 128 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-3	128	2	#line 128 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-3	129	2		set __D0distanciaGiro, 172
-3	128	5	#line 128 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-3	129	5		mul __signed_stack_001distanciaGiro, __signed_stack_001distanciaGiro, __D0distanciaGiro
-3	128	9	#line 128 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-3	128	9	#line 128 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-3	129	9		set __D0distanciaGiro, 1420
-3	128	12	#line 128 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-3	129	12		div __D0distanciaGiro, __signed_stack_001distanciaGiro, __D0distanciaGiro
-3	128	16	#line 128 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-3	129	16		subret __distanciaGiro_return
-3	128	18	#line 128 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-3	131	18	#line 131 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-3	132	18		subret __distanciaGiro_return
-4	132	0	#line 132 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	133	0		mov __signed_stack_001vira, __vira_7qG2_direcao_7qG2_000
-4	132	2	#line 132 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	132	2	#line 132 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	133	2		set __D0vira, 2
-4	132	5	#line 132 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	133	5		cmp 4, __D0vira, __signed_stack_001vira, __D0vira
-4	133	9	#line 133 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	134	9		brtst 4, __ASM_Label_664, __D0vira
-4	133	12	#line 133 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	134	12		set __D0vira, 90
-4	133	15	#line 133 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	134	15	#pragma macro 7
-4	134	15		setout __constVal1, 2, __D0vira, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	8527	38	#line 8527 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	133	38	#line 133 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	134	38	#line 134 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	135	38		mov __D0vira, __constValNeg90
-4	134	40	#line 134 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	135	40	#pragma macro 7
-4	135	40		setout __constVal0, 2, __D0vira, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	8532	63	#line 8532 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	134	63	#line 134 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	136	63	#line 136 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	137	63		getout __signed_stack_001vira, __constVal1, 4
-4	136	67	#line 136 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	136	67	#line 136 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	137	67		getout __D0vira, __constVal0, 4
-4	136	71	#line 136 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	137	71		sub __signed_stack_001vira, __signed_stack_001vira, __D0vira
-4	136	75	#line 136 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	136	75	#line 136 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	137	75		set __D0vira, 2
-4	136	78	#line 136 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	137	78		div __distanciaGiro_7qG2_grau_7qG2_000, __signed_stack_001vira, __D0vira
-4	136	82	#line 136 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	136	82	#line 136 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	137	82		subcall distanciaGiro, __distanciaGiro_return
-4	136	84	#line 136 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	137	84		mov __signed_stack_001vira, __D0distanciaGiro
-4	136	86	#line 136 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	137	86	#line 137 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	138	86		mov __D0vira, __vira_7qG2_angulo_7qG2_000
-4	137	88	#line 137 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	138	88		cmp 0, __D0vira, __signed_stack_001vira, __D0vira
-4	139	92	#line 139 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	140	92		brtst 4, __ASM_Label_670, __D0vira
-4	140	95	#line 140 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	141	95		jmp __ASM_Label_669
-4	140	97	#line 140 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	140	97	#line 140 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	141	97	#pragma macro 7
-4	141	97		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	8580	120	#line 8580 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	140	120	#line 140 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	141	120	#line 141 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	142	120	#pragma macro 7
-4	142	120		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	8583	143	#line 8583 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	141	143	#line 141 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	143	143	#line 143 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	144	143		jmp __ASM_Label_677
-4	143	145	#line 143 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	144	145		mov __signed_stack_001vira, __vira_7qG2_direcao_7qG2_000
-4	143	147	#line 143 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	143	147	#line 143 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	144	147		set __D0vira, 1
-4	143	150	#line 143 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	144	150		cmp 4, __D0vira, __signed_stack_001vira, __D0vira
-4	144	154	#line 144 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	145	154		brtst 4, __ASM_Label_680, __D0vira
-4	144	157	#line 144 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	145	157		mov __D0vira, __constValNeg90
-4	144	159	#line 144 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	145	159	#pragma macro 7
-4	145	159		setout __constVal1, 2, __D0vira, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	8605	182	#line 8605 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	144	182	#line 144 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	145	182	#line 145 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	146	182		set __D0vira, 90
-4	145	185	#line 145 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	146	185	#pragma macro 7
-4	146	185		setout __constVal0, 2, __D0vira, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	8610	208	#line 8610 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	145	208	#line 145 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	147	208	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	148	208		set __signed_stack_001vira, 0
-4	147	211	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	147	211	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	148	211		getout __D0vira, __constVal1, 4
-4	147	215	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	148	215		sub __signed_stack_001vira, __signed_stack_001vira, __D0vira
-4	147	219	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	147	219	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	148	219		getout __D0vira, __constVal0, 4
-4	147	223	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	148	223		add __signed_stack_001vira, __signed_stack_001vira, __D0vira
-4	147	227	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	147	227	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	148	227		set __D0vira, 2
-4	147	230	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	148	230		div __distanciaGiro_7qG2_grau_7qG2_000, __signed_stack_001vira, __D0vira
-4	147	234	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	147	234	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	148	234		subcall distanciaGiro, __distanciaGiro_return
-4	147	236	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	148	236		mov __signed_stack_001vira, __D0distanciaGiro
-4	147	238	#line 147 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	148	238	#line 148 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	149	238		mov __D0vira, __vira_7qG2_angulo_7qG2_000
-4	148	240	#line 148 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	149	240		cmp 0, __D0vira, __signed_stack_001vira, __D0vira
-4	150	244	#line 150 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	151	244		brtst 4, __ASM_Label_686, __D0vira
-4	151	247	#line 151 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	152	247		jmp __ASM_Label_685
-4	151	249	#line 151 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	151	249	#line 151 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	152	249	#pragma macro 7
-4	152	249		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	8666	272	#line 8666 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	151	272	#line 151 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	152	272	#line 152 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	153	272	#pragma macro 7
-4	153	272		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	8669	295	#line 8669 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	152	295	#line 152 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	157	295	#line 157 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	157	295	#line 157 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	157	295	#line 157 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-4	158	295		subret __vira_return
-5	302	0	#line 302 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	303	0		set __teste1_7qG2_aux1_7qG2_000, 0
-5	302	3	#line 302 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	302	3	#line 302 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	303	3		set __teste1_7qG2_aux_7qG2_000, 0
-5	302	6	#line 302 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	303	6	#line 303 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	304	6		subcall desligaBlue, __desligaBlue_return
-5	303	8	#line 303 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	304	8	#line 304 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	305	8		subcall iniciaBlue, __iniciaBlue_return
-5	304	10	#line 304 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	306	10	#line 306 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	307	10		mov __signed_stack_001teste1, __teste1_7qG2_aux1_7qG2_000
-5	306	12	#line 306 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	307	12	#line 307 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	308	12		set __D0teste1, 0
-5	307	15	#line 307 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	308	15		cmp 4, __D0teste1, __signed_stack_001teste1, __D0teste1
-5	308	19	#line 308 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	309	19		brtst 4, __ASM_Label_858, __D0teste1
-5	308	22	#line 308 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	309	22	#pragma macro 25
-5	309	22		acquire __RemoteMutex
-5	309	23		mov __SRSTmpBuf, __DCMessageWritePacket
-5	309	25		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
-5	309	30		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-5	309	35		mov __SRSTmpLongVal, __constVal1
-5	309	37		flatten __SRSFlattenBuf, __SRSTmpLongVal
-5	309	40		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-5	309	45		brcmp 0, __ConnWrite_Else0, __constVal1, __constVal4
-5	309	49		acquire __CHSWMutex
-5	309	50		sub __WFRRTmpByte, __constVal1, __constVal4
-5	309	54		arrbuild __CHSWArgs.Buffer, __WFRRTmpByte, __SRSSendBuf
-5	309	59		syscall 37, __CHSWArgs
-5	309	62		mov __D0teste1, __CHSWArgs.Status
-5	309	64		release __CHSWMutex
-5	309	65		jmp __ConnWrite_EndIf0
-5	309	67		acquire __CBTWMutex
-5	309	68		mov __CBTWArgs.Connection, __constVal1
-5	309	70		mov __CBTWArgs.Buffer, __SRSSendBuf
-5	309	72		syscall 29, __CBTWArgs
-5	309	75		mov __D0teste1, __CBTWArgs.Result
-5	309	77		release __CBTWMutex
-5	309	78		release __RemoteMutex
-5	9569	79	#line 9569 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	308	79	#line 308 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	308	79	#line 308 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	309	79	#line 309 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	310	79	#pragma macro 9
-5	310	79		acquire __MRMutex
-5	310	80		mov __MRArgs.QueueID, __constVal1
-5	310	82		mov __MRArgs.Remove, __constVal1
-5	310	84		set __RRNTmpVal, 0
-5	310	87		syscall 27, __MRArgs
-5	310	90		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-5	310	95		mov __teste1_7qG2_aux1_7qG2_000, __RRNTmpVal
-5	310	97		mov __D0teste1, __MRArgs.Result
-5	310	99		release __MRMutex
-5	9573	100	#line 9573 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	309	100	#line 309 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	309	100	#line 309 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	310	100	#line 310 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	311	100		set __Wait_7qG2_ms_7qG2_000_inline_teste1, 30
-5	310	103	#line 310 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	8869	103	#line 8869 "NXCDefs.h"
-5	8870	103		waitv __Wait_7qG2_ms_7qG2_000_inline_teste1
-5	8869	105	#line 8869 "NXCDefs.h"
-5	310	105	#line 310 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	312	105	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	313	105		jmp __ASM_Label_857
-5	312	107	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	312	107	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	313	107		set __signed_stack_001teste1, 30
-5	312	110	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	312	110	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	313	110		set __signed_stack_002teste1, 48
-5	312	113	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	312	113	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	313	113		strcat __strbufteste1, __constStr0012
-5	312	117	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	313	117		acquire __TextOutMutex
-5	312	118	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	313	118		mov __TextOutArgs.Location.X, __signed_stack_001teste1
-5	312	120	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	313	120		mov __TextOutArgs.Location.Y, __signed_stack_002teste1
-5	312	122	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	313	122		set __TextOutArgs.Options, 0
-5	312	125	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	313	125		mov __TextOutArgs.Text, __strbufteste1
-5	312	127	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	313	127		syscall 13, __TextOutArgs
-5	312	130	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	313	130		mov __D0teste1, __TextOutArgs.Result
-5	312	132	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	313	132		release __TextOutMutex
-5	312	133	#line 312 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	318	133	#line 318 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	319	133		mov __signed_stack_001teste1, __teste1_7qG2_aux_7qG2_000
-5	318	135	#line 318 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	319	135	#line 319 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	320	135		set __D0teste1, 0
-5	319	138	#line 319 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	320	138		cmp 4, __D0teste1, __signed_stack_001teste1, __D0teste1
-5	320	142	#line 320 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	321	142		brtst 4, __ASM_Label_870, __D0teste1
-5	320	145	#line 320 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	321	145		set __D0teste1, 60
-5	320	148	#line 320 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	321	148	#pragma macro 7
-5	321	148		setout __constVal0, 2, __D0teste1, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-5	9642	171	#line 9642 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	320	171	#line 320 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	321	171	#line 321 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	322	171		set __D0teste1, 60
-5	321	174	#line 321 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	322	174	#pragma macro 7
-5	322	174		setout __constVal1, 2, __D0teste1, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-5	9647	197	#line 9647 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	321	197	#line 321 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	322	197	#line 322 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	323	197		set __Wait_7qG2_ms_7qG2_000_inline_teste1, 20
-5	322	200	#line 322 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	8869	200	#line 8869 "NXCDefs.h"
-5	8870	200		waitv __Wait_7qG2_ms_7qG2_000_inline_teste1
-5	8869	202	#line 8869 "NXCDefs.h"
-5	322	202	#line 322 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	323	202	#line 323 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	324	202	#pragma macro 9
-5	324	202		acquire __MRMutex
-5	324	203		mov __MRArgs.QueueID, __constVal1
-5	324	205		mov __MRArgs.Remove, __constVal1
-5	324	207		set __RRNTmpVal, 0
-5	324	210		syscall 27, __MRArgs
-5	324	213		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-5	324	218		mov __teste1_7qG2_aux_7qG2_000, __RRNTmpVal
-5	324	220		mov __D0teste1, __MRArgs.Result
-5	324	222		release __MRMutex
-5	9658	223	#line 9658 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	323	223	#line 323 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	323	223	#line 323 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	325	223	#line 325 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	326	223		jmp __ASM_Label_869
-5	325	225	#line 325 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	325	225	#line 325 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	326	225		mov __signed_stack_001teste1, __teste1_7qG2_aux_7qG2_000
-5	325	227	#line 325 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	325	227	#line 325 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	326	227		set __D0teste1, 1
-5	325	230	#line 325 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	326	230		cmp 4, __D0teste1, __signed_stack_001teste1, __D0teste1
-5	326	234	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	327	234		brtst 4, __ASM_Label_881, __D0teste1
-5	326	237	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	327	237		set __signed_stack_001teste1, 30
-5	326	240	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	326	240	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	327	240		set __signed_stack_002teste1, 40
-5	326	243	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	326	243	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	327	243		strcat __strbufteste1, __constStr0013
-5	326	247	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	327	247		acquire __TextOutMutex
-5	326	248	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	327	248		mov __TextOutArgs.Location.X, __signed_stack_001teste1
-5	326	250	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	327	250		mov __TextOutArgs.Location.Y, __signed_stack_002teste1
-5	326	252	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	327	252		set __TextOutArgs.Options, 0
-5	326	255	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	327	255		mov __TextOutArgs.Text, __strbufteste1
-5	326	257	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	327	257		syscall 13, __TextOutArgs
-5	326	260	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	327	260		mov __D0teste1, __TextOutArgs.Result
-5	326	262	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	327	262		release __TextOutMutex
-5	326	263	#line 326 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	327	263	#line 327 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	328	263		set __vira_7qG2_angulo_7qG2_000, 90
-5	327	266	#line 327 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	327	266	#line 327 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	328	266		set __vira_7qG2_direcao_7qG2_000, 1
-5	327	269	#line 327 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	327	269	#line 327 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	328	269		subcall vira, __vira_return
-5	327	271	#line 327 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	328	271	#line 328 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	329	271		set __Wait_7qG2_ms_7qG2_000_inline_teste1, 100
-5	328	274	#line 328 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	8869	274	#line 8869 "NXCDefs.h"
-5	8870	274		waitv __Wait_7qG2_ms_7qG2_000_inline_teste1
-5	8869	276	#line 8869 "NXCDefs.h"
-5	328	276	#line 328 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	329	276	#line 329 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	330	276	#pragma macro 9
-5	330	276		acquire __MRMutex
-5	330	277		mov __MRArgs.QueueID, __constVal1
-5	330	279		mov __MRArgs.Remove, __constVal1
-5	330	281		set __RRNTmpVal, 0
-5	330	284		syscall 27, __MRArgs
-5	330	287		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-5	330	292		mov __teste1_7qG2_aux_7qG2_000, __RRNTmpVal
-5	330	294		mov __D0teste1, __MRArgs.Result
-5	330	296		release __MRMutex
-5	9730	297	#line 9730 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	329	297	#line 329 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	329	297	#line 329 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	330	297	#line 330 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	331	297		set __Wait_7qG2_ms_7qG2_000_inline_teste1, 40
-5	330	300	#line 330 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	8869	300	#line 8869 "NXCDefs.h"
-5	8870	300		waitv __Wait_7qG2_ms_7qG2_000_inline_teste1
-5	8869	302	#line 8869 "NXCDefs.h"
-5	330	302	#line 330 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	331	302	#line 331 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	332	302		mov __signed_stack_001teste1, __teste1_7qG2_aux_7qG2_000
-5	331	304	#line 331 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	331	304	#line 331 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	332	304		set __D0teste1, 1
-5	331	307	#line 331 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	332	307		cmp 4, __D0teste1, __signed_stack_001teste1, __D0teste1
-5	332	311	#line 332 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	333	311		brtst 4, __ASM_Label_896, __D0teste1
-5	332	314	#line 332 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	333	314		set __vira_7qG2_angulo_7qG2_000, 180
-5	332	317	#line 332 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	332	317	#line 332 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	333	317		set __vira_7qG2_direcao_7qG2_000, 2
-5	332	320	#line 332 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	332	320	#line 332 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	333	320		subcall vira, __vira_return
-5	332	322	#line 332 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	333	322	#line 333 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	334	322		set __Wait_7qG2_ms_7qG2_000_inline_teste1, 100
-5	333	325	#line 333 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	8869	325	#line 8869 "NXCDefs.h"
-5	8870	325		waitv __Wait_7qG2_ms_7qG2_000_inline_teste1
-5	8869	327	#line 8869 "NXCDefs.h"
-5	333	327	#line 333 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	336	327	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	337	327		jmp __ASM_Label_903
-5	336	329	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	337	329		set __signed_stack_001teste1, 30
-5	336	332	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	336	332	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	337	332		set __signed_stack_002teste1, 32
-5	336	335	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	336	335	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	337	335		strcat __strbufteste1, __constStr0014
-5	336	339	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	337	339		acquire __TextOutMutex
-5	336	340	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	337	340		mov __TextOutArgs.Location.X, __signed_stack_001teste1
-5	336	342	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	337	342		mov __TextOutArgs.Location.Y, __signed_stack_002teste1
-5	336	344	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	337	344		set __TextOutArgs.Options, 0
-5	336	347	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	337	347		mov __TextOutArgs.Text, __strbufteste1
-5	336	349	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	337	349		syscall 13, __TextOutArgs
-5	336	352	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	337	352		mov __D0teste1, __TextOutArgs.Result
-5	336	354	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	337	354		release __TextOutMutex
-5	336	355	#line 336 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	337	355	#line 337 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	338	355		set __Wait_7qG2_ms_7qG2_000_inline_teste1, 100
-5	337	358	#line 337 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	8869	358	#line 8869 "NXCDefs.h"
-5	8870	358		waitv __Wait_7qG2_ms_7qG2_000_inline_teste1
-5	8869	360	#line 8869 "NXCDefs.h"
-5	337	360	#line 337 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	341	360	#line 341 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	341	360	#line 341 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	341	360	#line 341 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	342	360	#pragma macro 7
-5	342	360		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-5	9821	383	#line 9821 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	341	383	#line 341 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	342	383	#line 342 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	343	383	#pragma macro 7
-5	343	383		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-5	9824	406	#line 9824 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	342	406	#line 342 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	344	406	#line 344 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	345	406		set __Wait_7qG2_ms_7qG2_000_inline_teste1, 100
-5	344	409	#line 344 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	8869	409	#line 8869 "NXCDefs.h"
-5	8870	409		waitv __Wait_7qG2_ms_7qG2_000_inline_teste1
-5	8869	411	#line 8869 "NXCDefs.h"
-5	344	411	#line 344 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	346	411	#line 346 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	347	411		set __D0teste1, 1
-5	346	414	#line 346 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	347	414		tst 5, __D0teste1, __D0teste1
-5	346	417	#line 346 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	347	417		brtst 4, __ASM_Label_868, __D0teste1
-5	346	420	#line 346 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	347	420		jmp __ASM_Label_867
-5	346	422	#line 346 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	346	422	#line 346 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	349	422	#line 349 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-5	350	422		subret __teste1_return
-6	372	0	#line 372 "C:\Users\Lucas\AppData\Local\Temp\temp.nxc"
-6	373	0		subret ____initialize_global_data_return
+0	382	0	#line 382 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+0	383	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	382	2	#line 382 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+0	382	2	#line 382 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+0	383	2		subcall inicializaSensores, __inicializaSensores_return
+0	382	4	#line 382 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+0	383	4	#line 383 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+0	384	4		subcall PrintaSensores, __PrintaSensores_return
+0	383	6	#line 383 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+0	384	6		exit -1, -1
+1	5724	0		setin __constVal1, __ResetSensorPort, 5
+1	5726	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5727	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5728	11		subret ____ResetSensorSubroutine_return
+2	6520	0	#pragma macro 27
+2	6520	0		acquire __CLSWMutex0
+2	6520	1		index __LSWriteOptionsVar, __LSWriteOptions, __constVal0
+2	6520	5		or __CLSWArgs0.Port, __constVal0, __LSWriteOptionsVar
+2	6520	9		mov __CLSWArgs0.ReturnLen, __RLSBytesCount0
+2	6520	11		mov __CLSWArgs0.Buffer, __RLSReadBuf0
+2	6520	13		syscall 21, __CLSWArgs0
+2	6520	16		mov __RLSBResult0, __CLSWArgs0.Result
+2	6520	18		release __CLSWMutex0
+2	6521	19	#line 6521 "NXTDefs.h"
+2	6522	19		brtst 5, __RLSBError0, __RLSBResult0
+2	6523	22		set __RLSBIterations0, 60
+2	6525	25	#pragma macro 23
+2	6525	25		acquire __CLSCSMutex0
+2	6525	26		set __CLSCSArgs0.Port, 0
+2	6525	29		syscall 23, __CLSCSArgs0
+2	6525	32		mov __RLSBytesCount0, __CLSCSArgs0.BytesReady
+2	6525	34		mov __RLSBResult0, __CLSCSArgs0.Result
+2	6525	36		release __CLSCSMutex0
+2	6525	37	#line 6525 "NXTDefs.h"
+2	6526	37		sub __RLSBIterations0, __RLSBIterations0, __constVal1
+2	6527	41		brtst 2, __RLSBError0, __RLSBIterations0
+2	6528	44		brtst 0, __RLSBError0, __RLSBResult0
+2	6529	47		brtst 4, __RLSBReadyToRead0, __RLSBResult0
+2	6531	50		wait 1
+2	6532	52		jmp __RLSBDoCheckStatus0
+2	6534	54		brtst 4, __RLSBReturn0, __RLSBytesCount0
+2	6535	57		arrinit __RLSReadBuf0, __constVal0, __RLSBytesCount0
+2	6537	61	#pragma macro 25
+2	6537	61		acquire __CLSRMutex0
+2	6537	62		set __CLSRArgs0.Port, 0
+2	6537	65		mov __CLSRArgs0.BufferLen, __RLSBytesCount0
+2	6537	67		syscall 22, __CLSRArgs0
+2	6537	70		mov __RLSReadBuf0, __CLSRArgs0.Buffer
+2	6537	72		mov __RLSBResult0, __CLSRArgs0.Result
+2	6537	74		release __CLSRMutex0
+2	6537	75	#line 6537 "NXTDefs.h"
+2	6538	75		brtst 5, __RLSBError0, __RLSBResult0
+2	6539	78		mov __RLSLastGoodRead0, __RLSReadBuf0
+2	6540	80		jmp __RLSBDone0
+2	6542	82		mov __RLSReadBuf0, __RLSLastGoodRead0
+2	6544	84		arrsize __RLSBytesCount0, __RLSReadBuf0
+2	6546	87		subret ____ReadLSBytes0_return
+3	6558	0	#pragma macro 27
+3	6558	0		acquire __CLSWMutex1
+3	6558	1		index __LSWriteOptionsVar, __LSWriteOptions, __constVal1
+3	6558	5		or __CLSWArgs1.Port, __constVal1, __LSWriteOptionsVar
+3	6558	9		mov __CLSWArgs1.ReturnLen, __RLSBytesCount1
+3	6558	11		mov __CLSWArgs1.Buffer, __RLSReadBuf1
+3	6558	13		syscall 21, __CLSWArgs1
+3	6558	16		mov __RLSBResult1, __CLSWArgs1.Result
+3	6558	18		release __CLSWMutex1
+3	6558	19	#line 6558 "NXTDefs.h"
+3	6559	19		brtst 5, __RLSBError1, __RLSBResult1
+3	6560	22		set __RLSBIterations1, 60
+3	6562	25	#pragma macro 23
+3	6562	25		acquire __CLSCSMutex1
+3	6562	26		set __CLSCSArgs1.Port, 1
+3	6562	29		syscall 23, __CLSCSArgs1
+3	6562	32		mov __RLSBytesCount1, __CLSCSArgs1.BytesReady
+3	6562	34		mov __RLSBResult1, __CLSCSArgs1.Result
+3	6562	36		release __CLSCSMutex1
+3	6562	37	#line 6562 "NXTDefs.h"
+3	6563	37		sub __RLSBIterations1, __RLSBIterations1, __constVal1
+3	6564	41		brtst 2, __RLSBError1, __RLSBIterations1
+3	6565	44		brtst 0, __RLSBError1, __RLSBResult1
+3	6566	47		brtst 4, __RLSBReadyToRead1, __RLSBResult1
+3	6568	50		wait 1
+3	6569	52		jmp __RLSBDoCheckStatus1
+3	6571	54		brtst 4, __RLSBReturn1, __RLSBytesCount1
+3	6572	57		arrinit __RLSReadBuf1, __constVal0, __RLSBytesCount1
+3	6574	61	#pragma macro 25
+3	6574	61		acquire __CLSRMutex1
+3	6574	62		set __CLSRArgs1.Port, 1
+3	6574	65		mov __CLSRArgs1.BufferLen, __RLSBytesCount1
+3	6574	67		syscall 22, __CLSRArgs1
+3	6574	70		mov __RLSReadBuf1, __CLSRArgs1.Buffer
+3	6574	72		mov __RLSBResult1, __CLSRArgs1.Result
+3	6574	74		release __CLSRMutex1
+3	6574	75	#line 6574 "NXTDefs.h"
+3	6575	75		brtst 5, __RLSBError1, __RLSBResult1
+3	6576	78		mov __RLSLastGoodRead1, __RLSReadBuf1
+3	6577	80		jmp __RLSBDone1
+3	6579	82		mov __RLSReadBuf1, __RLSLastGoodRead1
+3	6581	84		arrsize __RLSBytesCount1, __RLSReadBuf1
+3	6583	87		subret ____ReadLSBytes1_return
+4	6595	0	#pragma macro 27
+4	6595	0		acquire __CLSWMutex2
+4	6595	1		index __LSWriteOptionsVar, __LSWriteOptions, __constVal2
+4	6595	5		or __CLSWArgs2.Port, __constVal2, __LSWriteOptionsVar
+4	6595	9		mov __CLSWArgs2.ReturnLen, __RLSBytesCount2
+4	6595	11		mov __CLSWArgs2.Buffer, __RLSReadBuf2
+4	6595	13		syscall 21, __CLSWArgs2
+4	6595	16		mov __RLSBResult2, __CLSWArgs2.Result
+4	6595	18		release __CLSWMutex2
+4	6595	19	#line 6595 "NXTDefs.h"
+4	6596	19		brtst 5, __RLSBError2, __RLSBResult2
+4	6597	22		set __RLSBIterations2, 60
+4	6599	25	#pragma macro 23
+4	6599	25		acquire __CLSCSMutex2
+4	6599	26		set __CLSCSArgs2.Port, 2
+4	6599	29		syscall 23, __CLSCSArgs2
+4	6599	32		mov __RLSBytesCount2, __CLSCSArgs2.BytesReady
+4	6599	34		mov __RLSBResult2, __CLSCSArgs2.Result
+4	6599	36		release __CLSCSMutex2
+4	6599	37	#line 6599 "NXTDefs.h"
+4	6600	37		sub __RLSBIterations2, __RLSBIterations2, __constVal1
+4	6601	41		brtst 2, __RLSBError2, __RLSBIterations2
+4	6602	44		brtst 0, __RLSBError2, __RLSBResult2
+4	6603	47		brtst 4, __RLSBReadyToRead2, __RLSBResult2
+4	6605	50		wait 1
+4	6606	52		jmp __RLSBDoCheckStatus2
+4	6608	54		brtst 4, __RLSBReturn2, __RLSBytesCount2
+4	6609	57		arrinit __RLSReadBuf2, __constVal0, __RLSBytesCount2
+4	6611	61	#pragma macro 25
+4	6611	61		acquire __CLSRMutex2
+4	6611	62		set __CLSRArgs2.Port, 2
+4	6611	65		mov __CLSRArgs2.BufferLen, __RLSBytesCount2
+4	6611	67		syscall 22, __CLSRArgs2
+4	6611	70		mov __RLSReadBuf2, __CLSRArgs2.Buffer
+4	6611	72		mov __RLSBResult2, __CLSRArgs2.Result
+4	6611	74		release __CLSRMutex2
+4	6611	75	#line 6611 "NXTDefs.h"
+4	6612	75		brtst 5, __RLSBError2, __RLSBResult2
+4	6613	78		mov __RLSLastGoodRead2, __RLSReadBuf2
+4	6614	80		jmp __RLSBDone2
+4	6616	82		mov __RLSReadBuf2, __RLSLastGoodRead2
+4	6618	84		arrsize __RLSBytesCount2, __RLSReadBuf2
+4	6620	87		subret ____ReadLSBytes2_return
+5	6632	0	#pragma macro 27
+5	6632	0		acquire __CLSWMutex3
+5	6632	1		index __LSWriteOptionsVar, __LSWriteOptions, __constVal3
+5	6632	5		or __CLSWArgs3.Port, __constVal3, __LSWriteOptionsVar
+5	6632	9		mov __CLSWArgs3.ReturnLen, __RLSBytesCount3
+5	6632	11		mov __CLSWArgs3.Buffer, __RLSReadBuf3
+5	6632	13		syscall 21, __CLSWArgs3
+5	6632	16		mov __RLSBResult3, __CLSWArgs3.Result
+5	6632	18		release __CLSWMutex3
+5	6632	19	#line 6632 "NXTDefs.h"
+5	6633	19		brtst 5, __RLSBError3, __RLSBResult3
+5	6634	22		set __RLSBIterations3, 60
+5	6636	25	#pragma macro 23
+5	6636	25		acquire __CLSCSMutex3
+5	6636	26		set __CLSCSArgs3.Port, 3
+5	6636	29		syscall 23, __CLSCSArgs3
+5	6636	32		mov __RLSBytesCount3, __CLSCSArgs3.BytesReady
+5	6636	34		mov __RLSBResult3, __CLSCSArgs3.Result
+5	6636	36		release __CLSCSMutex3
+5	6636	37	#line 6636 "NXTDefs.h"
+5	6637	37		sub __RLSBIterations3, __RLSBIterations3, __constVal1
+5	6638	41		brtst 2, __RLSBError3, __RLSBIterations3
+5	6639	44		brtst 0, __RLSBError3, __RLSBResult3
+5	6640	47		brtst 4, __RLSBReadyToRead3, __RLSBResult3
+5	6642	50		wait 1
+5	6643	52		jmp __RLSBDoCheckStatus3
+5	6645	54		brtst 4, __RLSBReturn3, __RLSBytesCount3
+5	6646	57		arrinit __RLSReadBuf3, __constVal0, __RLSBytesCount3
+5	6648	61	#pragma macro 25
+5	6648	61		acquire __CLSRMutex3
+5	6648	62		set __CLSRArgs3.Port, 3
+5	6648	65		mov __CLSRArgs3.BufferLen, __RLSBytesCount3
+5	6648	67		syscall 22, __CLSRArgs3
+5	6648	70		mov __RLSReadBuf3, __CLSRArgs3.Buffer
+5	6648	72		mov __RLSBResult3, __CLSRArgs3.Result
+5	6648	74		release __CLSRMutex3
+5	6648	75	#line 6648 "NXTDefs.h"
+5	6649	75		brtst 5, __RLSBError3, __RLSBResult3
+5	6650	78		mov __RLSLastGoodRead3, __RLSReadBuf3
+5	6651	80		jmp __RLSBDone3
+5	6653	82		mov __RLSReadBuf3, __RLSLastGoodRead3
+5	6655	84		arrsize __RLSBytesCount3, __RLSReadBuf3
+5	6657	87		subret ____ReadLSBytes3_return
+6	88	0	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+6	89	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 0
+6	88	3	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+6	88	3	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+6	89	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+6	4523	5	#line 4523 "NXCDefs.h"
+6	4524	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+6	4523	7	#line 4523 "NXCDefs.h"
+6	4523	7	#line 4523 "NXCDefs.h"
+6	4524	7		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+6	4523	9	#line 4523 "NXCDefs.h"
+6	4524	9		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+6	4523	12	#line 4523 "NXCDefs.h"
+6	4524	12		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+6	4523	15	#line 4523 "NXCDefs.h"
+6	4524	15		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+6	4523	18	#line 4523 "NXCDefs.h"
+6	4523	18	#line 4523 "NXCDefs.h"
+6	4524	18		jmp __004__ASM_Label_37
+6	4523	20	#line 4523 "NXCDefs.h"
+6	4524	20		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+6	4523	23	#line 4523 "NXCDefs.h"
+6	4523	23	#line 4523 "NXCDefs.h"
+6	4524	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+6	4428	25	#line 4428 "NXCDefs.h"
+6	4429	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+6	4428	29	#line 4428 "NXCDefs.h"
+6	4523	29	#line 4523 "NXCDefs.h"
+6	4524	29	#line 4524 "NXCDefs.h"
+6	4525	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+6	4524	31	#line 4524 "NXCDefs.h"
+6	4524	31	#line 4524 "NXCDefs.h"
+6	4525	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+6	4524	34	#line 4524 "NXCDefs.h"
+6	4441	34	#line 4441 "NXCDefs.h"
+6	4442	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+6	4441	38	#line 4441 "NXCDefs.h"
+6	4524	38	#line 4524 "NXCDefs.h"
+6	4525	38	#line 4525 "NXCDefs.h"
+6	4526	38		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+6	4525	40	#line 4525 "NXCDefs.h"
+6	4459	40	#line 4459 "NXCDefs.h"
+6	4460	40	#pragma macro 4
+6	4460	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+6	4460	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+6	8316	44	#line 8316 "NXCDefs.h"
+6	4459	44	#line 4459 "NXCDefs.h"
+6	4525	44	#line 4525 "NXCDefs.h"
+6	88	44	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+6	89	44	#line 89 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+6	90	44		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 1
+6	89	47	#line 89 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+6	89	47	#line 89 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+6	90	47		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+6	4523	49	#line 4523 "NXCDefs.h"
+6	4524	49		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+6	4523	51	#line 4523 "NXCDefs.h"
+6	4523	51	#line 4523 "NXCDefs.h"
+6	4524	51		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+6	4523	53	#line 4523 "NXCDefs.h"
+6	4524	53		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+6	4523	56	#line 4523 "NXCDefs.h"
+6	4524	56		brtst 4, __005__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+6	4523	59	#line 4523 "NXCDefs.h"
+6	4524	59		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+6	4523	62	#line 4523 "NXCDefs.h"
+6	4523	62	#line 4523 "NXCDefs.h"
+6	4524	62		jmp __005__ASM_Label_37
+6	4523	64	#line 4523 "NXCDefs.h"
+6	4524	64		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+6	4523	67	#line 4523 "NXCDefs.h"
+6	4523	67	#line 4523 "NXCDefs.h"
+6	4524	67		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+6	4428	69	#line 4428 "NXCDefs.h"
+6	4429	69		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+6	4428	73	#line 4428 "NXCDefs.h"
+6	4523	73	#line 4523 "NXCDefs.h"
+6	4524	73	#line 4524 "NXCDefs.h"
+6	4525	73		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+6	4524	75	#line 4524 "NXCDefs.h"
+6	4524	75	#line 4524 "NXCDefs.h"
+6	4525	75		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+6	4524	78	#line 4524 "NXCDefs.h"
+6	4441	78	#line 4441 "NXCDefs.h"
+6	4442	78		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+6	4441	82	#line 4441 "NXCDefs.h"
+6	4524	82	#line 4524 "NXCDefs.h"
+6	4525	82	#line 4525 "NXCDefs.h"
+6	4526	82		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+6	4525	84	#line 4525 "NXCDefs.h"
+6	4459	84	#line 4459 "NXCDefs.h"
+6	4460	84	#pragma macro 4
+6	4460	84		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+6	4460	86		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+6	8379	88	#line 8379 "NXCDefs.h"
+6	4459	88	#line 4459 "NXCDefs.h"
+6	4525	88	#line 4525 "NXCDefs.h"
+6	89	88	#line 89 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+6	90	88	#line 90 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+6	91	88		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 2
+6	90	91	#line 90 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+6	90	91	#line 90 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+6	91	91		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+6	4523	93	#line 4523 "NXCDefs.h"
+6	4524	93		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+6	4523	95	#line 4523 "NXCDefs.h"
+6	4523	95	#line 4523 "NXCDefs.h"
+6	4524	95		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+6	4523	97	#line 4523 "NXCDefs.h"
+6	4524	97		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+6	4523	100	#line 4523 "NXCDefs.h"
+6	4524	100		brtst 4, __006__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+6	4523	103	#line 4523 "NXCDefs.h"
+6	4524	103		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+6	4523	106	#line 4523 "NXCDefs.h"
+6	4523	106	#line 4523 "NXCDefs.h"
+6	4524	106		jmp __006__ASM_Label_37
+6	4523	108	#line 4523 "NXCDefs.h"
+6	4524	108		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+6	4523	111	#line 4523 "NXCDefs.h"
+6	4523	111	#line 4523 "NXCDefs.h"
+6	4524	111		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+6	4428	113	#line 4428 "NXCDefs.h"
+6	4429	113		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+6	4428	117	#line 4428 "NXCDefs.h"
+6	4523	117	#line 4523 "NXCDefs.h"
+6	4524	117	#line 4524 "NXCDefs.h"
+6	4525	117		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+6	4524	119	#line 4524 "NXCDefs.h"
+6	4524	119	#line 4524 "NXCDefs.h"
+6	4525	119		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+6	4524	122	#line 4524 "NXCDefs.h"
+6	4441	122	#line 4441 "NXCDefs.h"
+6	4442	122		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+6	4441	126	#line 4441 "NXCDefs.h"
+6	4524	126	#line 4524 "NXCDefs.h"
+6	4525	126	#line 4525 "NXCDefs.h"
+6	4526	126		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+6	4525	128	#line 4525 "NXCDefs.h"
+6	4459	128	#line 4459 "NXCDefs.h"
+6	4460	128	#pragma macro 4
+6	4460	128		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+6	4460	130		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+6	8442	132	#line 8442 "NXCDefs.h"
+6	4459	132	#line 4459 "NXCDefs.h"
+6	4525	132	#line 4525 "NXCDefs.h"
+6	90	132	#line 90 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+6	91	132	#line 91 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+6	92	132		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 3
+6	91	135	#line 91 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+6	91	135	#line 91 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+6	92	135		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+6	4523	137	#line 4523 "NXCDefs.h"
+6	4524	137		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+6	4523	139	#line 4523 "NXCDefs.h"
+6	4523	139	#line 4523 "NXCDefs.h"
+6	4524	139		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+6	4523	141	#line 4523 "NXCDefs.h"
+6	4524	141		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+6	4523	144	#line 4523 "NXCDefs.h"
+6	4524	144		brtst 4, __007__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+6	4523	147	#line 4523 "NXCDefs.h"
+6	4524	147		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+6	4523	150	#line 4523 "NXCDefs.h"
+6	4523	150	#line 4523 "NXCDefs.h"
+6	4524	150		jmp __007__ASM_Label_37
+6	4523	152	#line 4523 "NXCDefs.h"
+6	4524	152		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+6	4523	155	#line 4523 "NXCDefs.h"
+6	4523	155	#line 4523 "NXCDefs.h"
+6	4524	155		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+6	4428	157	#line 4428 "NXCDefs.h"
+6	4429	157		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+6	4428	161	#line 4428 "NXCDefs.h"
+6	4523	161	#line 4523 "NXCDefs.h"
+6	4524	161	#line 4524 "NXCDefs.h"
+6	4525	161		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+6	4524	163	#line 4524 "NXCDefs.h"
+6	4524	163	#line 4524 "NXCDefs.h"
+6	4525	163		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+6	4524	166	#line 4524 "NXCDefs.h"
+6	4441	166	#line 4441 "NXCDefs.h"
+6	4442	166		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+6	4441	170	#line 4441 "NXCDefs.h"
+6	4524	170	#line 4524 "NXCDefs.h"
+6	4525	170	#line 4525 "NXCDefs.h"
+6	4526	170		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+6	4525	172	#line 4525 "NXCDefs.h"
+6	4459	172	#line 4459 "NXCDefs.h"
+6	4460	172	#pragma macro 4
+6	4460	172		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+6	4460	174		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+6	8505	176	#line 8505 "NXCDefs.h"
+6	4459	176	#line 4459 "NXCDefs.h"
+6	4525	176	#line 4525 "NXCDefs.h"
+6	91	176	#line 91 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+6	95	176	#line 95 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+6	96	176		subret __inicializaSensores_return
+7	366	0	#line 366 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	367	0		set __D0PrintaSensores, 1
+7	367	3	#line 367 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	368	3		tst 5, __D0PrintaSensores, __D0PrintaSensores
+7	367	6	#line 367 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	368	6		brtst 4, __ASM_Label_933, __D0PrintaSensores
+7	6921	9	#line 6921 "NXCDefs.h"
+7	6922	9	#pragma macro 6
+7	6922	9		mov __PointOutArgs.Location.X, __constVal200
+7	6922	11		mov __PointOutArgs.Location.Y, __constVal200
+7	6922	13		mov __PointOutArgs.Options, __constVal1
+7	6922	15		syscall 14, __PointOutArgs
+7	10174	18	#line 10174 "NXCDefs.h"
+7	6921	18	#line 6921 "NXCDefs.h"
+7	367	18	#line 367 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	368	18	#line 368 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	369	18		set __signed_stack_001PrintaSensores, 0
+7	368	21	#line 368 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	368	21	#line 368 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	369	21		set __signed_stack_002PrintaSensores, 56
+7	368	24	#line 368 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	368	24	#line 368 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	369	24		strcat __strbufPrintaSensores, __constStr0015
+7	368	28	#line 368 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	369	28		acquire __TextOutMutex
+7	368	29	#line 368 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	369	29		mov __TextOutArgs.Location.X, __signed_stack_001PrintaSensores
+7	368	31	#line 368 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	369	31		mov __TextOutArgs.Location.Y, __signed_stack_002PrintaSensores
+7	368	33	#line 368 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	369	33		set __TextOutArgs.Options, 0
+7	368	36	#line 368 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	369	36		mov __TextOutArgs.Text, __strbufPrintaSensores
+7	368	38	#line 368 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	369	38		syscall 13, __TextOutArgs
+7	368	41	#line 368 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	369	41		mov __D0PrintaSensores, __TextOutArgs.Result
+7	368	43	#line 368 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	369	43		release __TextOutMutex
+7	368	44	#line 368 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	369	44	#line 369 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	370	44		set __signed_stack_001PrintaSensores, 0
+7	369	47	#line 369 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	369	47	#line 369 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	370	47		set __signed_stack_002PrintaSensores, 48
+7	369	50	#line 369 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	369	50	#line 369 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	370	50	#pragma macro 26
+7	370	50		acquire __RLSBmutex0
+7	370	51		mov __RLSReadBuf0, __RLSBbufLSWrite1
+7	370	53		set __RLSBytesCount0, 1
+7	370	56		waitv __constVal15
+7	370	58		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+7	370	60		index __D0PrintaSensores, __RLSReadBuf0, 65535
+7	370	64		release __RLSBmutex0
+7	10219	65	#line 10219 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	369	65	#line 369 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	370	65		acquire __TextOutMutex
+7	369	66	#line 369 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	370	66		mov __TextOutArgs.Location.X, __signed_stack_001PrintaSensores
+7	369	68	#line 369 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	370	68		mov __TextOutArgs.Location.Y, __signed_stack_002PrintaSensores
+7	369	70	#line 369 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	370	70		set __TextOutArgs.Options, 0
+7	369	73	#line 369 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	370	73		numtostr __TextOutArgs.Text, __D0PrintaSensores
+7	369	76	#line 369 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	370	76		syscall 13, __TextOutArgs
+7	369	79	#line 369 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	370	79		mov __D0PrintaSensores, __TextOutArgs.Result
+7	369	81	#line 369 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	370	81		release __TextOutMutex
+7	369	82	#line 369 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	369	82	#line 369 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	370	82	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	371	82		set __signed_stack_001PrintaSensores, 0
+7	370	85	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	370	85	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	371	85		set __signed_stack_002PrintaSensores, 40
+7	370	88	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	370	88	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	371	88		strcat __strbufPrintaSensores, __constStr0016
+7	370	92	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	371	92		acquire __TextOutMutex
+7	370	93	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	371	93		mov __TextOutArgs.Location.X, __signed_stack_001PrintaSensores
+7	370	95	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	371	95		mov __TextOutArgs.Location.Y, __signed_stack_002PrintaSensores
+7	370	97	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	371	97		set __TextOutArgs.Options, 0
+7	370	100	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	371	100		mov __TextOutArgs.Text, __strbufPrintaSensores
+7	370	102	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	371	102		syscall 13, __TextOutArgs
+7	370	105	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	371	105		mov __D0PrintaSensores, __TextOutArgs.Result
+7	370	107	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	371	107		release __TextOutMutex
+7	370	108	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	371	108	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	372	108		set __signed_stack_001PrintaSensores, 0
+7	371	111	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	371	111	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	372	111		set __signed_stack_002PrintaSensores, 32
+7	371	114	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	371	114	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	372	114	#pragma macro 26
+7	372	114		acquire __RLSBmutex1
+7	372	115		mov __RLSReadBuf1, __RLSBbufLSWrite1
+7	372	117		set __RLSBytesCount1, 1
+7	372	120		waitv __constVal15
+7	372	122		subcall __ReadLSBytes1, ____ReadLSBytes1_return
+7	372	124		index __D0PrintaSensores, __RLSReadBuf1, 65535
+7	372	128		release __RLSBmutex1
+7	10284	129	#line 10284 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	371	129	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	372	129		acquire __TextOutMutex
+7	371	130	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	372	130		mov __TextOutArgs.Location.X, __signed_stack_001PrintaSensores
+7	371	132	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	372	132		mov __TextOutArgs.Location.Y, __signed_stack_002PrintaSensores
+7	371	134	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	372	134		set __TextOutArgs.Options, 0
+7	371	137	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	372	137		numtostr __TextOutArgs.Text, __D0PrintaSensores
+7	371	140	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	372	140		syscall 13, __TextOutArgs
+7	371	143	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	372	143		mov __D0PrintaSensores, __TextOutArgs.Result
+7	371	145	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	372	145		release __TextOutMutex
+7	371	146	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	371	146	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	372	146	#line 372 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	373	146		set __signed_stack_001PrintaSensores, 0
+7	372	149	#line 372 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	372	149	#line 372 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	373	149		set __signed_stack_002PrintaSensores, 24
+7	372	152	#line 372 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	372	152	#line 372 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	373	152		strcat __strbufPrintaSensores, __constStr0017
+7	372	156	#line 372 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	373	156		acquire __TextOutMutex
+7	372	157	#line 372 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	373	157		mov __TextOutArgs.Location.X, __signed_stack_001PrintaSensores
+7	372	159	#line 372 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	373	159		mov __TextOutArgs.Location.Y, __signed_stack_002PrintaSensores
+7	372	161	#line 372 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	373	161		set __TextOutArgs.Options, 0
+7	372	164	#line 372 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	373	164		mov __TextOutArgs.Text, __strbufPrintaSensores
+7	372	166	#line 372 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	373	166		syscall 13, __TextOutArgs
+7	372	169	#line 372 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	373	169		mov __D0PrintaSensores, __TextOutArgs.Result
+7	372	171	#line 372 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	373	171		release __TextOutMutex
+7	372	172	#line 372 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	373	172	#line 373 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	374	172		set __signed_stack_001PrintaSensores, 0
+7	373	175	#line 373 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	373	175	#line 373 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	374	175		set __signed_stack_002PrintaSensores, 16
+7	373	178	#line 373 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	373	178	#line 373 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	374	178	#pragma macro 24
+7	374	178		acquire __RLSBmutex2
+7	374	179		mov __RLSReadBuf2, __RLSBbufLSWrite1
+7	374	181		set __RLSBytesCount2, 1
+7	374	184		subcall __ReadLSBytes2, ____ReadLSBytes2_return
+7	374	186		index __D0PrintaSensores, __RLSReadBuf2, 65535
+7	374	190		release __RLSBmutex2
+7	10349	191	#line 10349 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	373	191	#line 373 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	374	191		acquire __TextOutMutex
+7	373	192	#line 373 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	374	192		mov __TextOutArgs.Location.X, __signed_stack_001PrintaSensores
+7	373	194	#line 373 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	374	194		mov __TextOutArgs.Location.Y, __signed_stack_002PrintaSensores
+7	373	196	#line 373 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	374	196		set __TextOutArgs.Options, 0
+7	373	199	#line 373 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	374	199		numtostr __TextOutArgs.Text, __D0PrintaSensores
+7	373	202	#line 373 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	374	202		syscall 13, __TextOutArgs
+7	373	205	#line 373 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	374	205		mov __D0PrintaSensores, __TextOutArgs.Result
+7	373	207	#line 373 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	374	207		release __TextOutMutex
+7	373	208	#line 373 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	373	208	#line 373 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	374	208	#line 374 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	375	208		set __signed_stack_001PrintaSensores, 0
+7	374	211	#line 374 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	374	211	#line 374 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	375	211		set __signed_stack_002PrintaSensores, 8
+7	374	214	#line 374 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	374	214	#line 374 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	375	214		strcat __strbufPrintaSensores, __constStr0018
+7	374	218	#line 374 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	375	218		acquire __TextOutMutex
+7	374	219	#line 374 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	375	219		mov __TextOutArgs.Location.X, __signed_stack_001PrintaSensores
+7	374	221	#line 374 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	375	221		mov __TextOutArgs.Location.Y, __signed_stack_002PrintaSensores
+7	374	223	#line 374 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	375	223		set __TextOutArgs.Options, 0
+7	374	226	#line 374 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	375	226		mov __TextOutArgs.Text, __strbufPrintaSensores
+7	374	228	#line 374 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	375	228		syscall 13, __TextOutArgs
+7	374	231	#line 374 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	375	231		mov __D0PrintaSensores, __TextOutArgs.Result
+7	374	233	#line 374 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	375	233		release __TextOutMutex
+7	374	234	#line 374 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	375	234	#line 375 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	376	234		set __signed_stack_001PrintaSensores, 0
+7	375	237	#line 375 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	375	237	#line 375 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	376	237		set __signed_stack_002PrintaSensores, 0
+7	375	240	#line 375 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	375	240	#line 375 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	376	240	#pragma macro 24
+7	376	240		acquire __RLSBmutex3
+7	376	241		mov __RLSReadBuf3, __RLSBbufLSWrite1
+7	376	243		set __RLSBytesCount3, 1
+7	376	246		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+7	376	248		index __D0PrintaSensores, __RLSReadBuf3, 65535
+7	376	252		release __RLSBmutex3
+7	10414	253	#line 10414 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	375	253	#line 375 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	376	253		acquire __TextOutMutex
+7	375	254	#line 375 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	376	254		mov __TextOutArgs.Location.X, __signed_stack_001PrintaSensores
+7	375	256	#line 375 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	376	256		mov __TextOutArgs.Location.Y, __signed_stack_002PrintaSensores
+7	375	258	#line 375 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	376	258		set __TextOutArgs.Options, 0
+7	375	261	#line 375 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	376	261		numtostr __TextOutArgs.Text, __D0PrintaSensores
+7	375	264	#line 375 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	376	264		syscall 13, __TextOutArgs
+7	375	267	#line 375 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	376	267		mov __D0PrintaSensores, __TextOutArgs.Result
+7	375	269	#line 375 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	376	269		release __TextOutMutex
+7	375	270	#line 375 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	375	270	#line 375 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	376	270	#line 376 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	377	270		set __Wait_7qG2_ms_7qG2_000_inline_PrintaSensores, 70
+7	376	273	#line 376 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	8869	273	#line 8869 "NXCDefs.h"
+7	8870	273		waitv __Wait_7qG2_ms_7qG2_000_inline_PrintaSensores
+7	8869	275	#line 8869 "NXCDefs.h"
+7	376	275	#line 376 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	380	275	#line 380 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	381	275		jmp __ASM_Label_932
+7	380	277	#line 380 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	380	277	#line 380 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+7	381	277		subret __PrintaSensores_return
+8	389	0	#line 389 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc"
+8	390	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
-0	main	0	C:\Users\Lucas\AppData\Local\Temp\temp.nxc
-1	iniciaBlue	7	C:\Users\Lucas\AppData\Local\Temp\temp.nxc
-2	desligaBlue	78	C:\Users\Lucas\AppData\Local\Temp\temp.nxc
-3	distanciaGiro	149	C:\Users\Lucas\AppData\Local\Temp\temp.nxc
-4	vira	169	C:\Users\Lucas\AppData\Local\Temp\temp.nxc
-5	teste1	466	C:\Users\Lucas\AppData\Local\Temp\temp.nxc
-6	__initialize_global_data	890	C:\Users\Lucas\AppData\Local\Temp\temp.nxc
+0	main	0	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc
+1	__ResetSensorSubroutine	9	NXTDefs.h
+2	__ReadLSBytes0	22	NXTDefs.h
+3	__ReadLSBytes1	111	NXTDefs.h
+4	__ReadLSBytes2	200	NXTDefs.h
+5	__ReadLSBytes3	289	NXTDefs.h
+6	inicializaSensores	378	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc
+7	PrintaSensores	556	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc
+8	__initialize_global_data	835	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\TesteExecutivo US1_mark1.nxc

@@ -12,13 +12,17 @@
 #define direita 1
 #define esquerda 2
 
-#define SIM 1
+#define SIM 5
 #define SIM_US 1
 #define SIM_GARRA 2
-  //Bluetooth
+#define NAO 0
+#define CONTINUA 6
 #define PARADO 0
-#define BONECO_BRANCO 1
-#define BONECO_PRETO 2
+#define VIRANDO 7
+
+  //Bluetooth
+#define BONECO_BRANCO 4
+#define BONECO_PRETO 5
 #define LeGARRA_SENSOR 3
   //dist
 #define DIST_RE 30
@@ -185,13 +189,22 @@ void LeUSFRENTE(){// TESTE SE PARA QUANDO DEVE, E CONTINUA QUANDO DEVE
       SendRemoteNumber(CONEXAO, OUTBOX, PARADO);
       ReceiveRemoteNumber(INBOX, true, verifica);
       Wait(30);
+  }while(verifica != SIM);//Verifica que o outro cerebro sabe que este esta parado
+
+
+  do{
+      SendRemoteNumber(CONEXAO, OUTBOX, VIRANDO);
+      ReceiveRemoteNumber(INBOX, true, verifica);
+      Wait(30);
   }while(verifica != SIM);
+
+  vira(90, esquerda); //VIRA PRA ALGUM LUGAR
 
   do{
     SendRemoteNumber(CONEXAO, OUTBOX, PARADO);
     ReceiveRemoteNumber(INBOX, true, continua);
     Wait(30);
-  }while(continua != SIM);
+  }while(continua != CONTINUA);
   
 }
 
@@ -204,12 +217,11 @@ void LeGARRA(){// TESTE SE PARA QUANDO DEVE, E CONTINUA QUANDO DEVE
       ReceiveRemoteNumber(INBOX, true, verifica);
       Wait(30);
   }while(verifica != SIM);
-
   do{
       SendRemoteNumber(CONEXAO, OUTBOX, PARADO);
       ReceiveRemoteNumber(INBOX, true, continua);
       Wait(30);
-  }while(continua != SIM);
+  }while(continua != CONTINUA);
   
 }
 
@@ -227,7 +239,7 @@ void DaReh(){ //TESTAR SE SAI DO DOWHILE
   Off(ME);
 }
 
-void IniciaCorDoChao(int corEsq, int corDir){//TESTAR SE CHAMA A FUNCAO DENTRO DO IF E CONTINUA O CODIGO
+void IniciaCorDoChao(int corEsq, int corDir){//FUNFOU BONITO
   
   corEsq = SensorHTColorNum(HTE);
   corDir = SensorHTColorNum(HTD);
@@ -239,18 +251,17 @@ void IniciaCorDoChao(int corEsq, int corDir){//TESTAR SE CHAMA A FUNCAO DENTRO D
   }
 }
 
-void CorDoChao(int corEsq, int corDir){
+void CorDoChao(int corEsq, int corDir){//TESTAR SE DA RE
   
   corEsq = SensorHTColorNum(HTE);
   corDir = SensorHTColorNum(HTD);
   
   if((corDir == COR_PRETA)||(corEsq == COR_PRETA)){//AREA KIEFAS == FOOOOOGE NEGADAA
     DaReh();
-    vira(90, esquerda);
   }  
 }
 
-void RetornaBoneco(int cor){//TESTAR COMUNICACAO
+void RetornaBoneco(int cor){//FUNFOU BONITO
     int passei;
     
     do{
@@ -359,7 +370,7 @@ void teste2COMUNICA(){
   iniciaBlue();
 
   IniciaCorDoChao(corEsq, corDir);
-
+  
   do{
     ChecaParada();
     CorDoChao(corEsq, corDir);
