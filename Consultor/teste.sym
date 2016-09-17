@@ -1,0 +1,521 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0SetSensorLowspeed_inline_InicializaSensores	6	1	0	4	2
+1	__DU0SetSensorLowspeed_inline_InicializaSensores	5	1	4	4	5
+2	__signed_stack_001lerSensor	6	1	8	4	18
+3	__D0lerSensor	6	1	12	4	31
+4	__D0main	6	1	16	4	10
+5	__D0temBoneco	6	1	20	4	25
+6	__signed_stack_001temBoneco	6	1	24	4	12
+7	__signed_stack_002temBoneco	6	1	28	4	4
+8	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	32	4	2
+9	__signed_stack_002lerSensor	6	1	36	4	6
+10	__signed_stack_001main	6	1	40	4	4
+11	__signed_stack_002main	6	1	44	4	4
+12	__TextOutMutex	9	0	48	4	8
+13	__lerSensor_7qG2_k_7qG2_000	4	1	52	2	6
+14	__lerSensor_7qG2_aux_7qG2_000	4	1	54	2	4
+15	__lerSensor_7qG2_sensor_7qG2_000	4	1	56	2	3
+16	__lerSensor_7qG2_i_7qG2_000	4	1	58	2	8
+17	__lerSensor_7qG2_j_7qG2_000	4	1	60	2	8
+18	__constVal128	4	0	62	2	3
+19	__constVal200	4	0	64	2	4
+20	__temBoneco_7qG2_rgb_dir_7qG2_000	4	1	66	2	4
+21	__temBoneco_7qG2_rgb_esq_7qG2_000	4	1	68	2	4
+22	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	70	1	2
+23	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	71	1	2
+24	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	72	1	2
+25	__temBoneco_return	1	1	73	1	5
+26	____initialize_global_data_return	1	1	74	1	3
+27	__constVal1	2	0	75	1	7
+28	__lerSensor_return	1	1	76	1	5
+29	__ResetSensorTmp	1	1	77	1	2
+30	__ResetSensorPort	1	1	78	1	6
+31	____ResetSensorSubroutine_return	1	1	79	1	6
+32	__constVal14	2	0	80	1	3
+33	__constVal11	2	0	81	1	1
+34	__constVal0	2	1	82	1	1
+35	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	83	1	2
+36	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_InicializaSensores	1	1	84	1	2
+37	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	85	1	4
+38	__InicializaSensores_return	1	1	86	1	3
+39	__SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	87	1	12
+40	__PointOutArgs	8	0	3	12	8
+41	__PointOutArgs.Result	2	1	88	1	8
+42	__PointOutArgs.Location	8	0	2	4	8
+43	__PointOutArgs.Location.X	4	1	92	2	8
+44	__PointOutArgs.Location.Y	4	1	94	2	8
+45	__PointOutArgs.Options	5	1	96	4	8
+46	__TextOutArgs	8	0	4	16	24
+47	__TextOutArgs.Result	2	1	100	1	24
+48	__TextOutArgs.Location	8	0	2	4	24
+49	__TextOutArgs.Location.X	4	1	104	2	24
+50	__TextOutArgs.Location.Y	4	1	106	2	24
+51	__TextOutArgs.Text	7	0	108	4	24
+52	__TextOutArgs.Text.Text_type	1	0	0	1	0
+53	__TextOutArgs.Options	5	1	112	4	24
+54	__constStr0010	7	0	116	4	1
+55	__constStr0010.__constStr0010_type	1	1	0	1	0
+56	__strbufmain	7	0	118	4	4
+57	__strbufmain.__strbufmain_type	1	0	0	1	0
+58	__lerSensor_7qG2_leitura_7qG2_000	7	0	120	4	10
+59	__lerSensor_7qG2_leitura_7qG2_000.__lerSensor_7qG2_leitura_7qG2_000_type	4	0	0	2	0
+60	__constStr0009	7	0	122	4	1
+61	__constStr0009.__constStr0009_type	1	1	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	123	0	#line 123 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	124	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	123	2	#line 123 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	124	2	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	125	2		subcall InicializaSensores, __InicializaSensores_return
+0	124	4	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	124	4	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	125	4		set __D0main, 1
+0	125	7	#line 125 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	126	7		tst 5, __D0main, __D0main
+0	125	10	#line 125 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	126	10		brtst 4, __ASM_Label_702, __D0main
+0	126	13	#line 126 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	127	13		subcall temBoneco, __temBoneco_return
+0	126	15	#line 126 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	127	15		mov __D0main, __D0temBoneco
+0	127	17	#line 127 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	128	17		tst 5, __D0main, __D0main
+0	127	20	#line 127 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	128	20		brtst 4, __ASM_Label_707, __D0main
+0	6678	23	#line 6678 "NXCDefs.h"
+0	6679	23	#pragma macro 6
+0	6679	23		mov __PointOutArgs.Location.X, __constVal200
+0	6679	25		mov __PointOutArgs.Location.Y, __constVal200
+0	6679	27		mov __PointOutArgs.Options, __constVal1
+0	6679	29		syscall 14, __PointOutArgs
+0	6848	32	#line 6848 "NXCDefs.h"
+0	6678	32	#line 6678 "NXCDefs.h"
+0	128	32	#line 128 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	128	32	#line 128 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	129	32		set __signed_stack_001main, 1
+0	128	35	#line 128 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	128	35	#line 128 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	129	35		set __signed_stack_002main, 56
+0	128	38	#line 128 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	128	38	#line 128 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	129	38		strcat __strbufmain, __constStr0009
+0	129	42	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	130	42		acquire __TextOutMutex
+0	129	43	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	130	43		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	129	45	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	130	45		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	129	47	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	130	47		set __TextOutArgs.Options, 0
+0	129	50	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	130	50		mov __TextOutArgs.Text, __strbufmain
+0	129	52	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	130	52		syscall 13, __TextOutArgs
+0	129	55	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	130	55		mov __D0main, __TextOutArgs.Result
+0	129	57	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	130	57		release __TextOutMutex
+0	129	58	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	132	58	#line 132 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	133	58		jmp __ASM_Label_712
+0	6678	60	#line 6678 "NXCDefs.h"
+0	6679	60	#pragma macro 6
+0	6679	60		mov __PointOutArgs.Location.X, __constVal200
+0	6679	62		mov __PointOutArgs.Location.Y, __constVal200
+0	6679	64		mov __PointOutArgs.Options, __constVal1
+0	6679	66		syscall 14, __PointOutArgs
+0	6886	69	#line 6886 "NXCDefs.h"
+0	6678	69	#line 6678 "NXCDefs.h"
+0	133	69	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	133	69	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	134	69		set __signed_stack_001main, 1
+0	133	72	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	133	72	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	134	72		set __signed_stack_002main, 56
+0	133	75	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	133	75	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	134	75		strcat __strbufmain, __constStr0010
+0	134	79	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	135	79		acquire __TextOutMutex
+0	134	80	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	135	80		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	134	82	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	135	82		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	134	84	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	135	84		set __TextOutArgs.Options, 0
+0	134	87	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	135	87		mov __TextOutArgs.Text, __strbufmain
+0	134	89	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	135	89		syscall 13, __TextOutArgs
+0	134	92	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	135	92		mov __D0main, __TextOutArgs.Result
+0	134	94	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	135	94		release __TextOutMutex
+0	134	95	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	135	95	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	135	95	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	136	95		set __Wait_7qG2_ms_7qG2_000_inline_main, 40
+0	135	98	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	8551	98	#line 8551 "NXCDefs.h"
+0	8552	98		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	100	#line 8551 "NXCDefs.h"
+0	136	100	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	140	100	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	141	100		jmp __ASM_Label_701
+0	140	102	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	141	102		exit -1, -1
+1	5476	0		setin __constVal1, __ResetSensorPort, 5
+1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5480	11		subret ____ResetSensorSubroutine_return
+2	74	0	#line 74 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+2	75	0		set __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 0
+2	74	3	#line 74 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+2	4396	3	#line 4396 "NXCDefs.h"
+2	4397	3	#pragma macro 6
+2	4397	3		setin __constVal14, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 0
+2	4397	7		setin __constVal128, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 1
+2	4397	11		mov __ResetSensorPort, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores
+2	4397	13		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+2	6275	15	#line 6275 "NXCDefs.h"
+2	4396	15	#line 4396 "NXCDefs.h"
+2	75	15	#line 75 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+2	75	15	#line 75 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+2	76	15		set __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 1
+2	75	18	#line 75 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+2	4396	18	#line 4396 "NXCDefs.h"
+2	4397	18	#pragma macro 6
+2	4397	18		setin __constVal14, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 0
+2	4397	22		setin __constVal128, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 1
+2	4397	26		mov __ResetSensorPort, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores
+2	4397	28		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+2	6283	30	#line 6283 "NXCDefs.h"
+2	4396	30	#line 4396 "NXCDefs.h"
+2	76	30	#line 76 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+2	76	30	#line 76 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+2	77	30		set __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 2
+2	76	33	#line 76 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+2	4396	33	#line 4396 "NXCDefs.h"
+2	4397	33	#pragma macro 6
+2	4397	33		setin __constVal14, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 0
+2	4397	37		setin __constVal128, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 1
+2	4397	41		mov __ResetSensorPort, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores
+2	4397	43		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+2	6291	45	#line 6291 "NXCDefs.h"
+2	4396	45	#line 4396 "NXCDefs.h"
+2	77	45	#line 77 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+2	77	45	#line 77 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+2	78	45		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores, 3
+2	77	48	#line 77 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+2	78	48	#line 78 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+2	79	48		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_InicializaSensores, __constVal1
+2	4342	50	#line 4342 "NXCDefs.h"
+2	4343	50		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores
+2	4342	52	#line 4342 "NXCDefs.h"
+2	4342	52	#line 4342 "NXCDefs.h"
+2	4343	52		mov __DU0SetSensorLowspeed_inline_InicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_InicializaSensores
+2	4342	54	#line 4342 "NXCDefs.h"
+2	4343	54		tst 5, __D0SetSensorLowspeed_inline_InicializaSensores, __DU0SetSensorLowspeed_inline_InicializaSensores
+2	4342	57	#line 4342 "NXCDefs.h"
+2	4343	57		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_InicializaSensores
+2	4342	60	#line 4342 "NXCDefs.h"
+2	4343	60		set __DU0SetSensorLowspeed_inline_InicializaSensores, 11
+2	4342	63	#line 4342 "NXCDefs.h"
+2	4342	63	#line 4342 "NXCDefs.h"
+2	4343	63		jmp __004__ASM_Label_37
+2	4342	65	#line 4342 "NXCDefs.h"
+2	4343	65		set __DU0SetSensorLowspeed_inline_InicializaSensores, 10
+2	4342	68	#line 4342 "NXCDefs.h"
+2	4342	68	#line 4342 "NXCDefs.h"
+2	4343	68		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, __DU0SetSensorLowspeed_inline_InicializaSensores
+2	4247	70	#line 4247 "NXCDefs.h"
+2	4248	70		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, 0
+2	4247	74	#line 4247 "NXCDefs.h"
+2	4343	74	#line 4343 "NXCDefs.h"
+2	4343	74	#line 4343 "NXCDefs.h"
+2	4344	74		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores
+2	4343	76	#line 4343 "NXCDefs.h"
+2	4343	76	#line 4343 "NXCDefs.h"
+2	4344	76		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, 0
+2	4343	79	#line 4343 "NXCDefs.h"
+2	4260	79	#line 4260 "NXCDefs.h"
+2	4261	79		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, 1
+2	4260	83	#line 4260 "NXCDefs.h"
+2	4344	83	#line 4344 "NXCDefs.h"
+2	4344	83	#line 4344 "NXCDefs.h"
+2	4344	83	#line 4344 "NXCDefs.h"
+2	4278	83	#line 4278 "NXCDefs.h"
+2	4279	83	#pragma macro 4
+2	4279	83		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores
+2	4279	85		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+2	6381	87	#line 6381 "NXCDefs.h"
+2	4278	87	#line 4278 "NXCDefs.h"
+2	4345	87	#line 4345 "NXCDefs.h"
+2	78	87	#line 78 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+2	80	87	#line 80 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+2	81	87		subret __InicializaSensores_return
+3	84	0	#line 84 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	85	0		arrinit __lerSensor_7qG2_leitura_7qG2_000, __constVal0, __constVal11
+3	84	4	#line 84 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	85	4		set __lerSensor_7qG2_i_7qG2_000, 0
+3	84	7	#line 84 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	84	7	#line 84 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	85	7		mov __signed_stack_001lerSensor, __lerSensor_7qG2_i_7qG2_000
+3	84	9	#line 84 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	84	9	#line 84 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	85	9		set __D0lerSensor, 11
+3	84	12	#line 84 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	85	12		cmp 0, __D0lerSensor, __signed_stack_001lerSensor, __D0lerSensor
+3	84	16	#line 84 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	85	16		brtst 4, __ASM_Label_613, __D0lerSensor
+3	84	19	#line 84 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	85	19		jmp __ASM_Label_614
+3	84	21	#line 84 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	85	21		add __lerSensor_7qG2_i_7qG2_000, __lerSensor_7qG2_i_7qG2_000, __constVal1
+3	85	25	#line 85 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	86	25		jmp __ASM_Label_612
+3	87	27	#line 87 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	88	27		getin __lerSensor_7qG2_aux_7qG2_000, __lerSensor_7qG2_sensor_7qG2_000, 2
+3	87	31	#line 87 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	87	31	#line 87 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	88	31	#line 88 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	89	31		set __lerSensor_7qG2_j_7qG2_000, 0
+3	88	34	#line 88 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	88	34	#line 88 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	88	34	#line 88 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	89	34		mov __signed_stack_001lerSensor, __lerSensor_7qG2_aux_7qG2_000
+3	88	36	#line 88 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	88	36	#line 88 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	89	36		mov __signed_stack_002lerSensor, __lerSensor_7qG2_j_7qG2_000
+3	88	38	#line 88 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	88	38	#line 88 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	89	38		index __D0lerSensor, __lerSensor_7qG2_leitura_7qG2_000, __signed_stack_002lerSensor
+3	88	42	#line 88 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	88	42	#line 88 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	89	42		cmp 0, __D0lerSensor, __signed_stack_001lerSensor, __D0lerSensor
+3	88	46	#line 88 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	89	46		brtst 4, __ASM_Label_627, __D0lerSensor
+3	88	49	#line 88 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	89	49		mov __signed_stack_001lerSensor, __lerSensor_7qG2_j_7qG2_000
+3	88	51	#line 88 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	88	51	#line 88 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	89	51		mov __D0lerSensor, __lerSensor_7qG2_i_7qG2_000
+3	88	53	#line 88 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	89	53		cmp 0, __D0lerSensor, __signed_stack_001lerSensor, __D0lerSensor
+3	89	57	#line 89 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	90	57		brtst 4, __ASM_Label_625, __D0lerSensor
+3	90	60	#line 90 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	91	60		add __lerSensor_7qG2_j_7qG2_000, __lerSensor_7qG2_j_7qG2_000, __constVal1
+3	90	64	#line 90 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	92	64	#line 92 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	93	64		jmp __ASM_Label_624
+3	92	66	#line 92 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	92	66	#line 92 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	93	66		mov __signed_stack_001lerSensor, __lerSensor_7qG2_j_7qG2_000
+3	92	68	#line 92 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	92	68	#line 92 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	93	68		mov __D0lerSensor, __lerSensor_7qG2_i_7qG2_000
+3	92	70	#line 92 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	93	70		cmp 0, __D0lerSensor, __signed_stack_001lerSensor, __D0lerSensor
+3	93	74	#line 93 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	94	74		brtst 4, __ASM_Label_632, __D0lerSensor
+3	93	77	#line 93 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	94	77		mov __lerSensor_7qG2_k_7qG2_000, __lerSensor_7qG2_i_7qG2_000
+3	93	79	#line 93 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	93	79	#line 93 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	94	79		mov __signed_stack_001lerSensor, __lerSensor_7qG2_k_7qG2_000
+3	93	81	#line 93 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	93	81	#line 93 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	94	81		mov __D0lerSensor, __lerSensor_7qG2_j_7qG2_000
+3	93	83	#line 93 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	94	83		cmp 1, __D0lerSensor, __signed_stack_001lerSensor, __D0lerSensor
+3	93	87	#line 93 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	94	87		brtst 4, __ASM_Label_634, __D0lerSensor
+3	93	90	#line 93 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	94	90		jmp __ASM_Label_635
+3	93	92	#line 93 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	94	92		sub __lerSensor_7qG2_k_7qG2_000, __lerSensor_7qG2_k_7qG2_000, __constVal1
+3	94	96	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	95	96		jmp __ASM_Label_633
+3	94	98	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	95	98		mov __signed_stack_001lerSensor, __lerSensor_7qG2_k_7qG2_000
+3	94	100	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	94	100	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	95	100		mov __signed_stack_002lerSensor, __lerSensor_7qG2_k_7qG2_000
+3	94	102	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	94	102	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	95	102		set __D0lerSensor, 1
+3	94	105	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	95	105		sub __signed_stack_002lerSensor, __signed_stack_002lerSensor, __D0lerSensor
+3	94	109	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	94	109	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	95	109		index __D0lerSensor, __lerSensor_7qG2_leitura_7qG2_000, __signed_stack_002lerSensor
+3	94	113	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	95	113	#line 95 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	96	113		replace __lerSensor_7qG2_leitura_7qG2_000, __lerSensor_7qG2_leitura_7qG2_000, __signed_stack_001lerSensor, __D0lerSensor
+3	95	118	#line 95 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	96	118	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	97	118		jmp __ASM_Label_636
+3	96	120	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	96	120	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	97	120		mov __signed_stack_001lerSensor, __lerSensor_7qG2_j_7qG2_000
+3	96	122	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	97	122	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	98	122		mov __D0lerSensor, __lerSensor_7qG2_aux_7qG2_000
+3	97	124	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	98	124		replace __lerSensor_7qG2_leitura_7qG2_000, __lerSensor_7qG2_leitura_7qG2_000, __signed_stack_001lerSensor, __D0lerSensor
+3	97	129	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	99	129	#line 99 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	100	129		jmp __ASM_Label_651
+3	99	131	#line 99 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	100	131		mov __signed_stack_001lerSensor, __lerSensor_7qG2_i_7qG2_000
+3	99	133	#line 99 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	100	133	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	101	133		mov __D0lerSensor, __lerSensor_7qG2_aux_7qG2_000
+3	100	135	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	101	135		replace __lerSensor_7qG2_leitura_7qG2_000, __lerSensor_7qG2_leitura_7qG2_000, __signed_stack_001lerSensor, __D0lerSensor
+3	100	140	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	103	140	#line 103 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	103	140	#line 103 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	104	140		jmp __ASM_Label_615
+3	103	142	#line 103 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	103	142	#line 103 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	104	142		set __signed_stack_001lerSensor, 5
+3	103	145	#line 103 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	103	145	#line 103 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	104	145		index __D0lerSensor, __lerSensor_7qG2_leitura_7qG2_000, __signed_stack_001lerSensor
+3	103	149	#line 103 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	104	149	#line 104 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	105	149		subret __lerSensor_return
+3	104	151	#line 104 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	107	151	#line 107 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+3	108	151		subret __lerSensor_return
+4	110	0	#line 110 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	111	0		set __lerSensor_7qG2_sensor_7qG2_000, 0
+4	110	3	#line 110 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	111	3	#line 111 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	112	3		subcall lerSensor, __lerSensor_return
+4	111	5	#line 111 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	112	5		mov __temBoneco_7qG2_rgb_dir_7qG2_000, __D0lerSensor
+4	111	7	#line 111 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	111	7	#line 111 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	111	7	#line 111 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	112	7		set __lerSensor_7qG2_sensor_7qG2_000, 1
+4	111	10	#line 111 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	113	10	#line 113 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	114	10		subcall lerSensor, __lerSensor_return
+4	113	12	#line 113 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	114	12		mov __temBoneco_7qG2_rgb_esq_7qG2_000, __D0lerSensor
+4	113	14	#line 113 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	113	14	#line 113 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	113	14	#line 113 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	114	14		set __signed_stack_001temBoneco, 0
+4	113	17	#line 113 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	113	17	#line 113 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	114	17		set __signed_stack_002temBoneco, 48
+4	113	20	#line 113 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	113	20	#line 113 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	114	20		mov __D0temBoneco, __temBoneco_7qG2_rgb_dir_7qG2_000
+4	114	22	#line 114 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	115	22		acquire __TextOutMutex
+4	114	23	#line 114 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	115	23		mov __TextOutArgs.Location.X, __signed_stack_001temBoneco
+4	114	25	#line 114 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	115	25		mov __TextOutArgs.Location.Y, __signed_stack_002temBoneco
+4	114	27	#line 114 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	115	27		set __TextOutArgs.Options, 0
+4	114	30	#line 114 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	115	30		numtostr __TextOutArgs.Text, __D0temBoneco
+4	114	33	#line 114 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	115	33		syscall 13, __TextOutArgs
+4	114	36	#line 114 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	115	36		mov __D0temBoneco, __TextOutArgs.Result
+4	114	38	#line 114 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	115	38		release __TextOutMutex
+4	114	39	#line 114 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	114	39	#line 114 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	115	39		set __signed_stack_001temBoneco, 0
+4	114	42	#line 114 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	114	42	#line 114 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	115	42		set __signed_stack_002temBoneco, 40
+4	114	45	#line 114 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	114	45	#line 114 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	115	45		mov __D0temBoneco, __temBoneco_7qG2_rgb_esq_7qG2_000
+4	117	47	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	118	47		acquire __TextOutMutex
+4	117	48	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	118	48		mov __TextOutArgs.Location.X, __signed_stack_001temBoneco
+4	117	50	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	118	50		mov __TextOutArgs.Location.Y, __signed_stack_002temBoneco
+4	117	52	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	118	52		set __TextOutArgs.Options, 0
+4	117	55	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	118	55		numtostr __TextOutArgs.Text, __D0temBoneco
+4	117	58	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	118	58		syscall 13, __TextOutArgs
+4	117	61	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	118	61		mov __D0temBoneco, __TextOutArgs.Result
+4	117	63	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	118	63		release __TextOutMutex
+4	117	64	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	117	64	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	118	64		mov __signed_stack_001temBoneco, __temBoneco_7qG2_rgb_dir_7qG2_000
+4	117	66	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	117	66	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	118	66		set __D0temBoneco, 293
+4	117	69	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	118	69		cmp 0, __D0temBoneco, __signed_stack_001temBoneco, __D0temBoneco
+4	117	73	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	118	73		brtst 4, __ASM_Label_685, __D0temBoneco
+4	117	76	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	118	76		mov __signed_stack_001temBoneco, __temBoneco_7qG2_rgb_dir_7qG2_000
+4	117	78	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	117	78	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	118	78		set __D0temBoneco, 249
+4	117	81	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	118	81		cmp 1, __D0temBoneco, __signed_stack_001temBoneco, __D0temBoneco
+4	117	85	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	118	85		brtst 4, __ASM_Label_683, __D0temBoneco
+4	117	88	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	118	88		mov __signed_stack_001temBoneco, __temBoneco_7qG2_rgb_esq_7qG2_000
+4	117	90	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	117	90	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	118	90		set __D0temBoneco, 263
+4	117	93	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	118	93		cmp 0, __D0temBoneco, __signed_stack_001temBoneco, __D0temBoneco
+4	117	97	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	118	97		brtst 4, __ASM_Label_691, __D0temBoneco
+4	117	100	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	118	100		mov __signed_stack_001temBoneco, __temBoneco_7qG2_rgb_esq_7qG2_000
+4	117	102	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	117	102	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	118	102		set __D0temBoneco, 216
+4	117	105	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	118	105		cmp 1, __D0temBoneco, __signed_stack_001temBoneco, __D0temBoneco
+4	118	109	#line 118 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	119	109		brtst 4, __ASM_Label_696, __D0temBoneco
+4	119	112	#line 119 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	120	112		set __D0temBoneco, 0
+4	119	115	#line 119 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	120	115		subret __temBoneco_return
+4	119	117	#line 119 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	119	117	#line 119 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	120	117	#line 120 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	121	117		set __D0temBoneco, 1
+4	120	120	#line 120 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	121	120		subret __temBoneco_return
+4	120	122	#line 120 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	122	122	#line 122 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	123	122		subret __temBoneco_return
+5	141	0	#line 141 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+5	142	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc
+1	__ResetSensorSubroutine	105	NXTDefs.h
+2	InicializaSensores	118	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc
+3	lerSensor	207	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc
+4	temBoneco	360	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc
+5	__initialize_global_data	484	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc
