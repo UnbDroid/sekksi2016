@@ -207,7 +207,6 @@ void LeUSFRENTE(){// TESTE SE PARA QUANDO DEVE, E CONTINUA QUANDO DEVE
   }while(continua != CONTINUA);
   
 }
-
 void LeGARRA(){// TESTE SE PARA QUANDO DEVE, E CONTINUA QUANDO DEVE
   int verifica = 0, continua = 0;
   
