@@ -15,6 +15,50 @@
      // Defines de motores
      #define MOTOR_GARRA OUT_A
 
+    // Defines de leitura do RGB do meio (ainda precisa testar mais)
+    #define COR_PRETA_MEIO_MIN 55
+    #define COR_PRETA_MEIO_MAX 150
+    #define COR_BRANCA_MEIO_MIN 290
+    #define COR_BRANCA_MEIO_MAX 630
+    #define COR_BASE_MEIO_MIN 185
+    #define COR_BASE_MEIO_MAX 260
+
+    // Defines de leitura do RGB da esquerda do robô
+    #define COR_PRETA_ESQ_PERTO_MIN 75
+    #define COR_PRETA_ESQ_PERTO_MAX 100
+    #define COR_PRETA_ESQ_LONGE_MIN 120
+    #define COR_PRETA_ESQ_LONGE_MAX 160
+    #define COR_BRANCA_ESQ_PERTO_MIN 470
+    #define COR_BRANCA_ESQ_PERTO_MAX 495
+    #define COR_BRANCA_ESQ_LONGE_MIN 212
+    #define COR_BRANCA_ESQ_LONGE_MAX 245
+    #define COR_BASE_ESQ_MIN 195
+    #define COR_BASE_ESQ_MAX 210
+
+    // Defines de leitura do RGB da direita do robô
+    #define COR_PRETA_DIR_PERTO_MIN 130
+    #define COR_PRETA_DIR_PERTO_MAX 160
+    #define COR_PRETA_DIR_LONGE_MIN 185
+    #define COR_PRETA_DIR_LONGE_MAX 210
+    #define COR_BRANCA_DIR_PERTO_MIN 385
+    #define COR_BRANCA_DIR_PERTO_MAX 420
+    #define COR_BRANCA_DIR_LONGE_MIN 240
+    #define COR_BRANCA_DIR_LONGE_MAX 280
+    #define COR_BASE_DIR_MIN 240
+    #define COR_BASE_DIR_MAX 260
+
+    //potencias
+    #define POTENCIA_MAXIMA_GARRA 80
+
+    //Tempos
+    #define TEMPO_ATE_A_GARRA_TRAVAR 2000
+    #define TEMPO_ATE_JOGAR_DENTRO 3750
+    #define TEMPO_ATE_A_GARRA_VOLTAR 2000 //estou usando tempo... rola de usar por angulos depois
+    #define TEMPO_DEPOIS_DE_JOGAR_DENTRO_GARANTIA 800
+
+    //misc
+    #define MENOR_DISTANCIA_US 20
+
 
      //LOGICA
 
@@ -26,12 +70,14 @@
      #define SIM_GARRA 2
      #define NAO 0
      #define CONTINUA 6
-     #define VIRANDO 7
+     #define VIROU 7
+    #define DESVIROU 8
        //Bluetooth
      #define PARADO 0
      #define BONECO_BRANCO 4
      #define BONECO_PRETO 5
      #define LeGARRA_SENSOR 3
+     #define NAO_PEGA 8
        //dist
      #define DIST_RE 30
      #define DIST_DA_PAREDE 8
@@ -47,6 +93,8 @@ void InicializaSensores(void);
 void filterUS(void);
 int filterRGB(int s);
 void pega(void);
+
+int bonecoAlvo = 0;
 
 void InicializaSensores(){
     SetSensorColorRed(RGB_DIR);
@@ -133,35 +181,12 @@ void EnviaUSFrente(){
           }while(verifica == 0);
 
           if(verifica == LeGARRA_SENSOR){
-               SendRemoteNumber(CONEXAO, OUTBOX, SIM_US);
-               do{
-                    ReceiveRemoteNumber(INBOX, 0, verifica);
-                    Wait(30);
-               }while(verifica!= PARADO);
-               SendRemoteNumber(CONEXAO, OUTBOX, SIM);   //RECEBEU QUE ESTA PARADO            
+               SendRemoteNumber(CONEXAO, OUTBOX, SIM_US);           
           }
-
-          do{
-               ReceiveRemoteNumber(INBOX, 0, verifica);
-               Wait(30);
-          }while(verifica != VIRANDO);
-          SendRemoteNumber(CONEXAO, OUTBOX, SIM);   //RECEBEU QUE ESTA VIRANDO
-
-          MandaExecutivoContinuar();
      }
 }
 
-void pega(){
-     OnFwd(MOTOR_GARRA,POTENCIA_MAXIMA_GARRA);
-     Wait(TEMPO_ATE_JOGAR_DENTRO);
-     Off(MOTOR_GARRA);
-     Wait(TEMPO_DEPOIS_DE_JOGAR_DENTRO_GARANTIA);
-     OnFwd(MOTOR_GARRA,-POTENCIA_MAXIMA_GARRA);
-     Wait(TEMPO_ATE_A_GARRA_VOLTAR);
-     Off(MOTOR_GARRA);
-}
-
-void EnviaGarra(){
+void EnviaGarra(){//TESTE
      int sinalRGBE = 0,sinalRGBC = 0,sinalRGBD = 0, verifica = 0;
      sinalRGBE = filterRGB(RGB_ESQ);
      sinalRGBC = filterRGB(RGB_MEIO);
@@ -170,22 +195,94 @@ void EnviaGarra(){
      if((sinalRGBD != 0)||(sinalRGBC != 0)||(sinalRGBE != 0)){
 
      do{  
-               ReceiveRemoteNumber(INBOX, 0, verifica);
-               Wait(30);    
-          }while(verifica == 0);
+          ReceiveRemoteNumber(INBOX, 0, verifica);
+          Wait(30);    
+      }while(verifica == 0);
 
-          if(verifica == LeGARRA_SENSOR){
-               SendRemoteNumber(CONEXAO, OUTBOX, SIM_GARRA);
-               do{
-                    ReceiveRemoteNumber(INBOX, 0, verifica);
-                    Wait(30);
-               }while(verifica!= PARADO);
-               SendRemoteNumber(CONEXAO, OUTBOX, SIM_GARRA);   //RECEBEU QUE ESTA PARADO          
-          }
-          //FUNÇAO DE PEGAR BONECO
-
-     }
+      if(verifica == LeGARRA_SENSOR){
+         SendRemoteNumber(CONEXAO, OUTBOX, SIM_GARRA);
+         do{
+            ReceiveRemoteNumber(INBOX, 0, verifica);
+            Wait(30);
+         }while(verifica!= PARADO);
+         SendRemoteNumber(CONEXAO, OUTBOX, SIM_GARRA);   //RECEBEU QUE ESTA PARADO   
+         IdentificaBoneco(bonecoAlvo);
+      }
+    }
 }
+
+void NaoPega(){
+  /*manda um sinal pro executivo iniciar a rotina pra descartar boneco, espera a resposta dele para abrir
+  a garra e deixar o boneco no lugar*/
+  int verifica = 0;
+  
+  do{
+    SendRemoteNumber(CONEXAO, OUTBOX, NAO_PEGA);
+    ReceiveRemoteNumber(INBOX, 0, verifica);
+    Wait(30);
+  }while(verifica != NAO_PEGA);
+
+  do{
+      SendRemoteNumber(CONEXAO, OUTBOX, VIROU);
+      ReceiveRemoteNumber(INBOX, 0, verifica);
+      Wait(30);
+  }while(verifica != VIROU);
+
+  do{
+      SendRemoteNumber(CONEXAO, OUTBOX, PARADO);
+      ReceiveRemoteNumber(INBOX, 0, verifica);
+      Wait(30);
+  }while(verifica != PARADO);
+
+  OnFwd(MOTOR_GARRA,-POTENCIA_MAXIMA_GARRA);
+  Wait(TEMPO_ATE_A_GARRA_TRAVAR);
+  
+  do{
+    SendRemoteNumber(CONEXAO, OUTBOX, DESVIROU);
+    ReceiveRemoteNumber(INBOX, 0, verifica);
+    Wait(30);
+  }while(verifica == DESVIROU);
+
+  MandaExecutivoContinuar();
+
+  Off(MOTOR_GARRA);
+  /*manda resposta para confirmar que a garra está aberta, para o executivo se afastar do boneco e seguindo parede*/
+}
+
+void pega(){
+  OnFwd(MOTOR_GARRA,POTENCIA_MAXIMA_GARRA);
+  Wait(TEMPO_ATE_JOGAR_DENTRO);
+  Off(MOTOR_GARRA);
+  Wait(TEMPO_DEPOIS_DE_JOGAR_DENTRO_GARANTIA);
+  OnFwd(MOTOR_GARRA,-POTENCIA_MAXIMA_GARRA);
+  Wait(TEMPO_ATE_A_GARRA_VOLTAR);
+  Off(MOTOR_GARRA);
+}
+
+int IdentificaBoneco(int x){
+/* x refere a qual cor temos que pegar 0 branco 1 preto*/
+  OnFwd(MOTOR_GARRA,POTENCIA_MAXIMA_GARRA);
+  Wait(TEMPO_ATE_A_GARRA_TRAVAR);
+  Off(MOTOR_GARRA);
+  if(x == BONECO_BRANCO){
+    if(SensorRaw(RGB_MEIO) > COR_BRANCA_MEIO_MIN && SensorRaw(RGB_MEIO) < COR_BRANCA_MEIO_MAX){
+      pega();
+    }else{
+      /*avisa pro robo que temos boneco errado na garra e espera ele girar*/
+      NaoPega();
+    }
+  }else if(x == BONECO_PRETO){
+    if(SensorRaw(RGB_MEIO) > COR_PRETA_MEIO_MIN && SensorRaw(RGB_MEIO) < COR_PRETA_MEIO_MAX){
+      pega();
+    }else{
+      /*avisa pro robo que temos boneco errado na garra e espera ele girar*/
+      NaoPega();
+    }
+  }
+  /*avisa pro robo que o processo de pegar o boneco acabou pra ele andar de novo*/
+}
+
+
 
 void MandaExecutivoContinuar(){
      int verifica = 0;
@@ -198,6 +295,15 @@ void MandaExecutivoContinuar(){
      }while(verifica!= PARADO);//MANDA CONTINUAR
 }
 
+void pega(){
+     OnFwd(MOTOR_GARRA,POTENCIA_MAXIMA_GARRA);
+     Wait(TEMPO_ATE_JOGAR_DENTRO);
+     Off(MOTOR_GARRA);
+     Wait(TEMPO_DEPOIS_DE_JOGAR_DENTRO_GARANTIA);
+     OnFwd(MOTOR_GARRA,-POTENCIA_MAXIMA_GARRA);
+     Wait(TEMPO_ATE_A_GARRA_VOLTAR);
+     Off(MOTOR_GARRA);
+}
 
 void teste1(){
      int x, i;
@@ -232,7 +338,6 @@ void teste1(){
 }
 
 void teste2(){
-     int bonecoAlvo = 0; 
      InicializaSensores();
      bonecoAlvo = RecebeBoneco();   
      
@@ -246,7 +351,9 @@ void teste2(){
           PlaySound(SOUND_FAST_UP);
      }
 
-     EnviaUSFrente();          
+     EnviaUSFrente(); 
+     EnviaGarra();
+
 }
 
 task main()

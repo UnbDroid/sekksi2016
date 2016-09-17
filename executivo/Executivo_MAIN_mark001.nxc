@@ -17,13 +17,17 @@
 #define SIM_GARRA 2
 #define NAO 0
 #define CONTINUA 6
-#define PARADO 0
-#define VIRANDO 7
+#define VIROU 7
+#define DESVIROU 8
 
-  //Bluetooth
+ //Bluetooth
+#define PARADO 0
 #define BONECO_BRANCO 4
 #define BONECO_PRETO 5
 #define LeGARRA_SENSOR 3
+#define NAO_PEGA 8
+
+
   //dist
 #define DIST_RE 30
 #define DIST_DA_PAREDE 8
@@ -182,45 +186,51 @@ void ChecaParada(){//TESTAR SE PARA QUANDO DEVE, E SE NAO DEMORA MUITO
 
 }
 
-void LeUSFRENTE(){// TESTE SE PARA QUANDO DEVE, E CONTINUA QUANDO DEVE
-  int verifica = 0, continua = 0;
-  do{
-      Para();
-      SendRemoteNumber(CONEXAO, OUTBOX, PARADO);
-      ReceiveRemoteNumber(INBOX, true, verifica);
-      Wait(30);
-  }while(verifica != SIM);//Verifica que o outro cerebro sabe que este esta parado
-
-
-  do{
-      SendRemoteNumber(CONEXAO, OUTBOX, VIRANDO);
-      ReceiveRemoteNumber(INBOX, true, verifica);
-      Wait(30);
-  }while(verifica != SIM);
-
-  vira(90, esquerda); //VIRA PRA ALGUM LUGAR
-
-  do{
-    SendRemoteNumber(CONEXAO, OUTBOX, PARADO);
-    ReceiveRemoteNumber(INBOX, true, continua);
-    Wait(30);
-  }while(continua != CONTINUA);
-  
+void LeUSFRENTE(){
+  Para();
+  vira(90, esquerda); //VIRA PRA ALGUM LUGAR  
 }
+
+
 void LeGARRA(){// TESTE SE PARA QUANDO DEVE, E CONTINUA QUANDO DEVE
   int verifica = 0, continua = 0;
   
   do{
       Para();
-      SendRemoteNumber(CONEXAO, OUTBOX, PARADO);
+      SendRemoteNumber(CONEXAO, OUTBOX, NAO_PEGA);
       ReceiveRemoteNumber(INBOX, true, verifica);
       Wait(30);
-  }while(verifica != SIM);
+  }while(verifica != NAO_PEGA);
+
+
+  vira(90, esquerda);
+
+  do{
+    SendRemoteNumber(CONEXAO, OUTBOX, VIROU);
+    ReceiveRemoteNumber(INBOX, true, verifica);
+    Wait(30);
+  }while(verifica != VIROU);
+
+  do{
+    SendRemoteNumber(CONEXAO, OUTBOX, PARADO);
+    ReceiveRemoteNumber(INBOX, true, verifica);
+    Wait(30);
+  }while(verifica != PARADO);
+
+  vira(90, direita);
+
+  do{
+    SendRemoteNumber(CONEXAO, OUTBOX, DESVIROU);
+    ReceiveRemoteNumber(INBOX, true, verifica);
+    Wait(30);
+  }while(verifica != DESVIROU);
+
   do{
       SendRemoteNumber(CONEXAO, OUTBOX, PARADO);
       ReceiveRemoteNumber(INBOX, true, continua);
       Wait(30);
   }while(continua != CONTINUA);
+
   
 }
 
