@@ -1,281 +1,201 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__RemoteMutex	9	0	0	4	4
-1	__SRSTmpLongVal	6	1	4	4	4
-2	__CBTWMutex	9	0	8	4	4
-3	__D0desligaBlue	6	1	12	4	7
-4	__CHSWMutex	9	0	16	4	4
-5	__Wait_7qG2_ms_7qG2_000_inline_desligaBlue	5	1	20	4	2
-6	__Wait_7qG2_ms_7qG2_000_inline_RetornaBoneco	5	1	24	4	4
-7	__RLSBmutex3	9	0	28	4	2
-8	__RLSBmutex2	9	0	32	4	2
-9	__CBTCSMutex	9	0	36	4	4
-10	__RRNTmpVal	6	1	40	4	8
-11	__MRMutex	9	0	44	4	4
-12	__signed_stack_002iniciaBlue	6	1	48	4	2
-13	__signed_stack_001iniciaBlue	6	1	52	4	4
-14	__signed_stack_002desligaBlue	6	1	56	4	2
-15	__Wait_7qG2_ms_7qG2_000_inline_iniciaBlue	5	1	60	4	2
-16	__signed_stack_001RetornaBoneco	6	1	64	4	6
-17	__signed_stack_001IniciaCorDoChao	6	1	68	4	8
-18	__D0RetornaBoneco	6	1	72	4	18
-19	__D0IniciaCorDoChao	6	1	76	4	21
-20	__D0iniciaBlue	6	1	80	4	7
-21	__signed_stack_001desligaBlue	6	1	84	4	4
-22	__DU0SetSensorLowspeed_inline_inicializaSensores	5	1	88	4	20
-23	__D0SetSensorLowspeed_inline_inicializaSensores	6	1	92	4	8
-24	__CLSWMutex3	9	0	96	4	2
-25	__CLSRMutex3	9	0	100	4	2
-26	__TextOutMutex	9	0	104	4	4
-27	__CLSCSMutex3	9	0	108	4	2
-28	__CLSCSMutex2	9	0	112	4	2
-29	__CLSWMutex2	9	0	116	4	2
-30	__CLSRMutex2	9	0	120	4	2
-31	__IniciaCorDoChao_7qG2_corDir_7qG2_000	4	1	124	2	3
-32	__RetornaBoneco_7qG2_passei_7qG2_000	4	1	126	2	3
-33	__teste2COMUNICA_7qG2_corEsq_7qG2_000	4	1	128	2	2
-34	__teste2COMUNICA_7qG2_corDir_7qG2_000	4	1	130	2	2
-35	__RetornaBoneco_7qG2_cor_7qG2_000	4	1	132	2	4
-36	__IniciaCorDoChao_7qG2_corEsq_7qG2_000	4	1	134	2	4
-37	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	136	1	20
-38	__inicializaSensores_return	1	1	137	1	3
-39	____ReadLSBytes2_return	1	1	138	1	3
-40	__WFRRTmpByte	1	1	139	1	4
-41	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	140	1	8
-42	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores	1	1	141	1	8
-43	__constVal1	2	0	142	1	20
-44	____ResetSensorSubroutine_return	1	1	143	1	6
-45	__constVal5	2	0	144	1	2
-46	__ResetSensorPort	1	1	145	1	6
-47	__ResetSensorTmp	1	1	146	1	2
-48	__constVal0	2	1	147	1	2
-49	__desligaBlue_return	1	1	148	1	3
-50	__constVal4	2	0	149	1	4
-51	__constVal3	2	0	150	1	4
-52	__RLSBytesCount3	1	1	151	1	7
-53	__RLSBResult3	2	1	152	1	7
-54	____initialize_global_data_return	1	1	153	1	3
-55	__RLSBIterations3	1	1	154	1	4
-56	__LSWriteOptionsVar	1	1	155	1	4
-57	__constVal2	2	0	156	1	7
-58	__teste2COMUNICA_return	1	1	157	1	3
-59	__RLSBIterations2	1	1	158	1	4
-60	____ReadLSBytes3_return	1	1	159	1	3
-61	__RLSBytesCount2	1	1	160	1	7
-62	__RetornaBoneco_return	1	1	161	1	4
-63	__RLSBResult2	2	1	162	1	7
-64	__IniciaCorDoChao_return	1	1	163	1	3
-65	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	164	1	8
-66	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	165	1	8
-67	__iniciaBlue_return	1	1	166	1	3
-68	__RRNErr	1	1	167	1	2
-69	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	168	1	8
-70	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	169	1	4
-71	__iniciaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	5
-72	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Result	3	1	172	2	5
-73	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	174	1	5
-74	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	176	4	5
-75	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
-76	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	178	1	5
-77	__CBTWArgs	8	0	3	8	8
-78	__CBTWArgs.Result	2	1	180	1	8
-79	__CBTWArgs.Connection	1	1	181	1	8
-80	__CBTWArgs.Buffer	7	0	182	4	8
-81	__CBTWArgs.Buffer.Buffer_type	1	0	0	1	0
-82	__CLSWArgs3	8	0	4	12	5
-83	__CLSWArgs3.Result	2	1	184	1	5
-84	__CLSWArgs3.Port	1	1	185	1	5
-85	__CLSWArgs3.Buffer	7	0	186	4	5
-86	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
-87	__CLSWArgs3.ReturnLen	1	1	188	1	5
-88	__TextOutArgs	8	0	4	16	12
-89	__TextOutArgs.Result	2	1	192	1	12
-90	__TextOutArgs.Location	8	0	2	4	12
-91	__TextOutArgs.Location.X	4	1	196	2	12
-92	__TextOutArgs.Location.Y	4	1	198	2	12
-93	__TextOutArgs.Text	7	0	200	4	12
-94	__TextOutArgs.Text.Text_type	1	0	0	1	0
-95	__TextOutArgs.Options	5	1	204	4	12
-96	__MRArgs	8	0	4	8	10
-97	__MRArgs.Result	2	1	208	1	10
-98	__MRArgs.QueueID	1	1	209	1	10
-99	__MRArgs.Remove	1	1	210	1	10
-100	__MRArgs.Message	7	0	212	4	10
-101	__MRArgs.Message.Message_type	1	0	0	1	0
-102	__CBTCSArgs	8	0	2	4	6
-103	__CBTCSArgs.Result	2	1	216	1	6
-104	__CBTCSArgs.Connection	1	1	217	1	6
-105	__CLSRArgs3	8	0	4	12	5
-106	__CLSRArgs3.Result	2	1	220	1	5
-107	__CLSRArgs3.Port	1	1	221	1	5
-108	__CLSRArgs3.Buffer	7	0	222	4	5
-109	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
-110	__CLSRArgs3.BufferLen	1	1	224	1	5
-111	__desligaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	5
-112	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Result	3	1	228	2	5
-113	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	230	1	5
-114	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	232	4	5
-115	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
-116	__desligaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	234	1	5
-117	__CLSWArgs2	8	0	4	12	5
-118	__CLSWArgs2.Result	2	1	236	1	5
-119	__CLSWArgs2.Port	1	1	237	1	5
-120	__CLSWArgs2.Buffer	7	0	238	4	5
-121	__CLSWArgs2.Buffer.Buffer_type	1	0	0	1	0
-122	__CLSWArgs2.ReturnLen	1	1	240	1	5
-123	__CLSCSArgs2	8	0	3	4	4
-124	__CLSCSArgs2.Result	2	1	244	1	4
-125	__CLSCSArgs2.Port	1	1	245	1	4
-126	__CLSCSArgs2.BytesReady	1	1	246	1	4
-127	__CLSCSArgs3	8	0	3	4	4
-128	__CLSCSArgs3.Result	2	1	248	1	4
-129	__CLSCSArgs3.Port	1	1	249	1	4
-130	__CLSCSArgs3.BytesReady	1	1	250	1	4
-131	__CHSWArgs	8	0	3	12	6
-132	__CHSWArgs.Status	2	1	252	1	6
-133	__CHSWArgs.Buffer	7	0	254	4	6
-134	__CHSWArgs.Buffer.Buffer_type	1	0	0	1	0
-135	__CHSWArgs.BufferLen	1	1	256	1	6
-136	__CLSRArgs2	8	0	4	12	5
-137	__CLSRArgs2.Result	2	1	260	1	5
-138	__CLSRArgs2.Port	1	1	261	1	5
-139	__CLSRArgs2.Buffer	7	0	262	4	5
-140	__CLSRArgs2.Buffer.Buffer_type	1	0	0	1	0
-141	__CLSRArgs2.BufferLen	1	1	264	1	5
-142	__constStr0010	7	0	266	4	1
-143	__constStr0010.__constStr0010_type	1	1	0	1	0
-144	__constStr0011	7	0	268	4	1
-145	__constStr0011.__constStr0011_type	1	1	0	1	0
-146	__RLSReadBuf2	7	0	270	4	8
-147	__RLSReadBuf2.__RLSReadBuf2_type	1	0	0	1	0
-148	__RLSLastGoodRead3	7	0	272	4	2
-149	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
-150	__RLSReadBuf3	7	0	274	4	8
-151	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
-152	__LSWriteOptions	7	0	276	4	2
-153	__LSWriteOptions.__LSWriteOptions_type	1	0	0	1	0
-154	__RLSBbufLSWrite1	7	0	278	4	2
-155	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
-156	__RLSLastGoodRead2	7	0	280	4	2
-157	__RLSLastGoodRead2.__RLSLastGoodRead2_type	1	0	0	1	0
-158	__SRSTmpBuf	7	0	282	4	12
-159	__SRSTmpBuf.__SRSTmpBuf_type	1	0	0	1	0
-160	__strbufdesligaBlue	7	0	284	4	4
-161	__strbufdesligaBlue.__strbufdesligaBlue_type	1	0	0	1	0
-162	__strbufiniciaBlue	7	0	286	4	4
-163	__strbufiniciaBlue.__strbufiniciaBlue_type	1	0	0	1	0
-164	__constStr0009	7	0	288	4	2
-165	__constStr0009.__constStr0009_type	1	1	0	1	0
-166	__SRSSendBuf	7	0	290	4	6
-167	__SRSSendBuf.__SRSSendBuf_type	1	0	0	1	0
-168	__SRSFlattenBuf	7	0	292	4	4
-169	__SRSFlattenBuf.__SRSFlattenBuf_type	1	0	0	1	0
-170	__DCMessageWritePacket	7	0	294	4	2
-171	__DCMessageWritePacket.__DCMessageWritePacket_type	1	0	0	1	0
+0	__D0SetSensorLowspeed_inline_inicializaSensores	6	1	0	4	8
+1	__D0vira	6	1	4	4	34
+2	__signed_stack_001andaRetoDireita	6	1	8	4	10
+3	__DU0SetSensorLowspeed_inline_inicializaSensores	5	1	12	4	20
+4	__D0teste2COMUNICA	6	1	16	4	4
+5	__D0desligaBlue	6	1	20	4	5
+6	__D0andaRetoDireita	6	1	24	4	31
+7	__D0distanciaTachoCount	6	1	28	4	2
+8	__D0distanciaGiro	6	1	32	4	7
+9	__signed_stack_002andaRetoDireita	6	1	36	4	2
+10	__signed_stack_001vira	6	1	40	4	18
+11	__signed_stack_002iniciaBlue	6	1	44	4	2
+12	__Wait_7qG2_ms_7qG2_000_inline_desligaBlue	5	1	48	4	2
+13	__Wait_7qG2_ms_7qG2_000_inline_iniciaBlue	5	1	52	4	2
+14	__signed_stack_001iniciaBlue	6	1	56	4	2
+15	__signed_stack_002desligaBlue	6	1	60	4	2
+16	__signed_stack_001desligaBlue	6	1	64	4	4
+17	__signed_stack_001distanciaTachoCount	6	1	68	4	2
+18	__signed_stack_001distanciaGiro	6	1	72	4	4
+19	__RLSBmutex0	9	0	76	4	2
+20	__CLSCSMutex0	9	0	80	4	2
+21	__TextOutMutex	9	0	84	4	4
+22	__CLSRMutex0	9	0	88	4	2
+23	__CLSWMutex0	9	0	92	4	2
+24	__distanciaGiro_7qG2_grau_7qG2_000	4	1	96	2	3
+25	my_tc_e	4	1	98	2	4
+26	my_tc_d	4	1	100	2	4
+27	__distanciaTachoCount_7qG2_grau_7qG2_000	4	1	102	2	2
+28	__andaRetoDireita_7qG2_distanciaAtual_7qG2_000	4	1	104	2	3
+29	__andaRetoDireita_7qG2_potd_7qG2_000	4	1	106	2	4
+30	__andaRetoDireita_7qG2_pote_7qG2_000	4	1	108	2	4
+31	__vira_7qG2_direcao_7qG2_000	4	1	110	2	3
+32	__andaRetoDireita_7qG2_distParede_7qG2_000	4	1	112	2	5
+33	__andaRetoDireita_7qG2_distAndar_7qG2_000	4	1	114	2	3
+34	__vira_7qG2_angulo_7qG2_000	4	1	116	2	3
+35	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	118	1	4
+36	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	119	1	8
+37	__iniciaBlue_return	1	1	120	1	3
+38	__desligaBlue_return	1	1	121	1	3
+39	__constVal1	2	0	122	1	16
+40	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores	1	1	123	1	8
+41	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	124	1	20
+42	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	125	1	8
+43	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	126	1	8
+44	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	127	1	8
+45	__constVal32	2	0	128	1	36
+46	__RLSBytesCount0	1	1	129	1	7
+47	__andaRetoDireita_return	1	1	130	1	4
+48	__RLSBResult0	2	1	131	1	7
+49	____initialize_global_data_return	1	1	132	1	3
+50	__teste2COMUNICA_return	1	1	133	1	3
+51	__vira_return	1	1	134	1	3
+52	__distanciaGiro_return	1	1	135	1	5
+53	__constVal96	2	0	136	1	12
+54	__constValNeg90	2	0	137	1	2
+55	__constVal63	2	0	138	1	12
+56	__ResetSensorTmp	1	1	139	1	2
+57	____ResetSensorSubroutine_return	1	1	140	1	6
+58	____ReadLSBytes0_return	1	1	141	1	3
+59	__constVal0	2	1	142	1	54
+60	__constVal3	2	0	143	1	12
+61	__ResetSensorPort	1	1	144	1	6
+62	__RLSBIterations0	1	1	145	1	4
+63	__distanciaTachoCount_return	1	1	146	1	4
+64	__inicializaSensores_return	1	1	147	1	3
+65	__LSWriteOptionsVar	1	1	148	1	2
+66	__constVal15	2	0	149	1	1
+67	__CLSWArgs0	8	0	4	12	5
+68	__CLSWArgs0.Result	2	1	152	1	5
+69	__CLSWArgs0.Port	1	1	153	1	5
+70	__CLSWArgs0.Buffer	7	0	154	4	5
+71	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+72	__CLSWArgs0.ReturnLen	1	1	156	1	5
+73	__CLSRArgs0	8	0	4	12	5
+74	__CLSRArgs0.Result	2	1	160	1	5
+75	__CLSRArgs0.Port	1	1	161	1	5
+76	__CLSRArgs0.Buffer	7	0	162	4	5
+77	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+78	__CLSRArgs0.BufferLen	1	1	164	1	5
+79	__CLSCSArgs0	8	0	3	4	4
+80	__CLSCSArgs0.Result	2	1	168	1	4
+81	__CLSCSArgs0.Port	1	1	169	1	4
+82	__CLSCSArgs0.BytesReady	1	1	170	1	4
+83	__iniciaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	5
+84	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Result	3	1	172	2	5
+85	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	174	1	5
+86	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	176	4	5
+87	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
+88	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	178	1	5
+89	__CBTCSArgs	8	0	2	4	3
+90	__CBTCSArgs.Result	2	1	180	1	3
+91	__CBTCSArgs.Connection	1	1	181	1	3
+92	__TextOutArgs	8	0	4	16	11
+93	__TextOutArgs.Result	2	1	184	1	11
+94	__TextOutArgs.Location	8	0	2	4	11
+95	__TextOutArgs.Location.X	4	1	188	2	11
+96	__TextOutArgs.Location.Y	4	1	190	2	11
+97	__TextOutArgs.Text	7	0	192	4	11
+98	__TextOutArgs.Text.Text_type	1	0	0	1	0
+99	__TextOutArgs.Options	5	1	196	4	11
+100	__desligaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	5
+101	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Result	3	1	200	2	5
+102	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	202	1	5
+103	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	204	4	5
+104	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
+105	__desligaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	206	1	5
+106	__RLSBbufLSWrite1	7	0	208	4	1
+107	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+108	__RLSLastGoodRead0	7	0	210	4	2
+109	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
+110	__LSWriteOptions	7	0	212	4	1
+111	__LSWriteOptions.__LSWriteOptions_type	1	0	0	1	0
+112	__RLSReadBuf0	7	0	214	4	8
+113	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
+114	__strbufdesligaBlue	7	0	216	4	4
+115	__strbufdesligaBlue.__strbufdesligaBlue_type	1	0	0	1	0
+116	__constStr0010	7	0	218	4	1
+117	__constStr0010.__constStr0010_type	1	1	0	1	0
+118	__constStr0009	7	0	220	4	2
+119	__constStr0009.__constStr0009_type	1	1	0	1	0
+120	__strbufiniciaBlue	7	0	222	4	4
+121	__strbufiniciaBlue.__strbufiniciaBlue_type	1	0	0	1	0
+122	__constStr0011	7	0	224	4	1
+123	__constStr0011.__constStr0011_type	1	1	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	387	0	#line 387 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-0	388	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	387	2	#line 387 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-0	387	2	#line 387 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-0	388	2		subcall teste2COMUNICA, __teste2COMUNICA_return
-0	387	4	#line 387 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-0	388	4		exit -1, -1
+0	439	0	#line 439 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+0	440	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	439	2	#line 439 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+0	439	2	#line 439 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+0	440	2		subcall teste2COMUNICA, __teste2COMUNICA_return
+0	439	4	#line 439 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+0	440	4		exit -1, -1
 1	5724	0		setin __constVal1, __ResetSensorPort, 5
 1	5726	4		getin __ResetSensorTmp, __ResetSensorPort, 5
 1	5727	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
 1	5728	11		subret ____ResetSensorSubroutine_return
-2	6595	0	#pragma macro 27
-2	6595	0		acquire __CLSWMutex2
-2	6595	1		index __LSWriteOptionsVar, __LSWriteOptions, __constVal2
-2	6595	5		or __CLSWArgs2.Port, __constVal2, __LSWriteOptionsVar
-2	6595	9		mov __CLSWArgs2.ReturnLen, __RLSBytesCount2
-2	6595	11		mov __CLSWArgs2.Buffer, __RLSReadBuf2
-2	6595	13		syscall 21, __CLSWArgs2
-2	6595	16		mov __RLSBResult2, __CLSWArgs2.Result
-2	6595	18		release __CLSWMutex2
-2	6595	19	#line 6595 "NXTDefs.h"
-2	6596	19		brtst 5, __RLSBError2, __RLSBResult2
-2	6597	22		set __RLSBIterations2, 60
-2	6599	25	#pragma macro 23
-2	6599	25		acquire __CLSCSMutex2
-2	6599	26		set __CLSCSArgs2.Port, 2
-2	6599	29		syscall 23, __CLSCSArgs2
-2	6599	32		mov __RLSBytesCount2, __CLSCSArgs2.BytesReady
-2	6599	34		mov __RLSBResult2, __CLSCSArgs2.Result
-2	6599	36		release __CLSCSMutex2
-2	6599	37	#line 6599 "NXTDefs.h"
-2	6600	37		sub __RLSBIterations2, __RLSBIterations2, __constVal1
-2	6601	41		brtst 2, __RLSBError2, __RLSBIterations2
-2	6602	44		brtst 0, __RLSBError2, __RLSBResult2
-2	6603	47		brtst 4, __RLSBReadyToRead2, __RLSBResult2
-2	6605	50		wait 1
-2	6606	52		jmp __RLSBDoCheckStatus2
-2	6608	54		brtst 4, __RLSBReturn2, __RLSBytesCount2
-2	6609	57		arrinit __RLSReadBuf2, __constVal0, __RLSBytesCount2
-2	6611	61	#pragma macro 25
-2	6611	61		acquire __CLSRMutex2
-2	6611	62		set __CLSRArgs2.Port, 2
-2	6611	65		mov __CLSRArgs2.BufferLen, __RLSBytesCount2
-2	6611	67		syscall 22, __CLSRArgs2
-2	6611	70		mov __RLSReadBuf2, __CLSRArgs2.Buffer
-2	6611	72		mov __RLSBResult2, __CLSRArgs2.Result
-2	6611	74		release __CLSRMutex2
-2	6611	75	#line 6611 "NXTDefs.h"
-2	6612	75		brtst 5, __RLSBError2, __RLSBResult2
-2	6613	78		mov __RLSLastGoodRead2, __RLSReadBuf2
-2	6614	80		jmp __RLSBDone2
-2	6616	82		mov __RLSReadBuf2, __RLSLastGoodRead2
-2	6618	84		arrsize __RLSBytesCount2, __RLSReadBuf2
-2	6620	87		subret ____ReadLSBytes2_return
-3	6632	0	#pragma macro 27
-3	6632	0		acquire __CLSWMutex3
-3	6632	1		index __LSWriteOptionsVar, __LSWriteOptions, __constVal3
-3	6632	5		or __CLSWArgs3.Port, __constVal3, __LSWriteOptionsVar
-3	6632	9		mov __CLSWArgs3.ReturnLen, __RLSBytesCount3
-3	6632	11		mov __CLSWArgs3.Buffer, __RLSReadBuf3
-3	6632	13		syscall 21, __CLSWArgs3
-3	6632	16		mov __RLSBResult3, __CLSWArgs3.Result
-3	6632	18		release __CLSWMutex3
-3	6632	19	#line 6632 "NXTDefs.h"
-3	6633	19		brtst 5, __RLSBError3, __RLSBResult3
-3	6634	22		set __RLSBIterations3, 60
-3	6636	25	#pragma macro 23
-3	6636	25		acquire __CLSCSMutex3
-3	6636	26		set __CLSCSArgs3.Port, 3
-3	6636	29		syscall 23, __CLSCSArgs3
-3	6636	32		mov __RLSBytesCount3, __CLSCSArgs3.BytesReady
-3	6636	34		mov __RLSBResult3, __CLSCSArgs3.Result
-3	6636	36		release __CLSCSMutex3
-3	6636	37	#line 6636 "NXTDefs.h"
-3	6637	37		sub __RLSBIterations3, __RLSBIterations3, __constVal1
-3	6638	41		brtst 2, __RLSBError3, __RLSBIterations3
-3	6639	44		brtst 0, __RLSBError3, __RLSBResult3
-3	6640	47		brtst 4, __RLSBReadyToRead3, __RLSBResult3
-3	6642	50		wait 1
-3	6643	52		jmp __RLSBDoCheckStatus3
-3	6645	54		brtst 4, __RLSBReturn3, __RLSBytesCount3
-3	6646	57		arrinit __RLSReadBuf3, __constVal0, __RLSBytesCount3
-3	6648	61	#pragma macro 25
-3	6648	61		acquire __CLSRMutex3
-3	6648	62		set __CLSRArgs3.Port, 3
-3	6648	65		mov __CLSRArgs3.BufferLen, __RLSBytesCount3
-3	6648	67		syscall 22, __CLSRArgs3
-3	6648	70		mov __RLSReadBuf3, __CLSRArgs3.Buffer
-3	6648	72		mov __RLSBResult3, __CLSRArgs3.Result
-3	6648	74		release __CLSRMutex3
-3	6648	75	#line 6648 "NXTDefs.h"
-3	6649	75		brtst 5, __RLSBError3, __RLSBResult3
-3	6650	78		mov __RLSLastGoodRead3, __RLSReadBuf3
-3	6651	80		jmp __RLSBDone3
-3	6653	82		mov __RLSReadBuf3, __RLSLastGoodRead3
-3	6655	84		arrsize __RLSBytesCount3, __RLSReadBuf3
-3	6657	87		subret ____ReadLSBytes3_return
-4	92	0	#line 92 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-4	93	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 0
-4	92	3	#line 92 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-4	92	3	#line 92 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-4	93	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+2	6520	0	#pragma macro 27
+2	6520	0		acquire __CLSWMutex0
+2	6520	1		index __LSWriteOptionsVar, __LSWriteOptions, __constVal0
+2	6520	5		or __CLSWArgs0.Port, __constVal0, __LSWriteOptionsVar
+2	6520	9		mov __CLSWArgs0.ReturnLen, __RLSBytesCount0
+2	6520	11		mov __CLSWArgs0.Buffer, __RLSReadBuf0
+2	6520	13		syscall 21, __CLSWArgs0
+2	6520	16		mov __RLSBResult0, __CLSWArgs0.Result
+2	6520	18		release __CLSWMutex0
+2	6521	19	#line 6521 "NXTDefs.h"
+2	6522	19		brtst 5, __RLSBError0, __RLSBResult0
+2	6523	22		set __RLSBIterations0, 60
+2	6525	25	#pragma macro 23
+2	6525	25		acquire __CLSCSMutex0
+2	6525	26		set __CLSCSArgs0.Port, 0
+2	6525	29		syscall 23, __CLSCSArgs0
+2	6525	32		mov __RLSBytesCount0, __CLSCSArgs0.BytesReady
+2	6525	34		mov __RLSBResult0, __CLSCSArgs0.Result
+2	6525	36		release __CLSCSMutex0
+2	6525	37	#line 6525 "NXTDefs.h"
+2	6526	37		sub __RLSBIterations0, __RLSBIterations0, __constVal1
+2	6527	41		brtst 2, __RLSBError0, __RLSBIterations0
+2	6528	44		brtst 0, __RLSBError0, __RLSBResult0
+2	6529	47		brtst 4, __RLSBReadyToRead0, __RLSBResult0
+2	6531	50		wait 1
+2	6532	52		jmp __RLSBDoCheckStatus0
+2	6534	54		brtst 4, __RLSBReturn0, __RLSBytesCount0
+2	6535	57		arrinit __RLSReadBuf0, __constVal0, __RLSBytesCount0
+2	6537	61	#pragma macro 25
+2	6537	61		acquire __CLSRMutex0
+2	6537	62		set __CLSRArgs0.Port, 0
+2	6537	65		mov __CLSRArgs0.BufferLen, __RLSBytesCount0
+2	6537	67		syscall 22, __CLSRArgs0
+2	6537	70		mov __RLSReadBuf0, __CLSRArgs0.Buffer
+2	6537	72		mov __RLSBResult0, __CLSRArgs0.Result
+2	6537	74		release __CLSRMutex0
+2	6537	75	#line 6537 "NXTDefs.h"
+2	6538	75		brtst 5, __RLSBError0, __RLSBResult0
+2	6539	78		mov __RLSLastGoodRead0, __RLSReadBuf0
+2	6540	80		jmp __RLSBDone0
+2	6542	82		mov __RLSReadBuf0, __RLSLastGoodRead0
+2	6544	84		arrsize __RLSBytesCount0, __RLSReadBuf0
+2	6546	87		subret ____ReadLSBytes0_return
+3	102	0	#line 102 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+3	103	0		set __signed_stack_001distanciaTachoCount, 3
+3	102	3	#line 102 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+3	102	3	#line 102 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+3	102	3	#line 102 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+3	103	3		mul __D0distanciaTachoCount, __signed_stack_001distanciaTachoCount, __distanciaTachoCount_7qG2_grau_7qG2_000
+3	102	7	#line 102 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+3	103	7		subret __distanciaTachoCount_return
+3	102	9	#line 102 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+3	105	9	#line 105 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+3	106	9		subret __distanciaTachoCount_return
+4	107	0	#line 107 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+4	108	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 0
+4	107	3	#line 107 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+4	107	3	#line 107 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+4	108	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
 4	4523	5	#line 4523 "NXCDefs.h"
 4	4524	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
 4	4523	7	#line 4523 "NXCDefs.h"
@@ -316,15 +236,15 @@ Clump	Line	PC	Source
 4	4460	40	#pragma macro 4
 4	4460	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
 4	4460	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-4	8394	44	#line 8394 "NXCDefs.h"
+4	8476	44	#line 8476 "NXCDefs.h"
 4	4459	44	#line 4459 "NXCDefs.h"
 4	4525	44	#line 4525 "NXCDefs.h"
-4	92	44	#line 92 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-4	93	44	#line 93 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-4	94	44		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 1
-4	93	47	#line 93 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-4	93	47	#line 93 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-4	94	47		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+4	107	44	#line 107 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+4	108	44	#line 108 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+4	109	44		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 1
+4	108	47	#line 108 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+4	108	47	#line 108 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+4	109	47		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
 4	4523	49	#line 4523 "NXCDefs.h"
 4	4524	49		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
 4	4523	51	#line 4523 "NXCDefs.h"
@@ -365,15 +285,15 @@ Clump	Line	PC	Source
 4	4460	84	#pragma macro 4
 4	4460	84		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
 4	4460	86		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-4	8457	88	#line 8457 "NXCDefs.h"
+4	8539	88	#line 8539 "NXCDefs.h"
 4	4459	88	#line 4459 "NXCDefs.h"
 4	4525	88	#line 4525 "NXCDefs.h"
-4	93	88	#line 93 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-4	94	88	#line 94 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-4	95	88		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 2
-4	94	91	#line 94 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-4	94	91	#line 94 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-4	95	91		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+4	108	88	#line 108 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+4	109	88	#line 109 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+4	110	88		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 2
+4	109	91	#line 109 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+4	109	91	#line 109 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+4	110	91		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
 4	4523	93	#line 4523 "NXCDefs.h"
 4	4524	93		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
 4	4523	95	#line 4523 "NXCDefs.h"
@@ -414,15 +334,15 @@ Clump	Line	PC	Source
 4	4460	128	#pragma macro 4
 4	4460	128		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
 4	4460	130		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-4	8520	132	#line 8520 "NXCDefs.h"
+4	8602	132	#line 8602 "NXCDefs.h"
 4	4459	132	#line 4459 "NXCDefs.h"
 4	4525	132	#line 4525 "NXCDefs.h"
-4	94	132	#line 94 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-4	95	132	#line 95 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-4	96	132		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 3
-4	95	135	#line 95 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-4	95	135	#line 95 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-4	96	135		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+4	109	132	#line 109 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+4	110	132	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+4	111	132		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 3
+4	110	135	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+4	110	135	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+4	111	135		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
 4	4523	137	#line 4523 "NXCDefs.h"
 4	4524	137		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
 4	4523	139	#line 4523 "NXCDefs.h"
@@ -463,417 +383,501 @@ Clump	Line	PC	Source
 4	4460	172	#pragma macro 4
 4	4460	172		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
 4	4460	174		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-4	8583	176	#line 8583 "NXCDefs.h"
+4	8665	176	#line 8665 "NXCDefs.h"
 4	4459	176	#line 4459 "NXCDefs.h"
 4	4525	176	#line 4525 "NXCDefs.h"
-4	95	176	#line 95 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-4	99	176	#line 99 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-4	100	176		subret __inicializaSensores_return
-5	101	0	#line 101 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	102	0		strcat __strbufiniciaBlue, __constStr0009
-5	101	4	#line 101 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	102	4		mov __iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name, __strbufiniciaBlue
-5	101	6	#line 101 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	102	6	#line 102 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	103	6		set __iniciaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot, 1
-5	102	9	#line 102 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	102	9	#line 102 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	103	9	#line 103 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	104	9		set __iniciaBlue_7qG2_DADOS_BT_7qG2_000.Action, 1
-5	103	12	#line 103 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	103	12	#line 103 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	106	12	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	107	12	#pragma macro 4
-5	107	12	#line 107 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	107	12		syscall 36, __iniciaBlue_7qG2_DADOS_BT_7qG2_000
-5	105	15	#line 105 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	105	15	#line 105 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	105	15	#line 105 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	105	15	#line 105 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	107	15	#line 107 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	106	15	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	107	15	#line 107 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	108	15		set __Wait_7qG2_ms_7qG2_000_inline_iniciaBlue, 30
-5	107	18	#line 107 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+4	110	176	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+4	114	176	#line 114 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+4	115	176		subret __inicializaSensores_return
+5	116	0	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	117	0		strcat __strbufiniciaBlue, __constStr0009
+5	116	4	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	117	4		mov __iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name, __strbufiniciaBlue
+5	116	6	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	117	6	#line 117 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	118	6		set __iniciaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot, 1
+5	117	9	#line 117 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	117	9	#line 117 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	118	9	#line 118 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	119	9		set __iniciaBlue_7qG2_DADOS_BT_7qG2_000.Action, 1
+5	118	12	#line 118 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	118	12	#line 118 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	127	12	#line 127 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	128	12	#pragma macro 4
+5	128	12	#line 128 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	128	12		syscall 36, __iniciaBlue_7qG2_DADOS_BT_7qG2_000
+5	126	15	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	126	15	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	126	15	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	126	15	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	127	15	#line 127 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	127	15	#line 127 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	127	15	#line 127 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	128	15		set __Wait_7qG2_ms_7qG2_000_inline_iniciaBlue, 4000
+5	127	18	#line 127 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
 5	8869	18	#line 8869 "NXCDefs.h"
 5	8870	18		waitv __Wait_7qG2_ms_7qG2_000_inline_iniciaBlue
 5	8869	20	#line 8869 "NXCDefs.h"
-5	107	20	#line 107 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	109	20	#line 109 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	110	20	#pragma macro 5
-5	110	20		acquire __CBTCSMutex
-5	110	21		mov __CBTCSArgs.Connection, __constVal1
-5	110	23		syscall 28, __CBTCSArgs
-5	110	26		mov __D0iniciaBlue, __CBTCSArgs.Result
-5	110	28		release __CBTCSMutex
-5	8636	29	#line 8636 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	109	29	#line 109 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	110	29		mov __signed_stack_001iniciaBlue, __D0iniciaBlue
-5	109	31	#line 109 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	110	31		set __D0iniciaBlue, 0
-5	109	34	#line 109 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	110	34		cmp 5, __D0iniciaBlue, __signed_stack_001iniciaBlue, __D0iniciaBlue
-5	109	38	#line 109 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	110	38		brtst 4, __ASM_Label_631, __D0iniciaBlue
-5	109	41	#line 109 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	110	41		jmp __ASM_Label_630
-5	109	43	#line 109 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	109	43	#line 109 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	110	43	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	111	43		set __signed_stack_001iniciaBlue, 0
-5	110	46	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	110	46	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	111	46		set __signed_stack_002iniciaBlue, 48
-5	110	49	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	110	49	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	111	49		strcat __strbufiniciaBlue, __constStr0010
-5	110	53	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	111	53		acquire __TextOutMutex
-5	110	54	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	111	54		mov __TextOutArgs.Location.X, __signed_stack_001iniciaBlue
-5	110	56	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	111	56		mov __TextOutArgs.Location.Y, __signed_stack_002iniciaBlue
-5	110	58	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	111	58		set __TextOutArgs.Options, 0
-5	110	61	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	111	61		mov __TextOutArgs.Text, __strbufiniciaBlue
-5	110	63	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	111	63		syscall 13, __TextOutArgs
-5	110	66	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	111	66		mov __D0iniciaBlue, __TextOutArgs.Result
-5	110	68	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	111	68		release __TextOutMutex
-5	110	69	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	113	69	#line 113 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-5	114	69		subret __iniciaBlue_return
-6	115	0	#line 115 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	116	0		strcat __strbufdesligaBlue, __constStr0009
-6	115	4	#line 115 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	116	4		mov __desligaBlue_7qG2_DADOS_BT_7qG2_000.Name, __strbufdesligaBlue
-6	115	6	#line 115 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	116	6	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	117	6		set __desligaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot, 1
-6	116	9	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	116	9	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	117	9	#line 117 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	118	9		set __desligaBlue_7qG2_DADOS_BT_7qG2_000.Action, 0
-6	117	12	#line 117 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	117	12	#line 117 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	120	12	#line 120 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	121	12	#pragma macro 4
-6	121	12	#line 121 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	121	12		syscall 36, __desligaBlue_7qG2_DADOS_BT_7qG2_000
-6	119	15	#line 119 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	119	15	#line 119 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	119	15	#line 119 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	119	15	#line 119 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	121	15	#line 121 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	120	15	#line 120 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	121	15	#line 121 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	122	15		set __Wait_7qG2_ms_7qG2_000_inline_desligaBlue, 30
-6	121	18	#line 121 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	127	20	#line 127 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	128	20	#line 128 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	129	20		set __signed_stack_001iniciaBlue, 0
+5	128	23	#line 128 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	128	23	#line 128 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	129	23		set __signed_stack_002iniciaBlue, 48
+5	128	26	#line 128 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	128	26	#line 128 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	129	26		strcat __strbufiniciaBlue, __constStr0010
+5	128	30	#line 128 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	129	30		acquire __TextOutMutex
+5	128	31	#line 128 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	129	31		mov __TextOutArgs.Location.X, __signed_stack_001iniciaBlue
+5	128	33	#line 128 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	129	33		mov __TextOutArgs.Location.Y, __signed_stack_002iniciaBlue
+5	128	35	#line 128 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	129	35		set __TextOutArgs.Options, 0
+5	128	38	#line 128 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	129	38		mov __TextOutArgs.Text, __strbufiniciaBlue
+5	128	40	#line 128 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	129	40		syscall 13, __TextOutArgs
+5	128	43	#line 128 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	128	43	#line 128 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	129	43		release __TextOutMutex
+5	128	44	#line 128 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	131	44	#line 131 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+5	132	44		subret __iniciaBlue_return
+6	133	0	#line 133 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	134	0		strcat __strbufdesligaBlue, __constStr0009
+6	133	4	#line 133 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	134	4		mov __desligaBlue_7qG2_DADOS_BT_7qG2_000.Name, __strbufdesligaBlue
+6	133	6	#line 133 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	134	6	#line 134 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	135	6		set __desligaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot, 1
+6	134	9	#line 134 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	134	9	#line 134 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	135	9	#line 135 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	136	9		set __desligaBlue_7qG2_DADOS_BT_7qG2_000.Action, 0
+6	135	12	#line 135 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	135	12	#line 135 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	138	12	#line 138 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	139	12	#pragma macro 4
+6	139	12	#line 139 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	139	12		syscall 36, __desligaBlue_7qG2_DADOS_BT_7qG2_000
+6	137	15	#line 137 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	137	15	#line 137 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	137	15	#line 137 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	137	15	#line 137 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	139	15	#line 139 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	138	15	#line 138 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	139	15	#line 139 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	140	15		set __Wait_7qG2_ms_7qG2_000_inline_desligaBlue, 30
+6	139	18	#line 139 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
 6	8869	18	#line 8869 "NXCDefs.h"
 6	8870	18		waitv __Wait_7qG2_ms_7qG2_000_inline_desligaBlue
 6	8869	20	#line 8869 "NXCDefs.h"
-6	121	20	#line 121 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	123	20	#line 123 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	124	20	#pragma macro 5
-6	124	20		acquire __CBTCSMutex
-6	124	21		mov __CBTCSArgs.Connection, __constVal1
-6	124	23		syscall 28, __CBTCSArgs
-6	124	26		mov __D0desligaBlue, __CBTCSArgs.Result
-6	124	28		release __CBTCSMutex
-6	8734	29	#line 8734 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	123	29	#line 123 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	124	29		mov __signed_stack_001desligaBlue, __D0desligaBlue
-6	123	31	#line 123 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	124	31		set __D0desligaBlue, 0
-6	123	34	#line 123 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	124	34		cmp 4, __D0desligaBlue, __signed_stack_001desligaBlue, __D0desligaBlue
-6	123	38	#line 123 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	124	38		brtst 4, __ASM_Label_645, __D0desligaBlue
-6	123	41	#line 123 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	124	41		jmp __ASM_Label_644
-6	123	43	#line 123 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	123	43	#line 123 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	124	43	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	125	43		set __signed_stack_001desligaBlue, 0
-6	124	46	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	124	46	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	125	46		set __signed_stack_002desligaBlue, 56
-6	124	49	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	124	49	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	125	49		strcat __strbufdesligaBlue, __constStr0011
-6	124	53	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	125	53		acquire __TextOutMutex
-6	124	54	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	125	54		mov __TextOutArgs.Location.X, __signed_stack_001desligaBlue
-6	124	56	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	125	56		mov __TextOutArgs.Location.Y, __signed_stack_002desligaBlue
-6	124	58	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	125	58		set __TextOutArgs.Options, 0
-6	124	61	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	125	61		mov __TextOutArgs.Text, __strbufdesligaBlue
-6	124	63	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	125	63		syscall 13, __TextOutArgs
-6	124	66	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	125	66		mov __D0desligaBlue, __TextOutArgs.Result
-6	124	68	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	125	68		release __TextOutMutex
-6	124	69	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	130	69	#line 130 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-6	131	69		subret __desligaBlue_return
-7	231	0	#line 231 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	232	0	#pragma macro 24
-7	232	0		acquire __RLSBmutex3
-7	232	1		mov __RLSReadBuf3, __RLSBbufLSWrite1
-7	232	3		set __RLSBytesCount3, 1
-7	232	6		subcall __ReadLSBytes3, ____ReadLSBytes3_return
-7	232	8		index __D0IniciaCorDoChao, __RLSReadBuf3, 65535
-7	232	12		release __RLSBmutex3
-7	9375	13	#line 9375 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	231	13	#line 231 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	232	13		mov __IniciaCorDoChao_7qG2_corEsq_7qG2_000, __D0IniciaCorDoChao
-7	231	15	#line 231 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	231	15	#line 231 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	232	15	#line 232 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	233	15	#pragma macro 24
-7	233	15		acquire __RLSBmutex2
-7	233	16		mov __RLSReadBuf2, __RLSBbufLSWrite1
-7	233	18		set __RLSBytesCount2, 1
-7	233	21		subcall __ReadLSBytes2, ____ReadLSBytes2_return
-7	233	23		index __D0IniciaCorDoChao, __RLSReadBuf2, 65535
-7	233	27		release __RLSBmutex2
-7	9383	28	#line 9383 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	232	28	#line 232 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	233	28		mov __IniciaCorDoChao_7qG2_corDir_7qG2_000, __D0IniciaCorDoChao
-7	232	30	#line 232 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	232	30	#line 232 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	234	30	#line 234 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	234	30	#line 234 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	235	30		mov __signed_stack_001IniciaCorDoChao, __D0IniciaCorDoChao
-7	234	32	#line 234 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	235	32		set __D0IniciaCorDoChao, 5
-7	234	35	#line 234 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	235	35		cmp 4, __D0IniciaCorDoChao, __signed_stack_001IniciaCorDoChao, __D0IniciaCorDoChao
-7	234	39	#line 234 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	235	39		brtst 5, __ASM_Label_758, __D0IniciaCorDoChao
-7	234	42	#line 234 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	235	42		mov __signed_stack_001IniciaCorDoChao, __IniciaCorDoChao_7qG2_corEsq_7qG2_000
-7	234	44	#line 234 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	234	44	#line 234 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	235	44		set __D0IniciaCorDoChao, 5
-7	234	47	#line 234 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	235	47		cmp 4, __D0IniciaCorDoChao, __signed_stack_001IniciaCorDoChao, __D0IniciaCorDoChao
-7	235	51	#line 235 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	236	51		brtst 4, __ASM_Label_765, __D0IniciaCorDoChao
-7	235	54	#line 235 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	236	54		set __RetornaBoneco_7qG2_cor_7qG2_000, 5
-7	235	57	#line 235 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	235	57	#line 235 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	236	57		subcall RetornaBoneco, __RetornaBoneco_return
-7	235	59	#line 235 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	236	59	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	237	59		jmp __ASM_Label_768
-7	236	61	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	237	61		mov __signed_stack_001IniciaCorDoChao, __IniciaCorDoChao_7qG2_corDir_7qG2_000
-7	236	63	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	236	63	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	237	63		set __D0IniciaCorDoChao, 3
-7	236	66	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	237	66		cmp 4, __D0IniciaCorDoChao, __signed_stack_001IniciaCorDoChao, __D0IniciaCorDoChao
-7	236	70	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	237	70		brtst 5, __ASM_Label_769, __D0IniciaCorDoChao
-7	236	73	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	237	73		mov __signed_stack_001IniciaCorDoChao, __IniciaCorDoChao_7qG2_corEsq_7qG2_000
-7	236	75	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	236	75	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	237	75		set __D0IniciaCorDoChao, 3
-7	236	78	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	237	78		cmp 4, __D0IniciaCorDoChao, __signed_stack_001IniciaCorDoChao, __D0IniciaCorDoChao
-7	237	82	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	238	82		brtst 4, __ASM_Label_776, __D0IniciaCorDoChao
-7	237	85	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	238	85		set __RetornaBoneco_7qG2_cor_7qG2_000, 3
-7	237	88	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	237	88	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	238	88		subcall RetornaBoneco, __RetornaBoneco_return
-7	237	90	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	241	90	#line 241 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	241	90	#line 241 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	241	90	#line 241 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-7	242	90		subret __IniciaCorDoChao_return
-8	255	0	#line 255 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	256	0		mov __signed_stack_001RetornaBoneco, __RetornaBoneco_7qG2_cor_7qG2_000
-8	255	2	#line 255 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	255	2	#line 255 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	256	2		set __D0RetornaBoneco, 3
-8	255	5	#line 255 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	256	5		cmp 4, __D0RetornaBoneco, __signed_stack_001RetornaBoneco, __D0RetornaBoneco
-8	256	9	#line 256 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	257	9		brtst 4, __ASM_Label_795, __D0RetornaBoneco
-8	256	12	#line 256 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	257	12	#pragma macro 25
-8	257	12		acquire __RemoteMutex
-8	257	13		mov __SRSTmpBuf, __DCMessageWritePacket
-8	257	15		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
-8	257	20		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-8	257	25		mov __SRSTmpLongVal, __constVal1
-8	257	27		flatten __SRSFlattenBuf, __SRSTmpLongVal
-8	257	30		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-8	257	35		brcmp 0, __ConnWrite_Else0, __constVal1, __constVal4
-8	257	39		acquire __CHSWMutex
-8	257	40		sub __WFRRTmpByte, __constVal1, __constVal4
-8	257	44		arrbuild __CHSWArgs.Buffer, __WFRRTmpByte, __SRSSendBuf
-8	257	49		syscall 37, __CHSWArgs
-8	257	52		mov __D0RetornaBoneco, __CHSWArgs.Status
-8	257	54		release __CHSWMutex
-8	257	55		jmp __ConnWrite_EndIf0
-8	257	57		acquire __CBTWMutex
-8	257	58		mov __CBTWArgs.Connection, __constVal1
-8	257	60		mov __CBTWArgs.Buffer, __SRSSendBuf
-8	257	62		syscall 29, __CBTWArgs
-8	257	65		mov __D0RetornaBoneco, __CBTWArgs.Result
-8	257	67		release __CBTWMutex
-8	257	68		release __RemoteMutex
-8	9555	69	#line 9555 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	256	69	#line 256 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	256	69	#line 256 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	257	69	#line 257 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	258	69	#pragma macro 9
-8	258	69		acquire __MRMutex
-8	258	70		mov __MRArgs.QueueID, __constVal1
-8	258	72		mov __MRArgs.Remove, __constVal1
-8	258	74		set __RRNTmpVal, 0
-8	258	77		syscall 27, __MRArgs
-8	258	80		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-8	258	85		mov __RetornaBoneco_7qG2_passei_7qG2_000, __RRNTmpVal
-8	258	87		mov __D0RetornaBoneco, __MRArgs.Result
-8	258	89		release __MRMutex
-8	9559	90	#line 9559 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	257	90	#line 257 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	257	90	#line 257 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	258	90	#line 258 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	259	90		set __Wait_7qG2_ms_7qG2_000_inline_RetornaBoneco, 30
-8	258	93	#line 258 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	8869	93	#line 8869 "NXCDefs.h"
-8	8870	93		waitv __Wait_7qG2_ms_7qG2_000_inline_RetornaBoneco
-8	8869	95	#line 8869 "NXCDefs.h"
-8	258	95	#line 258 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	259	95	#line 259 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	260	95		jmp __ASM_Label_798
-8	259	97	#line 259 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	260	97		mov __signed_stack_001RetornaBoneco, __RetornaBoneco_7qG2_cor_7qG2_000
-8	259	99	#line 259 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	259	99	#line 259 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	260	99		set __D0RetornaBoneco, 5
-8	259	102	#line 259 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	260	102		cmp 4, __D0RetornaBoneco, __signed_stack_001RetornaBoneco, __D0RetornaBoneco
-8	260	106	#line 260 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	261	106		brtst 4, __ASM_Label_801, __D0RetornaBoneco
-8	260	109	#line 260 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	261	109	#pragma macro 25
-8	261	109		acquire __RemoteMutex
-8	261	110		mov __SRSTmpBuf, __DCMessageWritePacket
-8	261	112		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
-8	261	117		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-8	261	122		mov __SRSTmpLongVal, __constVal2
-8	261	124		flatten __SRSFlattenBuf, __SRSTmpLongVal
-8	261	127		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-8	261	132		brcmp 0, __ConnWrite_Else1, __constVal1, __constVal4
-8	261	136		acquire __CHSWMutex
-8	261	137		sub __WFRRTmpByte, __constVal1, __constVal4
-8	261	141		arrbuild __CHSWArgs.Buffer, __WFRRTmpByte, __SRSSendBuf
-8	261	146		syscall 37, __CHSWArgs
-8	261	149		mov __D0RetornaBoneco, __CHSWArgs.Status
-8	261	151		release __CHSWMutex
-8	261	152		jmp __ConnWrite_EndIf1
-8	261	154		acquire __CBTWMutex
-8	261	155		mov __CBTWArgs.Connection, __constVal1
-8	261	157		mov __CBTWArgs.Buffer, __SRSSendBuf
-8	261	159		syscall 29, __CBTWArgs
-8	261	162		mov __D0RetornaBoneco, __CBTWArgs.Result
-8	261	164		release __CBTWMutex
-8	261	165		release __RemoteMutex
-8	9592	166	#line 9592 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	260	166	#line 260 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	260	166	#line 260 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	261	166	#line 261 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	262	166	#pragma macro 9
-8	262	166		acquire __MRMutex
-8	262	167		mov __MRArgs.QueueID, __constVal1
-8	262	169		mov __MRArgs.Remove, __constVal1
-8	262	171		set __RRNTmpVal, 0
-8	262	174		syscall 27, __MRArgs
-8	262	177		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-8	262	182		mov __RetornaBoneco_7qG2_passei_7qG2_000, __RRNTmpVal
-8	262	184		mov __D0RetornaBoneco, __MRArgs.Result
-8	262	186		release __MRMutex
-8	9596	187	#line 9596 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	261	187	#line 261 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	261	187	#line 261 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	262	187	#line 262 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	263	187		set __Wait_7qG2_ms_7qG2_000_inline_RetornaBoneco, 30
-8	262	190	#line 262 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	8869	190	#line 8869 "NXCDefs.h"
-8	8870	190		waitv __Wait_7qG2_ms_7qG2_000_inline_RetornaBoneco
-8	8869	192	#line 8869 "NXCDefs.h"
-8	262	192	#line 262 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	264	192	#line 264 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	264	192	#line 264 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	264	192	#line 264 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	265	192		mov __signed_stack_001RetornaBoneco, __RetornaBoneco_7qG2_passei_7qG2_000
-8	264	194	#line 264 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	264	194	#line 264 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	265	194		set __D0RetornaBoneco, 1
-8	264	197	#line 264 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	265	197		cmp 5, __D0RetornaBoneco, __signed_stack_001RetornaBoneco, __D0RetornaBoneco
-8	264	201	#line 264 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	265	201		brtst 4, __ASM_Label_792, __D0RetornaBoneco
-8	264	204	#line 264 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	265	204		jmp __ASM_Label_791
-8	264	206	#line 264 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	264	206	#line 264 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	268	206	#line 268 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-8	269	206		subret __RetornaBoneco_return
-9	353	0	#line 353 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-9	354	0		set __teste2COMUNICA_7qG2_corDir_7qG2_000, 0
-9	353	3	#line 353 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-9	353	3	#line 353 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-9	354	3		set __teste2COMUNICA_7qG2_corEsq_7qG2_000, 0
-9	353	6	#line 353 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-9	355	6	#line 355 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-9	356	6		subcall inicializaSensores, __inicializaSensores_return
-9	355	8	#line 355 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-9	356	8	#line 356 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-9	357	8		subcall desligaBlue, __desligaBlue_return
-9	356	10	#line 356 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-9	357	10	#line 357 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-9	358	10		subcall iniciaBlue, __iniciaBlue_return
-9	357	12	#line 357 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-9	359	12	#line 359 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-9	360	12		mov __IniciaCorDoChao_7qG2_corEsq_7qG2_000, __teste2COMUNICA_7qG2_corEsq_7qG2_000
-9	359	14	#line 359 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-9	359	14	#line 359 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-9	360	14		mov __IniciaCorDoChao_7qG2_corDir_7qG2_000, __teste2COMUNICA_7qG2_corDir_7qG2_000
-9	359	16	#line 359 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-9	359	16	#line 359 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-9	360	16		subcall IniciaCorDoChao, __IniciaCorDoChao_return
-9	359	18	#line 359 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-9	369	18	#line 369 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-9	370	18		subret __teste2COMUNICA_return
-10	391	0	#line 391 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
-10	392	0		subret ____initialize_global_data_return
+6	139	20	#line 139 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	141	20	#line 141 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	142	20	#pragma macro 5
+6	142	20		mov __CBTCSArgs.Connection, __constVal1
+6	142	22		syscall 28, __CBTCSArgs
+6	142	25		mov __signed_stack_001desligaBlue, __CBTCSArgs.Result
+6	8796	27	#line 8796 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	141	27	#line 141 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	141	27	#line 141 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	142	27		set __D0desligaBlue, 0
+6	141	30	#line 141 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	142	30		cmp 4, __D0desligaBlue, __signed_stack_001desligaBlue, __D0desligaBlue
+6	141	34	#line 141 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	142	34		brtst 4, __ASM_Label_641, __D0desligaBlue
+6	141	37	#line 141 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	142	37		jmp __ASM_Label_640
+6	141	39	#line 141 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	141	39	#line 141 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	142	39	#line 142 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	143	39		set __signed_stack_001desligaBlue, 0
+6	142	42	#line 142 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	142	42	#line 142 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	143	42		set __signed_stack_002desligaBlue, 56
+6	142	45	#line 142 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	142	45	#line 142 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	143	45		strcat __strbufdesligaBlue, __constStr0011
+6	142	49	#line 142 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	143	49		acquire __TextOutMutex
+6	142	50	#line 142 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	143	50		mov __TextOutArgs.Location.X, __signed_stack_001desligaBlue
+6	142	52	#line 142 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	143	52		mov __TextOutArgs.Location.Y, __signed_stack_002desligaBlue
+6	142	54	#line 142 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	143	54		set __TextOutArgs.Options, 0
+6	142	57	#line 142 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	143	57		mov __TextOutArgs.Text, __strbufdesligaBlue
+6	142	59	#line 142 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	143	59		syscall 13, __TextOutArgs
+6	142	62	#line 142 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	143	62		mov __D0desligaBlue, __TextOutArgs.Result
+6	142	64	#line 142 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	143	64		release __TextOutMutex
+6	142	65	#line 142 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	148	65	#line 148 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+6	149	65		subret __desligaBlue_return
+7	149	0	#line 149 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+7	150	0		mov __signed_stack_001distanciaGiro, __distanciaGiro_7qG2_grau_7qG2_000
+7	149	2	#line 149 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+7	149	2	#line 149 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+7	150	2		set __D0distanciaGiro, 172
+7	149	5	#line 149 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+7	150	5		mul __signed_stack_001distanciaGiro, __signed_stack_001distanciaGiro, __D0distanciaGiro
+7	149	9	#line 149 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+7	149	9	#line 149 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+7	150	9		set __D0distanciaGiro, 1420
+7	149	12	#line 149 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+7	150	12		div __D0distanciaGiro, __signed_stack_001distanciaGiro, __D0distanciaGiro
+7	149	16	#line 149 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+7	150	16		subret __distanciaGiro_return
+7	149	18	#line 149 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+7	152	18	#line 152 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+7	153	18		subret __distanciaGiro_return
+8	153	0	#line 153 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	154	0		mov __signed_stack_001vira, __vira_7qG2_direcao_7qG2_000
+8	153	2	#line 153 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	153	2	#line 153 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	154	2		set __D0vira, 2
+8	153	5	#line 153 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	154	5		cmp 4, __D0vira, __signed_stack_001vira, __D0vira
+8	154	9	#line 154 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	155	9		brtst 4, __ASM_Label_660, __D0vira
+8	154	12	#line 154 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	155	12		set __D0vira, 90
+8	154	15	#line 154 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	155	15	#pragma macro 7
+8	155	15		setout __constVal1, 2, __D0vira, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	8901	38	#line 8901 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	154	38	#line 154 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	155	38	#line 155 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	156	38		mov __D0vira, __constValNeg90
+8	155	40	#line 155 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	156	40	#pragma macro 7
+8	156	40		setout __constVal0, 2, __D0vira, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	8906	63	#line 8906 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	155	63	#line 155 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	157	63	#line 157 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	158	63		getout __signed_stack_001vira, __constVal1, 4
+8	157	67	#line 157 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	157	67	#line 157 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	158	67		getout __D0vira, __constVal0, 4
+8	157	71	#line 157 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	158	71		sub __signed_stack_001vira, __signed_stack_001vira, __D0vira
+8	157	75	#line 157 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	157	75	#line 157 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	158	75		set __D0vira, 2
+8	157	78	#line 157 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	158	78		div __distanciaGiro_7qG2_grau_7qG2_000, __signed_stack_001vira, __D0vira
+8	157	82	#line 157 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	157	82	#line 157 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	158	82		subcall distanciaGiro, __distanciaGiro_return
+8	157	84	#line 157 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	158	84		mov __signed_stack_001vira, __D0distanciaGiro
+8	157	86	#line 157 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	158	86	#line 158 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	159	86		mov __D0vira, __vira_7qG2_angulo_7qG2_000
+8	158	88	#line 158 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	159	88		cmp 0, __D0vira, __signed_stack_001vira, __D0vira
+8	160	92	#line 160 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	161	92		brtst 4, __ASM_Label_666, __D0vira
+8	161	95	#line 161 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	162	95		jmp __ASM_Label_665
+8	161	97	#line 161 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	161	97	#line 161 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	162	97	#pragma macro 7
+8	162	97		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	8954	120	#line 8954 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	161	120	#line 161 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	162	120	#line 162 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	163	120	#pragma macro 7
+8	163	120		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	8957	143	#line 8957 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	162	143	#line 162 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	164	143	#line 164 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	165	143		jmp __ASM_Label_673
+8	164	145	#line 164 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	165	145		mov __signed_stack_001vira, __vira_7qG2_direcao_7qG2_000
+8	164	147	#line 164 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	164	147	#line 164 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	165	147		set __D0vira, 1
+8	164	150	#line 164 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	165	150		cmp 4, __D0vira, __signed_stack_001vira, __D0vira
+8	165	154	#line 165 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	166	154		brtst 4, __ASM_Label_676, __D0vira
+8	165	157	#line 165 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	166	157		mov __D0vira, __constValNeg90
+8	165	159	#line 165 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	166	159	#pragma macro 7
+8	166	159		setout __constVal1, 2, __D0vira, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	8979	182	#line 8979 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	165	182	#line 165 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	166	182	#line 166 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	167	182		set __D0vira, 90
+8	166	185	#line 166 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	167	185	#pragma macro 7
+8	167	185		setout __constVal0, 2, __D0vira, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	8984	208	#line 8984 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	166	208	#line 166 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	168	208	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	169	208		set __signed_stack_001vira, 0
+8	168	211	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	168	211	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	169	211		getout __D0vira, __constVal1, 4
+8	168	215	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	169	215		sub __signed_stack_001vira, __signed_stack_001vira, __D0vira
+8	168	219	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	168	219	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	169	219		getout __D0vira, __constVal0, 4
+8	168	223	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	169	223		add __signed_stack_001vira, __signed_stack_001vira, __D0vira
+8	168	227	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	168	227	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	169	227		set __D0vira, 2
+8	168	230	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	169	230		div __distanciaGiro_7qG2_grau_7qG2_000, __signed_stack_001vira, __D0vira
+8	168	234	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	168	234	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	169	234		subcall distanciaGiro, __distanciaGiro_return
+8	168	236	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	169	236		mov __signed_stack_001vira, __D0distanciaGiro
+8	168	238	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	169	238	#line 169 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	170	238		mov __D0vira, __vira_7qG2_angulo_7qG2_000
+8	169	240	#line 169 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	170	240		cmp 0, __D0vira, __signed_stack_001vira, __D0vira
+8	171	244	#line 171 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	172	244		brtst 4, __ASM_Label_682, __D0vira
+8	172	247	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	173	247		jmp __ASM_Label_681
+8	172	249	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	172	249	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	173	249	#pragma macro 7
+8	173	249		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	9040	272	#line 9040 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	172	272	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	173	272	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	174	272	#pragma macro 7
+8	174	272		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	9043	295	#line 9043 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	173	295	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	178	295	#line 178 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	178	295	#line 178 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	178	295	#line 178 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+8	179	295		subret __vira_return
+9	319	0	#line 319 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	320	0		set my_tc_d, 0
+9	319	3	#line 319 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	319	3	#line 319 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	320	3	#line 320 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	321	3		set my_tc_e, 0
+9	320	6	#line 320 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	320	6	#line 320 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	322	6	#line 322 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	322	6	#line 322 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	322	6	#line 322 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	322	6	#line 322 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	323	6		add __signed_stack_001andaRetoDireita, my_tc_d, my_tc_e
+9	322	10	#line 322 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	322	10	#line 322 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	323	10		set __D0andaRetoDireita, 2
+9	322	13	#line 322 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	323	13		div __distanciaTachoCount_7qG2_grau_7qG2_000, __signed_stack_001andaRetoDireita, __D0andaRetoDireita
+9	322	17	#line 322 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	322	17	#line 322 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	323	17		subcall distanciaTachoCount, __distanciaTachoCount_return
+9	322	19	#line 322 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	323	19		mov __signed_stack_001andaRetoDireita, __D0distanciaTachoCount
+9	322	21	#line 322 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	322	21	#line 322 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	323	21		mov __signed_stack_002andaRetoDireita, __andaRetoDireita_7qG2_distAndar_7qG2_000
+9	322	23	#line 322 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	322	23	#line 322 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	323	23		set __D0andaRetoDireita, 100
+9	322	26	#line 322 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	323	26		mul __D0andaRetoDireita, __signed_stack_002andaRetoDireita, __D0andaRetoDireita
+9	322	30	#line 322 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	323	30		cmp 0, __D0andaRetoDireita, __signed_stack_001andaRetoDireita, __D0andaRetoDireita
+9	323	34	#line 323 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	324	34		brtst 4, __ASM_Label_853, __D0andaRetoDireita
+9	323	37	#line 323 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	324	37	#pragma macro 26
+9	324	37		acquire __RLSBmutex0
+9	324	38		mov __RLSReadBuf0, __RLSBbufLSWrite1
+9	324	40		set __RLSBytesCount0, 1
+9	324	43		waitv __constVal15
+9	324	45		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+9	324	47		index __D0andaRetoDireita, __RLSReadBuf0, 65535
+9	324	51		release __RLSBmutex0
+9	9974	52	#line 9974 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	323	52	#line 323 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	324	52		mov __andaRetoDireita_7qG2_distanciaAtual_7qG2_000, __D0andaRetoDireita
+9	323	54	#line 323 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	323	54	#line 323 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	325	54	#line 325 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	325	54	#line 325 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	326	54		mov __signed_stack_001andaRetoDireita, __D0andaRetoDireita
+9	325	56	#line 325 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	326	56		mov __D0andaRetoDireita, __andaRetoDireita_7qG2_distParede_7qG2_000
+9	325	58	#line 325 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	326	58		cmp 4, __D0andaRetoDireita, __signed_stack_001andaRetoDireita, __D0andaRetoDireita
+9	326	62	#line 326 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	327	62		brtst 4, __ASM_Label_866, __D0andaRetoDireita
+9	326	65	#line 326 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	327	65		set __andaRetoDireita_7qG2_potd_7qG2_000, 90
+9	326	68	#line 326 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	326	68	#line 326 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	327	68	#line 327 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	328	68		set __andaRetoDireita_7qG2_pote_7qG2_000, 90
+9	327	71	#line 327 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	327	71	#line 327 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	329	71	#line 329 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	330	71		jmp __ASM_Label_871
+9	329	73	#line 329 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	330	73		mov __signed_stack_001andaRetoDireita, __andaRetoDireita_7qG2_distanciaAtual_7qG2_000
+9	329	75	#line 329 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	329	75	#line 329 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	330	75		mov __D0andaRetoDireita, __andaRetoDireita_7qG2_distParede_7qG2_000
+9	329	77	#line 329 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	330	77		cmp 1, __D0andaRetoDireita, __signed_stack_001andaRetoDireita, __D0andaRetoDireita
+9	330	81	#line 330 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	331	81		brtst 4, __ASM_Label_874, __D0andaRetoDireita
+9	330	84	#line 330 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	331	84		set __andaRetoDireita_7qG2_pote_7qG2_000, 90
+9	330	87	#line 330 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	330	87	#line 330 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	331	87	#line 331 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	332	87		set __andaRetoDireita_7qG2_potd_7qG2_000, 70
+9	331	90	#line 331 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	331	90	#line 331 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	333	90	#line 333 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	334	90		jmp __ASM_Label_879
+9	333	92	#line 333 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	334	92		mov __signed_stack_001andaRetoDireita, __andaRetoDireita_7qG2_distanciaAtual_7qG2_000
+9	333	94	#line 333 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	333	94	#line 333 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	334	94		mov __D0andaRetoDireita, __andaRetoDireita_7qG2_distParede_7qG2_000
+9	333	96	#line 333 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	334	96		cmp 0, __D0andaRetoDireita, __signed_stack_001andaRetoDireita, __D0andaRetoDireita
+9	334	100	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	335	100		brtst 4, __ASM_Label_882, __D0andaRetoDireita
+9	334	103	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	335	103		set __andaRetoDireita_7qG2_pote_7qG2_000, 70
+9	334	106	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	334	106	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	335	106	#line 335 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	336	106		set __andaRetoDireita_7qG2_potd_7qG2_000, 90
+9	335	109	#line 335 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	335	109	#line 335 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	338	109	#line 338 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	338	109	#line 338 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	338	109	#line 338 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	338	109	#line 338 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	339	109		getout __D0andaRetoDireita, __constVal1, 4
+9	338	113	#line 338 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	339	113		add my_tc_d, my_tc_d, __D0andaRetoDireita
+9	338	117	#line 338 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	339	117	#line 339 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	340	117		mov __D0andaRetoDireita, __andaRetoDireita_7qG2_potd_7qG2_000
+9	339	119	#line 339 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	340	119	#pragma macro 7
+9	340	119		setout __constVal1, 2, __D0andaRetoDireita, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	10077	142	#line 10077 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	339	142	#line 339 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	340	142	#line 340 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	341	142		getout __D0andaRetoDireita, __constVal0, 4
+9	340	146	#line 340 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	341	146		add my_tc_e, my_tc_e, __D0andaRetoDireita
+9	340	150	#line 340 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	341	150	#line 341 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	342	150		mov __D0andaRetoDireita, __andaRetoDireita_7qG2_pote_7qG2_000
+9	341	152	#line 341 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	342	152	#pragma macro 7
+9	342	152		setout __constVal0, 2, __D0andaRetoDireita, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	10091	175	#line 10091 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	341	175	#line 341 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	345	175	#line 345 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	346	175		jmp __ASM_Label_852
+9	345	177	#line 345 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	345	177	#line 345 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	346	177	#pragma macro 7
+9	346	177		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	10098	200	#line 10098 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	345	200	#line 345 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	346	200	#line 346 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	347	200	#pragma macro 7
+9	347	200		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	10101	223	#line 10101 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	346	223	#line 346 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	353	223	#line 353 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+9	354	223		subret __andaRetoDireita_return
+10	402	0	#line 402 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	402	0	#line 402 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	402	0	#line 402 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	402	0	#line 402 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	404	0	#line 404 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	405	0		subcall inicializaSensores, __inicializaSensores_return
+10	404	2	#line 404 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	405	2	#line 405 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	406	2		subcall desligaBlue, __desligaBlue_return
+10	405	4	#line 405 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	406	4	#line 406 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	407	4		subcall iniciaBlue, __iniciaBlue_return
+10	406	6	#line 406 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	409	6	#line 409 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	410	6		set __andaRetoDireita_7qG2_distParede_7qG2_000, 8
+10	409	9	#line 409 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	409	9	#line 409 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	410	9		set __andaRetoDireita_7qG2_distAndar_7qG2_000, 10
+10	409	12	#line 409 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	409	12	#line 409 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	410	12		subcall andaRetoDireita, __andaRetoDireita_return
+10	409	14	#line 409 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	410	14	#line 410 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	411	14		set __vira_7qG2_angulo_7qG2_000, 90
+10	410	17	#line 410 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	410	17	#line 410 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	411	17		set __vira_7qG2_direcao_7qG2_000, 1
+10	410	20	#line 410 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	410	20	#line 410 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	411	20		subcall vira, __vira_return
+10	410	22	#line 410 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	416	22	#line 416 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	417	22		set __andaRetoDireita_7qG2_distParede_7qG2_000, 8
+10	416	25	#line 416 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	416	25	#line 416 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	417	25		set __andaRetoDireita_7qG2_distAndar_7qG2_000, 10
+10	416	28	#line 416 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	416	28	#line 416 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	417	28		subcall andaRetoDireita, __andaRetoDireita_return
+10	416	30	#line 416 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	417	30	#line 417 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	418	30		set __D0teste2COMUNICA, 5
+10	417	33	#line 417 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	418	33		tst 5, __D0teste2COMUNICA, __D0teste2COMUNICA
+10	417	36	#line 417 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	418	36		brtst 4, __ASM_Label_969, __D0teste2COMUNICA
+10	417	39	#line 417 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	418	39		jmp __ASM_Label_968
+10	417	41	#line 417 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	417	41	#line 417 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	421	41	#line 421 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+10	422	41		subret __teste2COMUNICA_return
+11	443	0	#line 443 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc"
+11	444	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc
 1	__ResetSensorSubroutine	7	NXTDefs.h
-2	__ReadLSBytes2	20	NXTDefs.h
-3	__ReadLSBytes3	109	NXTDefs.h
-4	inicializaSensores	198	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc
-5	iniciaBlue	376	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc
-6	desligaBlue	447	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc
-7	IniciaCorDoChao	518	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc
-8	RetornaBoneco	610	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc
-9	teste2COMUNICA	818	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc
-10	__initialize_global_data	838	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc
+2	__ReadLSBytes0	20	NXTDefs.h
+3	distanciaTachoCount	109	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc
+4	inicializaSensores	120	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc
+5	iniciaBlue	298	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc
+6	desligaBlue	344	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc
+7	distanciaGiro	411	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc
+8	vira	431	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc
+9	andaRetoDireita	728	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc
+10	teste2COMUNICA	953	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc
+11	__initialize_global_data	996	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\Executivo_MAIN_mark001.nxc

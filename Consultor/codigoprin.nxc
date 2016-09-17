@@ -15,7 +15,11 @@
 #define COR_BASE_MEIO_MIN 185
 #define COR_BASE_MEIO_MAX 260
 
+<<<<<<< HEAD
+// Defines de leitura do RGB da esquerda do robô
+=======
 // Defines de leitura do RGB da esquerda do robÃ´
+>>>>>>> refs/remotes/origin/master
 #define COR_PRETA_ESQ_PERTO_MIN 75
 #define COR_PRETA_ESQ_PERTO_MAX 100
 #define COR_PRETA_ESQ_LONGE_MIN 120
@@ -24,10 +28,17 @@
 #define COR_BRANCA_ESQ_PERTO_MAX 495
 #define COR_BRANCA_ESQ_LONGE_MIN 212
 #define COR_BRANCA_ESQ_LONGE_MAX 245
+<<<<<<< HEAD
+#define COR_BASE_ESQ_MIN 195
+#define COR_BASE_ESQ_MAX 210
+
+// Defines de leitura do RGB da direita do robô
+=======
 #define COR_BASE_ESQ_MIN 265
 #define COR_BASE_ESQ_MAX 310
 
 // Defines de leitura do RGB da direita do robÃ´
+>>>>>>> refs/remotes/origin/master
 #define COR_PRETA_DIR_PERTO_MIN 130
 #define COR_PRETA_DIR_PERTO_MAX 160
 #define COR_PRETA_DIR_LONGE_MIN 185
@@ -36,6 +47,17 @@
 #define COR_BRANCA_DIR_PERTO_MAX 420
 #define COR_BRANCA_DIR_LONGE_MIN 240
 #define COR_BRANCA_DIR_LONGE_MAX 280
+<<<<<<< HEAD
+#define COR_BASE_DIR_MIN 240
+#define COR_BASE_DIR_MAX 260
+
+//potencias
+#define POTENCIA_MAXIMA_GARRA 80
+
+//Tempos
+#define TEMPO_ATE_A_GARRA_TRAVAR 2000
+#define TEMPO_ATE_JOGAR_DENTRO 3750
+=======
 #define COR_BASE_DIR_MIN 260
 #define COR_BASE_DIR_MAX 310
 
@@ -46,6 +68,7 @@
 //Tempos
 #define TEMPO_ATE_A_GARRA_TRAVAR 1000
 #define TEMPO_ATE_JOGAR_DENTRO 2000
+>>>>>>> refs/remotes/origin/master
 #define TEMPO_ATE_A_GARRA_VOLTAR 2000 //estou usando tempo... rola de usar por angulos depois
 #define TEMPO_DEPOIS_DE_JOGAR_DENTRO_GARANTIA 800
 
@@ -53,11 +76,21 @@
 #define MENOR_DISTANCIA_US 20
 
 //LOGICA
+<<<<<<< HEAD
+#define direita 1
+#define esquerda 2
+#define BONECO_BRANCO 4
+#define BONECO_PRETO 5
+
+//defines dos buffers utilizados na comunicação, com cada um sendo utilizado para uma atividade específica
+#define OUTBOX_INICIALIZA 0  /*buffers referentes ao processo de conectar os cérebros*/
+=======
 #define direita
 #define esquerda 2
 
 //defines dos buffers utilizados na comunicaÃ§Ã£o, com cada um sendo utilizado para uma atividade especÃ­fica
 #define OUTBOX_INICIALIZA 0  /*buffers referentes ao processo de conectar os cÃ©rebros*/
+>>>>>>> refs/remotes/origin/master
 #define INBOX_INICIALIZA 1
 #define OUTBOX_USFRENTE 2   /*buffers referentes aos processos relacionados com o sensor US frontal*/
 #define INBOX_USFRENTE 3
@@ -65,9 +98,15 @@
 #define INBOX_GARRA 5
 
 
+<<<<<<< HEAD
+ //Declarações das funções
+void Vai(int x);
+void ChamaVai(int x); //função para realizar a recursividade
+=======
  //DeclaraÃ§Ãµes das funÃ§Ãµes
 void Vai(int x);
 void ChamaVai(int x); //funÃ§Ã£o para realizar a recursividade
+>>>>>>> refs/remotes/origin/master
 int filterRGB (int s);
 int filterUS (int s);
 int NadaTaDiferente();
@@ -80,13 +119,35 @@ void NaoPega();
 
 
 void InicializaSensores(){
+<<<<<<< HEAD
+	  SetSensorColorRed(RGB_DIR);
+=======
       SetSensorColorRed(RGB_DIR);
+>>>>>>> refs/remotes/origin/master
     SetSensorColorRed(RGB_ESQ);
     SetSensorColorRed(RGB_MEIO);
     SetSensorLowspeed(US_FRENTE);
 }
 
 void NaoPega(){
+<<<<<<< HEAD
+	/*manda um sinal pro executivo iniciar a rotina pra descartar boneco, espera a resposta dele para abrir
+	a garra e deixar o boneco no lugar*/
+	OnFwd(MOTOR_GARRA,-POTENCIA_MAXIMA_GARRA);
+	Wait(TEMPO_ATE_A_GARRA_TRAVAR);
+	Off(MOTOR_GARRA);
+	/*manda resposta para confirmar que a garra está aberta, para o executivo se afastar do boneco e seguindo parede*/
+}
+
+void pega(){
+	OnFwd(MOTOR_GARRA,POTENCIA_MAXIMA_GARRA);
+	Wait(TEMPO_ATE_JOGAR_DENTRO);
+	Off(MOTOR_GARRA);
+	Wait(TEMPO_DEPOIS_DE_JOGAR_DENTRO_GARANTIA);
+	OnFwd(MOTOR_GARRA,-POTENCIA_MAXIMA_GARRA);
+	Wait(TEMPO_ATE_A_GARRA_VOLTAR);
+	Off(MOTOR_GARRA);
+=======
     /*manda um sinal pro executivo iniciar a rotina pra descartar boneco, espera a resposta dele para abrir
     a garra e deixar o boneco no lugar*/
     OnFwd(MOTOR_GARRA,POTENCIA_MAXIMA_GARRA);
@@ -103,10 +164,37 @@ void pega(){
     OnRev(MOTOR_GARRA,POTENCIA_MAXIMA_GARRA);
     Wait(TEMPO_ATE_A_GARRA_VOLTAR);
     Off(MOTOR_GARRA);
+>>>>>>> refs/remotes/origin/master
 }
 
 int IdentificaBoneco(int x){
 /* x refere a qual cor temos que pegar 0 branco 1 preto*/
+<<<<<<< HEAD
+	OnFwd(MOTOR_GARRA,POTENCIA_MAXIMA_GARRA);
+	Wait(TEMPO_ATE_A_GARRA_TRAVAR);
+	Off(MOTOR_GARRA);
+	if(x == BONECO_BRANCO){
+		if(SensorRaw(RGB_MEIO) > COR_BRANCA_MEIO_MIN && SensorRaw(RGB_MEIO) < COR_BRANCA_MEIO_MAX){
+			pega();
+		}else{
+			/*avisa pro robo que temos boneco errado na garra e espera ele girar*/
+			NaoPega();
+		}
+	}else if(x == BONECO_PRETO){
+		if(SensorRaw(RGB_MEIO) > COR_PRETA_MEIO_MIN && SensorRaw(RGB_MEIO) < COR_PRETA_MEIO_MAX){
+			pega();
+		}else{
+			/*avisa pro robo que temos boneco errado na garra e espera ele girar*/
+			NaoPega();
+		}
+	}
+	/*avisa pro robo que o processo de pegar o boneco acabou pra ele andar de novo*/
+	Vai(x);
+}
+
+int filterRGB(int s){
+	 /*passar o sensor como parametro (s = X-1 (de INT_X))*/
+=======
     OnFwd(MOTOR_GARRA,POTENCIA_MED_GARRA);
     Wait(TEMPO_ATE_A_GARRA_TRAVAR);
     Off(MOTOR_GARRA);
@@ -131,6 +219,7 @@ int IdentificaBoneco(int x){
 
 int filterRGB(int s){
      /*passar o sensor como parametro (s = X-1 (de INT_X))*/
+>>>>>>> refs/remotes/origin/master
     float media = 0, alfa = 0.01 ;
     int leitura, i;
     unsigned int x=0, aux;
@@ -139,7 +228,11 @@ int filterRGB(int s){
         media=media+SensorRaw(s);
         Wait(10);
     }
+<<<<<<< HEAD
+    //condiçao de loop de 2segundos para pegar leituras e filtrar elas
+=======
     //condiÃ§ao de loop de 2segundos para pegar leituras e filtrar elas
+>>>>>>> refs/remotes/origin/master
     aux=CurrentTick();
     while(x<=1950){
         x=CurrentTick()-aux;
@@ -150,6 +243,19 @@ int filterRGB(int s){
         //ClearScreen();
     }
     if (s == 0){
+<<<<<<< HEAD
+    	if (media > COR_BASE_DIR_MAX || media < COR_BASE_DIR_MIN){
+    		return 1;
+    	}else{
+    		return 0;
+    	}
+    }else if(s == 1){
+    	if (media > COR_BASE_ESQ_MAX || media < COR_BASE_ESQ_MIN){
+    		return 1;
+    	}else{
+    		return 0;
+    	}
+=======
         if (media > COR_BASE_DIR_MAX || media < COR_BASE_DIR_MIN){
             return 1;
         }else{
@@ -161,6 +267,7 @@ int filterRGB(int s){
         }else{
             return 0;
         }
+>>>>>>> refs/remotes/origin/master
     }
 
 }
@@ -174,7 +281,11 @@ int filterUS(int s){
         Wait(10);
     }
     media=media/5;
+<<<<<<< HEAD
+    //condiçao de loop de 1segundo para pegar leituras e filtrar elas
+=======
     //condiÃ§ao de loop de 1segundo para pegar leituras e filtrar elas
+>>>>>>> refs/remotes/origin/master
     aux=CurrentTick();
 
     while(x<=1500){
@@ -187,13 +298,28 @@ int filterUS(int s){
 
     }
     if (media < MENOR_DISTANCIA_US){
+<<<<<<< HEAD
+    		return 1;
+    }else{
+    		return 0;
+=======
             return 1;
     }else{
             return 0;
+>>>>>>> refs/remotes/origin/master
     }
 }
 
 int VerificaLeitura(){
+<<<<<<< HEAD
+    if(SensorRaw(RGB_ESQ) > COR_BASE_ESQ_MAX && SensorRaw(RGB_ESQ) < COR_BASE_ESQ_MIN){
+    	return esquerda;
+    }else if(SensorRaw(RGB_DIR) > COR_BASE_DIR_MAX && SensorRaw(RGB_DIR) < COR_BASE_DIR_MAX){
+    	return direita;
+    }else if(SensorUS(US_FRENTE) < MENOR_DISTANCIA_US){
+    	return 3;
+    }
+=======
     ClearScreen();
     TextOut(0, LCD_LINE5, "Verificando leitura");
     Wait(1800);
@@ -205,12 +331,32 @@ int VerificaLeitura(){
         return 3;
     }
 
+>>>>>>> refs/remotes/origin/master
 }
 
 int condicao(){
   ClearScreen();
   NumOut(0, LCD_LINE1, SensorRaw(RGB_ESQ));
   NumOut(0, LCD_LINE2, SensorRaw(RGB_DIR));
+<<<<<<< HEAD
+   NumOut(0, LCD_LINE3, SensorUS(US_FRENTE));
+  if ((SensorRaw(RGB_ESQ) < COR_BASE_ESQ_MAX && SensorRaw(RGB_ESQ) > COR_BASE_ESQ_MIN )&& (SensorRaw(RGB_DIR)< COR_BASE_DIR_MAX && SensorRaw(RGB_DIR) > COR_BASE_DIR_MAX)&&(SensorUS(US_FRENTE)>MENOR_DISTANCIA_US)){
+
+    return 1;
+	}else{
+    /*ClearScreen();
+    TextOut(0, LCD_LINE3, "passei4");*/
+		return 0;
+	}
+}
+
+void ChamaVai(int x){
+	Vai(x);
+}
+
+void Vai(int x){
+    int aux = 4;//valor aleatorio pra continuar a função se a funcão verifica nao retornar um valor esperado
+=======
   NumOut(0, LCD_LINE3, SensorUS(US_FRENTE));
       //pega();
   if ((SensorRaw(RGB_ESQ) < COR_BASE_ESQ_MAX && SensorRaw(RGB_ESQ) > COR_BASE_ESQ_MIN )&& (SensorRaw(RGB_DIR)< COR_BASE_DIR_MAX && SensorRaw(RGB_DIR) > COR_BASE_DIR_MAX)&&(SensorUS(US_FRENTE)>MENOR_DISTANCIA_US)){
@@ -229,11 +375,39 @@ void ChamaVai(int x){
 
 void Vai(int x){
     int aux = 4;//valor aleatorio pra continuar a funÃ§Ã£o se a funcÃ£o verifica nao retornar um valor esperado
+>>>>>>> refs/remotes/origin/master
     ClearScreen();
     TextOut(0, LCD_LINE3, "passei3");
     while(condicao()){
 
          Wait(20);
+<<<<<<< HEAD
+        //aqui tem que ter uma checagem dos inbox, pq é onde ele mais vai estar do código Ass: Luan
+    }
+    aux = VerificaLeitura();
+    if(aux==direita){/*se eh o sensor da direita*/
+    	if(filterRGB(RGB_DIR)){
+    		/*manda sinal para parar o robo*/
+    		IdentificaBoneco(x);
+    	}else{
+    		ChamaVai(x);
+    	}
+
+    }else if(aux == esquerda){/*se eh o sensor da esquerda*/
+    	if(filterRGB(RGB_ESQ)){
+    		/*manda sinal para parar o robo*/
+    		IdentificaBoneco(x);
+    	}else{
+    		ChamaVai(x);
+    	}
+    }else if(aux == 3){/*se eh o US*/
+    	if(filterUS(US_FRENTE)){
+    		/*manda sinal para parar o robo*/
+        TextOut(0, LCD_LINE3, "PARAAAAA!! TEM PAREDEEE!!");
+    	}else{
+    		ChamaVai(x);
+    	}
+=======
         //aqui tem que ter uma checagem dos inbox, pq Ã© onde ele mais vai estar do cÃ³digo Ass: Luan
     }
     aux = VerificaLeitura();
@@ -259,6 +433,7 @@ void Vai(int x){
         }else{
             ChamaVai(x);
         }
+>>>>>>> refs/remotes/origin/master
     }
     ChamaVai(x);
 }
@@ -266,6 +441,17 @@ void Vai(int x){
 task main(){
   ClearScreen();
   TextOut(0, LCD_LINE3, "passei1");
+<<<<<<< HEAD
+	InicializaSensores();
+	ClearScreen();
+  TextOut(0, LCD_LINE3, "passei2");
+    //conexao bluetooth com a verificacao que esta funcionando
+    //pegar com o outro cerebro qual cor que temos que catar e guardar em x
+    int x=0;//que poha de variavel é essa!?!?! põe um nome mnemonico nessa porra!!!! ass Luan
+    Vai(x);
+}
+
+=======
     InicializaSensores();
     ClearScreen();
   TextOut(0, LCD_LINE3, "passei2");
@@ -274,3 +460,4 @@ task main(){
     int x=0;//que poha de variavel Ã© essa!?!?! pÃµe um nome mnemonico nessa porra!!!! ass Luan
     Vai(x);
 }
+>>>>>>> refs/remotes/origin/master
