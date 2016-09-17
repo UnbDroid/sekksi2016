@@ -57,7 +57,8 @@ void inicializaSensores();
 int distanciaTachoCount(int grau);
 int distanciaGiro(int grau);
 
-void andaRetoDireita(int dist);
+void andaRetoDireita(int distParede, int distAndar);
+void andaRetoEsquerda(int distParede, int distAndar);
 void andaReto1();
 void andaReto2();
 
@@ -371,25 +372,58 @@ void Reto(int modo, int var){
 }
      
 
-void andaRetoDireita(int dist){ // função que faz o robô andar à "dist" centímetros da parede
+void andaRetoDireita(int distParede, int distAndar){ // função que faz o robô andar à "distParede" centímetros da parede por "distAndar" centímetros
 	   int distanciaAtual, potd, pote;
 	   my_tc_d = 0;
 	   my_tc_e = 0;
 
-	   while(distanciaTachoCount((my_tc_d + my_tc_e)/2) < (dist*100)){
+	   while(distanciaTachoCount((my_tc_d + my_tc_e)/2) < (distAndar*100)){
 	 	   distanciaAtual = SensorUS(USD);
 		
-		   if (distanciaAtual == dist){
+		   if (distanciaAtual == distParede){
 			   potd = 90;
 			   pote = 90;
 		   }
-		   else if(distanciaAtual > dist){
+		   else if(distanciaAtual > distParede){
 			   pote = 90;
 			   potd = 70;
 		   }
-		   else if(distanciaAtual < dist){
+		   else if(distanciaAtual < distParede){
 			   pote = 70;
 		   	 potd = 90;
+		   }
+
+       my_tc_d += MotorTachoCount(MD);
+		   OnFwd(MD, potd);
+		   my_tc_e += MotorTachoCount(ME);
+	   	 OnFwd(ME, pote);
+
+	   }
+
+	   Off(MD);
+	   Off(ME);
+
+}
+
+void andaRetoEsquerda(int distParede, int distAndar){ // função que faz o robô andar à "distParede" centímetros da parede por "distAndar" centímetros
+	   int distanciaAtual, potd, pote;
+	   my_tc_d = 0;
+	   my_tc_e = 0;
+
+	   while(distanciaTachoCount((my_tc_d + my_tc_e)/2) < (distAndar*100)){
+	 	   distanciaAtual = SensorUS(USD);
+
+		   if (distanciaAtual == distParede){
+			   potd = 90;
+			   pote = 90;
+		   }
+		   else if(distanciaAtual > distParede){
+			   potd = 90;
+			   pote = 70;
+		   }
+		   else if(distanciaAtual < distParede){
+			   potd = 70;
+		   	 pote = 90;
 		   }
 
        my_tc_d += MotorTachoCount(MD);
@@ -466,19 +500,21 @@ task main(){
 	   inicializaSensores();
 
      //iniciaReto();
-      andaRetoDireita(30);
-     Para();
+      //andaRetoDireita(30);
+     //Para();
      //vira(94, esquerda);
      //vira(95, direita);
      
      //NumOut(0, LCD_LINE3, potdGlobal);//90
      //NumOut(0, LCD_LINE4, poteGlobal);//81
      
-     while(1);
+     //while(1);
 
      //AndaReto();
      
 
      //Reto(modoTempo, 10000);
      //andaReto2();
+     
+     andaRetoDireita(15, 100);
 }

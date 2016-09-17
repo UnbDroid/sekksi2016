@@ -1,526 +1,495 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__D0distanciaTachoCount	6	1	0	4	2
-1	__D0main	6	1	4	4	4
-2	__D0andaRetoDireita	6	1	8	4	31
+0	__RLSBmutex0	9	0	0	4	2
+1	__D0andaRetoDireita	6	1	4	4	23
+2	__CLSWMutex0	9	0	8	4	2
 3	__CLSRMutex0	9	0	12	4	2
-4	__RLSBmutex0	9	0	16	4	2
-5	__signed_stack_002andaRetoDireita	6	1	20	4	2
-6	__signed_stack_001distanciaTachoCount	6	1	24	4	2
-7	__signed_stack_001andaRetoDireita	6	1	28	4	10
-8	__D0SetSensorLowspeed_inline_inicializaSensores	6	1	32	4	8
-9	__DU0SetSensorLowspeed_inline_inicializaSensores	5	1	36	4	20
-10	__CLSWMutex0	9	0	40	4	2
-11	__CLSCSMutex0	9	0	44	4	2
-12	__distanciaTachoCount_7qG2_grau_7qG2_000	4	1	48	2	2
-13	my_tc_d	4	1	50	2	4
-14	__andaRetoDireita_7qG2_dist_7qG2_000	4	1	52	2	5
-15	my_tc_e	4	1	54	2	4
-16	__andaRetoDireita_7qG2_pote_7qG2_000	4	1	56	2	4
-17	__andaRetoDireita_7qG2_potd_7qG2_000	4	1	58	2	4
-18	__andaRetoDireita_7qG2_distanciaAtual_7qG2_000	4	1	60	2	3
-19	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	62	1	8
-20	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	63	1	8
-21	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores	1	1	64	1	8
-22	__inicializaSensores_return	1	1	65	1	3
-23	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	66	1	20
-24	__distanciaTachoCount_return	1	1	67	1	4
-25	__Para_return	1	1	68	1	3
-26	____initialize_global_data_return	1	1	69	1	3
-27	__andaRetoDireita_return	1	1	70	1	3
-28	__constVal63	2	0	71	1	6
-29	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	72	1	8
-30	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	73	1	8
-31	__constVal96	2	0	74	1	6
-32	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	75	1	4
-33	__RLSBytesCount0	1	1	76	1	7
-34	__RLSBIterations0	1	1	77	1	4
-35	__constVal15	2	0	78	1	1
-36	__LSWriteOptionsVar	1	1	79	1	2
-37	____ReadLSBytes0_return	1	1	80	1	3
-38	__RLSBResult0	2	1	81	1	7
-39	____ResetSensorSubroutine_return	1	1	82	1	6
-40	__constVal0	2	1	83	1	29
-41	__constVal3	2	0	84	1	6
-42	__constVal32	2	0	85	1	18
-43	__constVal1	2	0	86	1	10
-44	__ResetSensorTmp	1	1	87	1	2
-45	__ResetSensorPort	1	1	88	1	6
-46	__CLSCSArgs0	8	0	3	4	4
-47	__CLSCSArgs0.Result	2	1	92	1	4
-48	__CLSCSArgs0.Port	1	1	93	1	4
-49	__CLSCSArgs0.BytesReady	1	1	94	1	4
-50	__CLSRArgs0	8	0	4	12	5
-51	__CLSRArgs0.Result	2	1	96	1	5
-52	__CLSRArgs0.Port	1	1	97	1	5
-53	__CLSRArgs0.Buffer	7	0	98	4	5
-54	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
-55	__CLSRArgs0.BufferLen	1	1	100	1	5
-56	__CLSWArgs0	8	0	4	12	5
-57	__CLSWArgs0.Result	2	1	104	1	5
-58	__CLSWArgs0.Port	1	1	105	1	5
-59	__CLSWArgs0.Buffer	7	0	106	4	5
-60	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
-61	__CLSWArgs0.ReturnLen	1	1	108	1	5
-62	__LSWriteOptions	7	0	110	4	1
-63	__LSWriteOptions.__LSWriteOptions_type	1	0	0	1	0
-64	__RLSReadBuf0	7	0	112	4	8
-65	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
-66	__RLSLastGoodRead0	7	0	114	4	2
-67	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
-68	__RLSBbufLSWrite1	7	0	116	4	1
-69	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+4	__DU0SetSensorLowspeed_inline_inicializaSensores	5	1	16	4	8
+5	__signed_stack_001andaRetoDireita	6	1	20	4	10
+6	__D0distanciaTachoCount	6	1	24	4	2
+7	__D0SetSensorLowspeed_inline_inicializaSensores	6	1	28	4	12
+8	__CLSCSMutex0	9	0	32	4	2
+9	__distanciaTachoCount_7qG2_grau_7qG2_000	4	1	36	2	2
+10	my_tc_e	4	1	38	2	4
+11	__andaRetoDireita_7qG2_distAndar_7qG2_000	4	1	40	2	2
+12	__andaRetoDireita_7qG2_distParede_7qG2_000	4	1	42	2	4
+13	__andaRetoDireita_7qG2_pote_7qG2_000	4	1	44	2	4
+14	my_tc_d	4	1	46	2	4
+15	__andaRetoDireita_7qG2_distanciaAtual_7qG2_000	4	1	48	2	3
+16	__andaRetoDireita_7qG2_potd_7qG2_000	4	1	50	2	4
+17	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores	1	1	52	1	8
+18	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	53	1	8
+19	__inicializaSensores_return	1	1	54	1	3
+20	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	55	1	20
+21	__distanciaTachoCount_return	1	1	56	1	4
+22	__constVal63	2	0	57	1	4
+23	____initialize_global_data_return	1	1	58	1	3
+24	__andaRetoDireita_return	1	1	59	1	3
+25	__constVal96	2	0	60	1	4
+26	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	61	1	8
+27	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	62	1	8
+28	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	63	1	4
+29	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	64	1	8
+30	__RLSBytesCount0	1	1	65	1	7
+31	__RLSBIterations0	1	1	66	1	4
+32	__constVal2	2	0	67	1	1
+33	__RLSBResult0	2	1	68	1	7
+34	____ResetSensorSubroutine_return	1	1	69	1	6
+35	____ReadLSBytes0_return	1	1	70	1	3
+36	__ResetSensorTmp	1	1	71	1	2
+37	__constVal100	2	0	72	1	1
+38	__constVal1	2	0	73	1	9
+39	__constVal0	2	1	74	1	18
+40	__constVal32	2	0	75	1	12
+41	__zfSetSensorLowspeed_inline_inicializaSensores	1	1	76	1	8
+42	__zfandaRetoDireita	1	1	77	1	12
+43	__ResetSensorPort	1	1	78	1	6
+44	__constVal3	2	0	79	1	5
+45	__CLSRArgs0	8	0	4	12	5
+46	__CLSRArgs0.Result	2	1	80	1	5
+47	__CLSRArgs0.Port	1	1	81	1	5
+48	__CLSRArgs0.Buffer	7	0	82	4	5
+49	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+50	__CLSRArgs0.BufferLen	1	1	84	1	5
+51	__CLSWArgs0	8	0	4	12	5
+52	__CLSWArgs0.Result	2	1	88	1	5
+53	__CLSWArgs0.Port	1	1	89	1	5
+54	__CLSWArgs0.Buffer	7	0	90	4	5
+55	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+56	__CLSWArgs0.ReturnLen	1	1	92	1	5
+57	__CLSCSArgs0	8	0	3	4	4
+58	__CLSCSArgs0.Result	2	1	96	1	4
+59	__CLSCSArgs0.Port	1	1	97	1	4
+60	__CLSCSArgs0.BytesReady	1	1	98	1	4
+61	__RLSLastGoodRead0	7	0	100	4	2
+62	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
+63	__RLSReadBuf0	7	0	102	4	8
+64	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
+65	__RLSBbufLSWrite1	7	0	104	4	1
+66	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	477	0	#line 477 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-0	478	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	477	2	#line 477 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-0	477	2	#line 477 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-0	478	2		subcall inicializaSensores, __inicializaSensores_return
-0	477	4	#line 477 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-0	480	4	#line 480 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-0	481	4		set __andaRetoDireita_7qG2_dist_7qG2_000, 30
-0	480	7	#line 480 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-0	480	7	#line 480 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-0	481	7		subcall andaRetoDireita, __andaRetoDireita_return
-0	480	9	#line 480 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-0	481	9	#line 481 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-0	482	9		subcall Para, __Para_return
-0	481	11	#line 481 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-0	488	11	#line 488 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-0	489	11		set __D0main, 1
-0	488	14	#line 488 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-0	489	14		tst 5, __D0main, __D0main
-0	488	17	#line 488 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-0	489	17		brtst 4, __ASM_Label_1181, __D0main
-0	488	20	#line 488 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-0	488	20	#line 488 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-0	489	20		jmp __ASM_Label_1180
-0	488	22	#line 488 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-0	489	22		exit -1, -1
-1	5724	0		setin __constVal1, __ResetSensorPort, 5
-1	5726	4		getin __ResetSensorTmp, __ResetSensorPort, 5
-1	5727	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
-1	5728	11		subret ____ResetSensorSubroutine_return
-2	6520	0	#pragma macro 27
-2	6520	0		acquire __CLSWMutex0
-2	6520	1		index __LSWriteOptionsVar, __LSWriteOptions, __constVal0
-2	6520	5		or __CLSWArgs0.Port, __constVal0, __LSWriteOptionsVar
-2	6520	9		mov __CLSWArgs0.ReturnLen, __RLSBytesCount0
-2	6520	11		mov __CLSWArgs0.Buffer, __RLSReadBuf0
-2	6520	13		syscall 21, __CLSWArgs0
-2	6520	16		mov __RLSBResult0, __CLSWArgs0.Result
-2	6520	18		release __CLSWMutex0
-2	6521	19	#line 6521 "NXTDefs.h"
-2	6522	19		brtst 5, __RLSBError0, __RLSBResult0
-2	6523	22		set __RLSBIterations0, 60
-2	6525	25	#pragma macro 23
-2	6525	25		acquire __CLSCSMutex0
-2	6525	26		set __CLSCSArgs0.Port, 0
-2	6525	29		syscall 23, __CLSCSArgs0
-2	6525	32		mov __RLSBytesCount0, __CLSCSArgs0.BytesReady
-2	6525	34		mov __RLSBResult0, __CLSCSArgs0.Result
-2	6525	36		release __CLSCSMutex0
-2	6525	37	#line 6525 "NXTDefs.h"
-2	6526	37		sub __RLSBIterations0, __RLSBIterations0, __constVal1
-2	6527	41		brtst 2, __RLSBError0, __RLSBIterations0
-2	6528	44		brtst 0, __RLSBError0, __RLSBResult0
-2	6529	47		brtst 4, __RLSBReadyToRead0, __RLSBResult0
-2	6531	50		wait 1
-2	6532	52		jmp __RLSBDoCheckStatus0
-2	6534	54		brtst 4, __RLSBReturn0, __RLSBytesCount0
-2	6535	57		arrinit __RLSReadBuf0, __constVal0, __RLSBytesCount0
-2	6537	61	#pragma macro 25
-2	6537	61		acquire __CLSRMutex0
-2	6537	62		set __CLSRArgs0.Port, 0
-2	6537	65		mov __CLSRArgs0.BufferLen, __RLSBytesCount0
-2	6537	67		syscall 22, __CLSRArgs0
-2	6537	70		mov __RLSReadBuf0, __CLSRArgs0.Buffer
-2	6537	72		mov __RLSBResult0, __CLSRArgs0.Result
-2	6537	74		release __CLSRMutex0
-2	6537	75	#line 6537 "NXTDefs.h"
-2	6538	75		brtst 5, __RLSBError0, __RLSBResult0
-2	6539	78		mov __RLSLastGoodRead0, __RLSReadBuf0
-2	6540	80		jmp __RLSBDone0
-2	6542	82		mov __RLSReadBuf0, __RLSLastGoodRead0
-2	6544	84		arrsize __RLSBytesCount0, __RLSReadBuf0
-2	6546	87		subret ____ReadLSBytes0_return
-3	72	0	#line 72 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-3	73	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 0
-3	72	3	#line 72 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-3	72	3	#line 72 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-3	73	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
-3	4523	5	#line 4523 "NXCDefs.h"
-3	4524	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	4523	7	#line 4523 "NXCDefs.h"
-3	4523	7	#line 4523 "NXCDefs.h"
-3	4524	7		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
-3	4523	9	#line 4523 "NXCDefs.h"
-3	4524	9		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-3	4523	12	#line 4523 "NXCDefs.h"
-3	4524	12		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
-3	4523	15	#line 4523 "NXCDefs.h"
-3	4524	15		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
-3	4523	18	#line 4523 "NXCDefs.h"
-3	4523	18	#line 4523 "NXCDefs.h"
-3	4524	18		jmp __004__ASM_Label_37
-3	4523	20	#line 4523 "NXCDefs.h"
-3	4524	20		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
-3	4523	23	#line 4523 "NXCDefs.h"
-3	4523	23	#line 4523 "NXCDefs.h"
-3	4524	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-3	4428	25	#line 4428 "NXCDefs.h"
-3	4429	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-3	4428	29	#line 4428 "NXCDefs.h"
-3	4523	29	#line 4523 "NXCDefs.h"
-3	4524	29	#line 4524 "NXCDefs.h"
-3	4525	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	4524	31	#line 4524 "NXCDefs.h"
-3	4524	31	#line 4524 "NXCDefs.h"
-3	4525	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-3	4524	34	#line 4524 "NXCDefs.h"
-3	4441	34	#line 4441 "NXCDefs.h"
-3	4442	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
-3	4441	38	#line 4441 "NXCDefs.h"
-3	4524	38	#line 4524 "NXCDefs.h"
-3	4525	38	#line 4525 "NXCDefs.h"
-3	4526	38		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	4525	40	#line 4525 "NXCDefs.h"
-3	4459	40	#line 4459 "NXCDefs.h"
-3	4460	40	#pragma macro 4
-3	4460	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	4460	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-3	7982	44	#line 7982 "NXCDefs.h"
-3	4459	44	#line 4459 "NXCDefs.h"
-3	4525	44	#line 4525 "NXCDefs.h"
-3	72	44	#line 72 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-3	73	44	#line 73 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-3	74	44		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 1
-3	73	47	#line 73 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-3	73	47	#line 73 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-3	74	47		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
-3	4523	49	#line 4523 "NXCDefs.h"
-3	4524	49		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	4523	51	#line 4523 "NXCDefs.h"
-3	4523	51	#line 4523 "NXCDefs.h"
-3	4524	51		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
-3	4523	53	#line 4523 "NXCDefs.h"
-3	4524	53		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-3	4523	56	#line 4523 "NXCDefs.h"
-3	4524	56		brtst 4, __005__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
-3	4523	59	#line 4523 "NXCDefs.h"
-3	4524	59		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
-3	4523	62	#line 4523 "NXCDefs.h"
-3	4523	62	#line 4523 "NXCDefs.h"
-3	4524	62		jmp __005__ASM_Label_37
-3	4523	64	#line 4523 "NXCDefs.h"
-3	4524	64		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
-3	4523	67	#line 4523 "NXCDefs.h"
-3	4523	67	#line 4523 "NXCDefs.h"
-3	4524	67		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-3	4428	69	#line 4428 "NXCDefs.h"
-3	4429	69		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-3	4428	73	#line 4428 "NXCDefs.h"
-3	4523	73	#line 4523 "NXCDefs.h"
-3	4524	73	#line 4524 "NXCDefs.h"
-3	4525	73		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	4524	75	#line 4524 "NXCDefs.h"
-3	4524	75	#line 4524 "NXCDefs.h"
-3	4525	75		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-3	4524	78	#line 4524 "NXCDefs.h"
-3	4441	78	#line 4441 "NXCDefs.h"
-3	4442	78		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
-3	4441	82	#line 4441 "NXCDefs.h"
-3	4524	82	#line 4524 "NXCDefs.h"
-3	4525	82	#line 4525 "NXCDefs.h"
-3	4526	82		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	4525	84	#line 4525 "NXCDefs.h"
-3	4459	84	#line 4459 "NXCDefs.h"
-3	4460	84	#pragma macro 4
-3	4460	84		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	4460	86		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-3	8045	88	#line 8045 "NXCDefs.h"
-3	4459	88	#line 4459 "NXCDefs.h"
-3	4525	88	#line 4525 "NXCDefs.h"
-3	73	88	#line 73 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-3	74	88	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-3	75	88		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 2
-3	74	91	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-3	74	91	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-3	75	91		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
-3	4523	93	#line 4523 "NXCDefs.h"
-3	4524	93		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	4523	95	#line 4523 "NXCDefs.h"
-3	4523	95	#line 4523 "NXCDefs.h"
-3	4524	95		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
-3	4523	97	#line 4523 "NXCDefs.h"
-3	4524	97		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-3	4523	100	#line 4523 "NXCDefs.h"
-3	4524	100		brtst 4, __006__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
-3	4523	103	#line 4523 "NXCDefs.h"
-3	4524	103		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
-3	4523	106	#line 4523 "NXCDefs.h"
-3	4523	106	#line 4523 "NXCDefs.h"
-3	4524	106		jmp __006__ASM_Label_37
-3	4523	108	#line 4523 "NXCDefs.h"
-3	4524	108		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
-3	4523	111	#line 4523 "NXCDefs.h"
-3	4523	111	#line 4523 "NXCDefs.h"
-3	4524	111		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-3	4428	113	#line 4428 "NXCDefs.h"
-3	4429	113		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-3	4428	117	#line 4428 "NXCDefs.h"
-3	4523	117	#line 4523 "NXCDefs.h"
-3	4524	117	#line 4524 "NXCDefs.h"
-3	4525	117		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	4524	119	#line 4524 "NXCDefs.h"
-3	4524	119	#line 4524 "NXCDefs.h"
-3	4525	119		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-3	4524	122	#line 4524 "NXCDefs.h"
-3	4441	122	#line 4441 "NXCDefs.h"
-3	4442	122		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
-3	4441	126	#line 4441 "NXCDefs.h"
-3	4524	126	#line 4524 "NXCDefs.h"
-3	4525	126	#line 4525 "NXCDefs.h"
-3	4526	126		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	4525	128	#line 4525 "NXCDefs.h"
-3	4459	128	#line 4459 "NXCDefs.h"
-3	4460	128	#pragma macro 4
-3	4460	128		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	4460	130		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-3	8108	132	#line 8108 "NXCDefs.h"
-3	4459	132	#line 4459 "NXCDefs.h"
-3	4525	132	#line 4525 "NXCDefs.h"
-3	74	132	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-3	75	132	#line 75 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-3	76	132		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 3
-3	75	135	#line 75 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-3	75	135	#line 75 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-3	76	135		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
-3	4523	137	#line 4523 "NXCDefs.h"
-3	4524	137		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	4523	139	#line 4523 "NXCDefs.h"
-3	4523	139	#line 4523 "NXCDefs.h"
-3	4524	139		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
-3	4523	141	#line 4523 "NXCDefs.h"
-3	4524	141		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-3	4523	144	#line 4523 "NXCDefs.h"
-3	4524	144		brtst 4, __007__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
-3	4523	147	#line 4523 "NXCDefs.h"
-3	4524	147		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
-3	4523	150	#line 4523 "NXCDefs.h"
-3	4523	150	#line 4523 "NXCDefs.h"
-3	4524	150		jmp __007__ASM_Label_37
-3	4523	152	#line 4523 "NXCDefs.h"
-3	4524	152		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
-3	4523	155	#line 4523 "NXCDefs.h"
-3	4523	155	#line 4523 "NXCDefs.h"
-3	4524	155		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-3	4428	157	#line 4428 "NXCDefs.h"
-3	4429	157		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-3	4428	161	#line 4428 "NXCDefs.h"
-3	4523	161	#line 4523 "NXCDefs.h"
-3	4524	161	#line 4524 "NXCDefs.h"
-3	4525	161		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	4524	163	#line 4524 "NXCDefs.h"
-3	4524	163	#line 4524 "NXCDefs.h"
-3	4525	163		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-3	4524	166	#line 4524 "NXCDefs.h"
-3	4441	166	#line 4441 "NXCDefs.h"
-3	4442	166		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
-3	4441	170	#line 4441 "NXCDefs.h"
-3	4524	170	#line 4524 "NXCDefs.h"
-3	4525	170	#line 4525 "NXCDefs.h"
-3	4526	170		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	4525	172	#line 4525 "NXCDefs.h"
-3	4459	172	#line 4459 "NXCDefs.h"
-3	4460	172	#pragma macro 4
-3	4460	172		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-3	4460	174		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-3	8171	176	#line 8171 "NXCDefs.h"
-3	4459	176	#line 4459 "NXCDefs.h"
-3	4525	176	#line 4525 "NXCDefs.h"
-3	75	176	#line 75 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-3	78	176	#line 78 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-3	79	176		subret __inicializaSensores_return
-4	287	0	#line 287 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-4	288	0	#pragma macro 7
-4	288	0		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	9872	23	#line 9872 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-4	287	23	#line 287 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-4	288	23	#line 288 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-4	289	23	#pragma macro 7
-4	289	23		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	9875	46	#line 9875 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-4	288	46	#line 288 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-4	291	46	#line 291 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-4	292	46		subret __Para_return
-5	387	0	#line 387 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	388	0		set my_tc_d, 0
-5	387	3	#line 387 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	387	3	#line 387 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	388	3	#line 388 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	389	3		set my_tc_e, 0
-5	388	6	#line 388 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	388	6	#line 388 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	390	6	#line 390 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	390	6	#line 390 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	390	6	#line 390 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	390	6	#line 390 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	391	6		add __signed_stack_001andaRetoDireita, my_tc_d, my_tc_e
-5	390	10	#line 390 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	390	10	#line 390 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	391	10		set __D0andaRetoDireita, 2
-5	390	13	#line 390 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	391	13		div __distanciaTachoCount_7qG2_grau_7qG2_000, __signed_stack_001andaRetoDireita, __D0andaRetoDireita
-5	390	17	#line 390 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	390	17	#line 390 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	391	17		subcall distanciaTachoCount, __distanciaTachoCount_return
-5	390	19	#line 390 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	391	19		mov __signed_stack_001andaRetoDireita, __D0distanciaTachoCount
-5	390	21	#line 390 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	390	21	#line 390 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	391	21		mov __signed_stack_002andaRetoDireita, __andaRetoDireita_7qG2_dist_7qG2_000
-5	390	23	#line 390 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	390	23	#line 390 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	391	23		set __D0andaRetoDireita, 100
-5	390	26	#line 390 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	391	26		mul __D0andaRetoDireita, __signed_stack_002andaRetoDireita, __D0andaRetoDireita
-5	390	30	#line 390 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	391	30		cmp 0, __D0andaRetoDireita, __signed_stack_001andaRetoDireita, __D0andaRetoDireita
-5	391	34	#line 391 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	392	34		brtst 4, __ASM_Label_1069, __D0andaRetoDireita
-5	391	37	#line 391 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	392	37	#pragma macro 26
-5	392	37		acquire __RLSBmutex0
-5	392	38		mov __RLSReadBuf0, __RLSBbufLSWrite1
-5	392	40		set __RLSBytesCount0, 1
-5	392	43		waitv __constVal15
-5	392	45		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-5	392	47		index __D0andaRetoDireita, __RLSReadBuf0, 65535
-5	392	51		release __RLSBmutex0
-5	10387	52	#line 10387 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	391	52	#line 391 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	392	52		mov __andaRetoDireita_7qG2_distanciaAtual_7qG2_000, __D0andaRetoDireita
-5	391	54	#line 391 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	391	54	#line 391 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	393	54	#line 393 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	393	54	#line 393 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	394	54		mov __signed_stack_001andaRetoDireita, __D0andaRetoDireita
-5	393	56	#line 393 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	394	56		mov __D0andaRetoDireita, __andaRetoDireita_7qG2_dist_7qG2_000
-5	393	58	#line 393 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	394	58		cmp 4, __D0andaRetoDireita, __signed_stack_001andaRetoDireita, __D0andaRetoDireita
-5	394	62	#line 394 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	395	62		brtst 4, __ASM_Label_1082, __D0andaRetoDireita
-5	394	65	#line 394 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	395	65		set __andaRetoDireita_7qG2_potd_7qG2_000, 90
-5	394	68	#line 394 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	394	68	#line 394 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	395	68	#line 395 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	396	68		set __andaRetoDireita_7qG2_pote_7qG2_000, 90
-5	395	71	#line 395 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	395	71	#line 395 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	397	71	#line 397 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	398	71		jmp __ASM_Label_1087
-5	397	73	#line 397 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	398	73		mov __signed_stack_001andaRetoDireita, __andaRetoDireita_7qG2_distanciaAtual_7qG2_000
-5	397	75	#line 397 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	397	75	#line 397 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	398	75		mov __D0andaRetoDireita, __andaRetoDireita_7qG2_dist_7qG2_000
-5	397	77	#line 397 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	398	77		cmp 1, __D0andaRetoDireita, __signed_stack_001andaRetoDireita, __D0andaRetoDireita
-5	398	81	#line 398 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	399	81		brtst 4, __ASM_Label_1090, __D0andaRetoDireita
-5	398	84	#line 398 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	399	84		set __andaRetoDireita_7qG2_pote_7qG2_000, 90
-5	398	87	#line 398 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	398	87	#line 398 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	399	87	#line 399 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	400	87		set __andaRetoDireita_7qG2_potd_7qG2_000, 70
-5	399	90	#line 399 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	399	90	#line 399 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	401	90	#line 401 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	402	90		jmp __ASM_Label_1095
-5	401	92	#line 401 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	402	92		mov __signed_stack_001andaRetoDireita, __andaRetoDireita_7qG2_distanciaAtual_7qG2_000
-5	401	94	#line 401 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	401	94	#line 401 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	402	94		mov __D0andaRetoDireita, __andaRetoDireita_7qG2_dist_7qG2_000
-5	401	96	#line 401 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	402	96		cmp 0, __D0andaRetoDireita, __signed_stack_001andaRetoDireita, __D0andaRetoDireita
-5	402	100	#line 402 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	403	100		brtst 4, __ASM_Label_1098, __D0andaRetoDireita
-5	402	103	#line 402 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	403	103		set __andaRetoDireita_7qG2_pote_7qG2_000, 70
-5	402	106	#line 402 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	402	106	#line 402 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	403	106	#line 403 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	404	106		set __andaRetoDireita_7qG2_potd_7qG2_000, 90
-5	403	109	#line 403 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	403	109	#line 403 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	406	109	#line 406 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	406	109	#line 406 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	406	109	#line 406 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	406	109	#line 406 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	407	109		getout __D0andaRetoDireita, __constVal1, 4
-5	406	113	#line 406 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	407	113		add my_tc_d, my_tc_d, __D0andaRetoDireita
-5	406	117	#line 406 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	407	117	#line 407 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	408	117		mov __D0andaRetoDireita, __andaRetoDireita_7qG2_potd_7qG2_000
-5	407	119	#line 407 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	408	119	#pragma macro 7
-5	408	119		setout __constVal1, 2, __D0andaRetoDireita, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-5	10490	142	#line 10490 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	407	142	#line 407 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	408	142	#line 408 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	409	142		getout __D0andaRetoDireita, __constVal0, 4
-5	408	146	#line 408 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	409	146		add my_tc_e, my_tc_e, __D0andaRetoDireita
-5	408	150	#line 408 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	409	150	#line 409 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	410	150		mov __D0andaRetoDireita, __andaRetoDireita_7qG2_pote_7qG2_000
-5	409	152	#line 409 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	410	152	#pragma macro 7
-5	410	152		setout __constVal0, 2, __D0andaRetoDireita, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-5	10504	175	#line 10504 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	409	175	#line 409 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	413	175	#line 413 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	414	175		jmp __ASM_Label_1068
-5	413	177	#line 413 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	413	177	#line 413 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	414	177	#pragma macro 7
-5	414	177		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-5	10511	200	#line 10511 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	413	200	#line 413 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	414	200	#line 414 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	415	200	#pragma macro 7
-5	415	200		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-5	10514	223	#line 10514 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	414	223	#line 414 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	418	223	#line 418 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-5	419	223		subret __andaRetoDireita_return
-6	419	0	#line 419 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-6	420	0		set __signed_stack_001distanciaTachoCount, 3
-6	419	3	#line 419 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-6	419	3	#line 419 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-6	419	3	#line 419 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-6	420	3		mul __D0distanciaTachoCount, __signed_stack_001distanciaTachoCount, __distanciaTachoCount_7qG2_grau_7qG2_000
-6	419	7	#line 419 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-6	420	7		subret __distanciaTachoCount_return
-6	419	9	#line 419 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-6	422	9	#line 422 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-6	423	9		subret __distanciaTachoCount_return
-7	498	0	#line 498 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc"
-7	499	0		subret ____initialize_global_data_return
+0	499	0	#line 499 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	500	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	499	2	#line 499 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	518	2	#line 518 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	519	2		subcall inicializaSensores, __inicializaSensores_return
+0	518	4	#line 518 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	518	4	#line 518 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	519	4		set __andaRetoDireita_7qG2_distParede_7qG2_000, 15
+0	518	7	#line 518 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	518	7	#line 518 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	519	7		set __andaRetoDireita_7qG2_distAndar_7qG2_000, 100
+0	518	10	#line 518 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	519	10	#line 519 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	520	10		subcall andaRetoDireita, __andaRetoDireita_return
+0	519	12	#line 519 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	520	12		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	5672	0	#pragma macro 25
+2	5672	0		acquire __CLSWMutex0
+2	5672	1		set __CLSWArgs0.Port, 0
+2	5672	4		mov __CLSWArgs0.ReturnLen, __RLSBytesCount0
+2	5672	6		mov __CLSWArgs0.Buffer, __RLSReadBuf0
+2	5672	8		syscall 21, __CLSWArgs0
+2	5672	11		mov __RLSBResult0, __CLSWArgs0.Result
+2	5672	13		release __CLSWMutex0
+2	5673	14	#line 5673 "NXTDefs.h"
+2	5674	14		brtst 4, __RLSBReturn0, __RLSBytesCount0
+2	5675	17		arrinit __RLSReadBuf0, __constVal0, __RLSBytesCount0
+2	5676	21		brtst 5, __RLSBError0, __RLSBResult0
+2	5677	24		set __RLSBIterations0, 4
+2	5679	27	#pragma macro 23
+2	5679	27		acquire __CLSCSMutex0
+2	5679	28		set __CLSCSArgs0.Port, 0
+2	5679	31		syscall 23, __CLSCSArgs0
+2	5679	34		mov __RLSBytesCount0, __CLSCSArgs0.BytesReady
+2	5679	36		mov __RLSBResult0, __CLSCSArgs0.Result
+2	5679	38		release __CLSCSMutex0
+2	5679	39	#line 5679 "NXTDefs.h"
+2	5680	39		sub __RLSBIterations0, __RLSBIterations0, __constVal1
+2	5681	43		brtst 2, __RLSBError0, __RLSBIterations0
+2	5682	46		brtst 0, __RLSBError0, __RLSBResult0
+2	5683	49		brtst 4, __RLSBReadyToRead0, __RLSBResult0
+2	5685	52		wait 15
+2	5686	54		jmp __RLSBDoCheckStatus0
+2	5689	56	#pragma macro 25
+2	5689	56		acquire __CLSRMutex0
+2	5689	57		set __CLSRArgs0.Port, 0
+2	5689	60		mov __CLSRArgs0.BufferLen, __RLSBytesCount0
+2	5689	62		syscall 22, __CLSRArgs0
+2	5689	65		mov __RLSReadBuf0, __CLSRArgs0.Buffer
+2	5689	67		mov __RLSBResult0, __CLSRArgs0.Result
+2	5689	69		release __CLSRMutex0
+2	5689	70	#line 5689 "NXTDefs.h"
+2	5690	70		brtst 5, __RLSBError0, __RLSBResult0
+2	5691	73		mov __RLSLastGoodRead0, __RLSReadBuf0
+2	5692	75		jmp __RLSBDone0
+2	5694	77		mov __RLSReadBuf0, __RLSLastGoodRead0
+2	5696	79		arrsize __RLSBytesCount0, __RLSReadBuf0
+2	5698	82		subret ____ReadLSBytes0_return
+3	78	0	#line 78 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	79	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 0
+3	78	3	#line 78 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	79	3	#line 79 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	80	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+3	3758	5	#line 3758 "NXCDefs.h"
+3	3759	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+3	3758	7	#line 3758 "NXCDefs.h"
+3	3758	7	#line 3758 "NXCDefs.h"
+3	3759	7		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+3	3758	9	#line 3758 "NXCDefs.h"
+3	3759	9		tst 5, __zfSetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+3	3758	12	#line 3758 "NXCDefs.h"
+3	3759	12		brtst 4, __004__NXC_Label_36, __zfSetSensorLowspeed_inline_inicializaSensores
+3	3758	15	#line 3758 "NXCDefs.h"
+3	3759	15		set __D0SetSensorLowspeed_inline_inicializaSensores, 11
+3	3758	18	#line 3758 "NXCDefs.h"
+3	3759	18		jmp __004__NXC_Label_37
+3	3758	20	#line 3758 "NXCDefs.h"
+3	3759	20		set __D0SetSensorLowspeed_inline_inicializaSensores, 10
+3	3758	23	#line 3758 "NXCDefs.h"
+3	3759	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __D0SetSensorLowspeed_inline_inicializaSensores
+3	3663	25	#line 3663 "NXCDefs.h"
+3	3664	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+3	3663	29	#line 3663 "NXCDefs.h"
+3	3759	29	#line 3759 "NXCDefs.h"
+3	3759	29	#line 3759 "NXCDefs.h"
+3	3760	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+3	3759	31	#line 3759 "NXCDefs.h"
+3	3759	31	#line 3759 "NXCDefs.h"
+3	3760	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+3	3759	34	#line 3759 "NXCDefs.h"
+3	3676	34	#line 3676 "NXCDefs.h"
+3	3677	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+3	3676	38	#line 3676 "NXCDefs.h"
+3	3760	38	#line 3760 "NXCDefs.h"
+3	3760	38	#line 3760 "NXCDefs.h"
+3	3761	38		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+3	3760	40	#line 3760 "NXCDefs.h"
+3	3694	40	#line 3694 "NXCDefs.h"
+3	3695	40	#pragma macro 4
+3	3695	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+3	3695	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+3	7812	44	#line 7812 "NXCDefs.h"
+3	3694	44	#line 3694 "NXCDefs.h"
+3	3761	44	#line 3761 "NXCDefs.h"
+3	79	44	#line 79 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	79	44	#line 79 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	80	44		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 1
+3	79	47	#line 79 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	80	47	#line 80 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	81	47		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+3	3758	49	#line 3758 "NXCDefs.h"
+3	3759	49		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+3	3758	51	#line 3758 "NXCDefs.h"
+3	3758	51	#line 3758 "NXCDefs.h"
+3	3759	51		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+3	3758	53	#line 3758 "NXCDefs.h"
+3	3759	53		tst 5, __zfSetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+3	3758	56	#line 3758 "NXCDefs.h"
+3	3759	56		brtst 4, __005__NXC_Label_36, __zfSetSensorLowspeed_inline_inicializaSensores
+3	3758	59	#line 3758 "NXCDefs.h"
+3	3759	59		set __D0SetSensorLowspeed_inline_inicializaSensores, 11
+3	3758	62	#line 3758 "NXCDefs.h"
+3	3759	62		jmp __005__NXC_Label_37
+3	3758	64	#line 3758 "NXCDefs.h"
+3	3759	64		set __D0SetSensorLowspeed_inline_inicializaSensores, 10
+3	3758	67	#line 3758 "NXCDefs.h"
+3	3759	67		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __D0SetSensorLowspeed_inline_inicializaSensores
+3	3663	69	#line 3663 "NXCDefs.h"
+3	3664	69		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+3	3663	73	#line 3663 "NXCDefs.h"
+3	3759	73	#line 3759 "NXCDefs.h"
+3	3759	73	#line 3759 "NXCDefs.h"
+3	3760	73		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+3	3759	75	#line 3759 "NXCDefs.h"
+3	3759	75	#line 3759 "NXCDefs.h"
+3	3760	75		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+3	3759	78	#line 3759 "NXCDefs.h"
+3	3676	78	#line 3676 "NXCDefs.h"
+3	3677	78		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+3	3676	82	#line 3676 "NXCDefs.h"
+3	3760	82	#line 3760 "NXCDefs.h"
+3	3760	82	#line 3760 "NXCDefs.h"
+3	3761	82		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+3	3760	84	#line 3760 "NXCDefs.h"
+3	3694	84	#line 3694 "NXCDefs.h"
+3	3695	84	#pragma macro 4
+3	3695	84		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+3	3695	86		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+3	7879	88	#line 7879 "NXCDefs.h"
+3	3694	88	#line 3694 "NXCDefs.h"
+3	3761	88	#line 3761 "NXCDefs.h"
+3	80	88	#line 80 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	80	88	#line 80 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	81	88		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 2
+3	80	91	#line 80 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	81	91	#line 81 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	82	91		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+3	3758	93	#line 3758 "NXCDefs.h"
+3	3759	93		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+3	3758	95	#line 3758 "NXCDefs.h"
+3	3758	95	#line 3758 "NXCDefs.h"
+3	3759	95		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+3	3758	97	#line 3758 "NXCDefs.h"
+3	3759	97		tst 5, __zfSetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+3	3758	100	#line 3758 "NXCDefs.h"
+3	3759	100		brtst 4, __006__NXC_Label_36, __zfSetSensorLowspeed_inline_inicializaSensores
+3	3758	103	#line 3758 "NXCDefs.h"
+3	3759	103		set __D0SetSensorLowspeed_inline_inicializaSensores, 11
+3	3758	106	#line 3758 "NXCDefs.h"
+3	3759	106		jmp __006__NXC_Label_37
+3	3758	108	#line 3758 "NXCDefs.h"
+3	3759	108		set __D0SetSensorLowspeed_inline_inicializaSensores, 10
+3	3758	111	#line 3758 "NXCDefs.h"
+3	3759	111		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __D0SetSensorLowspeed_inline_inicializaSensores
+3	3663	113	#line 3663 "NXCDefs.h"
+3	3664	113		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+3	3663	117	#line 3663 "NXCDefs.h"
+3	3759	117	#line 3759 "NXCDefs.h"
+3	3759	117	#line 3759 "NXCDefs.h"
+3	3760	117		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+3	3759	119	#line 3759 "NXCDefs.h"
+3	3759	119	#line 3759 "NXCDefs.h"
+3	3760	119		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+3	3759	122	#line 3759 "NXCDefs.h"
+3	3676	122	#line 3676 "NXCDefs.h"
+3	3677	122		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+3	3676	126	#line 3676 "NXCDefs.h"
+3	3760	126	#line 3760 "NXCDefs.h"
+3	3760	126	#line 3760 "NXCDefs.h"
+3	3761	126		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+3	3760	128	#line 3760 "NXCDefs.h"
+3	3694	128	#line 3694 "NXCDefs.h"
+3	3695	128	#pragma macro 4
+3	3695	128		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+3	3695	130		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+3	7946	132	#line 7946 "NXCDefs.h"
+3	3694	132	#line 3694 "NXCDefs.h"
+3	3761	132	#line 3761 "NXCDefs.h"
+3	81	132	#line 81 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	81	132	#line 81 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	82	132		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 3
+3	81	135	#line 81 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	82	135	#line 82 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	83	135		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+3	3758	137	#line 3758 "NXCDefs.h"
+3	3759	137		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+3	3758	139	#line 3758 "NXCDefs.h"
+3	3758	139	#line 3758 "NXCDefs.h"
+3	3759	139		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+3	3758	141	#line 3758 "NXCDefs.h"
+3	3759	141		tst 5, __zfSetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+3	3758	144	#line 3758 "NXCDefs.h"
+3	3759	144		brtst 4, __007__NXC_Label_36, __zfSetSensorLowspeed_inline_inicializaSensores
+3	3758	147	#line 3758 "NXCDefs.h"
+3	3759	147		set __D0SetSensorLowspeed_inline_inicializaSensores, 11
+3	3758	150	#line 3758 "NXCDefs.h"
+3	3759	150		jmp __007__NXC_Label_37
+3	3758	152	#line 3758 "NXCDefs.h"
+3	3759	152		set __D0SetSensorLowspeed_inline_inicializaSensores, 10
+3	3758	155	#line 3758 "NXCDefs.h"
+3	3759	155		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __D0SetSensorLowspeed_inline_inicializaSensores
+3	3663	157	#line 3663 "NXCDefs.h"
+3	3664	157		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+3	3663	161	#line 3663 "NXCDefs.h"
+3	3759	161	#line 3759 "NXCDefs.h"
+3	3759	161	#line 3759 "NXCDefs.h"
+3	3760	161		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+3	3759	163	#line 3759 "NXCDefs.h"
+3	3759	163	#line 3759 "NXCDefs.h"
+3	3760	163		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+3	3759	166	#line 3759 "NXCDefs.h"
+3	3676	166	#line 3676 "NXCDefs.h"
+3	3677	166		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+3	3676	170	#line 3676 "NXCDefs.h"
+3	3760	170	#line 3760 "NXCDefs.h"
+3	3760	170	#line 3760 "NXCDefs.h"
+3	3761	170		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+3	3760	172	#line 3760 "NXCDefs.h"
+3	3694	172	#line 3694 "NXCDefs.h"
+3	3695	172	#pragma macro 4
+3	3695	172		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+3	3695	174		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+3	8013	176	#line 8013 "NXCDefs.h"
+3	3694	176	#line 3694 "NXCDefs.h"
+3	3761	176	#line 3761 "NXCDefs.h"
+3	82	176	#line 82 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	84	176	#line 84 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+3	85	176		subret __inicializaSensores_return
+4	377	0	#line 377 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	378	0		set my_tc_d, 0
+4	377	3	#line 377 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	377	3	#line 377 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	379	3	#line 379 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	380	3		set my_tc_e, 0
+4	379	6	#line 379 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	379	6	#line 379 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	379	6	#line 379 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	379	6	#line 379 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	379	6	#line 379 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	379	6	#line 379 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	380	6		add __signed_stack_001andaRetoDireita, my_tc_d, my_tc_e
+4	379	10	#line 379 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	379	10	#line 379 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	379	10	#line 379 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	380	10		div __distanciaTachoCount_7qG2_grau_7qG2_000, __signed_stack_001andaRetoDireita, __constVal2
+4	379	14	#line 379 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	379	14	#line 379 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	380	14		subcall distanciaTachoCount, __distanciaTachoCount_return
+4	379	16	#line 379 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	380	16		mov __signed_stack_001andaRetoDireita, __D0distanciaTachoCount
+4	379	18	#line 379 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	379	18	#line 379 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	379	18	#line 379 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	379	18	#line 379 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	379	18	#line 379 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	380	18		mul __D0andaRetoDireita, __andaRetoDireita_7qG2_distAndar_7qG2_000, __constVal100
+4	379	22	#line 379 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	380	22		cmp 0, __zfandaRetoDireita, __signed_stack_001andaRetoDireita, __D0andaRetoDireita
+4	379	26	#line 379 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	380	26		mov __D0andaRetoDireita, __zfandaRetoDireita
+4	380	28	#line 380 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	381	28		brtst 4, __NXC_Label_1059, __zfandaRetoDireita
+4	380	31	#line 380 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	381	31	#pragma macro 26
+4	381	31		acquire __RLSBmutex0
+4	381	32		mov __RLSReadBuf0, __RLSBbufLSWrite1
+4	381	34		set __RLSBytesCount0, 1
+4	381	37		wait 15
+4	381	39		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+4	381	41		index __D0andaRetoDireita, __RLSReadBuf0, 65535
+4	381	45		release __RLSBmutex0
+4	10317	46	#line 10317 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	380	46	#line 380 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	381	46		mov __andaRetoDireita_7qG2_distanciaAtual_7qG2_000, __D0andaRetoDireita
+4	380	48	#line 380 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	380	48	#line 380 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	382	48	#line 382 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	383	48		mov __signed_stack_001andaRetoDireita, __D0andaRetoDireita
+4	382	50	#line 382 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	382	50	#line 382 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	383	50		mov __D0andaRetoDireita, __andaRetoDireita_7qG2_distParede_7qG2_000
+4	382	52	#line 382 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	383	52		cmp 4, __zfandaRetoDireita, __signed_stack_001andaRetoDireita, __D0andaRetoDireita
+4	382	56	#line 382 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	383	56		mov __D0andaRetoDireita, __zfandaRetoDireita
+4	383	58	#line 383 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	384	58		brtst 4, __NXC_Label_1072, __zfandaRetoDireita
+4	384	61	#line 384 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	385	61		set __andaRetoDireita_7qG2_potd_7qG2_000, 90
+4	384	64	#line 384 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	384	64	#line 384 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	385	64	#line 385 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	386	64		set __andaRetoDireita_7qG2_pote_7qG2_000, 90
+4	385	67	#line 385 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	385	67	#line 385 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	386	67	#line 386 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	387	67		jmp __NXC_Label_1077
+4	386	69	#line 386 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	387	69		mov __signed_stack_001andaRetoDireita, __andaRetoDireita_7qG2_distanciaAtual_7qG2_000
+4	386	71	#line 386 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	386	71	#line 386 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	387	71		mov __D0andaRetoDireita, __andaRetoDireita_7qG2_distParede_7qG2_000
+4	386	73	#line 386 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	387	73		cmp 1, __zfandaRetoDireita, __signed_stack_001andaRetoDireita, __D0andaRetoDireita
+4	386	77	#line 386 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	387	77		mov __D0andaRetoDireita, __zfandaRetoDireita
+4	387	79	#line 387 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	388	79		brtst 4, __NXC_Label_1080, __zfandaRetoDireita
+4	388	82	#line 388 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	389	82		set __andaRetoDireita_7qG2_pote_7qG2_000, 90
+4	388	85	#line 388 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	388	85	#line 388 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	389	85	#line 389 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	390	85		set __andaRetoDireita_7qG2_potd_7qG2_000, 70
+4	389	88	#line 389 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	389	88	#line 389 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	390	88	#line 390 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	391	88		jmp __NXC_Label_1085
+4	390	90	#line 390 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	391	90		mov __signed_stack_001andaRetoDireita, __andaRetoDireita_7qG2_distanciaAtual_7qG2_000
+4	390	92	#line 390 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	390	92	#line 390 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	391	92		mov __D0andaRetoDireita, __andaRetoDireita_7qG2_distParede_7qG2_000
+4	390	94	#line 390 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	391	94		cmp 0, __zfandaRetoDireita, __signed_stack_001andaRetoDireita, __D0andaRetoDireita
+4	390	98	#line 390 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	391	98		mov __D0andaRetoDireita, __zfandaRetoDireita
+4	391	100	#line 391 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	392	100		brtst 4, __NXC_Label_1088, __zfandaRetoDireita
+4	392	103	#line 392 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	393	103		set __andaRetoDireita_7qG2_pote_7qG2_000, 70
+4	392	106	#line 392 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	392	106	#line 392 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	393	106	#line 393 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	394	106		set __andaRetoDireita_7qG2_potd_7qG2_000, 90
+4	393	109	#line 393 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	393	109	#line 393 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	395	109	#line 395 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	395	109	#line 395 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	395	109	#line 395 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	396	109	#line 396 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	397	109		getout __D0andaRetoDireita, __constVal1, 4
+4	396	113	#line 396 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	397	113		add my_tc_d, my_tc_d, __D0andaRetoDireita
+4	396	117	#line 396 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	396	117	#line 396 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	397	117		mov __D0andaRetoDireita, __andaRetoDireita_7qG2_potd_7qG2_000
+4	397	119	#line 397 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	398	119	#pragma macro 7
+4	398	119		setout __constVal1, 2, __D0andaRetoDireita, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	10432	142	#line 10432 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	397	142	#line 397 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	398	142	#line 398 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	399	142		getout __D0andaRetoDireita, __constVal0, 4
+4	398	146	#line 398 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	399	146		add my_tc_e, my_tc_e, __D0andaRetoDireita
+4	398	150	#line 398 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	398	150	#line 398 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	399	150		mov __D0andaRetoDireita, __andaRetoDireita_7qG2_pote_7qG2_000
+4	400	152	#line 400 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	401	152	#pragma macro 7
+4	401	152		setout __constVal0, 2, __D0andaRetoDireita, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	10446	175	#line 10446 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	400	175	#line 400 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	402	175	#line 402 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	403	175		jmp __NXC_Label_1058
+4	402	177	#line 402 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	403	177	#line 403 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	404	177	#pragma macro 7
+4	404	177		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	10453	200	#line 10453 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	403	200	#line 403 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	405	200	#line 405 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	406	200	#pragma macro 7
+4	406	200		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	10456	223	#line 10456 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	405	223	#line 405 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	407	223	#line 407 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+4	408	223		subret __andaRetoDireita_return
+5	441	0	#line 441 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+5	441	0	#line 441 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+5	441	0	#line 441 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+5	441	0	#line 441 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+5	442	0		mul __D0distanciaTachoCount, __constVal3, __distanciaTachoCount_7qG2_grau_7qG2_000
+5	442	4	#line 442 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+5	443	4		subret __distanciaTachoCount_return
+5	442	6	#line 442 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+5	444	6	#line 444 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+5	445	6		subret __distanciaTachoCount_return
+6	522	0	#line 522 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+6	523	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
-0	main	0	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc
-1	__ResetSensorSubroutine	25	NXTDefs.h
-2	__ReadLSBytes0	38	NXTDefs.h
-3	inicializaSensores	127	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc
-4	Para	305	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc
-5	andaRetoDireita	353	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc
-6	distanciaTachoCount	578	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc
-7	__initialize_global_data	589	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\segue reto.nxc
+0	main	0	C:\Users\natia\AppData\Local\Temp\temp.nxc
+1	__ResetSensorSubroutine	15	NXTDefs.h
+2	__ReadLSBytes0	28	NXTDefs.h
+3	inicializaSensores	112	C:\Users\natia\AppData\Local\Temp\temp.nxc
+4	andaRetoDireita	290	C:\Users\natia\AppData\Local\Temp\temp.nxc
+5	distanciaTachoCount	515	C:\Users\natia\AppData\Local\Temp\temp.nxc
+6	__initialize_global_data	523	C:\Users\natia\AppData\Local\Temp\temp.nxc
