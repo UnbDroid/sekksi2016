@@ -6,8 +6,6 @@
      #define INBOX 2
      #define OUTBOX 1
 
-
-
      // Defines de sensores
      #define RGB_DIR IN_1
      #define RGB_ESQ IN_2
@@ -59,7 +57,7 @@
     #define TEMPO_DEPOIS_DE_JOGAR_DENTRO_GARANTIA 800
 
     //misc
-    #define MENOR_DISTANCIA_US 15
+    #define MENOR_DISTANCIA_US 20
 
 
      //LOGICA
@@ -69,7 +67,6 @@
 
      #define SIM 5
      #define SIM_US 1
-     #define NAO_US 3
      #define SIM_GARRA 2
      #define NAO 0
      #define CONTINUA 6
@@ -92,6 +89,8 @@
      #define COR_PRETA 12 //12 ou 17, 12 eh mais certo
      #define COR_NEUTRA 13//BRANCO fica acima de 13
 
+void teste1(void);
+void teste2(void);
 void InicializaSensores(void);
 int filterUS(void);
 int filterRGB(int s);
@@ -103,10 +102,6 @@ void NaoPega();
 void IdentificaBoneco(int s);
 void MandaExecutivoContinuar();
 
-//debug
-int returnUS();
-void teste1(void);
-void teste2(void);
 
 
 int bonecoAlvo = 0;
@@ -118,18 +113,6 @@ void InicializaSensores(){
     SetSensorLowspeed(US_FRENTE);
 }
 
-int returnUS(){
-  int valor = 0;
-  valor = SensorUS(US_FRENTE);
-  if(valor < MENOR_DISTANCIA_US){
-    PlaySound(SOUND_UP);
-    PlaySound(SOUND_DOWN);
-    Wait(SEC_1);
-    return 1;
-  }
-  else
-    return 0;
-}
 
 int filterUS(){
     float media = 0, alfa = 0.2 ;
@@ -143,7 +126,7 @@ int filterUS(){
     //condiÃ§ao de loop de 1segundo para pegar leituras e filtrar elas
     aux=CurrentTick();
 
-    while(x<=1000){
+    while(x<=1500){
         x=CurrentTick()-aux;
         leitura = SensorUS(US_FRENTE);
         media = ((1-alfa)*media) + (alfa*leitura) ;
@@ -164,7 +147,6 @@ int filterRGB(int s){
     float media = 0, alfa = 0.01 ;
     int leitura, i;
     unsigned int x=0, aux;
-    
 
     for(i=0;i<5;i++){
         media=media+SensorRaw(s);
@@ -182,14 +164,12 @@ int filterRGB(int s){
     }
     if (s == 0){
         if (media > COR_BASE_DIR_MAX || media < COR_BASE_DIR_MIN){
-
             return 1;
         }else{
             return 0;
         }
     }else if(s == 1){
         if (media > COR_BASE_ESQ_MAX || media < COR_BASE_ESQ_MIN){
-
             return 1;
         }else{
             return 0;
@@ -212,44 +192,17 @@ int RecebeBoneco(){
           return BONECO_BRANCO;
 }
 
-void EnviaUSFrente2(){
-   int sinalUS = 0, verifica = 0, passei = 0;
-     //sinalUS = filterUS();
-     sinalUS = returnUS();
-     if(sinalUS != 0){
-       do{
-          SendRemoteNumber(CONEXAO, OUTBOX, SIM_US); 
-          ReceiveRemoteNumber(INBOX, 0, passei);
-       }while(passei == NAO);      
-      }else if(sinalUS == 0){
-        do{
-          SendRemoteNumber(CONEXAO, OUTBOX, NAO_US); 
-          ReceiveRemoteNumber(INBOX, 0, passei);
-       }while(passei == NAO);
-      }
-}
-
-void Bip(){
-  PlaySound(SOUND_UP);
-  PlaySound(SOUND_DOWN);
-  Wait(SEC_1);        
-}
-
 void EnviaUSFrente(){
-     int sinalUS = 0, verifica = 0, passei = 0;
-     //sinalUS = filterUS();
-     sinalUS = returnUS();
+     int sinalUS = 0, verifica = 0;
+     sinalUS = filterUS();
      if(sinalUS != 0){
           do{  
                ReceiveRemoteNumber(INBOX, 0, verifica);
                Wait(30);    
-          }while(verifica == NAO);
-          SendRemoteNumber(CONEXAO, OUTBOX, SIM);
+          }while(verifica == 0);
+
           if(verifica == LeGARRA_SENSOR){
-               do{
-                  SendRemoteNumber(CONEXAO, OUTBOX, SIM_US); 
-                  ReceiveRemoteNumber(INBOX, 0, passei);
-               }while(passei == NAO);
+               SendRemoteNumber(CONEXAO, OUTBOX, SIM_US);           
           }
      }
 }
@@ -420,7 +373,7 @@ void teste1(){
 
 void teste2(){
      InicializaSensores();
-     //bonecoAlvo = RecebeBoneco();   
+     bonecoAlvo = RecebeBoneco();   
 /*     
      if(bonecoAlvo == BONECO_BRANCO){
           PlaySound(SOUND_UP);
@@ -432,11 +385,9 @@ void teste2(){
           PlaySound(SOUND_FAST_UP);
      }
 */
-    do{
-     //EnviaUSFrente(); 
-     EnviaUSFrente2();
-     //EnviaGarra();
-    }while(1);
+     EnviaUSFrente(); 
+     EnviaGarra();
+
 }
 
 task main()
