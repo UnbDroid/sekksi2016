@@ -1,0 +1,276 @@
+// Defines de sensores
+#define RGB_DIR IN_1
+#define RGB_ESQ IN_2
+#define RGB_MEIO IN_3
+#define US_FRENTE IN_4
+
+// Defines de motores
+#define MOTOR_GARRA OUT_A
+
+// Defines de leitura do RGB do meio (ainda precisa testar mais)
+#define COR_PRETA_MEIO_MIN 55
+#define COR_PRETA_MEIO_MAX 150
+#define COR_BRANCA_MEIO_MIN 290
+#define COR_BRANCA_MEIO_MAX 630
+#define COR_BASE_MEIO_MIN 185
+#define COR_BASE_MEIO_MAX 260
+
+// Defines de leitura do RGB da esquerda do robÃ´
+#define COR_PRETA_ESQ_PERTO_MIN 75
+#define COR_PRETA_ESQ_PERTO_MAX 100
+#define COR_PRETA_ESQ_LONGE_MIN 120
+#define COR_PRETA_ESQ_LONGE_MAX 160
+#define COR_BRANCA_ESQ_PERTO_MIN 470
+#define COR_BRANCA_ESQ_PERTO_MAX 495
+#define COR_BRANCA_ESQ_LONGE_MIN 212
+#define COR_BRANCA_ESQ_LONGE_MAX 245
+#define COR_BASE_ESQ_MIN 265
+#define COR_BASE_ESQ_MAX 310
+
+// Defines de leitura do RGB da direita do robÃ´
+#define COR_PRETA_DIR_PERTO_MIN 130
+#define COR_PRETA_DIR_PERTO_MAX 160
+#define COR_PRETA_DIR_LONGE_MIN 185
+#define COR_PRETA_DIR_LONGE_MAX 210
+#define COR_BRANCA_DIR_PERTO_MIN 385
+#define COR_BRANCA_DIR_PERTO_MAX 420
+#define COR_BRANCA_DIR_LONGE_MIN 240
+#define COR_BRANCA_DIR_LONGE_MAX 280
+#define COR_BASE_DIR_MIN 260
+#define COR_BASE_DIR_MAX 310
+
+//potencias
+#define POTENCIA_MAXIMA_GARRA -80
+#define POTENCIA_MED_GARRA -40
+
+//Tempos
+#define TEMPO_ATE_A_GARRA_TRAVAR 1000
+#define TEMPO_ATE_JOGAR_DENTRO 2000
+#define TEMPO_ATE_A_GARRA_VOLTAR 2000 //estou usando tempo... rola de usar por angulos depois
+#define TEMPO_DEPOIS_DE_JOGAR_DENTRO_GARANTIA 800
+
+//misc
+#define MENOR_DISTANCIA_US 20
+
+//LOGICA
+#define direita
+#define esquerda 2
+
+//defines dos buffers utilizados na comunicaÃ§Ã£o, com cada um sendo utilizado para uma atividade especÃ­fica
+#define OUTBOX_INICIALIZA 0  /*buffers referentes ao processo de conectar os cÃ©rebros*/
+#define INBOX_INICIALIZA 1
+#define OUTBOX_USFRENTE 2   /*buffers referentes aos processos relacionados com o sensor US frontal*/
+#define INBOX_USFRENTE 3
+#define OUTBOX_GARRA 4   /*buffers referentes aos processos relacionados com as garras*/
+#define INBOX_GARRA 5
+
+
+ //DeclaraÃ§Ãµes das funÃ§Ãµes
+void Vai(int x);
+void ChamaVai(int x); //funÃ§Ã£o para realizar a recursividade
+int filterRGB (int s);
+int filterUS (int s);
+int NadaTaDiferente();
+int VerificaLeitura();
+int condicao();
+int IdentificaBoneco(int x);
+void InicializaSensores();
+void pega();
+void NaoPega();
+
+
+void InicializaSensores(){
+      SetSensorColorRed(RGB_DIR);
+    SetSensorColorRed(RGB_ESQ);
+    SetSensorColorRed(RGB_MEIO);
+    SetSensorLowspeed(US_FRENTE);
+}
+
+void NaoPega(){
+    /*manda um sinal pro executivo iniciar a rotina pra descartar boneco, espera a resposta dele para abrir
+    a garra e deixar o boneco no lugar*/
+    OnFwd(MOTOR_GARRA,POTENCIA_MAXIMA_GARRA);
+    Wait(TEMPO_ATE_A_GARRA_TRAVAR);
+    Off(MOTOR_GARRA);
+    /*manda resposta para confirmar que a garra estÃ¡ aberta, para o executivo se afastar do boneco e seguindo parede*/
+}
+
+void pega(){
+    OnFwd(MOTOR_GARRA,POTENCIA_MED_GARRA);
+    Wait(TEMPO_ATE_JOGAR_DENTRO);
+    Off(MOTOR_GARRA);
+    Wait(TEMPO_DEPOIS_DE_JOGAR_DENTRO_GARANTIA);
+    OnRev(MOTOR_GARRA,POTENCIA_MAXIMA_GARRA);
+    Wait(TEMPO_ATE_A_GARRA_VOLTAR);
+    Off(MOTOR_GARRA);
+}
+
+int IdentificaBoneco(int x){
+/* x refere a qual cor temos que pegar 0 branco 1 preto*/
+    OnFwd(MOTOR_GARRA,POTENCIA_MED_GARRA);
+    Wait(TEMPO_ATE_A_GARRA_TRAVAR);
+    Off(MOTOR_GARRA);
+    if(x == 0){
+        if(SensorRaw(RGB_MEIO) > COR_BRANCA_MEIO_MIN && SensorRaw(RGB_MEIO) < COR_BRANCA_MEIO_MAX){
+            pega();
+        }else{
+            /*avisa pro robo que temos boneco errado na garra e espera ele girar*/
+            NaoPega();
+        }
+    }else if(x == 1){
+        if(SensorRaw(RGB_MEIO) > COR_PRETA_MEIO_MIN && SensorRaw(RGB_MEIO) < COR_PRETA_MEIO_MAX){
+            pega();
+        }else{
+            /*avisa pro robo que temos boneco errado na garra e espera ele girar*/
+            NaoPega();
+        }
+    }
+    /*avisa pro robo que o processo de pegar o boneco acabou pra ele andar de novo*/
+    Vai(x);
+}
+
+int filterRGB(int s){
+     /*passar o sensor como parametro (s = X-1 (de INT_X))*/
+    float media = 0, alfa = 0.01 ;
+    int leitura, i;
+    unsigned int x=0, aux;
+
+    for(i=0;i<5;i++){
+        media=media+SensorRaw(s);
+        Wait(10);
+    }
+    //condiÃ§ao de loop de 2segundos para pegar leituras e filtrar elas
+    aux=CurrentTick();
+    while(x<=1950){
+        x=CurrentTick()-aux;
+        leitura = SensorRaw(s);
+        media = ((1-alfa)*media) + (alfa*leitura) ;
+        //NumOut(0, LCD_LINE1, media);
+        //Wait(10);
+        //ClearScreen();
+    }
+    if (s == 0){
+        if (media > COR_BASE_DIR_MAX || media < COR_BASE_DIR_MIN){
+            return 1;
+        }else{
+            return 0;
+        }
+    }else if(s == 1){
+        if (media > COR_BASE_ESQ_MAX || media < COR_BASE_ESQ_MIN){
+            return 1;
+        }else{
+            return 0;
+        }
+    }
+
+}
+/*nao esta pronto ainda, tenho que implementar ele direito pra US*/
+int filterUS(int s){
+    float media = 0, alfa = 0.2 ;
+    int leitura, i;
+    unsigned int x=0, aux;
+    for(i=0;i<5;i++){
+        media=media+SensorUS(s);
+        Wait(10);
+    }
+    media=media/5;
+    //condiÃ§ao de loop de 1segundo para pegar leituras e filtrar elas
+    aux=CurrentTick();
+
+    while(x<=1500){
+        x=CurrentTick()-aux;
+        leitura = SensorUS(s);
+        media = ((1-alfa)*media) + (alfa*leitura) ;
+        /*ClearScreen();
+        NumOut(0, LCD_LINE1, media);
+        Wait(10);*/
+
+    }
+    if (media < MENOR_DISTANCIA_US){
+            return 1;
+    }else{
+            return 0;
+    }
+}
+
+int VerificaLeitura(){
+    ClearScreen();
+    TextOut(0, LCD_LINE5, "Verificando leitura");
+    Wait(1800);
+    if(SensorRaw(RGB_ESQ) > COR_BASE_ESQ_MAX || SensorRaw(RGB_ESQ) < COR_BASE_ESQ_MIN){
+        return esquerda;
+    }else if(SensorRaw(RGB_DIR) > COR_BASE_DIR_MAX || SensorRaw(RGB_DIR) < COR_BASE_DIR_MAX){
+        return direita;
+    }else if(SensorUS(US_FRENTE) < MENOR_DISTANCIA_US){
+        return 3;
+    }
+
+}
+
+int condicao(){
+  ClearScreen();
+  NumOut(0, LCD_LINE1, SensorRaw(RGB_ESQ));
+  NumOut(0, LCD_LINE2, SensorRaw(RGB_DIR));
+  NumOut(0, LCD_LINE3, SensorUS(US_FRENTE));
+      //pega();
+  if ((SensorRaw(RGB_ESQ) < COR_BASE_ESQ_MAX && SensorRaw(RGB_ESQ) > COR_BASE_ESQ_MIN )&& (SensorRaw(RGB_DIR)< COR_BASE_DIR_MAX && SensorRaw(RGB_DIR) > COR_BASE_DIR_MAX)&&(SensorUS(US_FRENTE)>MENOR_DISTANCIA_US)){
+
+    return 1;
+    }else{
+    /*ClearScreen();
+    TextOut(0, LCD_LINE3, "passei4");*/
+        return 0;
+    }
+}
+
+void ChamaVai(int x){
+    Vai(x);
+}
+
+void Vai(int x){
+    int aux = 4;//valor aleatorio pra continuar a funÃ§Ã£o se a funcÃ£o verifica nao retornar um valor esperado
+    ClearScreen();
+    TextOut(0, LCD_LINE3, "passei3");
+    while(condicao()){
+
+         Wait(20);
+        //aqui tem que ter uma checagem dos inbox, pq Ã© onde ele mais vai estar do cÃ³digo Ass: Luan
+    }
+    aux = VerificaLeitura();
+    if(aux==direita){/*se eh o sensor da direita*/
+        if(filterRGB(RGB_DIR)){
+            /*manda sinal para parar o robo*/
+            IdentificaBoneco(x);
+        }else{
+            ChamaVai(x);
+        }
+
+    }else if(aux == esquerda){/*se eh o sensor da esquerda*/
+        if(filterRGB(RGB_ESQ)){
+            /*manda sinal para parar o robo*/
+            IdentificaBoneco(x);
+        }else{
+            ChamaVai(x);
+        }
+    }else if(aux == 3){/*se eh o US*/
+        if(filterUS(US_FRENTE)){
+            /*manda sinal para parar o robo*/
+        TextOut(0, LCD_LINE3, "PARAAAAA!! TEM PAREDEEE!!");
+        }else{
+            ChamaVai(x);
+        }
+    }
+    ChamaVai(x);
+}
+
+task main(){
+  ClearScreen();
+  TextOut(0, LCD_LINE3, "passei1");
+    InicializaSensores();
+    ClearScreen();
+  TextOut(0, LCD_LINE3, "passei2");
+    //conexao bluetooth com a verificacao que esta funcionando
+    //pegar com o outro cerebro qual cor que temos que catar e guardar em x
+    int x=0;//que poha de variavel Ã© essa!?!?! pÃµe um nome mnemonico nessa porra!!!! ass Luan
+    Vai(x);
+}
