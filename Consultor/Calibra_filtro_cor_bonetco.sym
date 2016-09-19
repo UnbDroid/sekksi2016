@@ -1,6 +1,6 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__D0main	6	1	0	4	42
+0	__D0main	6	1	0	4	46
 1	__D0SetSensorLowspeed_inline_InicializaSensores	6	1	4	4	2
 2	__D0lerSensor	6	1	8	4	30
 3	__CLSRMutex3	9	0	12	4	2
@@ -32,13 +32,13 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 29	__SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	80	1	8
 30	__SetSensorColorGreen_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	81	1	4
 31	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	82	1	4
-32	__constVal32	2	0	83	1	6
+32	__constVal32	2	0	83	1	12
 33	__lerSensor_return	1	1	84	1	4
 34	____initialize_global_data_return	1	1	85	1	3
 35	__constValNeg30	2	0	86	1	1
 36	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	87	1	2
-37	__constVal63	2	0	88	1	2
-38	__constVal96	2	0	89	1	2
+37	__constVal63	2	0	88	1	4
+38	__constVal96	2	0	89	1	4
 39	__InicializaSensores_return	1	1	90	1	3
 40	__constValNeg100	2	0	91	1	1
 41	__RLSBIterations3	1	1	92	1	4
@@ -51,8 +51,8 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 48	__constVal14	2	0	99	1	2
 49	__ResetSensorPort	1	1	100	1	6
 50	__ResetSensorTmp	1	1	101	1	2
-51	__constVal0	2	1	102	1	14
-52	__constVal3	2	0	103	1	3
+51	__constVal0	2	1	102	1	22
+52	__constVal3	2	0	103	1	5
 53	____ResetSensorSubroutine_return	1	1	104	1	6
 54	__constVal1	2	0	105	1	11
 55	__CLSRArgs3	8	0	4	12	5
@@ -253,7 +253,7 @@ Clump	Line	PC	Source
 0	129	165	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
 0	129	165	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
 0	131	165	#line 131 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	132	165		set __Wait_7qG2_ms_7qG2_000_inline_main, 80
+0	132	165		set __Wait_7qG2_ms_7qG2_000_inline_main, 200
 0	131	168	#line 131 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
 0	8551	168	#line 8551 "NXCDefs.h"
 0	8552	168		waitv __Wait_7qG2_ms_7qG2_000_inline_main
@@ -280,193 +280,207 @@ Clump	Line	PC	Source
 0	137	187		jmp __ASM_Label_688
 0	136	189	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
 0	136	189	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	137	189	#line 137 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	138	189		set __main_7qG2_min_7qG2_000, 9900
-0	137	192	#line 137 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	137	192	#line 137 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	139	192	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	140	192		mov __main_7qG2_max_7qG2_000, __constValNeg100
-0	139	194	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	139	194	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	139	194	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	140	194	#pragma macro 26
-0	140	194		acquire __RLSBmutex3
-0	140	195		mov __RLSReadBuf3, __RLSBbufLSWrite1
-0	140	197		set __RLSBytesCount3, 1
-0	140	200		wait 15
-0	140	202		subcall __ReadLSBytes3, ____ReadLSBytes3_return
-0	140	204		index __D0main, __RLSReadBuf3, 65535
-0	140	208		release __RLSBmutex3
-0	6885	209	#line 6885 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	139	209	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	140	209		mov __signed_stack_001main, __D0main
-0	139	211	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	140	211		set __D0main, 7
-0	139	214	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	140	214		cmp 1, __D0main, __signed_stack_001main, __D0main
+0	136	189	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	137	189		set __D0main, 0
+0	138	192	#line 138 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	139	192	#pragma macro 7
+0	139	192		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	6876	215	#line 6876 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	138	215	#line 138 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	139	215	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	140	215		set __main_7qG2_min_7qG2_000, 9900
+0	139	218	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	139	218	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
 0	141	218	#line 141 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	142	218		brtst 4, __ASM_Label_703, __D0main
-0	141	221	#line 141 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	142	221		set __lerSensor_7qG2_sensor_7qG2_000, 2
-0	141	224	#line 141 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	143	224	#line 143 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	144	224		subcall lerSensor, __lerSensor_return
-0	143	226	#line 143 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	144	226		mov __main_7qG2_leitura_7qG2_000, __D0lerSensor
-0	143	228	#line 143 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	143	228	#line 143 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	143	228	#line 143 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	144	228		mov __signed_stack_001main, __main_7qG2_leitura_7qG2_000
-0	143	230	#line 143 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	143	230	#line 143 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	144	230		mov __D0main, __main_7qG2_min_7qG2_000
-0	143	232	#line 143 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	144	232		cmp 0, __D0main, __signed_stack_001main, __D0main
-0	144	236	#line 144 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	145	236		brtst 4, __ASM_Label_712, __D0main
-0	145	239	#line 145 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	146	239		mov __main_7qG2_min_7qG2_000, __main_7qG2_leitura_7qG2_000
-0	145	241	#line 145 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	145	241	#line 145 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	146	241	#line 146 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	146	241	#line 146 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	147	241		mov __signed_stack_001main, __main_7qG2_leitura_7qG2_000
-0	146	243	#line 146 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	146	243	#line 146 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	147	243		mov __D0main, __main_7qG2_max_7qG2_000
-0	146	245	#line 146 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	147	245		cmp 1, __D0main, __signed_stack_001main, __D0main
-0	147	249	#line 147 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	148	249		brtst 4, __ASM_Label_717, __D0main
-0	148	252	#line 148 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	149	252		mov __main_7qG2_max_7qG2_000, __main_7qG2_leitura_7qG2_000
-0	148	254	#line 148 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	148	254	#line 148 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	151	254	#line 151 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	6678	254	#line 6678 "NXCDefs.h"
-0	6679	254	#pragma macro 6
-0	6679	254		mov __PointOutArgs.Location.X, __constVal200
-0	6679	256		mov __PointOutArgs.Location.Y, __constVal200
-0	6679	258		mov __PointOutArgs.Options, __constVal1
-0	6679	260		syscall 14, __PointOutArgs
-0	6958	263	#line 6958 "NXCDefs.h"
-0	6678	263	#line 6678 "NXCDefs.h"
-0	153	263	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	153	263	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	154	263		set __signed_stack_001main, 0
-0	153	266	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	153	266	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	154	266		set __signed_stack_002main, 56
-0	153	269	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	153	269	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	154	269		mov __D0main, __main_7qG2_max_7qG2_000
-0	154	271	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	154	271	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	155	271		mov __TextOutArgs.Location.X, __signed_stack_001main
-0	154	273	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	155	273		mov __TextOutArgs.Location.Y, __signed_stack_002main
-0	154	275	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	155	275		set __TextOutArgs.Options, 0
-0	154	278	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	155	278		numtostr __TextOutArgs.Text, __D0main
-0	154	281	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	155	281		syscall 13, __TextOutArgs
-0	154	284	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	155	284		mov __D0main, __TextOutArgs.Result
-0	154	286	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	154	286	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	154	286	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	155	286		set __signed_stack_001main, 0
-0	154	289	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	154	289	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	155	289		set __signed_stack_002main, 48
-0	154	292	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	154	292	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	155	292		mov __D0main, __main_7qG2_leitura_7qG2_000
-0	155	294	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	155	294	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	156	294		mov __TextOutArgs.Location.X, __signed_stack_001main
-0	155	296	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	156	296		mov __TextOutArgs.Location.Y, __signed_stack_002main
-0	155	298	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	156	298		set __TextOutArgs.Options, 0
-0	155	301	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	156	301		numtostr __TextOutArgs.Text, __D0main
-0	155	304	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	156	304		syscall 13, __TextOutArgs
-0	155	307	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	156	307		mov __D0main, __TextOutArgs.Result
-0	155	309	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	155	309	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	155	309	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	156	309		set __signed_stack_001main, 0
-0	155	312	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	155	312	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	156	312		set __signed_stack_002main, 40
-0	155	315	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	155	315	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	156	315		mov __D0main, __main_7qG2_min_7qG2_000
-0	157	317	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	157	317	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	158	317		mov __TextOutArgs.Location.X, __signed_stack_001main
-0	157	319	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	158	319		mov __TextOutArgs.Location.Y, __signed_stack_002main
-0	157	321	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	158	321		set __TextOutArgs.Options, 0
+0	142	218		mov __main_7qG2_max_7qG2_000, __constValNeg100
+0	141	220	#line 141 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	141	220	#line 141 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	141	220	#line 141 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	142	220	#pragma macro 26
+0	142	220		acquire __RLSBmutex3
+0	142	221		mov __RLSReadBuf3, __RLSBbufLSWrite1
+0	142	223		set __RLSBytesCount3, 1
+0	142	226		wait 15
+0	142	228		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+0	142	230		index __D0main, __RLSReadBuf3, 65535
+0	142	234		release __RLSBmutex3
+0	6890	235	#line 6890 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	141	235	#line 141 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	142	235		mov __signed_stack_001main, __D0main
+0	141	237	#line 141 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	142	237		set __D0main, 7
+0	141	240	#line 141 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	142	240		cmp 1, __D0main, __signed_stack_001main, __D0main
+0	143	244	#line 143 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	144	244		brtst 4, __ASM_Label_705, __D0main
+0	143	247	#line 143 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	144	247		set __lerSensor_7qG2_sensor_7qG2_000, 2
+0	143	250	#line 143 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	145	250	#line 145 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	146	250		subcall lerSensor, __lerSensor_return
+0	145	252	#line 145 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	146	252		mov __main_7qG2_leitura_7qG2_000, __D0lerSensor
+0	145	254	#line 145 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	145	254	#line 145 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	145	254	#line 145 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	146	254		mov __signed_stack_001main, __main_7qG2_leitura_7qG2_000
+0	145	256	#line 145 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	145	256	#line 145 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	146	256		mov __D0main, __main_7qG2_min_7qG2_000
+0	145	258	#line 145 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	146	258		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	146	262	#line 146 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	147	262		brtst 4, __ASM_Label_714, __D0main
+0	147	265	#line 147 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	148	265		mov __main_7qG2_min_7qG2_000, __main_7qG2_leitura_7qG2_000
+0	147	267	#line 147 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	147	267	#line 147 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	148	267	#line 148 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	148	267	#line 148 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	149	267		mov __signed_stack_001main, __main_7qG2_leitura_7qG2_000
+0	148	269	#line 148 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	148	269	#line 148 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	149	269		mov __D0main, __main_7qG2_max_7qG2_000
+0	148	271	#line 148 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	149	271		cmp 1, __D0main, __signed_stack_001main, __D0main
+0	149	275	#line 149 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	150	275		brtst 4, __ASM_Label_719, __D0main
+0	150	278	#line 150 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	151	278		mov __main_7qG2_max_7qG2_000, __main_7qG2_leitura_7qG2_000
+0	150	280	#line 150 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	150	280	#line 150 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	153	280	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	6678	280	#line 6678 "NXCDefs.h"
+0	6679	280	#pragma macro 6
+0	6679	280		mov __PointOutArgs.Location.X, __constVal200
+0	6679	282		mov __PointOutArgs.Location.Y, __constVal200
+0	6679	284		mov __PointOutArgs.Options, __constVal1
+0	6679	286		syscall 14, __PointOutArgs
+0	6963	289	#line 6963 "NXCDefs.h"
+0	6678	289	#line 6678 "NXCDefs.h"
+0	155	289	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	155	289	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	156	289		set __signed_stack_001main, 0
+0	155	292	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	155	292	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	156	292		set __signed_stack_002main, 56
+0	155	295	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	155	295	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	156	295		mov __D0main, __main_7qG2_max_7qG2_000
+0	156	297	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	156	297	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	157	297		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	156	299	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	157	299		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	156	301	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	157	301		set __TextOutArgs.Options, 0
+0	156	304	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	157	304		numtostr __TextOutArgs.Text, __D0main
+0	156	307	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	157	307		syscall 13, __TextOutArgs
+0	156	310	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	157	310		mov __D0main, __TextOutArgs.Result
+0	156	312	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	156	312	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	156	312	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	157	312		set __signed_stack_001main, 0
+0	156	315	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	156	315	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	157	315		set __signed_stack_002main, 48
+0	156	318	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	156	318	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	157	318		mov __D0main, __main_7qG2_leitura_7qG2_000
+0	157	320	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	157	320	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	158	320		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	157	322	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	158	322		mov __TextOutArgs.Location.Y, __signed_stack_002main
 0	157	324	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	158	324		numtostr __TextOutArgs.Text, __D0main
+0	158	324		set __TextOutArgs.Options, 0
 0	157	327	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	158	327		syscall 13, __TextOutArgs
+0	158	327		numtostr __TextOutArgs.Text, __D0main
 0	157	330	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	158	330		mov __D0main, __TextOutArgs.Result
-0	157	332	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	157	332	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	159	332	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	160	332		jmp __ASM_Label_702
-0	159	334	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	159	334	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	160	334		set __D0main, 30
-0	160	337	#line 160 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	161	337	#pragma macro 7
-0	161	337		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	7067	360	#line 7067 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	160	360	#line 160 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	158	330		syscall 13, __TextOutArgs
+0	157	333	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	158	333		mov __D0main, __TextOutArgs.Result
+0	157	335	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	157	335	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	157	335	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	158	335		set __signed_stack_001main, 0
+0	157	338	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	157	338	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	158	338		set __signed_stack_002main, 40
+0	157	341	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	157	341	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	158	341		mov __D0main, __main_7qG2_min_7qG2_000
+0	159	343	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	159	343	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	160	343		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	159	345	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	160	345		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	159	347	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	160	347		set __TextOutArgs.Options, 0
+0	159	350	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	160	350		numtostr __TextOutArgs.Text, __D0main
+0	159	353	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	160	353		syscall 13, __TextOutArgs
+0	159	356	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	160	356		mov __D0main, __TextOutArgs.Result
+0	159	358	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	159	358	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	161	358	#line 161 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	162	358		jmp __ASM_Label_704
 0	161	360	#line 161 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	162	360		getout __main_7qG2_tc_7qG2_000, __constVal0, 4
-0	161	364	#line 161 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	161	364	#line 161 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	163	364	#line 163 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	164	364		set __Wait_7qG2_ms_7qG2_000_inline_main, 80
-0	163	367	#line 163 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	8551	367	#line 8551 "NXCDefs.h"
-0	8552	367		waitv __Wait_7qG2_ms_7qG2_000_inline_main
-0	8551	369	#line 8551 "NXCDefs.h"
-0	164	369	#line 164 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	165	369	#line 165 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	166	369		mov __main_7qG2_old_tc_7qG2_000, __main_7qG2_tc_7qG2_000
-0	165	371	#line 165 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	165	371	#line 165 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	166	371	#line 166 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	167	371		getout __main_7qG2_tc_7qG2_000, __constVal0, 4
-0	166	375	#line 166 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	166	375	#line 166 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	166	375	#line 166 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	167	375		mov __signed_stack_001main, __main_7qG2_tc_7qG2_000
-0	166	377	#line 166 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	166	377	#line 166 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	167	377		mov __D0main, __main_7qG2_old_tc_7qG2_000
-0	166	379	#line 166 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	167	379		cmp 5, __D0main, __signed_stack_001main, __D0main
-0	170	383	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	171	383		brtst 4, __ASM_Label_743, __D0main
-0	170	386	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	171	386		jmp __ASM_Label_742
-0	170	388	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	170	388	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	174	388	#line 174 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	175	388		jmp __ASM_Label_662
-0	174	390	#line 174 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-0	175	390		exit -1, -1
+0	161	360	#line 161 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	162	360		set __D0main, 30
+0	162	363	#line 162 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	163	363	#pragma macro 7
+0	163	363		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	7072	386	#line 7072 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	162	386	#line 162 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	163	386	#line 163 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	164	386		getout __main_7qG2_tc_7qG2_000, __constVal0, 4
+0	163	390	#line 163 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	163	390	#line 163 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	165	390	#line 165 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	166	390		set __Wait_7qG2_ms_7qG2_000_inline_main, 200
+0	165	393	#line 165 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	8551	393	#line 8551 "NXCDefs.h"
+0	8552	393		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	395	#line 8551 "NXCDefs.h"
+0	166	395	#line 166 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	167	395	#line 167 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	168	395		mov __main_7qG2_old_tc_7qG2_000, __main_7qG2_tc_7qG2_000
+0	167	397	#line 167 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	167	397	#line 167 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	168	397	#line 168 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	169	397		getout __main_7qG2_tc_7qG2_000, __constVal0, 4
+0	168	401	#line 168 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	168	401	#line 168 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	168	401	#line 168 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	169	401		mov __signed_stack_001main, __main_7qG2_tc_7qG2_000
+0	168	403	#line 168 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	168	403	#line 168 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	169	403		mov __D0main, __main_7qG2_old_tc_7qG2_000
+0	168	405	#line 168 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	169	405		cmp 5, __D0main, __signed_stack_001main, __D0main
+0	170	409	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	171	409		brtst 4, __ASM_Label_745, __D0main
+0	170	412	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	171	412		jmp __ASM_Label_744
+0	170	414	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	170	414	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	170	414	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	171	414		set __D0main, 0
+0	172	417	#line 172 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	173	417	#pragma macro 7
+0	173	417		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	7126	440	#line 7126 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	172	440	#line 172 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	176	440	#line 176 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	177	440		jmp __ASM_Label_662
+0	176	442	#line 176 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+0	177	442		exit -1, -1
 1	5476	0		setin __constVal1, __ResetSensorPort, 5
 1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
 1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
@@ -735,13 +749,13 @@ Clump	Line	PC	Source
 4	107	151	#line 107 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
 4	111	151	#line 111 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
 4	112	151		subret __lerSensor_return
-5	175	0	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-5	176	0		subret ____initialize_global_data_return
+5	177	0	#line 177 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
+5	178	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc
-1	__ResetSensorSubroutine	393	NXTDefs.h
-2	__ReadLSBytes3	406	NXTDefs.h
-3	InicializaSensores	491	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc
-4	lerSensor	580	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc
-5	__initialize_global_data	733	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc
+1	__ResetSensorSubroutine	445	NXTDefs.h
+2	__ReadLSBytes3	458	NXTDefs.h
+3	InicializaSensores	543	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc
+4	lerSensor	632	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc
+5	__initialize_global_data	785	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc

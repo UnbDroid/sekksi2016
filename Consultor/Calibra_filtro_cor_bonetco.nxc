@@ -129,10 +129,14 @@ task main(){
       tc = MotorTachoCount(MOTOR_GARRA);
       do
       {
-        Wait(80);
+        Wait(200);
         old_tc = tc;
         tc = MotorTachoCount(MOTOR_GARRA);
       }while(tc!=old_tc);
+      
+      OnFwd(MOTOR_GARRA,0);
+
+      
 
       min = 9900;
       max = -100;
@@ -161,12 +165,12 @@ task main(){
       tc = MotorTachoCount(MOTOR_GARRA);
       do
       {
-        Wait(80);
+        Wait(200);
         old_tc = tc;
         tc = MotorTachoCount(MOTOR_GARRA);
       }while(tc!=old_tc);
       
-      
+      OnFwd(MOTOR_GARRA,0);
 
    }
 
