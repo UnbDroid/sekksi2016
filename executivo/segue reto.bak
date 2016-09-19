@@ -57,7 +57,8 @@ void inicializaSensores();
 int distanciaTachoCount(int grau);
 int distanciaGiro(int grau);
 
-void andaRetoDireita(int distParede, int distAndar)
+void andaRetoDireita(int distParede, int distAndar);
+void andaRetoEsquerda(int distParede, int distAndar);
 void andaReto1();
 void andaReto2();
 
@@ -262,7 +263,7 @@ void andaReto3(){
         NumOut(0, LCD_LINE2, MotorTachoCount(ME));
         NumOut(0, LCD_LINE3, potd);
         NumOut(0, LCD_LINE4, pote);
-        TextOut(0, LCD_LINE5, "POkemon");
+        TextOut(0, LCD_LINE5, "POkemon"); //??
         Off(MD);
         Off(ME);
 
@@ -404,23 +405,23 @@ void andaRetoDireita(int distParede, int distAndar){ // função que faz o robô an
 
 }
 
-void andaRetoEsquerda(int dist){ // função que faz o robô andar à "dist" centímetros da parede
+void andaRetoEsquerda(int distParede, int distAndar){ // função que faz o robô andar à "distParede" centímetros da parede por "distAndar" centímetros
 	   int distanciaAtual, potd, pote;
 	   my_tc_d = 0;
 	   my_tc_e = 0;
 
-	   while(distanciaTachoCount((my_tc_d + my_tc_e)/2) < (dist*100)){
-	 	   distanciaAtual = SensorUS(USE);
+	   while(distanciaTachoCount((my_tc_d + my_tc_e)/2) < (distAndar*100)){
+	 	   distanciaAtual = SensorUS(USD);
 
-		   if (distanciaAtual == dist){
+		   if (distanciaAtual == distParede){
 			   potd = 90;
 			   pote = 90;
 		   }
-		   else if(distanciaAtual > dist){
+		   else if(distanciaAtual > distParede){
 			   potd = 90;
 			   pote = 70;
 		   }
-		   else if(distanciaAtual < dist){
+		   else if(distanciaAtual < distParede){
 			   potd = 70;
 		   	 pote = 90;
 		   }
@@ -434,22 +435,27 @@ void andaRetoEsquerda(int dist){ // função que faz o robô andar à "dist" centíme
 
 	   Off(MD);
 	   Off(ME);
+
 }
 
 int distanciaTachoCount(int grau){
 	   return (3*grau);                   //Distancia a ser percorrid/Raio da roda
 }
 
-int distanciaGiro(int grau){
-	   return (((grau*172)/1420)); // COMO FOI FEITA ESSA CONVERSÃO???
+int distanciaGiroDireita(int grau){
+	   return (((grau*17)/149)); // COMO FOI FEITA ESSA CONVERSÃO??? [na base da tentativa e erro]
 }
 
-void vira(int angulo, int direcao){  //TESTE
+int distanciaGiroEsquerda(int grau){
+	   return (((grau*17)/155));
+}
+
+void vira(int angulo, int direcao){  //TESTE   MUDEI AS FUNÇÕES PARA VER UM ANGULOS NÂO SEI SE MODIFIQUEI ESSA FUNÇÂO CORRETAMENTE
      if(direcao == esquerda){
         OnFwd(MD, 90);
         OnFwd(ME, -90);
 
-        while(distanciaGiro((MotorTachoCount(MD) - MotorTachoCount(ME))/2) < angulo)
+        while(distanciaGiroEsquerda((MotorTachoCount(MD) - MotorTachoCount(ME))/2) < angulo)
         {
         //lol
         }
@@ -460,7 +466,7 @@ void vira(int angulo, int direcao){  //TESTE
         OnFwd(MD, -90);
         OnFwd(ME, 90);
 
-        while(distanciaGiro((- MotorTachoCount(MD) + MotorTachoCount(ME))/2) < angulo)
+        while(distanciaGiroDireita((- MotorTachoCount(MD) + MotorTachoCount(ME))/2) < angulo)
         {
         //lol
         }
@@ -473,7 +479,7 @@ void viraEsq(int angulo){ // função que faz o robô girar para a esquerda o ângul
      OnFwd(MD, 90);
      OnFwd(ME, -90);
 
-     while(distanciaGiro((MotorTachoCount(MD) - MotorTachoCount(ME))/2) < angulo)
+     while(distanciaGiroEsquerda((MotorTachoCount(MD) - MotorTachoCount(ME))/2) < angulo)
      {
       //lol
      }
@@ -486,7 +492,7 @@ void viraDir(int angulo){ // função que faz o robô girar para a direita o ângulo
      OnFwd(MD, -90);
      OnFwd(ME, 90);
 
-     while(distanciaGiro((- MotorTachoCount(MD) + MotorTachoCount(ME))/2) < angulo)
+     while(distanciaGiroDireita((- MotorTachoCount(MD) + MotorTachoCount(ME))/2) < angulo)
      {
       //lol
      }
@@ -496,6 +502,8 @@ void viraDir(int angulo){ // função que faz o robô girar para a direita o ângulo
 
 task main(){
 	   inicializaSensores();
+	   
+	   viraEsq(90);
 
      //iniciaReto();
       //andaRetoDireita(30);
@@ -514,5 +522,5 @@ task main(){
      //Reto(modoTempo, 10000);
      //andaReto2();
      
-     andaRetoDireita(15,100);
+     //andaRetoDireita(15, 100);
 }

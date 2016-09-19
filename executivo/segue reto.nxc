@@ -263,7 +263,7 @@ void andaReto3(){
         NumOut(0, LCD_LINE2, MotorTachoCount(ME));
         NumOut(0, LCD_LINE3, potd);
         NumOut(0, LCD_LINE4, pote);
-        TextOut(0, LCD_LINE5, "POkemon");
+        TextOut(0, LCD_LINE5, "POkemon"); //??
         Off(MD);
         Off(ME);
 
@@ -442,16 +442,20 @@ int distanciaTachoCount(int grau){
 	   return (3*grau);                   //Distancia a ser percorrid/Raio da roda
 }
 
-int distanciaGiro(int grau){
-	   return (((grau*172)/1420)); // COMO FOI FEITA ESSA CONVERSÃO???
+int distanciaGiroDireita(int grau){
+	   return (((grau*17)/149)); // COMO FOI FEITA ESSA CONVERSÃO??? [na base da tentativa e erro]
 }
 
-void vira(int angulo, int direcao){  //TESTE
+int distanciaGiroEsquerda(int grau){
+	   return (((grau*17)/159));
+}
+
+void vira(int angulo, int direcao){  //TESTE   MUDEI AS FUNÇÕES PARA VER UM ANGULOS NÂO SEI SE MODIFIQUEI ESSA FUNÇÂO CORRETAMENTE
      if(direcao == esquerda){
         OnFwd(MD, 90);
         OnFwd(ME, -90);
 
-        while(distanciaGiro((MotorTachoCount(MD) - MotorTachoCount(ME))/2) < angulo)
+        while(distanciaGiroEsquerda((MotorTachoCount(MD) - MotorTachoCount(ME))/2) < angulo)
         {
         //lol
         }
@@ -462,7 +466,7 @@ void vira(int angulo, int direcao){  //TESTE
         OnFwd(MD, -90);
         OnFwd(ME, 90);
 
-        while(distanciaGiro((- MotorTachoCount(MD) + MotorTachoCount(ME))/2) < angulo)
+        while(distanciaGiroDireita((- MotorTachoCount(MD) + MotorTachoCount(ME))/2) < angulo)
         {
         //lol
         }
@@ -475,7 +479,7 @@ void viraEsq(int angulo){ // função que faz o robô girar para a esquerda o ângul
      OnFwd(MD, 90);
      OnFwd(ME, -90);
 
-     while(distanciaGiro((MotorTachoCount(MD) - MotorTachoCount(ME))/2) < angulo)
+     while(distanciaGiroEsquerda((MotorTachoCount(MD) - MotorTachoCount(ME))/2) < angulo)
      {
       //lol
      }
@@ -488,7 +492,7 @@ void viraDir(int angulo){ // função que faz o robô girar para a direita o ângulo
      OnFwd(MD, -90);
      OnFwd(ME, 90);
 
-     while(distanciaGiro((- MotorTachoCount(MD) + MotorTachoCount(ME))/2) < angulo)
+     while(distanciaGiroDireita((- MotorTachoCount(MD) + MotorTachoCount(ME))/2) < angulo)
      {
       //lol
      }
@@ -498,6 +502,8 @@ void viraDir(int angulo){ // função que faz o robô girar para a direita o ângulo
 
 task main(){
 	   inicializaSensores();
+	   
+	   viraEsq(90);
 
      //iniciaReto();
       //andaRetoDireita(30);
@@ -516,5 +522,5 @@ task main(){
      //Reto(modoTempo, 10000);
      //andaReto2();
      
-     andaRetoDireita(15, 100);
+     //andaRetoDireita(15, 100);
 }
