@@ -64,26 +64,26 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 61	__constStr0009.__constStr0009_type	1	1	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	123	0	#line 123 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	124	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	123	2	#line 123 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	124	2	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	125	2		subcall InicializaSensores, __InicializaSensores_return
-0	124	4	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	124	4	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	125	4		set __D0main, 1
-0	125	7	#line 125 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	126	7		tst 5, __D0main, __D0main
-0	125	10	#line 125 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	126	10		brtst 4, __ASM_Label_702, __D0main
-0	126	13	#line 126 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	127	13		subcall temBoneco, __temBoneco_return
-0	126	15	#line 126 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	127	15		mov __D0main, __D0temBoneco
-0	127	17	#line 127 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	128	17		tst 5, __D0main, __D0main
-0	127	20	#line 127 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	128	20		brtst 4, __ASM_Label_707, __D0main
+0	130	0	#line 130 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	131	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	130	2	#line 130 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	131	2	#line 131 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	132	2		subcall InicializaSensores, __InicializaSensores_return
+0	131	4	#line 131 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	131	4	#line 131 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	132	4		set __D0main, 1
+0	132	7	#line 132 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	133	7		tst 5, __D0main, __D0main
+0	132	10	#line 132 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	133	10		brtst 4, __ASM_Label_702, __D0main
+0	133	13	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	134	13		subcall temBoneco, __temBoneco_return
+0	133	15	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	134	15		mov __D0main, __D0temBoneco
+0	134	17	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	135	17		tst 5, __D0main, __D0main
+0	134	20	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	135	20		brtst 4, __ASM_Label_707, __D0main
 0	6678	23	#line 6678 "NXCDefs.h"
 0	6679	23	#pragma macro 6
 0	6679	23		mov __PointOutArgs.Location.X, __constVal200
@@ -92,34 +92,34 @@ Clump	Line	PC	Source
 0	6679	29		syscall 14, __PointOutArgs
 0	6848	32	#line 6848 "NXCDefs.h"
 0	6678	32	#line 6678 "NXCDefs.h"
-0	128	32	#line 128 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	128	32	#line 128 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	129	32		set __signed_stack_001main, 1
-0	128	35	#line 128 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	128	35	#line 128 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	129	35		set __signed_stack_002main, 56
-0	128	38	#line 128 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	128	38	#line 128 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	129	38		strcat __strbufmain, __constStr0009
-0	129	42	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	130	42		acquire __TextOutMutex
-0	129	43	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	130	43		mov __TextOutArgs.Location.X, __signed_stack_001main
-0	129	45	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	130	45		mov __TextOutArgs.Location.Y, __signed_stack_002main
-0	129	47	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	130	47		set __TextOutArgs.Options, 0
-0	129	50	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	130	50		mov __TextOutArgs.Text, __strbufmain
-0	129	52	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	130	52		syscall 13, __TextOutArgs
-0	129	55	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	130	55		mov __D0main, __TextOutArgs.Result
-0	129	57	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	130	57		release __TextOutMutex
-0	129	58	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	132	58	#line 132 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	133	58		jmp __ASM_Label_712
+0	135	32	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	135	32	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	136	32		set __signed_stack_001main, 1
+0	135	35	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	135	35	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	136	35		set __signed_stack_002main, 56
+0	135	38	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	135	38	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	136	38		strcat __strbufmain, __constStr0009
+0	136	42	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	137	42		acquire __TextOutMutex
+0	136	43	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	137	43		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	136	45	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	137	45		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	136	47	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	137	47		set __TextOutArgs.Options, 0
+0	136	50	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	137	50		mov __TextOutArgs.Text, __strbufmain
+0	136	52	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	137	52		syscall 13, __TextOutArgs
+0	136	55	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	137	55		mov __D0main, __TextOutArgs.Result
+0	136	57	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	137	57		release __TextOutMutex
+0	136	58	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	139	58	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	140	58		jmp __ASM_Label_712
 0	6678	60	#line 6678 "NXCDefs.h"
 0	6679	60	#pragma macro 6
 0	6679	60		mov __PointOutArgs.Location.X, __constVal200
@@ -128,44 +128,44 @@ Clump	Line	PC	Source
 0	6679	66		syscall 14, __PointOutArgs
 0	6886	69	#line 6886 "NXCDefs.h"
 0	6678	69	#line 6678 "NXCDefs.h"
-0	133	69	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	133	69	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	134	69		set __signed_stack_001main, 1
-0	133	72	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	133	72	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	134	72		set __signed_stack_002main, 56
-0	133	75	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	133	75	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	134	75		strcat __strbufmain, __constStr0010
-0	134	79	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	135	79		acquire __TextOutMutex
-0	134	80	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	135	80		mov __TextOutArgs.Location.X, __signed_stack_001main
-0	134	82	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	135	82		mov __TextOutArgs.Location.Y, __signed_stack_002main
-0	134	84	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	135	84		set __TextOutArgs.Options, 0
-0	134	87	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	135	87		mov __TextOutArgs.Text, __strbufmain
-0	134	89	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	135	89		syscall 13, __TextOutArgs
-0	134	92	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	135	92		mov __D0main, __TextOutArgs.Result
-0	134	94	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	135	94		release __TextOutMutex
-0	134	95	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	135	95	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	135	95	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	136	95		set __Wait_7qG2_ms_7qG2_000_inline_main, 40
-0	135	98	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	140	69	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	140	69	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	141	69		set __signed_stack_001main, 1
+0	140	72	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	140	72	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	141	72		set __signed_stack_002main, 56
+0	140	75	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	140	75	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	141	75		strcat __strbufmain, __constStr0010
+0	142	79	#line 142 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	143	79		acquire __TextOutMutex
+0	142	80	#line 142 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	143	80		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	142	82	#line 142 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	143	82		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	142	84	#line 142 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	143	84		set __TextOutArgs.Options, 0
+0	142	87	#line 142 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	143	87		mov __TextOutArgs.Text, __strbufmain
+0	142	89	#line 142 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	143	89		syscall 13, __TextOutArgs
+0	142	92	#line 142 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	143	92		mov __D0main, __TextOutArgs.Result
+0	142	94	#line 142 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	143	94		release __TextOutMutex
+0	142	95	#line 142 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	143	95	#line 143 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	143	95	#line 143 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	144	95		set __Wait_7qG2_ms_7qG2_000_inline_main, 40
+0	143	98	#line 143 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
 0	8551	98	#line 8551 "NXCDefs.h"
 0	8552	98		waitv __Wait_7qG2_ms_7qG2_000_inline_main
 0	8551	100	#line 8551 "NXCDefs.h"
-0	136	100	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	140	100	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	141	100		jmp __ASM_Label_701
-0	140	102	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-0	141	102		exit -1, -1
+0	144	100	#line 144 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	148	100	#line 148 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	149	100		jmp __ASM_Label_701
+0	148	102	#line 148 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+0	149	102		exit -1, -1
 1	5476	0		setin __constVal1, __ResetSensorPort, 5
 1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
 1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
@@ -464,7 +464,7 @@ Clump	Line	PC	Source
 4	118	64		mov __signed_stack_001temBoneco, __temBoneco_7qG2_rgb_dir_7qG2_000
 4	117	66	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
 4	117	66	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-4	118	66		set __D0temBoneco, 293
+4	118	66		set __D0temBoneco, 407
 4	117	69	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
 4	118	69		cmp 0, __D0temBoneco, __signed_stack_001temBoneco, __D0temBoneco
 4	117	73	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
@@ -473,7 +473,7 @@ Clump	Line	PC	Source
 4	118	76		mov __signed_stack_001temBoneco, __temBoneco_7qG2_rgb_dir_7qG2_000
 4	117	78	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
 4	117	78	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-4	118	78		set __D0temBoneco, 249
+4	118	78		set __D0temBoneco, 334
 4	117	81	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
 4	118	81		cmp 1, __D0temBoneco, __signed_stack_001temBoneco, __D0temBoneco
 4	117	85	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
@@ -482,7 +482,7 @@ Clump	Line	PC	Source
 4	118	88		mov __signed_stack_001temBoneco, __temBoneco_7qG2_rgb_esq_7qG2_000
 4	117	90	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
 4	117	90	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-4	118	90		set __D0temBoneco, 263
+4	118	90		set __D0temBoneco, 376
 4	117	93	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
 4	118	93		cmp 0, __D0temBoneco, __signed_stack_001temBoneco, __D0temBoneco
 4	117	97	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
@@ -491,26 +491,26 @@ Clump	Line	PC	Source
 4	118	100		mov __signed_stack_001temBoneco, __temBoneco_7qG2_rgb_esq_7qG2_000
 4	117	102	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
 4	117	102	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-4	118	102		set __D0temBoneco, 216
+4	118	102		set __D0temBoneco, 302
 4	117	105	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
 4	118	105		cmp 1, __D0temBoneco, __signed_stack_001temBoneco, __D0temBoneco
-4	118	109	#line 118 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-4	119	109		brtst 4, __ASM_Label_696, __D0temBoneco
-4	119	112	#line 119 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-4	120	112		set __D0temBoneco, 0
-4	119	115	#line 119 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-4	120	115		subret __temBoneco_return
-4	119	117	#line 119 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-4	119	117	#line 119 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-4	120	117	#line 120 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-4	121	117		set __D0temBoneco, 1
-4	120	120	#line 120 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-4	121	120		subret __temBoneco_return
-4	120	122	#line 120 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-4	122	122	#line 122 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-4	123	122		subret __temBoneco_return
-5	141	0	#line 141 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
-5	142	0		subret ____initialize_global_data_return
+4	123	109	#line 123 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	124	109		brtst 4, __ASM_Label_696, __D0temBoneco
+4	124	112	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	125	112		set __D0temBoneco, 0
+4	124	115	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	125	115		subret __temBoneco_return
+4	124	117	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	126	117	#line 126 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	127	117	#line 127 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	128	117		set __D0temBoneco, 1
+4	127	120	#line 127 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	128	120		subret __temBoneco_return
+4	127	122	#line 127 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	129	122	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+4	130	122		subret __temBoneco_return
+5	149	0	#line 149 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc"
+5	150	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\teste.nxc

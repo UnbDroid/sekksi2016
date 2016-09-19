@@ -30,8 +30,8 @@
 #define COR_BRANCA_ESQ_PERTO_MAX 495
 #define COR_BRANCA_ESQ_LONGE_MIN 212
 #define COR_BRANCA_ESQ_LONGE_MAX 245
-#define COR_BASE_ESQ_MIN 216
-#define COR_BASE_ESQ_MAX 263
+#define COR_BASE_ESQ_MIN 302
+#define COR_BASE_ESQ_MAX 376
 
 // Defines de leitura do RGB da direita do rob√¥
 #define COR_PRETA_DIR_PERTO_MIN 130
@@ -42,8 +42,8 @@
 #define COR_BRANCA_DIR_PERTO_MAX 420
 #define COR_BRANCA_DIR_LONGE_MIN 238
 #define COR_BRANCA_DIR_LONGE_MAX 282
-#define COR_BASE_DIR_MIN 249
-#define COR_BASE_DIR_MAX 293
+#define COR_BASE_DIR_MIN 334
+#define COR_BASE_DIR_MAX 407
 
 //potencias
 #define POTENCIA_MAXIMA_GARRA -80
@@ -107,16 +107,23 @@ int lerSensor(int sensor){
 
 int temBoneco(){
    int rgb_esq, rgb_dir;
-   
+
    rgb_dir = lerSensor(RGB_DIR);
    rgb_esq = lerSensor(RGB_ESQ);
-   
+
    NumOut(0, LCD_LINE2, rgb_dir);
    NumOut(0, LCD_LINE3, rgb_esq);
-   
-   
+
+
    if(((rgb_dir < COR_BASE_DIR_MAX) && (rgb_dir > COR_BASE_DIR_MIN)) && ((rgb_esq < COR_BASE_ESQ_MAX) && (rgb_esq > COR_BASE_ESQ_MIN)))
-            return NAO_ALIEN;
+   {
+      //ClearScreen();
+      //NumOut(2,LCD_LINE2,rgb_dir);
+      //Wait(50);
+
+      return NAO_ALIEN;
+   }
+   //ClearScreen();
    return SIM_ALIEN;
 }
 
@@ -132,8 +139,10 @@ task main(){
       {
           ClearScreen();
           TextOut(1,LCD_LINE1,"N„o Tem Boneco");
+
       }
       Wait(40);
    }
 
 }
+
