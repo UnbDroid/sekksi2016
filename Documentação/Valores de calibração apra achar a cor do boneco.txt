@@ -1,0 +1,16 @@
+		DIA						  NOITE               NOITE Sem luz
+
+RED							RED							
+Vermelho	597	589			Vermelho	463 449		
+Preto		149 129			Preto		173 137	 			
+Branco		617 604			Branco		586	564 			
+														
+GREEN						GREEN						GREEN
+Vermelho	166 141			Vermelho	134 113 		Vermelho	110  97
+Preto		114  98			Preto		 89  78  		Preto   	105  92
+Branco		520 505			Branco		566 537 		Branco		550  534
+														
+BLUE						BLUE						
+Vermelho	167 146			Vermelho	 94  85 			
+Preto		122 102			Preto		 93  84
+Branco		503 492			Branco		487 462			

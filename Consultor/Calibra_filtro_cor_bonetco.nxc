@@ -77,7 +77,7 @@
 void InicializaSensores(){
     SetSensorColorRed(RGB_DIR);
     SetSensorColorRed(RGB_ESQ);
-    SetSensorColorFull(RGB_MEIO);
+    SetSensorColorGreen(RGB_MEIO);
     SetSensorLowspeed(US_FRENTE);
 }
 

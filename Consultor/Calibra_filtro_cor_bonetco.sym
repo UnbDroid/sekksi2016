@@ -18,7 +18,7 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 15	__lerSensor_7qG2_aux_7qG2_000	4	1	56	2	4
 16	__lerSensor_7qG2_i_7qG2_000	4	1	58	2	8
 17	__constVal200	4	0	60	2	10
-18	__constVal128	4	0	62	2	2
+18	__constVal128	4	0	62	2	3
 19	__lerSensor_7qG2_sensor_7qG2_000	4	1	64	2	2
 20	__main_7qG2_tc_7qG2_000	4	1	66	2	8
 21	__main_7qG2_max_7qG2_000	4	1	68	2	4
@@ -30,7 +30,7 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 27	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	78	1	2
 28	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_InicializaSensores	1	1	79	1	2
 29	__SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	80	1	8
-30	__SetSensorColorFull_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	81	1	4
+30	__SetSensorColorGreen_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	81	1	4
 31	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	82	1	4
 32	__constVal32	2	0	83	1	6
 33	__lerSensor_return	1	1	84	1	4
@@ -40,10 +40,10 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 37	__constVal63	2	0	88	1	2
 38	__constVal96	2	0	89	1	2
 39	__InicializaSensores_return	1	1	90	1	3
-40	__constVal13	2	0	91	1	1
+40	__constValNeg100	2	0	91	1	1
 41	__RLSBIterations3	1	1	92	1	4
 42	__constVal11	2	0	93	1	1
-43	__constValNeg100	2	0	94	1	1
+43	__constVal15	2	0	94	1	1
 44	____ReadLSBytes3_return	1	1	95	1	3
 45	__LSWriteOptions3	1	1	96	1	1
 46	__RLSBytesCount3	1	1	97	1	7
@@ -51,7 +51,7 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 48	__constVal14	2	0	99	1	2
 49	__ResetSensorPort	1	1	100	1	6
 50	__ResetSensorTmp	1	1	101	1	2
-51	__constVal0	2	1	102	1	15
+51	__constVal0	2	1	102	1	14
 52	__constVal3	2	0	103	1	3
 53	____ResetSensorSubroutine_return	1	1	104	1	6
 54	__constVal1	2	0	105	1	11
@@ -538,16 +538,16 @@ Clump	Line	PC	Source
 3	4396	30	#line 4396 "NXCDefs.h"
 3	79	30	#line 79 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
 3	79	30	#line 79 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-3	80	30		set __SetSensorColorFull_7qG2_port_7qG2_000_inline_InicializaSensores, 2
+3	80	30		set __SetSensorColorGreen_7qG2_port_7qG2_000_inline_InicializaSensores, 2
 3	79	33	#line 79 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
-3	4386	33	#line 4386 "NXCDefs.h"
-3	4387	33	#pragma macro 6
-3	4387	33		setin __constVal13, __SetSensorColorFull_7qG2_port_7qG2_000_inline_InicializaSensores, 0
-3	4387	37		setin __constVal0, __SetSensorColorFull_7qG2_port_7qG2_000_inline_InicializaSensores, 1
-3	4387	41		mov __ResetSensorPort, __SetSensorColorFull_7qG2_port_7qG2_000_inline_InicializaSensores
-3	4387	43		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+3	4406	33	#line 4406 "NXCDefs.h"
+3	4407	33	#pragma macro 6
+3	4407	33		setin __constVal15, __SetSensorColorGreen_7qG2_port_7qG2_000_inline_InicializaSensores, 0
+3	4407	37		setin __constVal128, __SetSensorColorGreen_7qG2_port_7qG2_000_inline_InicializaSensores, 1
+3	4407	41		mov __ResetSensorPort, __SetSensorColorGreen_7qG2_port_7qG2_000_inline_InicializaSensores
+3	4407	43		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
 3	6295	45	#line 6295 "NXCDefs.h"
-3	4386	45	#line 4386 "NXCDefs.h"
+3	4406	45	#line 4406 "NXCDefs.h"
 3	80	45	#line 80 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
 3	80	45	#line 80 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Calibra_filtro_cor_bonetco.nxc"
 3	81	45		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores, 3
