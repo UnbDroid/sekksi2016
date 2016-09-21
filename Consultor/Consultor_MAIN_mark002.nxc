@@ -93,7 +93,7 @@
      #define COR_NEUTRA 13//BRANCO fica acima de 13
 
 void InicializaSensores();
-int returnUS(int valor);
+int returnUS();
 
 
 void InicializaSensores(){
@@ -103,7 +103,8 @@ void InicializaSensores(){
     SetSensorLowspeed(US_FRENTE);
 }
 
-int returnUS(int valor){
+int returnUS(){
+  int valor = 0;
   valor = SensorUS(US_FRENTE);
   Wait(30);
   NumOut(0, LCD_LINE1, valor);
@@ -115,19 +116,21 @@ int returnUS(int valor){
     return 0;
 }
 
-PrintaSensores(){
+int returnGarra(){
 
 }
+
+
 
 void test1(){
     int valor;
     InicializaSensores();
     while(1){
         valor = 0;
-        if(returnUS(valor)){
-            SendRemoteNumber(CONEXAO, OUTBOX, 1);
-            TextOut(0, LCD_LINE2, "Mandei ssaporra");
-        }
+        if(returnUS()){
+            SendRemoteNumber(CONEXAO, OUTBOX, SIM_US);
+            TextOut(0, LCD_LINE2, "Mandei ultrassom carai");
+        }else if()
         Wait(20);
         ClearScreen();
     }
