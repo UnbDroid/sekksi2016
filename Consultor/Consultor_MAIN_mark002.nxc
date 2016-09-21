@@ -1,0 +1,130 @@
+
+//DEFINES
+
+     //Bluetooth
+     #define CONEXAO 0
+     #define INBOX 2
+     #define OUTBOX 1
+
+
+
+     // Defines de sensores
+     #define RGB_DIR IN_1
+     #define RGB_ESQ IN_2
+     #define RGB_MEIO IN_3
+     #define US_FRENTE IN_4
+
+     // Defines de motores
+     #define MOTOR_GARRA OUT_A
+
+    // Defines de leitura do RGB do meio (ainda precisa testar mais)
+    #define COR_PRETA_MEIO_MIN 55
+    #define COR_PRETA_MEIO_MAX 150
+    #define COR_BRANCA_MEIO_MIN 290
+    #define COR_BRANCA_MEIO_MAX 630
+    #define COR_BASE_MEIO_MIN 185
+    #define COR_BASE_MEIO_MAX 260
+
+    // Defines de leitura do RGB da esquerda do robô
+    #define COR_PRETA_ESQ_PERTO_MIN 75
+    #define COR_PRETA_ESQ_PERTO_MAX 100
+    #define COR_PRETA_ESQ_LONGE_MIN 120
+    #define COR_PRETA_ESQ_LONGE_MAX 160
+    #define COR_BRANCA_ESQ_PERTO_MIN 470
+    #define COR_BRANCA_ESQ_PERTO_MAX 495
+    #define COR_BRANCA_ESQ_LONGE_MIN 212
+    #define COR_BRANCA_ESQ_LONGE_MAX 245
+    #define COR_BASE_ESQ_MIN 195
+    #define COR_BASE_ESQ_MAX 210
+
+    // Defines de leitura do RGB da direita do robô
+    #define COR_PRETA_DIR_PERTO_MIN 130
+    #define COR_PRETA_DIR_PERTO_MAX 160
+    #define COR_PRETA_DIR_LONGE_MIN 185
+    #define COR_PRETA_DIR_LONGE_MAX 210
+    #define COR_BRANCA_DIR_PERTO_MIN 385
+    #define COR_BRANCA_DIR_PERTO_MAX 420
+    #define COR_BRANCA_DIR_LONGE_MIN 240
+    #define COR_BRANCA_DIR_LONGE_MAX 280
+    #define COR_BASE_DIR_MIN 240
+    #define COR_BASE_DIR_MAX 260
+
+    //potencias
+    #define POTENCIA_MAXIMA_GARRA 80
+
+    //Tempos
+    #define TEMPO_ATE_A_GARRA_TRAVAR 2000
+    #define TEMPO_ATE_JOGAR_DENTRO 3750
+    #define TEMPO_ATE_A_GARRA_VOLTAR 2000 //estou usando tempo... rola de usar por angulos depois
+    #define TEMPO_DEPOIS_DE_JOGAR_DENTRO_GARANTIA 800
+
+    //misc
+    #define MENOR_DISTANCIA_US 15
+
+
+     //LOGICA
+
+     #define direita 1
+     #define esquerda 2
+
+     #define SIM 5
+     #define SIM_US 1
+     #define NAO_US 3
+     #define SIM_GARRA 2
+     #define NAO 0
+     #define CONTINUA 6
+     #define VIROU 7
+    #define DESVIROU 8
+       //Bluetooth
+     #define PARADO 0
+     #define BONECO_BRANCO 4
+     #define BONECO_PRETO 5
+     #define LeGARRA_SENSOR 3
+     #define NAO_PEGA 9
+     #define PEGA_OU_NAOPEGA 10
+     #define PEGA 11
+       //dist
+     #define DIST_RE 30
+     #define DIST_DA_PAREDE 8
+       //cores
+     #define COR_VERDE 5
+     #define COR_AZUL 3 // 3 ou 14, 3 eh mais certo
+     #define COR_PRETA 12 //12 ou 17, 12 eh mais certo
+     #define COR_NEUTRA 13//BRANCO fica acima de 13
+
+
+void InicializaSensores(){
+    SetSensorColorRed(RGB_DIR);
+    SetSensorColorRed(RGB_ESQ);
+    SetSensorColorRed(RGB_MEIO);
+    SetSensorLowspeed(US_FRENTE);
+}
+
+int returnUS(){
+  int valor = 0;
+  valor = SensorUS(US_FRENTE);
+  NumOut(0, LCD_LINE1, valor);
+  /*
+  if(valor < MENOR_DISTANCIA_US){
+    return 1;
+  }
+  else
+    return 0;*/
+    return 1;
+}
+
+
+void test1(){
+    while(1){
+        if(returnUS()){
+            SendRemoteNumber(CONEXAO, OUTBOX, 1);
+            TextOut(0, LCD_LINE2, "Mandei ssaporra");
+        }
+        Wait(20);
+        ClearScreen();
+    }
+}
+
+task main(){
+    test1();
+}

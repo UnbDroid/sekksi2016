@@ -1,130 +1,140 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__RLSBmutex3	9	0	0	4	2
-1	__Wait_7qG2_ms_7qG2_000_inline_returnUS	5	1	4	4	2
-2	__D0PlaySound	6	1	8	4	63
-3	__D0returnUS	6	1	12	4	11
-4	__DU0SetSensorLowspeed_inline_InicializaSensores	5	1	16	4	5
-5	__D0SetSensorLowspeed_inline_InicializaSensores	6	1	20	4	2
-6	__D0teste2	6	1	24	4	4
-7	__D0EnviaUSFrente2	6	1	28	4	22
-8	__SRSTmpLongVal	6	1	32	4	4
-9	__CHSWMutex	9	0	36	4	4
-10	__RemoteMutex	9	0	40	4	4
-11	__CBTWMutex	9	0	44	4	4
-12	__SPTArgsMutex	9	0	48	4	14
-13	__MRMutex	9	0	52	4	4
-14	__RRNTmpVal	6	1	56	4	8
-15	__signed_stack_002PlaySound	6	1	60	4	14
-16	__signed_stack_001PlaySound	6	1	64	4	44
-17	__signed_stack_003PlaySound	6	1	68	4	14
-18	__ResetSensorMutex	9	0	72	4	8
-19	__signed_stack_001returnUS	6	1	76	4	2
-20	__CLSCSMutex3	9	0	80	4	2
-21	__CLSRMutex3	9	0	84	4	2
+0	__RemoteMutex	9	0	0	4	4
+1	__SRSTmpLongVal	6	1	4	4	4
+2	__D0EnviaUSFrente2	6	1	8	4	22
+3	__CHSWMutex	9	0	12	4	4
+4	__CBTWMutex	9	0	16	4	4
+5	__Wait_7qG2_ms_7qG2_000_inline_PrintaSensores	5	1	20	4	2
+6	__RLSBmutex3	9	0	24	4	4
+7	__RRNTmpVal	6	1	28	4	8
+8	__MRMutex	9	0	32	4	4
+9	__signed_stack_001PrintaSensores	6	1	36	4	4
+10	__signed_stack_001EnviaUSFrente2	6	1	40	4	8
+11	__signed_stack_001returnUS	6	1	44	4	2
+12	__signed_stack_002PrintaSensores	6	1	48	4	4
+13	__DU0SetSensorLowspeed_inline_InicializaSensores	5	1	52	4	5
+14	__D0returnUS	6	1	56	4	11
+15	__D0PrintaSensores	6	1	60	4	4
+16	__D0SetSensorLowspeed_inline_InicializaSensores	6	1	64	4	2
+17	__D0teste2	6	1	68	4	4
+18	__CLSRMutex3	9	0	72	4	2
+19	__TextOutMutex	9	0	76	4	4
+20	__ResetSensorMutex	9	0	80	4	8
+21	__CLSCSMutex3	9	0	84	4	2
 22	__CLSWMutex3	9	0	88	4	2
-23	__signed_stack_001EnviaUSFrente2	6	1	92	4	8
-24	__PlaySound_7qG2_aCode_7qG2_000	4	1	96	2	8
-25	__constVal128	4	0	98	2	3
-26	__PlaySound_7qG2_i_7qG2_001	4	1	100	2	15
-27	__returnUS_7qG2_valor_7qG2_000	4	1	102	2	2
-28	__EnviaUSFrente2_7qG2_passei_7qG2_000	4	1	104	2	5
-29	__EnviaUSFrente2_7qG2_sinalUS_7qG2_000	4	1	106	2	3
-30	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_InicializaSensores	1	1	108	1	2
-31	__InicializaSensores_return	1	1	109	1	3
-32	__SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	110	1	12
-33	__WFRRTmpByte	1	1	111	1	4
-34	__constVal14	2	0	112	1	3
-35	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	113	1	4
-36	__constVal15	2	0	114	1	1
-37	__PlaySound_return	1	1	115	1	4
-38	____initialize_global_data_return	1	1	116	1	3
-39	____ResetSensorSubroutine_return	1	1	117	1	6
-40	__ResetSensorTmp	1	1	118	1	2
-41	__EnviaUSFrente2_return	1	1	119	1	3
-42	__LSWriteOptionsVar	1	1	120	1	2
-43	__teste2_return	1	1	121	1	3
-44	__constVal3	2	0	122	1	5
-45	__constVal0	2	1	123	1	9
-46	__constVal1	2	0	124	1	9
-47	__ResetSensorPort	1	1	125	1	6
-48	__constVal5	2	0	126	1	2
-49	__constVal4	2	0	127	1	4
-50	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	128	1	2
-51	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	129	1	2
-52	__RRNErr	1	1	130	1	2
-53	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	131	1	2
-54	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	132	1	2
-55	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	133	1	2
-56	__RLSBResult3	2	1	134	1	7
-57	____ReadLSBytes3_return	1	1	135	1	3
-58	__constVal2	2	0	136	1	4
-59	__returnUS_return	1	1	137	1	5
-60	__RLSBIterations3	1	1	138	1	4
-61	__RLSBytesCount3	1	1	139	1	7
-62	__MRArgs	8	0	4	8	10
-63	__MRArgs.Result	2	1	140	1	10
-64	__MRArgs.QueueID	1	1	141	1	10
-65	__MRArgs.Remove	1	1	142	1	10
-66	__MRArgs.Message	7	0	144	4	10
-67	__MRArgs.Message.Message_type	1	0	0	1	0
-68	__CBTWArgs	8	0	3	8	8
-69	__CBTWArgs.Result	2	1	148	1	8
-70	__CBTWArgs.Connection	1	1	149	1	8
-71	__CBTWArgs.Buffer	7	0	150	4	8
-72	__CBTWArgs.Buffer.Buffer_type	1	0	0	1	0
-73	__CLSRArgs3	8	0	4	12	5
-74	__CLSRArgs3.Result	2	1	152	1	5
-75	__CLSRArgs3.Port	1	1	153	1	5
-76	__CLSRArgs3.Buffer	7	0	154	4	5
-77	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
-78	__CLSRArgs3.BufferLen	1	1	156	1	5
-79	__CLSCSArgs3	8	0	3	4	4
-80	__CLSCSArgs3.Result	2	1	160	1	4
-81	__CLSCSArgs3.Port	1	1	161	1	4
-82	__CLSCSArgs3.BytesReady	1	1	162	1	4
-83	__CLSWArgs3	8	0	4	12	5
-84	__CLSWArgs3.Result	2	1	164	1	5
-85	__CLSWArgs3.Port	1	1	165	1	5
-86	__CLSWArgs3.Buffer	7	0	166	4	5
-87	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
-88	__CLSWArgs3.ReturnLen	1	1	168	1	5
-89	__CHSWArgs	8	0	3	12	6
-90	__CHSWArgs.Status	2	1	172	1	6
-91	__CHSWArgs.Buffer	7	0	174	4	6
-92	__CHSWArgs.Buffer.Buffer_type	1	0	0	1	0
-93	__CHSWArgs.BufferLen	1	1	176	1	6
-94	__SPTArgs	8	0	5	8	42
-95	__SPTArgs.Result	2	1	180	1	42
-96	__SPTArgs.Frequency	3	1	182	2	42
-97	__SPTArgs.Duration	3	1	184	2	42
-98	__SPTArgs.Loop	1	1	186	1	42
-99	__SPTArgs.Volume	1	1	187	1	42
-100	__RLSBbufLSWrite1	7	0	188	4	1
-101	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
-102	__LSWriteOptions	7	0	190	4	1
-103	__LSWriteOptions.__LSWriteOptions_type	1	0	0	1	0
-104	__DCMessageWritePacket	7	0	192	4	2
-105	__DCMessageWritePacket.__DCMessageWritePacket_type	1	0	0	1	0
-106	__SRSSendBuf	7	0	194	4	6
-107	__SRSSendBuf.__SRSSendBuf_type	1	0	0	1	0
-108	__SRSTmpBuf	7	0	196	4	12
-109	__SRSTmpBuf.__SRSTmpBuf_type	1	0	0	1	0
-110	__SRSFlattenBuf	7	0	198	4	4
-111	__SRSFlattenBuf.__SRSFlattenBuf_type	1	0	0	1	0
-112	__RLSLastGoodRead3	7	0	200	4	2
-113	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
-114	__RLSReadBuf3	7	0	202	4	8
-115	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
+23	__EnviaUSFrente2_7qG2_passei_7qG2_000	4	1	92	2	5
+24	__returnUS_7qG2_valor_7qG2_000	4	1	94	2	2
+25	__EnviaUSFrente2_7qG2_sinalUS_7qG2_000	4	1	96	2	3
+26	__constVal128	4	0	98	2	3
+27	__constVal200	4	0	100	2	2
+28	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	102	1	2
+29	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	103	1	2
+30	__returnUS_return	1	1	104	1	5
+31	____ResetSensorSubroutine_return	1	1	105	1	6
+32	__ResetSensorPort	1	1	106	1	6
+33	__ResetSensorTmp	1	1	107	1	2
+34	__constVal5	2	0	108	1	2
+35	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	109	1	4
+36	__SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	110	1	12
+37	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_InicializaSensores	1	1	111	1	2
+38	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	112	1	2
+39	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	113	1	2
+40	__InicializaSensores_return	1	1	114	1	3
+41	__constVal3	2	0	115	1	5
+42	__constVal4	2	0	116	1	4
+43	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	117	1	2
+44	__constVal1	2	0	118	1	7
+45	__constVal0	2	1	119	1	9
+46	__RRNErr	1	1	120	1	2
+47	__LSWriteOptionsVar	1	1	121	1	2
+48	__constVal2	2	0	122	1	4
+49	____ReadLSBytes3_return	1	1	123	1	4
+50	__RLSBIterations3	1	1	124	1	4
+51	__RLSBytesCount3	1	1	125	1	8
+52	____initialize_global_data_return	1	1	126	1	3
+53	__RLSBResult3	2	1	127	1	7
+54	__constVal14	2	0	128	1	3
+55	__WFRRTmpByte	1	1	129	1	4
+56	__constVal15	2	0	130	1	2
+57	__PrintaSensores_return	1	1	131	1	3
+58	__teste2_return	1	1	132	1	3
+59	__EnviaUSFrente2_return	1	1	133	1	3
+60	__PointOutArgs	8	0	3	12	4
+61	__PointOutArgs.Result	2	1	136	1	4
+62	__PointOutArgs.Location	8	0	2	4	4
+63	__PointOutArgs.Location.X	4	1	140	2	4
+64	__PointOutArgs.Location.Y	4	1	142	2	4
+65	__PointOutArgs.Options	5	1	144	4	4
+66	__TextOutArgs	8	0	4	16	12
+67	__TextOutArgs.Result	2	1	148	1	12
+68	__TextOutArgs.Location	8	0	2	4	12
+69	__TextOutArgs.Location.X	4	1	152	2	12
+70	__TextOutArgs.Location.Y	4	1	154	2	12
+71	__TextOutArgs.Text	7	0	156	4	12
+72	__TextOutArgs.Text.Text_type	1	0	0	1	0
+73	__TextOutArgs.Options	5	1	160	4	12
+74	__CLSWArgs3	8	0	4	12	5
+75	__CLSWArgs3.Result	2	1	164	1	5
+76	__CLSWArgs3.Port	1	1	165	1	5
+77	__CLSWArgs3.Buffer	7	0	166	4	5
+78	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
+79	__CLSWArgs3.ReturnLen	1	1	168	1	5
+80	__CHSWArgs	8	0	3	12	6
+81	__CHSWArgs.Status	2	1	172	1	6
+82	__CHSWArgs.Buffer	7	0	174	4	6
+83	__CHSWArgs.Buffer.Buffer_type	1	0	0	1	0
+84	__CHSWArgs.BufferLen	1	1	176	1	6
+85	__CLSCSArgs3	8	0	3	4	4
+86	__CLSCSArgs3.Result	2	1	180	1	4
+87	__CLSCSArgs3.Port	1	1	181	1	4
+88	__CLSCSArgs3.BytesReady	1	1	182	1	4
+89	__CLSRArgs3	8	0	4	12	5
+90	__CLSRArgs3.Result	2	1	184	1	5
+91	__CLSRArgs3.Port	1	1	185	1	5
+92	__CLSRArgs3.Buffer	7	0	186	4	5
+93	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
+94	__CLSRArgs3.BufferLen	1	1	188	1	5
+95	__MRArgs	8	0	4	8	10
+96	__MRArgs.Result	2	1	192	1	10
+97	__MRArgs.QueueID	1	1	193	1	10
+98	__MRArgs.Remove	1	1	194	1	10
+99	__MRArgs.Message	7	0	196	4	10
+100	__MRArgs.Message.Message_type	1	0	0	1	0
+101	__CBTWArgs	8	0	3	8	8
+102	__CBTWArgs.Result	2	1	200	1	8
+103	__CBTWArgs.Connection	1	1	201	1	8
+104	__CBTWArgs.Buffer	7	0	202	4	8
+105	__CBTWArgs.Buffer.Buffer_type	1	0	0	1	0
+106	__constStr0012	7	0	204	4	1
+107	__constStr0012.__constStr0012_type	1	1	0	1	0
+108	__RLSLastGoodRead3	7	0	206	4	2
+109	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
+110	__RLSReadBuf3	7	0	208	4	10
+111	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
+112	__LSWriteOptions	7	0	210	4	1
+113	__LSWriteOptions.__LSWriteOptions_type	1	0	0	1	0
+114	__RLSBbufLSWrite1	7	0	212	4	2
+115	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+116	__SRSTmpBuf	7	0	214	4	12
+117	__SRSTmpBuf.__SRSTmpBuf_type	1	0	0	1	0
+118	__DCMessageWritePacket	7	0	216	4	2
+119	__DCMessageWritePacket.__DCMessageWritePacket_type	1	0	0	1	0
+120	__strbufPrintaSensores	7	0	218	4	2
+121	__strbufPrintaSensores.__strbufPrintaSensores_type	1	0	0	1	0
+122	__SRSSendBuf	7	0	220	4	6
+123	__SRSSendBuf.__SRSSendBuf_type	1	0	0	1	0
+124	__SRSFlattenBuf	7	0	222	4	4
+125	__SRSFlattenBuf.__SRSFlattenBuf_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	443	0	#line 443 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-0	444	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	443	2	#line 443 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-0	443	2	#line 443 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-0	444	2		subcall teste2, __teste2_return
-0	443	4	#line 443 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-0	444	4		exit -1, -1
+0	450	0	#line 450 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+0	451	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	450	2	#line 450 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+0	450	2	#line 450 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+0	451	2		subcall teste2, __teste2_return
+0	450	4	#line 450 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+0	451	4		exit -1, -1
 1	5724	0		setin __constVal1, __ResetSensorPort, 5
 1	5726	4		getin __ResetSensorTmp, __ResetSensorPort, 5
 1	5727	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
@@ -172,717 +182,396 @@ Clump	Line	PC	Source
 2	6653	82		mov __RLSReadBuf3, __RLSLastGoodRead3
 2	6655	84		arrsize __RLSBytesCount3, __RLSReadBuf3
 2	6657	87		subret ____ReadLSBytes3_return
-3	7372	0	#line 7372 "NXCDefs.h"
-3	7373	0		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-3	7372	2	#line 7372 "NXCDefs.h"
-3	7373	2	#line 7373 "NXCDefs.h"
-3	7374	2		set __D0PlaySound, 0
-3	7373	5	#line 7373 "NXCDefs.h"
-3	7374	5		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	7373	9	#line 7373 "NXCDefs.h"
-3	7374	9		brtst 4, __ASM_Label_56, __D0PlaySound
-3	7373	12	#line 7373 "NXCDefs.h"
-3	7374	12		set __signed_stack_001PlaySound, 600
-3	7373	15	#line 7373 "NXCDefs.h"
-3	7373	15	#line 7373 "NXCDefs.h"
-3	7374	15		set __signed_stack_002PlaySound, 200
-3	7373	18	#line 7373 "NXCDefs.h"
-3	7373	18	#line 7373 "NXCDefs.h"
-3	7374	18		set __signed_stack_003PlaySound, 4
-3	7373	21	#line 7373 "NXCDefs.h"
-3	7373	21	#line 7373 "NXCDefs.h"
-3	7374	21		set __D0PlaySound, 0
-3	7373	24	#line 7373 "NXCDefs.h"
-3	7374	24		acquire __SPTArgsMutex
-3	7373	25	#line 7373 "NXCDefs.h"
-3	7374	25		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-3	7373	27	#line 7373 "NXCDefs.h"
-3	7374	27		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-3	7373	29	#line 7373 "NXCDefs.h"
-3	7374	29		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-3	7373	31	#line 7373 "NXCDefs.h"
-3	7374	31		mov __SPTArgs.Loop, __D0PlaySound
-3	7373	33	#line 7373 "NXCDefs.h"
-3	7374	33		syscall 10, __SPTArgs
-3	7373	36	#line 7373 "NXCDefs.h"
-3	7374	36		mov __D0PlaySound, __SPTArgs.Result
-3	7373	38	#line 7373 "NXCDefs.h"
-3	7374	38		release __SPTArgsMutex
-3	7373	39	#line 7373 "NXCDefs.h"
-3	7374	39	#line 7374 "NXCDefs.h"
-3	7375	39		jmp __ASM_Label_65
-3	7374	41	#line 7374 "NXCDefs.h"
-3	7375	41		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-3	7374	43	#line 7374 "NXCDefs.h"
-3	7375	43	#line 7375 "NXCDefs.h"
-3	7376	43		set __D0PlaySound, 1
-3	7375	46	#line 7375 "NXCDefs.h"
-3	7376	46		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	7376	50	#line 7376 "NXCDefs.h"
-3	7377	50		brtst 4, __ASM_Label_68, __D0PlaySound
-3	7376	53	#line 7376 "NXCDefs.h"
-3	7377	53		set __signed_stack_001PlaySound, 600
-3	7376	56	#line 7376 "NXCDefs.h"
-3	7376	56	#line 7376 "NXCDefs.h"
-3	7377	56		set __signed_stack_002PlaySound, 150
-3	7376	59	#line 7376 "NXCDefs.h"
-3	7376	59	#line 7376 "NXCDefs.h"
-3	7377	59		set __signed_stack_003PlaySound, 4
-3	7376	62	#line 7376 "NXCDefs.h"
-3	7376	62	#line 7376 "NXCDefs.h"
-3	7377	62		set __D0PlaySound, 0
-3	7376	65	#line 7376 "NXCDefs.h"
-3	7377	65		acquire __SPTArgsMutex
-3	7376	66	#line 7376 "NXCDefs.h"
-3	7377	66		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-3	7376	68	#line 7376 "NXCDefs.h"
-3	7377	68		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-3	7376	70	#line 7376 "NXCDefs.h"
-3	7377	70		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-3	7376	72	#line 7376 "NXCDefs.h"
-3	7377	72		mov __SPTArgs.Loop, __D0PlaySound
-3	7376	74	#line 7376 "NXCDefs.h"
-3	7377	74		syscall 10, __SPTArgs
-3	7376	77	#line 7376 "NXCDefs.h"
-3	7377	77		mov __D0PlaySound, __SPTArgs.Result
-3	7376	79	#line 7376 "NXCDefs.h"
-3	7377	79		release __SPTArgsMutex
-3	7376	80	#line 7376 "NXCDefs.h"
-3	7377	80	#line 7377 "NXCDefs.h"
-3	7378	80		wait 200
-3	7377	82	#line 7377 "NXCDefs.h"
-3	7377	82	#line 7377 "NXCDefs.h"
-3	7378	82	#line 7378 "NXCDefs.h"
-3	7379	82		set __signed_stack_001PlaySound, 600
-3	7378	85	#line 7378 "NXCDefs.h"
-3	7378	85	#line 7378 "NXCDefs.h"
-3	7379	85		set __signed_stack_002PlaySound, 150
-3	7378	88	#line 7378 "NXCDefs.h"
-3	7378	88	#line 7378 "NXCDefs.h"
-3	7379	88		set __signed_stack_003PlaySound, 4
-3	7378	91	#line 7378 "NXCDefs.h"
-3	7378	91	#line 7378 "NXCDefs.h"
-3	7379	91		set __D0PlaySound, 0
-3	7378	94	#line 7378 "NXCDefs.h"
-3	7379	94		acquire __SPTArgsMutex
-3	7378	95	#line 7378 "NXCDefs.h"
-3	7379	95		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-3	7378	97	#line 7378 "NXCDefs.h"
-3	7379	97		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-3	7378	99	#line 7378 "NXCDefs.h"
-3	7379	99		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-3	7378	101	#line 7378 "NXCDefs.h"
-3	7379	101		mov __SPTArgs.Loop, __D0PlaySound
-3	7378	103	#line 7378 "NXCDefs.h"
-3	7379	103		syscall 10, __SPTArgs
-3	7378	106	#line 7378 "NXCDefs.h"
-3	7379	106		mov __D0PlaySound, __SPTArgs.Result
-3	7378	108	#line 7378 "NXCDefs.h"
-3	7379	108		release __SPTArgsMutex
-3	7378	109	#line 7378 "NXCDefs.h"
-3	7379	109	#line 7379 "NXCDefs.h"
-3	7380	109		wait 150
-3	7379	111	#line 7379 "NXCDefs.h"
-3	7379	111	#line 7379 "NXCDefs.h"
-3	7381	111	#line 7381 "NXCDefs.h"
-3	7382	111		jmp __ASM_Label_85
-3	7381	113	#line 7381 "NXCDefs.h"
-3	7382	113		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-3	7381	115	#line 7381 "NXCDefs.h"
-3	7382	115	#line 7382 "NXCDefs.h"
-3	7383	115		set __D0PlaySound, 3
-3	7382	118	#line 7382 "NXCDefs.h"
-3	7383	118		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	7382	122	#line 7382 "NXCDefs.h"
-3	7383	122		brtst 4, __ASM_Label_88, __D0PlaySound
-3	7382	125	#line 7382 "NXCDefs.h"
-3	7383	125		set __PlaySound_7qG2_i_7qG2_001, 4
-3	7382	128	#line 7382 "NXCDefs.h"
-3	7382	128	#line 7382 "NXCDefs.h"
-3	7383	128		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
-3	7382	130	#line 7382 "NXCDefs.h"
-3	7382	130	#line 7382 "NXCDefs.h"
-3	7383	130		set __D0PlaySound, 8
-3	7382	133	#line 7382 "NXCDefs.h"
-3	7383	133		cmp 0, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	7382	137	#line 7382 "NXCDefs.h"
-3	7383	137		brtst 4, __ASM_Label_90, __D0PlaySound
-3	7382	140	#line 7382 "NXCDefs.h"
-3	7383	140		jmp __ASM_Label_91
-3	7383	142	#line 7383 "NXCDefs.h"
-3	7384	142		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
-3	7384	146	#line 7384 "NXCDefs.h"
-3	7385	146		jmp __ASM_Label_89
-3	7384	148	#line 7384 "NXCDefs.h"
-3	7385	148		set __signed_stack_001PlaySound, 523
-3	7384	151	#line 7384 "NXCDefs.h"
-3	7384	151	#line 7384 "NXCDefs.h"
-3	7384	151	#line 7384 "NXCDefs.h"
-3	7385	151		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
-3	7384	155	#line 7384 "NXCDefs.h"
-3	7384	155	#line 7384 "NXCDefs.h"
-3	7385	155		set __D0PlaySound, 4
-3	7384	158	#line 7384 "NXCDefs.h"
-3	7385	158		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	7384	162	#line 7384 "NXCDefs.h"
-3	7384	162	#line 7384 "NXCDefs.h"
-3	7385	162		set __signed_stack_002PlaySound, 100
-3	7384	165	#line 7384 "NXCDefs.h"
-3	7384	165	#line 7384 "NXCDefs.h"
-3	7385	165		set __signed_stack_003PlaySound, 4
-3	7384	168	#line 7384 "NXCDefs.h"
-3	7384	168	#line 7384 "NXCDefs.h"
-3	7385	168		set __D0PlaySound, 0
-3	7384	171	#line 7384 "NXCDefs.h"
-3	7385	171		acquire __SPTArgsMutex
-3	7384	172	#line 7384 "NXCDefs.h"
-3	7385	172		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-3	7384	174	#line 7384 "NXCDefs.h"
-3	7385	174		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-3	7384	176	#line 7384 "NXCDefs.h"
-3	7385	176		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-3	7384	178	#line 7384 "NXCDefs.h"
-3	7385	178		mov __SPTArgs.Loop, __D0PlaySound
-3	7384	180	#line 7384 "NXCDefs.h"
-3	7385	180		syscall 10, __SPTArgs
-3	7384	183	#line 7384 "NXCDefs.h"
-3	7385	183		mov __D0PlaySound, __SPTArgs.Result
-3	7384	185	#line 7384 "NXCDefs.h"
-3	7385	185		release __SPTArgsMutex
-3	7384	186	#line 7384 "NXCDefs.h"
-3	7385	186	#line 7385 "NXCDefs.h"
-3	7386	186		wait 100
-3	7385	188	#line 7385 "NXCDefs.h"
-3	7385	188	#line 7385 "NXCDefs.h"
-3	7387	188	#line 7387 "NXCDefs.h"
-3	7388	188		jmp __ASM_Label_92
-3	7387	190	#line 7387 "NXCDefs.h"
-3	7387	190	#line 7387 "NXCDefs.h"
-3	7388	190		jmp __ASM_Label_105
-3	7387	192	#line 7387 "NXCDefs.h"
-3	7388	192		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-3	7387	194	#line 7387 "NXCDefs.h"
-3	7388	194	#line 7388 "NXCDefs.h"
-3	7389	194		set __D0PlaySound, 2
-3	7388	197	#line 7388 "NXCDefs.h"
-3	7389	197		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	7388	201	#line 7388 "NXCDefs.h"
-3	7389	201		brtst 4, __ASM_Label_108, __D0PlaySound
-3	7388	204	#line 7388 "NXCDefs.h"
-3	7389	204		set __PlaySound_7qG2_i_7qG2_001, 7
-3	7388	207	#line 7388 "NXCDefs.h"
-3	7388	207	#line 7388 "NXCDefs.h"
-3	7389	207		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
-3	7388	209	#line 7388 "NXCDefs.h"
-3	7388	209	#line 7388 "NXCDefs.h"
-3	7389	209		set __D0PlaySound, 3
-3	7388	212	#line 7388 "NXCDefs.h"
-3	7389	212		cmp 1, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	7388	216	#line 7388 "NXCDefs.h"
-3	7389	216		brtst 4, __ASM_Label_110, __D0PlaySound
-3	7388	219	#line 7388 "NXCDefs.h"
-3	7389	219		jmp __ASM_Label_111
-3	7389	221	#line 7389 "NXCDefs.h"
-3	7390	221		sub __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
-3	7390	225	#line 7390 "NXCDefs.h"
-3	7391	225		jmp __ASM_Label_109
-3	7390	227	#line 7390 "NXCDefs.h"
-3	7391	227		set __signed_stack_001PlaySound, 523
-3	7390	230	#line 7390 "NXCDefs.h"
-3	7390	230	#line 7390 "NXCDefs.h"
-3	7390	230	#line 7390 "NXCDefs.h"
-3	7391	230		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
-3	7390	234	#line 7390 "NXCDefs.h"
-3	7390	234	#line 7390 "NXCDefs.h"
-3	7391	234		set __D0PlaySound, 4
-3	7390	237	#line 7390 "NXCDefs.h"
-3	7391	237		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	7390	241	#line 7390 "NXCDefs.h"
-3	7390	241	#line 7390 "NXCDefs.h"
-3	7391	241		set __signed_stack_002PlaySound, 100
-3	7390	244	#line 7390 "NXCDefs.h"
-3	7390	244	#line 7390 "NXCDefs.h"
-3	7391	244		set __signed_stack_003PlaySound, 4
-3	7390	247	#line 7390 "NXCDefs.h"
-3	7390	247	#line 7390 "NXCDefs.h"
-3	7391	247		set __D0PlaySound, 0
-3	7390	250	#line 7390 "NXCDefs.h"
-3	7391	250		acquire __SPTArgsMutex
-3	7390	251	#line 7390 "NXCDefs.h"
-3	7391	251		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-3	7390	253	#line 7390 "NXCDefs.h"
-3	7391	253		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-3	7390	255	#line 7390 "NXCDefs.h"
-3	7391	255		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-3	7390	257	#line 7390 "NXCDefs.h"
-3	7391	257		mov __SPTArgs.Loop, __D0PlaySound
-3	7390	259	#line 7390 "NXCDefs.h"
-3	7391	259		syscall 10, __SPTArgs
-3	7390	262	#line 7390 "NXCDefs.h"
-3	7391	262		mov __D0PlaySound, __SPTArgs.Result
-3	7390	264	#line 7390 "NXCDefs.h"
-3	7391	264		release __SPTArgsMutex
-3	7390	265	#line 7390 "NXCDefs.h"
-3	7391	265	#line 7391 "NXCDefs.h"
-3	7392	265		wait 100
-3	7391	267	#line 7391 "NXCDefs.h"
-3	7391	267	#line 7391 "NXCDefs.h"
-3	7393	267	#line 7393 "NXCDefs.h"
-3	7394	267		jmp __ASM_Label_112
-3	7393	269	#line 7393 "NXCDefs.h"
-3	7393	269	#line 7393 "NXCDefs.h"
-3	7394	269		jmp __ASM_Label_125
-3	7393	271	#line 7393 "NXCDefs.h"
-3	7394	271		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-3	7393	273	#line 7393 "NXCDefs.h"
-3	7394	273	#line 7394 "NXCDefs.h"
-3	7395	273		set __D0PlaySound, 4
-3	7394	276	#line 7394 "NXCDefs.h"
-3	7395	276		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	7395	280	#line 7395 "NXCDefs.h"
-3	7396	280		brtst 4, __ASM_Label_128, __D0PlaySound
-3	7395	283	#line 7395 "NXCDefs.h"
-3	7396	283		set __signed_stack_001PlaySound, 100
-3	7395	286	#line 7395 "NXCDefs.h"
-3	7395	286	#line 7395 "NXCDefs.h"
-3	7396	286		set __signed_stack_002PlaySound, 500
-3	7395	289	#line 7395 "NXCDefs.h"
-3	7395	289	#line 7395 "NXCDefs.h"
-3	7396	289		set __signed_stack_003PlaySound, 4
-3	7395	292	#line 7395 "NXCDefs.h"
-3	7395	292	#line 7395 "NXCDefs.h"
-3	7396	292		set __D0PlaySound, 0
-3	7395	295	#line 7395 "NXCDefs.h"
-3	7396	295		acquire __SPTArgsMutex
-3	7395	296	#line 7395 "NXCDefs.h"
-3	7396	296		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-3	7395	298	#line 7395 "NXCDefs.h"
-3	7396	298		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-3	7395	300	#line 7395 "NXCDefs.h"
-3	7396	300		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-3	7395	302	#line 7395 "NXCDefs.h"
-3	7396	302		mov __SPTArgs.Loop, __D0PlaySound
-3	7395	304	#line 7395 "NXCDefs.h"
-3	7396	304		syscall 10, __SPTArgs
-3	7395	307	#line 7395 "NXCDefs.h"
-3	7396	307		mov __D0PlaySound, __SPTArgs.Result
-3	7395	309	#line 7395 "NXCDefs.h"
-3	7396	309		release __SPTArgsMutex
-3	7395	310	#line 7395 "NXCDefs.h"
-3	7396	310	#line 7396 "NXCDefs.h"
-3	7397	310		wait 500
-3	7396	312	#line 7396 "NXCDefs.h"
-3	7396	312	#line 7396 "NXCDefs.h"
-3	7398	312	#line 7398 "NXCDefs.h"
-3	7399	312		jmp __ASM_Label_137
-3	7398	314	#line 7398 "NXCDefs.h"
-3	7399	314		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-3	7398	316	#line 7398 "NXCDefs.h"
-3	7399	316	#line 7399 "NXCDefs.h"
-3	7400	316		set __D0PlaySound, 5
-3	7399	319	#line 7399 "NXCDefs.h"
-3	7400	319		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	7399	323	#line 7399 "NXCDefs.h"
-3	7400	323		brtst 4, __ASM_Label_140, __D0PlaySound
-3	7399	326	#line 7399 "NXCDefs.h"
-3	7400	326		set __PlaySound_7qG2_i_7qG2_001, 4
-3	7399	329	#line 7399 "NXCDefs.h"
-3	7399	329	#line 7399 "NXCDefs.h"
-3	7400	329		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
-3	7399	331	#line 7399 "NXCDefs.h"
-3	7399	331	#line 7399 "NXCDefs.h"
-3	7400	331		set __D0PlaySound, 8
-3	7399	334	#line 7399 "NXCDefs.h"
-3	7400	334		cmp 0, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	7399	338	#line 7399 "NXCDefs.h"
-3	7400	338		brtst 4, __ASM_Label_142, __D0PlaySound
-3	7399	341	#line 7399 "NXCDefs.h"
-3	7400	341		jmp __ASM_Label_143
-3	7400	343	#line 7400 "NXCDefs.h"
-3	7401	343		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
-3	7401	347	#line 7401 "NXCDefs.h"
-3	7402	347		jmp __ASM_Label_141
-3	7401	349	#line 7401 "NXCDefs.h"
-3	7402	349		set __signed_stack_001PlaySound, 523
-3	7401	352	#line 7401 "NXCDefs.h"
-3	7401	352	#line 7401 "NXCDefs.h"
-3	7401	352	#line 7401 "NXCDefs.h"
-3	7402	352		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
-3	7401	356	#line 7401 "NXCDefs.h"
-3	7401	356	#line 7401 "NXCDefs.h"
-3	7402	356		set __D0PlaySound, 4
-3	7401	359	#line 7401 "NXCDefs.h"
-3	7402	359		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	7401	363	#line 7401 "NXCDefs.h"
-3	7401	363	#line 7401 "NXCDefs.h"
-3	7402	363		set __signed_stack_002PlaySound, 50
-3	7401	366	#line 7401 "NXCDefs.h"
-3	7401	366	#line 7401 "NXCDefs.h"
-3	7402	366		set __signed_stack_003PlaySound, 4
-3	7401	369	#line 7401 "NXCDefs.h"
-3	7401	369	#line 7401 "NXCDefs.h"
-3	7402	369		set __D0PlaySound, 0
-3	7401	372	#line 7401 "NXCDefs.h"
-3	7402	372		acquire __SPTArgsMutex
-3	7401	373	#line 7401 "NXCDefs.h"
-3	7402	373		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-3	7401	375	#line 7401 "NXCDefs.h"
-3	7402	375		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-3	7401	377	#line 7401 "NXCDefs.h"
-3	7402	377		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-3	7401	379	#line 7401 "NXCDefs.h"
-3	7402	379		mov __SPTArgs.Loop, __D0PlaySound
-3	7401	381	#line 7401 "NXCDefs.h"
-3	7402	381		syscall 10, __SPTArgs
-3	7401	384	#line 7401 "NXCDefs.h"
-3	7402	384		mov __D0PlaySound, __SPTArgs.Result
-3	7401	386	#line 7401 "NXCDefs.h"
-3	7402	386		release __SPTArgsMutex
-3	7401	387	#line 7401 "NXCDefs.h"
-3	7402	387	#line 7402 "NXCDefs.h"
-3	7403	387		wait 50
-3	7402	389	#line 7402 "NXCDefs.h"
-3	7402	389	#line 7402 "NXCDefs.h"
-3	7414	389	#line 7414 "NXCDefs.h"
-3	7415	389		jmp __ASM_Label_144
-3	7414	391	#line 7414 "NXCDefs.h"
-3	7414	391	#line 7414 "NXCDefs.h"
-3	7414	391	#line 7414 "NXCDefs.h"
-3	7414	391	#line 7414 "NXCDefs.h"
-3	7414	391	#line 7414 "NXCDefs.h"
-3	7414	391	#line 7414 "NXCDefs.h"
-3	7414	391	#line 7414 "NXCDefs.h"
-3	7414	391	#line 7414 "NXCDefs.h"
-3	7415	391		subret __PlaySound_return
-4	114	0	#line 114 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-4	115	0		set __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 0
-4	114	3	#line 114 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-4	4577	3	#line 4577 "NXCDefs.h"
-4	4578	3	#pragma macro 6
-4	4578	3		setin __constVal14, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 0
-4	4578	7		setin __constVal128, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 1
-4	4578	11		acquire __ResetSensorMutex
-4	4578	12		mov __ResetSensorPort, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores
-4	4578	14		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-4	4578	16		release __ResetSensorMutex
-4	8328	17	#line 8328 "NXCDefs.h"
-4	4577	17	#line 4577 "NXCDefs.h"
-4	114	17	#line 114 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-4	115	17	#line 115 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-4	116	17		set __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 1
-4	115	20	#line 115 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-4	4577	20	#line 4577 "NXCDefs.h"
-4	4578	20	#pragma macro 6
-4	4578	20		setin __constVal14, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 0
-4	4578	24		setin __constVal128, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 1
-4	4578	28		acquire __ResetSensorMutex
-4	4578	29		mov __ResetSensorPort, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores
-4	4578	31		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-4	4578	33		release __ResetSensorMutex
-4	8336	34	#line 8336 "NXCDefs.h"
-4	4577	34	#line 4577 "NXCDefs.h"
-4	115	34	#line 115 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-4	116	34	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-4	117	34		set __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 2
-4	116	37	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-4	4577	37	#line 4577 "NXCDefs.h"
-4	4578	37	#pragma macro 6
-4	4578	37		setin __constVal14, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 0
-4	4578	41		setin __constVal128, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 1
-4	4578	45		acquire __ResetSensorMutex
-4	4578	46		mov __ResetSensorPort, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores
-4	4578	48		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-4	4578	50		release __ResetSensorMutex
-4	8344	51	#line 8344 "NXCDefs.h"
-4	4577	51	#line 4577 "NXCDefs.h"
-4	116	51	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-4	117	51	#line 117 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-4	118	51		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores, 3
-4	117	54	#line 117 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-4	117	54	#line 117 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-4	118	54		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_InicializaSensores, __constVal1
-4	4523	56	#line 4523 "NXCDefs.h"
-4	4524	56		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores
-4	4523	58	#line 4523 "NXCDefs.h"
-4	4523	58	#line 4523 "NXCDefs.h"
-4	4524	58		mov __DU0SetSensorLowspeed_inline_InicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_InicializaSensores
-4	4523	60	#line 4523 "NXCDefs.h"
-4	4524	60		tst 5, __D0SetSensorLowspeed_inline_InicializaSensores, __DU0SetSensorLowspeed_inline_InicializaSensores
-4	4523	63	#line 4523 "NXCDefs.h"
-4	4524	63		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_InicializaSensores
-4	4523	66	#line 4523 "NXCDefs.h"
-4	4524	66		set __DU0SetSensorLowspeed_inline_InicializaSensores, 11
-4	4523	69	#line 4523 "NXCDefs.h"
-4	4523	69	#line 4523 "NXCDefs.h"
-4	4524	69		jmp __004__ASM_Label_37
-4	4523	71	#line 4523 "NXCDefs.h"
-4	4524	71		set __DU0SetSensorLowspeed_inline_InicializaSensores, 10
-4	4523	74	#line 4523 "NXCDefs.h"
-4	4523	74	#line 4523 "NXCDefs.h"
-4	4524	74		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, __DU0SetSensorLowspeed_inline_InicializaSensores
-4	4428	76	#line 4428 "NXCDefs.h"
-4	4429	76		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, 0
-4	4428	80	#line 4428 "NXCDefs.h"
-4	4523	80	#line 4523 "NXCDefs.h"
-4	4524	80	#line 4524 "NXCDefs.h"
-4	4525	80		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores
-4	4524	82	#line 4524 "NXCDefs.h"
-4	4524	82	#line 4524 "NXCDefs.h"
-4	4525	82		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, 0
-4	4524	85	#line 4524 "NXCDefs.h"
-4	4441	85	#line 4441 "NXCDefs.h"
-4	4442	85		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, 1
-4	4441	89	#line 4441 "NXCDefs.h"
-4	4524	89	#line 4524 "NXCDefs.h"
-4	4525	89	#line 4525 "NXCDefs.h"
-4	4526	89		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores
-4	4525	91	#line 4525 "NXCDefs.h"
-4	4459	91	#line 4459 "NXCDefs.h"
-4	4460	91	#pragma macro 4
-4	4460	91		acquire __ResetSensorMutex
-4	4460	92		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores
-4	4460	94		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-4	4460	96		release __ResetSensorMutex
-4	8434	97	#line 8434 "NXCDefs.h"
-4	4459	97	#line 4459 "NXCDefs.h"
-4	4525	97	#line 4525 "NXCDefs.h"
-4	117	97	#line 117 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-4	120	97	#line 120 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-4	121	97		subret __InicializaSensores_return
-5	121	0	#line 121 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	122	0		set __returnUS_7qG2_valor_7qG2_000, 0
-5	121	3	#line 121 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	122	3	#line 122 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	123	3	#pragma macro 26
-5	123	3		acquire __RLSBmutex3
-5	123	4		mov __RLSReadBuf3, __RLSBbufLSWrite1
-5	123	6		set __RLSBytesCount3, 1
-5	123	9		waitv __constVal15
-5	123	11		subcall __ReadLSBytes3, ____ReadLSBytes3_return
-5	123	13		index __D0returnUS, __RLSReadBuf3, 65535
-5	123	17		release __RLSBmutex3
-5	8452	18	#line 8452 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	122	18	#line 122 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	123	18		mov __returnUS_7qG2_valor_7qG2_000, __D0returnUS
-5	122	20	#line 122 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	122	20	#line 122 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	123	20	#line 123 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	123	20	#line 123 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	124	20		mov __signed_stack_001returnUS, __D0returnUS
-5	123	22	#line 123 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	124	22		set __D0returnUS, 15
-5	123	25	#line 123 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	124	25		cmp 0, __D0returnUS, __signed_stack_001returnUS, __D0returnUS
-5	124	29	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	125	29		brtst 4, __ASM_Label_628, __D0returnUS
-5	124	32	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	125	32		set __PlaySound_7qG2_aCode_7qG2_000, 3
-5	124	35	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	124	35	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	125	35		subcall PlaySound, __PlaySound_return
-5	124	37	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	125	37	#line 125 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	126	37		set __PlaySound_7qG2_aCode_7qG2_000, 2
-5	125	40	#line 125 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	125	40	#line 125 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	126	40		subcall PlaySound, __PlaySound_return
-5	125	42	#line 125 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	126	42	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	127	42		set __Wait_7qG2_ms_7qG2_000_inline_returnUS, 1000
-5	126	45	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	8869	45	#line 8869 "NXCDefs.h"
-5	8870	45		waitv __Wait_7qG2_ms_7qG2_000_inline_returnUS
-5	8869	47	#line 8869 "NXCDefs.h"
-5	126	47	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	127	47	#line 127 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	128	47		set __D0returnUS, 1
-5	127	50	#line 127 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	128	50		subret __returnUS_return
-5	127	52	#line 127 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	130	52	#line 130 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	131	52		jmp __ASM_Label_637
-5	130	54	#line 130 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	131	54		set __D0returnUS, 0
-5	130	57	#line 130 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	131	57		subret __returnUS_return
-5	130	59	#line 130 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	130	59	#line 130 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	133	59	#line 133 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-5	134	59		subret __returnUS_return
-6	215	0	#line 215 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	216	0		set __EnviaUSFrente2_7qG2_sinalUS_7qG2_000, 0
-6	215	3	#line 215 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	215	3	#line 215 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	215	3	#line 215 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	215	3	#line 215 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	216	3		set __EnviaUSFrente2_7qG2_passei_7qG2_000, 0
-6	215	6	#line 215 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	217	6	#line 217 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	218	6		subcall returnUS, __returnUS_return
-6	217	8	#line 217 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	218	8		mov __EnviaUSFrente2_7qG2_sinalUS_7qG2_000, __D0returnUS
-6	217	10	#line 217 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	217	10	#line 217 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	218	10	#line 218 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	219	10		mov __signed_stack_001EnviaUSFrente2, __D0returnUS
-6	218	12	#line 218 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	218	12	#line 218 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	219	12		set __D0EnviaUSFrente2, 0
-6	218	15	#line 218 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	219	15		cmp 5, __D0EnviaUSFrente2, __signed_stack_001EnviaUSFrente2, __D0EnviaUSFrente2
-6	219	19	#line 219 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	220	19		brtst 4, __ASM_Label_778, __D0EnviaUSFrente2
-6	220	22	#line 220 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	221	22	#pragma macro 25
-6	221	22		acquire __RemoteMutex
-6	221	23		mov __SRSTmpBuf, __DCMessageWritePacket
-6	221	25		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
-6	221	30		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-6	221	35		mov __SRSTmpLongVal, __constVal1
-6	221	37		flatten __SRSFlattenBuf, __SRSTmpLongVal
-6	221	40		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-6	221	45		brcmp 0, __ConnWrite_Else0, __constVal0, __constVal4
-6	221	49		acquire __CHSWMutex
-6	221	50		sub __WFRRTmpByte, __constVal0, __constVal4
-6	221	54		arrbuild __CHSWArgs.Buffer, __WFRRTmpByte, __SRSSendBuf
-6	221	59		syscall 37, __CHSWArgs
-6	221	62		mov __D0EnviaUSFrente2, __CHSWArgs.Status
-6	221	64		release __CHSWMutex
-6	221	65		jmp __ConnWrite_EndIf0
-6	221	67		acquire __CBTWMutex
-6	221	68		mov __CBTWArgs.Connection, __constVal0
-6	221	70		mov __CBTWArgs.Buffer, __SRSSendBuf
-6	221	72		syscall 29, __CBTWArgs
-6	221	75		mov __D0EnviaUSFrente2, __CBTWArgs.Result
-6	221	77		release __CBTWMutex
-6	221	78		release __RemoteMutex
-6	9227	79	#line 9227 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	220	79	#line 220 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	220	79	#line 220 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	221	79	#line 221 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	222	79	#pragma macro 9
-6	222	79		acquire __MRMutex
-6	222	80		mov __MRArgs.QueueID, __constVal2
-6	222	82		mov __MRArgs.Remove, __constVal0
-6	222	84		set __RRNTmpVal, 0
-6	222	87		syscall 27, __MRArgs
-6	222	90		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-6	222	95		mov __EnviaUSFrente2_7qG2_passei_7qG2_000, __RRNTmpVal
-6	222	97		mov __D0EnviaUSFrente2, __MRArgs.Result
-6	222	99		release __MRMutex
-6	9231	100	#line 9231 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	221	100	#line 221 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	221	100	#line 221 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	222	100	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	223	100		mov __signed_stack_001EnviaUSFrente2, __EnviaUSFrente2_7qG2_passei_7qG2_000
-6	222	102	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	222	102	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	223	102		set __D0EnviaUSFrente2, 0
-6	222	105	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	223	105		cmp 4, __D0EnviaUSFrente2, __signed_stack_001EnviaUSFrente2, __D0EnviaUSFrente2
-6	222	109	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	223	109		brtst 4, __ASM_Label_780, __D0EnviaUSFrente2
-6	222	112	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	223	112		jmp __ASM_Label_779
-6	222	114	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	222	114	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	223	114	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	224	114		jmp __ASM_Label_783
-6	223	116	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	224	116		mov __signed_stack_001EnviaUSFrente2, __EnviaUSFrente2_7qG2_sinalUS_7qG2_000
-6	223	118	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	223	118	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	224	118		set __D0EnviaUSFrente2, 0
-6	223	121	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	224	121		cmp 4, __D0EnviaUSFrente2, __signed_stack_001EnviaUSFrente2, __D0EnviaUSFrente2
-6	224	125	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	225	125		brtst 4, __ASM_Label_786, __D0EnviaUSFrente2
-6	225	128	#line 225 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	226	128	#pragma macro 25
-6	226	128		acquire __RemoteMutex
-6	226	129		mov __SRSTmpBuf, __DCMessageWritePacket
-6	226	131		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
-6	226	136		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-6	226	141		mov __SRSTmpLongVal, __constVal3
-6	226	143		flatten __SRSFlattenBuf, __SRSTmpLongVal
-6	226	146		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-6	226	151		brcmp 0, __ConnWrite_Else1, __constVal0, __constVal4
-6	226	155		acquire __CHSWMutex
-6	226	156		sub __WFRRTmpByte, __constVal0, __constVal4
-6	226	160		arrbuild __CHSWArgs.Buffer, __WFRRTmpByte, __SRSSendBuf
-6	226	165		syscall 37, __CHSWArgs
-6	226	168		mov __D0EnviaUSFrente2, __CHSWArgs.Status
-6	226	170		release __CHSWMutex
-6	226	171		jmp __ConnWrite_EndIf1
-6	226	173		acquire __CBTWMutex
-6	226	174		mov __CBTWArgs.Connection, __constVal0
-6	226	176		mov __CBTWArgs.Buffer, __SRSSendBuf
-6	226	178		syscall 29, __CBTWArgs
-6	226	181		mov __D0EnviaUSFrente2, __CBTWArgs.Result
-6	226	183		release __CBTWMutex
-6	226	184		release __RemoteMutex
-6	9272	185	#line 9272 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	225	185	#line 225 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	225	185	#line 225 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	226	185	#line 226 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	227	185	#pragma macro 9
-6	227	185		acquire __MRMutex
-6	227	186		mov __MRArgs.QueueID, __constVal2
-6	227	188		mov __MRArgs.Remove, __constVal0
-6	227	190		set __RRNTmpVal, 0
-6	227	193		syscall 27, __MRArgs
-6	227	196		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-6	227	201		mov __EnviaUSFrente2_7qG2_passei_7qG2_000, __RRNTmpVal
-6	227	203		mov __D0EnviaUSFrente2, __MRArgs.Result
-6	227	205		release __MRMutex
-6	9276	206	#line 9276 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	226	206	#line 226 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	226	206	#line 226 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	227	206	#line 227 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	228	206		mov __signed_stack_001EnviaUSFrente2, __EnviaUSFrente2_7qG2_passei_7qG2_000
-6	227	208	#line 227 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	227	208	#line 227 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	228	208		set __D0EnviaUSFrente2, 0
-6	227	211	#line 227 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	228	211		cmp 4, __D0EnviaUSFrente2, __signed_stack_001EnviaUSFrente2, __D0EnviaUSFrente2
-6	227	215	#line 227 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	228	215		brtst 4, __ASM_Label_788, __D0EnviaUSFrente2
-6	227	218	#line 227 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	228	218		jmp __ASM_Label_787
-6	227	220	#line 227 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	227	220	#line 227 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	231	220	#line 231 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	231	220	#line 231 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	231	220	#line 231 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-6	232	220		subret __EnviaUSFrente2_return
-7	421	0	#line 421 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-7	422	0		subcall InicializaSensores, __InicializaSensores_return
-7	421	2	#line 421 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-7	436	2	#line 436 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-7	437	2		subcall EnviaUSFrente2, __EnviaUSFrente2_return
-7	436	4	#line 436 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-7	438	4	#line 438 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-7	439	4		set __D0teste2, 1
-7	438	7	#line 438 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-7	439	7		tst 5, __D0teste2, __D0teste2
-7	438	10	#line 438 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-7	439	10		brtst 4, __ASM_Label_998, __D0teste2
-7	438	13	#line 438 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-7	439	13		jmp __ASM_Label_997
-7	438	15	#line 438 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-7	438	15	#line 438 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-7	441	15	#line 441 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-7	442	15		subret __teste2_return
-8	447	0	#line 447 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
-8	448	0		subret ____initialize_global_data_return
+3	114	0	#line 114 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+3	115	0		set __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 0
+3	114	3	#line 114 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+3	4577	3	#line 4577 "NXCDefs.h"
+3	4578	3	#pragma macro 6
+3	4578	3		setin __constVal14, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 0
+3	4578	7		setin __constVal128, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 1
+3	4578	11		acquire __ResetSensorMutex
+3	4578	12		mov __ResetSensorPort, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores
+3	4578	14		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+3	4578	16		release __ResetSensorMutex
+3	8484	17	#line 8484 "NXCDefs.h"
+3	4577	17	#line 4577 "NXCDefs.h"
+3	114	17	#line 114 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+3	115	17	#line 115 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+3	116	17		set __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 1
+3	115	20	#line 115 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+3	4577	20	#line 4577 "NXCDefs.h"
+3	4578	20	#pragma macro 6
+3	4578	20		setin __constVal14, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 0
+3	4578	24		setin __constVal128, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 1
+3	4578	28		acquire __ResetSensorMutex
+3	4578	29		mov __ResetSensorPort, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores
+3	4578	31		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+3	4578	33		release __ResetSensorMutex
+3	8492	34	#line 8492 "NXCDefs.h"
+3	4577	34	#line 4577 "NXCDefs.h"
+3	115	34	#line 115 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+3	116	34	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+3	117	34		set __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 2
+3	116	37	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+3	4577	37	#line 4577 "NXCDefs.h"
+3	4578	37	#pragma macro 6
+3	4578	37		setin __constVal14, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 0
+3	4578	41		setin __constVal128, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 1
+3	4578	45		acquire __ResetSensorMutex
+3	4578	46		mov __ResetSensorPort, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores
+3	4578	48		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+3	4578	50		release __ResetSensorMutex
+3	8500	51	#line 8500 "NXCDefs.h"
+3	4577	51	#line 4577 "NXCDefs.h"
+3	116	51	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+3	117	51	#line 117 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+3	118	51		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores, 3
+3	117	54	#line 117 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+3	117	54	#line 117 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+3	118	54		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_InicializaSensores, __constVal1
+3	4523	56	#line 4523 "NXCDefs.h"
+3	4524	56		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores
+3	4523	58	#line 4523 "NXCDefs.h"
+3	4523	58	#line 4523 "NXCDefs.h"
+3	4524	58		mov __DU0SetSensorLowspeed_inline_InicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_InicializaSensores
+3	4523	60	#line 4523 "NXCDefs.h"
+3	4524	60		tst 5, __D0SetSensorLowspeed_inline_InicializaSensores, __DU0SetSensorLowspeed_inline_InicializaSensores
+3	4523	63	#line 4523 "NXCDefs.h"
+3	4524	63		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_InicializaSensores
+3	4523	66	#line 4523 "NXCDefs.h"
+3	4524	66		set __DU0SetSensorLowspeed_inline_InicializaSensores, 11
+3	4523	69	#line 4523 "NXCDefs.h"
+3	4523	69	#line 4523 "NXCDefs.h"
+3	4524	69		jmp __004__ASM_Label_37
+3	4523	71	#line 4523 "NXCDefs.h"
+3	4524	71		set __DU0SetSensorLowspeed_inline_InicializaSensores, 10
+3	4523	74	#line 4523 "NXCDefs.h"
+3	4523	74	#line 4523 "NXCDefs.h"
+3	4524	74		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, __DU0SetSensorLowspeed_inline_InicializaSensores
+3	4428	76	#line 4428 "NXCDefs.h"
+3	4429	76		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, 0
+3	4428	80	#line 4428 "NXCDefs.h"
+3	4523	80	#line 4523 "NXCDefs.h"
+3	4524	80	#line 4524 "NXCDefs.h"
+3	4525	80		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores
+3	4524	82	#line 4524 "NXCDefs.h"
+3	4524	82	#line 4524 "NXCDefs.h"
+3	4525	82		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, 0
+3	4524	85	#line 4524 "NXCDefs.h"
+3	4441	85	#line 4441 "NXCDefs.h"
+3	4442	85		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, 1
+3	4441	89	#line 4441 "NXCDefs.h"
+3	4524	89	#line 4524 "NXCDefs.h"
+3	4525	89	#line 4525 "NXCDefs.h"
+3	4526	89		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores
+3	4525	91	#line 4525 "NXCDefs.h"
+3	4459	91	#line 4459 "NXCDefs.h"
+3	4460	91	#pragma macro 4
+3	4460	91		acquire __ResetSensorMutex
+3	4460	92		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores
+3	4460	94		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+3	4460	96		release __ResetSensorMutex
+3	8590	97	#line 8590 "NXCDefs.h"
+3	4459	97	#line 4459 "NXCDefs.h"
+3	4525	97	#line 4525 "NXCDefs.h"
+3	117	97	#line 117 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+3	120	97	#line 120 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+3	121	97		subret __InicializaSensores_return
+4	121	0	#line 121 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+4	122	0		set __returnUS_7qG2_valor_7qG2_000, 0
+4	121	3	#line 121 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+4	122	3	#line 122 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+4	123	3	#pragma macro 26
+4	123	3		acquire __RLSBmutex3
+4	123	4		mov __RLSReadBuf3, __RLSBbufLSWrite1
+4	123	6		set __RLSBytesCount3, 1
+4	123	9		waitv __constVal15
+4	123	11		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+4	123	13		index __D0returnUS, __RLSReadBuf3, 65535
+4	123	17		release __RLSBmutex3
+4	8608	18	#line 8608 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+4	122	18	#line 122 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+4	123	18		mov __returnUS_7qG2_valor_7qG2_000, __D0returnUS
+4	122	20	#line 122 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+4	122	20	#line 122 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+4	123	20	#line 123 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+4	123	20	#line 123 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+4	124	20		mov __signed_stack_001returnUS, __D0returnUS
+4	123	22	#line 123 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+4	124	22		set __D0returnUS, 15
+4	123	25	#line 123 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+4	124	25		cmp 0, __D0returnUS, __signed_stack_001returnUS, __D0returnUS
+4	124	29	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+4	125	29		brtst 4, __ASM_Label_628, __D0returnUS
+4	124	32	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+4	125	32		set __D0returnUS, 1
+4	124	35	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+4	125	35		subret __returnUS_return
+4	124	37	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+4	127	37	#line 127 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+4	128	37		jmp __ASM_Label_631
+4	127	39	#line 127 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+4	128	39		set __D0returnUS, 0
+4	127	42	#line 127 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+4	128	42		subret __returnUS_return
+4	127	44	#line 127 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+4	127	44	#line 127 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+4	130	44	#line 130 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+4	131	44		subret __returnUS_return
+5	212	0	#line 212 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	213	0		set __EnviaUSFrente2_7qG2_sinalUS_7qG2_000, 0
+5	212	3	#line 212 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	212	3	#line 212 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	212	3	#line 212 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	212	3	#line 212 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	213	3		set __EnviaUSFrente2_7qG2_passei_7qG2_000, 0
+5	212	6	#line 212 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	214	6	#line 214 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	215	6		subcall returnUS, __returnUS_return
+5	214	8	#line 214 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	215	8		mov __EnviaUSFrente2_7qG2_sinalUS_7qG2_000, __D0returnUS
+5	214	10	#line 214 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	214	10	#line 214 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	215	10	#line 215 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	216	10		mov __signed_stack_001EnviaUSFrente2, __D0returnUS
+5	215	12	#line 215 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	215	12	#line 215 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	216	12		set __D0EnviaUSFrente2, 0
+5	215	15	#line 215 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	216	15		cmp 5, __D0EnviaUSFrente2, __signed_stack_001EnviaUSFrente2, __D0EnviaUSFrente2
+5	216	19	#line 216 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	217	19		brtst 4, __ASM_Label_772, __D0EnviaUSFrente2
+5	217	22	#line 217 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	218	22	#pragma macro 25
+5	218	22		acquire __RemoteMutex
+5	218	23		mov __SRSTmpBuf, __DCMessageWritePacket
+5	218	25		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
+5	218	30		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+5	218	35		mov __SRSTmpLongVal, __constVal1
+5	218	37		flatten __SRSFlattenBuf, __SRSTmpLongVal
+5	218	40		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+5	218	45		brcmp 0, __ConnWrite_Else0, __constVal0, __constVal4
+5	218	49		acquire __CHSWMutex
+5	218	50		sub __WFRRTmpByte, __constVal0, __constVal4
+5	218	54		arrbuild __CHSWArgs.Buffer, __WFRRTmpByte, __SRSSendBuf
+5	218	59		syscall 37, __CHSWArgs
+5	218	62		mov __D0EnviaUSFrente2, __CHSWArgs.Status
+5	218	64		release __CHSWMutex
+5	218	65		jmp __ConnWrite_EndIf0
+5	218	67		acquire __CBTWMutex
+5	218	68		mov __CBTWArgs.Connection, __constVal0
+5	218	70		mov __CBTWArgs.Buffer, __SRSSendBuf
+5	218	72		syscall 29, __CBTWArgs
+5	218	75		mov __D0EnviaUSFrente2, __CBTWArgs.Result
+5	218	77		release __CBTWMutex
+5	218	78		release __RemoteMutex
+5	9357	79	#line 9357 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	217	79	#line 217 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	217	79	#line 217 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	218	79	#line 218 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	219	79	#pragma macro 9
+5	219	79		acquire __MRMutex
+5	219	80		mov __MRArgs.QueueID, __constVal2
+5	219	82		mov __MRArgs.Remove, __constVal0
+5	219	84		set __RRNTmpVal, 0
+5	219	87		syscall 27, __MRArgs
+5	219	90		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+5	219	95		mov __EnviaUSFrente2_7qG2_passei_7qG2_000, __RRNTmpVal
+5	219	97		mov __D0EnviaUSFrente2, __MRArgs.Result
+5	219	99		release __MRMutex
+5	9361	100	#line 9361 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	218	100	#line 218 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	218	100	#line 218 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	219	100	#line 219 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	220	100		mov __signed_stack_001EnviaUSFrente2, __EnviaUSFrente2_7qG2_passei_7qG2_000
+5	219	102	#line 219 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	219	102	#line 219 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	220	102		set __D0EnviaUSFrente2, 0
+5	219	105	#line 219 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	220	105		cmp 4, __D0EnviaUSFrente2, __signed_stack_001EnviaUSFrente2, __D0EnviaUSFrente2
+5	219	109	#line 219 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	220	109		brtst 4, __ASM_Label_774, __D0EnviaUSFrente2
+5	219	112	#line 219 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	220	112		jmp __ASM_Label_773
+5	219	114	#line 219 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	219	114	#line 219 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	220	114	#line 220 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	221	114		jmp __ASM_Label_777
+5	220	116	#line 220 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	221	116		mov __signed_stack_001EnviaUSFrente2, __EnviaUSFrente2_7qG2_sinalUS_7qG2_000
+5	220	118	#line 220 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	220	118	#line 220 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	221	118		set __D0EnviaUSFrente2, 0
+5	220	121	#line 220 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	221	121		cmp 4, __D0EnviaUSFrente2, __signed_stack_001EnviaUSFrente2, __D0EnviaUSFrente2
+5	221	125	#line 221 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	222	125		brtst 4, __ASM_Label_780, __D0EnviaUSFrente2
+5	222	128	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	223	128	#pragma macro 25
+5	223	128		acquire __RemoteMutex
+5	223	129		mov __SRSTmpBuf, __DCMessageWritePacket
+5	223	131		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
+5	223	136		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+5	223	141		mov __SRSTmpLongVal, __constVal3
+5	223	143		flatten __SRSFlattenBuf, __SRSTmpLongVal
+5	223	146		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+5	223	151		brcmp 0, __ConnWrite_Else1, __constVal0, __constVal4
+5	223	155		acquire __CHSWMutex
+5	223	156		sub __WFRRTmpByte, __constVal0, __constVal4
+5	223	160		arrbuild __CHSWArgs.Buffer, __WFRRTmpByte, __SRSSendBuf
+5	223	165		syscall 37, __CHSWArgs
+5	223	168		mov __D0EnviaUSFrente2, __CHSWArgs.Status
+5	223	170		release __CHSWMutex
+5	223	171		jmp __ConnWrite_EndIf1
+5	223	173		acquire __CBTWMutex
+5	223	174		mov __CBTWArgs.Connection, __constVal0
+5	223	176		mov __CBTWArgs.Buffer, __SRSSendBuf
+5	223	178		syscall 29, __CBTWArgs
+5	223	181		mov __D0EnviaUSFrente2, __CBTWArgs.Result
+5	223	183		release __CBTWMutex
+5	223	184		release __RemoteMutex
+5	9402	185	#line 9402 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	222	185	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	222	185	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	223	185	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	224	185	#pragma macro 9
+5	224	185		acquire __MRMutex
+5	224	186		mov __MRArgs.QueueID, __constVal2
+5	224	188		mov __MRArgs.Remove, __constVal0
+5	224	190		set __RRNTmpVal, 0
+5	224	193		syscall 27, __MRArgs
+5	224	196		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+5	224	201		mov __EnviaUSFrente2_7qG2_passei_7qG2_000, __RRNTmpVal
+5	224	203		mov __D0EnviaUSFrente2, __MRArgs.Result
+5	224	205		release __MRMutex
+5	9406	206	#line 9406 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	223	206	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	223	206	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	224	206	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	225	206		mov __signed_stack_001EnviaUSFrente2, __EnviaUSFrente2_7qG2_passei_7qG2_000
+5	224	208	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	224	208	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	225	208		set __D0EnviaUSFrente2, 0
+5	224	211	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	225	211		cmp 4, __D0EnviaUSFrente2, __signed_stack_001EnviaUSFrente2, __D0EnviaUSFrente2
+5	224	215	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	225	215		brtst 4, __ASM_Label_782, __D0EnviaUSFrente2
+5	224	218	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	225	218		jmp __ASM_Label_781
+5	224	220	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	224	220	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	228	220	#line 228 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	228	220	#line 228 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	228	220	#line 228 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+5	229	220		subret __EnviaUSFrente2_return
+6	6921	0	#line 6921 "NXCDefs.h"
+6	6922	0	#pragma macro 6
+6	6922	0		mov __PointOutArgs.Location.X, __constVal200
+6	6922	2		mov __PointOutArgs.Location.Y, __constVal200
+6	6922	4		mov __PointOutArgs.Options, __constVal1
+6	6922	6		syscall 14, __PointOutArgs
+6	10705	9	#line 10705 "NXCDefs.h"
+6	6921	9	#line 6921 "NXCDefs.h"
+6	418	9	#line 418 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	419	9	#line 419 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	420	9		set __signed_stack_001PrintaSensores, 0
+6	419	12	#line 419 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	419	12	#line 419 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	420	12		set __signed_stack_002PrintaSensores, 56
+6	419	15	#line 419 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	419	15	#line 419 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	420	15		strcat __strbufPrintaSensores, __constStr0012
+6	419	19	#line 419 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	420	19		acquire __TextOutMutex
+6	419	20	#line 419 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	420	20		mov __TextOutArgs.Location.X, __signed_stack_001PrintaSensores
+6	419	22	#line 419 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	420	22		mov __TextOutArgs.Location.Y, __signed_stack_002PrintaSensores
+6	419	24	#line 419 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	420	24		set __TextOutArgs.Options, 0
+6	419	27	#line 419 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	420	27		mov __TextOutArgs.Text, __strbufPrintaSensores
+6	419	29	#line 419 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	420	29		syscall 13, __TextOutArgs
+6	419	32	#line 419 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	420	32		mov __D0PrintaSensores, __TextOutArgs.Result
+6	419	34	#line 419 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	420	34		release __TextOutMutex
+6	419	35	#line 419 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	420	35	#line 420 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	421	35		set __signed_stack_001PrintaSensores, 0
+6	420	38	#line 420 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	420	38	#line 420 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	421	38		set __signed_stack_002PrintaSensores, 48
+6	420	41	#line 420 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	420	41	#line 420 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	421	41	#pragma macro 26
+6	421	41		acquire __RLSBmutex3
+6	421	42		mov __RLSReadBuf3, __RLSBbufLSWrite1
+6	421	44		set __RLSBytesCount3, 1
+6	421	47		waitv __constVal15
+6	421	49		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+6	421	51		index __D0PrintaSensores, __RLSReadBuf3, 65535
+6	421	55		release __RLSBmutex3
+6	10750	56	#line 10750 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	420	56	#line 420 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	421	56		acquire __TextOutMutex
+6	420	57	#line 420 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	421	57		mov __TextOutArgs.Location.X, __signed_stack_001PrintaSensores
+6	420	59	#line 420 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	421	59		mov __TextOutArgs.Location.Y, __signed_stack_002PrintaSensores
+6	420	61	#line 420 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	421	61		set __TextOutArgs.Options, 0
+6	420	64	#line 420 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	421	64		numtostr __TextOutArgs.Text, __D0PrintaSensores
+6	420	67	#line 420 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	421	67		syscall 13, __TextOutArgs
+6	420	70	#line 420 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	421	70		mov __D0PrintaSensores, __TextOutArgs.Result
+6	420	72	#line 420 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	421	72		release __TextOutMutex
+6	420	73	#line 420 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	420	73	#line 420 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	421	73	#line 421 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	422	73		set __Wait_7qG2_ms_7qG2_000_inline_PrintaSensores, 30
+6	421	76	#line 421 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	8869	76	#line 8869 "NXCDefs.h"
+6	8870	76		waitv __Wait_7qG2_ms_7qG2_000_inline_PrintaSensores
+6	8869	78	#line 8869 "NXCDefs.h"
+6	421	78	#line 421 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	426	78	#line 426 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+6	427	78		subret __PrintaSensores_return
+7	427	0	#line 427 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+7	428	0		subcall InicializaSensores, __InicializaSensores_return
+7	427	2	#line 427 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+7	442	2	#line 442 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+7	443	2		subcall EnviaUSFrente2, __EnviaUSFrente2_return
+7	442	4	#line 442 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+7	443	4	#line 443 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+7	444	4		subcall PrintaSensores, __PrintaSensores_return
+7	443	6	#line 443 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+7	445	6	#line 445 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+7	446	6		set __D0teste2, 1
+7	445	9	#line 445 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+7	446	9		tst 5, __D0teste2, __D0teste2
+7	445	12	#line 445 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+7	446	12		brtst 4, __ASM_Label_1004, __D0teste2
+7	445	15	#line 445 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+7	446	15		jmp __ASM_Label_1003
+7	445	17	#line 445 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+7	445	17	#line 445 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+7	448	17	#line 448 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+7	449	17		subret __teste2_return
+8	454	0	#line 454 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc"
+8	455	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc
 1	__ResetSensorSubroutine	7	NXTDefs.h
 2	__ReadLSBytes3	20	NXTDefs.h
-3	PlaySound	109	NXCDefs.h
-4	InicializaSensores	502	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc
-5	returnUS	601	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc
-6	EnviaUSFrente2	662	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc
-7	teste2	884	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc
-8	__initialize_global_data	901	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc
+3	InicializaSensores	109	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc
+4	returnUS	208	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc
+5	EnviaUSFrente2	254	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc
+6	PrintaSensores	476	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc
+7	teste2	556	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc
+8	__initialize_global_data	575	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Consultor_MAIN_mark001.nxc

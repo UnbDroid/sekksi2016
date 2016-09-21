@@ -190,13 +190,11 @@ void Bip(){
 void ChecaParada(){//TESTAR SE PARA QUANDO DEVE, E SE NAO DEMORA MUITO
   int leitura = 0;
 
-  do{
-    ReceiveRemoteNumber(INBOX, true, leitura);
-    Wait(30);
+  ReceiveRemoteNumber(INBOX, true, leitura);
+  if(leitura != 0){
     SendRemoteNumber(CONEXAO, OUTBOX, SIM);
     Wait(30);
-  }while(leitura == 0);
-  
+  }
   if(leitura == SIM_US){
    Bip();
      
@@ -411,8 +409,8 @@ void teste2COMUNICA(){
   vira(90, direita);
 
   do{
-    //PrintaSensores();
-    //ChecaParada();
+    PrintaSensores();
+    ChecaParada();
     //CorDoChao(corEsq, corDir);
     andaRetoDireita(DIST_DA_PAREDE, 10);
   }while(SIM);

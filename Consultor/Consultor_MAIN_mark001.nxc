@@ -122,9 +122,6 @@ int returnUS(){
   int valor = 0;
   valor = SensorUS(US_FRENTE);
   if(valor < MENOR_DISTANCIA_US){
-    PlaySound(SOUND_UP);
-    PlaySound(SOUND_DOWN);
-    Wait(SEC_1);
     return 1;
   }
   else
@@ -417,6 +414,15 @@ void teste1(){
      }
 }
 
+void PrintaSensores(){
+//  while(1){
+    ClearScreen();
+    TextOut(0, LCD_LINE1, "US_FRENTE: ");
+    NumOut(0, LCD_LINE2, SensorUS(US_FRENTE));
+    Wait(30);
+  //}
+}
+
 
 void teste2(){
      InicializaSensores();
@@ -435,6 +441,7 @@ void teste2(){
     do{
      //EnviaUSFrente(); 
      EnviaUSFrente2();
+     PrintaSensores();
      //EnviaGarra();
     }while(1);
 }
