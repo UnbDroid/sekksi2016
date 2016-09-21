@@ -1,0 +1,186 @@
+                                        //SENSORES E MOTORES
+#define MD OUT_B //motor da direita
+#define ME OUT_A //motor da esquerda
+#define MP OUT_C //motor da porta
+#define USD IN_1 //Utrasonico da direita
+#define USE IN_2 //Utrasonico da esquerda
+#define HTD IN_3//hitech da direita
+#define HTE IN_4//hitech da esquerda
+
+//LOGICA
+
+#define direita 1
+#define esquerda 2
+
+
+ #define SIM 5
+ #define SIM_US 1
+ #define SIM_GARRA 2
+ #define NAO 0
+ #define CONTINUA 6
+ #define VIROU 7
+#define DESVIROU 8
+   //Bluetooth
+ #define PARADO 0
+ #define BONECO_BRANCO 4
+ #define BONECO_PRETO 5
+ #define LeGARRA_SENSOR 3
+ #define NAO_PEGA 9
+ #define PEGA_OU_NAOPEGA 10
+ #define PEGA 11
+
+  //dist
+#define DIST_RE 30
+#define DIST_DA_PAREDE 8
+  //cores
+#define COR_VERDE 5
+#define COR_AZUL 3 // 3 ou 14, 3 eh mais certo
+#define COR_PRETA 12 //12 ou 17, 12 eh mais certo
+#define COR_NEUTRA 13//BRANCO fica acima de 13
+
+
+
+//DEFINES BLUETOOTH
+
+#define CONECTA TRUE
+#define DESCONECTA FALSE
+//defines da conexao
+#define CONN 1
+
+#define INBOX 1
+#define OUTBOX 2
+
+
+
+//===========================================
+
+//defines da struct
+
+#define CONSULTOR "LECA"
+#define ACAO CONECTA
+#define CONEXAO 1
+
+//VARIAVEIS GLOBAIS
+int my_tc_d = 0;
+int my_tc_e = 0;
+int potdGlobal = 90;
+int poteGlobal = 83;
+
+void Para(){
+	Off(MD);
+	Off(ME);
+}
+
+int distanciaTachoCount(int grau){
+     return (3*grau);                   //Distancia a ser percorrid/Raio da roda
+}
+
+void inicializaSensores()
+{
+  SetSensorLowspeed(USD);
+  SetSensorLowspeed(USE);
+  SetSensorLowspeed(HTD);
+  SetSensorLowspeed(HTE);
+}
+
+void iniciaBlue(){// FUNCAO INICIA COMUNICACAO BLUETOOTH
+     CommBTConnectionType DADOS_BT;
+     DADOS_BT.Name = CONSULTOR;
+     DADOS_BT.ConnectionSlot = CONEXAO;
+     DADOS_BT.Action = ACAO;
+     /*do{
+        SysCommBTConnection(DADOS_BT);
+
+        Wait(30);//30 ms eh o tempo de comunicacao minima bluetooth entre dois bricks
+
+     }while(BluetoothStatus(CONEXAO)!= NO_ERR);
+     */
+     SysCommBTConnection(DADOS_BT);
+      Wait(4000);
+     TextOut(0, LCD_LINE2, "Conectou Bluetooth");
+}
+
+
+void andaRetoDireita(int distParede, int distAndar){ // função que faz o robô andar à "distParede" centímetros da parede por "distAndar" centímetros
+     int distanciaAtual, potd, pote;
+     my_tc_d = 0;
+     my_tc_e = 0;
+
+     while(distanciaTachoCount((my_tc_d + my_tc_e)/2) < (distAndar*100)){
+       distanciaAtual = SensorUS(USD);
+
+       if(RecebeValor()){
+       	Para();
+       	while(1);
+       }
+
+       if (distanciaAtual == distParede){
+         potd = 90;
+         pote = 90;
+       }
+       else if(distanciaAtual > distParede){
+         pote = 90;
+         potd = 70;
+       }
+       else if(distanciaAtual < distParede){
+         pote = 70;
+         potd = 90;
+       }
+
+       my_tc_d += MotorTachoCount(MD);
+       OnFwd(MD, potd);
+       my_tc_e += MotorTachoCount(ME);
+       OnFwd(ME, pote);
+
+     }
+
+     Off(MD);
+     Off(ME);
+}
+
+
+
+
+int RecebeValor(){
+  int leitura = 0;
+   ReceiveRemoteNumber(INBOX, true, leitura);
+     return leitura;
+
+}
+
+
+void andaFrente(){
+  while(1){
+    OnFwd(MD, 90);
+    OnFwd(ME, 90);
+     if(RecebeValor()){
+          Para();
+          TextOut(0, LCD_LINE1, "Obrigado pelos peixes");
+          while(1);
+         }    
+  }
+}
+
+void test2(){
+  iniciaBlue();
+  inicializaSensores();
+
+  andaFrente();
+}
+
+void test1(){
+
+	iniciaBlue();
+	inicializaSensores();
+  andaFrente();
+
+
+}
+
+
+task main(){
+	test2();
+}
+
+
+
