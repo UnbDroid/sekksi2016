@@ -66,6 +66,15 @@ int my_tc_e = 0;
 int potdGlobal = 90;
 int poteGlobal = 83;
 
+void Para();
+int distanciaTachoCount(int grau);
+void inicializaSensores();
+void iniciaBlue();
+void andaRetoDireita(int distParede, int distAndar);
+int RecebeValor();
+void andaFrente();
+
+
 void Para(){
 	Off(MD);
 	Off(ME);
@@ -153,6 +162,7 @@ void andaFrente(){
   while(1){
     OnFwd(MD, 90);
     OnFwd(ME, 90);
+    Wait(500);
      if(RecebeValor()){
           Para();
           TextOut(0, LCD_LINE1, "Obrigado pelos peixes");

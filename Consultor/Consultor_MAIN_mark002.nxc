@@ -92,6 +92,9 @@
      #define COR_PRETA 12 //12 ou 17, 12 eh mais certo
      #define COR_NEUTRA 13//BRANCO fica acima de 13
 
+void InicializaSensores();
+int returnUS(int valor);
+
 
 void InicializaSensores(){
     SetSensorColorRed(RGB_DIR);
@@ -100,23 +103,28 @@ void InicializaSensores(){
     SetSensorLowspeed(US_FRENTE);
 }
 
-int returnUS(){
-  int valor = 0;
+int returnUS(int valor){
   valor = SensorUS(US_FRENTE);
+  Wait(30);
   NumOut(0, LCD_LINE1, valor);
-  /*
+  
   if(valor < MENOR_DISTANCIA_US){
     return 1;
   }
   else
-    return 0;*/
-    return 1;
+    return 0;
 }
 
+PrintaSensores(){
+
+}
 
 void test1(){
+    int valor;
+    InicializaSensores();
     while(1){
-        if(returnUS()){
+        valor = 0;
+        if(returnUS(valor)){
             SendRemoteNumber(CONEXAO, OUTBOX, 1);
             TextOut(0, LCD_LINE2, "Mandei ssaporra");
         }
