@@ -113,6 +113,9 @@ void Bip(){
   Wait(SEC_1);
 }
 
+
+
+
 task main(){
    InicializaSensores();
    int tc, old_tc, deu_merda;
