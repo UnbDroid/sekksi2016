@@ -1,0 +1,54 @@
+void bib()
+{
+  PlaySound(SOUND_UP);
+  PlaySound(SOUND_DOWN);
+  Wait(SEC_1);
+}
+
+task main()
+{
+  string msg;
+  int str_cont, strT, str_pot;
+  byte handle;
+  int aux;
+  int cont;
+  
+    handle = fopen("memoria.txt", "r");
+
+    if (handle == NULL)
+    {
+      cont=1;
+      //bib();
+    }
+    else
+    {
+
+      fgets(msg, 10, handle);
+      fclose(handle);
+      //TextOut(0, LCD_LINE1, msg);
+      for(str_cont = 0; msg[str_cont] != NULL; str_cont++){}
+      strT = str_cont;
+      for(str_pot = 0, aux = 0, str_cont = strT - 1; str_cont >= 0; str_cont--, str_pot++)
+      {
+        aux += (msg[str_cont]-48)*pow(10,str_pot);
+      }
+      
+      cont = aux;
+      
+      cont++;
+      
+
+    }
+    remove("memoria.txt");
+    handle = fopen("memoria.txt", "w");
+    if (handle != NULL)
+    {
+      fprintf(handle,"%d",cont);
+      fclose(handle);
+      bib();
+    }
+
+  NumOut(0,LCD_LINE1,cont);
+  Wait(SEC_1);
+}
+

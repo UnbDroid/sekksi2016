@@ -1,0 +1,4 @@
+task main()
+{
+  remove("memoria.txt");
+}
