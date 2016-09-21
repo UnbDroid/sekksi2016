@@ -401,7 +401,6 @@ void teste2COMUNICA(){
   int corDir = 0, corEsq = 0;
 
   inicializaSensores();
-  desligaBlue();
   iniciaBlue();
 
   //IniciaCorDoChao(corEsq, corDir);

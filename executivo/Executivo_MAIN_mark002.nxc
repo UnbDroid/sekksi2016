@@ -66,6 +66,16 @@ int my_tc_e = 0;
 int potdGlobal = 90;
 int poteGlobal = 83;
 
+void Para();
+int distanciaTachoCount(int grau);
+void inicializaSensores();
+void iniciaBlue();
+void andaRetoDireita(int distParede, int distAndar);
+int RecebeValor();
+void andaFrente();
+void vira(int angulo, int direcao);
+void ChecaParada();
+
 void Para(){
 	Off(MD);
 	Off(ME);
@@ -81,6 +91,31 @@ void inicializaSensores()
   SetSensorLowspeed(USE);
   SetSensorLowspeed(HTD);
   SetSensorLowspeed(HTE);
+}
+
+void vira(int angulo, int direcao){  //TESTE
+     if(direcao == esquerda){
+        OnFwd(MD, 90);
+        OnFwd(ME, -90);
+
+        while(distanciaGiro((MotorTachoCount(MD) - MotorTachoCount(ME))/2) < angulo)
+        {
+        //lol
+        }
+        Off(MD);
+        Off(ME);
+
+     }else if(direcao == direita){
+        OnFwd(MD, -90);
+        OnFwd(ME, 90);
+
+        while(distanciaGiro((- MotorTachoCount(MD) + MotorTachoCount(ME))/2) < angulo)
+        {
+        //lol
+        }
+        Off(MD);
+        Off(ME);
+     }
 }
 
 void iniciaBlue(){// FUNCAO INICIA COMUNICACAO BLUETOOTH
@@ -100,6 +135,14 @@ void iniciaBlue(){// FUNCAO INICIA COMUNICACAO BLUETOOTH
      TextOut(0, LCD_LINE2, "Conectou Bluetooth");
 }
 
+void ChecaParada(){
+   if(RecebeValor() == SIM_GARRA){
+    Para();
+    while(1);
+   }else if(RecebeValor() == SIM_US){
+      vira(90, esquerda);
+   }
+}
 
 void andaRetoDireita(int distParede, int distAndar){ // função que faz o robô andar à "distParede" centímetros da parede por "distAndar" centímetros
      int distanciaAtual, potd, pote;
@@ -108,11 +151,8 @@ void andaRetoDireita(int distParede, int distAndar){ // função que faz o robô an
 
      while(distanciaTachoCount((my_tc_d + my_tc_e)/2) < (distAndar*100)){
        distanciaAtual = SensorUS(USD);
-
-       if(RecebeValor()){
-       	Para();
-       	while(1);
-       }
+    
+       ChecaParada();
 
        if (distanciaAtual == distParede){
          potd = 90;
@@ -153,6 +193,7 @@ void andaFrente(){
   while(1){
     OnFwd(MD, 90);
     OnFwd(ME, 90);
+    Wait(500);
      if(RecebeValor()){
           Para();
           TextOut(0, LCD_LINE1, "Obrigado pelos peixes");
@@ -165,7 +206,8 @@ void test2(){
   iniciaBlue();
   inicializaSensores();
 
-  andaFrente();
+  andaRetoDireita(DIST_DA_PAREDE, 100);
+
 }
 
 void test1(){
