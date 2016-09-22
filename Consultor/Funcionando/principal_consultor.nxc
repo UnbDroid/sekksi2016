@@ -141,7 +141,7 @@ void consultor(){
             //TextOut(0, LCD_LINE2, "Mandei ultrassom carai");
         }else if(TemBoneco())
         {
-            MandaPara();//implementar uma função que mando o execultivo para e esperar a confirmação que ele parou
+            MandaPara();//implementar uma função que mando o executivo para e esperar a confirmação que ele parou
             if(PegaBoneco())
             {
                 cor = CorBoneco();
