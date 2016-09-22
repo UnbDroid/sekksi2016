@@ -1,0 +1,15 @@
+
+
+//decleração das funções
+void executivo(void);
+
+//função principal
+task main(){
+    executivo();
+}
+
+//assinatura das funções
+void executivo{
+
+}
+
