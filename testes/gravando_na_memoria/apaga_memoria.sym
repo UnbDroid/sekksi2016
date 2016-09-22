@@ -1,0 +1,36 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	____initialize_global_data_return	1	1	0	1	3
+1	__FDArgs	8	0	2	8	2
+2	__FDArgs.Result	3	1	4	2	2
+3	__FDArgs.Filename	7	0	6	4	2
+4	__FDArgs.Filename.Filename_type	1	0	0	1	0
+5	__constStr0009	7	0	8	4	1
+6	__constStr0009.__constStr0009_type	1	1	0	1	0
+7	__strbufmain	7	0	10	4	2
+8	__strbufmain.__strbufmain_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	2	0	#line 2 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\apaga_memoria.nxc"
+0	3	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	2	2	#line 2 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\apaga_memoria.nxc"
+0	2	2	#line 2 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\apaga_memoria.nxc"
+0	3	2		strcat __strbufmain, __constStr0009
+0	2	6	#line 2 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\apaga_memoria.nxc"
+0	19206	6	#line 19206 "NXCDefs.h"
+0	19207	6	#pragma macro 5
+0	19207	6		mov __FDArgs.Filename, __strbufmain
+0	19207	8		syscall 8, __FDArgs
+0	5809	11	#line 5809 "NXCDefs.h"
+0	19206	11	#line 19206 "NXCDefs.h"
+0	19206	11	#line 19206 "NXCDefs.h"
+0	19206	11	#line 19206 "NXCDefs.h"
+0	3	11	#line 3 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\apaga_memoria.nxc"
+0	3	11	#line 3 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\apaga_memoria.nxc"
+0	4	11		exit -1, -1
+1	6	0	#line 6 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\apaga_memoria.nxc"
+1	7	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\apaga_memoria.nxc
+1	__initialize_global_data	14	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\apaga_memoria.nxc

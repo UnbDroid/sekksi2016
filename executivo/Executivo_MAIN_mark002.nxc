@@ -13,8 +13,8 @@
 #define esquerda 2
 
 
- #define SIM 5
- #define SIM_US 1
+ #define SIM 1
+ #define SIM_US 5
  #define SIM_GARRA 2
  #define NAO 0
  #define CONTINUA 6
@@ -23,8 +23,7 @@
    //Bluetooth
  #define PARADO 0
  #define BONECO_BRANCO 4
- #define BONECO_PRETO 5
- #define LeGARRA_SENSOR 3
+ #define BONECO_PRETO 12
  #define NAO_PEGA 9
  #define PEGA_OU_NAOPEGA 10
  #define PEGA 11
@@ -141,8 +140,16 @@ void ChecaParada(){
     while(1);
    }else if(RecebeValor() == SIM_US){
       vira(90, esquerda);
+      while(1);
    }
 }
+
+int RecebeValor(){
+  int leitura = 0;
+   ReceiveRemoteNumber(INBOX, true, leitura);
+     return leitura;
+}
+
 
 void andaRetoDireita(int distParede, int distAndar){ // função que faz o robô andar à "distParede" centímetros da parede por "distAndar" centímetros
      int distanciaAtual, potd, pote;
@@ -178,27 +185,16 @@ void andaRetoDireita(int distParede, int distAndar){ // função que faz o robô an
      Off(ME);
 }
 
-
-
-
-int RecebeValor(){
-  int leitura = 0;
-   ReceiveRemoteNumber(INBOX, true, leitura);
-     return leitura;
-
-}
-
-
 void andaFrente(){
   while(1){
     OnFwd(MD, 90);
     OnFwd(ME, 90);
     Wait(500);
-     if(RecebeValor()){
+      if(RecebeValor() == SIM_US){
           Para();
           TextOut(0, LCD_LINE1, "Obrigado pelos peixes");
           while(1);
-         }    
+      }    
   }
 }
 
@@ -215,7 +211,6 @@ void test1(){
 	iniciaBlue();
 	inicializaSensores();
   andaFrente();
-
 
 }
 

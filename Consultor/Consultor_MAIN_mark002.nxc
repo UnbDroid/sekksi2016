@@ -6,16 +6,20 @@
      #define INBOX 2
      #define OUTBOX 1
 
+    // Defines de sensores
+    #define RGB_DIR IN_1
+    #define RGB_ESQ IN_2
+    #define RGB_MEIO IN_3
+    #define US_FRENTE IN_4
 
+    // Defines de motores
+    #define MOTOR_GARRA OUT_A
 
-     // Defines de sensores
-     #define RGB_DIR IN_1
-     #define RGB_ESQ IN_2
-     #define RGB_MEIO IN_3
-     #define US_FRENTE IN_4
+    //
+    #define NAO_ALIEN 0
+    #define SIM_ALIEN 1
 
-     // Defines de motores
-     #define MOTOR_GARRA OUT_A
+    #define VETOR_CALIBRACAO 11
 
     // Defines de leitura do RGB do meio (ainda precisa testar mais)
     #define COR_PRETA_MEIO_MIN 55
@@ -34,8 +38,8 @@
     #define COR_BRANCA_ESQ_PERTO_MAX 495
     #define COR_BRANCA_ESQ_LONGE_MIN 212
     #define COR_BRANCA_ESQ_LONGE_MAX 245
-    #define COR_BASE_ESQ_MIN 195
-    #define COR_BASE_ESQ_MAX 210
+    #define COR_BASE_ESQ_MIN 265
+    #define COR_BASE_ESQ_MAX 310
 
     // Defines de leitura do RGB da direita do robô
     #define COR_PRETA_DIR_PERTO_MIN 130
@@ -46,15 +50,16 @@
     #define COR_BRANCA_DIR_PERTO_MAX 420
     #define COR_BRANCA_DIR_LONGE_MIN 240
     #define COR_BRANCA_DIR_LONGE_MAX 280
-    #define COR_BASE_DIR_MIN 240
-    #define COR_BASE_DIR_MAX 260
+    #define COR_BASE_DIR_MIN 260
+    #define COR_BASE_DIR_MAX 310
 
     //potencias
-    #define POTENCIA_MAXIMA_GARRA 80
+    #define POTENCIA_MAXIMA_GARRA -80
+    #define POTENCIA_MED_GARRA -40
 
     //Tempos
-    #define TEMPO_ATE_A_GARRA_TRAVAR 2000
-    #define TEMPO_ATE_JOGAR_DENTRO 3750
+    #define TEMPO_ATE_A_GARRA_TRAVAR 1000
+    #define TEMPO_ATE_JOGAR_DENTRO 2000
     #define TEMPO_ATE_A_GARRA_VOLTAR 2000 //estou usando tempo... rola de usar por angulos depois
     #define TEMPO_DEPOIS_DE_JOGAR_DENTRO_GARANTIA 800
 
@@ -67,8 +72,8 @@
      #define direita 1
      #define esquerda 2
 
-     #define SIM 5
-     #define SIM_US 1
+     #define SIM 1
+     #define SIM_US 5
      #define NAO_US 3
      #define SIM_GARRA 2
      #define NAO 0
@@ -78,8 +83,7 @@
        //Bluetooth
      #define PARADO 0
      #define BONECO_BRANCO 4
-     #define BONECO_PRETO 5
-     #define LeGARRA_SENSOR 3
+     #define BONECO_PRETO 12
      #define NAO_PEGA 9
      #define PEGA_OU_NAOPEGA 10
      #define PEGA 11
@@ -94,14 +98,53 @@
 
 void InicializaSensores();
 int returnUS();
+int lerSensor(int sensor);
+int returnGarra();
 
+int lerSensor(int sensor){
+   int i, j, k, aux;
+   int leitura[VETOR_CALIBRACAO];
+
+   for(i=0; i<VETOR_CALIBRACAO; i++){
+      aux = SensorRaw(sensor);
+
+      j = 0;
+      while(aux < leitura[j] && j<i){
+         j++;
+      }
+
+      if(j<i){
+         for(k=i; k>j; k--){
+            leitura[k] = leitura[k-1];
+         }
+         leitura[j] = aux;
+      }
+      else{
+         leitura[i] = aux;
+      }
+   }
+   return leitura[(VETOR_CALIBRACAO - 1)/2];
+}
+
+int filtroRGB(){
+    int rgbD, rgbE, rgbC;
+    
+    rgbC = lerSensor(RGB_MEIO);
+    rgbD = lerSensor(RGB_DIR);
+    rgbE = lerSensor(RGB_ESQ);
+    if((rgbD > COR_BASE_DIR_MAX)||(rgbD < COR_BASE_DIR_MIN)){
+        
+    }
+
+}
 
 void InicializaSensores(){
     SetSensorColorRed(RGB_DIR);
     SetSensorColorRed(RGB_ESQ);
-    SetSensorColorRed(RGB_MEIO);
+    SetSensorColorGreen(RGB_MEIO);
     SetSensorLowspeed(US_FRENTE);
 }
+
 
 int returnUS(){
   int valor = 0;
@@ -117,10 +160,8 @@ int returnUS(){
 }
 
 int returnGarra(){
-
+    return 0;
 }
-
-
 
 void test1(){
     int valor;
@@ -130,7 +171,10 @@ void test1(){
         if(returnUS()){
             SendRemoteNumber(CONEXAO, OUTBOX, SIM_US);
             TextOut(0, LCD_LINE2, "Mandei ultrassom carai");
-        }else if()
+        }else if(returnGarra()){
+            SendRemoteNumber(CONEXAO, OUTBOX, SIM_GARRA);
+            TextOut(0, LCD_LINE3, "Mandei Garra p#rra");
+        }
         Wait(20);
         ClearScreen();
     }
