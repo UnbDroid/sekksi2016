@@ -195,7 +195,7 @@ int filterRGB(int s){
 }
 
 int RecebeBoneco(){
-     int sinInicial = 0;     
+     int sinInicial = 0;
      do{  
           ReceiveRemoteNumber(INBOX, 0, sinInicial);
           Wait(30);    

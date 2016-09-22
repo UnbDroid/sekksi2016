@@ -51,39 +51,42 @@
 
      //LOGICA
 
-     #define direita 1
-     #define esquerda 2
+#define direita 1
+#define esquerda 2
 
-     #define SIM 5
-     #define SIM_US 1
-     #define NAO_US 3
-     #define SIM_GARRA 2
-     #define NAO 0
-     #define CONTINUA 6
-     #define VIROU 7
-    #define DESVIROU 8
-       //Bluetooth
-     #define PARADO 0
-     #define BONECO_BRANCO 4
-     #define BONECO_PRETO 12
-     #define BONECO_VERMELHO -1
+//Bluetooth
+  #define SIM 5
+  #define SIM_US 1
+  #define NAO_US 3
+  #define SIM_GARRA 2
+  #define NAO 0
 
-     #define NAO_PEGA 9
-     #define PEGA_OU_NAOPEGA 10
-     #define PEGA 11
-       //dist
-     #define DIST_RE 30
-     #define DIST_DA_PAREDE 8
-       //cores
-     #define COR_VERDE 5
-     #define COR_AZUL 3 // 3 ou 14, 3 eh mais certo
-     #define COR_PRETA 12 //12 ou 17, 12 eh mais certo
-     #define COR_NEUTRA 13//BRANCO fica acima de 13
+  #define CONTINUA 6
+  #define VIROU 7
+  #define DESVIROU 8
+  #define PARADO 0
+  #define ANDANDO -2
 
-    //
-    #define NAO_ALIEN 0
-    #define SIM_ALIEN 1
-   
+  #define BONECO_BRANCO 4
+  #define BONECO_PRETO 12
+  #define BONECO_VERMELHO -1
+
+  #define NAO_PEGA 9
+  #define PEGA_OU_NAOPEGA 10
+  #define PEGA 11
+//dist
+  #define DIST_RE 30
+  #define DIST_DA_PAREDE 8
+//cores
+  #define COR_VERDE 5
+  #define COR_AZUL 3 // 3 ou 14, 3 eh mais certo
+  #define COR_PRETA 12 //12 ou 17, 12 eh mais certo
+  #define COR_NEUTRA 13//BRANCO fica acima de 13
+
+//
+#define NAO_ALIEN 0
+#define SIM_ALIEN 1
+
 
 //declaração das variáveis globais
 int bonecoAlvo;
@@ -97,11 +100,22 @@ int TemBoneco();
 int lerSensor(int sensor);
 int PegaBoneco();
 void VoltaGarra(void);
+int RecebeBoneco();
+void BonecoAlvo();
+void BipBranco();
+void BipPreto();
+
+//implementando
+void MandaPara();
+void Rejeitar();
+void MandaContinuar();
+
 
 //função principal
 task main(){
     consultor();
 }
+
 
 
 //assinatura das funçõa
@@ -125,23 +139,42 @@ int returnUS(){
     return 0;
 }
 
-int returnGarra(){
-
+void BipBranco(){
+  PlaySound(SOUND_UP);
+  PlaySound(SOUND_DOWN);
+  Wait(SEC_1);
 }
 
+void  BipPreto(){
+  PlaySound(SOUND_UP);
+  PlaySound(SOUND_DOWN);
+  Wait(SEC_1);
+}
 
+void BonecoAlvo(){
+  bonecoAlvo = RecebeBoneco();
+    
+    if(bonecoAlvo == BONECO_PRETO){
+      BipPreto();
+    }else if(bonecoAlvo == BONECO_BRANCO){
+      BipBranco();
+    }
+
+}
 
 void consultor(){
     int cor;
 
     InicializaSensores();
+    BonecoAlvo();
+
     while(1){//void loop
         if(returnUS()){
             SendRemoteNumber(CONEXAO, OUTBOX, SIM_US);
             //TextOut(0, LCD_LINE2, "Mandei ultrassom carai");
         }else if(TemBoneco())
         {
-            MandaPara();//implementar uma função que mando o executivo para e esperar a confirmação que ele parou
+            MandaPara();//implementar uma função que manda o executivo para e esperar a confirmação que ele parou
             if(PegaBoneco())
             {
                 cor = CorBoneco();
@@ -151,7 +184,7 @@ void consultor(){
                 }
                 else if(cor == bonecoNaoAlvo)
                 {
-                    Rejeitar();//esta função tem que comunicar como execultivo
+                    Rejeitar();//esta função tem que comunicar com o executivo
                 }
                 else if(cor == BONECO_VERMELHO)
                 {
@@ -247,7 +280,25 @@ void VoltaGarra(void)
       OnFwd(MOTOR_GARRA,0);
 }
 
-int CorBoneco()
+
+int RecebeBoneco(){
+     int sinInicial = 0;
+     do{  
+          ReceiveRemoteNumber(INBOX, 0, sinInicial);
+          Wait(30);    
+     }while(sinInicial == 0);
+     SendRemoteNumber(CONEXAO, OUTBOX, SIM);
+     Wait(30);
+     
+     if(sinInicial == BONECO_PRETO)
+          return BONECO_PRETO;
+     else if(sinInicial == BONECO_BRANCO)
+          return BONECO_BRANCO;
+}
+
+
+
+int CorBoneco()//TESTAR
 {
     int leitura;
 
@@ -259,4 +310,41 @@ int CorBoneco()
         return BONECO_PRETO;
     if((leitura < COR_VERMELHA_MEIO_MAX)&&(leitura > COR_VERMELHA_MEIO_MIN))
         return BONECO_VERMELHO;
+}
+
+void MandaPara(){ //TESTAR
+  int passei = ANDANDO;
+  do{
+    SendRemoteNumber(CONEXAO, OUTBOX, PARADO);
+    ReceiveRemoteNumber(INBOX, 0, passei);
+    Wait(30);
+  }while(passei != PARADO);
+}
+
+void Rejeitar(){ //TESTAR
+  int passei = PARADO;
+  
+  do{
+    SendRemoteNumber(CONEXAO, OUTBOX, VIROU);
+    ReceiveRemoteNumber(INBOX, 0, passei);
+    Wait(30);
+  }while(passei != VIROU);
+  
+  VoltaGarra();
+
+  do{
+    SendRemoteNumber(CONEXAO, OUTBOX, DESVIROU);
+    ReceiveRemoteNumber(INBOX, 0, passei);
+    Wait(30);
+  }while(passei != DESVIROU);
+
+}
+
+void MandaContinuar(){//TESTAR
+  int passei = NAO;
+  do{
+    SendRemoteNumber(CONEXAO, OUTBOX, CONTINUA);
+    ReceiveRemoteNumber(INBOX, 0, passei);
+    Wait(30);
+  }while(passei != CONTINUA);
 }

@@ -73,7 +73,10 @@ void andaRetoDireita(int distParede, int distAndar);
 int RecebeValor();
 void andaFrente();
 void vira(int angulo, int direcao);
+
+
 void ChecaParada();
+
 
 void Para(){
 	Off(MD);
