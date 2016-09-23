@@ -1,0 +1,67 @@
+void bib()
+{
+  PlaySound(SOUND_UP);
+  PlaySound(SOUND_DOWN);
+  Wait(SEC_1);
+}
+
+task main()
+{
+  string msg;
+  int str_cont, strT, str_pot;
+  byte handle;
+  int aux;
+  int mat[3][3], i. j;
+  
+    handle = fopen("memoria.txt", "r");
+
+    if (handle == NULL)
+    {
+
+      fgets(msg, 100, handle);
+      fclose(handle);
+      //TextOut(0, LCD_LINE1, msg);
+      for(str_cont = 0; msg[str_cont] != NULL; str_cont++){}
+      strT = str_cont;
+      for(str_pot = 0, aux = 0, str_cont = strT - 1, i=0, j=0; str_cont >= 0; str_cont--, str_pot++)
+      {
+        if((msg[str_cont] != 'n') && (msg[str_cont] != 't'))
+        aux += (msg[str_cont]-48)*pow(10,str_pot);
+        else
+        {
+          mat[i][j] = aux;
+          aux = 0;
+          if(msg[str_cont] != 't')
+          {
+            j++;
+          }
+          else//mesmo que fi(msg[str_cont] != 't')
+          {
+            j=0;
+            i++;
+          }
+        }
+      }
+      
+      for(j=0;j<3;j++)
+        NumOut(j*15,LCD_LINE1,mat[0][j]);
+
+      for(j=0;j<3;j++)
+        NumOut(j*15,LCD_LINE2,mat[1][j]);
+
+      for(j=0;j<3;j++)
+        NumOut(j*15,LCD_LINE3,mat[2][j]);
+
+      Wait(SEC_5);
+
+    }
+    else
+    {
+      NumText(0,LCD_LINE1,"Erro! Arquivo 'memoria.txt' não existe.");
+      Wait(SEC_1);
+    }
+
+  
+  
+}
+

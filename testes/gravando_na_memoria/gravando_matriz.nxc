@@ -1,0 +1,30 @@
+void bib()
+{
+  PlaySound(SOUND_UP);
+  PlaySound(SOUND_DOWN);
+  Wait(SEC_1);
+}
+
+task main()
+{
+  string msg;
+  int str_cont, strT, str_pot;
+  byte handle;
+  int aux;
+  
+    handle = fopen("memoria.txt", "r");
+
+   
+    remove("memoria.txt");
+    handle = fopen("memoria.txt", "w");
+    if (handle != NULL)
+    {
+      fprintf(handle,"1t2t3tn123t234t345tn98t98t98tn");
+      fclose(handle);
+      //bib();
+    }
+
+  NumText(0,LCD_LINE1,"Done!");
+  Wait(SEC_1);
+}
+
