@@ -1,0 +1,215 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__signed_stack_001main	6	1	0	4	10
+1	__D0main	6	1	4	4	24
+2	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	8	4	6
+3	__signed_stack_002main	6	1	12	4	4
+4	__constVal200	4	0	16	2	4
+5	__main_7qG2_tacho_7qG2_000	4	1	18	2	7
+6	__constValNeg1500	4	0	20	2	1
+7	__constVal96	2	0	22	1	4
+8	__constVal63	2	0	23	1	4
+9	__constVal32	2	0	24	1	12
+10	__constValNeg90	2	0	25	1	1
+11	____initialize_global_data_return	1	1	26	1	3
+12	__constVal3	2	0	27	1	4
+13	__constVal8	2	0	28	1	1
+14	__constVal1	2	0	29	1	10
+15	__constVal0	2	1	30	1	14
+16	__TextOutArgs	8	0	4	16	10
+17	__TextOutArgs.Result	2	1	32	1	10
+18	__TextOutArgs.Location	8	0	2	4	10
+19	__TextOutArgs.Location.X	4	1	36	2	10
+20	__TextOutArgs.Location.Y	4	1	38	2	10
+21	__TextOutArgs.Text	7	0	40	4	10
+22	__TextOutArgs.Text.Text_type	1	0	0	1	0
+23	__TextOutArgs.Options	5	1	44	4	10
+24	__PointOutArgs	8	0	3	12	8
+25	__PointOutArgs.Result	2	1	48	1	8
+26	__PointOutArgs.Location	8	0	2	4	8
+27	__PointOutArgs.Location.X	4	1	52	2	8
+28	__PointOutArgs.Location.Y	4	1	54	2	8
+29	__PointOutArgs.Options	5	1	56	4	8
+#SOURCES
+Clump	Line	PC	Source
+0	6	0	#line 6 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	7	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	6	2	#line 6 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	6	2	#line 6 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	7	2		set __main_7qG2_tacho_7qG2_000, 0
+0	6	5	#line 6 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	7	5	#line 7 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	8	5		getout __signed_stack_001main, __constVal1, 4
+0	7	9	#line 7 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	7	9	#line 7 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	8	9		set __D0main, 0
+0	7	12	#line 7 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	8	12		cmp 5, __D0main, __signed_stack_001main, __D0main
+0	8	16	#line 8 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	9	16		brtst 4, __ASM_Label_617, __D0main
+0	8	19	#line 8 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	9	19	#pragma macro 7
+0	9	19		setout __constVal1, 0, __constVal8
+0	6151	24	#line 6151 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	8	24	#line 8 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	10	24	#line 10 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	11	24		jmp __ASM_Label_616
+0	10	26	#line 10 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	10	26	#line 10 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	11	26		set __D0main, 90
+0	10	29	#line 10 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	11	29	#pragma macro 7
+0	11	29		setout __constVal1, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	6160	52	#line 6160 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	10	52	#line 10 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	12	52	#line 12 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	13	52		getout __main_7qG2_tacho_7qG2_000, __constVal1, 4
+0	12	56	#line 12 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	12	56	#line 12 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	13	56	#line 13 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	14	56		set __signed_stack_001main, 0
+0	13	59	#line 13 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	13	59	#line 13 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	14	59		set __signed_stack_002main, 56
+0	13	62	#line 13 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	13	62	#line 13 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	14	62		mov __D0main, __main_7qG2_tacho_7qG2_000
+0	13	64	#line 13 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	13	64	#line 13 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	14	64		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	13	66	#line 13 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	14	66		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	13	68	#line 13 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	14	68		set __TextOutArgs.Options, 0
+0	13	71	#line 13 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	14	71		numtostr __TextOutArgs.Text, __D0main
+0	13	74	#line 13 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	14	74		syscall 13, __TextOutArgs
+0	13	77	#line 13 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	13	77	#line 13 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	13	77	#line 13 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	14	77	#line 14 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	15	77		set __Wait_7qG2_ms_7qG2_000_inline_main, 50
+0	14	80	#line 14 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	8869	80	#line 8869 "NXCDefs.h"
+0	8870	80		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8869	82	#line 8869 "NXCDefs.h"
+0	14	82	#line 14 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	6921	82	#line 6921 "NXCDefs.h"
+0	6922	82	#pragma macro 6
+0	6922	82		mov __PointOutArgs.Location.X, __constVal200
+0	6922	84		mov __PointOutArgs.Location.Y, __constVal200
+0	6922	86		mov __PointOutArgs.Options, __constVal1
+0	6922	88		syscall 14, __PointOutArgs
+0	6216	91	#line 6216 "NXCDefs.h"
+0	6921	91	#line 6921 "NXCDefs.h"
+0	15	91	#line 15 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	16	91	#line 16 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	17	91		mov __signed_stack_001main, __main_7qG2_tacho_7qG2_000
+0	16	93	#line 16 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	16	93	#line 16 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	17	93		set __D0main, 1500
+0	16	96	#line 16 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	17	96		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	16	100	#line 16 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	17	100		brtst 4, __ASM_Label_623, __D0main
+0	16	103	#line 16 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	17	103		jmp __ASM_Label_622
+0	16	105	#line 16 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	16	105	#line 16 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	17	105	#line 17 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	18	105	#pragma macro 7
+0	18	105		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	6239	128	#line 6239 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	17	128	#line 17 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	18	128	#line 18 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	19	128		set __Wait_7qG2_ms_7qG2_000_inline_main, 200
+0	18	131	#line 18 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	8869	131	#line 8869 "NXCDefs.h"
+0	8870	131		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8869	133	#line 8869 "NXCDefs.h"
+0	18	133	#line 18 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	19	133	#line 19 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	20	133		mov __D0main, __constValNeg90
+0	19	135	#line 19 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	20	135	#pragma macro 7
+0	20	135		setout __constVal1, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	6252	158	#line 6252 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	19	158	#line 19 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	21	158	#line 21 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	22	158		getout __main_7qG2_tacho_7qG2_000, __constVal1, 4
+0	21	162	#line 21 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	21	162	#line 21 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	22	162	#line 22 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	23	162		set __signed_stack_001main, 0
+0	22	165	#line 22 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	22	165	#line 22 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	23	165		set __signed_stack_002main, 56
+0	22	168	#line 22 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	22	168	#line 22 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	23	168		mov __D0main, __main_7qG2_tacho_7qG2_000
+0	22	170	#line 22 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	22	170	#line 22 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	23	170		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	22	172	#line 22 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	23	172		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	22	174	#line 22 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	23	174		set __TextOutArgs.Options, 0
+0	22	177	#line 22 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	23	177		numtostr __TextOutArgs.Text, __D0main
+0	22	180	#line 22 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	23	180		syscall 13, __TextOutArgs
+0	22	183	#line 22 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	22	183	#line 22 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	22	183	#line 22 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	23	183	#line 23 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	24	183		set __Wait_7qG2_ms_7qG2_000_inline_main, 50
+0	23	186	#line 23 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	8869	186	#line 8869 "NXCDefs.h"
+0	8870	186		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8869	188	#line 8869 "NXCDefs.h"
+0	23	188	#line 23 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	6921	188	#line 6921 "NXCDefs.h"
+0	6922	188	#pragma macro 6
+0	6922	188		mov __PointOutArgs.Location.X, __constVal200
+0	6922	190		mov __PointOutArgs.Location.Y, __constVal200
+0	6922	192		mov __PointOutArgs.Options, __constVal1
+0	6922	194		syscall 14, __PointOutArgs
+0	6304	197	#line 6304 "NXCDefs.h"
+0	6921	197	#line 6921 "NXCDefs.h"
+0	24	197	#line 24 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	25	197	#line 25 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	26	197		mov __signed_stack_001main, __main_7qG2_tacho_7qG2_000
+0	25	199	#line 25 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	25	199	#line 25 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	26	199		mov __D0main, __constValNeg1500
+0	25	201	#line 25 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	26	201		cmp 1, __D0main, __signed_stack_001main, __D0main
+0	25	205	#line 25 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	26	205		brtst 4, __ASM_Label_641, __D0main
+0	25	208	#line 25 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	26	208		jmp __ASM_Label_640
+0	25	210	#line 25 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	25	210	#line 25 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	26	210	#line 26 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	27	210	#pragma macro 7
+0	27	210		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	6327	233	#line 6327 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	26	233	#line 26 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	29	233	#line 29 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	30	233		set __D0main, 1
+0	29	236	#line 29 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	30	236		tst 5, __D0main, __D0main
+0	29	239	#line 29 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	30	239		brtst 4, __ASM_Label_655, __D0main
+0	29	242	#line 29 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	29	242	#line 29 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	30	242		jmp __ASM_Label_654
+0	29	244	#line 29 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+0	30	244		exit -1, -1
+1	33	0	#line 33 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc"
+1	34	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc
+1	__initialize_global_data	247	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\executivo\RodaComADireita.nxc

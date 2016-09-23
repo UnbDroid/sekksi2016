@@ -426,8 +426,8 @@ void PrintaSensores(){
 
 void teste2(){
      InicializaSensores();
-     //bonecoAlvo = RecebeBoneco();   
-/*     
+     bonecoAlvo = RecebeBoneco();
+
      if(bonecoAlvo == BONECO_BRANCO){
           PlaySound(SOUND_UP);
           PlaySound(SOUND_DOWN);
@@ -437,13 +437,13 @@ void teste2(){
           Wait(MS_500);
           PlaySound(SOUND_FAST_UP);
      }
-*/
+/*
     do{
      //EnviaUSFrente(); 
      EnviaUSFrente2();
      PrintaSensores();
      //EnviaGarra();
-    }while(1);
+    }while(1);*/
 }
 
 task main()

@@ -36,8 +36,6 @@
      // Defines de motores
      #define MOTOR_GARRA OUT_A
 
-    //potencias
-    #define POTENCIA_MAXIMA_GARRA 80
 
     //Tempos
     //#define TEMPO_ATE_A_GARRA_TRAVAR 2000
@@ -83,10 +81,21 @@
   #define COR_PRETA 12 //12 ou 17, 12 eh mais certo
   #define COR_NEUTRA 13//BRANCO fica acima de 13
 
-//
-#define NAO_ALIEN 0
-#define SIM_ALIEN 1
+  #define NAO_ALIEN 0
+  #define SIM_ALIEN 1
 
+//Garra
+  //potencias
+  #define POTENCIA_MAXIMA_GARRA -70
+  #define POTENCIA_MED_GARRA -40
+
+  //Tempos
+  #define TEMPO_DEPOIS_DE_JOGAR_DENTRO 200
+
+  //Defines angulos da garra
+  #define ANGULO_1 -77
+
+  #define VETOR_CALIBRACAO 0// MUDA ISSO AQUI LUAN
 
 //declaração das variáveis globais
 int bonecoAlvo;
@@ -104,12 +113,19 @@ int RecebeBoneco();
 void BonecoAlvo();
 void BipBranco();
 void BipPreto();
+void Pega();
+int CorBoneco();
+int filterRGB(int s);
 
 //implementando
 void MandaPara();
 void Rejeitar();
 void MandaContinuar();
 
+void FechaDeLeves();
+void VoltaAoNormal();
+
+void consultor();
 
 //função principal
 task main(){
@@ -172,9 +188,11 @@ void consultor(){
         if(returnUS()){
             SendRemoteNumber(CONEXAO, OUTBOX, SIM_US);
             //TextOut(0, LCD_LINE2, "Mandei ultrassom carai");
-        }else if(TemBoneco())
+       // }else if(TemBoneco())
+        }else if(filterRGB(RGB_DIR) && filterRGB(RGB_ESQ));
         {
             MandaPara();//implementar uma função que manda o executivo para e esperar a confirmação que ele parou
+            FechaDeLeves();
             if(PegaBoneco())
             {
                 cor = CorBoneco();
@@ -203,6 +221,8 @@ int TemBoneco(){
    rgb_dir = lerSensor(RGB_DIR);
    rgb_esq = lerSensor(RGB_ESQ);
    
+
+
    NumOut(0, LCD_LINE2, rgb_dir);
    NumOut(0, LCD_LINE3, rgb_esq);
    
@@ -281,15 +301,18 @@ void VoltaGarra(void)
 }
 
 
+
 int RecebeBoneco(){
      int sinInicial = 0;
      do{  
-          ReceiveRemoteNumber(INBOX, 0, sinInicial);
+          ReceiveRemoteNumber(INBOX, true, sinInicial);
+          NumOut(0, LCD_LINE1, sinInicial);
+          TextOut(0, LCD_LINE2, "SINAL INICIAL");
           Wait(30);    
+          ClearScreen();
      }while(sinInicial == 0);
      SendRemoteNumber(CONEXAO, OUTBOX, SIM);
-     Wait(30);
-     
+     Wait(50);
      if(sinInicial == BONECO_PRETO)
           return BONECO_PRETO;
      else if(sinInicial == BONECO_BRANCO)
@@ -330,7 +353,7 @@ void Rejeitar(){ //TESTAR
     Wait(30);
   }while(passei != VIROU);
   
-  VoltaGarra();
+  VoltaAoNormal();
 
   do{
     SendRemoteNumber(CONEXAO, OUTBOX, DESVIROU);
@@ -347,4 +370,76 @@ void MandaContinuar(){//TESTAR
     ReceiveRemoteNumber(INBOX, 0, passei);
     Wait(30);
   }while(passei != CONTINUA);
+}
+
+void Pega(){
+    while(MotorTachoCount(MOTOR_GARRA) != 0){
+        ResetTachoCount(MOTOR_GARRA);
+    }
+    OnFwd(MOTOR_GARRA,POTENCIA_MAXIMA_GARRA);
+    while(MotorTachoCount(MOTOR_GARRA)>(ANGULO_1));
+    Off(MOTOR_GARRA);
+    Wait(TEMPO_DEPOIS_DE_JOGAR_DENTRO);
+}
+
+void FechaDeLeves(){
+    int tc,tc1;
+
+    OnFwd(MOTOR_GARRA,POTENCIA_MED_GARRA);
+    tc = MotorTachoCount(MOTOR_GARRA);
+    do{
+        Wait(50);
+        tc1 = tc;
+        tc = MotorTachoCount(MOTOR_GARRA);
+
+    }while(tc1!=tc)
+    Off(MOTOR_GARRA);
+}
+
+void VoltaAoNormal(){
+     int tc,tc1;
+    while(MotorTachoCount(MOTOR_GARRA) != 0){
+        ResetTachoCount(MOTOR_GARRA);
+    }
+    Wait(TEMPO_DEPOIS_DE_JOGAR_DENTRO);
+    OnRev(MOTOR_GARRA,POTENCIA_MED_GARRA);
+    tc = MotorTachoCount(MOTOR_GARRA);
+    do{
+        Wait(50);
+        tc1 = tc;
+        tc = MotorTachoCount(MOTOR_GARRA);
+
+    }while(tc1!=tc)
+
+}
+
+int filterRGB(int s){//Ve se tem boneco
+   /*passar o sensor como parametro (s = X-1 (de INT_X))*/
+    float media = 0, alfa = 0.01 ;
+    int leitura;
+    unsigned int x;
+    leitura = SensorRaw(s);
+    media = leitura ;
+    //condiçao de loop de 2segundos para pegar leituras e filtrar elas
+    while( (x=CurrentTick())<(x+2)){
+        leitura = SensorRaw(s);
+        media = ((1-alfa)*media) + (alfa*leitura) ;
+        //NumOut(0, LCD_LINE1, media);
+        //Wait(10);
+        //ClearScreen();
+    }
+    if (s == 0){
+      if (media > COR_BASE_DIR_MAX && media < COR_BASE_DIR_MIN){
+        return 0;
+      }else{
+        return 1; 
+      }   
+    }else if(s == 1){
+      if (media > COR_BASE_ESQ_MAX && media < COR_BASE_ESQ_MIN){
+        return 0;
+      }else{
+        return 1; 
+      }   
+    }
+
 }

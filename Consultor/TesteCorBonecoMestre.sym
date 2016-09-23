@@ -1,0 +1,695 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__RRNTmpVal	6	1	0	4	4
+1	__RLSBmutex3	9	0	4	4	2
+2	__SRSTmpLongVal	6	1	8	4	4
+3	__Wait_7qG2_ms_7qG2_000_inline_RetornaBoneco	5	1	12	4	4
+4	__CLSRMutex3	9	0	16	4	2
+5	__CLSWMutex3	9	0	20	4	2
+6	__RLSBmutex2	9	0	24	4	2
+7	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	28	4	2
+8	__signed_stack_001IniciaCorDoChao	6	1	32	4	8
+9	__DU0SetSensorLowspeed_inline_inicializaSensores	5	1	36	4	20
+10	__signed_stack_002RetornaBoneco	6	1	40	4	2
+11	__signed_stack_001RetornaBoneco	6	1	44	4	8
+12	__D0main	6	1	48	4	4
+13	__D0IniciaCorDoChao	6	1	52	4	21
+14	__D0SetSensorLowspeed_inline_inicializaSensores	6	1	56	4	8
+15	__D0RetornaBoneco	6	1	60	4	18
+16	__CLSWMutex2	9	0	64	4	2
+17	__CLSRMutex2	9	0	68	4	2
+18	__CLSCSMutex2	9	0	72	4	2
+19	__CLSCSMutex3	9	0	76	4	2
+20	__IniciaCorDoChao_7qG2_corEsq_7qG2_000	4	1	80	2	4
+21	corEsq	4	0	82	2	1
+22	corDir	4	0	84	2	1
+23	__constVal200	4	0	86	2	2
+24	__RetornaBoneco_7qG2_passei_7qG2_000	4	1	88	2	4
+25	__RetornaBoneco_7qG2_cor_7qG2_000	4	1	90	2	4
+26	__IniciaCorDoChao_7qG2_corDir_7qG2_000	4	1	92	2	3
+27	__constVal5	2	0	94	1	2
+28	__ResetSensorPort	1	1	95	1	6
+29	__WFRRTmpByte	1	1	96	1	4
+30	__RetornaBoneco_return	1	1	97	1	4
+31	__ResetSensorTmp	1	1	98	1	2
+32	____ResetSensorSubroutine_return	1	1	99	1	6
+33	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	100	1	8
+34	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	101	1	8
+35	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores	1	1	102	1	8
+36	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	103	1	4
+37	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	104	1	8
+38	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	105	1	8
+39	__constVal0	2	1	106	1	2
+40	__constVal3	2	0	107	1	4
+41	__constVal4	2	0	108	1	5
+42	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	109	1	20
+43	__inicializaSensores_return	1	1	110	1	3
+44	__constVal1	2	0	111	1	16
+45	__RLSBIterations2	1	1	112	1	4
+46	__RLSBytesCount2	1	1	113	1	7
+47	____ReadLSBytes3_return	1	1	114	1	3
+48	__constVal2	2	0	115	1	6
+49	__RLSBResult2	2	1	116	1	7
+50	____initialize_global_data_return	1	1	117	1	3
+51	__LSWriteOptionsVar	1	1	118	1	4
+52	__IniciaCorDoChao_return	1	1	119	1	3
+53	____ReadLSBytes2_return	1	1	120	1	3
+54	__RLSBResult3	2	1	121	1	7
+55	__constVal12	2	0	122	1	1
+56	__RRNErr	1	1	123	1	1
+57	__RLSBytesCount3	1	1	124	1	7
+58	__RLSBIterations3	1	1	125	1	4
+59	__CBTWArgs	8	0	3	8	8
+60	__CBTWArgs.Result	2	1	128	1	8
+61	__CBTWArgs.Connection	1	1	129	1	8
+62	__CBTWArgs.Buffer	7	0	130	4	8
+63	__CBTWArgs.Buffer.Buffer_type	1	0	0	1	0
+64	__TextOutArgs	8	0	4	16	5
+65	__TextOutArgs.Result	2	1	132	1	5
+66	__TextOutArgs.Location	8	0	2	4	5
+67	__TextOutArgs.Location.X	4	1	136	2	5
+68	__TextOutArgs.Location.Y	4	1	138	2	5
+69	__TextOutArgs.Text	7	0	140	4	5
+70	__TextOutArgs.Text.Text_type	1	0	0	1	0
+71	__TextOutArgs.Options	5	1	144	4	5
+72	__CLSWArgs3	8	0	4	12	5
+73	__CLSWArgs3.Result	2	1	148	1	5
+74	__CLSWArgs3.Port	1	1	149	1	5
+75	__CLSWArgs3.Buffer	7	0	150	4	5
+76	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
+77	__CLSWArgs3.ReturnLen	1	1	152	1	5
+78	__CLSRArgs3	8	0	4	12	5
+79	__CLSRArgs3.Result	2	1	156	1	5
+80	__CLSRArgs3.Port	1	1	157	1	5
+81	__CLSRArgs3.Buffer	7	0	158	4	5
+82	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
+83	__CLSRArgs3.BufferLen	1	1	160	1	5
+84	__CLSCSArgs3	8	0	3	4	4
+85	__CLSCSArgs3.Result	2	1	164	1	4
+86	__CLSCSArgs3.Port	1	1	165	1	4
+87	__CLSCSArgs3.BytesReady	1	1	166	1	4
+88	__PointOutArgs	8	0	3	12	4
+89	__PointOutArgs.Result	2	1	168	1	4
+90	__PointOutArgs.Location	8	0	2	4	4
+91	__PointOutArgs.Location.X	4	1	172	2	4
+92	__PointOutArgs.Location.Y	4	1	174	2	4
+93	__PointOutArgs.Options	5	1	176	4	4
+94	__CHSWArgs	8	0	3	12	6
+95	__CHSWArgs.Status	2	1	180	1	6
+96	__CHSWArgs.Buffer	7	0	182	4	6
+97	__CHSWArgs.Buffer.Buffer_type	1	0	0	1	0
+98	__CHSWArgs.BufferLen	1	1	184	1	6
+99	__MRArgs	8	0	4	8	4
+100	__MRArgs.Result	2	1	188	1	4
+101	__MRArgs.QueueID	1	1	189	1	4
+102	__MRArgs.Remove	1	1	190	1	4
+103	__MRArgs.Message	7	0	192	4	4
+104	__MRArgs.Message.Message_type	1	0	0	1	0
+105	__CLSWArgs2	8	0	4	12	5
+106	__CLSWArgs2.Result	2	1	196	1	5
+107	__CLSWArgs2.Port	1	1	197	1	5
+108	__CLSWArgs2.Buffer	7	0	198	4	5
+109	__CLSWArgs2.Buffer.Buffer_type	1	0	0	1	0
+110	__CLSWArgs2.ReturnLen	1	1	200	1	5
+111	__CLSCSArgs2	8	0	3	4	4
+112	__CLSCSArgs2.Result	2	1	204	1	4
+113	__CLSCSArgs2.Port	1	1	205	1	4
+114	__CLSCSArgs2.BytesReady	1	1	206	1	4
+115	__CLSRArgs2	8	0	4	12	5
+116	__CLSRArgs2.Result	2	1	208	1	5
+117	__CLSRArgs2.Port	1	1	209	1	5
+118	__CLSRArgs2.Buffer	7	0	210	4	5
+119	__CLSRArgs2.Buffer.Buffer_type	1	0	0	1	0
+120	__CLSRArgs2.BufferLen	1	1	212	1	5
+121	__RLSReadBuf2	7	0	214	4	8
+122	__RLSReadBuf2.__RLSReadBuf2_type	1	0	0	1	0
+123	__RLSLastGoodRead3	7	0	216	4	2
+124	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
+125	__RLSLastGoodRead2	7	0	218	4	2
+126	__RLSLastGoodRead2.__RLSLastGoodRead2_type	1	0	0	1	0
+127	__LSWriteOptions	7	0	220	4	2
+128	__LSWriteOptions.__LSWriteOptions_type	1	0	0	1	0
+129	__RLSBbufLSWrite1	7	0	222	4	2
+130	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+131	__SRSFlattenBuf	7	0	224	4	4
+132	__SRSFlattenBuf.__SRSFlattenBuf_type	1	0	0	1	0
+133	__DCMessageWritePacket	7	0	226	4	2
+134	__DCMessageWritePacket.__DCMessageWritePacket_type	1	0	0	1	0
+135	__SRSSendBuf	7	0	228	4	6
+136	__SRSSendBuf.__SRSSendBuf_type	1	0	0	1	0
+137	__RLSReadBuf3	7	0	230	4	8
+138	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
+139	__SRSTmpBuf	7	0	232	4	12
+140	__SRSTmpBuf.__SRSTmpBuf_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	113	0	#line 113 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+0	114	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	113	2	#line 113 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+0	113	2	#line 113 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+0	114	2		subcall inicializaSensores, __inicializaSensores_return
+0	113	4	#line 113 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+0	114	4	#line 114 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+0	115	4		set __D0main, 1
+0	115	7	#line 115 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+0	116	7		tst 5, __D0main, __D0main
+0	115	10	#line 115 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+0	116	10		brtst 4, __ASM_Label_671, __D0main
+0	115	13	#line 115 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+0	116	13		mov __IniciaCorDoChao_7qG2_corEsq_7qG2_000, corEsq
+0	115	15	#line 115 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+0	115	15	#line 115 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+0	116	15		mov __IniciaCorDoChao_7qG2_corDir_7qG2_000, corDir
+0	115	17	#line 115 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+0	115	17	#line 115 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+0	116	17		subcall IniciaCorDoChao, __IniciaCorDoChao_return
+0	115	19	#line 115 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+0	116	19	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+0	117	19		set __Wait_7qG2_ms_7qG2_000_inline_main, 100
+0	116	22	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+0	8869	22	#line 8869 "NXCDefs.h"
+0	8870	22		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8869	24	#line 8869 "NXCDefs.h"
+0	116	24	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+0	121	24	#line 121 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+0	122	24		jmp __ASM_Label_670
+0	121	26	#line 121 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+0	122	26		exit -1, -1
+1	5724	0		setin __constVal1, __ResetSensorPort, 5
+1	5726	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5727	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5728	11		subret ____ResetSensorSubroutine_return
+2	6595	0	#pragma macro 27
+2	6595	0		acquire __CLSWMutex2
+2	6595	1		index __LSWriteOptionsVar, __LSWriteOptions, __constVal2
+2	6595	5		or __CLSWArgs2.Port, __constVal2, __LSWriteOptionsVar
+2	6595	9		mov __CLSWArgs2.ReturnLen, __RLSBytesCount2
+2	6595	11		mov __CLSWArgs2.Buffer, __RLSReadBuf2
+2	6595	13		syscall 21, __CLSWArgs2
+2	6595	16		mov __RLSBResult2, __CLSWArgs2.Result
+2	6595	18		release __CLSWMutex2
+2	6595	19	#line 6595 "NXTDefs.h"
+2	6596	19		brtst 5, __RLSBError2, __RLSBResult2
+2	6597	22		set __RLSBIterations2, 60
+2	6599	25	#pragma macro 23
+2	6599	25		acquire __CLSCSMutex2
+2	6599	26		set __CLSCSArgs2.Port, 2
+2	6599	29		syscall 23, __CLSCSArgs2
+2	6599	32		mov __RLSBytesCount2, __CLSCSArgs2.BytesReady
+2	6599	34		mov __RLSBResult2, __CLSCSArgs2.Result
+2	6599	36		release __CLSCSMutex2
+2	6599	37	#line 6599 "NXTDefs.h"
+2	6600	37		sub __RLSBIterations2, __RLSBIterations2, __constVal1
+2	6601	41		brtst 2, __RLSBError2, __RLSBIterations2
+2	6602	44		brtst 0, __RLSBError2, __RLSBResult2
+2	6603	47		brtst 4, __RLSBReadyToRead2, __RLSBResult2
+2	6605	50		wait 1
+2	6606	52		jmp __RLSBDoCheckStatus2
+2	6608	54		brtst 4, __RLSBReturn2, __RLSBytesCount2
+2	6609	57		arrinit __RLSReadBuf2, __constVal0, __RLSBytesCount2
+2	6611	61	#pragma macro 25
+2	6611	61		acquire __CLSRMutex2
+2	6611	62		set __CLSRArgs2.Port, 2
+2	6611	65		mov __CLSRArgs2.BufferLen, __RLSBytesCount2
+2	6611	67		syscall 22, __CLSRArgs2
+2	6611	70		mov __RLSReadBuf2, __CLSRArgs2.Buffer
+2	6611	72		mov __RLSBResult2, __CLSRArgs2.Result
+2	6611	74		release __CLSRMutex2
+2	6611	75	#line 6611 "NXTDefs.h"
+2	6612	75		brtst 5, __RLSBError2, __RLSBResult2
+2	6613	78		mov __RLSLastGoodRead2, __RLSReadBuf2
+2	6614	80		jmp __RLSBDone2
+2	6616	82		mov __RLSReadBuf2, __RLSLastGoodRead2
+2	6618	84		arrsize __RLSBytesCount2, __RLSReadBuf2
+2	6620	87		subret ____ReadLSBytes2_return
+3	6632	0	#pragma macro 27
+3	6632	0		acquire __CLSWMutex3
+3	6632	1		index __LSWriteOptionsVar, __LSWriteOptions, __constVal3
+3	6632	5		or __CLSWArgs3.Port, __constVal3, __LSWriteOptionsVar
+3	6632	9		mov __CLSWArgs3.ReturnLen, __RLSBytesCount3
+3	6632	11		mov __CLSWArgs3.Buffer, __RLSReadBuf3
+3	6632	13		syscall 21, __CLSWArgs3
+3	6632	16		mov __RLSBResult3, __CLSWArgs3.Result
+3	6632	18		release __CLSWMutex3
+3	6632	19	#line 6632 "NXTDefs.h"
+3	6633	19		brtst 5, __RLSBError3, __RLSBResult3
+3	6634	22		set __RLSBIterations3, 60
+3	6636	25	#pragma macro 23
+3	6636	25		acquire __CLSCSMutex3
+3	6636	26		set __CLSCSArgs3.Port, 3
+3	6636	29		syscall 23, __CLSCSArgs3
+3	6636	32		mov __RLSBytesCount3, __CLSCSArgs3.BytesReady
+3	6636	34		mov __RLSBResult3, __CLSCSArgs3.Result
+3	6636	36		release __CLSCSMutex3
+3	6636	37	#line 6636 "NXTDefs.h"
+3	6637	37		sub __RLSBIterations3, __RLSBIterations3, __constVal1
+3	6638	41		brtst 2, __RLSBError3, __RLSBIterations3
+3	6639	44		brtst 0, __RLSBError3, __RLSBResult3
+3	6640	47		brtst 4, __RLSBReadyToRead3, __RLSBResult3
+3	6642	50		wait 1
+3	6643	52		jmp __RLSBDoCheckStatus3
+3	6645	54		brtst 4, __RLSBReturn3, __RLSBytesCount3
+3	6646	57		arrinit __RLSReadBuf3, __constVal0, __RLSBytesCount3
+3	6648	61	#pragma macro 25
+3	6648	61		acquire __CLSRMutex3
+3	6648	62		set __CLSRArgs3.Port, 3
+3	6648	65		mov __CLSRArgs3.BufferLen, __RLSBytesCount3
+3	6648	67		syscall 22, __CLSRArgs3
+3	6648	70		mov __RLSReadBuf3, __CLSRArgs3.Buffer
+3	6648	72		mov __RLSBResult3, __CLSRArgs3.Result
+3	6648	74		release __CLSRMutex3
+3	6648	75	#line 6648 "NXTDefs.h"
+3	6649	75		brtst 5, __RLSBError3, __RLSBResult3
+3	6650	78		mov __RLSLastGoodRead3, __RLSReadBuf3
+3	6651	80		jmp __RLSBDone3
+3	6653	82		mov __RLSReadBuf3, __RLSLastGoodRead3
+3	6655	84		arrsize __RLSBytesCount3, __RLSReadBuf3
+3	6657	87		subret ____ReadLSBytes3_return
+4	73	0	#line 73 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+4	74	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 0
+4	73	3	#line 73 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+4	73	3	#line 73 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+4	74	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+4	4523	5	#line 4523 "NXCDefs.h"
+4	4524	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4523	7	#line 4523 "NXCDefs.h"
+4	4523	7	#line 4523 "NXCDefs.h"
+4	4524	7		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+4	4523	9	#line 4523 "NXCDefs.h"
+4	4524	9		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4523	12	#line 4523 "NXCDefs.h"
+4	4524	12		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+4	4523	15	#line 4523 "NXCDefs.h"
+4	4524	15		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+4	4523	18	#line 4523 "NXCDefs.h"
+4	4523	18	#line 4523 "NXCDefs.h"
+4	4524	18		jmp __004__ASM_Label_37
+4	4523	20	#line 4523 "NXCDefs.h"
+4	4524	20		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+4	4523	23	#line 4523 "NXCDefs.h"
+4	4523	23	#line 4523 "NXCDefs.h"
+4	4524	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4428	25	#line 4428 "NXCDefs.h"
+4	4429	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4428	29	#line 4428 "NXCDefs.h"
+4	4523	29	#line 4523 "NXCDefs.h"
+4	4524	29	#line 4524 "NXCDefs.h"
+4	4525	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4524	31	#line 4524 "NXCDefs.h"
+4	4524	31	#line 4524 "NXCDefs.h"
+4	4525	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4524	34	#line 4524 "NXCDefs.h"
+4	4441	34	#line 4441 "NXCDefs.h"
+4	4442	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+4	4441	38	#line 4441 "NXCDefs.h"
+4	4524	38	#line 4524 "NXCDefs.h"
+4	4525	38	#line 4525 "NXCDefs.h"
+4	4526	38		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4525	40	#line 4525 "NXCDefs.h"
+4	4459	40	#line 4459 "NXCDefs.h"
+4	4460	40	#pragma macro 4
+4	4460	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4460	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+4	6624	44	#line 6624 "NXCDefs.h"
+4	4459	44	#line 4459 "NXCDefs.h"
+4	4525	44	#line 4525 "NXCDefs.h"
+4	73	44	#line 73 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+4	74	44	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+4	75	44		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 1
+4	74	47	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+4	74	47	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+4	75	47		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+4	4523	49	#line 4523 "NXCDefs.h"
+4	4524	49		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4523	51	#line 4523 "NXCDefs.h"
+4	4523	51	#line 4523 "NXCDefs.h"
+4	4524	51		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+4	4523	53	#line 4523 "NXCDefs.h"
+4	4524	53		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4523	56	#line 4523 "NXCDefs.h"
+4	4524	56		brtst 4, __005__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+4	4523	59	#line 4523 "NXCDefs.h"
+4	4524	59		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+4	4523	62	#line 4523 "NXCDefs.h"
+4	4523	62	#line 4523 "NXCDefs.h"
+4	4524	62		jmp __005__ASM_Label_37
+4	4523	64	#line 4523 "NXCDefs.h"
+4	4524	64		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+4	4523	67	#line 4523 "NXCDefs.h"
+4	4523	67	#line 4523 "NXCDefs.h"
+4	4524	67		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4428	69	#line 4428 "NXCDefs.h"
+4	4429	69		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4428	73	#line 4428 "NXCDefs.h"
+4	4523	73	#line 4523 "NXCDefs.h"
+4	4524	73	#line 4524 "NXCDefs.h"
+4	4525	73		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4524	75	#line 4524 "NXCDefs.h"
+4	4524	75	#line 4524 "NXCDefs.h"
+4	4525	75		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4524	78	#line 4524 "NXCDefs.h"
+4	4441	78	#line 4441 "NXCDefs.h"
+4	4442	78		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+4	4441	82	#line 4441 "NXCDefs.h"
+4	4524	82	#line 4524 "NXCDefs.h"
+4	4525	82	#line 4525 "NXCDefs.h"
+4	4526	82		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4525	84	#line 4525 "NXCDefs.h"
+4	4459	84	#line 4459 "NXCDefs.h"
+4	4460	84	#pragma macro 4
+4	4460	84		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4460	86		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+4	6687	88	#line 6687 "NXCDefs.h"
+4	4459	88	#line 4459 "NXCDefs.h"
+4	4525	88	#line 4525 "NXCDefs.h"
+4	74	88	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+4	75	88	#line 75 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+4	76	88		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 2
+4	75	91	#line 75 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+4	75	91	#line 75 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+4	76	91		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+4	4523	93	#line 4523 "NXCDefs.h"
+4	4524	93		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4523	95	#line 4523 "NXCDefs.h"
+4	4523	95	#line 4523 "NXCDefs.h"
+4	4524	95		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+4	4523	97	#line 4523 "NXCDefs.h"
+4	4524	97		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4523	100	#line 4523 "NXCDefs.h"
+4	4524	100		brtst 4, __006__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+4	4523	103	#line 4523 "NXCDefs.h"
+4	4524	103		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+4	4523	106	#line 4523 "NXCDefs.h"
+4	4523	106	#line 4523 "NXCDefs.h"
+4	4524	106		jmp __006__ASM_Label_37
+4	4523	108	#line 4523 "NXCDefs.h"
+4	4524	108		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+4	4523	111	#line 4523 "NXCDefs.h"
+4	4523	111	#line 4523 "NXCDefs.h"
+4	4524	111		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4428	113	#line 4428 "NXCDefs.h"
+4	4429	113		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4428	117	#line 4428 "NXCDefs.h"
+4	4523	117	#line 4523 "NXCDefs.h"
+4	4524	117	#line 4524 "NXCDefs.h"
+4	4525	117		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4524	119	#line 4524 "NXCDefs.h"
+4	4524	119	#line 4524 "NXCDefs.h"
+4	4525	119		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4524	122	#line 4524 "NXCDefs.h"
+4	4441	122	#line 4441 "NXCDefs.h"
+4	4442	122		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+4	4441	126	#line 4441 "NXCDefs.h"
+4	4524	126	#line 4524 "NXCDefs.h"
+4	4525	126	#line 4525 "NXCDefs.h"
+4	4526	126		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4525	128	#line 4525 "NXCDefs.h"
+4	4459	128	#line 4459 "NXCDefs.h"
+4	4460	128	#pragma macro 4
+4	4460	128		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4460	130		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+4	6750	132	#line 6750 "NXCDefs.h"
+4	4459	132	#line 4459 "NXCDefs.h"
+4	4525	132	#line 4525 "NXCDefs.h"
+4	75	132	#line 75 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+4	76	132	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+4	77	132		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 3
+4	76	135	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+4	76	135	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+4	77	135		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+4	4523	137	#line 4523 "NXCDefs.h"
+4	4524	137		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4523	139	#line 4523 "NXCDefs.h"
+4	4523	139	#line 4523 "NXCDefs.h"
+4	4524	139		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+4	4523	141	#line 4523 "NXCDefs.h"
+4	4524	141		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4523	144	#line 4523 "NXCDefs.h"
+4	4524	144		brtst 4, __007__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+4	4523	147	#line 4523 "NXCDefs.h"
+4	4524	147		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+4	4523	150	#line 4523 "NXCDefs.h"
+4	4523	150	#line 4523 "NXCDefs.h"
+4	4524	150		jmp __007__ASM_Label_37
+4	4523	152	#line 4523 "NXCDefs.h"
+4	4524	152		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+4	4523	155	#line 4523 "NXCDefs.h"
+4	4523	155	#line 4523 "NXCDefs.h"
+4	4524	155		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4428	157	#line 4428 "NXCDefs.h"
+4	4429	157		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4428	161	#line 4428 "NXCDefs.h"
+4	4523	161	#line 4523 "NXCDefs.h"
+4	4524	161	#line 4524 "NXCDefs.h"
+4	4525	161		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4524	163	#line 4524 "NXCDefs.h"
+4	4524	163	#line 4524 "NXCDefs.h"
+4	4525	163		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4524	166	#line 4524 "NXCDefs.h"
+4	4441	166	#line 4441 "NXCDefs.h"
+4	4442	166		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+4	4441	170	#line 4441 "NXCDefs.h"
+4	4524	170	#line 4524 "NXCDefs.h"
+4	4525	170	#line 4525 "NXCDefs.h"
+4	4526	170		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4525	172	#line 4525 "NXCDefs.h"
+4	4459	172	#line 4459 "NXCDefs.h"
+4	4460	172	#pragma macro 4
+4	4460	172		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4460	174		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+4	6813	176	#line 6813 "NXCDefs.h"
+4	4459	176	#line 4459 "NXCDefs.h"
+4	4525	176	#line 4525 "NXCDefs.h"
+4	76	176	#line 76 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+4	79	176	#line 79 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+4	80	176		subret __inicializaSensores_return
+5	80	0	#line 80 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	81	0		set __RetornaBoneco_7qG2_passei_7qG2_000, 0
+5	80	3	#line 80 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	84	3	#line 84 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	85	3		mov __signed_stack_001RetornaBoneco, __RetornaBoneco_7qG2_cor_7qG2_000
+5	84	5	#line 84 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	84	5	#line 84 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	85	5		set __D0RetornaBoneco, 3
+5	84	8	#line 84 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	85	8		cmp 4, __D0RetornaBoneco, __signed_stack_001RetornaBoneco, __D0RetornaBoneco
+5	85	12	#line 85 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	86	12		brtst 4, __ASM_Label_628, __D0RetornaBoneco
+5	85	15	#line 85 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	86	15	#pragma macro 25
+5	86	15		mov __SRSTmpBuf, __DCMessageWritePacket
+5	86	17		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
+5	86	22		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+5	86	27		mov __SRSTmpLongVal, __constVal4
+5	86	29		flatten __SRSFlattenBuf, __SRSTmpLongVal
+5	86	32		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+5	86	37		brcmp 0, __ConnWrite_Else0, __constVal1, __constVal4
+5	86	41		sub __WFRRTmpByte, __constVal1, __constVal4
+5	86	45		arrbuild __CHSWArgs.Buffer, __WFRRTmpByte, __SRSSendBuf
+5	86	50		syscall 37, __CHSWArgs
+5	86	53		mov __D0RetornaBoneco, __CHSWArgs.Status
+5	86	55		jmp __ConnWrite_EndIf0
+5	86	57		mov __CBTWArgs.Connection, __constVal1
+5	86	59		mov __CBTWArgs.Buffer, __SRSSendBuf
+5	86	61		syscall 29, __CBTWArgs
+5	86	64		mov __D0RetornaBoneco, __CBTWArgs.Result
+5	6850	66	#line 6850 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	85	66	#line 85 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	85	66	#line 85 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	86	66	#line 86 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	87	66		set __Wait_7qG2_ms_7qG2_000_inline_RetornaBoneco, 30
+5	86	69	#line 86 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	8869	69	#line 8869 "NXCDefs.h"
+5	8870	69		waitv __Wait_7qG2_ms_7qG2_000_inline_RetornaBoneco
+5	8869	71	#line 8869 "NXCDefs.h"
+5	86	71	#line 86 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	87	71	#line 87 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	88	71		jmp __ASM_Label_631
+5	87	73	#line 87 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	88	73		mov __signed_stack_001RetornaBoneco, __RetornaBoneco_7qG2_cor_7qG2_000
+5	87	75	#line 87 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	87	75	#line 87 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	88	75		set __D0RetornaBoneco, 5
+5	87	78	#line 87 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	88	78		cmp 4, __D0RetornaBoneco, __signed_stack_001RetornaBoneco, __D0RetornaBoneco
+5	88	82	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	89	82		brtst 4, __ASM_Label_634, __D0RetornaBoneco
+5	88	85	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	89	85	#pragma macro 25
+5	89	85		mov __SRSTmpBuf, __DCMessageWritePacket
+5	89	87		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
+5	89	92		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+5	89	97		mov __SRSTmpLongVal, __constVal12
+5	89	99		flatten __SRSFlattenBuf, __SRSTmpLongVal
+5	89	102		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+5	89	107		brcmp 0, __ConnWrite_Else1, __constVal1, __constVal4
+5	89	111		sub __WFRRTmpByte, __constVal1, __constVal4
+5	89	115		arrbuild __CHSWArgs.Buffer, __WFRRTmpByte, __SRSSendBuf
+5	89	120		syscall 37, __CHSWArgs
+5	89	123		mov __D0RetornaBoneco, __CHSWArgs.Status
+5	89	125		jmp __ConnWrite_EndIf1
+5	89	127		mov __CBTWArgs.Connection, __constVal1
+5	89	129		mov __CBTWArgs.Buffer, __SRSSendBuf
+5	89	131		syscall 29, __CBTWArgs
+5	89	134		mov __D0RetornaBoneco, __CBTWArgs.Result
+5	6883	136	#line 6883 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	88	136	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	88	136	#line 88 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	89	136	#line 89 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	90	136		set __Wait_7qG2_ms_7qG2_000_inline_RetornaBoneco, 30
+5	89	139	#line 89 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	8869	139	#line 8869 "NXCDefs.h"
+5	8870	139		waitv __Wait_7qG2_ms_7qG2_000_inline_RetornaBoneco
+5	8869	141	#line 8869 "NXCDefs.h"
+5	89	141	#line 89 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	91	141	#line 91 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	91	141	#line 91 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	6921	141	#line 6921 "NXCDefs.h"
+5	6922	141	#pragma macro 6
+5	6922	141		mov __PointOutArgs.Location.X, __constVal200
+5	6922	143		mov __PointOutArgs.Location.Y, __constVal200
+5	6922	145		mov __PointOutArgs.Options, __constVal1
+5	6922	147		syscall 14, __PointOutArgs
+5	6899	150	#line 6899 "NXCDefs.h"
+5	6921	150	#line 6921 "NXCDefs.h"
+5	91	150	#line 91 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	92	150	#line 92 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	93	150	#pragma macro 9
+5	93	150		mov __MRArgs.QueueID, __constVal1
+5	93	152		mov __MRArgs.Remove, __constVal1
+5	93	154		set __RRNTmpVal, 0
+5	93	157		syscall 27, __MRArgs
+5	93	160		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+5	93	165		mov __RetornaBoneco_7qG2_passei_7qG2_000, __RRNTmpVal
+5	6903	167	#line 6903 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	92	167	#line 92 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	92	167	#line 92 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	93	167	#line 93 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	94	167		set __signed_stack_001RetornaBoneco, 0
+5	93	170	#line 93 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	93	170	#line 93 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	94	170		set __signed_stack_002RetornaBoneco, 56
+5	93	173	#line 93 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	93	173	#line 93 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	94	173		mov __D0RetornaBoneco, __RetornaBoneco_7qG2_passei_7qG2_000
+5	93	175	#line 93 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	93	175	#line 93 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	94	175		mov __TextOutArgs.Location.X, __signed_stack_001RetornaBoneco
+5	93	177	#line 93 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	94	177		mov __TextOutArgs.Location.Y, __signed_stack_002RetornaBoneco
+5	93	179	#line 93 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	94	179		set __TextOutArgs.Options, 0
+5	93	182	#line 93 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	94	182		numtostr __TextOutArgs.Text, __D0RetornaBoneco
+5	93	185	#line 93 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	94	185		syscall 13, __TextOutArgs
+5	93	188	#line 93 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	93	188	#line 93 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	93	188	#line 93 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	95	188	#line 95 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	96	188		mov __signed_stack_001RetornaBoneco, __RetornaBoneco_7qG2_passei_7qG2_000
+5	95	190	#line 95 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	95	190	#line 95 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	96	190		set __D0RetornaBoneco, 5
+5	95	193	#line 95 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	96	193		cmp 5, __D0RetornaBoneco, __signed_stack_001RetornaBoneco, __D0RetornaBoneco
+5	95	197	#line 95 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	96	197		brtst 4, __ASM_Label_625, __D0RetornaBoneco
+5	95	200	#line 95 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	96	200		jmp __ASM_Label_624
+5	95	202	#line 95 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	95	202	#line 95 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	99	202	#line 99 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+5	100	202		subret __RetornaBoneco_return
+6	101	0	#line 101 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	102	0	#pragma macro 24
+6	102	0		acquire __RLSBmutex3
+6	102	1		mov __RLSReadBuf3, __RLSBbufLSWrite1
+6	102	3		set __RLSBytesCount3, 1
+6	102	6		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+6	102	8		index __D0IniciaCorDoChao, __RLSReadBuf3, 65535
+6	102	12		release __RLSBmutex3
+6	6972	13	#line 6972 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	101	13	#line 101 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	102	13		mov __IniciaCorDoChao_7qG2_corEsq_7qG2_000, __D0IniciaCorDoChao
+6	101	15	#line 101 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	101	15	#line 101 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	102	15	#line 102 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	103	15	#pragma macro 24
+6	103	15		acquire __RLSBmutex2
+6	103	16		mov __RLSReadBuf2, __RLSBbufLSWrite1
+6	103	18		set __RLSBytesCount2, 1
+6	103	21		subcall __ReadLSBytes2, ____ReadLSBytes2_return
+6	103	23		index __D0IniciaCorDoChao, __RLSReadBuf2, 65535
+6	103	27		release __RLSBmutex2
+6	6980	28	#line 6980 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	102	28	#line 102 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	103	28		mov __IniciaCorDoChao_7qG2_corDir_7qG2_000, __D0IniciaCorDoChao
+6	102	30	#line 102 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	102	30	#line 102 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	104	30	#line 104 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	104	30	#line 104 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	105	30		mov __signed_stack_001IniciaCorDoChao, __D0IniciaCorDoChao
+6	104	32	#line 104 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	105	32		set __D0IniciaCorDoChao, 5
+6	104	35	#line 104 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	105	35		cmp 4, __D0IniciaCorDoChao, __signed_stack_001IniciaCorDoChao, __D0IniciaCorDoChao
+6	104	39	#line 104 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	105	39		brtst 5, __ASM_Label_649, __D0IniciaCorDoChao
+6	104	42	#line 104 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	105	42		mov __signed_stack_001IniciaCorDoChao, __IniciaCorDoChao_7qG2_corEsq_7qG2_000
+6	104	44	#line 104 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	104	44	#line 104 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	105	44		set __D0IniciaCorDoChao, 5
+6	104	47	#line 104 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	105	47		cmp 4, __D0IniciaCorDoChao, __signed_stack_001IniciaCorDoChao, __D0IniciaCorDoChao
+6	105	51	#line 105 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	106	51		brtst 4, __ASM_Label_656, __D0IniciaCorDoChao
+6	105	54	#line 105 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	106	54		set __RetornaBoneco_7qG2_cor_7qG2_000, 5
+6	105	57	#line 105 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	105	57	#line 105 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	106	57		subcall RetornaBoneco, __RetornaBoneco_return
+6	105	59	#line 105 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	106	59	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	107	59		jmp __ASM_Label_659
+6	106	61	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	107	61		mov __signed_stack_001IniciaCorDoChao, __IniciaCorDoChao_7qG2_corDir_7qG2_000
+6	106	63	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	106	63	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	107	63		set __D0IniciaCorDoChao, 3
+6	106	66	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	107	66		cmp 4, __D0IniciaCorDoChao, __signed_stack_001IniciaCorDoChao, __D0IniciaCorDoChao
+6	106	70	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	107	70		brtst 5, __ASM_Label_660, __D0IniciaCorDoChao
+6	106	73	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	107	73		mov __signed_stack_001IniciaCorDoChao, __IniciaCorDoChao_7qG2_corEsq_7qG2_000
+6	106	75	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	106	75	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	107	75		set __D0IniciaCorDoChao, 3
+6	106	78	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	107	78		cmp 4, __D0IniciaCorDoChao, __signed_stack_001IniciaCorDoChao, __D0IniciaCorDoChao
+6	107	82	#line 107 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	108	82		brtst 4, __ASM_Label_667, __D0IniciaCorDoChao
+6	107	85	#line 107 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	108	85		set __RetornaBoneco_7qG2_cor_7qG2_000, 3
+6	107	88	#line 107 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	107	88	#line 107 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	108	88		subcall RetornaBoneco, __RetornaBoneco_return
+6	107	90	#line 107 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	112	90	#line 112 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	112	90	#line 112 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	112	90	#line 112 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+6	113	90		subret __IniciaCorDoChao_return
+7	122	0	#line 122 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc"
+7	123	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc
+1	__ResetSensorSubroutine	29	NXTDefs.h
+2	__ReadLSBytes2	42	NXTDefs.h
+3	__ReadLSBytes3	131	NXTDefs.h
+4	inicializaSensores	220	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc
+5	RetornaBoneco	398	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc
+6	IniciaCorDoChao	602	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc
+7	__initialize_global_data	694	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\TesteCorBonecoMestre.nxc

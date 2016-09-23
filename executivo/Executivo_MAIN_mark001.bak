@@ -403,17 +403,17 @@ void teste2COMUNICA(){
   inicializaSensores();
   iniciaBlue();
 
-  IniciaCorDoChao(corEsq, corDir);
+  //IniciaCorDoChao(corEsq, corDir);
   andaRetoDireita(DIST_DA_PAREDE, 10);
   vira(90, direita);
 
-  /*do{
+  do{
     PrintaSensores();
     ChecaParada();
     //CorDoChao(corEsq, corDir);
     andaRetoDireita(DIST_DA_PAREDE, 10);
   }while(SIM);
-    */
+
 }
 
 void PrintaSensores(){

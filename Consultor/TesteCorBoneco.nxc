@@ -1,0 +1,160 @@
+//Valores Calibraveis
+// Defines de leitura do RGB do meio (ainda precisa testar mais)
+    #define COR_PRETA_MEIO_MIN 55
+    #define COR_PRETA_MEIO_MAX 150
+    #define COR_BRANCA_MEIO_MIN 290
+    #define COR_BRANCA_MEIO_MAX 630
+    #define COR_VERMELHA_MEIO_MIN 185
+    #define COR_VERMELHA_MEIO_MAX 260
+
+ // Defines de leitura do RGB da esquerda do robô
+    #define COR_BASE_ESQ_MIN 195
+    #define COR_BASE_ESQ_MAX 210
+
+// Defines de leitura do RGB da direita do robô
+    #define COR_BASE_DIR_MIN 240
+    #define COR_BASE_DIR_MAX 260
+
+
+
+
+//DEFINES
+
+     //Bluetooth
+     #define CONEXAO 0
+     #define INBOX 2
+     #define OUTBOX 1
+
+
+
+     // Defines de sensores
+     #define RGB_DIR IN_1
+     #define RGB_ESQ IN_2
+     #define RGB_MEIO IN_3
+     #define US_FRENTE IN_4
+
+     // Defines de motores
+     #define MOTOR_GARRA OUT_A
+
+
+    //Tempos
+    //#define TEMPO_ATE_A_GARRA_TRAVAR 2000
+    #define TEMPO_ATE_JOGAR_DENTRO 3750
+    //#define TEMPO_ATE_A_GARRA_VOLTAR 2000 //estou usando tempo... rola de usar por angulos depois
+    #define TEMPO_DEPOIS_DE_JOGAR_DENTRO_GARANTIA 800
+
+    //misc
+    #define MENOR_DISTANCIA_US 15
+
+
+     //LOGICA
+
+#define direita 1
+#define esquerda 2
+
+//Bluetooth
+  #define SIM 5
+  #define SIM_US 1
+  #define NAO_US 3
+  #define SIM_GARRA 2
+  #define NAO 0
+
+  #define CONTINUA 6
+  #define VIROU 7
+  #define DESVIROU 8
+  #define PARADO 0
+  #define ANDANDO -2
+
+  #define BONECO_BRANCO 4
+  #define BONECO_PRETO 12
+  #define BONECO_VERMELHO -1
+
+  #define NAO_PEGA 9
+  #define PEGA_OU_NAOPEGA 10
+  #define PEGA 11
+//dist
+  #define DIST_RE 30
+  #define DIST_DA_PAREDE 8
+//cores
+  #define COR_VERDE 5
+  #define COR_AZUL 3 // 3 ou 14, 3 eh mais certo
+  #define COR_PRETA 12 //12 ou 17, 12 eh mais certo
+  #define COR_NEUTRA 13//BRANCO fica acima de 13
+
+  #define NAO_ALIEN 0
+  #define SIM_ALIEN 1
+
+//Garra
+  //potencias
+  #define POTENCIA_MAXIMA_GARRA -70
+  #define POTENCIA_MED_GARRA -40
+
+  //Tempos
+  #define TEMPO_DEPOIS_DE_JOGAR_DENTRO 200
+
+  //Defines angulos da garra
+  #define ANGULO_1 -77
+
+  #define VETOR_CALIBRACAO 0// MUDA ISSO AQUI LUAN
+
+//declaração das variáveis globais
+int bonecoAlvo;
+int bonecoNaoAlvo;
+
+void InicializaSensores(){
+    SetSensorColorRed(RGB_DIR);
+    SetSensorColorRed(RGB_ESQ);
+    SetSensorColorGreen(RGB_MEIO);
+    SetSensorLowspeed(US_FRENTE);
+}
+
+
+int RecebeBoneco(){
+     int sinInicial = 0;
+     do{
+          ReceiveRemoteNumber(INBOX, true, sinInicial);
+          NumOut(0, LCD_LINE1, sinInicial);
+          TextOut(0, LCD_LINE2, "SINAL INICIAL");
+          Wait(30);
+     }while(sinInicial == 0);
+     SendRemoteNumber(CONEXAO, OUTBOX, SIM);
+     Wait(50);
+     if(sinInicial == BONECO_PRETO)
+          return BONECO_PRETO;
+     else if(sinInicial == BONECO_BRANCO)
+          return BONECO_BRANCO;
+}
+
+
+void BipBranco(){
+  PlaySound(SOUND_UP);
+  PlaySound(SOUND_DOWN);
+  Wait(SEC_1);
+}
+
+void  BipPreto(){
+  PlaySound(SOUND_UP);
+  PlaySound(SOUND_DOWN);
+  Wait(SEC_1);
+}
+
+void BonecoAlvo(){
+  bonecoAlvo = RecebeBoneco();
+
+    if(bonecoAlvo == BONECO_PRETO){
+      BipPreto();
+    }else if(bonecoAlvo == BONECO_BRANCO){
+      BipBranco();
+    }
+
+}
+
+
+task main(){
+InicializaSensores();
+
+while(1){
+	BonecoAlvo();
+	Wait(100);
+}
+}

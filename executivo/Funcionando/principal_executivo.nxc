@@ -15,7 +15,6 @@
 //Bluetooth
 	#define SIM 5
 	#define SIM_US 1
-	#define NAO_US 3
 	#define SIM_GARRA 2
 	#define NAO 0
 
@@ -59,6 +58,7 @@
 //
 #define NAO_ALIEN 0
 #define SIM_ALIEN 1
+#define ANGULO_DESCARTA_ESQUERDA 900
 
 
 //VARIAVEIS GLOBAIS
@@ -66,6 +66,8 @@ int my_tc_d = 0;
 int my_tc_e = 0;
 int potdGlobal = 90;
 int poteGlobal = 83;
+int corEsq = 99;
+int corDir = 99;
 
 
 
@@ -75,6 +77,7 @@ void executivo(void);
 
 void Para();
 int distanciaTachoCount(int grau);
+int distanciaGiro(int grau);
 void inicializaSensores();
 void iniciaBlue();
 void andaRetoDireita(int distParede, int distAndar);
@@ -90,10 +93,11 @@ void RetornaBoneco(int cor);
 //TESTAR
 void ChecaParada();
 void Rejeitar();
+void ViraUmaRoda(int ang);
 //Debug
 void PrintaSensores(void);
-
-
+void BipBranco();
+void  BipPreto();
 
 
 
@@ -106,9 +110,15 @@ task main(){
 void executivo(){
 	inicializaSensores();
 	iniciaBlue();
-	IniciaCorDoChao();
+  
 
-	andaRetoDireita();
+	IniciaCorDoChao(corEsq, corDir);
+
+  andaRetoDireita(DIST_DA_PAREDE, 50);
+  vira(90, direita);
+	do{
+    andaRetoDireita(DIST_DA_PAREDE, 50);
+  }while(1);
 }
 
 void Para(){
@@ -119,6 +129,12 @@ void Para(){
 int distanciaTachoCount(int grau){
      return (3*grau);                   //Distancia a ser percorrid/Raio da roda
 }
+
+
+int distanciaGiro(int grau){
+     return (((grau*172)/1420)); // COMO FOI FEITA ESSA CONVERSÃO???
+}
+
 
 void inicializaSensores()
 {
@@ -179,7 +195,7 @@ void andaRetoDireita(int distParede, int distAndar){ // função que faz o robô
        distanciaAtual = SensorUS(USD);
     
        ChecaParada();
-       CorDoChao();
+       CorDoChao(corEsq, corDir);
 
        if (distanciaAtual == distParede){
          potd = 90;
@@ -207,15 +223,14 @@ void andaRetoDireita(int distParede, int distAndar){ // função que faz o robô
 
 void ChecaParada(){// TESTAR
 	int acao = ANDANDO;
-	ReceiveRemoteNumber(INBOX, 0, acao);
+	ReceiveRemoteNumber(INBOX, true, acao);
 	if (acao == PARADO){
 		Para();
 		SendRemoteNumber(CONEXAO, OUTBOX, PARADO);
 		do{
-			ReceiveRemoteNumber(INBOX, 0, acao);
+			ReceiveRemoteNumber(INBOX, true, acao);
 		}while(acao == PARADO);
 		if(acao == CONTINUA){
-			break;
 		}else{
 			Rejeitar();
 		}
@@ -259,18 +274,18 @@ void CorDoChao(int corEsq, int corDir){//TESTAR SE DA RE
 }
 
 void RetornaBoneco(int cor){//FUNFOU BONITO
-    int passei;
-    
+    int passei = 0;
+  
     do{
       if(cor == COR_AZUL){//BONECO COR BRANCA
         SendRemoteNumber(CONEXAO, OUTBOX, BONECO_BRANCO);
-        ReceiveRemoteNumber(INBOX, true, passei);
         Wait(30);
-      }else if(cor == COR_VERDE){//BONECO COR PRETA
+      }else if(cor == COR_VERDE){//BONECO COR PRETA      
         SendRemoteNumber(CONEXAO, OUTBOX, BONECO_PRETO);
-        ReceiveRemoteNumber(INBOX, true, passei);
         Wait(30);
       }
+      ReceiveRemoteNumber(INBOX, true, passei);
+
    }while(passei != SIM);
 }
 
@@ -287,4 +302,35 @@ void PrintaSensores(){
     TextOut(0, LCD_LINE7, "HTE: ");
     NumOut(0, LCD_LINE8, SensorHTColorNum(HTE));
     Wait(70);
+}
+
+void DaReh(){
+  OnRev(MD, potdGlobal);
+  OnRev(ME, poteGlobal);
+  Wait(500);
+}
+
+void ViraUmaRoda(int ang){
+   my_tc_d = 0;
+    
+  OnFwd(MD, 50);
+  do{
+
+  //}while(distanciaTachoCount(my_tc_d) < ang*100 );
+  }while(MotorTachoCount(MD) < ang);//para o angulo negativo n sei
+  Para();
+  while(1);
+}
+
+
+void BipBranco(){
+  PlaySound(SOUND_UP);
+  PlaySound(SOUND_DOWN);
+  Wait(SEC_1);
+}
+
+void  BipPreto(){
+  PlaySound(SOUND_UP);
+  PlaySound(SOUND_DOWN);
+  Wait(SEC_1);
 }

@@ -1,0 +1,32 @@
+//SENSORES E MOTORES
+#define MD OUT_B //motor da direita
+#define ME OUT_A //motor da esquerda
+#define MP OUT_C //motor da porta
+
+task main(){
+     int tacho = 0;
+     while(MotorTachoCount(MD)!=0){
+          ResetTachoCount(MD);
+     }
+     OnFwd (MD, 90);
+     do{
+        tacho = MotorTachoCount(MD);
+        NumOut(0,LCD_LINE1, tacho);
+        Wait(50);
+        ClearScreen();
+     }while(tacho < 1500);
+     Off(MD);
+     Wait(200);
+     OnFwd (MD, -90);
+     do{
+        tacho = MotorTachoCount(MD);
+        NumOut(0,LCD_LINE1, tacho);
+        Wait(50);
+        ClearScreen();
+     }while(tacho > -1500);
+     Off(MD);
+
+     
+     while(1);
+}
+
