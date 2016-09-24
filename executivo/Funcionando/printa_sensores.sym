@@ -1,0 +1,683 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__signed_stack_002PrintaSensoresRaw	6	1	0	4	16
+1	__CLSRMutex3	9	0	4	4	2
+2	__signed_stack_001PrintaSensoresRaw	6	1	8	4	16
+3	__CLSRMutex2	9	0	12	4	2
+4	__CLSCSMutex3	9	0	16	4	2
+5	__CLSWMutex3	9	0	20	4	2
+6	__DU0SetSensorLowspeed_inline_inicializaSensores	5	1	24	4	20
+7	__Wait_7qG2_ms_7qG2_000_inline_PrintaSensoresRaw	5	1	28	4	2
+8	__D0main	6	1	32	4	4
+9	__RLSBmutex3	9	0	36	4	2
+10	__D0SetSensorLowspeed_inline_inicializaSensores	6	1	40	4	8
+11	__D0PrintaSensoresRaw	6	1	44	4	22
+12	__RLSBmutex2	9	0	48	4	2
+13	__CLSWMutex2	9	0	52	4	2
+14	__CLSCSMutex2	9	0	56	4	2
+15	__PrintaSensoresRaw_7qG2_re_7qG2_000	4	1	60	2	6
+16	__constVal200	4	0	62	2	2
+17	__constVal256	4	0	64	2	6
+18	__PrintaSensoresRaw_7qG2_ge_7qG2_000	4	1	66	2	6
+19	__PrintaSensoresRaw_7qG2_gd_7qG2_000	4	1	68	2	6
+20	__PrintaSensoresRaw_7qG2_rd_7qG2_000	4	1	70	2	6
+21	__PrintaSensoresRaw_7qG2_be_7qG2_000	4	1	72	2	6
+22	__PrintaSensoresRaw_7qG2_bd_7qG2_000	4	1	74	2	6
+23	__RLSBytesCount3	1	1	76	1	13
+24	__RLSBIterations3	1	1	77	1	4
+25	__PFTmp	1	1	78	1	1
+26	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	79	1	20
+27	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores	1	1	80	1	8
+28	____initialize_global_data_return	1	1	81	1	3
+29	__PrintaSensoresRaw_return	1	1	82	1	3
+30	__inicializaSensores_return	1	1	83	1	3
+31	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	84	1	8
+32	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	85	1	4
+33	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	86	1	8
+34	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	87	1	8
+35	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	88	1	8
+36	__LSWriteOptions3	1	1	89	1	1
+37	__LSWriteOptions2	1	1	90	1	1
+38	__constVal3	2	0	91	1	3
+39	__constVal4	2	0	92	1	2
+40	__ResetSensorTmp	1	1	93	1	2
+41	____ResetSensorSubroutine_return	1	1	94	1	6
+42	__constVal5	2	0	95	1	2
+43	__ResetSensorPort	1	1	96	1	6
+44	____ReadLSBytes2_return	1	1	97	1	3
+45	____ReadLSBytes3_return	1	1	98	1	3
+46	__constVal2	2	0	99	1	3
+47	__RLSBResult3	2	1	100	1	8
+48	__constVal1	2	0	101	1	12
+49	__RLSBytesCount2	1	1	102	1	13
+50	__RLSBResult2	2	1	103	1	8
+51	__constVal0	2	1	104	1	2
+52	__RLSBIterations2	1	1	105	1	4
+53	__CLSCSArgs2	8	0	3	4	4
+54	__CLSCSArgs2.Result	2	1	108	1	4
+55	__CLSCSArgs2.Port	1	1	109	1	4
+56	__CLSCSArgs2.BytesReady	1	1	110	1	4
+57	__CLSRArgs3	8	0	4	12	5
+58	__CLSRArgs3.Result	2	1	112	1	5
+59	__CLSRArgs3.Port	1	1	113	1	5
+60	__CLSRArgs3.Buffer	7	0	114	4	5
+61	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
+62	__CLSRArgs3.BufferLen	1	1	116	1	5
+63	__TextOutArgs	8	0	4	16	48
+64	__TextOutArgs.Result	2	1	120	1	48
+65	__TextOutArgs.Location	8	0	2	4	48
+66	__TextOutArgs.Location.X	4	1	124	2	48
+67	__TextOutArgs.Location.Y	4	1	126	2	48
+68	__TextOutArgs.Text	7	0	128	4	48
+69	__TextOutArgs.Text.Text_type	1	0	0	1	0
+70	__TextOutArgs.Options	5	1	132	4	48
+71	__PointOutArgs	8	0	3	12	4
+72	__PointOutArgs.Result	2	1	136	1	4
+73	__PointOutArgs.Location	8	0	2	4	4
+74	__PointOutArgs.Location.X	4	1	140	2	4
+75	__PointOutArgs.Location.Y	4	1	142	2	4
+76	__PointOutArgs.Options	5	1	144	4	4
+77	__CLSWArgs3	8	0	4	12	5
+78	__CLSWArgs3.Result	2	1	148	1	5
+79	__CLSWArgs3.Port	1	1	149	1	5
+80	__CLSWArgs3.Buffer	7	0	150	4	5
+81	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
+82	__CLSWArgs3.ReturnLen	1	1	152	1	5
+83	__CLSWArgs2	8	0	4	12	5
+84	__CLSWArgs2.Result	2	1	156	1	5
+85	__CLSWArgs2.Port	1	1	157	1	5
+86	__CLSWArgs2.Buffer	7	0	158	4	5
+87	__CLSWArgs2.Buffer.Buffer_type	1	0	0	1	0
+88	__CLSWArgs2.ReturnLen	1	1	160	1	5
+89	__CLSRArgs2	8	0	4	12	5
+90	__CLSRArgs2.Result	2	1	164	1	5
+91	__CLSRArgs2.Port	1	1	165	1	5
+92	__CLSRArgs2.Buffer	7	0	166	4	5
+93	__CLSRArgs2.Buffer.Buffer_type	1	0	0	1	0
+94	__CLSRArgs2.BufferLen	1	1	168	1	5
+95	__CLSCSArgs3	8	0	3	4	4
+96	__CLSCSArgs3.Result	2	1	172	1	4
+97	__CLSCSArgs3.Port	1	1	173	1	4
+98	__CLSCSArgs3.BytesReady	1	1	174	1	4
+99	__constStr0009	7	0	176	4	1
+100	__constStr0009.__constStr0009_type	1	1	0	1	0
+101	__constStr0010	7	0	178	4	1
+102	__constStr0010.__constStr0010_type	1	1	0	1	0
+103	__RLSLastGoodRead3	7	0	180	4	2
+104	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
+105	__RLSReadBuf2	7	0	182	4	13
+106	__RLSReadBuf2.__RLSReadBuf2_type	1	0	0	1	0
+107	__RLSLastGoodRead2	7	0	184	4	2
+108	__RLSLastGoodRead2.__RLSLastGoodRead2_type	1	0	0	1	0
+109	__strbufPrintaSensoresRaw	7	0	186	4	4
+110	__strbufPrintaSensoresRaw.__strbufPrintaSensoresRaw_type	1	0	0	1	0
+111	__RSHTColorRawBuf	7	0	188	4	2
+112	__RSHTColorRawBuf.__RSHTColorRawBuf_type	1	0	0	1	0
+113	__RLSReadBuf3	7	0	190	4	13
+114	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	68	0	#line 68 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+0	69	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	68	2	#line 68 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+0	70	2	#line 70 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+0	71	2		subcall inicializaSensores, __inicializaSensores_return
+0	70	4	#line 70 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+0	71	4	#line 71 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+0	72	4		set __D0main, 1
+0	72	7	#line 72 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+0	73	7		tst 5, __D0main, __D0main
+0	72	10	#line 72 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+0	73	10		brtst 4, __ASM_Label_490, __D0main
+0	73	13	#line 73 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+0	74	13		subcall PrintaSensoresRaw, __PrintaSensoresRaw_return
+0	73	15	#line 73 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+0	77	15	#line 77 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+0	78	15		jmp __ASM_Label_489
+0	77	17	#line 77 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+0	78	17		exit -1, -1
+1	5476	0		setin __constVal1, __ResetSensorPort, 5
+1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5480	11		subret ____ResetSensorSubroutine_return
+2	6356	0	#pragma macro 25
+2	6356	0		acquire __CLSWMutex2
+2	6356	1		or __CLSWArgs2.Port, __constVal2, __LSWriteOptions2
+2	6356	5		mov __CLSWArgs2.ReturnLen, __RLSBytesCount2
+2	6356	7		mov __CLSWArgs2.Buffer, __RLSReadBuf2
+2	6356	9		syscall 21, __CLSWArgs2
+2	6356	12		mov __RLSBResult2, __CLSWArgs2.Result
+2	6356	14		release __CLSWMutex2
+2	6356	15	#line 6356 "NXTDefs.h"
+2	6357	15		brtst 5, __RLSBError2, __RLSBResult2
+2	6358	18		set __RLSBIterations2, 60
+2	6360	21	#pragma macro 23
+2	6360	21		acquire __CLSCSMutex2
+2	6360	22		set __CLSCSArgs2.Port, 2
+2	6360	25		syscall 23, __CLSCSArgs2
+2	6360	28		mov __RLSBytesCount2, __CLSCSArgs2.BytesReady
+2	6360	30		mov __RLSBResult2, __CLSCSArgs2.Result
+2	6360	32		release __CLSCSMutex2
+2	6360	33	#line 6360 "NXTDefs.h"
+2	6361	33		sub __RLSBIterations2, __RLSBIterations2, __constVal1
+2	6362	37		brtst 2, __RLSBError2, __RLSBIterations2
+2	6363	40		brtst 0, __RLSBError2, __RLSBResult2
+2	6364	43		brtst 4, __RLSBReadyToRead2, __RLSBResult2
+2	6366	46		wait2 NA, __constVal1
+2	6367	49		jmp __RLSBDoCheckStatus2
+2	6369	51		brtst 4, __RLSBReturn2, __RLSBytesCount2
+2	6370	54		arrinit __RLSReadBuf2, __constVal0, __RLSBytesCount2
+2	6372	58	#pragma macro 25
+2	6372	58		acquire __CLSRMutex2
+2	6372	59		set __CLSRArgs2.Port, 2
+2	6372	62		mov __CLSRArgs2.BufferLen, __RLSBytesCount2
+2	6372	64		syscall 22, __CLSRArgs2
+2	6372	67		mov __RLSReadBuf2, __CLSRArgs2.Buffer
+2	6372	69		mov __RLSBResult2, __CLSRArgs2.Result
+2	6372	71		release __CLSRMutex2
+2	6372	72	#line 6372 "NXTDefs.h"
+2	6373	72		brtst 5, __RLSBError2, __RLSBResult2
+2	6374	75		mov __RLSLastGoodRead2, __RLSReadBuf2
+2	6375	77		jmp __RLSBDone2
+2	6377	79		mov __RLSReadBuf2, __RLSLastGoodRead2
+2	6379	81		arrsize __RLSBytesCount2, __RLSReadBuf2
+2	6381	84		subret ____ReadLSBytes2_return
+3	6393	0	#pragma macro 25
+3	6393	0		acquire __CLSWMutex3
+3	6393	1		or __CLSWArgs3.Port, __constVal3, __LSWriteOptions3
+3	6393	5		mov __CLSWArgs3.ReturnLen, __RLSBytesCount3
+3	6393	7		mov __CLSWArgs3.Buffer, __RLSReadBuf3
+3	6393	9		syscall 21, __CLSWArgs3
+3	6393	12		mov __RLSBResult3, __CLSWArgs3.Result
+3	6393	14		release __CLSWMutex3
+3	6393	15	#line 6393 "NXTDefs.h"
+3	6394	15		brtst 5, __RLSBError3, __RLSBResult3
+3	6395	18		set __RLSBIterations3, 60
+3	6397	21	#pragma macro 23
+3	6397	21		acquire __CLSCSMutex3
+3	6397	22		set __CLSCSArgs3.Port, 3
+3	6397	25		syscall 23, __CLSCSArgs3
+3	6397	28		mov __RLSBytesCount3, __CLSCSArgs3.BytesReady
+3	6397	30		mov __RLSBResult3, __CLSCSArgs3.Result
+3	6397	32		release __CLSCSMutex3
+3	6397	33	#line 6397 "NXTDefs.h"
+3	6398	33		sub __RLSBIterations3, __RLSBIterations3, __constVal1
+3	6399	37		brtst 2, __RLSBError3, __RLSBIterations3
+3	6400	40		brtst 0, __RLSBError3, __RLSBResult3
+3	6401	43		brtst 4, __RLSBReadyToRead3, __RLSBResult3
+3	6403	46		wait2 NA, __constVal1
+3	6404	49		jmp __RLSBDoCheckStatus3
+3	6406	51		brtst 4, __RLSBReturn3, __RLSBytesCount3
+3	6407	54		arrinit __RLSReadBuf3, __constVal0, __RLSBytesCount3
+3	6409	58	#pragma macro 25
+3	6409	58		acquire __CLSRMutex3
+3	6409	59		set __CLSRArgs3.Port, 3
+3	6409	62		mov __CLSRArgs3.BufferLen, __RLSBytesCount3
+3	6409	64		syscall 22, __CLSRArgs3
+3	6409	67		mov __RLSReadBuf3, __CLSRArgs3.Buffer
+3	6409	69		mov __RLSBResult3, __CLSRArgs3.Result
+3	6409	71		release __CLSRMutex3
+3	6409	72	#line 6409 "NXTDefs.h"
+3	6410	72		brtst 5, __RLSBError3, __RLSBResult3
+3	6411	75		mov __RLSLastGoodRead3, __RLSReadBuf3
+3	6412	77		jmp __RLSBDone3
+3	6414	79		mov __RLSReadBuf3, __RLSLastGoodRead3
+3	6416	81		arrsize __RLSBytesCount3, __RLSReadBuf3
+3	6418	84		subret ____ReadLSBytes3_return
+4	79	0	#line 79 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+4	80	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 0
+4	79	3	#line 79 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+4	80	3	#line 80 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+4	81	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+4	4342	5	#line 4342 "NXCDefs.h"
+4	4343	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4342	7	#line 4342 "NXCDefs.h"
+4	4342	7	#line 4342 "NXCDefs.h"
+4	4343	7		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+4	4342	9	#line 4342 "NXCDefs.h"
+4	4343	9		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4342	12	#line 4342 "NXCDefs.h"
+4	4343	12		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+4	4342	15	#line 4342 "NXCDefs.h"
+4	4343	15		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+4	4342	18	#line 4342 "NXCDefs.h"
+4	4342	18	#line 4342 "NXCDefs.h"
+4	4343	18		jmp __004__ASM_Label_37
+4	4342	20	#line 4342 "NXCDefs.h"
+4	4343	20		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+4	4342	23	#line 4342 "NXCDefs.h"
+4	4342	23	#line 4342 "NXCDefs.h"
+4	4343	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4247	25	#line 4247 "NXCDefs.h"
+4	4248	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4247	29	#line 4247 "NXCDefs.h"
+4	4343	29	#line 4343 "NXCDefs.h"
+4	4343	29	#line 4343 "NXCDefs.h"
+4	4344	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4343	31	#line 4343 "NXCDefs.h"
+4	4343	31	#line 4343 "NXCDefs.h"
+4	4344	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4343	34	#line 4343 "NXCDefs.h"
+4	4260	34	#line 4260 "NXCDefs.h"
+4	4261	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+4	4260	38	#line 4260 "NXCDefs.h"
+4	4344	38	#line 4344 "NXCDefs.h"
+4	4344	38	#line 4344 "NXCDefs.h"
+4	4345	38		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4344	40	#line 4344 "NXCDefs.h"
+4	4278	40	#line 4278 "NXCDefs.h"
+4	4279	40	#pragma macro 4
+4	4279	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4279	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+4	3802	44	#line 3802 "NXCDefs.h"
+4	4278	44	#line 4278 "NXCDefs.h"
+4	4345	44	#line 4345 "NXCDefs.h"
+4	80	44	#line 80 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+4	80	44	#line 80 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+4	81	44		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 1
+4	80	47	#line 80 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+4	81	47	#line 81 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+4	82	47		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+4	4342	49	#line 4342 "NXCDefs.h"
+4	4343	49		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4342	51	#line 4342 "NXCDefs.h"
+4	4342	51	#line 4342 "NXCDefs.h"
+4	4343	51		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+4	4342	53	#line 4342 "NXCDefs.h"
+4	4343	53		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4342	56	#line 4342 "NXCDefs.h"
+4	4343	56		brtst 4, __005__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+4	4342	59	#line 4342 "NXCDefs.h"
+4	4343	59		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+4	4342	62	#line 4342 "NXCDefs.h"
+4	4342	62	#line 4342 "NXCDefs.h"
+4	4343	62		jmp __005__ASM_Label_37
+4	4342	64	#line 4342 "NXCDefs.h"
+4	4343	64		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+4	4342	67	#line 4342 "NXCDefs.h"
+4	4342	67	#line 4342 "NXCDefs.h"
+4	4343	67		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4247	69	#line 4247 "NXCDefs.h"
+4	4248	69		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4247	73	#line 4247 "NXCDefs.h"
+4	4343	73	#line 4343 "NXCDefs.h"
+4	4343	73	#line 4343 "NXCDefs.h"
+4	4344	73		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4343	75	#line 4343 "NXCDefs.h"
+4	4343	75	#line 4343 "NXCDefs.h"
+4	4344	75		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4343	78	#line 4343 "NXCDefs.h"
+4	4260	78	#line 4260 "NXCDefs.h"
+4	4261	78		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+4	4260	82	#line 4260 "NXCDefs.h"
+4	4344	82	#line 4344 "NXCDefs.h"
+4	4344	82	#line 4344 "NXCDefs.h"
+4	4345	82		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4344	84	#line 4344 "NXCDefs.h"
+4	4278	84	#line 4278 "NXCDefs.h"
+4	4279	84	#pragma macro 4
+4	4279	84		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4279	86		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+4	3865	88	#line 3865 "NXCDefs.h"
+4	4278	88	#line 4278 "NXCDefs.h"
+4	4345	88	#line 4345 "NXCDefs.h"
+4	81	88	#line 81 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+4	81	88	#line 81 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+4	82	88		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 2
+4	81	91	#line 81 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+4	82	91	#line 82 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+4	83	91		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+4	4342	93	#line 4342 "NXCDefs.h"
+4	4343	93		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4342	95	#line 4342 "NXCDefs.h"
+4	4342	95	#line 4342 "NXCDefs.h"
+4	4343	95		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+4	4342	97	#line 4342 "NXCDefs.h"
+4	4343	97		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4342	100	#line 4342 "NXCDefs.h"
+4	4343	100		brtst 4, __006__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+4	4342	103	#line 4342 "NXCDefs.h"
+4	4343	103		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+4	4342	106	#line 4342 "NXCDefs.h"
+4	4342	106	#line 4342 "NXCDefs.h"
+4	4343	106		jmp __006__ASM_Label_37
+4	4342	108	#line 4342 "NXCDefs.h"
+4	4343	108		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+4	4342	111	#line 4342 "NXCDefs.h"
+4	4342	111	#line 4342 "NXCDefs.h"
+4	4343	111		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4247	113	#line 4247 "NXCDefs.h"
+4	4248	113		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4247	117	#line 4247 "NXCDefs.h"
+4	4343	117	#line 4343 "NXCDefs.h"
+4	4343	117	#line 4343 "NXCDefs.h"
+4	4344	117		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4343	119	#line 4343 "NXCDefs.h"
+4	4343	119	#line 4343 "NXCDefs.h"
+4	4344	119		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4343	122	#line 4343 "NXCDefs.h"
+4	4260	122	#line 4260 "NXCDefs.h"
+4	4261	122		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+4	4260	126	#line 4260 "NXCDefs.h"
+4	4344	126	#line 4344 "NXCDefs.h"
+4	4344	126	#line 4344 "NXCDefs.h"
+4	4345	126		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4344	128	#line 4344 "NXCDefs.h"
+4	4278	128	#line 4278 "NXCDefs.h"
+4	4279	128	#pragma macro 4
+4	4279	128		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4279	130		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+4	3928	132	#line 3928 "NXCDefs.h"
+4	4278	132	#line 4278 "NXCDefs.h"
+4	4345	132	#line 4345 "NXCDefs.h"
+4	82	132	#line 82 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+4	82	132	#line 82 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+4	83	132		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 3
+4	82	135	#line 82 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+4	83	135	#line 83 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+4	84	135		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+4	4342	137	#line 4342 "NXCDefs.h"
+4	4343	137		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4342	139	#line 4342 "NXCDefs.h"
+4	4342	139	#line 4342 "NXCDefs.h"
+4	4343	139		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+4	4342	141	#line 4342 "NXCDefs.h"
+4	4343	141		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4342	144	#line 4342 "NXCDefs.h"
+4	4343	144		brtst 4, __007__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+4	4342	147	#line 4342 "NXCDefs.h"
+4	4343	147		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+4	4342	150	#line 4342 "NXCDefs.h"
+4	4342	150	#line 4342 "NXCDefs.h"
+4	4343	150		jmp __007__ASM_Label_37
+4	4342	152	#line 4342 "NXCDefs.h"
+4	4343	152		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+4	4342	155	#line 4342 "NXCDefs.h"
+4	4342	155	#line 4342 "NXCDefs.h"
+4	4343	155		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4247	157	#line 4247 "NXCDefs.h"
+4	4248	157		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4247	161	#line 4247 "NXCDefs.h"
+4	4343	161	#line 4343 "NXCDefs.h"
+4	4343	161	#line 4343 "NXCDefs.h"
+4	4344	161		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4343	163	#line 4343 "NXCDefs.h"
+4	4343	163	#line 4343 "NXCDefs.h"
+4	4344	163		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4343	166	#line 4343 "NXCDefs.h"
+4	4260	166	#line 4260 "NXCDefs.h"
+4	4261	166		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+4	4260	170	#line 4260 "NXCDefs.h"
+4	4344	170	#line 4344 "NXCDefs.h"
+4	4344	170	#line 4344 "NXCDefs.h"
+4	4345	170		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4344	172	#line 4344 "NXCDefs.h"
+4	4278	172	#line 4278 "NXCDefs.h"
+4	4279	172	#pragma macro 4
+4	4279	172		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4279	174		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+4	3991	176	#line 3991 "NXCDefs.h"
+4	4278	176	#line 4278 "NXCDefs.h"
+4	4345	176	#line 4345 "NXCDefs.h"
+4	83	176	#line 83 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+4	85	176	#line 85 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+4	86	176		subret __inicializaSensores_return
+5	89	0	#line 89 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	90	0	#pragma macro 48
+5	90	0		acquire __RLSBmutex2
+5	90	1		mov __RLSReadBuf2, __RSHTColorRawBuf
+5	90	3		set __RLSBytesCount2, 6
+5	90	6		subcall __ReadLSBytes2, ____ReadLSBytes2_return
+5	90	8		tst 4, __D0PrintaSensoresRaw, __RLSBResult2
+5	90	11		index __PrintaSensoresRaw_7qG2_rd_7qG2_000, __RLSReadBuf2, __constVal1
+5	90	15		index __RLSBytesCount2, __RLSReadBuf2, 65535
+5	90	19		mul __PrintaSensoresRaw_7qG2_rd_7qG2_000, __PrintaSensoresRaw_7qG2_rd_7qG2_000, __constVal256
+5	90	23		add __PrintaSensoresRaw_7qG2_rd_7qG2_000, __PrintaSensoresRaw_7qG2_rd_7qG2_000, __RLSBytesCount2
+5	90	27		index __PrintaSensoresRaw_7qG2_gd_7qG2_000, __RLSReadBuf2, __constVal3
+5	90	31		index __RLSBytesCount2, __RLSReadBuf2, __constVal2
+5	90	35		mul __PrintaSensoresRaw_7qG2_gd_7qG2_000, __PrintaSensoresRaw_7qG2_gd_7qG2_000, __constVal256
+5	90	39		add __PrintaSensoresRaw_7qG2_gd_7qG2_000, __PrintaSensoresRaw_7qG2_gd_7qG2_000, __RLSBytesCount2
+5	90	43		index __PrintaSensoresRaw_7qG2_bd_7qG2_000, __RLSReadBuf2, __constVal5
+5	90	47		index __RLSBytesCount2, __RLSReadBuf2, __constVal4
+5	90	51		mul __PrintaSensoresRaw_7qG2_bd_7qG2_000, __PrintaSensoresRaw_7qG2_bd_7qG2_000, __constVal256
+5	90	55		add __PrintaSensoresRaw_7qG2_bd_7qG2_000, __PrintaSensoresRaw_7qG2_bd_7qG2_000, __RLSBytesCount2
+5	90	59		release __RLSBmutex2
+5	4025	60	#line 4025 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	89	60	#line 89 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	89	60	#line 89 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	90	60	#line 90 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	91	60	#pragma macro 48
+5	91	60		acquire __RLSBmutex3
+5	91	61		mov __RLSReadBuf3, __RSHTColorRawBuf
+5	91	63		set __RLSBytesCount3, 6
+5	91	66		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+5	91	68		tst 4, __D0PrintaSensoresRaw, __RLSBResult3
+5	91	71		index __PrintaSensoresRaw_7qG2_re_7qG2_000, __RLSReadBuf3, __constVal1
+5	91	75		index __RLSBytesCount3, __RLSReadBuf3, 65535
+5	91	79		mul __PrintaSensoresRaw_7qG2_re_7qG2_000, __PrintaSensoresRaw_7qG2_re_7qG2_000, __constVal256
+5	91	83		add __PrintaSensoresRaw_7qG2_re_7qG2_000, __PrintaSensoresRaw_7qG2_re_7qG2_000, __RLSBytesCount3
+5	91	87		index __PrintaSensoresRaw_7qG2_ge_7qG2_000, __RLSReadBuf3, __constVal3
+5	91	91		index __RLSBytesCount3, __RLSReadBuf3, __constVal2
+5	91	95		mul __PrintaSensoresRaw_7qG2_ge_7qG2_000, __PrintaSensoresRaw_7qG2_ge_7qG2_000, __constVal256
+5	91	99		add __PrintaSensoresRaw_7qG2_ge_7qG2_000, __PrintaSensoresRaw_7qG2_ge_7qG2_000, __RLSBytesCount3
+5	91	103		index __PrintaSensoresRaw_7qG2_be_7qG2_000, __RLSReadBuf3, __constVal5
+5	91	107		index __RLSBytesCount3, __RLSReadBuf3, __constVal4
+5	91	111		mul __PrintaSensoresRaw_7qG2_be_7qG2_000, __PrintaSensoresRaw_7qG2_be_7qG2_000, __constVal256
+5	91	115		add __PrintaSensoresRaw_7qG2_be_7qG2_000, __PrintaSensoresRaw_7qG2_be_7qG2_000, __RLSBytesCount3
+5	91	119		release __RLSBmutex3
+5	4029	120	#line 4029 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	90	120	#line 90 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	90	120	#line 90 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	6678	120	#line 6678 "NXCDefs.h"
+5	6679	120	#pragma macro 6
+5	6679	120		mov __PointOutArgs.Location.X, __constVal200
+5	6679	122		mov __PointOutArgs.Location.Y, __constVal200
+5	6679	124		mov __PointOutArgs.Options, __constVal1
+5	6679	126		syscall 14, __PointOutArgs
+5	4033	129	#line 4033 "NXCDefs.h"
+5	6678	129	#line 6678 "NXCDefs.h"
+5	93	129	#line 93 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	93	129	#line 93 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	94	129		set __signed_stack_001PrintaSensoresRaw, 50
+5	93	132	#line 93 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	93	132	#line 93 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	94	132		set __signed_stack_002PrintaSensoresRaw, 56
+5	93	135	#line 93 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	93	135	#line 93 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	94	135		strcat __strbufPrintaSensoresRaw, __constStr0009
+5	94	139	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	94	139	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	95	139		mov __TextOutArgs.Location.X, __signed_stack_001PrintaSensoresRaw
+5	94	141	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	95	141		mov __TextOutArgs.Location.Y, __signed_stack_002PrintaSensoresRaw
+5	94	143	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	95	143		set __TextOutArgs.Options, 0
+5	94	146	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	95	146		mov __TextOutArgs.Text, __strbufPrintaSensoresRaw
+5	94	148	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	95	148		syscall 13, __TextOutArgs
+5	94	151	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	95	151		mov __D0PrintaSensoresRaw, __TextOutArgs.Result
+5	94	153	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	94	153	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	94	153	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	95	153		set __signed_stack_001PrintaSensoresRaw, 50
+5	94	156	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	94	156	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	95	156		set __signed_stack_002PrintaSensoresRaw, 48
+5	94	159	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	94	159	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	95	159		mov __D0PrintaSensoresRaw, __PrintaSensoresRaw_7qG2_rd_7qG2_000
+5	95	161	#line 95 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	95	161	#line 95 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	96	161		mov __TextOutArgs.Location.X, __signed_stack_001PrintaSensoresRaw
+5	95	163	#line 95 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	96	163		mov __TextOutArgs.Location.Y, __signed_stack_002PrintaSensoresRaw
+5	95	165	#line 95 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	96	165		set __TextOutArgs.Options, 0
+5	95	168	#line 95 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	96	168		numtostr __TextOutArgs.Text, __D0PrintaSensoresRaw
+5	95	171	#line 95 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	96	171		syscall 13, __TextOutArgs
+5	95	174	#line 95 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	96	174		mov __D0PrintaSensoresRaw, __TextOutArgs.Result
+5	95	176	#line 95 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	95	176	#line 95 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	95	176	#line 95 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	96	176		set __signed_stack_001PrintaSensoresRaw, 50
+5	95	179	#line 95 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	95	179	#line 95 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	96	179		set __signed_stack_002PrintaSensoresRaw, 40
+5	95	182	#line 95 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	95	182	#line 95 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	96	182		mov __D0PrintaSensoresRaw, __PrintaSensoresRaw_7qG2_gd_7qG2_000
+5	96	184	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	96	184	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	97	184		mov __TextOutArgs.Location.X, __signed_stack_001PrintaSensoresRaw
+5	96	186	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	97	186		mov __TextOutArgs.Location.Y, __signed_stack_002PrintaSensoresRaw
+5	96	188	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	97	188		set __TextOutArgs.Options, 0
+5	96	191	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	97	191		numtostr __TextOutArgs.Text, __D0PrintaSensoresRaw
+5	96	194	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	97	194		syscall 13, __TextOutArgs
+5	96	197	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	97	197		mov __D0PrintaSensoresRaw, __TextOutArgs.Result
+5	96	199	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	96	199	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	96	199	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	97	199		set __signed_stack_001PrintaSensoresRaw, 50
+5	96	202	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	96	202	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	97	202		set __signed_stack_002PrintaSensoresRaw, 32
+5	96	205	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	96	205	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	97	205		mov __D0PrintaSensoresRaw, __PrintaSensoresRaw_7qG2_bd_7qG2_000
+5	97	207	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	97	207	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	98	207		mov __TextOutArgs.Location.X, __signed_stack_001PrintaSensoresRaw
+5	97	209	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	98	209		mov __TextOutArgs.Location.Y, __signed_stack_002PrintaSensoresRaw
+5	97	211	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	98	211		set __TextOutArgs.Options, 0
+5	97	214	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	98	214		numtostr __TextOutArgs.Text, __D0PrintaSensoresRaw
+5	97	217	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	98	217		syscall 13, __TextOutArgs
+5	97	220	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	98	220		mov __D0PrintaSensoresRaw, __TextOutArgs.Result
+5	97	222	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	97	222	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	97	222	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	98	222		set __signed_stack_001PrintaSensoresRaw, 0
+5	97	225	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	97	225	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	98	225		set __signed_stack_002PrintaSensoresRaw, 56
+5	97	228	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	97	228	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	98	228		strcat __strbufPrintaSensoresRaw, __constStr0010
+5	98	232	#line 98 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	98	232	#line 98 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	99	232		mov __TextOutArgs.Location.X, __signed_stack_001PrintaSensoresRaw
+5	98	234	#line 98 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	99	234		mov __TextOutArgs.Location.Y, __signed_stack_002PrintaSensoresRaw
+5	98	236	#line 98 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	99	236		set __TextOutArgs.Options, 0
+5	98	239	#line 98 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	99	239		mov __TextOutArgs.Text, __strbufPrintaSensoresRaw
+5	98	241	#line 98 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	99	241		syscall 13, __TextOutArgs
+5	98	244	#line 98 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	99	244		mov __D0PrintaSensoresRaw, __TextOutArgs.Result
+5	98	246	#line 98 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	98	246	#line 98 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	98	246	#line 98 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	99	246		set __signed_stack_001PrintaSensoresRaw, 0
+5	98	249	#line 98 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	98	249	#line 98 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	99	249		set __signed_stack_002PrintaSensoresRaw, 48
+5	98	252	#line 98 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	98	252	#line 98 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	99	252		mov __D0PrintaSensoresRaw, __PrintaSensoresRaw_7qG2_re_7qG2_000
+5	99	254	#line 99 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	99	254	#line 99 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	100	254		mov __TextOutArgs.Location.X, __signed_stack_001PrintaSensoresRaw
+5	99	256	#line 99 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	100	256		mov __TextOutArgs.Location.Y, __signed_stack_002PrintaSensoresRaw
+5	99	258	#line 99 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	100	258		set __TextOutArgs.Options, 0
+5	99	261	#line 99 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	100	261		numtostr __TextOutArgs.Text, __D0PrintaSensoresRaw
+5	99	264	#line 99 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	100	264		syscall 13, __TextOutArgs
+5	99	267	#line 99 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	100	267		mov __D0PrintaSensoresRaw, __TextOutArgs.Result
+5	99	269	#line 99 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	99	269	#line 99 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	99	269	#line 99 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	100	269		set __signed_stack_001PrintaSensoresRaw, 0
+5	99	272	#line 99 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	99	272	#line 99 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	100	272		set __signed_stack_002PrintaSensoresRaw, 40
+5	99	275	#line 99 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	99	275	#line 99 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	100	275		mov __D0PrintaSensoresRaw, __PrintaSensoresRaw_7qG2_ge_7qG2_000
+5	100	277	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	100	277	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	101	277		mov __TextOutArgs.Location.X, __signed_stack_001PrintaSensoresRaw
+5	100	279	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	101	279		mov __TextOutArgs.Location.Y, __signed_stack_002PrintaSensoresRaw
+5	100	281	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	101	281		set __TextOutArgs.Options, 0
+5	100	284	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	101	284		numtostr __TextOutArgs.Text, __D0PrintaSensoresRaw
+5	100	287	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	101	287		syscall 13, __TextOutArgs
+5	100	290	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	101	290		mov __D0PrintaSensoresRaw, __TextOutArgs.Result
+5	100	292	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	100	292	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	100	292	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	101	292		set __signed_stack_001PrintaSensoresRaw, 0
+5	100	295	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	100	295	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	101	295		set __signed_stack_002PrintaSensoresRaw, 32
+5	100	298	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	100	298	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	101	298		mov __D0PrintaSensoresRaw, __PrintaSensoresRaw_7qG2_be_7qG2_000
+5	102	300	#line 102 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	102	300	#line 102 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	103	300		mov __TextOutArgs.Location.X, __signed_stack_001PrintaSensoresRaw
+5	102	302	#line 102 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	103	302		mov __TextOutArgs.Location.Y, __signed_stack_002PrintaSensoresRaw
+5	102	304	#line 102 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	103	304		set __TextOutArgs.Options, 0
+5	102	307	#line 102 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	103	307		numtostr __TextOutArgs.Text, __D0PrintaSensoresRaw
+5	102	310	#line 102 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	103	310		syscall 13, __TextOutArgs
+5	102	313	#line 102 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	103	313		mov __D0PrintaSensoresRaw, __TextOutArgs.Result
+5	102	315	#line 102 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	102	315	#line 102 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	102	315	#line 102 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	103	315		set __Wait_7qG2_ms_7qG2_000_inline_PrintaSensoresRaw, 70
+5	102	318	#line 102 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	8551	318	#line 8551 "NXCDefs.h"
+5	8552	318		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_PrintaSensoresRaw
+5	8551	321	#line 8551 "NXCDefs.h"
+5	103	321	#line 103 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	105	321	#line 105 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+5	106	321		subret __PrintaSensoresRaw_return
+6	106	0	#line 106 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc"
+6	107	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc
+1	__ResetSensorSubroutine	20	NXTDefs.h
+2	__ReadLSBytes2	33	NXTDefs.h
+3	__ReadLSBytes3	119	NXTDefs.h
+4	inicializaSensores	205	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc
+5	PrintaSensoresRaw	383	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc
+6	__initialize_global_data	706	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\printa_sensores.nxc

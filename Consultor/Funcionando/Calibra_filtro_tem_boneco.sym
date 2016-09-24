@@ -1,0 +1,817 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0lerSensor	6	1	0	4	31
+1	__D0main	6	1	4	4	50
+2	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	8	4	8
+3	__CLSRMutex3	9	0	12	4	2
+4	__RLSBmutex3	9	0	16	4	2
+5	__D0SetSensorLowspeed_inline_InicializaSensores	6	1	20	4	2
+6	__signed_stack_001main	6	1	24	4	30
+7	__signed_stack_002main	6	1	28	4	20
+8	__signed_stack_002lerSensor	6	1	32	4	6
+9	__DU0SetSensorLowspeed_inline_InicializaSensores	5	1	36	4	5
+10	__signed_stack_001lerSensor	6	1	40	4	18
+11	__CLSWMutex3	9	0	44	4	2
+12	__CLSCSMutex3	9	0	48	4	2
+13	__lerSensor_7qG2_j_7qG2_000	4	1	52	2	8
+14	__lerSensor_7qG2_aux_7qG2_000	4	1	54	2	4
+15	__lerSensor_7qG2_k_7qG2_000	4	1	56	2	6
+16	__constVal128	4	0	58	2	3
+17	__constVal200	4	0	60	2	10
+18	__lerSensor_7qG2_i_7qG2_000	4	1	62	2	8
+19	__lerSensor_7qG2_sensor_7qG2_000	4	1	64	2	3
+20	__main_7qG2_maxEsq_7qG2_000	4	1	66	2	4
+21	__main_7qG2_maxDir_7qG2_000	4	1	68	2	4
+22	__main_7qG2_minEsq_7qG2_000	4	1	70	2	4
+23	__main_7qG2_minDir_7qG2_000	4	1	72	2	4
+24	__main_7qG2_cont_7qG2_000	4	1	74	2	4
+25	__main_7qG2_xDir_7qG2_000	4	1	76	2	6
+26	__main_7qG2_xEsq_7qG2_000	4	1	78	2	6
+27	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_InicializaSensores	1	1	80	1	2
+28	__constVal1	2	0	81	1	13
+29	__InicializaSensores_return	1	1	82	1	3
+30	__SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	83	1	12
+31	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	84	1	4
+32	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	85	1	2
+33	__lerSensor_return	1	1	86	1	5
+34	____initialize_global_data_return	1	1	87	1	3
+35	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	88	1	2
+36	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	89	1	2
+37	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	90	1	2
+38	__constValNeg100	2	0	91	1	2
+39	__RLSBIterations3	1	1	92	1	4
+40	__constVal15	2	0	93	1	2
+41	__PFTmp	1	1	94	1	1
+42	____ReadLSBytes3_return	1	1	95	1	3
+43	__LSWriteOptions3	1	1	96	1	1
+44	__RLSBytesCount3	1	1	97	1	7
+45	__RLSBResult3	2	1	98	1	7
+46	__constVal11	2	0	99	1	1
+47	__ResetSensorPort	1	1	100	1	6
+48	__ResetSensorTmp	1	1	101	1	2
+49	__constVal0	2	1	102	1	2
+50	__constVal3	2	0	103	1	1
+51	____ResetSensorSubroutine_return	1	1	104	1	6
+52	__constVal14	2	0	105	1	3
+53	__TextOutArgs	8	0	4	16	60
+54	__TextOutArgs.Result	2	1	108	1	60
+55	__TextOutArgs.Location	8	0	2	4	60
+56	__TextOutArgs.Location.X	4	1	112	2	60
+57	__TextOutArgs.Location.Y	4	1	114	2	60
+58	__TextOutArgs.Text	7	0	116	4	60
+59	__TextOutArgs.Text.Text_type	1	0	0	1	0
+60	__TextOutArgs.Options	5	1	120	4	60
+61	__PointOutArgs	8	0	3	12	20
+62	__PointOutArgs.Result	2	1	124	1	20
+63	__PointOutArgs.Location	8	0	2	4	20
+64	__PointOutArgs.Location.X	4	1	128	2	20
+65	__PointOutArgs.Location.Y	4	1	130	2	20
+66	__PointOutArgs.Options	5	1	132	4	20
+67	__CLSCSArgs3	8	0	3	4	4
+68	__CLSCSArgs3.Result	2	1	136	1	4
+69	__CLSCSArgs3.Port	1	1	137	1	4
+70	__CLSCSArgs3.BytesReady	1	1	138	1	4
+71	__CLSRArgs3	8	0	4	12	5
+72	__CLSRArgs3.Result	2	1	140	1	5
+73	__CLSRArgs3.Port	1	1	141	1	5
+74	__CLSRArgs3.Buffer	7	0	142	4	5
+75	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
+76	__CLSRArgs3.BufferLen	1	1	144	1	5
+77	__CLSWArgs3	8	0	4	12	5
+78	__CLSWArgs3.Result	2	1	148	1	5
+79	__CLSWArgs3.Port	1	1	149	1	5
+80	__CLSWArgs3.Buffer	7	0	150	4	5
+81	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
+82	__CLSWArgs3.ReturnLen	1	1	152	1	5
+83	__constStr0009	7	0	154	4	1
+84	__constStr0009.__constStr0009_type	1	1	0	1	0
+85	__constStr0010	7	0	156	4	1
+86	__constStr0010.__constStr0010_type	1	1	0	1	0
+87	__constStr0011	7	0	158	4	1
+88	__constStr0011.__constStr0011_type	1	1	0	1	0
+89	__RLSLastGoodRead3	7	0	160	4	2
+90	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
+91	__RLSBbufLSWrite1	7	0	162	4	1
+92	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+93	__RLSReadBuf3	7	0	164	4	8
+94	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
+95	__lerSensor_7qG2_leitura_7qG2_000	7	0	166	4	10
+96	__lerSensor_7qG2_leitura_7qG2_000.__lerSensor_7qG2_leitura_7qG2_000_type	4	0	0	2	0
+97	__strbufmain	7	0	168	4	6
+98	__strbufmain.__strbufmain_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	112	0	#line 112 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	113	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	112	2	#line 112 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	113	2	#line 113 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	114	2		subcall InicializaSensores, __InicializaSensores_return
+0	113	4	#line 113 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	115	4	#line 115 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	116	4		set __D0main, 1
+0	116	7	#line 116 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	117	7		tst 5, __D0main, __D0main
+0	116	10	#line 116 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	117	10		brtst 4, __ASM_Label_548, __D0main
+0	6678	13	#line 6678 "NXCDefs.h"
+0	6679	13	#pragma macro 6
+0	6679	13		mov __PointOutArgs.Location.X, __constVal200
+0	6679	15		mov __PointOutArgs.Location.Y, __constVal200
+0	6679	17		mov __PointOutArgs.Options, __constVal1
+0	6679	19		syscall 14, __PointOutArgs
+0	4156	22	#line 4156 "NXCDefs.h"
+0	6678	22	#line 6678 "NXCDefs.h"
+0	117	22	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	117	22	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	118	22		set __signed_stack_001main, 0
+0	117	25	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	117	25	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	118	25		set __signed_stack_002main, 56
+0	117	28	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	117	28	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	118	28		strcat __strbufmain, __constStr0009
+0	118	32	#line 118 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	118	32	#line 118 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	119	32		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	118	34	#line 118 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	119	34		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	118	36	#line 118 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	119	36		set __TextOutArgs.Options, 0
+0	118	39	#line 118 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	119	39		mov __TextOutArgs.Text, __strbufmain
+0	118	41	#line 118 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	119	41		syscall 13, __TextOutArgs
+0	118	44	#line 118 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	119	44		mov __D0main, __TextOutArgs.Result
+0	118	46	#line 118 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	118	46	#line 118 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	118	46	#line 118 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	119	46		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	118	49	#line 118 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	8551	49	#line 8551 "NXCDefs.h"
+0	8552	49		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	52	#line 8551 "NXCDefs.h"
+0	119	52	#line 119 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	6678	52	#line 6678 "NXCDefs.h"
+0	6679	52	#pragma macro 6
+0	6679	52		mov __PointOutArgs.Location.X, __constVal200
+0	6679	54		mov __PointOutArgs.Location.Y, __constVal200
+0	6679	56		mov __PointOutArgs.Options, __constVal1
+0	6679	58		syscall 14, __PointOutArgs
+0	4203	61	#line 4203 "NXCDefs.h"
+0	6678	61	#line 6678 "NXCDefs.h"
+0	120	61	#line 120 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	120	61	#line 120 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	121	61		set __signed_stack_001main, 0
+0	120	64	#line 120 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	120	64	#line 120 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	121	64		set __signed_stack_002main, 56
+0	120	67	#line 120 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	120	67	#line 120 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	121	67		strcat __strbufmain, __constStr0010
+0	121	71	#line 121 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	121	71	#line 121 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	122	71		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	121	73	#line 121 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	122	73		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	121	75	#line 121 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	122	75		set __TextOutArgs.Options, 0
+0	121	78	#line 121 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	122	78		mov __TextOutArgs.Text, __strbufmain
+0	121	80	#line 121 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	122	80		syscall 13, __TextOutArgs
+0	121	83	#line 121 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	122	83		mov __D0main, __TextOutArgs.Result
+0	121	85	#line 121 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	121	85	#line 121 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	121	85	#line 121 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	122	85		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	121	88	#line 121 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	8551	88	#line 8551 "NXCDefs.h"
+0	8552	88		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	91	#line 8551 "NXCDefs.h"
+0	122	91	#line 122 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	6678	91	#line 6678 "NXCDefs.h"
+0	6679	91	#pragma macro 6
+0	6679	91		mov __PointOutArgs.Location.X, __constVal200
+0	6679	93		mov __PointOutArgs.Location.Y, __constVal200
+0	6679	95		mov __PointOutArgs.Options, __constVal1
+0	6679	97		syscall 14, __PointOutArgs
+0	4246	100	#line 4246 "NXCDefs.h"
+0	6678	100	#line 6678 "NXCDefs.h"
+0	123	100	#line 123 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	123	100	#line 123 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	124	100		set __signed_stack_001main, 0
+0	123	103	#line 123 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	123	103	#line 123 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	124	103		set __signed_stack_002main, 56
+0	123	106	#line 123 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	123	106	#line 123 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	124	106		strcat __strbufmain, __constStr0011
+0	124	110	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	124	110	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	125	110		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	124	112	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	125	112		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	124	114	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	125	114		set __TextOutArgs.Options, 0
+0	124	117	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	125	117		mov __TextOutArgs.Text, __strbufmain
+0	124	119	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	125	119		syscall 13, __TextOutArgs
+0	124	122	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	125	122		mov __D0main, __TextOutArgs.Result
+0	124	124	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	124	124	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	124	124	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	125	124		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	124	127	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	8551	127	#line 8551 "NXCDefs.h"
+0	8552	127		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	130	#line 8551 "NXCDefs.h"
+0	125	130	#line 125 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	6678	130	#line 6678 "NXCDefs.h"
+0	6679	130	#pragma macro 6
+0	6679	130		mov __PointOutArgs.Location.X, __constVal200
+0	6679	132		mov __PointOutArgs.Location.Y, __constVal200
+0	6679	134		mov __PointOutArgs.Options, __constVal1
+0	6679	136		syscall 14, __PointOutArgs
+0	4289	139	#line 4289 "NXCDefs.h"
+0	6678	139	#line 6678 "NXCDefs.h"
+0	127	139	#line 127 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	128	139	#line 128 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	129	139		set __main_7qG2_minEsq_7qG2_000, 9900
+0	128	142	#line 128 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	128	142	#line 128 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	129	142	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	130	142		mov __main_7qG2_maxEsq_7qG2_000, __constValNeg100
+0	129	144	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	129	144	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	130	144	#line 130 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	131	144		set __main_7qG2_minDir_7qG2_000, 9900
+0	130	147	#line 130 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	130	147	#line 130 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	131	147	#line 131 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	132	147		mov __main_7qG2_maxDir_7qG2_000, __constValNeg100
+0	131	149	#line 131 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	131	149	#line 131 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	133	149	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	134	149		set __main_7qG2_cont_7qG2_000, 0
+0	133	152	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	133	152	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	133	152	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	134	152	#pragma macro 26
+0	134	152		acquire __RLSBmutex3
+0	134	153		mov __RLSReadBuf3, __RLSBbufLSWrite1
+0	134	155		set __RLSBytesCount3, 1
+0	134	158		wait2 NA, __constVal15
+0	134	161		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+0	134	163		index __D0main, __RLSReadBuf3, 65535
+0	134	167		release __RLSBmutex3
+0	4319	168	#line 4319 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	133	168	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	134	168		mov __signed_stack_001main, __D0main
+0	133	170	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	134	170		set __D0main, 7
+0	133	173	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	134	173		cmp 1, __D0main, __signed_stack_001main, __D0main
+0	134	177	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	135	177		brtst 4, __ASM_Label_580, __D0main
+0	134	180	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	135	180		set __lerSensor_7qG2_sensor_7qG2_000, 0
+0	134	183	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	135	183	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	136	183		subcall lerSensor, __lerSensor_return
+0	135	185	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	136	185		mov __main_7qG2_xDir_7qG2_000, __D0lerSensor
+0	135	187	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	135	187	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	135	187	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	136	187		set __lerSensor_7qG2_sensor_7qG2_000, 1
+0	135	190	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	137	190	#line 137 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	138	190		subcall lerSensor, __lerSensor_return
+0	137	192	#line 137 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	138	192		mov __main_7qG2_xEsq_7qG2_000, __D0lerSensor
+0	137	194	#line 137 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	137	194	#line 137 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	137	194	#line 137 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	138	194		mov __signed_stack_001main, __main_7qG2_xDir_7qG2_000
+0	137	196	#line 137 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	137	196	#line 137 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	138	196		mov __D0main, __main_7qG2_minDir_7qG2_000
+0	137	198	#line 137 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	138	198		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	138	202	#line 138 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	139	202		brtst 4, __ASM_Label_593, __D0main
+0	139	205	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	140	205		mov __main_7qG2_minDir_7qG2_000, __main_7qG2_xDir_7qG2_000
+0	139	207	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	139	207	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	140	207	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	140	207	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	141	207		mov __signed_stack_001main, __main_7qG2_xDir_7qG2_000
+0	140	209	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	140	209	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	141	209		mov __D0main, __main_7qG2_maxDir_7qG2_000
+0	140	211	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	141	211		cmp 1, __D0main, __signed_stack_001main, __D0main
+0	141	215	#line 141 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	142	215		brtst 4, __ASM_Label_598, __D0main
+0	142	218	#line 142 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	143	218		mov __main_7qG2_maxDir_7qG2_000, __main_7qG2_xDir_7qG2_000
+0	142	220	#line 142 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	142	220	#line 142 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	144	220	#line 144 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	144	220	#line 144 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	145	220		mov __signed_stack_001main, __main_7qG2_xEsq_7qG2_000
+0	144	222	#line 144 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	144	222	#line 144 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	145	222		mov __D0main, __main_7qG2_minEsq_7qG2_000
+0	144	224	#line 144 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	145	224		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	145	228	#line 145 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	146	228		brtst 4, __ASM_Label_603, __D0main
+0	146	231	#line 146 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	147	231		mov __main_7qG2_minEsq_7qG2_000, __main_7qG2_xEsq_7qG2_000
+0	146	233	#line 146 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	146	233	#line 146 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	147	233	#line 147 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	147	233	#line 147 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	148	233		mov __signed_stack_001main, __main_7qG2_xEsq_7qG2_000
+0	147	235	#line 147 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	147	235	#line 147 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	148	235		mov __D0main, __main_7qG2_maxEsq_7qG2_000
+0	147	237	#line 147 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	148	237		cmp 1, __D0main, __signed_stack_001main, __D0main
+0	148	241	#line 148 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	149	241		brtst 4, __ASM_Label_608, __D0main
+0	149	244	#line 149 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	150	244		mov __main_7qG2_maxEsq_7qG2_000, __main_7qG2_xEsq_7qG2_000
+0	149	246	#line 149 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	149	246	#line 149 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	151	246	#line 151 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	6678	246	#line 6678 "NXCDefs.h"
+0	6679	246	#pragma macro 6
+0	6679	246		mov __PointOutArgs.Location.X, __constVal200
+0	6679	248		mov __PointOutArgs.Location.Y, __constVal200
+0	6679	250		mov __PointOutArgs.Options, __constVal1
+0	6679	252		syscall 14, __PointOutArgs
+0	4451	255	#line 4451 "NXCDefs.h"
+0	6678	255	#line 6678 "NXCDefs.h"
+0	153	255	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	153	255	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	154	255		set __signed_stack_001main, 0
+0	153	258	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	153	258	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	154	258		set __signed_stack_002main, 56
+0	153	261	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	153	261	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	154	261		mov __D0main, __main_7qG2_maxDir_7qG2_000
+0	154	263	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	154	263	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	155	263		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	154	265	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	155	265		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	154	267	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	155	267		set __TextOutArgs.Options, 0
+0	154	270	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	155	270		numtostr __TextOutArgs.Text, __D0main
+0	154	273	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	155	273		syscall 13, __TextOutArgs
+0	154	276	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	155	276		mov __D0main, __TextOutArgs.Result
+0	154	278	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	154	278	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	154	278	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	155	278		set __signed_stack_001main, 0
+0	154	281	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	154	281	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	155	281		set __signed_stack_002main, 48
+0	154	284	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	154	284	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	155	284		mov __D0main, __main_7qG2_xDir_7qG2_000
+0	155	286	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	155	286	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	156	286		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	155	288	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	156	288		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	155	290	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	156	290		set __TextOutArgs.Options, 0
+0	155	293	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	156	293		numtostr __TextOutArgs.Text, __D0main
+0	155	296	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	156	296		syscall 13, __TextOutArgs
+0	155	299	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	156	299		mov __D0main, __TextOutArgs.Result
+0	155	301	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	155	301	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	155	301	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	156	301		set __signed_stack_001main, 0
+0	155	304	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	155	304	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	156	304		set __signed_stack_002main, 40
+0	155	307	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	155	307	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	156	307		mov __D0main, __main_7qG2_minDir_7qG2_000
+0	156	309	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	156	309	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	157	309		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	156	311	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	157	311		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	156	313	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	157	313		set __TextOutArgs.Options, 0
+0	156	316	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	157	316		numtostr __TextOutArgs.Text, __D0main
+0	156	319	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	157	319		syscall 13, __TextOutArgs
+0	156	322	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	157	322		mov __D0main, __TextOutArgs.Result
+0	156	324	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	156	324	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	156	324	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	157	324		set __signed_stack_001main, 50
+0	156	327	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	156	327	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	157	327		set __signed_stack_002main, 56
+0	156	330	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	156	330	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	157	330		mov __D0main, __main_7qG2_maxEsq_7qG2_000
+0	157	332	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	157	332	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	158	332		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	157	334	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	158	334		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	157	336	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	158	336		set __TextOutArgs.Options, 0
+0	157	339	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	158	339		numtostr __TextOutArgs.Text, __D0main
+0	157	342	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	158	342		syscall 13, __TextOutArgs
+0	157	345	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	158	345		mov __D0main, __TextOutArgs.Result
+0	157	347	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	157	347	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	157	347	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	158	347		set __signed_stack_001main, 50
+0	157	350	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	157	350	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	158	350		set __signed_stack_002main, 48
+0	157	353	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	157	353	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	158	353		mov __D0main, __main_7qG2_xEsq_7qG2_000
+0	158	355	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	158	355	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	159	355		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	158	357	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	159	357		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	158	359	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	159	359		set __TextOutArgs.Options, 0
+0	158	362	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	159	362		numtostr __TextOutArgs.Text, __D0main
+0	158	365	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	159	365		syscall 13, __TextOutArgs
+0	158	368	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	159	368		mov __D0main, __TextOutArgs.Result
+0	158	370	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	158	370	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	158	370	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	159	370		set __signed_stack_001main, 50
+0	158	373	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	158	373	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	159	373		set __signed_stack_002main, 40
+0	158	376	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	158	376	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	159	376		mov __D0main, __main_7qG2_minEsq_7qG2_000
+0	159	378	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	159	378	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	160	378		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	159	380	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	160	380		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	159	382	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	160	382		set __TextOutArgs.Options, 0
+0	159	385	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	160	385		numtostr __TextOutArgs.Text, __D0main
+0	159	388	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	160	388		syscall 13, __TextOutArgs
+0	159	391	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	160	391		mov __D0main, __TextOutArgs.Result
+0	159	393	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	159	393	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	159	393	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	160	393		set __signed_stack_001main, 25
+0	159	396	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	159	396	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	160	396		set __signed_stack_002main, 24
+0	159	399	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	159	399	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	160	399		mov __D0main, __main_7qG2_cont_7qG2_000
+0	159	401	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	160	401		add __main_7qG2_cont_7qG2_000, __main_7qG2_cont_7qG2_000, __constVal1
+0	161	405	#line 161 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	161	405	#line 161 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	162	405		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	161	407	#line 161 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	162	407		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	161	409	#line 161 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	162	409		set __TextOutArgs.Options, 0
+0	161	412	#line 161 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	162	412		numtostr __TextOutArgs.Text, __D0main
+0	161	415	#line 161 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	162	415		syscall 13, __TextOutArgs
+0	161	418	#line 161 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	162	418		mov __D0main, __TextOutArgs.Result
+0	161	420	#line 161 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	161	420	#line 161 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	161	420	#line 161 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	162	420		set __Wait_7qG2_ms_7qG2_000_inline_main, 100
+0	161	423	#line 161 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	8551	423	#line 8551 "NXCDefs.h"
+0	8552	423		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	426	#line 8551 "NXCDefs.h"
+0	162	426	#line 162 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	166	426	#line 166 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	167	426		jmp __ASM_Label_579
+0	166	428	#line 166 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	168	428	#line 168 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	169	428		jmp __ASM_Label_547
+0	168	430	#line 168 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+0	169	430		exit -1, -1
+1	5476	0		setin __constVal1, __ResetSensorPort, 5
+1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5480	11		subret ____ResetSensorSubroutine_return
+2	6393	0	#pragma macro 25
+2	6393	0		acquire __CLSWMutex3
+2	6393	1		or __CLSWArgs3.Port, __constVal3, __LSWriteOptions3
+2	6393	5		mov __CLSWArgs3.ReturnLen, __RLSBytesCount3
+2	6393	7		mov __CLSWArgs3.Buffer, __RLSReadBuf3
+2	6393	9		syscall 21, __CLSWArgs3
+2	6393	12		mov __RLSBResult3, __CLSWArgs3.Result
+2	6393	14		release __CLSWMutex3
+2	6393	15	#line 6393 "NXTDefs.h"
+2	6394	15		brtst 5, __RLSBError3, __RLSBResult3
+2	6395	18		set __RLSBIterations3, 60
+2	6397	21	#pragma macro 23
+2	6397	21		acquire __CLSCSMutex3
+2	6397	22		set __CLSCSArgs3.Port, 3
+2	6397	25		syscall 23, __CLSCSArgs3
+2	6397	28		mov __RLSBytesCount3, __CLSCSArgs3.BytesReady
+2	6397	30		mov __RLSBResult3, __CLSCSArgs3.Result
+2	6397	32		release __CLSCSMutex3
+2	6397	33	#line 6397 "NXTDefs.h"
+2	6398	33		sub __RLSBIterations3, __RLSBIterations3, __constVal1
+2	6399	37		brtst 2, __RLSBError3, __RLSBIterations3
+2	6400	40		brtst 0, __RLSBError3, __RLSBResult3
+2	6401	43		brtst 4, __RLSBReadyToRead3, __RLSBResult3
+2	6403	46		wait2 NA, __constVal1
+2	6404	49		jmp __RLSBDoCheckStatus3
+2	6406	51		brtst 4, __RLSBReturn3, __RLSBytesCount3
+2	6407	54		arrinit __RLSReadBuf3, __constVal0, __RLSBytesCount3
+2	6409	58	#pragma macro 25
+2	6409	58		acquire __CLSRMutex3
+2	6409	59		set __CLSRArgs3.Port, 3
+2	6409	62		mov __CLSRArgs3.BufferLen, __RLSBytesCount3
+2	6409	64		syscall 22, __CLSRArgs3
+2	6409	67		mov __RLSReadBuf3, __CLSRArgs3.Buffer
+2	6409	69		mov __RLSBResult3, __CLSRArgs3.Result
+2	6409	71		release __CLSRMutex3
+2	6409	72	#line 6409 "NXTDefs.h"
+2	6410	72		brtst 5, __RLSBError3, __RLSBResult3
+2	6411	75		mov __RLSLastGoodRead3, __RLSReadBuf3
+2	6412	77		jmp __RLSBDone3
+2	6414	79		mov __RLSReadBuf3, __RLSLastGoodRead3
+2	6416	81		arrsize __RLSBytesCount3, __RLSReadBuf3
+2	6418	84		subret ____ReadLSBytes3_return
+3	77	0	#line 77 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+3	78	0		set __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 0
+3	77	3	#line 77 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+3	4396	3	#line 4396 "NXCDefs.h"
+3	4397	3	#pragma macro 6
+3	4397	3		setin __constVal14, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 0
+3	4397	7		setin __constVal128, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 1
+3	4397	11		mov __ResetSensorPort, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores
+3	4397	13		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+3	3744	15	#line 3744 "NXCDefs.h"
+3	4396	15	#line 4396 "NXCDefs.h"
+3	78	15	#line 78 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+3	78	15	#line 78 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+3	79	15		set __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 1
+3	78	18	#line 78 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+3	4396	18	#line 4396 "NXCDefs.h"
+3	4397	18	#pragma macro 6
+3	4397	18		setin __constVal14, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 0
+3	4397	22		setin __constVal128, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 1
+3	4397	26		mov __ResetSensorPort, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores
+3	4397	28		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+3	3752	30	#line 3752 "NXCDefs.h"
+3	4396	30	#line 4396 "NXCDefs.h"
+3	79	30	#line 79 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+3	79	30	#line 79 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+3	80	30		set __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 2
+3	79	33	#line 79 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+3	4396	33	#line 4396 "NXCDefs.h"
+3	4397	33	#pragma macro 6
+3	4397	33		setin __constVal14, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 0
+3	4397	37		setin __constVal128, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 1
+3	4397	41		mov __ResetSensorPort, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores
+3	4397	43		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+3	3760	45	#line 3760 "NXCDefs.h"
+3	4396	45	#line 4396 "NXCDefs.h"
+3	80	45	#line 80 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+3	80	45	#line 80 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+3	81	45		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores, 3
+3	80	48	#line 80 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+3	81	48	#line 81 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+3	82	48		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_InicializaSensores, __constVal1
+3	4342	50	#line 4342 "NXCDefs.h"
+3	4343	50		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores
+3	4342	52	#line 4342 "NXCDefs.h"
+3	4342	52	#line 4342 "NXCDefs.h"
+3	4343	52		mov __DU0SetSensorLowspeed_inline_InicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_InicializaSensores
+3	4342	54	#line 4342 "NXCDefs.h"
+3	4343	54		tst 5, __D0SetSensorLowspeed_inline_InicializaSensores, __DU0SetSensorLowspeed_inline_InicializaSensores
+3	4342	57	#line 4342 "NXCDefs.h"
+3	4343	57		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_InicializaSensores
+3	4342	60	#line 4342 "NXCDefs.h"
+3	4343	60		set __DU0SetSensorLowspeed_inline_InicializaSensores, 11
+3	4342	63	#line 4342 "NXCDefs.h"
+3	4342	63	#line 4342 "NXCDefs.h"
+3	4343	63		jmp __004__ASM_Label_37
+3	4342	65	#line 4342 "NXCDefs.h"
+3	4343	65		set __DU0SetSensorLowspeed_inline_InicializaSensores, 10
+3	4342	68	#line 4342 "NXCDefs.h"
+3	4342	68	#line 4342 "NXCDefs.h"
+3	4343	68		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, __DU0SetSensorLowspeed_inline_InicializaSensores
+3	4247	70	#line 4247 "NXCDefs.h"
+3	4248	70		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, 0
+3	4247	74	#line 4247 "NXCDefs.h"
+3	4343	74	#line 4343 "NXCDefs.h"
+3	4343	74	#line 4343 "NXCDefs.h"
+3	4344	74		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores
+3	4343	76	#line 4343 "NXCDefs.h"
+3	4343	76	#line 4343 "NXCDefs.h"
+3	4344	76		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, 0
+3	4343	79	#line 4343 "NXCDefs.h"
+3	4260	79	#line 4260 "NXCDefs.h"
+3	4261	79		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, 1
+3	4260	83	#line 4260 "NXCDefs.h"
+3	4344	83	#line 4344 "NXCDefs.h"
+3	4344	83	#line 4344 "NXCDefs.h"
+3	4344	83	#line 4344 "NXCDefs.h"
+3	4278	83	#line 4278 "NXCDefs.h"
+3	4279	83	#pragma macro 4
+3	4279	83		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores
+3	4279	85		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+3	3850	87	#line 3850 "NXCDefs.h"
+3	4278	87	#line 4278 "NXCDefs.h"
+3	4345	87	#line 4345 "NXCDefs.h"
+3	81	87	#line 81 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+3	83	87	#line 83 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+3	84	87		subret __InicializaSensores_return
+4	87	0	#line 87 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	88	0		arrinit __lerSensor_7qG2_leitura_7qG2_000, __constVal0, __constVal11
+4	87	4	#line 87 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	88	4		set __lerSensor_7qG2_i_7qG2_000, 0
+4	87	7	#line 87 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	87	7	#line 87 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	88	7		mov __signed_stack_001lerSensor, __lerSensor_7qG2_i_7qG2_000
+4	87	9	#line 87 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	87	9	#line 87 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	88	9		set __D0lerSensor, 11
+4	87	12	#line 87 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	88	12		cmp 0, __D0lerSensor, __signed_stack_001lerSensor, __D0lerSensor
+4	87	16	#line 87 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	88	16		brtst 4, __ASM_Label_498, __D0lerSensor
+4	87	19	#line 87 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	88	19		jmp __ASM_Label_499
+4	87	21	#line 87 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	88	21		add __lerSensor_7qG2_i_7qG2_000, __lerSensor_7qG2_i_7qG2_000, __constVal1
+4	88	25	#line 88 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	89	25		jmp __ASM_Label_497
+4	90	27	#line 90 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	91	27		getin __lerSensor_7qG2_aux_7qG2_000, __lerSensor_7qG2_sensor_7qG2_000, 2
+4	90	31	#line 90 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	90	31	#line 90 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	91	31	#line 91 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	92	31		set __lerSensor_7qG2_j_7qG2_000, 0
+4	91	34	#line 91 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	91	34	#line 91 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	91	34	#line 91 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	92	34		mov __signed_stack_001lerSensor, __lerSensor_7qG2_aux_7qG2_000
+4	91	36	#line 91 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	91	36	#line 91 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	92	36		mov __signed_stack_002lerSensor, __lerSensor_7qG2_j_7qG2_000
+4	91	38	#line 91 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	91	38	#line 91 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	92	38		index __D0lerSensor, __lerSensor_7qG2_leitura_7qG2_000, __signed_stack_002lerSensor
+4	91	42	#line 91 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	91	42	#line 91 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	92	42		cmp 0, __D0lerSensor, __signed_stack_001lerSensor, __D0lerSensor
+4	91	46	#line 91 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	92	46		brtst 4, __ASM_Label_512, __D0lerSensor
+4	91	49	#line 91 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	92	49		mov __signed_stack_001lerSensor, __lerSensor_7qG2_j_7qG2_000
+4	91	51	#line 91 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	91	51	#line 91 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	92	51		mov __D0lerSensor, __lerSensor_7qG2_i_7qG2_000
+4	91	53	#line 91 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	92	53		cmp 0, __D0lerSensor, __signed_stack_001lerSensor, __D0lerSensor
+4	92	57	#line 92 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	93	57		brtst 4, __ASM_Label_510, __D0lerSensor
+4	93	60	#line 93 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	94	60		add __lerSensor_7qG2_j_7qG2_000, __lerSensor_7qG2_j_7qG2_000, __constVal1
+4	93	64	#line 93 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	95	64	#line 95 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	96	64		jmp __ASM_Label_509
+4	95	66	#line 95 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	95	66	#line 95 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	96	66		mov __signed_stack_001lerSensor, __lerSensor_7qG2_j_7qG2_000
+4	95	68	#line 95 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	95	68	#line 95 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	96	68		mov __D0lerSensor, __lerSensor_7qG2_i_7qG2_000
+4	95	70	#line 95 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	96	70		cmp 0, __D0lerSensor, __signed_stack_001lerSensor, __D0lerSensor
+4	96	74	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	97	74		brtst 4, __ASM_Label_517, __D0lerSensor
+4	96	77	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	97	77		mov __lerSensor_7qG2_k_7qG2_000, __lerSensor_7qG2_i_7qG2_000
+4	96	79	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	96	79	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	97	79		mov __signed_stack_001lerSensor, __lerSensor_7qG2_k_7qG2_000
+4	96	81	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	96	81	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	97	81		mov __D0lerSensor, __lerSensor_7qG2_j_7qG2_000
+4	96	83	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	97	83		cmp 1, __D0lerSensor, __signed_stack_001lerSensor, __D0lerSensor
+4	96	87	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	97	87		brtst 4, __ASM_Label_519, __D0lerSensor
+4	96	90	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	97	90		jmp __ASM_Label_520
+4	96	92	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	97	92		sub __lerSensor_7qG2_k_7qG2_000, __lerSensor_7qG2_k_7qG2_000, __constVal1
+4	97	96	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	98	96		jmp __ASM_Label_518
+4	97	98	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	98	98		mov __signed_stack_001lerSensor, __lerSensor_7qG2_k_7qG2_000
+4	97	100	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	97	100	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	98	100		mov __signed_stack_002lerSensor, __lerSensor_7qG2_k_7qG2_000
+4	97	102	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	97	102	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	98	102		set __D0lerSensor, 1
+4	97	105	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	98	105		sub __signed_stack_002lerSensor, __signed_stack_002lerSensor, __D0lerSensor
+4	97	109	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	97	109	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	98	109		index __D0lerSensor, __lerSensor_7qG2_leitura_7qG2_000, __signed_stack_002lerSensor
+4	97	113	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	98	113	#line 98 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	99	113		replace __lerSensor_7qG2_leitura_7qG2_000, __lerSensor_7qG2_leitura_7qG2_000, __signed_stack_001lerSensor, __D0lerSensor
+4	98	118	#line 98 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	99	118	#line 99 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	100	118		jmp __ASM_Label_521
+4	99	120	#line 99 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	99	120	#line 99 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	100	120		mov __signed_stack_001lerSensor, __lerSensor_7qG2_j_7qG2_000
+4	99	122	#line 99 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	100	122	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	101	122		mov __D0lerSensor, __lerSensor_7qG2_aux_7qG2_000
+4	100	124	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	101	124		replace __lerSensor_7qG2_leitura_7qG2_000, __lerSensor_7qG2_leitura_7qG2_000, __signed_stack_001lerSensor, __D0lerSensor
+4	100	129	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	102	129	#line 102 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	103	129		jmp __ASM_Label_536
+4	102	131	#line 102 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	103	131		mov __signed_stack_001lerSensor, __lerSensor_7qG2_i_7qG2_000
+4	102	133	#line 102 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	103	133	#line 103 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	104	133		mov __D0lerSensor, __lerSensor_7qG2_aux_7qG2_000
+4	103	135	#line 103 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	104	135		replace __lerSensor_7qG2_leitura_7qG2_000, __lerSensor_7qG2_leitura_7qG2_000, __signed_stack_001lerSensor, __D0lerSensor
+4	103	140	#line 103 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	106	140	#line 106 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	106	140	#line 106 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	107	140		jmp __ASM_Label_500
+4	106	142	#line 106 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	106	142	#line 106 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	107	142		set __signed_stack_001lerSensor, 5
+4	106	145	#line 106 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	106	145	#line 106 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	107	145		index __D0lerSensor, __lerSensor_7qG2_leitura_7qG2_000, __signed_stack_001lerSensor
+4	106	149	#line 106 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	107	149	#line 107 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	108	149		subret __lerSensor_return
+4	107	151	#line 107 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	111	151	#line 111 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+4	112	151		subret __lerSensor_return
+5	169	0	#line 169 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc"
+5	170	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc
+1	__ResetSensorSubroutine	433	NXTDefs.h
+2	__ReadLSBytes3	446	NXTDefs.h
+3	InicializaSensores	532	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc
+4	lerSensor	621	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc
+5	__initialize_global_data	774	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\Calibra_filtro_tem_boneco.nxc

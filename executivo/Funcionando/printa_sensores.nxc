@@ -1,0 +1,104 @@
+//SENSORES E MOTORES
+#define MD OUT_B //motor da direita
+#define ME OUT_A //motor da esquerda
+#define MP OUT_C //motor da porta
+#define USD IN_1 //Utrasonico da direita
+#define USE IN_2 //Utrasonico da esquerda
+#define HTD IN_3//hitech da direita
+#define HTE IN_4//hitech da esquerda
+
+//LOGICA
+
+#define direita 1
+#define esquerda 2
+
+//Bluetooth
+	#define SIM 5
+	#define SIM_US 1
+	#define SIM_GARRA 2
+	#define NAO 0
+
+	#define CONTINUA 6
+	#define VIROU 7
+	#define DESVIROU 8
+	#define PARADO 0
+	#define ANDANDO -2
+
+	#define BONECO_BRANCO 4
+	#define BONECO_PRETO 12
+	#define BONECO_VERMELHO -1
+
+	#define NAO_PEGA 9
+	#define PEGA_OU_NAOPEGA 10
+	#define PEGA 11
+
+	//DEFINES BLUETOOTH
+	#define CONECTA TRUE
+	#define DESCONECTA FALSE
+	//defines da conexao
+	#define CONN 1
+	#define INBOX 1
+	#define OUTBOX 2
+
+	//defines da struct
+
+	#define CONSULTOR "LECA"
+	#define ACAO CONECTA
+	#define CONEXAO 1
+
+//dist
+	#define DIST_RE 30
+	#define DIST_DA_PAREDE 8
+//cores
+	#define COR_VERDE 5
+	#define COR_AZUL 3 // 3 ou 14, 3 eh mais certo
+	#define COR_PRETA 12 //12 ou 17, 12 eh mais certo
+	#define COR_NEUTRA 13//BRANCO fica acima de 13
+
+//
+#define NAO_ALIEN 0
+#define SIM_ALIEN 1
+#define ANGULO_DESCARTA_ESQUERDA 900
+
+//declaração das funções
+void PrintaSensoresRaw();
+void inicializaSensores();
+
+task main()
+{
+	inicializaSensores();
+
+	while(1)//void loop
+	{
+		PrintaSensoresRaw();
+	}
+}
+
+//assinatura das funções
+void inicializaSensores()
+{
+  SetSensorLowspeed(USD);
+  SetSensorLowspeed(USE);
+  SetSensorLowspeed(HTD);
+  SetSensorLowspeed(HTE);
+}
+
+void PrintaSensoresRaw()
+{
+    int rd, gd, bd, re, ge, be;
+
+	ReadSensorHTRawColor(HTD, rd, gd, bd);
+	ReadSensorHTRawColor(HTE, re, ge, be);
+
+    ClearScreen();
+    TextOut(50, LCD_LINE1, "Dir: r g b");
+    NumOut(50, LCD_LINE2, rd);
+    NumOut(50, LCD_LINE3, gd);
+    NumOut(50, LCD_LINE4, bd);
+    TextOut(0, LCD_LINE1, "Esq: r g b");
+    NumOut(0, LCD_LINE2, re);
+    NumOut(0, LCD_LINE3, ge);
+    NumOut(0, LCD_LINE4, be);
+    
+    Wait(70);
+}

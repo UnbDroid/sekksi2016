@@ -396,7 +396,7 @@ void MandaContinuar(){//TESTAR
     //bip();
     SendRemoteNumber(CONEXAO, OUTBOX, CONTINUA);
     ReceiveRemoteNumber(INBOX, true, passei);
-    Wait(30);
+    //Wait(30);
   }while(passei != CONTINUA);
   bip();
   bip();
