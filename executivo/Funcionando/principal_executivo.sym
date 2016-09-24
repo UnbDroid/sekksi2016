@@ -60,231 +60,232 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 57	__CLSWMutex2	9	0	228	4	2
 58	__CLSCSMutex2	9	0	232	4	2
 59	__RLSBmutex2	9	0	236	4	4
-60	__constVal200	4	0	240	2	3
-61	__vira_7qG2_angulo_7qG2_000	4	1	242	2	4
-62	__ViraUmaRoda_7qG2_ang_7qG2_000	4	1	244	2	3
-63	__andaRetoDireita_7qG2_distAndar_7qG2_000	4	1	246	2	3
-64	__RetornaBoneco_7qG2_cor_7qG2_000	4	1	248	2	4
-65	__andaRetoDireita_7qG2_distParede_7qG2_000	4	1	250	2	5
-66	__constValNeg900	4	0	252	2	1
-67	__CorDoChao_7qG2_corEsq_7qG2_000	4	1	254	2	3
-68	__CorDoChao_7qG2_corDir_7qG2_000	4	1	256	2	3
-69	__IniciaCorDoChao_7qG2_corEsq_7qG2_000	4	1	258	2	3
-70	__RetornaBoneco_7qG2_passei_7qG2_000	4	1	260	2	3
-71	__Rejeitar_7qG2_passei_7qG2_000	4	1	262	2	3
-72	__IniciaCorDoChao_7qG2_corDir_7qG2_000	4	1	264	2	3
-73	__vira_7qG2_direcao_7qG2_000	4	1	266	2	4
+60	__Rejeitar_7qG2_passei_7qG2_000	4	1	240	2	3
+61	__vira_7qG2_direcao_7qG2_000	4	1	242	2	4
+62	__CorDoChao_7qG2_corEsq_7qG2_000	4	1	244	2	3
+63	__vira_7qG2_angulo_7qG2_000	4	1	246	2	4
+64	__andaRetoDireita_7qG2_distAndar_7qG2_000	4	1	248	2	3
+65	__constVal200	4	0	250	2	3
+66	__andaRetoDireita_7qG2_distParede_7qG2_000	4	1	252	2	5
+67	__RetornaBoneco_7qG2_cor_7qG2_000	4	1	254	2	4
+68	__constValNeg900	4	0	256	2	1
+69	__ViraUmaRoda_7qG2_ang_7qG2_000	4	1	258	2	3
+70	__IniciaCorDoChao_7qG2_corDir_7qG2_000	4	1	260	2	3
+71	__RetornaBoneco_7qG2_passei_7qG2_000	4	1	262	2	3
+72	__CorDoChao_7qG2_corDir_7qG2_000	4	1	264	2	3
+73	__IniciaCorDoChao_7qG2_corEsq_7qG2_000	4	1	266	2	3
 74	__distanciaGiro_7qG2_grau_7qG2_000	4	1	268	2	3
-75	__PlaySound_7qG2_aCode_7qG2_000	4	1	270	2	7
-76	__andaRetoDireita_7qG2_pote_7qG2_000	4	1	272	2	4
-77	__andaRetoDireita_7qG2_potd_7qG2_000	4	1	274	2	4
-78	__constVal500	4	0	276	2	1
-79	__PlaySound_7qG2_i_7qG2_001	4	1	278	2	15
-80	__constVal150	4	0	280	2	1
-81	__ChecaParada_7qG2_acao_7qG2_000	4	1	282	2	7
-82	__andaRetoDireita_7qG2_distanciaAtual_7qG2_000	4	1	284	2	4
-83	corEsq	4	0	286	2	2
-84	corDir	4	0	288	2	2
-85	__distanciaTachoCount_7qG2_grau_7qG2_000	4	1	290	2	2
-86	poteGlobal	4	0	292	2	1
-87	my_tc_d	4	1	294	2	5
-88	my_tc_e	4	1	296	2	4
-89	potdGlobal	4	0	298	2	1
-90	__bip_return	1	1	300	1	3
-91	__constVal32	2	0	301	1	51
-92	__OnRev_Tmp	2	1	302	1	4
+75	__andaRetoDireita_7qG2_pote_7qG2_000	4	1	270	2	4
+76	__PlaySound_7qG2_aCode_7qG2_000	4	1	272	2	7
+77	__andaRetoDireita_7qG2_distanciaAtual_7qG2_000	4	1	274	2	4
+78	__andaRetoDireita_7qG2_potd_7qG2_000	4	1	276	2	4
+79	my_tc_d	4	1	278	2	5
+80	__PlaySound_7qG2_i_7qG2_001	4	1	280	2	15
+81	__constVal500	4	0	282	2	1
+82	__ChecaParada_7qG2_acao_7qG2_000	4	1	284	2	7
+83	__constVal150	4	0	286	2	1
+84	corEsq	4	0	288	2	2
+85	poteGlobal	4	0	290	2	1
+86	__distanciaTachoCount_7qG2_grau_7qG2_000	4	1	292	2	2
+87	corDir	4	0	294	2	2
+88	potdGlobal	4	0	296	2	1
+89	my_tc_e	4	1	298	2	4
+90	__DaReh_return	1	1	300	1	3
+91	__OnRev_Tmp	2	1	301	1	4
+92	__constVal1	2	0	302	1	43
 93	__RetornaBoneco_return	1	1	303	1	4
-94	__DaReh_return	1	1	304	1	3
-95	__constVal1	2	0	305	1	43
-96	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	306	1	8
-97	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	307	1	8
-98	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	308	1	8
-99	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	309	1	8
-100	__distanciaGiro_return	1	1	310	1	5
-101	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	311	1	20
-102	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores	1	1	312	1	8
-103	__CorDoChao_return	1	1	313	1	3
-104	__constValNeg2	2	0	314	1	1
+94	__bip_return	1	1	304	1	3
+95	__constVal32	2	0	305	1	51
+96	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	306	1	8
+97	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	307	1	8
+98	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	308	1	4
+99	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	309	1	8
+100	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	310	1	20
+101	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores	1	1	311	1	8
+102	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	312	1	8
+103	__constValNeg2	2	0	313	1	1
+104	__constVal27	2	0	314	1	1
 105	__Rejeitar_return	1	1	315	1	3
-106	__ChecaParada_return	1	1	316	1	3
-107	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	317	1	4
-108	__constValNeg90	2	0	318	1	2
-109	__constVal50	2	0	319	1	1
-110	__inicializaSensores_return	1	1	320	1	3
-111	__iniciaBlue_return	1	1	321	1	3
-112	__IniciaCorDoChao_return	1	1	322	1	3
-113	__constVal0	2	1	323	1	75
-114	____initialize_global_data_return	1	1	324	1	3
-115	__executivo_return	1	1	325	1	3
-116	__desligaBlue_return	1	1	326	1	3
-117	__constVal96	2	0	327	1	17
-118	__constVal63	2	0	328	1	17
-119	__distanciaTachoCount_return	1	1	329	1	4
-120	__Para_return	1	1	330	1	4
-121	__ViraUmaRoda_return	1	1	331	1	4
+106	__CorDoChao_return	1	1	316	1	3
+107	__constValNeg90	2	0	317	1	2
+108	__constVal50	2	0	318	1	1
+109	__ChecaParada_return	1	1	319	1	3
+110	__distanciaGiro_return	1	1	320	1	5
+111	__constVal0	2	1	321	1	74
+112	__iniciaBlue_return	1	1	322	1	3
+113	__IniciaCorDoChao_return	1	1	323	1	3
+114	__inicializaSensores_return	1	1	324	1	3
+115	____initialize_global_data_return	1	1	325	1	3
+116	__executivo_return	1	1	326	1	3
+117	__desligaBlue_return	1	1	327	1	3
+118	__constVal96	2	0	328	1	17
+119	__constVal63	2	0	329	1	17
+120	__distanciaTachoCount_return	1	1	330	1	4
+121	__Para_return	1	1	331	1	4
 122	__andaRetoDireita_return	1	1	332	1	4
-123	__vira_return	1	1	333	1	4
-124	__PFTmp	1	1	334	1	1
-125	__constVal8	2	0	335	1	1
-126	__constVal100	2	0	336	1	2
-127	__RLSBytesCount0	1	1	337	1	7
-128	__RLSBResult0	2	1	338	1	7
-129	____ReadLSBytes0_return	1	1	339	1	3
-130	__LSWriteOptions3	1	1	340	1	1
-131	__constVal12	2	0	341	1	1
-132	__constVal15	2	0	342	1	4
-133	__constVal7	2	0	343	1	1
-134	__RLSBIterations0	1	1	344	1	4
-135	__constVal2	2	0	345	1	13
-136	____ReadLSBytes3_return	1	1	346	1	4
-137	__RLSBIterations2	1	1	347	1	4
-138	__RLSBResult2	2	1	348	1	7
-139	__RLSBytesCount2	1	1	349	1	8
-140	____ReadLSBytes2_return	1	1	350	1	4
-141	__RRNErr	1	1	351	1	4
-142	__RLSBIterations3	1	1	352	1	4
-143	__RLSBResult3	2	1	353	1	7
-144	__RLSBytesCount3	1	1	354	1	8
-145	__constVal5	2	0	355	1	6
-146	__LSWriteOptions0	1	1	356	1	1
-147	__PlaySound_return	1	1	357	1	3
-148	__constVal6	2	0	358	1	1
-149	__constVal3	2	0	359	1	24
-150	__constVal4	2	0	360	1	1
-151	__ResetSensorPort	1	1	361	1	6
-152	__ResetSensorTmp	1	1	362	1	2
-153	__LSWriteOptions2	1	1	363	1	1
-154	____ResetSensorSubroutine_return	1	1	364	1	6
-155	__CLSCSArgs0	8	0	3	4	4
-156	__CLSCSArgs0.Result	2	1	368	1	4
-157	__CLSCSArgs0.Port	1	1	369	1	4
-158	__CLSCSArgs0.BytesReady	1	1	370	1	4
-159	__iniciaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	5
-160	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Result	2	1	372	1	5
-161	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	373	1	5
-162	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	374	4	5
-163	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
-164	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	376	1	5
-165	__MRArgs	8	0	4	8	20
-166	__MRArgs.Result	2	1	380	1	20
-167	__MRArgs.QueueID	1	1	381	1	20
-168	__MRArgs.Remove	1	1	382	1	20
-169	__MRArgs.Message	7	0	384	4	20
-170	__MRArgs.Message.Message_type	1	0	0	1	0
-171	__CBTCSArgs	8	0	2	4	3
-172	__CBTCSArgs.Result	2	1	388	1	3
-173	__CBTCSArgs.Connection	1	1	389	1	3
-174	__CLSWArgs0	8	0	4	12	5
-175	__CLSWArgs0.Result	2	1	392	1	5
-176	__CLSWArgs0.Port	1	1	393	1	5
-177	__CLSWArgs0.Buffer	7	0	394	4	5
-178	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
-179	__CLSWArgs0.ReturnLen	1	1	396	1	5
-180	__CLSRArgs0	8	0	4	12	5
-181	__CLSRArgs0.Result	2	1	400	1	5
-182	__CLSRArgs0.Port	1	1	401	1	5
-183	__CLSRArgs0.Buffer	7	0	402	4	5
-184	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
-185	__CLSRArgs0.BufferLen	1	1	404	1	5
-186	__CBTWArgs	8	0	3	8	24
-187	__CBTWArgs.Result	2	1	408	1	24
-188	__CBTWArgs.Connection	1	1	409	1	24
-189	__CBTWArgs.Buffer	7	0	410	4	24
-190	__CBTWArgs.Buffer.Buffer_type	1	0	0	1	0
-191	__CLSCSArgs2	8	0	3	4	4
-192	__CLSCSArgs2.Result	2	1	412	1	4
-193	__CLSCSArgs2.Port	1	1	413	1	4
-194	__CLSCSArgs2.BytesReady	1	1	414	1	4
-195	__CLSRArgs3	8	0	4	12	5
-196	__CLSRArgs3.Result	2	1	416	1	5
-197	__CLSRArgs3.Port	1	1	417	1	5
-198	__CLSRArgs3.Buffer	7	0	418	4	5
-199	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
-200	__CLSRArgs3.BufferLen	1	1	420	1	5
-201	__CLSWArgs3	8	0	4	12	5
-202	__CLSWArgs3.Result	2	1	424	1	5
-203	__CLSWArgs3.Port	1	1	425	1	5
-204	__CLSWArgs3.Buffer	7	0	426	4	5
-205	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
-206	__CLSWArgs3.ReturnLen	1	1	428	1	5
-207	__SPTArgs	8	0	5	8	42
-208	__SPTArgs.Result	2	1	432	1	42
-209	__SPTArgs.Frequency	3	1	434	2	42
-210	__SPTArgs.Duration	3	1	436	2	42
-211	__SPTArgs.Loop	1	1	438	1	42
-212	__SPTArgs.Volume	1	1	439	1	42
-213	__PointOutArgs	8	0	3	12	4
-214	__PointOutArgs.Result	2	1	440	1	4
-215	__PointOutArgs.Location	8	0	2	4	4
-216	__PointOutArgs.Location.X	4	1	444	2	4
-217	__PointOutArgs.Location.Y	4	1	446	2	4
-218	__PointOutArgs.Options	5	1	448	4	4
-219	__desligaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	5
-220	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Result	2	1	452	1	5
-221	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	453	1	5
-222	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	454	4	5
-223	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
-224	__desligaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	456	1	5
-225	__CLSRArgs2	8	0	4	12	5
-226	__CLSRArgs2.Result	2	1	460	1	5
-227	__CLSRArgs2.Port	1	1	461	1	5
-228	__CLSRArgs2.Buffer	7	0	462	4	5
-229	__CLSRArgs2.Buffer.Buffer_type	1	0	0	1	0
-230	__CLSRArgs2.BufferLen	1	1	464	1	5
-231	__CLSWArgs2	8	0	4	12	5
-232	__CLSWArgs2.Result	2	1	468	1	5
-233	__CLSWArgs2.Port	1	1	469	1	5
-234	__CLSWArgs2.Buffer	7	0	470	4	5
-235	__CLSWArgs2.Buffer.Buffer_type	1	0	0	1	0
-236	__CLSWArgs2.ReturnLen	1	1	472	1	5
-237	__CLSCSArgs3	8	0	3	4	4
-238	__CLSCSArgs3.Result	2	1	476	1	4
-239	__CLSCSArgs3.Port	1	1	477	1	4
-240	__CLSCSArgs3.BytesReady	1	1	478	1	4
-241	__TextOutArgs	8	0	4	16	17
-242	__TextOutArgs.Result	2	1	480	1	17
-243	__TextOutArgs.Location	8	0	2	4	17
-244	__TextOutArgs.Location.X	4	1	484	2	17
-245	__TextOutArgs.Location.Y	4	1	486	2	17
-246	__TextOutArgs.Text	7	0	488	4	17
-247	__TextOutArgs.Text.Text_type	1	0	0	1	0
-248	__TextOutArgs.Options	5	1	492	4	17
-249	__constStr0016	7	0	496	4	1
-250	__constStr0016.__constStr0016_type	1	1	0	1	0
-251	__RLSLastGoodRead2	7	0	498	4	2
-252	__RLSLastGoodRead2.__RLSLastGoodRead2_type	1	0	0	1	0
-253	__RLSReadBuf2	7	0	500	4	10
-254	__RLSReadBuf2.__RLSReadBuf2_type	1	0	0	1	0
-255	__RLSLastGoodRead3	7	0	502	4	2
-256	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
-257	__constStr0011	7	0	504	4	1
-258	__constStr0011.__constStr0011_type	1	1	0	1	0
-259	__RLSLastGoodRead0	7	0	506	4	2
-260	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
-261	__strbufRetornaBoneco	7	0	508	4	2
-262	__strbufRetornaBoneco.__strbufRetornaBoneco_type	1	0	0	1	0
-263	__DCMessageWritePacket	7	0	510	4	6
-264	__DCMessageWritePacket.__DCMessageWritePacket_type	1	0	0	1	0
-265	__strbufiniciaBlue	7	0	512	4	4
-266	__strbufiniciaBlue.__strbufiniciaBlue_type	1	0	0	1	0
-267	__strbufdesligaBlue	7	0	514	4	4
-268	__strbufdesligaBlue.__strbufdesligaBlue_type	1	0	0	1	0
-269	__RLSBbufLSWrite1	7	0	516	4	5
-270	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
-271	__SRSFlattenBuf	7	0	518	4	12
-272	__SRSFlattenBuf.__SRSFlattenBuf_type	1	0	0	1	0
-273	__constStr0010	7	0	520	4	1
-274	__constStr0010.__constStr0010_type	1	1	0	1	0
-275	__RLSReadBuf0	7	0	522	4	8
-276	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
-277	__RLSReadBuf3	7	0	524	4	10
-278	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
-279	__SRSSendBuf	7	0	526	4	12
-280	__SRSSendBuf.__SRSSendBuf_type	1	0	0	1	0
-281	__constStr0009	7	0	528	4	2
-282	__constStr0009.__constStr0009_type	1	1	0	1	0
-283	__SRSTmpBuf	7	0	530	4	36
-284	__SRSTmpBuf.__SRSTmpBuf_type	1	0	0	1	0
+123	__ViraUmaRoda_return	1	1	333	1	4
+124	__vira_return	1	1	334	1	4
+125	__PFTmp	1	1	335	1	1
+126	__constVal8	2	0	336	1	1
+127	__constVal100	2	0	337	1	2
+128	__RLSBytesCount0	1	1	338	1	7
+129	__RLSBResult0	2	1	339	1	7
+130	____ReadLSBytes0_return	1	1	340	1	3
+131	__LSWriteOptions3	1	1	341	1	1
+132	__constVal12	2	0	342	1	1
+133	__constVal15	2	0	343	1	4
+134	__constVal7	2	0	344	1	1
+135	__RLSBIterations0	1	1	345	1	4
+136	__constVal2	2	0	346	1	13
+137	____ReadLSBytes3_return	1	1	347	1	4
+138	__RLSBIterations2	1	1	348	1	4
+139	__RLSBResult2	2	1	349	1	7
+140	__RLSBytesCount2	1	1	350	1	8
+141	____ReadLSBytes2_return	1	1	351	1	4
+142	__RRNErr	1	1	352	1	4
+143	__RLSBIterations3	1	1	353	1	4
+144	__RLSBResult3	2	1	354	1	7
+145	__RLSBytesCount3	1	1	355	1	8
+146	__constVal5	2	0	356	1	6
+147	__LSWriteOptions0	1	1	357	1	1
+148	__PlaySound_return	1	1	358	1	3
+149	__constVal6	2	0	359	1	1
+150	__constVal3	2	0	360	1	24
+151	__constVal4	2	0	361	1	1
+152	__ResetSensorPort	1	1	362	1	6
+153	__ResetSensorTmp	1	1	363	1	2
+154	__LSWriteOptions2	1	1	364	1	1
+155	____ResetSensorSubroutine_return	1	1	365	1	6
+156	__CLSCSArgs0	8	0	3	4	4
+157	__CLSCSArgs0.Result	2	1	368	1	4
+158	__CLSCSArgs0.Port	1	1	369	1	4
+159	__CLSCSArgs0.BytesReady	1	1	370	1	4
+160	__iniciaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	5
+161	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Result	2	1	372	1	5
+162	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	373	1	5
+163	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	374	4	5
+164	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
+165	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	376	1	5
+166	__MRArgs	8	0	4	8	20
+167	__MRArgs.Result	2	1	380	1	20
+168	__MRArgs.QueueID	1	1	381	1	20
+169	__MRArgs.Remove	1	1	382	1	20
+170	__MRArgs.Message	7	0	384	4	20
+171	__MRArgs.Message.Message_type	1	0	0	1	0
+172	__CBTCSArgs	8	0	2	4	3
+173	__CBTCSArgs.Result	2	1	388	1	3
+174	__CBTCSArgs.Connection	1	1	389	1	3
+175	__CLSWArgs0	8	0	4	12	5
+176	__CLSWArgs0.Result	2	1	392	1	5
+177	__CLSWArgs0.Port	1	1	393	1	5
+178	__CLSWArgs0.Buffer	7	0	394	4	5
+179	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+180	__CLSWArgs0.ReturnLen	1	1	396	1	5
+181	__CLSRArgs0	8	0	4	12	5
+182	__CLSRArgs0.Result	2	1	400	1	5
+183	__CLSRArgs0.Port	1	1	401	1	5
+184	__CLSRArgs0.Buffer	7	0	402	4	5
+185	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+186	__CLSRArgs0.BufferLen	1	1	404	1	5
+187	__CBTWArgs	8	0	3	8	24
+188	__CBTWArgs.Result	2	1	408	1	24
+189	__CBTWArgs.Connection	1	1	409	1	24
+190	__CBTWArgs.Buffer	7	0	410	4	24
+191	__CBTWArgs.Buffer.Buffer_type	1	0	0	1	0
+192	__CLSCSArgs2	8	0	3	4	4
+193	__CLSCSArgs2.Result	2	1	412	1	4
+194	__CLSCSArgs2.Port	1	1	413	1	4
+195	__CLSCSArgs2.BytesReady	1	1	414	1	4
+196	__CLSRArgs3	8	0	4	12	5
+197	__CLSRArgs3.Result	2	1	416	1	5
+198	__CLSRArgs3.Port	1	1	417	1	5
+199	__CLSRArgs3.Buffer	7	0	418	4	5
+200	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
+201	__CLSRArgs3.BufferLen	1	1	420	1	5
+202	__CLSWArgs3	8	0	4	12	5
+203	__CLSWArgs3.Result	2	1	424	1	5
+204	__CLSWArgs3.Port	1	1	425	1	5
+205	__CLSWArgs3.Buffer	7	0	426	4	5
+206	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
+207	__CLSWArgs3.ReturnLen	1	1	428	1	5
+208	__SPTArgs	8	0	5	8	42
+209	__SPTArgs.Result	2	1	432	1	42
+210	__SPTArgs.Frequency	3	1	434	2	42
+211	__SPTArgs.Duration	3	1	436	2	42
+212	__SPTArgs.Loop	1	1	438	1	42
+213	__SPTArgs.Volume	1	1	439	1	42
+214	__PointOutArgs	8	0	3	12	4
+215	__PointOutArgs.Result	2	1	440	1	4
+216	__PointOutArgs.Location	8	0	2	4	4
+217	__PointOutArgs.Location.X	4	1	444	2	4
+218	__PointOutArgs.Location.Y	4	1	446	2	4
+219	__PointOutArgs.Options	5	1	448	4	4
+220	__desligaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	5
+221	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Result	2	1	452	1	5
+222	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	453	1	5
+223	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	454	4	5
+224	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
+225	__desligaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	456	1	5
+226	__CLSRArgs2	8	0	4	12	5
+227	__CLSRArgs2.Result	2	1	460	1	5
+228	__CLSRArgs2.Port	1	1	461	1	5
+229	__CLSRArgs2.Buffer	7	0	462	4	5
+230	__CLSRArgs2.Buffer.Buffer_type	1	0	0	1	0
+231	__CLSRArgs2.BufferLen	1	1	464	1	5
+232	__CLSWArgs2	8	0	4	12	5
+233	__CLSWArgs2.Result	2	1	468	1	5
+234	__CLSWArgs2.Port	1	1	469	1	5
+235	__CLSWArgs2.Buffer	7	0	470	4	5
+236	__CLSWArgs2.Buffer.Buffer_type	1	0	0	1	0
+237	__CLSWArgs2.ReturnLen	1	1	472	1	5
+238	__CLSCSArgs3	8	0	3	4	4
+239	__CLSCSArgs3.Result	2	1	476	1	4
+240	__CLSCSArgs3.Port	1	1	477	1	4
+241	__CLSCSArgs3.BytesReady	1	1	478	1	4
+242	__TextOutArgs	8	0	4	16	17
+243	__TextOutArgs.Result	2	1	480	1	17
+244	__TextOutArgs.Location	8	0	2	4	17
+245	__TextOutArgs.Location.X	4	1	484	2	17
+246	__TextOutArgs.Location.Y	4	1	486	2	17
+247	__TextOutArgs.Text	7	0	488	4	17
+248	__TextOutArgs.Text.Text_type	1	0	0	1	0
+249	__TextOutArgs.Options	5	1	492	4	17
+250	__constStr0016	7	0	496	4	1
+251	__constStr0016.__constStr0016_type	1	1	0	1	0
+252	__RLSLastGoodRead2	7	0	498	4	2
+253	__RLSLastGoodRead2.__RLSLastGoodRead2_type	1	0	0	1	0
+254	__RLSReadBuf2	7	0	500	4	10
+255	__RLSReadBuf2.__RLSReadBuf2_type	1	0	0	1	0
+256	__RLSLastGoodRead3	7	0	502	4	2
+257	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
+258	__constStr0011	7	0	504	4	1
+259	__constStr0011.__constStr0011_type	1	1	0	1	0
+260	__RLSLastGoodRead0	7	0	506	4	2
+261	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
+262	__strbufRetornaBoneco	7	0	508	4	2
+263	__strbufRetornaBoneco.__strbufRetornaBoneco_type	1	0	0	1	0
+264	__DCMessageWritePacket	7	0	510	4	6
+265	__DCMessageWritePacket.__DCMessageWritePacket_type	1	0	0	1	0
+266	__strbufiniciaBlue	7	0	512	4	4
+267	__strbufiniciaBlue.__strbufiniciaBlue_type	1	0	0	1	0
+268	__strbufdesligaBlue	7	0	514	4	4
+269	__strbufdesligaBlue.__strbufdesligaBlue_type	1	0	0	1	0
+270	__RLSBbufLSWrite1	7	0	516	4	5
+271	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+272	__SRSFlattenBuf	7	0	518	4	12
+273	__SRSFlattenBuf.__SRSFlattenBuf_type	1	0	0	1	0
+274	__SRSTmpBuf	7	0	520	4	36
+275	__SRSTmpBuf.__SRSTmpBuf_type	1	0	0	1	0
+276	__RLSReadBuf0	7	0	522	4	8
+277	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
+278	__RLSReadBuf3	7	0	524	4	10
+279	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
+280	__constStr0009	7	0	526	4	2
+281	__constStr0009.__constStr0009_type	1	1	0	1	0
+282	__SRSSendBuf	7	0	528	4	12
+283	__SRSSendBuf.__SRSSendBuf_type	1	0	0	1	0
+284	__constStr0010	7	0	530	4	1
+285	__constStr0010.__constStr0010_type	1	1	0	1	0
 #SOURCES
 Clump	Line	PC	Source
 0	106	0	#line 106 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
@@ -1473,7 +1474,7 @@ Clump	Line	PC	Source
 14	232	24		mov __signed_stack_001ChecaParada, __ChecaParada_7qG2_acao_7qG2_000
 14	231	26	#line 231 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
 14	231	26	#line 231 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	232	26		set __D0ChecaParada, 0
+14	232	26		set __D0ChecaParada, 27
 14	231	29	#line 231 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
 14	232	29		cmp 4, __D0ChecaParada, __signed_stack_001ChecaParada, __D0ChecaParada
 14	232	33	#line 232 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
@@ -1487,7 +1488,7 @@ Clump	Line	PC	Source
 14	234	39		mov __SRSTmpBuf, __DCMessageWritePacket
 14	234	41		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
 14	234	46		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-14	234	51		mov __SRSTmpLongVal, __constVal0
+14	234	51		mov __SRSTmpLongVal, __constVal27
 14	234	53		flatten __SRSFlattenBuf, __SRSTmpLongVal
 14	234	56		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
 14	234	61		acquire __CBTWMutex
@@ -1518,7 +1519,7 @@ Clump	Line	PC	Source
 14	237	96		mov __signed_stack_001ChecaParada, __ChecaParada_7qG2_acao_7qG2_000
 14	236	98	#line 236 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
 14	236	98	#line 236 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	237	98		set __D0ChecaParada, 0
+14	237	98		set __D0ChecaParada, 27
 14	236	101	#line 236 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
 14	237	101		cmp 4, __D0ChecaParada, __signed_stack_001ChecaParada, __D0ChecaParada
 14	237	105	#line 237 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
@@ -1534,260 +1535,260 @@ Clump	Line	PC	Source
 14	238	112		set __D0ChecaParada, 6
 14	237	115	#line 237 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
 14	238	115		cmp 4, __D0ChecaParada, __signed_stack_001ChecaParada, __D0ChecaParada
-14	238	119	#line 238 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	239	119		brtst 4, __ASM_Label_632, __D0ChecaParada
-14	238	122	#line 238 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	239	122	#pragma macro 14
-14	239	122		acquire __RemoteMutex
-14	239	123		mov __SRSTmpBuf, __DCMessageWritePacket
-14	239	125		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
-14	239	130		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-14	239	135		mov __SRSTmpLongVal, __constVal6
-14	239	138		flatten __SRSFlattenBuf, __SRSTmpLongVal
-14	239	141		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-14	239	146		acquire __CBTWMutex
-14	239	147		mov __CBTWArgs.Connection, __constVal1
-14	239	149		mov __CBTWArgs.Buffer, __SRSSendBuf
-14	239	151		syscall 29, __CBTWArgs
-14	239	154		mov __D0ChecaParada, __CBTWArgs.Result
-14	239	157		release __CBTWMutex
-14	239	158		release __RemoteMutex
+14	239	119	#line 239 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+14	240	119		brtst 4, __ASM_Label_632, __D0ChecaParada
+14	239	122	#line 239 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+14	240	122	#pragma macro 14
+14	240	122		acquire __RemoteMutex
+14	240	123		mov __SRSTmpBuf, __DCMessageWritePacket
+14	240	125		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
+14	240	130		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+14	240	135		mov __SRSTmpLongVal, __constVal6
+14	240	138		flatten __SRSFlattenBuf, __SRSTmpLongVal
+14	240	141		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+14	240	146		acquire __CBTWMutex
+14	240	147		mov __CBTWArgs.Connection, __constVal1
+14	240	149		mov __CBTWArgs.Buffer, __SRSSendBuf
+14	240	151		syscall 29, __CBTWArgs
+14	240	154		mov __D0ChecaParada, __CBTWArgs.Result
+14	240	157		release __CBTWMutex
+14	240	158		release __RemoteMutex
 14	5837	159	#line 5837 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	238	159	#line 238 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	238	159	#line 238 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	240	159	#line 240 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	241	159		jmp __ASM_Label_633
-14	241	161	#line 241 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	242	161		subcall Rejeitar, __Rejeitar_return
-14	241	163	#line 241 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	242	163	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	242	163	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	243	163		jmp __ASM_Label_634
-14	242	165	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	243	165		mov __signed_stack_001ChecaParada, __ChecaParada_7qG2_acao_7qG2_000
-14	242	167	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	242	167	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	243	167		set __D0ChecaParada, 1
-14	242	170	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	243	170		cmp 4, __D0ChecaParada, __signed_stack_001ChecaParada, __D0ChecaParada
-14	243	174	#line 243 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	244	174		brtst 4, __ASM_Label_637, __D0ChecaParada
-14	243	177	#line 243 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	244	177		set __vira_7qG2_angulo_7qG2_000, 90
-14	243	180	#line 243 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	243	180	#line 243 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	244	180		set __vira_7qG2_direcao_7qG2_000, 2
-14	243	183	#line 243 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	244	183	#line 244 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	245	183		subcall vira, __vira_return
-14	244	185	#line 244 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	247	185	#line 247 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	247	185	#line 247 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	247	185	#line 247 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-14	248	185		subret __ChecaParada_return
-15	249	0	#line 249 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	250	0		set __Rejeitar_7qG2_passei_7qG2_000, 0
-15	249	3	#line 249 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	249	3	#line 249 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	250	3		set __ViraUmaRoda_7qG2_ang_7qG2_000, 900
-15	249	6	#line 249 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	250	6	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	251	6		subcall ViraUmaRoda, __ViraUmaRoda_return
-15	250	8	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	250	8	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	251	8	#pragma macro 14
-15	251	8		acquire __RemoteMutex
-15	251	9		mov __SRSTmpBuf, __DCMessageWritePacket
-15	251	11		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
-15	251	16		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-15	251	21		mov __SRSTmpLongVal, __constVal7
-15	251	23		flatten __SRSFlattenBuf, __SRSTmpLongVal
-15	251	26		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-15	251	31		acquire __CBTWMutex
-15	251	32		mov __CBTWArgs.Connection, __constVal1
-15	251	34		mov __CBTWArgs.Buffer, __SRSSendBuf
-15	251	36		syscall 29, __CBTWArgs
-15	251	39		mov __D0Rejeitar, __CBTWArgs.Result
-15	251	42		release __CBTWMutex
-15	251	43		release __RemoteMutex
+14	239	159	#line 239 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+14	239	159	#line 239 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+14	244	159	#line 244 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+14	245	159		jmp __ASM_Label_633
+14	245	161	#line 245 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+14	246	161		subcall Rejeitar, __Rejeitar_return
+14	245	163	#line 245 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+14	246	163	#line 246 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+14	246	163	#line 246 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+14	247	163		jmp __ASM_Label_634
+14	246	165	#line 246 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+14	247	165		mov __signed_stack_001ChecaParada, __ChecaParada_7qG2_acao_7qG2_000
+14	246	167	#line 246 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+14	246	167	#line 246 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+14	247	167		set __D0ChecaParada, 1
+14	246	170	#line 246 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+14	247	170		cmp 4, __D0ChecaParada, __signed_stack_001ChecaParada, __D0ChecaParada
+14	247	174	#line 247 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+14	248	174		brtst 4, __ASM_Label_637, __D0ChecaParada
+14	247	177	#line 247 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+14	248	177		set __vira_7qG2_angulo_7qG2_000, 90
+14	247	180	#line 247 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+14	247	180	#line 247 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+14	248	180		set __vira_7qG2_direcao_7qG2_000, 2
+14	247	183	#line 247 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+14	248	183	#line 248 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+14	249	183		subcall vira, __vira_return
+14	248	185	#line 248 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+14	251	185	#line 251 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+14	251	185	#line 251 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+14	251	185	#line 251 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+14	252	185		subret __ChecaParada_return
+15	253	0	#line 253 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	254	0		set __Rejeitar_7qG2_passei_7qG2_000, 0
+15	253	3	#line 253 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	253	3	#line 253 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	254	3		set __ViraUmaRoda_7qG2_ang_7qG2_000, 900
+15	253	6	#line 253 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	254	6	#line 254 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	255	6		subcall ViraUmaRoda, __ViraUmaRoda_return
+15	254	8	#line 254 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	254	8	#line 254 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	255	8	#pragma macro 14
+15	255	8		acquire __RemoteMutex
+15	255	9		mov __SRSTmpBuf, __DCMessageWritePacket
+15	255	11		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
+15	255	16		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+15	255	21		mov __SRSTmpLongVal, __constVal7
+15	255	23		flatten __SRSFlattenBuf, __SRSTmpLongVal
+15	255	26		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+15	255	31		acquire __CBTWMutex
+15	255	32		mov __CBTWArgs.Connection, __constVal1
+15	255	34		mov __CBTWArgs.Buffer, __SRSSendBuf
+15	255	36		syscall 29, __CBTWArgs
+15	255	39		mov __D0Rejeitar, __CBTWArgs.Result
+15	255	42		release __CBTWMutex
+15	255	43		release __RemoteMutex
 15	5901	44	#line 5901 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	250	44	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	250	44	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	252	44	#line 252 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	253	44	#pragma macro 9
-15	253	44		acquire __MRMutex
-15	253	45		mov __MRArgs.QueueID, __constVal1
-15	253	47		mov __MRArgs.Remove, __constVal1
-15	253	49		set __RRNTmpVal, 0
-15	253	52		syscall 27, __MRArgs
-15	253	55		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-15	253	60		mov __Rejeitar_7qG2_passei_7qG2_000, __RRNTmpVal
-15	253	62		mov __D0Rejeitar, __MRArgs.Result
-15	253	65		release __MRMutex
+15	254	44	#line 254 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	254	44	#line 254 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	256	44	#line 256 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	257	44	#pragma macro 9
+15	257	44		acquire __MRMutex
+15	257	45		mov __MRArgs.QueueID, __constVal1
+15	257	47		mov __MRArgs.Remove, __constVal1
+15	257	49		set __RRNTmpVal, 0
+15	257	52		syscall 27, __MRArgs
+15	257	55		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+15	257	60		mov __Rejeitar_7qG2_passei_7qG2_000, __RRNTmpVal
+15	257	62		mov __D0Rejeitar, __MRArgs.Result
+15	257	65		release __MRMutex
 15	5906	66	#line 5906 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	252	66	#line 252 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	252	66	#line 252 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	253	66	#line 253 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	254	66		set __Wait_7qG2_ms_7qG2_000_inline_Rejeitar, 30
-15	253	69	#line 253 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	256	66	#line 256 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	256	66	#line 256 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	257	66	#line 257 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	258	66		set __Wait_7qG2_ms_7qG2_000_inline_Rejeitar, 30
+15	257	69	#line 257 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
 15	8551	69	#line 8551 "NXCDefs.h"
 15	8552	69		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_Rejeitar
 15	8551	72	#line 8551 "NXCDefs.h"
-15	254	72	#line 254 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	254	72	#line 254 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	255	72		mov __signed_stack_001Rejeitar, __Rejeitar_7qG2_passei_7qG2_000
-15	254	74	#line 254 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	254	74	#line 254 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	255	74		set __D0Rejeitar, 8
-15	254	77	#line 254 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	255	77		cmp 5, __D0Rejeitar, __signed_stack_001Rejeitar, __D0Rejeitar
-15	255	81	#line 255 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	256	81		brtst 4, __ASM_Label_647, __D0Rejeitar
-15	255	84	#line 255 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	256	84		jmp __ASM_Label_646
-15	255	86	#line 255 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	255	86	#line 255 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	255	86	#line 255 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	256	86		mov __ViraUmaRoda_7qG2_ang_7qG2_000, __constValNeg900
-15	255	88	#line 255 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	256	88	#line 256 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	257	88		subcall ViraUmaRoda, __ViraUmaRoda_return
-15	256	90	#line 256 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	256	90	#line 256 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	257	90	#pragma macro 14
-15	257	90		acquire __RemoteMutex
-15	257	91		mov __SRSTmpBuf, __DCMessageWritePacket
-15	257	93		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
-15	257	98		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-15	257	103		mov __SRSTmpLongVal, __constVal8
-15	257	105		flatten __SRSFlattenBuf, __SRSTmpLongVal
-15	257	108		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-15	257	113		acquire __CBTWMutex
-15	257	114		mov __CBTWArgs.Connection, __constVal1
-15	257	116		mov __CBTWArgs.Buffer, __SRSSendBuf
-15	257	118		syscall 29, __CBTWArgs
-15	257	121		mov __D0Rejeitar, __CBTWArgs.Result
-15	257	124		release __CBTWMutex
-15	257	125		release __RemoteMutex
+15	258	72	#line 258 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	258	72	#line 258 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	259	72		mov __signed_stack_001Rejeitar, __Rejeitar_7qG2_passei_7qG2_000
+15	258	74	#line 258 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	258	74	#line 258 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	259	74		set __D0Rejeitar, 8
+15	258	77	#line 258 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	259	77		cmp 5, __D0Rejeitar, __signed_stack_001Rejeitar, __D0Rejeitar
+15	259	81	#line 259 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	260	81		brtst 4, __ASM_Label_647, __D0Rejeitar
+15	259	84	#line 259 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	260	84		jmp __ASM_Label_646
+15	259	86	#line 259 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	259	86	#line 259 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	259	86	#line 259 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	260	86		mov __ViraUmaRoda_7qG2_ang_7qG2_000, __constValNeg900
+15	259	88	#line 259 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	260	88	#line 260 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	261	88		subcall ViraUmaRoda, __ViraUmaRoda_return
+15	260	90	#line 260 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	260	90	#line 260 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	261	90	#pragma macro 14
+15	261	90		acquire __RemoteMutex
+15	261	91		mov __SRSTmpBuf, __DCMessageWritePacket
+15	261	93		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
+15	261	98		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+15	261	103		mov __SRSTmpLongVal, __constVal8
+15	261	105		flatten __SRSFlattenBuf, __SRSTmpLongVal
+15	261	108		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+15	261	113		acquire __CBTWMutex
+15	261	114		mov __CBTWArgs.Connection, __constVal1
+15	261	116		mov __CBTWArgs.Buffer, __SRSSendBuf
+15	261	118		syscall 29, __CBTWArgs
+15	261	121		mov __D0Rejeitar, __CBTWArgs.Result
+15	261	124		release __CBTWMutex
+15	261	125		release __RemoteMutex
 15	5948	126	#line 5948 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	256	126	#line 256 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	256	126	#line 256 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	259	126	#line 259 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-15	260	126		subret __Rejeitar_return
-16	261	0	#line 261 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	262	0	#pragma macro 24
-16	262	0		acquire __RLSBmutex3
-16	262	1		mov __RLSReadBuf3, __RLSBbufLSWrite1
-16	262	3		set __RLSBytesCount3, 1
-16	262	6		subcall __ReadLSBytes3, ____ReadLSBytes3_return
-16	262	9		index __D0IniciaCorDoChao, __RLSReadBuf3, 65535
-16	262	13		release __RLSBmutex3
+15	260	126	#line 260 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	260	126	#line 260 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	263	126	#line 263 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+15	264	126		subret __Rejeitar_return
+16	265	0	#line 265 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	266	0	#pragma macro 24
+16	266	0		acquire __RLSBmutex3
+16	266	1		mov __RLSReadBuf3, __RLSBbufLSWrite1
+16	266	3		set __RLSBytesCount3, 1
+16	266	6		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+16	266	9		index __D0IniciaCorDoChao, __RLSReadBuf3, 65535
+16	266	13		release __RLSBmutex3
 16	5957	14	#line 5957 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	261	14	#line 261 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	262	14		mov __IniciaCorDoChao_7qG2_corEsq_7qG2_000, __D0IniciaCorDoChao
-16	261	16	#line 261 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	261	16	#line 261 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	262	16	#line 262 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	263	16	#pragma macro 24
-16	263	16		acquire __RLSBmutex2
-16	263	17		mov __RLSReadBuf2, __RLSBbufLSWrite1
-16	263	19		set __RLSBytesCount2, 1
-16	263	22		subcall __ReadLSBytes2, ____ReadLSBytes2_return
-16	263	25		index __D0IniciaCorDoChao, __RLSReadBuf2, 65535
-16	263	29		release __RLSBmutex2
+16	265	14	#line 265 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	266	14		mov __IniciaCorDoChao_7qG2_corEsq_7qG2_000, __D0IniciaCorDoChao
+16	265	16	#line 265 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	265	16	#line 265 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	266	16	#line 266 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	267	16	#pragma macro 24
+16	267	16		acquire __RLSBmutex2
+16	267	17		mov __RLSReadBuf2, __RLSBbufLSWrite1
+16	267	19		set __RLSBytesCount2, 1
+16	267	22		subcall __ReadLSBytes2, ____ReadLSBytes2_return
+16	267	25		index __D0IniciaCorDoChao, __RLSReadBuf2, 65535
+16	267	29		release __RLSBmutex2
 16	5965	30	#line 5965 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	262	30	#line 262 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	263	30		mov __IniciaCorDoChao_7qG2_corDir_7qG2_000, __D0IniciaCorDoChao
-16	262	32	#line 262 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	262	32	#line 262 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	266	30	#line 266 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	267	30		mov __IniciaCorDoChao_7qG2_corDir_7qG2_000, __D0IniciaCorDoChao
 16	266	32	#line 266 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	267	32		mov __signed_stack_001IniciaCorDoChao, __IniciaCorDoChao_7qG2_corDir_7qG2_000
-16	266	34	#line 266 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	266	34	#line 266 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	267	34		set __D0IniciaCorDoChao, 5
-16	266	37	#line 266 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	267	37		cmp 4, __D0IniciaCorDoChao, __signed_stack_001IniciaCorDoChao, __D0IniciaCorDoChao
-16	266	41	#line 266 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	267	41		brtst 5, __ASM_Label_658, __D0IniciaCorDoChao
-16	266	44	#line 266 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	267	44		mov __signed_stack_001IniciaCorDoChao, __IniciaCorDoChao_7qG2_corEsq_7qG2_000
-16	266	46	#line 266 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	266	46	#line 266 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	267	46		set __D0IniciaCorDoChao, 5
-16	266	49	#line 266 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	267	49		cmp 4, __D0IniciaCorDoChao, __signed_stack_001IniciaCorDoChao, __D0IniciaCorDoChao
-16	268	53	#line 268 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	269	53		brtst 4, __ASM_Label_665, __D0IniciaCorDoChao
-16	268	56	#line 268 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	269	56		set __RetornaBoneco_7qG2_cor_7qG2_000, 5
-16	268	59	#line 268 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	269	59	#line 269 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	270	59		subcall RetornaBoneco, __RetornaBoneco_return
-16	269	61	#line 269 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	272	61	#line 272 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	273	61		jmp __ASM_Label_668
-16	272	63	#line 272 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	273	63		set __RetornaBoneco_7qG2_cor_7qG2_000, 3
-16	272	66	#line 272 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	273	66	#line 273 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	274	66		subcall RetornaBoneco, __RetornaBoneco_return
-16	273	68	#line 273 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	276	68	#line 276 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	276	68	#line 276 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-16	277	68		subret __IniciaCorDoChao_return
-17	278	0	#line 278 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-17	279	0	#pragma macro 24
-17	279	0		acquire __RLSBmutex3
-17	279	1		mov __RLSReadBuf3, __RLSBbufLSWrite1
-17	279	3		set __RLSBytesCount3, 1
-17	279	6		subcall __ReadLSBytes3, ____ReadLSBytes3_return
-17	279	9		index __D0CorDoChao, __RLSReadBuf3, 65535
-17	279	13		release __RLSBmutex3
+16	266	32	#line 266 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	270	32	#line 270 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	271	32		mov __signed_stack_001IniciaCorDoChao, __IniciaCorDoChao_7qG2_corDir_7qG2_000
+16	270	34	#line 270 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	270	34	#line 270 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	271	34		set __D0IniciaCorDoChao, 5
+16	270	37	#line 270 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	271	37		cmp 4, __D0IniciaCorDoChao, __signed_stack_001IniciaCorDoChao, __D0IniciaCorDoChao
+16	270	41	#line 270 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	271	41		brtst 5, __ASM_Label_658, __D0IniciaCorDoChao
+16	270	44	#line 270 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	271	44		mov __signed_stack_001IniciaCorDoChao, __IniciaCorDoChao_7qG2_corEsq_7qG2_000
+16	270	46	#line 270 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	270	46	#line 270 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	271	46		set __D0IniciaCorDoChao, 5
+16	270	49	#line 270 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	271	49		cmp 4, __D0IniciaCorDoChao, __signed_stack_001IniciaCorDoChao, __D0IniciaCorDoChao
+16	272	53	#line 272 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	273	53		brtst 4, __ASM_Label_665, __D0IniciaCorDoChao
+16	272	56	#line 272 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	273	56		set __RetornaBoneco_7qG2_cor_7qG2_000, 5
+16	272	59	#line 272 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	273	59	#line 273 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	274	59		subcall RetornaBoneco, __RetornaBoneco_return
+16	273	61	#line 273 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	276	61	#line 276 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	277	61		jmp __ASM_Label_668
+16	276	63	#line 276 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	277	63		set __RetornaBoneco_7qG2_cor_7qG2_000, 3
+16	276	66	#line 276 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	277	66	#line 277 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	278	66		subcall RetornaBoneco, __RetornaBoneco_return
+16	277	68	#line 277 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	280	68	#line 280 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	280	68	#line 280 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+16	281	68		subret __IniciaCorDoChao_return
+17	282	0	#line 282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+17	283	0	#pragma macro 24
+17	283	0		acquire __RLSBmutex3
+17	283	1		mov __RLSReadBuf3, __RLSBbufLSWrite1
+17	283	3		set __RLSBytesCount3, 1
+17	283	6		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+17	283	9		index __D0CorDoChao, __RLSReadBuf3, 65535
+17	283	13		release __RLSBmutex3
 17	6028	14	#line 6028 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-17	278	14	#line 278 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-17	279	14		mov __CorDoChao_7qG2_corEsq_7qG2_000, __D0CorDoChao
-17	278	16	#line 278 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-17	278	16	#line 278 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-17	279	16	#line 279 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-17	280	16	#pragma macro 24
-17	280	16		acquire __RLSBmutex2
-17	280	17		mov __RLSReadBuf2, __RLSBbufLSWrite1
-17	280	19		set __RLSBytesCount2, 1
-17	280	22		subcall __ReadLSBytes2, ____ReadLSBytes2_return
-17	280	25		index __D0CorDoChao, __RLSReadBuf2, 65535
-17	280	29		release __RLSBmutex2
+17	282	14	#line 282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+17	283	14		mov __CorDoChao_7qG2_corEsq_7qG2_000, __D0CorDoChao
+17	282	16	#line 282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+17	282	16	#line 282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+17	283	16	#line 283 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+17	284	16	#pragma macro 24
+17	284	16		acquire __RLSBmutex2
+17	284	17		mov __RLSReadBuf2, __RLSBbufLSWrite1
+17	284	19		set __RLSBytesCount2, 1
+17	284	22		subcall __ReadLSBytes2, ____ReadLSBytes2_return
+17	284	25		index __D0CorDoChao, __RLSReadBuf2, 65535
+17	284	29		release __RLSBmutex2
 17	6036	30	#line 6036 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-17	279	30	#line 279 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-17	280	30		mov __CorDoChao_7qG2_corDir_7qG2_000, __D0CorDoChao
-17	279	32	#line 279 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-17	279	32	#line 279 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-17	281	32	#line 281 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-17	282	32		mov __signed_stack_001CorDoChao, __CorDoChao_7qG2_corDir_7qG2_000
-17	281	34	#line 281 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-17	281	34	#line 281 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-17	282	34		set __D0CorDoChao, 12
-17	281	37	#line 281 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-17	282	37		cmp 4, __D0CorDoChao, __signed_stack_001CorDoChao, __D0CorDoChao
-17	281	41	#line 281 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-17	282	41		brtst 5, __ASM_Label_675, __D0CorDoChao
-17	281	44	#line 281 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-17	282	44		mov __signed_stack_001CorDoChao, __CorDoChao_7qG2_corEsq_7qG2_000
-17	281	46	#line 281 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-17	281	46	#line 281 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-17	282	46		set __D0CorDoChao, 12
-17	281	49	#line 281 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-17	282	49		cmp 4, __D0CorDoChao, __signed_stack_001CorDoChao, __D0CorDoChao
-17	282	53	#line 282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-17	283	53		brtst 4, __ASM_Label_682, __D0CorDoChao
-17	283	56	#line 283 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-17	284	56		subcall DaReh, __DaReh_return
-17	283	58	#line 283 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-17	286	58	#line 286 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-17	286	58	#line 286 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-17	287	58		subret __CorDoChao_return
-18	288	0	#line 288 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	289	0		set __RetornaBoneco_7qG2_passei_7qG2_000, 0
-18	288	3	#line 288 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+17	283	30	#line 283 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+17	284	30		mov __CorDoChao_7qG2_corDir_7qG2_000, __D0CorDoChao
+17	283	32	#line 283 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+17	283	32	#line 283 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+17	285	32	#line 285 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+17	286	32		mov __signed_stack_001CorDoChao, __CorDoChao_7qG2_corDir_7qG2_000
+17	285	34	#line 285 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+17	285	34	#line 285 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+17	286	34		set __D0CorDoChao, 12
+17	285	37	#line 285 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+17	286	37		cmp 4, __D0CorDoChao, __signed_stack_001CorDoChao, __D0CorDoChao
+17	285	41	#line 285 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+17	286	41		brtst 5, __ASM_Label_675, __D0CorDoChao
+17	285	44	#line 285 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+17	286	44		mov __signed_stack_001CorDoChao, __CorDoChao_7qG2_corEsq_7qG2_000
+17	285	46	#line 285 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+17	285	46	#line 285 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+17	286	46		set __D0CorDoChao, 12
+17	285	49	#line 285 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+17	286	49		cmp 4, __D0CorDoChao, __signed_stack_001CorDoChao, __D0CorDoChao
+17	286	53	#line 286 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+17	287	53		brtst 4, __ASM_Label_682, __D0CorDoChao
+17	287	56	#line 287 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+17	288	56		subcall DaReh, __DaReh_return
+17	287	58	#line 287 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+17	290	58	#line 290 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+17	290	58	#line 290 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+17	291	58		subret __CorDoChao_return
+18	292	0	#line 292 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	293	0		set __RetornaBoneco_7qG2_passei_7qG2_000, 0
+18	292	3	#line 292 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
 18	6678	3	#line 6678 "NXCDefs.h"
 18	6679	3	#pragma macro 6
 18	6679	3		acquire __PointOutMutex
@@ -1798,286 +1799,286 @@ Clump	Line	PC	Source
 18	6679	15		release __PointOutMutex
 18	6093	16	#line 6093 "NXCDefs.h"
 18	6678	16	#line 6678 "NXCDefs.h"
-18	289	16	#line 289 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	291	16	#line 291 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	292	16		mov __signed_stack_001RetornaBoneco, __RetornaBoneco_7qG2_cor_7qG2_000
-18	291	18	#line 291 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	291	18	#line 291 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	292	18		set __D0RetornaBoneco, 3
-18	291	21	#line 291 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	292	21		cmp 4, __D0RetornaBoneco, __signed_stack_001RetornaBoneco, __D0RetornaBoneco
-18	293	25	#line 293 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	294	25		brtst 4, __ASM_Label_689, __D0RetornaBoneco
-18	293	28	#line 293 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	294	28	#pragma macro 14
-18	294	28		acquire __RemoteMutex
-18	294	29		mov __SRSTmpBuf, __DCMessageWritePacket
-18	294	31		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
-18	294	36		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-18	294	41		mov __SRSTmpLongVal, __constVal4
-18	294	44		flatten __SRSFlattenBuf, __SRSTmpLongVal
-18	294	47		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-18	294	52		acquire __CBTWMutex
-18	294	53		mov __CBTWArgs.Connection, __constVal1
-18	294	55		mov __CBTWArgs.Buffer, __SRSSendBuf
-18	294	57		syscall 29, __CBTWArgs
-18	294	60		mov __D0RetornaBoneco, __CBTWArgs.Result
-18	294	63		release __CBTWMutex
-18	294	64		release __RemoteMutex
+18	293	16	#line 293 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	295	16	#line 295 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	296	16		mov __signed_stack_001RetornaBoneco, __RetornaBoneco_7qG2_cor_7qG2_000
+18	295	18	#line 295 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	295	18	#line 295 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	296	18		set __D0RetornaBoneco, 3
+18	295	21	#line 295 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	296	21		cmp 4, __D0RetornaBoneco, __signed_stack_001RetornaBoneco, __D0RetornaBoneco
+18	297	25	#line 297 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	298	25		brtst 4, __ASM_Label_689, __D0RetornaBoneco
+18	297	28	#line 297 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	298	28	#pragma macro 14
+18	298	28		acquire __RemoteMutex
+18	298	29		mov __SRSTmpBuf, __DCMessageWritePacket
+18	298	31		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
+18	298	36		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+18	298	41		mov __SRSTmpLongVal, __constVal4
+18	298	44		flatten __SRSFlattenBuf, __SRSTmpLongVal
+18	298	47		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+18	298	52		acquire __CBTWMutex
+18	298	53		mov __CBTWArgs.Connection, __constVal1
+18	298	55		mov __CBTWArgs.Buffer, __SRSSendBuf
+18	298	57		syscall 29, __CBTWArgs
+18	298	60		mov __D0RetornaBoneco, __CBTWArgs.Result
+18	298	63		release __CBTWMutex
+18	298	64		release __RemoteMutex
 18	6112	65	#line 6112 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	293	65	#line 293 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	293	65	#line 293 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	294	65	#line 294 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	295	65		set __Wait_7qG2_ms_7qG2_000_inline_RetornaBoneco, 30
-18	294	68	#line 294 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	297	65	#line 297 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	297	65	#line 297 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	298	65	#line 298 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	299	65		set __Wait_7qG2_ms_7qG2_000_inline_RetornaBoneco, 30
+18	298	68	#line 298 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
 18	8551	68	#line 8551 "NXCDefs.h"
 18	8552	68		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_RetornaBoneco
 18	8551	71	#line 8551 "NXCDefs.h"
-18	295	71	#line 295 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	296	71	#line 296 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	297	71		subcall bip, __bip_return
-18	296	73	#line 296 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	296	73	#line 296 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	297	73		jmp __ASM_Label_692
-18	296	75	#line 296 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	297	75		mov __signed_stack_001RetornaBoneco, __RetornaBoneco_7qG2_cor_7qG2_000
-18	296	77	#line 296 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	296	77	#line 296 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	297	77		set __D0RetornaBoneco, 5
-18	296	80	#line 296 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	297	80		cmp 4, __D0RetornaBoneco, __signed_stack_001RetornaBoneco, __D0RetornaBoneco
-18	297	84	#line 297 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	298	84		brtst 4, __ASM_Label_695, __D0RetornaBoneco
-18	297	87	#line 297 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	298	87	#pragma macro 14
-18	298	87		acquire __RemoteMutex
-18	298	88		mov __SRSTmpBuf, __DCMessageWritePacket
-18	298	90		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
-18	298	95		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-18	298	100		mov __SRSTmpLongVal, __constVal12
-18	298	102		flatten __SRSFlattenBuf, __SRSTmpLongVal
-18	298	105		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-18	298	110		acquire __CBTWMutex
-18	298	111		mov __CBTWArgs.Connection, __constVal1
-18	298	113		mov __CBTWArgs.Buffer, __SRSSendBuf
-18	298	115		syscall 29, __CBTWArgs
-18	298	118		mov __D0RetornaBoneco, __CBTWArgs.Result
-18	298	121		release __CBTWMutex
-18	298	122		release __RemoteMutex
+18	299	71	#line 299 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	300	71	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	301	71		subcall bip, __bip_return
+18	300	73	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	300	73	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	301	73		jmp __ASM_Label_692
+18	300	75	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	301	75		mov __signed_stack_001RetornaBoneco, __RetornaBoneco_7qG2_cor_7qG2_000
+18	300	77	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	300	77	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	301	77		set __D0RetornaBoneco, 5
+18	300	80	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	301	80		cmp 4, __D0RetornaBoneco, __signed_stack_001RetornaBoneco, __D0RetornaBoneco
+18	301	84	#line 301 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	302	84		brtst 4, __ASM_Label_695, __D0RetornaBoneco
+18	301	87	#line 301 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	302	87	#pragma macro 14
+18	302	87		acquire __RemoteMutex
+18	302	88		mov __SRSTmpBuf, __DCMessageWritePacket
+18	302	90		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
+18	302	95		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+18	302	100		mov __SRSTmpLongVal, __constVal12
+18	302	102		flatten __SRSFlattenBuf, __SRSTmpLongVal
+18	302	105		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+18	302	110		acquire __CBTWMutex
+18	302	111		mov __CBTWArgs.Connection, __constVal1
+18	302	113		mov __CBTWArgs.Buffer, __SRSSendBuf
+18	302	115		syscall 29, __CBTWArgs
+18	302	118		mov __D0RetornaBoneco, __CBTWArgs.Result
+18	302	121		release __CBTWMutex
+18	302	122		release __RemoteMutex
 18	6148	123	#line 6148 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	297	123	#line 297 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	297	123	#line 297 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	298	123	#line 298 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	299	123		set __Wait_7qG2_ms_7qG2_000_inline_RetornaBoneco, 30
-18	298	126	#line 298 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	301	123	#line 301 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	301	123	#line 301 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	302	123	#line 302 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	303	123		set __Wait_7qG2_ms_7qG2_000_inline_RetornaBoneco, 30
+18	302	126	#line 302 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
 18	8551	126	#line 8551 "NXCDefs.h"
 18	8552	126		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_RetornaBoneco
 18	8551	129	#line 8551 "NXCDefs.h"
-18	299	129	#line 299 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	300	129	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	300	129	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	300	129	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	301	129		set __signed_stack_001RetornaBoneco, 0
-18	300	132	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	300	132	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	301	132		set __signed_stack_002RetornaBoneco, 32
-18	300	135	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	300	135	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	301	135		strcat __strbufRetornaBoneco, __constStr0011
-18	301	139	#line 301 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	302	139		acquire __TextOutMutex
-18	301	140	#line 301 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	302	140		mov __TextOutArgs.Location.X, __signed_stack_001RetornaBoneco
-18	301	143	#line 301 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	302	143		mov __TextOutArgs.Location.Y, __signed_stack_002RetornaBoneco
-18	301	146	#line 301 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	302	146		set __TextOutArgs.Options, 0
-18	301	149	#line 301 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	302	149		mov __TextOutArgs.Text, __strbufRetornaBoneco
-18	301	151	#line 301 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	302	151		syscall 13, __TextOutArgs
-18	301	154	#line 301 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	302	154		mov __D0RetornaBoneco, __TextOutArgs.Result
-18	301	157	#line 301 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	302	157		release __TextOutMutex
-18	301	158	#line 301 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	301	158	#line 301 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	302	158	#pragma macro 9
-18	302	158		acquire __MRMutex
-18	302	159		mov __MRArgs.QueueID, __constVal1
-18	302	161		mov __MRArgs.Remove, __constVal1
-18	302	163		set __RRNTmpVal, 0
-18	302	166		syscall 27, __MRArgs
-18	302	169		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-18	302	174		mov __RetornaBoneco_7qG2_passei_7qG2_000, __RRNTmpVal
-18	302	176		mov __D0RetornaBoneco, __MRArgs.Result
-18	302	179		release __MRMutex
+18	303	129	#line 303 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	304	129	#line 304 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	304	129	#line 304 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	304	129	#line 304 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	305	129		set __signed_stack_001RetornaBoneco, 0
+18	304	132	#line 304 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	304	132	#line 304 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	305	132		set __signed_stack_002RetornaBoneco, 32
+18	304	135	#line 304 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	304	135	#line 304 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	305	135		strcat __strbufRetornaBoneco, __constStr0011
+18	305	139	#line 305 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	306	139		acquire __TextOutMutex
+18	305	140	#line 305 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	306	140		mov __TextOutArgs.Location.X, __signed_stack_001RetornaBoneco
+18	305	143	#line 305 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	306	143		mov __TextOutArgs.Location.Y, __signed_stack_002RetornaBoneco
+18	305	146	#line 305 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	306	146		set __TextOutArgs.Options, 0
+18	305	149	#line 305 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	306	149		mov __TextOutArgs.Text, __strbufRetornaBoneco
+18	305	151	#line 305 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	306	151		syscall 13, __TextOutArgs
+18	305	154	#line 305 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	306	154		mov __D0RetornaBoneco, __TextOutArgs.Result
+18	305	157	#line 305 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	306	157		release __TextOutMutex
+18	305	158	#line 305 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	305	158	#line 305 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	306	158	#pragma macro 9
+18	306	158		acquire __MRMutex
+18	306	159		mov __MRArgs.QueueID, __constVal1
+18	306	161		mov __MRArgs.Remove, __constVal1
+18	306	163		set __RRNTmpVal, 0
+18	306	166		syscall 27, __MRArgs
+18	306	169		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+18	306	174		mov __RetornaBoneco_7qG2_passei_7qG2_000, __RRNTmpVal
+18	306	176		mov __D0RetornaBoneco, __MRArgs.Result
+18	306	179		release __MRMutex
 18	6195	180	#line 6195 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	301	180	#line 301 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	301	180	#line 301 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	303	180	#line 303 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	304	180		mov __signed_stack_001RetornaBoneco, __RetornaBoneco_7qG2_passei_7qG2_000
-18	303	182	#line 303 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	303	182	#line 303 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	304	182		set __D0RetornaBoneco, 5
-18	303	185	#line 303 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	304	185		cmp 5, __D0RetornaBoneco, __signed_stack_001RetornaBoneco, __D0RetornaBoneco
-18	304	189	#line 304 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	305	189		brtst 4, __ASM_Label_686, __D0RetornaBoneco
-18	304	192	#line 304 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	305	192		jmp __ASM_Label_685
-18	304	194	#line 304 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	304	194	#line 304 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	305	180	#line 305 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	305	180	#line 305 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	307	180	#line 307 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	308	180		mov __signed_stack_001RetornaBoneco, __RetornaBoneco_7qG2_passei_7qG2_000
+18	307	182	#line 307 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	307	182	#line 307 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	308	182		set __D0RetornaBoneco, 5
+18	307	185	#line 307 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	308	185		cmp 5, __D0RetornaBoneco, __signed_stack_001RetornaBoneco, __D0RetornaBoneco
+18	308	189	#line 308 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	309	189		brtst 4, __ASM_Label_686, __D0RetornaBoneco
+18	308	192	#line 308 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	309	192		jmp __ASM_Label_685
 18	308	194	#line 308 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-18	309	194		subret __RetornaBoneco_return
-19	322	0	#line 322 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-19	323	0		mov __D0DaReh, potdGlobal
-19	323	2	#line 323 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-19	324	2	#pragma macro 10
-19	324	2		neg __OnRev_Tmp, __D0DaReh
-19	324	5		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+18	308	194	#line 308 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	312	194	#line 312 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+18	313	194		subret __RetornaBoneco_return
+19	326	0	#line 326 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+19	327	0		mov __D0DaReh, potdGlobal
+19	327	2	#line 327 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+19	328	2	#pragma macro 10
+19	328	2		neg __OnRev_Tmp, __D0DaReh
+19	328	5		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
 19	6508	28	#line 6508 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-19	323	28	#line 323 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-19	323	28	#line 323 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-19	324	28		mov __D0DaReh, poteGlobal
-19	324	30	#line 324 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-19	325	30	#pragma macro 10
-19	325	30		neg __OnRev_Tmp, __D0DaReh
-19	325	33		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+19	327	28	#line 327 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+19	327	28	#line 327 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+19	328	28		mov __D0DaReh, poteGlobal
+19	328	30	#line 328 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+19	329	30	#pragma macro 10
+19	329	30		neg __OnRev_Tmp, __D0DaReh
+19	329	33		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
 19	6515	56	#line 6515 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-19	324	56	#line 324 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-19	324	56	#line 324 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-19	325	56		set __Wait_7qG2_ms_7qG2_000_inline_DaReh, 500
-19	324	59	#line 324 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+19	328	56	#line 328 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+19	328	56	#line 328 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+19	329	56		set __Wait_7qG2_ms_7qG2_000_inline_DaReh, 500
+19	328	59	#line 328 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
 19	8551	59	#line 8551 "NXCDefs.h"
 19	8552	59		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_DaReh
 19	8551	62	#line 8551 "NXCDefs.h"
-19	325	62	#line 325 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-19	327	62	#line 327 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-19	328	62		subret __DaReh_return
-20	330	0	#line 330 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-20	331	0		set my_tc_d, 0
-20	330	3	#line 330 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-20	330	3	#line 330 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-20	330	3	#line 330 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-20	331	3		set __D0ViraUmaRoda, 50
-20	331	6	#line 331 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-20	332	6	#pragma macro 7
-20	332	6		setout __constVal1, 2, __D0ViraUmaRoda, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+19	329	62	#line 329 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+19	331	62	#line 331 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+19	332	62		subret __DaReh_return
+20	334	0	#line 334 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+20	335	0		set my_tc_d, 0
+20	334	3	#line 334 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+20	334	3	#line 334 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+20	334	3	#line 334 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+20	335	3		set __D0ViraUmaRoda, 50
+20	335	6	#line 335 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+20	336	6	#pragma macro 7
+20	336	6		setout __constVal1, 2, __D0ViraUmaRoda, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
 20	6542	29	#line 6542 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-20	331	29	#line 331 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-20	334	29	#line 334 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-20	335	29		getout __signed_stack_001ViraUmaRoda, __constVal1, 4
-20	334	33	#line 334 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-20	334	33	#line 334 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-20	335	33		mov __D0ViraUmaRoda, __ViraUmaRoda_7qG2_ang_7qG2_000
-20	334	35	#line 334 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-20	335	35		cmp 0, __D0ViraUmaRoda, __signed_stack_001ViraUmaRoda, __D0ViraUmaRoda
-20	335	39	#line 335 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-20	336	39		brtst 4, __ASM_Label_757, __D0ViraUmaRoda
-20	335	42	#line 335 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-20	336	42		jmp __ASM_Label_756
-20	335	44	#line 335 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-20	335	44	#line 335 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-20	336	44	#line 336 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-20	337	44		subcall Para, __Para_return
-20	336	46	#line 336 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-20	336	46	#line 336 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-20	337	46		set __D0ViraUmaRoda, 1
-20	337	49	#line 337 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-20	338	49		tst 5, __D0ViraUmaRoda, __D0ViraUmaRoda
-20	337	52	#line 337 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-20	338	52		brtst 4, __ASM_Label_761, __D0ViraUmaRoda
-20	337	55	#line 337 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-20	337	55	#line 337 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-20	338	55		jmp __ASM_Label_760
-20	337	57	#line 337 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-20	340	57	#line 340 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-20	341	57		subret __ViraUmaRoda_return
-21	353	0	#line 353 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-21	354	0		set __PlaySound_7qG2_aCode_7qG2_000, 3
-21	353	3	#line 353 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-21	354	3	#line 354 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-21	355	3		subcall PlaySound, __PlaySound_return
-21	354	6	#line 354 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-21	356	6	#line 356 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-21	357	6		subret __bip_return
-22	359	0	#line 359 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	360	0		strcat __strbufdesligaBlue, __constStr0009
-22	359	4	#line 359 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	360	4		mov __desligaBlue_7qG2_DADOS_BT_7qG2_000.Name, __strbufdesligaBlue
-22	359	6	#line 359 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	360	6	#line 360 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	361	6		set __desligaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot, 1
-22	360	9	#line 360 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	360	9	#line 360 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	361	9	#line 361 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	362	9		set __desligaBlue_7qG2_DADOS_BT_7qG2_000.Action, 0
-22	361	12	#line 361 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	361	12	#line 361 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	363	12	#line 363 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	364	12	#pragma macro 4
-22	364	12	#line 364 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	364	12		syscall 36, __desligaBlue_7qG2_DADOS_BT_7qG2_000
-22	362	15	#line 362 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	362	15	#line 362 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	362	15	#line 362 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	362	15	#line 362 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	364	15	#line 364 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	363	15	#line 363 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	364	15	#line 364 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	365	15		set __Wait_7qG2_ms_7qG2_000_inline_desligaBlue, 30
-22	364	18	#line 364 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+20	335	29	#line 335 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+20	338	29	#line 338 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+20	339	29		getout __signed_stack_001ViraUmaRoda, __constVal1, 4
+20	338	33	#line 338 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+20	338	33	#line 338 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+20	339	33		mov __D0ViraUmaRoda, __ViraUmaRoda_7qG2_ang_7qG2_000
+20	338	35	#line 338 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+20	339	35		cmp 0, __D0ViraUmaRoda, __signed_stack_001ViraUmaRoda, __D0ViraUmaRoda
+20	339	39	#line 339 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+20	340	39		brtst 4, __ASM_Label_757, __D0ViraUmaRoda
+20	339	42	#line 339 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+20	340	42		jmp __ASM_Label_756
+20	339	44	#line 339 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+20	339	44	#line 339 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+20	340	44	#line 340 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+20	341	44		subcall Para, __Para_return
+20	340	46	#line 340 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+20	340	46	#line 340 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+20	341	46		set __D0ViraUmaRoda, 1
+20	341	49	#line 341 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+20	342	49		tst 5, __D0ViraUmaRoda, __D0ViraUmaRoda
+20	341	52	#line 341 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+20	342	52		brtst 4, __ASM_Label_761, __D0ViraUmaRoda
+20	341	55	#line 341 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+20	341	55	#line 341 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+20	342	55		jmp __ASM_Label_760
+20	341	57	#line 341 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+20	344	57	#line 344 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+20	345	57		subret __ViraUmaRoda_return
+21	357	0	#line 357 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+21	358	0		set __PlaySound_7qG2_aCode_7qG2_000, 3
+21	357	3	#line 357 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+21	358	3	#line 358 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+21	359	3		subcall PlaySound, __PlaySound_return
+21	358	6	#line 358 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+21	360	6	#line 360 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+21	361	6		subret __bip_return
+22	363	0	#line 363 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	364	0		strcat __strbufdesligaBlue, __constStr0009
+22	363	4	#line 363 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	364	4		mov __desligaBlue_7qG2_DADOS_BT_7qG2_000.Name, __strbufdesligaBlue
+22	363	6	#line 363 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	364	6	#line 364 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	365	6		set __desligaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot, 1
+22	364	9	#line 364 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	364	9	#line 364 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	365	9	#line 365 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	366	9		set __desligaBlue_7qG2_DADOS_BT_7qG2_000.Action, 0
+22	365	12	#line 365 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	365	12	#line 365 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	367	12	#line 367 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	368	12	#pragma macro 4
+22	368	12	#line 368 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	368	12		syscall 36, __desligaBlue_7qG2_DADOS_BT_7qG2_000
+22	366	15	#line 366 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	366	15	#line 366 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	366	15	#line 366 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	366	15	#line 366 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	368	15	#line 368 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	367	15	#line 367 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	368	15	#line 368 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	369	15		set __Wait_7qG2_ms_7qG2_000_inline_desligaBlue, 30
+22	368	18	#line 368 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
 22	8551	18	#line 8551 "NXCDefs.h"
 22	8552	18		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_desligaBlue
 22	8551	21	#line 8551 "NXCDefs.h"
-22	366	21	#line 366 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	366	21	#line 366 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	367	21	#pragma macro 5
-22	367	21		mov __CBTCSArgs.Connection, __constVal1
-22	367	23		syscall 28, __CBTCSArgs
-22	367	26		mov __signed_stack_001desligaBlue, __CBTCSArgs.Result
+22	370	21	#line 370 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	370	21	#line 370 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	371	21	#pragma macro 5
+22	371	21		mov __CBTCSArgs.Connection, __constVal1
+22	371	23		syscall 28, __CBTCSArgs
+22	371	26		mov __signed_stack_001desligaBlue, __CBTCSArgs.Result
 22	6702	29	#line 6702 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	366	29	#line 366 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	366	29	#line 366 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	367	29		set __D0desligaBlue, 0
-22	366	32	#line 366 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	367	32		cmp 4, __D0desligaBlue, __signed_stack_001desligaBlue, __D0desligaBlue
-22	367	36	#line 367 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	368	36		brtst 4, __ASM_Label_783, __D0desligaBlue
-22	367	39	#line 367 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	368	39		jmp __ASM_Label_782
-22	367	41	#line 367 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	367	41	#line 367 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	367	41	#line 367 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	368	41		set __signed_stack_001desligaBlue, 0
-22	367	44	#line 367 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	367	44	#line 367 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	368	44		set __signed_stack_002desligaBlue, 56
-22	367	47	#line 367 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	367	47	#line 367 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	368	47		strcat __strbufdesligaBlue, __constStr0016
-22	368	51	#line 368 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	369	51		acquire __TextOutMutex
-22	368	52	#line 368 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	369	52		mov __TextOutArgs.Location.X, __signed_stack_001desligaBlue
-22	368	55	#line 368 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	369	55		mov __TextOutArgs.Location.Y, __signed_stack_002desligaBlue
-22	368	58	#line 368 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	369	58		set __TextOutArgs.Options, 0
-22	368	61	#line 368 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	369	61		mov __TextOutArgs.Text, __strbufdesligaBlue
-22	368	63	#line 368 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	369	63		syscall 13, __TextOutArgs
-22	368	66	#line 368 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	369	66		mov __D0desligaBlue, __TextOutArgs.Result
-22	368	69	#line 368 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	369	69		release __TextOutMutex
-22	368	70	#line 368 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	370	70	#line 370 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-22	371	70		subret __desligaBlue_return
-23	371	0	#line 371 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
-23	372	0		subret ____initialize_global_data_return
+22	370	29	#line 370 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	370	29	#line 370 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	371	29		set __D0desligaBlue, 0
+22	370	32	#line 370 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	371	32		cmp 4, __D0desligaBlue, __signed_stack_001desligaBlue, __D0desligaBlue
+22	371	36	#line 371 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	372	36		brtst 4, __ASM_Label_783, __D0desligaBlue
+22	371	39	#line 371 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	372	39		jmp __ASM_Label_782
+22	371	41	#line 371 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	371	41	#line 371 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	371	41	#line 371 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	372	41		set __signed_stack_001desligaBlue, 0
+22	371	44	#line 371 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	371	44	#line 371 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	372	44		set __signed_stack_002desligaBlue, 56
+22	371	47	#line 371 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	371	47	#line 371 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	372	47		strcat __strbufdesligaBlue, __constStr0016
+22	372	51	#line 372 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	373	51		acquire __TextOutMutex
+22	372	52	#line 372 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	373	52		mov __TextOutArgs.Location.X, __signed_stack_001desligaBlue
+22	372	55	#line 372 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	373	55		mov __TextOutArgs.Location.Y, __signed_stack_002desligaBlue
+22	372	58	#line 372 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	373	58		set __TextOutArgs.Options, 0
+22	372	61	#line 372 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	373	61		mov __TextOutArgs.Text, __strbufdesligaBlue
+22	372	63	#line 372 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	373	63		syscall 13, __TextOutArgs
+22	372	66	#line 372 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	373	66		mov __D0desligaBlue, __TextOutArgs.Result
+22	372	69	#line 372 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	373	69		release __TextOutMutex
+22	372	70	#line 372 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	374	70	#line 374 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+22	375	70		subret __desligaBlue_return
+23	375	0	#line 375 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc"
+23	376	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\executivo\Funcionando\principal_executivo.nxc

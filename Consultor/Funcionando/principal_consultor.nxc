@@ -1,19 +1,19 @@
 //Valores Calibraveis
 // Defines de leitura do RGB do meio (ainda precisa testar mais)
-    #define COR_PRETA_MEIO_MIN 55
-    #define COR_PRETA_MEIO_MAX 150
-    #define COR_BRANCA_MEIO_MIN 290
-    #define COR_BRANCA_MEIO_MAX 630
-    #define COR_VERMELHA_MEIO_MIN 185
-    #define COR_VERMELHA_MEIO_MAX 260
+    #define COR_PRETA_MEIO_MIN 80
+    #define COR_PRETA_MEIO_MAX 146
+    #define COR_BRANCA_MEIO_MIN 455
+    #define COR_BRANCA_MEIO_MAX 566
+    #define COR_VERMELHA_MEIO_MIN 121
+    #define COR_VERMELHA_MEIO_MAX 203
 
  // Defines de leitura do RGB da esquerda do robô
-    #define COR_BASE_ESQ_MIN 247
-    #define COR_BASE_ESQ_MAX 308
+    #define COR_BASE_ESQ_MIN 243
+    #define COR_BASE_ESQ_MAX 304
 
 // Defines de leitura do RGB da direita do robô
-    #define COR_BASE_DIR_MIN 312
-    #define COR_BASE_DIR_MAX 380
+    #define COR_BASE_DIR_MIN 271
+    #define COR_BASE_DIR_MAX 320
 
 
 
@@ -62,7 +62,7 @@
   #define CONTINUA 6
   #define VIROU 7
   #define DESVIROU 8
-  #define PARADO 0
+  #define PARADO 27
   #define ANDANDO -2
 
   #define BONECO_BRANCO 4
@@ -392,15 +392,16 @@ void MandaContinuar(){//TESTAR
 
 
 
-  do{
+  //do{
     //bip();
     SendRemoteNumber(CONEXAO, OUTBOX, CONTINUA);
-    ReceiveRemoteNumber(INBOX, true, passei);
-    Wait(30);
-  }while(passei != CONTINUA);
-  bip();
-  bip();
-  bip();
+    //ReceiveRemoteNumber(INBOX, true, passei);
+   // Wait(30);
+  //}while(passei != CONTINUA);
+  //bip();
+  //bip();
+
+  //bip();
 }
 
 void Pega(){

@@ -1,210 +1,207 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__D0VoltaGarra	6	1	0	4	8
-1	__D0SetSensorLowspeed_inline_InicializaSensores	6	1	4	4	2
-2	__DU0SetSensorLowspeed_inline_InicializaSensores	5	1	8	4	5
-3	__D0returnUS	6	1	12	4	12
-4	__D0TemBoneco	6	1	16	4	25
-5	__D0VoltaAoNormal	6	1	20	4	10
-6	__signed_stack_001lerSensor	6	1	24	4	18
-7	__signed_stack_002lerSensor	6	1	28	4	6
-8	__signed_stack_001MandaContinuar	6	1	32	4	2
-9	__signed_stack_001BonecoAlvo	6	1	36	4	4
-10	__signed_stack_001consultor	6	1	40	4	6
-11	__signed_stack_001CorBoneco	6	1	44	4	12
+0	__D0SetSensorLowspeed_inline_InicializaSensores	6	1	0	4	2
+1	__DU0SetSensorLowspeed_inline_InicializaSensores	5	1	4	4	5
+2	__D0VoltaGarra	6	1	8	4	8
+3	__D0TemBoneco	6	1	12	4	25
+4	__D0VoltaAoNormal	6	1	16	4	10
+5	__signed_stack_001BonecoAlvo	6	1	20	4	4
+6	__signed_stack_002lerSensor	6	1	24	4	6
+7	__signed_stack_001MandaPara	6	1	28	4	2
+8	__signed_stack_001lerSensor	6	1	32	4	18
+9	__signed_stack_001consultor	6	1	36	4	6
+10	__signed_stack_001CorBoneco	6	1	40	4	12
+11	__D0returnUS	6	1	44	4	12
 12	__D0CorBoneco	6	1	48	4	28
 13	__D0lerSensor	6	1	52	4	32
-14	__D0MandaContinuar	6	1	56	4	6
+14	__D0consultor	6	1	56	4	28
 15	__SPTArgsMutex	9	0	60	4	14
 16	__D0BonecoAlvo	6	1	64	4	8
-17	__D0consultor	6	1	68	4	28
-18	__D0PlaySound	6	1	72	4	69
-19	__D0RecebeBoneco	6	1	76	4	17
-20	__D0Rejeitar	6	1	80	4	12
-21	__D0MandaPara	6	1	84	4	6
-22	__D0Pega	6	1	88	4	10
-23	__D0PegaBoneco	6	1	92	4	17
-24	__Wait_7qG2_ms_7qG2_000_inline_BipBranco	5	1	96	4	2
-25	__Wait_7qG2_ms_7qG2_000_inline_BipPreto	5	1	100	4	2
-26	__Wait_7qG2_ms_7qG2_000_inline_PegaBoneco	5	1	104	4	2
-27	__signed_stack_001VoltaAoNormal	6	1	108	4	4
-28	__signed_stack_001VoltaGarra	6	1	112	4	2
-29	__Wait_7qG2_ms_7qG2_000_inline_returnUS	5	1	116	4	2
-30	__Wait_7qG2_ms_7qG2_000_inline_Rejeitar	5	1	120	4	4
-31	__Wait_7qG2_ms_7qG2_000_inline_Pega	5	1	124	4	2
-32	__Wait_7qG2_ms_7qG2_000_inline_VoltaAoNormal	5	1	128	4	4
-33	__Wait_7qG2_ms_7qG2_000_inline_VoltaGarra	5	1	132	4	2
-34	__Wait_7qG2_ms_7qG2_000_inline_RecebeBoneco	5	1	136	4	4
-35	__Wait_7qG2_ms_7qG2_000_inline_MandaPara	5	1	140	4	2
-36	__signed_stack_001PlaySound	6	1	144	4	44
-37	__signed_stack_002PlaySound	6	1	148	4	14
-38	__signed_stack_003PlaySound	6	1	152	4	14
-39	__signed_stack_001MandaPara	6	1	156	4	2
-40	__signed_stack_001Pega	6	1	160	4	4
-41	__signed_stack_001PegaBoneco	6	1	164	4	4
-42	__signed_stack_002returnUS	6	1	168	4	2
-43	__signed_stack_001TemBoneco	6	1	172	4	12
-44	__signed_stack_002TemBoneco	6	1	176	4	4
-45	__signed_stack_001RecebeBoneco	6	1	180	4	6
-46	__signed_stack_001Rejeitar	6	1	184	4	4
-47	__signed_stack_001returnUS	6	1	188	4	4
-48	__CLSWMutex3	9	0	192	4	2
-49	__CBTWMutex	9	0	196	4	12
+17	__D0MandaPara	6	1	68	4	6
+18	__D0RecebeBoneco	6	1	72	4	17
+19	__D0Rejeitar	6	1	76	4	12
+20	__D0PlaySound	6	1	80	4	69
+21	__D0Pega	6	1	84	4	10
+22	__D0PegaBoneco	6	1	88	4	17
+23	__Wait_7qG2_ms_7qG2_000_inline_BipPreto	5	1	92	4	2
+24	__Wait_7qG2_ms_7qG2_000_inline_PegaBoneco	5	1	96	4	2
+25	__Wait_7qG2_ms_7qG2_000_inline_BipBranco	5	1	100	4	2
+26	__signed_stack_001VoltaGarra	6	1	104	4	2
+27	__Wait_7qG2_ms_7qG2_000_inline_returnUS	5	1	108	4	2
+28	__Wait_7qG2_ms_7qG2_000_inline_VoltaGarra	5	1	112	4	2
+29	__Wait_7qG2_ms_7qG2_000_inline_Pega	5	1	116	4	2
+30	__Wait_7qG2_ms_7qG2_000_inline_VoltaAoNormal	5	1	120	4	4
+31	__Wait_7qG2_ms_7qG2_000_inline_Rejeitar	5	1	124	4	4
+32	__Wait_7qG2_ms_7qG2_000_inline_RecebeBoneco	5	1	128	4	4
+33	__Wait_7qG2_ms_7qG2_000_inline_MandaPara	5	1	132	4	2
+34	__signed_stack_001VoltaAoNormal	6	1	136	4	4
+35	__signed_stack_002PlaySound	6	1	140	4	14
+36	__signed_stack_003PlaySound	6	1	144	4	14
+37	__signed_stack_001PlaySound	6	1	148	4	44
+38	__signed_stack_001Pega	6	1	152	4	4
+39	__signed_stack_001PegaBoneco	6	1	156	4	4
+40	__signed_stack_001RecebeBoneco	6	1	160	4	6
+41	__signed_stack_001TemBoneco	6	1	164	4	12
+42	__signed_stack_002TemBoneco	6	1	168	4	4
+43	__signed_stack_002returnUS	6	1	172	4	2
+44	__signed_stack_001Rejeitar	6	1	176	4	4
+45	__signed_stack_001returnUS	6	1	180	4	4
+46	__RRNTmpVal	6	1	184	4	16
+47	__MRMutex	9	0	188	4	8
+48	__CBTWMutex	9	0	192	4	12
+49	__RemoteMutex	9	0	196	4	12
 50	__SRSTmpLongVal	6	1	200	4	12
-51	__RemoteMutex	9	0	204	4	12
+51	__CLSWMutex3	9	0	204	4	2
 52	__CLSCSMutex3	9	0	208	4	2
-53	__MRMutex	9	0	212	4	10
+53	__CLSRMutex3	9	0	212	4	2
 54	__RLSBmutex3	9	0	216	4	2
 55	__TextOutMutex	9	0	220	4	6
-56	__CLSRMutex3	9	0	224	4	2
-57	__RRNTmpVal	6	1	228	4	20
-58	bonecoNaoAlvo	4	1	232	2	1
-59	__lerSensor_7qG2_sensor_7qG2_000	4	1	234	2	4
-60	__constVal500	4	0	236	2	1
-61	bonecoAlvo	4	1	238	2	4
-62	__VoltaGarra_7qG2_tc_7qG2_000	4	1	240	2	4
-63	__lerSensor_7qG2_j_7qG2_000	4	1	242	2	8
-64	__TemBoneco_7qG2_rgb_dir_7qG2_000	4	1	244	2	4
-65	__TemBoneco_7qG2_rgb_esq_7qG2_000	4	1	246	2	4
-66	__PlaySound_7qG2_aCode_7qG2_000	4	1	248	2	11
-67	__lerSensor_7qG2_k_7qG2_000	4	1	250	2	6
-68	__PegaBoneco_7qG2_tc_7qG2_000	4	1	252	2	5
-69	__lerSensor_7qG2_aux_7qG2_000	4	1	254	2	4
-70	__PlaySound_7qG2_i_7qG2_001	4	1	256	2	15
-71	__lerSensor_7qG2_i_7qG2_000	4	1	258	2	8
-72	__PegaBoneco_7qG2_old_tc_7qG2_000	4	1	260	2	2
-73	__constVal150	4	0	262	2	1
-74	__VoltaGarra_7qG2_old_tc_7qG2_000	4	1	264	2	2
-75	__Rejeitar_7qG2_passei_7qG2_000	4	1	266	2	5
-76	__VoltaAoNormal_7qG2_tc_7qG2_000	4	1	268	2	4
-77	__VoltaAoNormal_7qG2_tc1_7qG2_000	4	1	270	2	2
-78	__returnUS_7qG2_valor_7qG2_000	4	1	272	2	4
-79	__MandaContinuar_7qG2_passei_7qG2_000	4	1	274	2	3
-80	__consultor_7qG2_cor_7qG2_000	4	1	276	2	4
-81	__RecebeBoneco_7qG2_sinInicial_7qG2_000	4	1	278	2	5
-82	__constVal200	4	0	280	2	1
-83	__constVal128	4	0	282	2	3
-84	__MandaPara_7qG2_passei_7qG2_000	4	1	284	2	3
-85	__CorBoneco_7qG2_leitura_7qG2_000	4	1	286	2	7
-86	__VoltaGarra_return	1	1	288	1	4
-87	__RecebeBoneco_return	1	1	289	1	5
-88	__BonecoAlvo_return	1	1	290	1	3
-89	__TemBoneco_return	1	1	291	1	5
-90	__Rejeitar_return	1	1	292	1	3
-91	__lerSensor_return	1	1	293	1	6
-92	__constValNeg1	2	0	294	1	2
-93	__MandaContinuar_return	1	1	295	1	3
-94	__PegaBoneco_return	1	1	296	1	5
-95	__MandaPara_return	1	1	297	1	3
-96	__Pega_return	1	1	298	1	3
-97	__CorBoneco_return	1	1	299	1	6
-98	__bip_return	1	1	300	1	5
-99	__constValNeg70	2	0	301	1	1
-100	__constVal1	2	0	302	1	22
-101	__VoltaAoNormal_return	1	1	303	1	3
-102	__constValNeg40	2	0	304	1	1
-103	__OnRev_Tmp	2	1	305	1	2
-104	__constValNeg77	2	0	306	1	1
-105	__constVal32	2	0	307	1	24
-106	__constVal0	2	1	308	1	53
-107	__constVal63	2	0	309	1	8
-108	__constVal6	2	0	310	1	1
-109	__constValNeg30	2	0	311	1	1
-110	__constVal96	2	0	312	1	8
-111	__constVal50	2	0	313	1	1
-112	__constValNeg2	2	0	314	1	1
-113	__constValNeg118	2	0	315	1	1
-114	__constVal3	2	0	316	1	15
-115	__RLSBResult3	2	1	317	1	7
-116	____ReadLSBytes3_return	1	1	318	1	3
-117	__RLSBIterations3	1	1	319	1	4
-118	__RLSBytesCount3	1	1	320	1	7
-119	____ResetSensorSubroutine_return	1	1	321	1	6
-120	__PlaySound_return	1	1	322	1	7
-121	__constVal2	2	0	323	1	11
-122	__LSWriteOptions3	1	1	324	1	1
-123	__constVal11	2	0	325	1	1
-124	__constVal15	2	0	326	1	3
-125	__constVal14	2	0	327	1	2
-126	__constVal7	2	0	328	1	1
-127	__constVal100	2	0	329	1	2
-128	__RRNErr	1	1	330	1	5
-129	__constVal8	2	0	331	1	3
-130	__PFTmp	1	1	332	1	1
-131	____initialize_global_data_return	1	1	333	1	3
-132	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	334	1	2
-133	__ResetSensorPort	1	1	335	1	6
-134	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	336	1	2
-135	__BipPreto_return	1	1	337	1	3
-136	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_InicializaSensores	1	1	338	1	2
-137	__returnUS_return	1	1	339	1	5
-138	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	340	1	2
-139	__ResetSensorTmp	1	1	341	1	2
-140	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	342	1	2
-141	__BipBranco_return	1	1	343	1	3
-142	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	344	1	4
-143	__SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	345	1	8
-144	__InicializaSensores_return	1	1	346	1	3
-145	__consultor_return	1	1	347	1	3
-146	__SetSensorColorGreen_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	348	1	4
-147	__constVal5	2	0	349	1	7
-148	__CLSCSArgs3	8	0	3	4	4
-149	__CLSCSArgs3.Result	2	1	352	1	4
-150	__CLSCSArgs3.Port	1	1	353	1	4
-151	__CLSCSArgs3.BytesReady	1	1	354	1	4
-152	__SPTArgs	8	0	5	8	42
-153	__SPTArgs.Result	2	1	356	1	42
-154	__SPTArgs.Frequency	3	1	358	2	42
-155	__SPTArgs.Duration	3	1	360	2	42
-156	__SPTArgs.Loop	1	1	362	1	42
-157	__SPTArgs.Volume	1	1	363	1	42
-158	__CBTWArgs	8	0	3	8	24
-159	__CBTWArgs.Result	2	1	364	1	24
-160	__CBTWArgs.Connection	1	1	365	1	24
-161	__CBTWArgs.Buffer	7	0	366	4	24
-162	__CBTWArgs.Buffer.Buffer_type	1	0	0	1	0
-163	__CLSRArgs3	8	0	4	12	5
-164	__CLSRArgs3.Result	2	1	368	1	5
-165	__CLSRArgs3.Port	1	1	369	1	5
-166	__CLSRArgs3.Buffer	7	0	370	4	5
-167	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
-168	__CLSRArgs3.BufferLen	1	1	372	1	5
-169	__TextOutArgs	8	0	4	16	18
-170	__TextOutArgs.Result	2	1	376	1	18
-171	__TextOutArgs.Location	8	0	2	4	18
-172	__TextOutArgs.Location.X	4	1	380	2	18
-173	__TextOutArgs.Location.Y	4	1	382	2	18
-174	__TextOutArgs.Text	7	0	384	4	18
-175	__TextOutArgs.Text.Text_type	1	0	0	1	0
-176	__TextOutArgs.Options	5	1	388	4	18
-177	__CLSWArgs3	8	0	4	12	5
-178	__CLSWArgs3.Result	2	1	392	1	5
-179	__CLSWArgs3.Port	1	1	393	1	5
-180	__CLSWArgs3.Buffer	7	0	394	4	5
-181	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
-182	__CLSWArgs3.ReturnLen	1	1	396	1	5
-183	__MRArgs	8	0	4	8	25
-184	__MRArgs.Result	2	1	400	1	25
-185	__MRArgs.QueueID	1	1	401	1	25
-186	__MRArgs.Remove	1	1	402	1	25
-187	__MRArgs.Message	7	0	404	4	25
-188	__MRArgs.Message.Message_type	1	0	0	1	0
-189	__RLSLastGoodRead3	7	0	406	4	2
-190	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
-191	__RLSReadBuf3	7	0	408	4	8
-192	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
-193	__lerSensor_7qG2_leitura_7qG2_000	7	0	410	4	10
-194	__lerSensor_7qG2_leitura_7qG2_000.__lerSensor_7qG2_leitura_7qG2_000_type	4	0	0	2	0
-195	__RLSBbufLSWrite1	7	0	412	4	1
-196	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
-197	__SRSFlattenBuf	7	0	414	4	12
-198	__SRSFlattenBuf.__SRSFlattenBuf_type	1	0	0	1	0
-199	__DCMessageWritePacket	7	0	416	4	6
-200	__DCMessageWritePacket.__DCMessageWritePacket_type	1	0	0	1	0
-201	__SRSTmpBuf	7	0	418	4	36
-202	__SRSTmpBuf.__SRSTmpBuf_type	1	0	0	1	0
-203	__SRSSendBuf	7	0	420	4	12
-204	__SRSSendBuf.__SRSSendBuf_type	1	0	0	1	0
+56	__lerSensor_7qG2_k_7qG2_000	4	1	224	2	6
+57	__lerSensor_7qG2_aux_7qG2_000	4	1	226	2	4
+58	__PlaySound_7qG2_aCode_7qG2_000	4	1	228	2	10
+59	__constVal150	4	0	230	2	1
+60	__lerSensor_7qG2_j_7qG2_000	4	1	232	2	8
+61	__constVal128	4	0	234	2	3
+62	__constVal200	4	0	236	2	1
+63	__PegaBoneco_7qG2_old_tc_7qG2_000	4	1	238	2	2
+64	__PegaBoneco_7qG2_tc_7qG2_000	4	1	240	2	5
+65	__VoltaAoNormal_7qG2_tc1_7qG2_000	4	1	242	2	2
+66	__TemBoneco_7qG2_rgb_dir_7qG2_000	4	1	244	2	4
+67	__lerSensor_7qG2_i_7qG2_000	4	1	246	2	8
+68	__TemBoneco_7qG2_rgb_esq_7qG2_000	4	1	248	2	4
+69	__consultor_7qG2_cor_7qG2_000	4	1	250	2	4
+70	__returnUS_7qG2_valor_7qG2_000	4	1	252	2	4
+71	__constVal500	4	0	254	2	1
+72	__PlaySound_7qG2_i_7qG2_001	4	1	256	2	15
+73	bonecoAlvo	4	1	258	2	4
+74	__lerSensor_7qG2_sensor_7qG2_000	4	1	260	2	4
+75	bonecoNaoAlvo	4	1	262	2	1
+76	__RecebeBoneco_7qG2_sinInicial_7qG2_000	4	1	264	2	5
+77	__VoltaGarra_7qG2_old_tc_7qG2_000	4	1	266	2	2
+78	__VoltaGarra_7qG2_tc_7qG2_000	4	1	268	2	4
+79	__Rejeitar_7qG2_passei_7qG2_000	4	1	270	2	5
+80	__MandaPara_7qG2_passei_7qG2_000	4	1	272	2	3
+81	__CorBoneco_7qG2_leitura_7qG2_000	4	1	274	2	7
+82	__VoltaAoNormal_7qG2_tc_7qG2_000	4	1	276	2	4
+83	__Rejeitar_return	1	1	278	1	3
+84	__RecebeBoneco_return	1	1	279	1	5
+85	__Pega_return	1	1	280	1	3
+86	__constValNeg1	2	0	281	1	2
+87	__constValNeg70	2	0	282	1	1
+88	__BonecoAlvo_return	1	1	283	1	3
+89	__MandaContinuar_return	1	1	284	1	3
+90	__MandaPara_return	1	1	285	1	3
+91	__TemBoneco_return	1	1	286	1	5
+92	__VoltaAoNormal_return	1	1	287	1	3
+93	__VoltaGarra_return	1	1	288	1	4
+94	__constVal1	2	0	289	1	21
+95	__CorBoneco_return	1	1	290	1	6
+96	__PegaBoneco_return	1	1	291	1	5
+97	__constValNeg118	2	0	292	1	1
+98	__OnRev_Tmp	2	1	293	1	2
+99	__constVal3	2	0	294	1	15
+100	__constValNeg30	2	0	295	1	1
+101	__constVal63	2	0	296	1	8
+102	__constVal96	2	0	297	1	8
+103	__constVal6	2	0	298	1	1
+104	__constVal50	2	0	299	1	1
+105	__constVal27	2	0	300	1	1
+106	__constVal0	2	1	301	1	52
+107	__lerSensor_return	1	1	302	1	6
+108	__constValNeg77	2	0	303	1	1
+109	__constValNeg40	2	0	304	1	1
+110	__constVal32	2	0	305	1	24
+111	__constValNeg2	2	0	306	1	1
+112	__constVal5	2	0	307	1	7
+113	__LSWriteOptions3	1	1	308	1	1
+114	__constVal11	2	0	309	1	1
+115	__constVal8	2	0	310	1	3
+116	__constVal15	2	0	311	1	3
+117	____ResetSensorSubroutine_return	1	1	312	1	6
+118	__PlaySound_return	1	1	313	1	6
+119	__constVal14	2	0	314	1	2
+120	__constVal7	2	0	315	1	1
+121	__RLSBIterations3	1	1	316	1	4
+122	__RLSBytesCount3	1	1	317	1	7
+123	__RRNErr	1	1	318	1	4
+124	__constVal100	2	0	319	1	2
+125	____ReadLSBytes3_return	1	1	320	1	3
+126	__constVal2	2	0	321	1	10
+127	__RLSBResult3	2	1	322	1	7
+128	__PFTmp	1	1	323	1	1
+129	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	324	1	2
+130	__returnUS_return	1	1	325	1	5
+131	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	326	1	2
+132	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	327	1	2
+133	__ResetSensorPort	1	1	328	1	6
+134	__BipPreto_return	1	1	329	1	3
+135	__ResetSensorTmp	1	1	330	1	2
+136	__BipBranco_return	1	1	331	1	3
+137	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	332	1	2
+138	__InicializaSensores_return	1	1	333	1	3
+139	__SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	334	1	8
+140	____initialize_global_data_return	1	1	335	1	3
+141	__consultor_return	1	1	336	1	3
+142	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	337	1	4
+143	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_InicializaSensores	1	1	338	1	2
+144	__SetSensorColorGreen_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	339	1	4
+145	__SPTArgs	8	0	5	8	42
+146	__SPTArgs.Result	2	1	340	1	42
+147	__SPTArgs.Frequency	3	1	342	2	42
+148	__SPTArgs.Duration	3	1	344	2	42
+149	__SPTArgs.Loop	1	1	346	1	42
+150	__SPTArgs.Volume	1	1	347	1	42
+151	__CBTWArgs	8	0	3	8	23
+152	__CBTWArgs.Result	2	1	348	1	23
+153	__CBTWArgs.Connection	1	1	349	1	23
+154	__CBTWArgs.Buffer	7	0	350	4	23
+155	__CBTWArgs.Buffer.Buffer_type	1	0	0	1	0
+156	__CLSWArgs3	8	0	4	12	5
+157	__CLSWArgs3.Result	2	1	352	1	5
+158	__CLSWArgs3.Port	1	1	353	1	5
+159	__CLSWArgs3.Buffer	7	0	354	4	5
+160	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
+161	__CLSWArgs3.ReturnLen	1	1	356	1	5
+162	__CLSRArgs3	8	0	4	12	5
+163	__CLSRArgs3.Result	2	1	360	1	5
+164	__CLSRArgs3.Port	1	1	361	1	5
+165	__CLSRArgs3.Buffer	7	0	362	4	5
+166	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
+167	__CLSRArgs3.BufferLen	1	1	364	1	5
+168	__TextOutArgs	8	0	4	16	18
+169	__TextOutArgs.Result	2	1	368	1	18
+170	__TextOutArgs.Location	8	0	2	4	18
+171	__TextOutArgs.Location.X	4	1	372	2	18
+172	__TextOutArgs.Location.Y	4	1	374	2	18
+173	__TextOutArgs.Text	7	0	376	4	18
+174	__TextOutArgs.Text.Text_type	1	0	0	1	0
+175	__TextOutArgs.Options	5	1	380	4	18
+176	__MRArgs	8	0	4	8	20
+177	__MRArgs.Result	2	1	384	1	20
+178	__MRArgs.QueueID	1	1	385	1	20
+179	__MRArgs.Remove	1	1	386	1	20
+180	__MRArgs.Message	7	0	388	4	20
+181	__MRArgs.Message.Message_type	1	0	0	1	0
+182	__CLSCSArgs3	8	0	3	4	4
+183	__CLSCSArgs3.Result	2	1	392	1	4
+184	__CLSCSArgs3.Port	1	1	393	1	4
+185	__CLSCSArgs3.BytesReady	1	1	394	1	4
+186	__RLSBbufLSWrite1	7	0	396	4	1
+187	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+188	__lerSensor_7qG2_leitura_7qG2_000	7	0	398	4	10
+189	__lerSensor_7qG2_leitura_7qG2_000.__lerSensor_7qG2_leitura_7qG2_000_type	4	0	0	2	0
+190	__SRSFlattenBuf	7	0	400	4	12
+191	__SRSFlattenBuf.__SRSFlattenBuf_type	1	0	0	1	0
+192	__SRSSendBuf	7	0	402	4	12
+193	__SRSSendBuf.__SRSSendBuf_type	1	0	0	1	0
+194	__SRSTmpBuf	7	0	404	4	36
+195	__SRSTmpBuf.__SRSTmpBuf_type	1	0	0	1	0
+196	__RLSLastGoodRead3	7	0	406	4	2
+197	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
+198	__RLSReadBuf3	7	0	408	4	8
+199	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
+200	__DCMessageWritePacket	7	0	410	4	6
+201	__DCMessageWritePacket.__DCMessageWritePacket_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
 0	132	0	#line 132 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
@@ -294,357 +291,357 @@ Clump	Line	PC	Source
 3	7130	34		syscall 10, __SPTArgs
 3	7129	37	#line 7129 "NXCDefs.h"
 3	7130	37		mov __D0PlaySound, __SPTArgs.Result
+3	7129	39	#line 7129 "NXCDefs.h"
+3	7130	39		release __SPTArgsMutex
 3	7129	40	#line 7129 "NXCDefs.h"
-3	7130	40		release __SPTArgsMutex
-3	7129	41	#line 7129 "NXCDefs.h"
-3	7129	41	#line 7129 "NXCDefs.h"
-3	7130	41		jmp __ASM_Label_65
-3	7129	43	#line 7129 "NXCDefs.h"
-3	7130	43		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-3	7129	45	#line 7129 "NXCDefs.h"
-3	7130	45	#line 7130 "NXCDefs.h"
-3	7131	45		set __D0PlaySound, 1
-3	7130	48	#line 7130 "NXCDefs.h"
-3	7131	48		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	7131	52	#line 7131 "NXCDefs.h"
-3	7132	52		brtst 4, __ASM_Label_68, __D0PlaySound
-3	7131	55	#line 7131 "NXCDefs.h"
-3	7132	55		set __signed_stack_001PlaySound, 600
-3	7131	58	#line 7131 "NXCDefs.h"
-3	7131	58	#line 7131 "NXCDefs.h"
-3	7132	58		set __signed_stack_002PlaySound, 150
-3	7131	61	#line 7131 "NXCDefs.h"
-3	7131	61	#line 7131 "NXCDefs.h"
-3	7132	61		set __signed_stack_003PlaySound, 4
-3	7131	64	#line 7131 "NXCDefs.h"
-3	7131	64	#line 7131 "NXCDefs.h"
-3	7132	64		set __D0PlaySound, 0
+3	7129	40	#line 7129 "NXCDefs.h"
+3	7130	40		jmp __ASM_Label_65
+3	7129	42	#line 7129 "NXCDefs.h"
+3	7130	42		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+3	7129	44	#line 7129 "NXCDefs.h"
+3	7130	44	#line 7130 "NXCDefs.h"
+3	7131	44		set __D0PlaySound, 1
+3	7130	47	#line 7130 "NXCDefs.h"
+3	7131	47		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7131	51	#line 7131 "NXCDefs.h"
+3	7132	51		brtst 4, __ASM_Label_68, __D0PlaySound
+3	7131	54	#line 7131 "NXCDefs.h"
+3	7132	54		set __signed_stack_001PlaySound, 600
+3	7131	57	#line 7131 "NXCDefs.h"
+3	7131	57	#line 7131 "NXCDefs.h"
+3	7132	57		set __signed_stack_002PlaySound, 150
+3	7131	60	#line 7131 "NXCDefs.h"
+3	7131	60	#line 7131 "NXCDefs.h"
+3	7132	60		set __signed_stack_003PlaySound, 4
+3	7131	63	#line 7131 "NXCDefs.h"
+3	7131	63	#line 7131 "NXCDefs.h"
+3	7132	63		set __D0PlaySound, 0
+3	7132	66	#line 7132 "NXCDefs.h"
+3	7133	66		acquire __SPTArgsMutex
 3	7132	67	#line 7132 "NXCDefs.h"
-3	7133	67		acquire __SPTArgsMutex
-3	7132	68	#line 7132 "NXCDefs.h"
-3	7133	68		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-3	7132	70	#line 7132 "NXCDefs.h"
-3	7133	70		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-3	7132	72	#line 7132 "NXCDefs.h"
-3	7133	72		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-3	7132	74	#line 7132 "NXCDefs.h"
-3	7133	74		mov __SPTArgs.Loop, __D0PlaySound
-3	7132	77	#line 7132 "NXCDefs.h"
-3	7133	77		syscall 10, __SPTArgs
-3	7132	80	#line 7132 "NXCDefs.h"
-3	7133	80		mov __D0PlaySound, __SPTArgs.Result
-3	7132	83	#line 7132 "NXCDefs.h"
-3	7133	83		release __SPTArgsMutex
-3	7132	84	#line 7132 "NXCDefs.h"
-3	7132	84	#line 7132 "NXCDefs.h"
-3	7133	84		wait2 NA, __constVal200
-3	7132	87	#line 7132 "NXCDefs.h"
-3	7132	87	#line 7132 "NXCDefs.h"
-3	7133	87	#line 7133 "NXCDefs.h"
-3	7134	87		set __signed_stack_001PlaySound, 600
-3	7133	90	#line 7133 "NXCDefs.h"
-3	7133	90	#line 7133 "NXCDefs.h"
-3	7134	90		set __signed_stack_002PlaySound, 150
-3	7133	93	#line 7133 "NXCDefs.h"
-3	7133	93	#line 7133 "NXCDefs.h"
-3	7134	93		set __signed_stack_003PlaySound, 4
-3	7133	96	#line 7133 "NXCDefs.h"
-3	7133	96	#line 7133 "NXCDefs.h"
-3	7134	96		set __D0PlaySound, 0
-3	7134	99	#line 7134 "NXCDefs.h"
-3	7135	99		acquire __SPTArgsMutex
+3	7133	67		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	7132	69	#line 7132 "NXCDefs.h"
+3	7133	69		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	7132	71	#line 7132 "NXCDefs.h"
+3	7133	71		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	7132	73	#line 7132 "NXCDefs.h"
+3	7133	73		mov __SPTArgs.Loop, __D0PlaySound
+3	7132	76	#line 7132 "NXCDefs.h"
+3	7133	76		syscall 10, __SPTArgs
+3	7132	79	#line 7132 "NXCDefs.h"
+3	7133	79		mov __D0PlaySound, __SPTArgs.Result
+3	7132	81	#line 7132 "NXCDefs.h"
+3	7133	81		release __SPTArgsMutex
+3	7132	82	#line 7132 "NXCDefs.h"
+3	7132	82	#line 7132 "NXCDefs.h"
+3	7133	82		wait2 NA, __constVal200
+3	7132	85	#line 7132 "NXCDefs.h"
+3	7132	85	#line 7132 "NXCDefs.h"
+3	7133	85	#line 7133 "NXCDefs.h"
+3	7134	85		set __signed_stack_001PlaySound, 600
+3	7133	88	#line 7133 "NXCDefs.h"
+3	7133	88	#line 7133 "NXCDefs.h"
+3	7134	88		set __signed_stack_002PlaySound, 150
+3	7133	91	#line 7133 "NXCDefs.h"
+3	7133	91	#line 7133 "NXCDefs.h"
+3	7134	91		set __signed_stack_003PlaySound, 4
+3	7133	94	#line 7133 "NXCDefs.h"
+3	7133	94	#line 7133 "NXCDefs.h"
+3	7134	94		set __D0PlaySound, 0
+3	7134	97	#line 7134 "NXCDefs.h"
+3	7135	97		acquire __SPTArgsMutex
+3	7134	98	#line 7134 "NXCDefs.h"
+3	7135	98		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
 3	7134	100	#line 7134 "NXCDefs.h"
-3	7135	100		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	7135	100		mov __SPTArgs.Duration, __signed_stack_002PlaySound
 3	7134	102	#line 7134 "NXCDefs.h"
-3	7135	102		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	7135	102		mov __SPTArgs.Volume, __signed_stack_003PlaySound
 3	7134	104	#line 7134 "NXCDefs.h"
-3	7135	104		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-3	7134	106	#line 7134 "NXCDefs.h"
-3	7135	106		mov __SPTArgs.Loop, __D0PlaySound
-3	7134	109	#line 7134 "NXCDefs.h"
-3	7135	109		syscall 10, __SPTArgs
+3	7135	104		mov __SPTArgs.Loop, __D0PlaySound
+3	7134	107	#line 7134 "NXCDefs.h"
+3	7135	107		syscall 10, __SPTArgs
+3	7134	110	#line 7134 "NXCDefs.h"
+3	7135	110		mov __D0PlaySound, __SPTArgs.Result
 3	7134	112	#line 7134 "NXCDefs.h"
-3	7135	112		mov __D0PlaySound, __SPTArgs.Result
-3	7134	115	#line 7134 "NXCDefs.h"
-3	7135	115		release __SPTArgsMutex
+3	7135	112		release __SPTArgsMutex
+3	7134	113	#line 7134 "NXCDefs.h"
+3	7134	113	#line 7134 "NXCDefs.h"
+3	7135	113		wait2 NA, __constVal150
 3	7134	116	#line 7134 "NXCDefs.h"
 3	7134	116	#line 7134 "NXCDefs.h"
-3	7135	116		wait2 NA, __constVal150
-3	7134	119	#line 7134 "NXCDefs.h"
-3	7134	119	#line 7134 "NXCDefs.h"
-3	7136	119	#line 7136 "NXCDefs.h"
-3	7137	119		jmp __ASM_Label_85
-3	7136	121	#line 7136 "NXCDefs.h"
-3	7137	121		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-3	7136	123	#line 7136 "NXCDefs.h"
+3	7136	116	#line 7136 "NXCDefs.h"
+3	7137	116		jmp __ASM_Label_85
+3	7136	118	#line 7136 "NXCDefs.h"
+3	7137	118		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+3	7136	120	#line 7136 "NXCDefs.h"
+3	7137	120	#line 7137 "NXCDefs.h"
+3	7138	120		set __D0PlaySound, 3
 3	7137	123	#line 7137 "NXCDefs.h"
-3	7138	123		set __D0PlaySound, 3
-3	7137	126	#line 7137 "NXCDefs.h"
-3	7138	126		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7138	123		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7137	127	#line 7137 "NXCDefs.h"
+3	7138	127		brtst 4, __ASM_Label_88, __D0PlaySound
 3	7137	130	#line 7137 "NXCDefs.h"
-3	7138	130		brtst 4, __ASM_Label_88, __D0PlaySound
+3	7138	130		set __PlaySound_7qG2_i_7qG2_001, 4
 3	7137	133	#line 7137 "NXCDefs.h"
-3	7138	133		set __PlaySound_7qG2_i_7qG2_001, 4
-3	7137	136	#line 7137 "NXCDefs.h"
-3	7137	136	#line 7137 "NXCDefs.h"
-3	7138	136		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+3	7137	133	#line 7137 "NXCDefs.h"
+3	7138	133		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+3	7137	135	#line 7137 "NXCDefs.h"
+3	7137	135	#line 7137 "NXCDefs.h"
+3	7138	135		set __D0PlaySound, 8
 3	7137	138	#line 7137 "NXCDefs.h"
-3	7137	138	#line 7137 "NXCDefs.h"
-3	7138	138		set __D0PlaySound, 8
-3	7137	141	#line 7137 "NXCDefs.h"
-3	7138	141		cmp 0, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7138	138		cmp 0, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7137	142	#line 7137 "NXCDefs.h"
+3	7138	142		brtst 4, __ASM_Label_90, __D0PlaySound
 3	7137	145	#line 7137 "NXCDefs.h"
-3	7138	145		brtst 4, __ASM_Label_90, __D0PlaySound
-3	7137	148	#line 7137 "NXCDefs.h"
-3	7138	148		jmp __ASM_Label_91
-3	7138	150	#line 7138 "NXCDefs.h"
-3	7139	150		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
-3	7139	154	#line 7139 "NXCDefs.h"
-3	7140	154		jmp __ASM_Label_89
+3	7138	145		jmp __ASM_Label_91
+3	7138	147	#line 7138 "NXCDefs.h"
+3	7139	147		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
+3	7139	151	#line 7139 "NXCDefs.h"
+3	7140	151		jmp __ASM_Label_89
+3	7139	153	#line 7139 "NXCDefs.h"
+3	7140	153		set __signed_stack_001PlaySound, 523
 3	7139	156	#line 7139 "NXCDefs.h"
-3	7140	156		set __signed_stack_001PlaySound, 523
-3	7139	159	#line 7139 "NXCDefs.h"
-3	7139	159	#line 7139 "NXCDefs.h"
-3	7140	159		mov __D0PlaySound, __PlaySound_7qG2_i_7qG2_001
-3	7139	161	#line 7139 "NXCDefs.h"
-3	7140	161		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7139	156	#line 7139 "NXCDefs.h"
+3	7140	156		mov __D0PlaySound, __PlaySound_7qG2_i_7qG2_001
+3	7139	158	#line 7139 "NXCDefs.h"
+3	7140	158		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7139	162	#line 7139 "NXCDefs.h"
+3	7139	162	#line 7139 "NXCDefs.h"
+3	7140	162		set __D0PlaySound, 4
 3	7139	165	#line 7139 "NXCDefs.h"
-3	7139	165	#line 7139 "NXCDefs.h"
-3	7140	165		set __D0PlaySound, 4
-3	7139	168	#line 7139 "NXCDefs.h"
-3	7140	168		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7140	165		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7139	169	#line 7139 "NXCDefs.h"
+3	7139	169	#line 7139 "NXCDefs.h"
+3	7140	169		set __signed_stack_002PlaySound, 100
 3	7139	172	#line 7139 "NXCDefs.h"
 3	7139	172	#line 7139 "NXCDefs.h"
-3	7140	172		set __signed_stack_002PlaySound, 100
+3	7140	172		set __signed_stack_003PlaySound, 4
 3	7139	175	#line 7139 "NXCDefs.h"
 3	7139	175	#line 7139 "NXCDefs.h"
-3	7140	175		set __signed_stack_003PlaySound, 4
-3	7139	178	#line 7139 "NXCDefs.h"
-3	7139	178	#line 7139 "NXCDefs.h"
-3	7140	178		set __D0PlaySound, 0
+3	7140	175		set __D0PlaySound, 0
+3	7140	178	#line 7140 "NXCDefs.h"
+3	7141	178		acquire __SPTArgsMutex
+3	7140	179	#line 7140 "NXCDefs.h"
+3	7141	179		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
 3	7140	181	#line 7140 "NXCDefs.h"
-3	7141	181		acquire __SPTArgsMutex
-3	7140	182	#line 7140 "NXCDefs.h"
-3	7141	182		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-3	7140	184	#line 7140 "NXCDefs.h"
-3	7141	184		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-3	7140	186	#line 7140 "NXCDefs.h"
-3	7141	186		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	7141	181		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	7140	183	#line 7140 "NXCDefs.h"
+3	7141	183		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	7140	185	#line 7140 "NXCDefs.h"
+3	7141	185		mov __SPTArgs.Loop, __D0PlaySound
 3	7140	188	#line 7140 "NXCDefs.h"
-3	7141	188		mov __SPTArgs.Loop, __D0PlaySound
+3	7141	188		syscall 10, __SPTArgs
 3	7140	191	#line 7140 "NXCDefs.h"
-3	7141	191		syscall 10, __SPTArgs
+3	7141	191		mov __D0PlaySound, __SPTArgs.Result
+3	7140	193	#line 7140 "NXCDefs.h"
+3	7141	193		release __SPTArgsMutex
 3	7140	194	#line 7140 "NXCDefs.h"
-3	7141	194		mov __D0PlaySound, __SPTArgs.Result
+3	7140	194	#line 7140 "NXCDefs.h"
+3	7141	194		wait2 NA, __constVal100
 3	7140	197	#line 7140 "NXCDefs.h"
-3	7141	197		release __SPTArgsMutex
-3	7140	198	#line 7140 "NXCDefs.h"
-3	7140	198	#line 7140 "NXCDefs.h"
-3	7141	198		wait2 NA, __constVal100
-3	7140	201	#line 7140 "NXCDefs.h"
-3	7140	201	#line 7140 "NXCDefs.h"
+3	7140	197	#line 7140 "NXCDefs.h"
+3	7142	197	#line 7142 "NXCDefs.h"
+3	7143	197		jmp __ASM_Label_92
+3	7142	199	#line 7142 "NXCDefs.h"
+3	7142	199	#line 7142 "NXCDefs.h"
+3	7143	199		jmp __ASM_Label_105
 3	7142	201	#line 7142 "NXCDefs.h"
-3	7143	201		jmp __ASM_Label_92
+3	7143	201		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
 3	7142	203	#line 7142 "NXCDefs.h"
-3	7142	203	#line 7142 "NXCDefs.h"
-3	7143	203		jmp __ASM_Label_105
-3	7142	205	#line 7142 "NXCDefs.h"
-3	7143	205		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-3	7142	207	#line 7142 "NXCDefs.h"
-3	7143	207	#line 7143 "NXCDefs.h"
-3	7144	207		set __D0PlaySound, 2
+3	7143	203	#line 7143 "NXCDefs.h"
+3	7144	203		set __D0PlaySound, 2
+3	7143	206	#line 7143 "NXCDefs.h"
+3	7144	206		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
 3	7143	210	#line 7143 "NXCDefs.h"
-3	7144	210		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	7143	214	#line 7143 "NXCDefs.h"
-3	7144	214		brtst 4, __ASM_Label_108, __D0PlaySound
-3	7143	217	#line 7143 "NXCDefs.h"
-3	7144	217		set __PlaySound_7qG2_i_7qG2_001, 7
-3	7143	220	#line 7143 "NXCDefs.h"
-3	7143	220	#line 7143 "NXCDefs.h"
-3	7144	220		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
-3	7143	222	#line 7143 "NXCDefs.h"
-3	7143	222	#line 7143 "NXCDefs.h"
-3	7144	222		set __D0PlaySound, 3
+3	7144	210		brtst 4, __ASM_Label_108, __D0PlaySound
+3	7143	213	#line 7143 "NXCDefs.h"
+3	7144	213		set __PlaySound_7qG2_i_7qG2_001, 7
+3	7143	216	#line 7143 "NXCDefs.h"
+3	7143	216	#line 7143 "NXCDefs.h"
+3	7144	216		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+3	7143	218	#line 7143 "NXCDefs.h"
+3	7143	218	#line 7143 "NXCDefs.h"
+3	7144	218		set __D0PlaySound, 3
+3	7143	221	#line 7143 "NXCDefs.h"
+3	7144	221		cmp 1, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
 3	7143	225	#line 7143 "NXCDefs.h"
-3	7144	225		cmp 1, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	7143	229	#line 7143 "NXCDefs.h"
-3	7144	229		brtst 4, __ASM_Label_110, __D0PlaySound
-3	7143	232	#line 7143 "NXCDefs.h"
-3	7144	232		jmp __ASM_Label_111
-3	7144	234	#line 7144 "NXCDefs.h"
-3	7145	234		sub __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
-3	7145	238	#line 7145 "NXCDefs.h"
-3	7146	238		jmp __ASM_Label_109
-3	7145	240	#line 7145 "NXCDefs.h"
-3	7146	240		set __signed_stack_001PlaySound, 523
-3	7145	243	#line 7145 "NXCDefs.h"
-3	7145	243	#line 7145 "NXCDefs.h"
-3	7146	243		mov __D0PlaySound, __PlaySound_7qG2_i_7qG2_001
+3	7144	225		brtst 4, __ASM_Label_110, __D0PlaySound
+3	7143	228	#line 7143 "NXCDefs.h"
+3	7144	228		jmp __ASM_Label_111
+3	7144	230	#line 7144 "NXCDefs.h"
+3	7145	230		sub __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
+3	7145	234	#line 7145 "NXCDefs.h"
+3	7146	234		jmp __ASM_Label_109
+3	7145	236	#line 7145 "NXCDefs.h"
+3	7146	236		set __signed_stack_001PlaySound, 523
+3	7145	239	#line 7145 "NXCDefs.h"
+3	7145	239	#line 7145 "NXCDefs.h"
+3	7146	239		mov __D0PlaySound, __PlaySound_7qG2_i_7qG2_001
+3	7145	241	#line 7145 "NXCDefs.h"
+3	7146	241		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
 3	7145	245	#line 7145 "NXCDefs.h"
-3	7146	245		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	7145	249	#line 7145 "NXCDefs.h"
-3	7145	249	#line 7145 "NXCDefs.h"
-3	7146	249		set __D0PlaySound, 4
+3	7145	245	#line 7145 "NXCDefs.h"
+3	7146	245		set __D0PlaySound, 4
+3	7145	248	#line 7145 "NXCDefs.h"
+3	7146	248		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
 3	7145	252	#line 7145 "NXCDefs.h"
-3	7146	252		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	7145	256	#line 7145 "NXCDefs.h"
-3	7145	256	#line 7145 "NXCDefs.h"
-3	7146	256		set __signed_stack_002PlaySound, 100
-3	7145	259	#line 7145 "NXCDefs.h"
-3	7145	259	#line 7145 "NXCDefs.h"
-3	7146	259		set __signed_stack_003PlaySound, 4
-3	7145	262	#line 7145 "NXCDefs.h"
-3	7145	262	#line 7145 "NXCDefs.h"
-3	7146	262		set __D0PlaySound, 0
-3	7146	265	#line 7146 "NXCDefs.h"
-3	7147	265		acquire __SPTArgsMutex
+3	7145	252	#line 7145 "NXCDefs.h"
+3	7146	252		set __signed_stack_002PlaySound, 100
+3	7145	255	#line 7145 "NXCDefs.h"
+3	7145	255	#line 7145 "NXCDefs.h"
+3	7146	255		set __signed_stack_003PlaySound, 4
+3	7145	258	#line 7145 "NXCDefs.h"
+3	7145	258	#line 7145 "NXCDefs.h"
+3	7146	258		set __D0PlaySound, 0
+3	7146	261	#line 7146 "NXCDefs.h"
+3	7147	261		acquire __SPTArgsMutex
+3	7146	262	#line 7146 "NXCDefs.h"
+3	7147	262		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	7146	264	#line 7146 "NXCDefs.h"
+3	7147	264		mov __SPTArgs.Duration, __signed_stack_002PlaySound
 3	7146	266	#line 7146 "NXCDefs.h"
-3	7147	266		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	7147	266		mov __SPTArgs.Volume, __signed_stack_003PlaySound
 3	7146	268	#line 7146 "NXCDefs.h"
-3	7147	268		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-3	7146	270	#line 7146 "NXCDefs.h"
-3	7147	270		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-3	7146	272	#line 7146 "NXCDefs.h"
-3	7147	272		mov __SPTArgs.Loop, __D0PlaySound
-3	7146	275	#line 7146 "NXCDefs.h"
-3	7147	275		syscall 10, __SPTArgs
-3	7146	278	#line 7146 "NXCDefs.h"
-3	7147	278		mov __D0PlaySound, __SPTArgs.Result
-3	7146	281	#line 7146 "NXCDefs.h"
-3	7147	281		release __SPTArgsMutex
-3	7146	282	#line 7146 "NXCDefs.h"
-3	7146	282	#line 7146 "NXCDefs.h"
-3	7147	282		wait2 NA, __constVal100
-3	7146	285	#line 7146 "NXCDefs.h"
-3	7146	285	#line 7146 "NXCDefs.h"
-3	7148	285	#line 7148 "NXCDefs.h"
-3	7149	285		jmp __ASM_Label_112
-3	7148	287	#line 7148 "NXCDefs.h"
-3	7148	287	#line 7148 "NXCDefs.h"
-3	7149	287		jmp __ASM_Label_125
-3	7148	289	#line 7148 "NXCDefs.h"
-3	7149	289		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-3	7148	291	#line 7148 "NXCDefs.h"
-3	7149	291	#line 7149 "NXCDefs.h"
-3	7150	291		set __D0PlaySound, 4
-3	7149	294	#line 7149 "NXCDefs.h"
-3	7150	294		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	7150	298	#line 7150 "NXCDefs.h"
-3	7151	298		brtst 4, __ASM_Label_128, __D0PlaySound
-3	7150	301	#line 7150 "NXCDefs.h"
-3	7151	301		set __signed_stack_001PlaySound, 100
-3	7150	304	#line 7150 "NXCDefs.h"
-3	7150	304	#line 7150 "NXCDefs.h"
-3	7151	304		set __signed_stack_002PlaySound, 500
-3	7150	307	#line 7150 "NXCDefs.h"
-3	7150	307	#line 7150 "NXCDefs.h"
-3	7151	307		set __signed_stack_003PlaySound, 4
-3	7150	310	#line 7150 "NXCDefs.h"
-3	7150	310	#line 7150 "NXCDefs.h"
-3	7151	310		set __D0PlaySound, 0
+3	7147	268		mov __SPTArgs.Loop, __D0PlaySound
+3	7146	271	#line 7146 "NXCDefs.h"
+3	7147	271		syscall 10, __SPTArgs
+3	7146	274	#line 7146 "NXCDefs.h"
+3	7147	274		mov __D0PlaySound, __SPTArgs.Result
+3	7146	276	#line 7146 "NXCDefs.h"
+3	7147	276		release __SPTArgsMutex
+3	7146	277	#line 7146 "NXCDefs.h"
+3	7146	277	#line 7146 "NXCDefs.h"
+3	7147	277		wait2 NA, __constVal100
+3	7146	280	#line 7146 "NXCDefs.h"
+3	7146	280	#line 7146 "NXCDefs.h"
+3	7148	280	#line 7148 "NXCDefs.h"
+3	7149	280		jmp __ASM_Label_112
+3	7148	282	#line 7148 "NXCDefs.h"
+3	7148	282	#line 7148 "NXCDefs.h"
+3	7149	282		jmp __ASM_Label_125
+3	7148	284	#line 7148 "NXCDefs.h"
+3	7149	284		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+3	7148	286	#line 7148 "NXCDefs.h"
+3	7149	286	#line 7149 "NXCDefs.h"
+3	7150	286		set __D0PlaySound, 4
+3	7149	289	#line 7149 "NXCDefs.h"
+3	7150	289		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7150	293	#line 7150 "NXCDefs.h"
+3	7151	293		brtst 4, __ASM_Label_128, __D0PlaySound
+3	7150	296	#line 7150 "NXCDefs.h"
+3	7151	296		set __signed_stack_001PlaySound, 100
+3	7150	299	#line 7150 "NXCDefs.h"
+3	7150	299	#line 7150 "NXCDefs.h"
+3	7151	299		set __signed_stack_002PlaySound, 500
+3	7150	302	#line 7150 "NXCDefs.h"
+3	7150	302	#line 7150 "NXCDefs.h"
+3	7151	302		set __signed_stack_003PlaySound, 4
+3	7150	305	#line 7150 "NXCDefs.h"
+3	7150	305	#line 7150 "NXCDefs.h"
+3	7151	305		set __D0PlaySound, 0
+3	7151	308	#line 7151 "NXCDefs.h"
+3	7152	308		acquire __SPTArgsMutex
+3	7151	309	#line 7151 "NXCDefs.h"
+3	7152	309		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	7151	311	#line 7151 "NXCDefs.h"
+3	7152	311		mov __SPTArgs.Duration, __signed_stack_002PlaySound
 3	7151	313	#line 7151 "NXCDefs.h"
-3	7152	313		acquire __SPTArgsMutex
-3	7151	314	#line 7151 "NXCDefs.h"
-3	7152	314		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-3	7151	316	#line 7151 "NXCDefs.h"
-3	7152	316		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	7152	313		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	7151	315	#line 7151 "NXCDefs.h"
+3	7152	315		mov __SPTArgs.Loop, __D0PlaySound
 3	7151	318	#line 7151 "NXCDefs.h"
-3	7152	318		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-3	7151	320	#line 7151 "NXCDefs.h"
-3	7152	320		mov __SPTArgs.Loop, __D0PlaySound
+3	7152	318		syscall 10, __SPTArgs
+3	7151	321	#line 7151 "NXCDefs.h"
+3	7152	321		mov __D0PlaySound, __SPTArgs.Result
 3	7151	323	#line 7151 "NXCDefs.h"
-3	7152	323		syscall 10, __SPTArgs
-3	7151	326	#line 7151 "NXCDefs.h"
-3	7152	326		mov __D0PlaySound, __SPTArgs.Result
-3	7151	329	#line 7151 "NXCDefs.h"
-3	7152	329		release __SPTArgsMutex
-3	7151	330	#line 7151 "NXCDefs.h"
-3	7151	330	#line 7151 "NXCDefs.h"
-3	7152	330		wait2 NA, __constVal500
-3	7151	333	#line 7151 "NXCDefs.h"
-3	7151	333	#line 7151 "NXCDefs.h"
-3	7153	333	#line 7153 "NXCDefs.h"
-3	7154	333		jmp __ASM_Label_137
-3	7153	335	#line 7153 "NXCDefs.h"
-3	7154	335		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-3	7153	337	#line 7153 "NXCDefs.h"
-3	7154	337	#line 7154 "NXCDefs.h"
-3	7155	337		set __D0PlaySound, 5
-3	7154	340	#line 7154 "NXCDefs.h"
-3	7155	340		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7152	323		release __SPTArgsMutex
+3	7151	324	#line 7151 "NXCDefs.h"
+3	7151	324	#line 7151 "NXCDefs.h"
+3	7152	324		wait2 NA, __constVal500
+3	7151	327	#line 7151 "NXCDefs.h"
+3	7151	327	#line 7151 "NXCDefs.h"
+3	7153	327	#line 7153 "NXCDefs.h"
+3	7154	327		jmp __ASM_Label_137
+3	7153	329	#line 7153 "NXCDefs.h"
+3	7154	329		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+3	7153	331	#line 7153 "NXCDefs.h"
+3	7154	331	#line 7154 "NXCDefs.h"
+3	7155	331		set __D0PlaySound, 5
+3	7154	334	#line 7154 "NXCDefs.h"
+3	7155	334		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7154	338	#line 7154 "NXCDefs.h"
+3	7155	338		brtst 4, __ASM_Label_140, __D0PlaySound
+3	7154	341	#line 7154 "NXCDefs.h"
+3	7155	341		set __PlaySound_7qG2_i_7qG2_001, 4
 3	7154	344	#line 7154 "NXCDefs.h"
-3	7155	344		brtst 4, __ASM_Label_140, __D0PlaySound
-3	7154	347	#line 7154 "NXCDefs.h"
-3	7155	347		set __PlaySound_7qG2_i_7qG2_001, 4
-3	7154	350	#line 7154 "NXCDefs.h"
-3	7154	350	#line 7154 "NXCDefs.h"
-3	7155	350		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
-3	7154	352	#line 7154 "NXCDefs.h"
-3	7154	352	#line 7154 "NXCDefs.h"
-3	7155	352		set __D0PlaySound, 8
-3	7154	355	#line 7154 "NXCDefs.h"
-3	7155	355		cmp 0, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	7154	359	#line 7154 "NXCDefs.h"
-3	7155	359		brtst 4, __ASM_Label_142, __D0PlaySound
-3	7154	362	#line 7154 "NXCDefs.h"
-3	7155	362		jmp __ASM_Label_143
-3	7155	364	#line 7155 "NXCDefs.h"
-3	7156	364		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
-3	7156	368	#line 7156 "NXCDefs.h"
-3	7157	368		jmp __ASM_Label_141
-3	7156	370	#line 7156 "NXCDefs.h"
-3	7157	370		set __signed_stack_001PlaySound, 523
+3	7154	344	#line 7154 "NXCDefs.h"
+3	7155	344		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+3	7154	346	#line 7154 "NXCDefs.h"
+3	7154	346	#line 7154 "NXCDefs.h"
+3	7155	346		set __D0PlaySound, 8
+3	7154	349	#line 7154 "NXCDefs.h"
+3	7155	349		cmp 0, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7154	353	#line 7154 "NXCDefs.h"
+3	7155	353		brtst 4, __ASM_Label_142, __D0PlaySound
+3	7154	356	#line 7154 "NXCDefs.h"
+3	7155	356		jmp __ASM_Label_143
+3	7155	358	#line 7155 "NXCDefs.h"
+3	7156	358		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
+3	7156	362	#line 7156 "NXCDefs.h"
+3	7157	362		jmp __ASM_Label_141
+3	7156	364	#line 7156 "NXCDefs.h"
+3	7157	364		set __signed_stack_001PlaySound, 523
+3	7156	367	#line 7156 "NXCDefs.h"
+3	7156	367	#line 7156 "NXCDefs.h"
+3	7157	367		mov __D0PlaySound, __PlaySound_7qG2_i_7qG2_001
+3	7156	369	#line 7156 "NXCDefs.h"
+3	7157	369		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
 3	7156	373	#line 7156 "NXCDefs.h"
 3	7156	373	#line 7156 "NXCDefs.h"
-3	7157	373		mov __D0PlaySound, __PlaySound_7qG2_i_7qG2_001
-3	7156	375	#line 7156 "NXCDefs.h"
-3	7157	375		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	7156	379	#line 7156 "NXCDefs.h"
-3	7156	379	#line 7156 "NXCDefs.h"
-3	7157	379		set __D0PlaySound, 4
-3	7156	382	#line 7156 "NXCDefs.h"
-3	7157	382		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7157	373		set __D0PlaySound, 4
+3	7156	376	#line 7156 "NXCDefs.h"
+3	7157	376		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7156	380	#line 7156 "NXCDefs.h"
+3	7156	380	#line 7156 "NXCDefs.h"
+3	7157	380		set __signed_stack_002PlaySound, 50
+3	7156	383	#line 7156 "NXCDefs.h"
+3	7156	383	#line 7156 "NXCDefs.h"
+3	7157	383		set __signed_stack_003PlaySound, 4
 3	7156	386	#line 7156 "NXCDefs.h"
 3	7156	386	#line 7156 "NXCDefs.h"
-3	7157	386		set __signed_stack_002PlaySound, 50
-3	7156	389	#line 7156 "NXCDefs.h"
-3	7156	389	#line 7156 "NXCDefs.h"
-3	7157	389		set __signed_stack_003PlaySound, 4
-3	7156	392	#line 7156 "NXCDefs.h"
-3	7156	392	#line 7156 "NXCDefs.h"
-3	7157	392		set __D0PlaySound, 0
-3	7157	395	#line 7157 "NXCDefs.h"
-3	7158	395		acquire __SPTArgsMutex
+3	7157	386		set __D0PlaySound, 0
+3	7157	389	#line 7157 "NXCDefs.h"
+3	7158	389		acquire __SPTArgsMutex
+3	7157	390	#line 7157 "NXCDefs.h"
+3	7158	390		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	7157	392	#line 7157 "NXCDefs.h"
+3	7158	392		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	7157	394	#line 7157 "NXCDefs.h"
+3	7158	394		mov __SPTArgs.Volume, __signed_stack_003PlaySound
 3	7157	396	#line 7157 "NXCDefs.h"
-3	7158	396		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-3	7157	398	#line 7157 "NXCDefs.h"
-3	7158	398		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-3	7157	400	#line 7157 "NXCDefs.h"
-3	7158	400		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	7158	396		mov __SPTArgs.Loop, __D0PlaySound
+3	7157	399	#line 7157 "NXCDefs.h"
+3	7158	399		syscall 10, __SPTArgs
 3	7157	402	#line 7157 "NXCDefs.h"
-3	7158	402		mov __SPTArgs.Loop, __D0PlaySound
+3	7158	402		mov __D0PlaySound, __SPTArgs.Result
+3	7157	404	#line 7157 "NXCDefs.h"
+3	7158	404		release __SPTArgsMutex
 3	7157	405	#line 7157 "NXCDefs.h"
-3	7158	405		syscall 10, __SPTArgs
+3	7157	405	#line 7157 "NXCDefs.h"
+3	7158	405		wait2 NA, __constVal50
 3	7157	408	#line 7157 "NXCDefs.h"
-3	7158	408		mov __D0PlaySound, __SPTArgs.Result
-3	7157	411	#line 7157 "NXCDefs.h"
-3	7158	411		release __SPTArgsMutex
-3	7157	412	#line 7157 "NXCDefs.h"
-3	7157	412	#line 7157 "NXCDefs.h"
-3	7158	412		wait2 NA, __constVal50
-3	7157	415	#line 7157 "NXCDefs.h"
-3	7157	415	#line 7157 "NXCDefs.h"
-3	7169	415	#line 7169 "NXCDefs.h"
-3	7170	415		jmp __ASM_Label_144
-3	7169	417	#line 7169 "NXCDefs.h"
-3	7169	417	#line 7169 "NXCDefs.h"
-3	7169	417	#line 7169 "NXCDefs.h"
-3	7169	417	#line 7169 "NXCDefs.h"
-3	7169	417	#line 7169 "NXCDefs.h"
-3	7169	417	#line 7169 "NXCDefs.h"
-3	7169	417	#line 7169 "NXCDefs.h"
-3	7169	417	#line 7169 "NXCDefs.h"
-3	7170	417		subret __PlaySound_return
+3	7157	408	#line 7157 "NXCDefs.h"
+3	7169	408	#line 7169 "NXCDefs.h"
+3	7170	408		jmp __ASM_Label_144
+3	7169	410	#line 7169 "NXCDefs.h"
+3	7169	410	#line 7169 "NXCDefs.h"
+3	7169	410	#line 7169 "NXCDefs.h"
+3	7169	410	#line 7169 "NXCDefs.h"
+3	7169	410	#line 7169 "NXCDefs.h"
+3	7169	410	#line 7169 "NXCDefs.h"
+3	7169	410	#line 7169 "NXCDefs.h"
+3	7169	410	#line 7169 "NXCDefs.h"
+3	7170	410		subret __PlaySound_return
 4	139	0	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 4	140	0		set __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 0
 4	139	3	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
@@ -899,110 +896,110 @@ Clump	Line	PC	Source
 9	195	13		brtst 4, __ASM_Label_539, __D0consultor
 9	194	16	#line 194 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 9	195	16		subcall returnUS, __returnUS_return
-9	194	19	#line 194 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	195	19		mov __D0consultor, __D0returnUS
-9	196	21	#line 196 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	197	21		tst 5, __D0consultor, __D0consultor
-9	196	24	#line 196 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	197	24		brtst 4, __ASM_Label_544, __D0consultor
-9	196	27	#line 196 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	197	27	#pragma macro 14
-9	197	27		acquire __RemoteMutex
-9	197	28		mov __SRSTmpBuf, __DCMessageWritePacket
-9	197	30		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
-9	197	35		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-9	197	40		mov __SRSTmpLongVal, __constVal1
-9	197	42		flatten __SRSFlattenBuf, __SRSTmpLongVal
-9	197	45		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-9	197	50		acquire __CBTWMutex
-9	197	51		mov __CBTWArgs.Connection, __constVal0
-9	197	53		mov __CBTWArgs.Buffer, __SRSSendBuf
-9	197	55		syscall 29, __CBTWArgs
-9	197	58		mov __D0consultor, __CBTWArgs.Result
-9	197	61		release __CBTWMutex
-9	197	62		release __RemoteMutex
-9	5308	63	#line 5308 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	196	63	#line 196 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	196	63	#line 196 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	201	63	#line 201 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	202	63		jmp __ASM_Label_545
-9	202	65	#line 202 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	203	65		subcall TemBoneco, __TemBoneco_return
-9	202	67	#line 202 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	203	67		mov __D0consultor, __D0TemBoneco
-9	204	69	#line 204 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	205	69		tst 5, __D0consultor, __D0consultor
-9	204	72	#line 204 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	205	72		brtst 4, __ASM_Label_548, __D0consultor
-9	209	75	#line 209 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	210	75		subcall MandaPara, __MandaPara_return
-9	209	77	#line 209 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	210	77	#line 210 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	211	77		subcall PegaBoneco, __PegaBoneco_return
-9	210	79	#line 210 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	211	79		mov __D0consultor, __D0PegaBoneco
-9	211	81	#line 211 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	212	81		tst 5, __D0consultor, __D0consultor
-9	211	84	#line 211 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	212	84		brtst 4, __ASM_Label_551, __D0consultor
-9	212	87	#line 212 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	213	87		subcall CorBoneco, __CorBoneco_return
-9	212	89	#line 212 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	213	89		mov __consultor_7qG2_cor_7qG2_000, __D0CorBoneco
-9	212	91	#line 212 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	212	91	#line 212 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	212	91	#line 212 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	213	91		mov __signed_stack_001consultor, __consultor_7qG2_cor_7qG2_000
-9	212	93	#line 212 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	213	93	#line 213 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	214	93		mov __D0consultor, bonecoAlvo
-9	213	95	#line 213 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	214	95		cmp 4, __D0consultor, __signed_stack_001consultor, __D0consultor
-9	214	99	#line 214 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	215	99		brtst 4, __ASM_Label_556, __D0consultor
-9	215	102	#line 215 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	216	102		subcall Pega, __Pega_return
-9	215	104	#line 215 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	216	104	#line 216 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	217	104		jmp __ASM_Label_557
-9	216	106	#line 216 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	217	106		mov __signed_stack_001consultor, __consultor_7qG2_cor_7qG2_000
-9	216	108	#line 216 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	217	108	#line 217 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	218	108		mov __D0consultor, bonecoNaoAlvo
-9	217	110	#line 217 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	218	110		cmp 4, __D0consultor, __signed_stack_001consultor, __D0consultor
-9	218	114	#line 218 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	219	114		brtst 4, __ASM_Label_560, __D0consultor
-9	219	117	#line 219 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	220	117		subcall Rejeitar, __Rejeitar_return
-9	219	119	#line 219 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	220	119	#line 220 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	221	119		jmp __ASM_Label_561
-9	220	121	#line 220 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	221	121		mov __signed_stack_001consultor, __consultor_7qG2_cor_7qG2_000
-9	220	123	#line 220 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	221	123	#line 221 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	222	123		mov __D0consultor, __constValNeg1
-9	221	125	#line 221 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	222	125		cmp 4, __D0consultor, __signed_stack_001consultor, __D0consultor
-9	223	129	#line 223 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	226	129	#line 226 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	226	129	#line 226 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	226	129	#line 226 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	226	129	#line 226 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	227	129	#line 227 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	228	129		subcall MandaContinuar, __MandaContinuar_return
-9	227	131	#line 227 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	231	131	#line 231 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	232	131		jmp __ASM_Label_565
-9	233	133	#line 233 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	234	133	#line 234 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	236	133	#line 236 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	237	133		jmp __ASM_Label_538
-9	236	135	#line 236 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	236	135	#line 236 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-9	237	135		subret __consultor_return
+9	194	18	#line 194 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	195	18		mov __D0consultor, __D0returnUS
+9	196	20	#line 196 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	197	20		tst 5, __D0consultor, __D0consultor
+9	196	23	#line 196 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	197	23		brtst 4, __ASM_Label_544, __D0consultor
+9	196	26	#line 196 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	197	26	#pragma macro 14
+9	197	26		acquire __RemoteMutex
+9	197	27		mov __SRSTmpBuf, __DCMessageWritePacket
+9	197	29		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
+9	197	34		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+9	197	39		mov __SRSTmpLongVal, __constVal1
+9	197	41		flatten __SRSFlattenBuf, __SRSTmpLongVal
+9	197	44		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+9	197	49		acquire __CBTWMutex
+9	197	50		mov __CBTWArgs.Connection, __constVal0
+9	197	52		mov __CBTWArgs.Buffer, __SRSSendBuf
+9	197	54		syscall 29, __CBTWArgs
+9	197	57		mov __D0consultor, __CBTWArgs.Result
+9	197	60		release __CBTWMutex
+9	197	61		release __RemoteMutex
+9	5308	62	#line 5308 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	196	62	#line 196 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	196	62	#line 196 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	201	62	#line 201 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	202	62		jmp __ASM_Label_545
+9	202	64	#line 202 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	203	64		subcall TemBoneco, __TemBoneco_return
+9	202	66	#line 202 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	203	66		mov __D0consultor, __D0TemBoneco
+9	204	68	#line 204 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	205	68		tst 5, __D0consultor, __D0consultor
+9	204	71	#line 204 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	205	71		brtst 4, __ASM_Label_548, __D0consultor
+9	209	74	#line 209 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	210	74		subcall MandaPara, __MandaPara_return
+9	209	76	#line 209 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	210	76	#line 210 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	211	76		subcall PegaBoneco, __PegaBoneco_return
+9	210	78	#line 210 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	211	78		mov __D0consultor, __D0PegaBoneco
+9	211	80	#line 211 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	212	80		tst 5, __D0consultor, __D0consultor
+9	211	83	#line 211 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	212	83		brtst 4, __ASM_Label_551, __D0consultor
+9	212	86	#line 212 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	213	86		subcall CorBoneco, __CorBoneco_return
+9	212	88	#line 212 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	213	88		mov __consultor_7qG2_cor_7qG2_000, __D0CorBoneco
+9	212	90	#line 212 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	212	90	#line 212 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	212	90	#line 212 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	213	90		mov __signed_stack_001consultor, __consultor_7qG2_cor_7qG2_000
+9	212	92	#line 212 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	213	92	#line 213 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	214	92		mov __D0consultor, bonecoAlvo
+9	213	94	#line 213 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	214	94		cmp 4, __D0consultor, __signed_stack_001consultor, __D0consultor
+9	214	98	#line 214 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	215	98		brtst 4, __ASM_Label_556, __D0consultor
+9	215	101	#line 215 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	216	101		subcall Pega, __Pega_return
+9	215	103	#line 215 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	216	103	#line 216 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	217	103		jmp __ASM_Label_557
+9	216	105	#line 216 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	217	105		mov __signed_stack_001consultor, __consultor_7qG2_cor_7qG2_000
+9	216	107	#line 216 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	217	107	#line 217 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	218	107		mov __D0consultor, bonecoNaoAlvo
+9	217	109	#line 217 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	218	109		cmp 4, __D0consultor, __signed_stack_001consultor, __D0consultor
+9	218	113	#line 218 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	219	113		brtst 4, __ASM_Label_560, __D0consultor
+9	219	116	#line 219 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	220	116		subcall Rejeitar, __Rejeitar_return
+9	219	118	#line 219 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	220	118	#line 220 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	221	118		jmp __ASM_Label_561
+9	220	120	#line 220 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	221	120		mov __signed_stack_001consultor, __consultor_7qG2_cor_7qG2_000
+9	220	122	#line 220 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	221	122	#line 221 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	222	122		mov __D0consultor, __constValNeg1
+9	221	124	#line 221 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	222	124		cmp 4, __D0consultor, __signed_stack_001consultor, __D0consultor
+9	223	128	#line 223 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	226	128	#line 226 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	226	128	#line 226 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	226	128	#line 226 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	226	128	#line 226 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	227	128	#line 227 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	228	128		subcall MandaContinuar, __MandaContinuar_return
+9	227	130	#line 227 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	231	130	#line 231 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	232	130		jmp __ASM_Label_565
+9	233	132	#line 233 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	234	132	#line 234 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	236	132	#line 236 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	237	132		jmp __ASM_Label_538
+9	236	134	#line 236 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	236	134	#line 236 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+9	237	134		subret __consultor_return
 10	241	0	#line 241 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 10	242	0		set __lerSensor_7qG2_sensor_7qG2_000, 0
 10	241	3	#line 241 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
@@ -1075,7 +1072,7 @@ Clump	Line	PC	Source
 10	251	70		mov __signed_stack_001TemBoneco, __TemBoneco_7qG2_rgb_dir_7qG2_000
 10	250	72	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 10	250	72	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-10	251	72		set __D0TemBoneco, 380
+10	251	72		set __D0TemBoneco, 320
 10	250	75	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 10	251	75		cmp 0, __D0TemBoneco, __signed_stack_001TemBoneco, __D0TemBoneco
 10	250	79	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
@@ -1084,7 +1081,7 @@ Clump	Line	PC	Source
 10	251	82		mov __signed_stack_001TemBoneco, __TemBoneco_7qG2_rgb_dir_7qG2_000
 10	250	84	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 10	250	84	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-10	251	84		set __D0TemBoneco, 312
+10	251	84		set __D0TemBoneco, 271
 10	250	87	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 10	251	87		cmp 1, __D0TemBoneco, __signed_stack_001TemBoneco, __D0TemBoneco
 10	250	91	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
@@ -1093,7 +1090,7 @@ Clump	Line	PC	Source
 10	251	94		mov __signed_stack_001TemBoneco, __TemBoneco_7qG2_rgb_esq_7qG2_000
 10	250	96	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 10	250	96	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-10	251	96		set __D0TemBoneco, 308
+10	251	96		set __D0TemBoneco, 304
 10	250	99	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 10	251	99		cmp 0, __D0TemBoneco, __signed_stack_001TemBoneco, __D0TemBoneco
 10	250	103	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
@@ -1102,7 +1099,7 @@ Clump	Line	PC	Source
 10	251	106		mov __signed_stack_001TemBoneco, __TemBoneco_7qG2_rgb_esq_7qG2_000
 10	250	108	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 10	250	108	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-10	251	108		set __D0TemBoneco, 247
+10	251	108		set __D0TemBoneco, 243
 10	250	111	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 10	251	111		cmp 1, __D0TemBoneco, __signed_stack_001TemBoneco, __D0TemBoneco
 10	251	115	#line 251 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
@@ -1492,7 +1489,7 @@ Clump	Line	PC	Source
 15	354	7		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
 15	353	9	#line 353 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 15	353	9	#line 353 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-15	354	9		set __D0CorBoneco, 630
+15	354	9		set __D0CorBoneco, 566
 15	353	12	#line 353 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 15	354	12		cmp 0, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
 15	353	16	#line 353 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
@@ -1501,7 +1498,7 @@ Clump	Line	PC	Source
 15	354	19		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
 15	353	21	#line 353 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 15	353	21	#line 353 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-15	354	21		set __D0CorBoneco, 290
+15	354	21		set __D0CorBoneco, 455
 15	353	24	#line 353 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 15	354	24		cmp 1, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
 15	354	28	#line 354 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
@@ -1516,7 +1513,7 @@ Clump	Line	PC	Source
 15	356	36		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
 15	355	38	#line 355 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 15	355	38	#line 355 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-15	356	38		set __D0CorBoneco, 150
+15	356	38		set __D0CorBoneco, 146
 15	355	41	#line 355 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 15	356	41		cmp 0, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
 15	355	45	#line 355 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
@@ -1525,7 +1522,7 @@ Clump	Line	PC	Source
 15	356	48		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
 15	355	50	#line 355 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 15	355	50	#line 355 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-15	356	50		set __D0CorBoneco, 55
+15	356	50		set __D0CorBoneco, 80
 15	355	53	#line 355 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 15	356	53		cmp 1, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
 15	356	57	#line 356 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
@@ -1540,7 +1537,7 @@ Clump	Line	PC	Source
 15	358	65		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
 15	357	67	#line 357 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 15	357	67	#line 357 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-15	358	67		set __D0CorBoneco, 260
+15	358	67		set __D0CorBoneco, 203
 15	357	70	#line 357 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 15	358	70		cmp 0, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
 15	357	74	#line 357 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
@@ -1549,7 +1546,7 @@ Clump	Line	PC	Source
 15	358	77		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
 15	357	79	#line 357 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 15	357	79	#line 357 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-15	358	79		set __D0CorBoneco, 185
+15	358	79		set __D0CorBoneco, 121
 15	357	82	#line 357 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 15	358	82		cmp 1, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
 15	358	86	#line 358 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
@@ -1571,7 +1568,7 @@ Clump	Line	PC	Source
 16	365	3		mov __SRSTmpBuf, __DCMessageWritePacket
 16	365	5		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
 16	365	10		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-16	365	15		mov __SRSTmpLongVal, __constVal0
+16	365	15		mov __SRSTmpLongVal, __constVal27
 16	365	17		flatten __SRSFlattenBuf, __SRSTmpLongVal
 16	365	20		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
 16	365	25		acquire __CBTWMutex
@@ -1609,7 +1606,7 @@ Clump	Line	PC	Source
 16	368	66		mov __signed_stack_001MandaPara, __MandaPara_7qG2_passei_7qG2_000
 16	367	68	#line 367 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 16	367	68	#line 367 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	368	68		set __D0MandaPara, 0
+16	368	68		set __D0MandaPara, 27
 16	367	71	#line 367 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 16	368	71		cmp 5, __D0MandaPara, __signed_stack_001MandaPara, __D0MandaPara
 16	368	75	#line 368 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
@@ -1621,7 +1618,7 @@ Clump	Line	PC	Source
 16	370	80	#line 370 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 16	371	80		subret __MandaPara_return
 17	373	0	#line 373 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-17	374	0		set __Rejeitar_7qG2_passei_7qG2_000, 0
+17	374	0		set __Rejeitar_7qG2_passei_7qG2_000, 27
 17	373	3	#line 373 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 17	374	3	#line 374 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 17	375	3	#pragma macro 14
@@ -1734,214 +1731,167 @@ Clump	Line	PC	Source
 17	387	161	#line 387 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 17	389	161	#line 389 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 17	390	161		subret __Rejeitar_return
-18	394	0	#line 394 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	395	0		set __MandaContinuar_7qG2_passei_7qG2_000, 0
-18	394	3	#line 394 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	396	3	#line 396 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	397	3	#pragma macro 14
-18	397	3		acquire __RemoteMutex
-18	397	4		mov __SRSTmpBuf, __DCMessageWritePacket
-18	397	6		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
-18	397	11		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-18	397	16		mov __SRSTmpLongVal, __constVal6
-18	397	18		flatten __SRSFlattenBuf, __SRSTmpLongVal
-18	397	21		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-18	397	26		acquire __CBTWMutex
-18	397	27		mov __CBTWArgs.Connection, __constVal0
-18	397	29		mov __CBTWArgs.Buffer, __SRSSendBuf
-18	397	31		syscall 29, __CBTWArgs
-18	397	34		mov __D0MandaContinuar, __CBTWArgs.Result
-18	397	37		release __CBTWMutex
-18	397	38		release __RemoteMutex
-18	6436	39	#line 6436 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	396	39	#line 396 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	396	39	#line 396 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	397	39	#line 397 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	398	39	#pragma macro 9
-18	398	39		acquire __MRMutex
-18	398	40		mov __MRArgs.QueueID, __constVal2
-18	398	42		mov __MRArgs.Remove, __constVal1
-18	398	44		set __RRNTmpVal, 0
-18	398	47		syscall 27, __MRArgs
-18	398	50		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-18	398	55		mov __MandaContinuar_7qG2_passei_7qG2_000, __RRNTmpVal
-18	398	57		mov __D0MandaContinuar, __MRArgs.Result
-18	398	60		release __MRMutex
-18	6440	61	#line 6440 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	397	61	#line 397 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	397	61	#line 397 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	399	61	#line 399 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	400	61		mov __signed_stack_001MandaContinuar, __MandaContinuar_7qG2_passei_7qG2_000
-18	399	63	#line 399 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	399	63	#line 399 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	400	63		set __D0MandaContinuar, 6
-18	399	66	#line 399 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	400	66		cmp 5, __D0MandaContinuar, __signed_stack_001MandaContinuar, __D0MandaContinuar
-18	400	70	#line 400 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	401	70		brtst 4, __ASM_Label_773, __D0MandaContinuar
-18	400	73	#line 400 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	401	73		jmp __ASM_Label_772
-18	400	75	#line 400 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	400	75	#line 400 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	401	75	#line 401 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	402	75		subcall bip, __bip_return
-18	401	77	#line 401 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	402	77	#line 402 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	403	77		subcall bip, __bip_return
-18	402	79	#line 402 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	403	79	#line 403 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	404	79		subcall bip, __bip_return
-18	403	81	#line 403 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	405	81	#line 405 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	406	81		subret __MandaContinuar_return
-19	406	0	#line 406 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	407	0		getout __signed_stack_001Pega, __constVal0, 4
-19	406	4	#line 406 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	406	4	#line 406 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	407	4		set __D0Pega, 0
-19	406	7	#line 406 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	407	7		cmp 5, __D0Pega, __signed_stack_001Pega, __D0Pega
-19	407	11	#line 407 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	408	11		brtst 4, __ASM_Label_777, __D0Pega
-19	408	14	#line 408 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	409	14	#pragma macro 7
-19	409	14		setout __constVal0, 0, __constVal8
-19	6492	19	#line 6492 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	408	19	#line 408 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	396	0	#line 396 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	396	0	#line 396 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	396	0	#line 396 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	397	0	#pragma macro 14
+18	397	0		acquire __RemoteMutex
+18	397	1		mov __SRSTmpBuf, __DCMessageWritePacket
+18	397	3		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
+18	397	8		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+18	397	13		mov __SRSTmpLongVal, __constVal6
+18	397	15		flatten __SRSFlattenBuf, __SRSTmpLongVal
+18	397	18		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+18	397	23		acquire __CBTWMutex
+18	397	24		mov __CBTWArgs.Connection, __constVal0
+18	397	26		mov __CBTWArgs.Buffer, __SRSSendBuf
+18	397	28		syscall 29, __CBTWArgs
+18	397	31		release __CBTWMutex
+18	397	32		release __RemoteMutex
+18	6435	33	#line 6435 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	396	33	#line 396 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	396	33	#line 396 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	406	33	#line 406 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	407	33		subret __MandaContinuar_return
+19	407	0	#line 407 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	408	0		getout __signed_stack_001Pega, __constVal0, 4
+19	407	4	#line 407 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	407	4	#line 407 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	408	4		set __D0Pega, 0
+19	407	7	#line 407 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	408	7		cmp 5, __D0Pega, __signed_stack_001Pega, __D0Pega
+19	408	11	#line 408 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	409	11		brtst 4, __ASM_Label_773, __D0Pega
+19	409	14	#line 409 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	410	14	#pragma macro 7
+19	410	14		setout __constVal0, 0, __constVal8
+19	6459	19	#line 6459 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 19	409	19	#line 409 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	410	19		jmp __ASM_Label_776
-19	409	21	#line 409 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	409	21	#line 409 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	410	21		mov __D0Pega, __constValNeg70
-19	410	23	#line 410 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	411	23	#pragma macro 7
-19	411	23		setout __constVal0, 2, __D0Pega, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-19	6501	46	#line 6501 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	410	46	#line 410 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	410	46	#line 410 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	411	46		getout __signed_stack_001Pega, __constVal0, 4
-19	410	50	#line 410 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	410	50	#line 410 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	411	50		mov __D0Pega, __constValNeg77
-19	410	52	#line 410 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	411	52		cmp 1, __D0Pega, __signed_stack_001Pega, __D0Pega
-19	411	56	#line 411 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	412	56		brtst 4, __ASM_Label_783, __D0Pega
-19	411	59	#line 411 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	411	59	#line 411 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	412	59		jmp __ASM_Label_782
-19	411	61	#line 411 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	410	19	#line 410 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	411	19		jmp __ASM_Label_772
+19	410	21	#line 410 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	410	21	#line 410 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	411	21		mov __D0Pega, __constValNeg70
+19	411	23	#line 411 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	412	23	#pragma macro 7
+19	412	23		setout __constVal0, 2, __D0Pega, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+19	6468	46	#line 6468 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	411	46	#line 411 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	411	46	#line 411 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	412	46		getout __signed_stack_001Pega, __constVal0, 4
+19	411	50	#line 411 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	411	50	#line 411 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	412	50		mov __D0Pega, __constValNeg77
+19	411	52	#line 411 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	412	52		cmp 1, __D0Pega, __signed_stack_001Pega, __D0Pega
+19	412	56	#line 412 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	413	56		brtst 4, __ASM_Label_779, __D0Pega
+19	412	59	#line 412 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	412	59	#line 412 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	413	59		jmp __ASM_Label_778
 19	412	61	#line 412 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	413	61	#pragma macro 7
-19	413	61		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-19	6524	84	#line 6524 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	412	84	#line 412 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	412	84	#line 412 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	413	84		set __Wait_7qG2_ms_7qG2_000_inline_Pega, 200
-19	412	87	#line 412 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	413	61	#line 413 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	414	61	#pragma macro 7
+19	414	61		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+19	6491	84	#line 6491 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	413	84	#line 413 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	413	84	#line 413 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	414	84		set __Wait_7qG2_ms_7qG2_000_inline_Pega, 200
+19	413	87	#line 413 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 19	8551	87	#line 8551 "NXCDefs.h"
 19	8552	87		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_Pega
 19	8551	90	#line 8551 "NXCDefs.h"
-19	413	90	#line 413 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	415	90	#line 415 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	416	90		subret __Pega_return
-20	431	0	#line 431 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	432	0		getout __signed_stack_001VoltaAoNormal, __constVal0, 4
-20	431	4	#line 431 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	431	4	#line 431 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	432	4		set __D0VoltaAoNormal, 0
-20	431	7	#line 431 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	432	7		cmp 5, __D0VoltaAoNormal, __signed_stack_001VoltaAoNormal, __D0VoltaAoNormal
-20	432	11	#line 432 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	433	11		brtst 4, __ASM_Label_805, __D0VoltaAoNormal
-20	433	14	#line 433 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	434	14	#pragma macro 7
-20	434	14		setout __constVal0, 0, __constVal8
-20	6640	19	#line 6640 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	433	19	#line 433 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	414	90	#line 414 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	416	90	#line 416 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	417	90		subret __Pega_return
+20	432	0	#line 432 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	433	0		getout __signed_stack_001VoltaAoNormal, __constVal0, 4
+20	432	4	#line 432 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	432	4	#line 432 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	433	4		set __D0VoltaAoNormal, 0
+20	432	7	#line 432 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	433	7		cmp 5, __D0VoltaAoNormal, __signed_stack_001VoltaAoNormal, __D0VoltaAoNormal
+20	433	11	#line 433 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	434	11		brtst 4, __ASM_Label_801, __D0VoltaAoNormal
+20	434	14	#line 434 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	435	14	#pragma macro 7
+20	435	14		setout __constVal0, 0, __constVal8
+20	6607	19	#line 6607 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 20	434	19	#line 434 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	435	19		jmp __ASM_Label_804
-20	434	21	#line 434 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	434	21	#line 434 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	435	21		set __Wait_7qG2_ms_7qG2_000_inline_VoltaAoNormal, 200
-20	434	24	#line 434 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	435	19	#line 435 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	436	19		jmp __ASM_Label_800
+20	435	21	#line 435 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	435	21	#line 435 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	436	21		set __Wait_7qG2_ms_7qG2_000_inline_VoltaAoNormal, 200
+20	435	24	#line 435 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 20	8551	24	#line 8551 "NXCDefs.h"
 20	8552	24		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_VoltaAoNormal
 20	8551	27	#line 8551 "NXCDefs.h"
-20	435	27	#line 435 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	435	27	#line 435 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	436	27		mov __D0VoltaAoNormal, __constValNeg40
-20	436	29	#line 436 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	437	29	#pragma macro 10
-20	437	29		neg __OnRev_Tmp, __D0VoltaAoNormal
-20	437	32		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-20	6661	55	#line 6661 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	436	55	#line 436 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	436	27	#line 436 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	436	27	#line 436 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	437	27		mov __D0VoltaAoNormal, __constValNeg40
+20	437	29	#line 437 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	438	29	#pragma macro 10
+20	438	29		neg __OnRev_Tmp, __D0VoltaAoNormal
+20	438	32		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+20	6628	55	#line 6628 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 20	437	55	#line 437 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	438	55		getout __VoltaAoNormal_7qG2_tc_7qG2_000, __constVal0, 4
-20	437	59	#line 437 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	437	59	#line 437 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	438	55	#line 438 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	439	55		getout __VoltaAoNormal_7qG2_tc_7qG2_000, __constVal0, 4
 20	438	59	#line 438 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	439	59		set __Wait_7qG2_ms_7qG2_000_inline_VoltaAoNormal, 50
-20	438	62	#line 438 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	438	59	#line 438 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	439	59	#line 439 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	440	59		set __Wait_7qG2_ms_7qG2_000_inline_VoltaAoNormal, 50
+20	439	62	#line 439 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 20	8551	62	#line 8551 "NXCDefs.h"
 20	8552	62		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_VoltaAoNormal
 20	8551	65	#line 8551 "NXCDefs.h"
-20	439	65	#line 439 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 20	440	65	#line 440 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	441	65		mov __VoltaAoNormal_7qG2_tc1_7qG2_000, __VoltaAoNormal_7qG2_tc_7qG2_000
-20	440	67	#line 440 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	440	67	#line 440 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	442	67	#line 442 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	443	67		getout __VoltaAoNormal_7qG2_tc_7qG2_000, __constVal0, 4
-20	442	71	#line 442 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	442	71	#line 442 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	442	71	#line 442 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	443	71		mov __signed_stack_001VoltaAoNormal, __VoltaAoNormal_7qG2_tc1_7qG2_000
-20	442	73	#line 442 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	444	73	#line 444 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	445	73		mov __D0VoltaAoNormal, __VoltaAoNormal_7qG2_tc_7qG2_000
-20	444	75	#line 444 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	445	75		cmp 5, __D0VoltaAoNormal, __signed_stack_001VoltaAoNormal, __D0VoltaAoNormal
-20	446	79	#line 446 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	447	79		brtst 4, __ASM_Label_815, __D0VoltaAoNormal
-20	446	82	#line 446 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	447	82		jmp __ASM_Label_814
-20	446	84	#line 446 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	446	84	#line 446 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	447	84		subret __VoltaAoNormal_return
-21	478	0	#line 478 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	479	0		set __PlaySound_7qG2_aCode_7qG2_000, 2
-21	478	3	#line 478 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	479	3	#line 479 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	480	3		subcall PlaySound, __PlaySound_return
-21	479	5	#line 479 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	481	5	#line 481 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	482	5		subret __bip_return
-22	482	0	#line 482 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-22	483	0		subret ____initialize_global_data_return
+20	441	65	#line 441 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	442	65		mov __VoltaAoNormal_7qG2_tc1_7qG2_000, __VoltaAoNormal_7qG2_tc_7qG2_000
+20	441	67	#line 441 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	441	67	#line 441 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	443	67	#line 443 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	444	67		getout __VoltaAoNormal_7qG2_tc_7qG2_000, __constVal0, 4
+20	443	71	#line 443 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	443	71	#line 443 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	443	71	#line 443 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	444	71		mov __signed_stack_001VoltaAoNormal, __VoltaAoNormal_7qG2_tc1_7qG2_000
+20	443	73	#line 443 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	445	73	#line 445 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	446	73		mov __D0VoltaAoNormal, __VoltaAoNormal_7qG2_tc_7qG2_000
+20	445	75	#line 445 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	446	75		cmp 5, __D0VoltaAoNormal, __signed_stack_001VoltaAoNormal, __D0VoltaAoNormal
+20	447	79	#line 447 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	448	79		brtst 4, __ASM_Label_811, __D0VoltaAoNormal
+20	447	82	#line 447 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	448	82		jmp __ASM_Label_810
+20	447	84	#line 447 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	447	84	#line 447 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	448	84		subret __VoltaAoNormal_return
+21	483	0	#line 483 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	484	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
 1	__ResetSensorSubroutine	8	NXTDefs.h
 2	__ReadLSBytes3	21	NXTDefs.h
 3	PlaySound	107	NXCDefs.h
-4	InicializaSensores	526	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
-5	returnUS	617	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
-6	BipBranco	697	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
-7	BipPreto	715	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
-8	BonecoAlvo	733	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
-9	consultor	770	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
-10	TemBoneco	907	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
-11	lerSensor	1037	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
-12	PegaBoneco	1190	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
-13	VoltaGarra	1321	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
-14	RecebeBoneco	1404	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
-15	CorBoneco	1529	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
-16	MandaPara	1624	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
-17	Rejeitar	1706	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
-18	MandaContinuar	1869	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
-19	Pega	1952	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
-20	VoltaAoNormal	2044	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
-21	bip	2130	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
-22	__initialize_global_data	2137	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
+4	InicializaSensores	519	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
+5	returnUS	610	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
+6	BipBranco	690	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
+7	BipPreto	708	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
+8	BonecoAlvo	726	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
+9	consultor	763	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
+10	TemBoneco	899	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
+11	lerSensor	1029	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
+12	PegaBoneco	1182	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
+13	VoltaGarra	1313	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
+14	RecebeBoneco	1396	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
+15	CorBoneco	1521	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
+16	MandaPara	1616	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
+17	Rejeitar	1698	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
+18	MandaContinuar	1861	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
+19	Pega	1896	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
+20	VoltaAoNormal	1988	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc
+21	__initialize_global_data	2074	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc

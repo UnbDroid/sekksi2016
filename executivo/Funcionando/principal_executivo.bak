@@ -237,6 +237,9 @@ void ChecaParada(){// TESTAR
 		}while(acao == PARADO);
 		if(acao == CONTINUA){
       SendRemoteNumber(CONEXAO, OUTBOX, CONTINUA);
+      bip();
+      bip();
+      bip();
 		}else{
 			Rejeitar();
 		}

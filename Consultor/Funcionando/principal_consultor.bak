@@ -392,15 +392,16 @@ void MandaContinuar(){//TESTAR
 
 
 
-  do{
+  //do{
     //bip();
     SendRemoteNumber(CONEXAO, OUTBOX, CONTINUA);
-    ReceiveRemoteNumber(INBOX, true, passei);
-    //Wait(30);
-  }while(passei != CONTINUA);
+    //ReceiveRemoteNumber(INBOX, true, passei);
+   // Wait(30);
+  //}while(passei != CONTINUA);
   bip();
   bip();
-  bip();
+
+  //bip();
 }
 
 void Pega(){
