@@ -8,7 +8,6 @@
 #define HTE IN_4//hitech da esquerda
 
 //LOGICA
-
 #define direita 1
 #define esquerda 2
 
@@ -46,8 +45,7 @@
 	#define ACAO CONECTA
 	#define CONEXAO 1
 
-//dist
-	#define DIST_RE 30
+//dist-
 	#define DIST_DA_PAREDE 8
 //cores
 	#define COR_VERDE 5
@@ -103,7 +101,8 @@ void bip();
 
 
 //função principal
-task main(){
+task main()
+{
 	executivo();
 }
 
@@ -227,26 +226,28 @@ void andaRetoDireita(int distParede, int distAndar){ // função que faz o robô
 }
 
 void ChecaParada(){// TESTAR
-	int acao = ANDANDO;
+	int acao = ANDANDO, int aux;
+
 	ReceiveRemoteNumber(INBOX, true, acao);
 	if (acao == PARADO){
+
 		Para();
 		SendRemoteNumber(CONEXAO, OUTBOX, PARADO);
 		do{
-			ReceiveRemoteNumber(INBOX, true, acao);
+			ReceiveRemoteNumber(INBOX, true, aux);
+			if(aux != 0){
+        acao = aux;
+      }
 		}while(acao == PARADO);
 		if(acao == CONTINUA){
-
       SendRemoteNumber(CONEXAO, OUTBOX, CONTINUA);
-      //bip();
-      //bip();
-      //bip();
 		}else{
 			Rejeitar();
 		}
 	}else if(acao == SIM_US){
 		vira(90, esquerda);
 	}
+	bip();
 }
 
 void Rejeitar(){// TESTAR

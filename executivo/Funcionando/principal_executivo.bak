@@ -21,7 +21,7 @@
 	#define CONTINUA 6
 	#define VIROU 7
 	#define DESVIROU 8
-	#define PARADO 0
+	#define PARADO 27
 	#define ANDANDO -2
 
 	#define BONECO_BRANCO 4
@@ -46,8 +46,7 @@
 	#define ACAO CONECTA
 	#define CONEXAO 1
 
-//dist
-	#define DIST_RE 30
+//dist-
 	#define DIST_DA_PAREDE 8
 //cores
 	#define COR_VERDE 5
@@ -228,18 +227,18 @@ void andaRetoDireita(int distParede, int distAndar){ // função que faz o robô
 
 void ChecaParada(){// TESTAR
 	int acao = ANDANDO;
+
 	ReceiveRemoteNumber(INBOX, true, acao);
 	if (acao == PARADO){
+
 		Para();
 		SendRemoteNumber(CONEXAO, OUTBOX, PARADO);
 		do{
 			ReceiveRemoteNumber(INBOX, true, acao);
 		}while(acao == PARADO);
 		if(acao == CONTINUA){
+      bip();
       SendRemoteNumber(CONEXAO, OUTBOX, CONTINUA);
-      bip();
-      bip();
-      bip();
 		}else{
 			Rejeitar();
 		}

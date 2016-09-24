@@ -8,12 +8,12 @@
     #define COR_VERMELHA_MEIO_MAX 203
 
  // Defines de leitura do RGB da esquerda do robô
-    #define COR_BASE_ESQ_MIN 243
-    #define COR_BASE_ESQ_MAX 304
+    #define COR_BASE_ESQ_MIN 213
+    #define COR_BASE_ESQ_MAX 284
 
 // Defines de leitura do RGB da direita do robô
-    #define COR_BASE_DIR_MIN 271
-    #define COR_BASE_DIR_MAX 320
+    #define COR_BASE_DIR_MIN 213
+    #define COR_BASE_DIR_MAX 280
 
 
 
@@ -94,6 +94,7 @@
 
   //Defines angulos da garra
   #define ANGULO_1 -77
+  #define ANG_SEGURO -125
 
   #define VETOR_CALIBRACAO 11
 
@@ -291,7 +292,7 @@ int PegaBoneco()
         Wait(200);
         old_tc = tc;
         tc = MotorTachoCount(MOTOR_GARRA);
-        if(tc<-118)
+        if(tc<ANG_SEGURO)
         {
             OnFwd(MOTOR_GARRA,0);
             //Bip();//colocar uma função mais rápida de bipar
@@ -361,11 +362,11 @@ int CorBoneco()//TESTAR
 
 void MandaPara(){ //TESTAR
   int passei = ANDANDO;
-  do{
+  //do{
     SendRemoteNumber(CONEXAO, OUTBOX, PARADO);
-    ReceiveRemoteNumber(INBOX, true, passei);
-    Wait(30);
-  }while(passei != PARADO);
+    //ReceiveRemoteNumber(INBOX, true, passei);
+    //Wait(30);
+  //}while(passei != PARADO);
 }
 
 void Rejeitar(){ //TESTAR
@@ -412,6 +413,7 @@ void Pega(){
     while(MotorTachoCount(MOTOR_GARRA)>(ANGULO_1));
     Off(MOTOR_GARRA);
     Wait(TEMPO_DEPOIS_DE_JOGAR_DENTRO);
+    VoltaGarra();k,mjmn
 }
 
 void FechaDeLeves(){
