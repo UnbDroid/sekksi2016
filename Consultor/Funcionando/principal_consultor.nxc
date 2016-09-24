@@ -305,11 +305,12 @@ void VoltaGarra(void)
 int RecebeBoneco(){
      int sinInicial = 0;
      do{  
+          ClearScreen();
           ReceiveRemoteNumber(INBOX, true, sinInicial);
           NumOut(0, LCD_LINE1, sinInicial);
           TextOut(0, LCD_LINE2, "SINAL INICIAL");
           Wait(30);    
-          ClearScreen();
+          
      }while(sinInicial == 0);
      SendRemoteNumber(CONEXAO, OUTBOX, SIM);
      Wait(50);
@@ -339,7 +340,7 @@ void MandaPara(){ //TESTAR
   int passei = ANDANDO;
   do{
     SendRemoteNumber(CONEXAO, OUTBOX, PARADO);
-    ReceiveRemoteNumber(INBOX, 0, passei);
+    ReceiveRemoteNumber(INBOX, true, passei);
     Wait(30);
   }while(passei != PARADO);
 }
@@ -349,7 +350,7 @@ void Rejeitar(){ //TESTAR
   
   do{
     SendRemoteNumber(CONEXAO, OUTBOX, VIROU);
-    ReceiveRemoteNumber(INBOX, 0, passei);
+    ReceiveRemoteNumber(INBOX, true, passei);
     Wait(30);
   }while(passei != VIROU);
   
@@ -357,7 +358,7 @@ void Rejeitar(){ //TESTAR
 
   do{
     SendRemoteNumber(CONEXAO, OUTBOX, DESVIROU);
-    ReceiveRemoteNumber(INBOX, 0, passei);
+    ReceiveRemoteNumber(INBOX, true, passei);
     Wait(30);
   }while(passei != DESVIROU);
 
@@ -367,7 +368,7 @@ void MandaContinuar(){//TESTAR
   int passei = NAO;
   do{
     SendRemoteNumber(CONEXAO, OUTBOX, CONTINUA);
-    ReceiveRemoteNumber(INBOX, 0, passei);
+    ReceiveRemoteNumber(INBOX, true, passei);
     Wait(30);
   }while(passei != CONTINUA);
 }

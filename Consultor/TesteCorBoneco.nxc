@@ -151,7 +151,7 @@ void BonecoAlvo(){
 
 
 task main(){
-InicializaSensores();
+//InicializaSensores();
 
 while(1){
 	BonecoAlvo();

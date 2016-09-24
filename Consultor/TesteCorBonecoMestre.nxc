@@ -71,8 +71,8 @@ int corDir = 99;
 
 void inicializaSensores()
 {
-  SetSensorLowspeed(USD);
-  SetSensorLowspeed(USE);
+  //SetSensorLowspeed(USD);
+ // SetSensorLowspeed(USE);
   SetSensorLowspeed(HTD);
   SetSensorLowspeed(HTE);
 }
@@ -113,6 +113,8 @@ void IniciaCorDoChao(int corEsq, int corDir){//FUNFOU BONITO
 task main(){
 inicializaSensores();
 	while(1){
+
+      TextOut(0, LCD_LINE2, "ENTREI");
 		IniciaCorDoChao(corEsq, corDir);
 		Wait(100);
 	}

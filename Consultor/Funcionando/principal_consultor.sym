@@ -119,8 +119,8 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 116	__constVal3	2	0	359	1	18
 117	__constVal32	2	0	360	1	30
 118	__OnRev_Tmp	2	1	361	1	2
-119	__constVal0	2	1	362	1	81
-120	__constVal1	2	0	363	1	18
+119	__constVal0	2	1	362	1	77
+120	__constVal1	2	0	363	1	22
 121	____ResetSensorSubroutine_return	1	1	364	1	6
 122	__ResetSensorTmp	1	1	365	1	2
 123	__constValNeg118	2	0	366	1	1
@@ -1318,819 +1318,819 @@ Clump	Line	PC	Source
 13	305	0	#line 305 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 13	306	0		set __RecebeBoneco_7qG2_sinInicial_7qG2_000, 0
 13	305	3	#line 305 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	307	3	#line 307 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	308	3	#pragma macro 9
-13	308	3		acquire __MRMutex
-13	308	4		mov __MRArgs.QueueID, __constVal2
-13	308	6		mov __MRArgs.Remove, __constVal1
-13	308	8		set __RRNTmpVal, 0
-13	308	11		syscall 27, __MRArgs
-13	308	14		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-13	308	19		mov __RecebeBoneco_7qG2_sinInicial_7qG2_000, __RRNTmpVal
-13	308	21		mov __D0RecebeBoneco, __MRArgs.Result
-13	308	24		release __MRMutex
-13	9854	25	#line 9854 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	307	25	#line 307 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	307	25	#line 307 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	308	25	#line 308 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	309	25		set __signed_stack_001RecebeBoneco, 0
-13	308	28	#line 308 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	308	28	#line 308 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	309	28		set __signed_stack_002RecebeBoneco, 56
-13	308	31	#line 308 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	308	31	#line 308 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	309	31		mov __D0RecebeBoneco, __RecebeBoneco_7qG2_sinInicial_7qG2_000
-13	308	33	#line 308 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	309	33		acquire __TextOutMutex
+13	6921	3	#line 6921 "NXCDefs.h"
+13	6922	3	#pragma macro 6
+13	6922	3		mov __PointOutArgs.Location.X, __constVal200
+13	6922	5		mov __PointOutArgs.Location.Y, __constVal200
+13	6922	7		mov __PointOutArgs.Options, __constVal1
+13	6922	9		syscall 14, __PointOutArgs
+13	9854	12	#line 9854 "NXCDefs.h"
+13	6921	12	#line 6921 "NXCDefs.h"
+13	307	12	#line 307 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	308	12	#line 308 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	309	12	#pragma macro 9
+13	309	12		acquire __MRMutex
+13	309	13		mov __MRArgs.QueueID, __constVal2
+13	309	15		mov __MRArgs.Remove, __constVal1
+13	309	17		set __RRNTmpVal, 0
+13	309	20		syscall 27, __MRArgs
+13	309	23		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+13	309	28		mov __RecebeBoneco_7qG2_sinInicial_7qG2_000, __RRNTmpVal
+13	309	30		mov __D0RecebeBoneco, __MRArgs.Result
+13	309	33		release __MRMutex
+13	9858	34	#line 9858 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 13	308	34	#line 308 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	309	34		mov __TextOutArgs.Location.X, __signed_stack_001RecebeBoneco
-13	308	37	#line 308 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	309	37		mov __TextOutArgs.Location.Y, __signed_stack_002RecebeBoneco
-13	308	40	#line 308 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	309	40		set __TextOutArgs.Options, 0
-13	308	43	#line 308 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	309	43		numtostr __TextOutArgs.Text, __D0RecebeBoneco
-13	308	46	#line 308 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	309	46		syscall 13, __TextOutArgs
-13	308	49	#line 308 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	309	49		mov __D0RecebeBoneco, __TextOutArgs.Result
-13	308	52	#line 308 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	309	52		release __TextOutMutex
-13	308	53	#line 308 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	309	53	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	310	53		set __signed_stack_001RecebeBoneco, 0
-13	309	56	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	309	56	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	310	56		set __signed_stack_002RecebeBoneco, 48
-13	309	59	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	309	59	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	310	59		strcat __strbufRecebeBoneco, __constStr0009
-13	309	63	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	310	63		acquire __TextOutMutex
-13	309	64	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	310	64		mov __TextOutArgs.Location.X, __signed_stack_001RecebeBoneco
-13	309	67	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	310	67		mov __TextOutArgs.Location.Y, __signed_stack_002RecebeBoneco
-13	309	70	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	310	70		set __TextOutArgs.Options, 0
-13	309	73	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	310	73		mov __TextOutArgs.Text, __strbufRecebeBoneco
-13	309	75	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	310	75		syscall 13, __TextOutArgs
-13	309	78	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	310	78		mov __D0RecebeBoneco, __TextOutArgs.Result
-13	309	81	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	310	81		release __TextOutMutex
-13	309	82	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	308	34	#line 308 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	309	34	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	310	34		set __signed_stack_001RecebeBoneco, 0
+13	309	37	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	309	37	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	310	37		set __signed_stack_002RecebeBoneco, 56
+13	309	40	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	309	40	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	310	40		mov __D0RecebeBoneco, __RecebeBoneco_7qG2_sinInicial_7qG2_000
+13	309	42	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	310	42		acquire __TextOutMutex
+13	309	43	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	310	43		mov __TextOutArgs.Location.X, __signed_stack_001RecebeBoneco
+13	309	46	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	310	46		mov __TextOutArgs.Location.Y, __signed_stack_002RecebeBoneco
+13	309	49	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	310	49		set __TextOutArgs.Options, 0
+13	309	52	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	310	52		numtostr __TextOutArgs.Text, __D0RecebeBoneco
+13	309	55	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	310	55		syscall 13, __TextOutArgs
+13	309	58	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	310	58		mov __D0RecebeBoneco, __TextOutArgs.Result
+13	309	61	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	310	61		release __TextOutMutex
+13	309	62	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	310	62	#line 310 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	311	62		set __signed_stack_001RecebeBoneco, 0
+13	310	65	#line 310 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	310	65	#line 310 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	311	65		set __signed_stack_002RecebeBoneco, 48
+13	310	68	#line 310 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	310	68	#line 310 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	311	68		strcat __strbufRecebeBoneco, __constStr0009
+13	310	72	#line 310 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	311	72		acquire __TextOutMutex
+13	310	73	#line 310 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	311	73		mov __TextOutArgs.Location.X, __signed_stack_001RecebeBoneco
+13	310	76	#line 310 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	311	76		mov __TextOutArgs.Location.Y, __signed_stack_002RecebeBoneco
+13	310	79	#line 310 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	311	79		set __TextOutArgs.Options, 0
 13	310	82	#line 310 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	311	82		set __Wait_7qG2_ms_7qG2_000_inline_RecebeBoneco, 30
-13	310	85	#line 310 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	8869	85	#line 8869 "NXCDefs.h"
-13	8870	85		waitv __Wait_7qG2_ms_7qG2_000_inline_RecebeBoneco
-13	8869	87	#line 8869 "NXCDefs.h"
+13	311	82		mov __TextOutArgs.Text, __strbufRecebeBoneco
+13	310	84	#line 310 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	311	84		syscall 13, __TextOutArgs
 13	310	87	#line 310 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	6921	87	#line 6921 "NXCDefs.h"
-13	6922	87	#pragma macro 6
-13	6922	87		mov __PointOutArgs.Location.X, __constVal200
-13	6922	89		mov __PointOutArgs.Location.Y, __constVal200
-13	6922	91		mov __PointOutArgs.Options, __constVal1
-13	6922	93		syscall 14, __PointOutArgs
-13	9934	96	#line 9934 "NXCDefs.h"
-13	6921	96	#line 6921 "NXCDefs.h"
+13	311	87		mov __D0RecebeBoneco, __TextOutArgs.Result
+13	310	90	#line 310 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	311	90		release __TextOutMutex
+13	310	91	#line 310 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	311	91	#line 311 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	312	91		set __Wait_7qG2_ms_7qG2_000_inline_RecebeBoneco, 30
+13	311	94	#line 311 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	8869	94	#line 8869 "NXCDefs.h"
+13	8870	94		waitv __Wait_7qG2_ms_7qG2_000_inline_RecebeBoneco
+13	8869	96	#line 8869 "NXCDefs.h"
 13	311	96	#line 311 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	312	96	#line 312 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	313	96		mov __signed_stack_001RecebeBoneco, __RecebeBoneco_7qG2_sinInicial_7qG2_000
-13	312	98	#line 312 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	312	98	#line 312 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	313	98		set __D0RecebeBoneco, 0
-13	312	101	#line 312 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	313	101		cmp 4, __D0RecebeBoneco, __signed_stack_001RecebeBoneco, __D0RecebeBoneco
-13	312	105	#line 312 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	313	105		brtst 4, __ASM_Label_827, __D0RecebeBoneco
-13	312	108	#line 312 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	313	108		jmp __ASM_Label_826
-13	312	110	#line 312 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	312	110	#line 312 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	313	96	#line 313 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	314	96		mov __signed_stack_001RecebeBoneco, __RecebeBoneco_7qG2_sinInicial_7qG2_000
+13	313	98	#line 313 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	313	98	#line 313 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	314	98		set __D0RecebeBoneco, 0
+13	313	101	#line 313 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	314	101		cmp 4, __D0RecebeBoneco, __signed_stack_001RecebeBoneco, __D0RecebeBoneco
+13	313	105	#line 313 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	314	105		brtst 4, __ASM_Label_827, __D0RecebeBoneco
+13	313	108	#line 313 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	314	108		jmp __ASM_Label_826
 13	313	110	#line 313 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	314	110	#pragma macro 25
-13	314	110		acquire __RemoteMutex
-13	314	111		mov __SRSTmpBuf, __DCMessageWritePacket
-13	314	113		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
-13	314	118		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-13	314	123		mov __SRSTmpLongVal, __constVal5
-13	314	125		flatten __SRSFlattenBuf, __SRSTmpLongVal
-13	314	128		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-13	314	133		brcmp 0, __ConnWrite_Else0, __constVal0, __constVal4
-13	314	137		acquire __CHSWMutex
-13	314	138		sub __WFRRTmpByte, __constVal0, __constVal4
-13	314	142		arrbuild __CHSWArgs.Buffer, __WFRRTmpByte, __SRSSendBuf
-13	314	147		syscall 37, __CHSWArgs
-13	314	150		mov __D0RecebeBoneco, __CHSWArgs.Status
-13	314	153		release __CHSWMutex
-13	314	154		jmp __ConnWrite_EndIf0
-13	314	156		acquire __CBTWMutex
-13	314	157		mov __CBTWArgs.Connection, __constVal0
-13	314	159		mov __CBTWArgs.Buffer, __SRSSendBuf
-13	314	161		syscall 29, __CBTWArgs
-13	314	164		mov __D0RecebeBoneco, __CBTWArgs.Result
-13	314	167		release __CBTWMutex
-13	314	168		release __RemoteMutex
+13	313	110	#line 313 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	314	110	#line 314 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	315	110	#pragma macro 25
+13	315	110		acquire __RemoteMutex
+13	315	111		mov __SRSTmpBuf, __DCMessageWritePacket
+13	315	113		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
+13	315	118		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+13	315	123		mov __SRSTmpLongVal, __constVal5
+13	315	125		flatten __SRSFlattenBuf, __SRSTmpLongVal
+13	315	128		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+13	315	133		brcmp 0, __ConnWrite_Else0, __constVal0, __constVal4
+13	315	137		acquire __CHSWMutex
+13	315	138		sub __WFRRTmpByte, __constVal0, __constVal4
+13	315	142		arrbuild __CHSWArgs.Buffer, __WFRRTmpByte, __SRSSendBuf
+13	315	147		syscall 37, __CHSWArgs
+13	315	150		mov __D0RecebeBoneco, __CHSWArgs.Status
+13	315	153		release __CHSWMutex
+13	315	154		jmp __ConnWrite_EndIf0
+13	315	156		acquire __CBTWMutex
+13	315	157		mov __CBTWArgs.Connection, __constVal0
+13	315	159		mov __CBTWArgs.Buffer, __SRSSendBuf
+13	315	161		syscall 29, __CBTWArgs
+13	315	164		mov __D0RecebeBoneco, __CBTWArgs.Result
+13	315	167		release __CBTWMutex
+13	315	168		release __RemoteMutex
 13	9957	169	#line 9957 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	313	169	#line 313 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	313	169	#line 313 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 13	314	169	#line 314 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	315	169		set __Wait_7qG2_ms_7qG2_000_inline_RecebeBoneco, 50
-13	314	172	#line 314 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	314	169	#line 314 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	315	169	#line 315 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	316	169		set __Wait_7qG2_ms_7qG2_000_inline_RecebeBoneco, 50
+13	315	172	#line 315 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 13	8869	172	#line 8869 "NXCDefs.h"
 13	8870	172		waitv __Wait_7qG2_ms_7qG2_000_inline_RecebeBoneco
 13	8869	174	#line 8869 "NXCDefs.h"
-13	314	174	#line 314 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 13	315	174	#line 315 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	316	174		mov __signed_stack_001RecebeBoneco, __RecebeBoneco_7qG2_sinInicial_7qG2_000
-13	315	176	#line 315 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	316	174	#line 316 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	317	174		mov __signed_stack_001RecebeBoneco, __RecebeBoneco_7qG2_sinInicial_7qG2_000
 13	316	176	#line 316 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	317	176		set __D0RecebeBoneco, 12
-13	316	179	#line 316 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	317	179		cmp 4, __D0RecebeBoneco, __signed_stack_001RecebeBoneco, __D0RecebeBoneco
-13	316	183	#line 316 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	317	183		brtst 4, __ASM_Label_846, __D0RecebeBoneco
-13	316	186	#line 316 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	317	186		set __D0RecebeBoneco, 12
-13	316	189	#line 316 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	317	189		subret __RecebeBoneco_return
-13	316	191	#line 316 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	317	176	#line 317 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	318	176		set __D0RecebeBoneco, 12
+13	317	179	#line 317 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	318	179		cmp 4, __D0RecebeBoneco, __signed_stack_001RecebeBoneco, __D0RecebeBoneco
+13	317	183	#line 317 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	318	183		brtst 4, __ASM_Label_846, __D0RecebeBoneco
+13	317	186	#line 317 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	318	186		set __D0RecebeBoneco, 12
+13	317	189	#line 317 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	318	189		subret __RecebeBoneco_return
 13	317	191	#line 317 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	318	191		jmp __ASM_Label_849
-13	317	193	#line 317 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	318	193		mov __signed_stack_001RecebeBoneco, __RecebeBoneco_7qG2_sinInicial_7qG2_000
-13	317	195	#line 317 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	318	191	#line 318 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	319	191		jmp __ASM_Label_849
+13	318	193	#line 318 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	319	193		mov __signed_stack_001RecebeBoneco, __RecebeBoneco_7qG2_sinInicial_7qG2_000
 13	318	195	#line 318 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	319	195		set __D0RecebeBoneco, 4
-13	318	198	#line 318 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	319	198		cmp 4, __D0RecebeBoneco, __signed_stack_001RecebeBoneco, __D0RecebeBoneco
-13	318	202	#line 318 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	319	202		brtst 4, __ASM_Label_852, __D0RecebeBoneco
-13	318	205	#line 318 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	319	205		set __D0RecebeBoneco, 4
-13	318	208	#line 318 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	319	208		subret __RecebeBoneco_return
-13	318	210	#line 318 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	323	210	#line 323 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	323	210	#line 323 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	323	210	#line 323 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-13	324	210		subret __RecebeBoneco_return
-14	327	0	#line 327 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	328	0		set __lerSensor_7qG2_sensor_7qG2_000, 2
-14	327	3	#line 327 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	327	3	#line 327 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	328	3		subcall lerSensor, __lerSensor_return
-14	327	5	#line 327 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	328	5		mov __CorBoneco_7qG2_leitura_7qG2_000, __D0lerSensor
-14	327	7	#line 327 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	327	7	#line 327 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	329	7	#line 329 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	330	7		mov __signed_stack_001CorBoneco, __D0lerSensor
-14	329	9	#line 329 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	329	9	#line 329 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	330	9		set __D0CorBoneco, 630
-14	329	12	#line 329 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	330	12		cmp 0, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
-14	329	16	#line 329 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	330	16		brtst 4, __ASM_Label_860, __D0CorBoneco
-14	329	19	#line 329 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	330	19		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
-14	329	21	#line 329 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	329	21	#line 329 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	330	21		set __D0CorBoneco, 290
-14	329	24	#line 329 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	330	24		cmp 1, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
-14	330	28	#line 330 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	331	28		brtst 4, __ASM_Label_865, __D0CorBoneco
-14	330	31	#line 330 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	331	31		set __D0CorBoneco, 4
-14	330	34	#line 330 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	331	34		subret __CorBoneco_return
-14	330	36	#line 330 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	319	195	#line 319 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	320	195		set __D0RecebeBoneco, 4
+13	319	198	#line 319 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	320	198		cmp 4, __D0RecebeBoneco, __signed_stack_001RecebeBoneco, __D0RecebeBoneco
+13	319	202	#line 319 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	320	202		brtst 4, __ASM_Label_852, __D0RecebeBoneco
+13	319	205	#line 319 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	320	205		set __D0RecebeBoneco, 4
+13	319	208	#line 319 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	320	208		subret __RecebeBoneco_return
+13	319	210	#line 319 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	324	210	#line 324 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	324	210	#line 324 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	324	210	#line 324 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+13	325	210		subret __RecebeBoneco_return
+14	328	0	#line 328 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	329	0		set __lerSensor_7qG2_sensor_7qG2_000, 2
+14	328	3	#line 328 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	328	3	#line 328 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	329	3		subcall lerSensor, __lerSensor_return
+14	328	5	#line 328 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	329	5		mov __CorBoneco_7qG2_leitura_7qG2_000, __D0lerSensor
+14	328	7	#line 328 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	328	7	#line 328 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	330	7	#line 330 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	331	7		mov __signed_stack_001CorBoneco, __D0lerSensor
+14	330	9	#line 330 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	330	9	#line 330 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	331	9		set __D0CorBoneco, 630
+14	330	12	#line 330 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	331	12		cmp 0, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
+14	330	16	#line 330 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	331	16		brtst 4, __ASM_Label_860, __D0CorBoneco
+14	330	19	#line 330 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	331	19		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
+14	330	21	#line 330 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	330	21	#line 330 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	331	21		set __D0CorBoneco, 290
+14	330	24	#line 330 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	331	24		cmp 1, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
+14	331	28	#line 331 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	332	28		brtst 4, __ASM_Label_865, __D0CorBoneco
+14	331	31	#line 331 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	332	31		set __D0CorBoneco, 4
+14	331	34	#line 331 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	332	34		subret __CorBoneco_return
 14	331	36	#line 331 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	331	36	#line 331 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	332	36		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
-14	331	38	#line 331 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	331	38	#line 331 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	332	38		set __D0CorBoneco, 150
-14	331	41	#line 331 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	332	41		cmp 0, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
-14	331	45	#line 331 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	332	45		brtst 4, __ASM_Label_869, __D0CorBoneco
-14	331	48	#line 331 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	332	48		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
-14	331	50	#line 331 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	331	50	#line 331 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	332	50		set __D0CorBoneco, 55
-14	331	53	#line 331 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	332	53		cmp 1, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
-14	332	57	#line 332 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	333	57		brtst 4, __ASM_Label_874, __D0CorBoneco
-14	332	60	#line 332 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	333	60		set __D0CorBoneco, 12
-14	332	63	#line 332 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	333	63		subret __CorBoneco_return
-14	332	65	#line 332 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	332	36	#line 332 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	332	36	#line 332 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	333	36		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
+14	332	38	#line 332 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	332	38	#line 332 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	333	38		set __D0CorBoneco, 150
+14	332	41	#line 332 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	333	41		cmp 0, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
+14	332	45	#line 332 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	333	45		brtst 4, __ASM_Label_869, __D0CorBoneco
+14	332	48	#line 332 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	333	48		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
+14	332	50	#line 332 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	332	50	#line 332 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	333	50		set __D0CorBoneco, 55
+14	332	53	#line 332 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	333	53		cmp 1, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
+14	333	57	#line 333 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	334	57		brtst 4, __ASM_Label_874, __D0CorBoneco
+14	333	60	#line 333 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	334	60		set __D0CorBoneco, 12
+14	333	63	#line 333 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	334	63		subret __CorBoneco_return
 14	333	65	#line 333 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	333	65	#line 333 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	334	65		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
-14	333	67	#line 333 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	333	67	#line 333 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	334	67		set __D0CorBoneco, 260
-14	333	70	#line 333 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	334	70		cmp 0, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
-14	333	74	#line 333 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	334	74		brtst 4, __ASM_Label_878, __D0CorBoneco
-14	333	77	#line 333 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	334	77		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
-14	333	79	#line 333 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	333	79	#line 333 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	334	79		set __D0CorBoneco, 185
-14	333	82	#line 333 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	334	82		cmp 1, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
-14	334	86	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	335	86		brtst 4, __ASM_Label_883, __D0CorBoneco
-14	334	89	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	335	89		mov __D0CorBoneco, __constValNeg1
-14	334	91	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	335	91		subret __CorBoneco_return
-14	334	93	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	337	93	#line 337 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	337	93	#line 337 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-14	338	93		subret __CorBoneco_return
-15	338	0	#line 338 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-15	339	0		mov __MandaPara_7qG2_passei_7qG2_000, __constValNeg2
-15	338	2	#line 338 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-15	340	2	#line 340 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-15	341	2	#pragma macro 25
-15	341	2		acquire __RemoteMutex
-15	341	3		mov __SRSTmpBuf, __DCMessageWritePacket
-15	341	5		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
-15	341	10		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-15	341	15		mov __SRSTmpLongVal, __constVal0
-15	341	17		flatten __SRSFlattenBuf, __SRSTmpLongVal
-15	341	20		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-15	341	25		brcmp 0, __ConnWrite_Else0, __constVal0, __constVal4
-15	341	29		acquire __CHSWMutex
-15	341	30		sub __WFRRTmpByte, __constVal0, __constVal4
-15	341	34		arrbuild __CHSWArgs.Buffer, __WFRRTmpByte, __SRSSendBuf
-15	341	39		syscall 37, __CHSWArgs
-15	341	42		mov __D0MandaPara, __CHSWArgs.Status
-15	341	45		release __CHSWMutex
-15	341	46		jmp __ConnWrite_EndIf0
-15	341	48		acquire __CBTWMutex
-15	341	49		mov __CBTWArgs.Connection, __constVal0
-15	341	51		mov __CBTWArgs.Buffer, __SRSSendBuf
-15	341	53		syscall 29, __CBTWArgs
-15	341	56		mov __D0MandaPara, __CBTWArgs.Result
-15	341	59		release __CBTWMutex
-15	341	60		release __RemoteMutex
+14	334	65	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	334	65	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	335	65		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
+14	334	67	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	334	67	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	335	67		set __D0CorBoneco, 260
+14	334	70	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	335	70		cmp 0, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
+14	334	74	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	335	74		brtst 4, __ASM_Label_878, __D0CorBoneco
+14	334	77	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	335	77		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
+14	334	79	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	334	79	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	335	79		set __D0CorBoneco, 185
+14	334	82	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	335	82		cmp 1, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
+14	335	86	#line 335 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	336	86		brtst 4, __ASM_Label_883, __D0CorBoneco
+14	335	89	#line 335 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	336	89		mov __D0CorBoneco, __constValNeg1
+14	335	91	#line 335 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	336	91		subret __CorBoneco_return
+14	335	93	#line 335 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	338	93	#line 338 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	338	93	#line 338 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+14	339	93		subret __CorBoneco_return
+15	339	0	#line 339 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+15	340	0		mov __MandaPara_7qG2_passei_7qG2_000, __constValNeg2
+15	339	2	#line 339 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+15	341	2	#line 341 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+15	342	2	#pragma macro 25
+15	342	2		acquire __RemoteMutex
+15	342	3		mov __SRSTmpBuf, __DCMessageWritePacket
+15	342	5		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
+15	342	10		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+15	342	15		mov __SRSTmpLongVal, __constVal0
+15	342	17		flatten __SRSFlattenBuf, __SRSTmpLongVal
+15	342	20		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+15	342	25		brcmp 0, __ConnWrite_Else0, __constVal0, __constVal4
+15	342	29		acquire __CHSWMutex
+15	342	30		sub __WFRRTmpByte, __constVal0, __constVal4
+15	342	34		arrbuild __CHSWArgs.Buffer, __WFRRTmpByte, __SRSSendBuf
+15	342	39		syscall 37, __CHSWArgs
+15	342	42		mov __D0MandaPara, __CHSWArgs.Status
+15	342	45		release __CHSWMutex
+15	342	46		jmp __ConnWrite_EndIf0
+15	342	48		acquire __CBTWMutex
+15	342	49		mov __CBTWArgs.Connection, __constVal0
+15	342	51		mov __CBTWArgs.Buffer, __SRSSendBuf
+15	342	53		syscall 29, __CBTWArgs
+15	342	56		mov __D0MandaPara, __CBTWArgs.Result
+15	342	59		release __CBTWMutex
+15	342	60		release __RemoteMutex
 15	10161	61	#line 10161 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-15	340	61	#line 340 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-15	340	61	#line 340 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 15	341	61	#line 341 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-15	342	61	#pragma macro 9
-15	342	61		acquire __MRMutex
-15	342	62		mov __MRArgs.QueueID, __constVal2
-15	342	64		mov __MRArgs.Remove, __constVal0
-15	342	66		set __RRNTmpVal, 0
-15	342	69		syscall 27, __MRArgs
-15	342	72		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-15	342	77		mov __MandaPara_7qG2_passei_7qG2_000, __RRNTmpVal
-15	342	79		mov __D0MandaPara, __MRArgs.Result
-15	342	82		release __MRMutex
+15	341	61	#line 341 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+15	342	61	#line 342 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+15	343	61	#pragma macro 9
+15	343	61		acquire __MRMutex
+15	343	62		mov __MRArgs.QueueID, __constVal2
+15	343	64		mov __MRArgs.Remove, __constVal1
+15	343	66		set __RRNTmpVal, 0
+15	343	69		syscall 27, __MRArgs
+15	343	72		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+15	343	77		mov __MandaPara_7qG2_passei_7qG2_000, __RRNTmpVal
+15	343	79		mov __D0MandaPara, __MRArgs.Result
+15	343	82		release __MRMutex
 15	10165	83	#line 10165 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-15	341	83	#line 341 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-15	341	83	#line 341 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 15	342	83	#line 342 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-15	343	83		set __Wait_7qG2_ms_7qG2_000_inline_MandaPara, 30
-15	342	86	#line 342 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+15	342	83	#line 342 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+15	343	83	#line 343 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+15	344	83		set __Wait_7qG2_ms_7qG2_000_inline_MandaPara, 30
+15	343	86	#line 343 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 15	8869	86	#line 8869 "NXCDefs.h"
 15	8870	86		waitv __Wait_7qG2_ms_7qG2_000_inline_MandaPara
 15	8869	88	#line 8869 "NXCDefs.h"
-15	342	88	#line 342 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 15	343	88	#line 343 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-15	344	88		mov __signed_stack_001MandaPara, __MandaPara_7qG2_passei_7qG2_000
-15	343	90	#line 343 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-15	343	90	#line 343 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-15	344	90		set __D0MandaPara, 0
-15	343	93	#line 343 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-15	344	93		cmp 5, __D0MandaPara, __signed_stack_001MandaPara, __D0MandaPara
-15	343	97	#line 343 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-15	344	97		brtst 4, __ASM_Label_889, __D0MandaPara
-15	343	100	#line 343 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-15	344	100		jmp __ASM_Label_888
-15	343	102	#line 343 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-15	343	102	#line 343 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-15	346	102	#line 346 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-15	347	102		subret __MandaPara_return
-16	347	0	#line 347 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	348	0		set __Rejeitar_7qG2_passei_7qG2_000, 0
-16	347	3	#line 347 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	350	3	#line 350 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	351	3	#pragma macro 25
-16	351	3		acquire __RemoteMutex
-16	351	4		mov __SRSTmpBuf, __DCMessageWritePacket
-16	351	6		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
-16	351	11		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-16	351	16		mov __SRSTmpLongVal, __constVal7
-16	351	18		flatten __SRSFlattenBuf, __SRSTmpLongVal
-16	351	21		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-16	351	26		brcmp 0, __ConnWrite_Else0, __constVal0, __constVal4
-16	351	30		acquire __CHSWMutex
-16	351	31		sub __WFRRTmpByte, __constVal0, __constVal4
-16	351	35		arrbuild __CHSWArgs.Buffer, __WFRRTmpByte, __SRSSendBuf
-16	351	40		syscall 37, __CHSWArgs
-16	351	43		mov __D0Rejeitar, __CHSWArgs.Status
-16	351	46		release __CHSWMutex
-16	351	47		jmp __ConnWrite_EndIf0
-16	351	49		acquire __CBTWMutex
-16	351	50		mov __CBTWArgs.Connection, __constVal0
-16	351	52		mov __CBTWArgs.Buffer, __SRSSendBuf
-16	351	54		syscall 29, __CBTWArgs
-16	351	57		mov __D0Rejeitar, __CBTWArgs.Result
-16	351	60		release __CBTWMutex
-16	351	61		release __RemoteMutex
+15	344	88	#line 344 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+15	345	88		mov __signed_stack_001MandaPara, __MandaPara_7qG2_passei_7qG2_000
+15	344	90	#line 344 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+15	344	90	#line 344 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+15	345	90		set __D0MandaPara, 0
+15	344	93	#line 344 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+15	345	93		cmp 5, __D0MandaPara, __signed_stack_001MandaPara, __D0MandaPara
+15	344	97	#line 344 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+15	345	97		brtst 4, __ASM_Label_889, __D0MandaPara
+15	344	100	#line 344 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+15	345	100		jmp __ASM_Label_888
+15	344	102	#line 344 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+15	344	102	#line 344 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+15	347	102	#line 347 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+15	348	102		subret __MandaPara_return
+16	348	0	#line 348 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	349	0		set __Rejeitar_7qG2_passei_7qG2_000, 0
+16	348	3	#line 348 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	351	3	#line 351 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	352	3	#pragma macro 25
+16	352	3		acquire __RemoteMutex
+16	352	4		mov __SRSTmpBuf, __DCMessageWritePacket
+16	352	6		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
+16	352	11		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+16	352	16		mov __SRSTmpLongVal, __constVal7
+16	352	18		flatten __SRSFlattenBuf, __SRSTmpLongVal
+16	352	21		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+16	352	26		brcmp 0, __ConnWrite_Else0, __constVal0, __constVal4
+16	352	30		acquire __CHSWMutex
+16	352	31		sub __WFRRTmpByte, __constVal0, __constVal4
+16	352	35		arrbuild __CHSWArgs.Buffer, __WFRRTmpByte, __SRSSendBuf
+16	352	40		syscall 37, __CHSWArgs
+16	352	43		mov __D0Rejeitar, __CHSWArgs.Status
+16	352	46		release __CHSWMutex
+16	352	47		jmp __ConnWrite_EndIf0
+16	352	49		acquire __CBTWMutex
+16	352	50		mov __CBTWArgs.Connection, __constVal0
+16	352	52		mov __CBTWArgs.Buffer, __SRSSendBuf
+16	352	54		syscall 29, __CBTWArgs
+16	352	57		mov __D0Rejeitar, __CBTWArgs.Result
+16	352	60		release __CBTWMutex
+16	352	61		release __RemoteMutex
 16	10214	62	#line 10214 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	350	62	#line 350 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	350	62	#line 350 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 16	351	62	#line 351 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	352	62	#pragma macro 9
-16	352	62		acquire __MRMutex
-16	352	63		mov __MRArgs.QueueID, __constVal2
-16	352	65		mov __MRArgs.Remove, __constVal0
-16	352	67		set __RRNTmpVal, 0
-16	352	70		syscall 27, __MRArgs
-16	352	73		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-16	352	78		mov __Rejeitar_7qG2_passei_7qG2_000, __RRNTmpVal
-16	352	80		mov __D0Rejeitar, __MRArgs.Result
-16	352	83		release __MRMutex
+16	351	62	#line 351 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	352	62	#line 352 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	353	62	#pragma macro 9
+16	353	62		acquire __MRMutex
+16	353	63		mov __MRArgs.QueueID, __constVal2
+16	353	65		mov __MRArgs.Remove, __constVal1
+16	353	67		set __RRNTmpVal, 0
+16	353	70		syscall 27, __MRArgs
+16	353	73		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+16	353	78		mov __Rejeitar_7qG2_passei_7qG2_000, __RRNTmpVal
+16	353	80		mov __D0Rejeitar, __MRArgs.Result
+16	353	83		release __MRMutex
 16	10218	84	#line 10218 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	351	84	#line 351 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	351	84	#line 351 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 16	352	84	#line 352 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	353	84		set __Wait_7qG2_ms_7qG2_000_inline_Rejeitar, 30
-16	352	87	#line 352 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	352	84	#line 352 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	353	84	#line 353 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	354	84		set __Wait_7qG2_ms_7qG2_000_inline_Rejeitar, 30
+16	353	87	#line 353 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 16	8869	87	#line 8869 "NXCDefs.h"
 16	8870	87		waitv __Wait_7qG2_ms_7qG2_000_inline_Rejeitar
 16	8869	89	#line 8869 "NXCDefs.h"
-16	352	89	#line 352 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 16	353	89	#line 353 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	354	89		mov __signed_stack_001Rejeitar, __Rejeitar_7qG2_passei_7qG2_000
-16	353	91	#line 353 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	353	91	#line 353 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	354	91		set __D0Rejeitar, 7
-16	353	94	#line 353 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	354	94		cmp 5, __D0Rejeitar, __signed_stack_001Rejeitar, __D0Rejeitar
-16	353	98	#line 353 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	354	98		brtst 4, __ASM_Label_897, __D0Rejeitar
-16	353	101	#line 353 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	354	101		jmp __ASM_Label_896
-16	353	103	#line 353 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	353	103	#line 353 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	355	103	#line 355 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	356	103		subcall VoltaAoNormal, __VoltaAoNormal_return
-16	355	105	#line 355 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	358	105	#line 358 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	359	105	#pragma macro 25
-16	359	105		acquire __RemoteMutex
-16	359	106		mov __SRSTmpBuf, __DCMessageWritePacket
-16	359	108		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
-16	359	113		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-16	359	118		mov __SRSTmpLongVal, __constVal8
-16	359	120		flatten __SRSFlattenBuf, __SRSTmpLongVal
-16	359	123		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-16	359	128		brcmp 0, __ConnWrite_Else1, __constVal0, __constVal4
-16	359	132		acquire __CHSWMutex
-16	359	133		sub __WFRRTmpByte, __constVal0, __constVal4
-16	359	137		arrbuild __CHSWArgs.Buffer, __WFRRTmpByte, __SRSSendBuf
-16	359	142		syscall 37, __CHSWArgs
-16	359	145		mov __D0Rejeitar, __CHSWArgs.Status
-16	359	148		release __CHSWMutex
-16	359	149		jmp __ConnWrite_EndIf1
-16	359	151		acquire __CBTWMutex
-16	359	152		mov __CBTWArgs.Connection, __constVal0
-16	359	154		mov __CBTWArgs.Buffer, __SRSSendBuf
-16	359	156		syscall 29, __CBTWArgs
-16	359	159		mov __D0Rejeitar, __CBTWArgs.Result
-16	359	162		release __CBTWMutex
-16	359	163		release __RemoteMutex
+16	354	89	#line 354 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	355	89		mov __signed_stack_001Rejeitar, __Rejeitar_7qG2_passei_7qG2_000
+16	354	91	#line 354 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	354	91	#line 354 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	355	91		set __D0Rejeitar, 7
+16	354	94	#line 354 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	355	94		cmp 5, __D0Rejeitar, __signed_stack_001Rejeitar, __D0Rejeitar
+16	354	98	#line 354 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	355	98		brtst 4, __ASM_Label_897, __D0Rejeitar
+16	354	101	#line 354 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	355	101		jmp __ASM_Label_896
+16	354	103	#line 354 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	354	103	#line 354 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	356	103	#line 356 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	357	103		subcall VoltaAoNormal, __VoltaAoNormal_return
+16	356	105	#line 356 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	359	105	#line 359 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	360	105	#pragma macro 25
+16	360	105		acquire __RemoteMutex
+16	360	106		mov __SRSTmpBuf, __DCMessageWritePacket
+16	360	108		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
+16	360	113		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+16	360	118		mov __SRSTmpLongVal, __constVal8
+16	360	120		flatten __SRSFlattenBuf, __SRSTmpLongVal
+16	360	123		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+16	360	128		brcmp 0, __ConnWrite_Else1, __constVal0, __constVal4
+16	360	132		acquire __CHSWMutex
+16	360	133		sub __WFRRTmpByte, __constVal0, __constVal4
+16	360	137		arrbuild __CHSWArgs.Buffer, __WFRRTmpByte, __SRSSendBuf
+16	360	142		syscall 37, __CHSWArgs
+16	360	145		mov __D0Rejeitar, __CHSWArgs.Status
+16	360	148		release __CHSWMutex
+16	360	149		jmp __ConnWrite_EndIf1
+16	360	151		acquire __CBTWMutex
+16	360	152		mov __CBTWArgs.Connection, __constVal0
+16	360	154		mov __CBTWArgs.Buffer, __SRSSendBuf
+16	360	156		syscall 29, __CBTWArgs
+16	360	159		mov __D0Rejeitar, __CBTWArgs.Result
+16	360	162		release __CBTWMutex
+16	360	163		release __RemoteMutex
 16	10257	164	#line 10257 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	358	164	#line 358 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	358	164	#line 358 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 16	359	164	#line 359 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	360	164	#pragma macro 9
-16	360	164		acquire __MRMutex
-16	360	165		mov __MRArgs.QueueID, __constVal2
-16	360	167		mov __MRArgs.Remove, __constVal0
-16	360	169		set __RRNTmpVal, 0
-16	360	172		syscall 27, __MRArgs
-16	360	175		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-16	360	180		mov __Rejeitar_7qG2_passei_7qG2_000, __RRNTmpVal
-16	360	182		mov __D0Rejeitar, __MRArgs.Result
-16	360	185		release __MRMutex
+16	359	164	#line 359 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	360	164	#line 360 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	361	164	#pragma macro 9
+16	361	164		acquire __MRMutex
+16	361	165		mov __MRArgs.QueueID, __constVal2
+16	361	167		mov __MRArgs.Remove, __constVal1
+16	361	169		set __RRNTmpVal, 0
+16	361	172		syscall 27, __MRArgs
+16	361	175		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+16	361	180		mov __Rejeitar_7qG2_passei_7qG2_000, __RRNTmpVal
+16	361	182		mov __D0Rejeitar, __MRArgs.Result
+16	361	185		release __MRMutex
 16	10261	186	#line 10261 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	359	186	#line 359 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	359	186	#line 359 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 16	360	186	#line 360 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	361	186		set __Wait_7qG2_ms_7qG2_000_inline_Rejeitar, 30
-16	360	189	#line 360 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	360	186	#line 360 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	361	186	#line 361 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	362	186		set __Wait_7qG2_ms_7qG2_000_inline_Rejeitar, 30
+16	361	189	#line 361 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 16	8869	189	#line 8869 "NXCDefs.h"
 16	8870	189		waitv __Wait_7qG2_ms_7qG2_000_inline_Rejeitar
 16	8869	191	#line 8869 "NXCDefs.h"
-16	360	191	#line 360 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 16	361	191	#line 361 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	362	191		mov __signed_stack_001Rejeitar, __Rejeitar_7qG2_passei_7qG2_000
-16	361	193	#line 361 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	361	193	#line 361 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	362	193		set __D0Rejeitar, 8
-16	361	196	#line 361 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	362	196		cmp 5, __D0Rejeitar, __signed_stack_001Rejeitar, __D0Rejeitar
-16	361	200	#line 361 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	362	200		brtst 4, __ASM_Label_903, __D0Rejeitar
-16	361	203	#line 361 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	362	203		jmp __ASM_Label_902
-16	361	205	#line 361 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	361	205	#line 361 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	365	205	#line 365 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-16	366	205		subret __Rejeitar_return
-17	366	0	#line 366 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-17	367	0		set __MandaContinuar_7qG2_passei_7qG2_000, 0
-17	366	3	#line 366 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-17	368	3	#line 368 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-17	369	3	#pragma macro 25
-17	369	3		acquire __RemoteMutex
-17	369	4		mov __SRSTmpBuf, __DCMessageWritePacket
-17	369	6		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
-17	369	11		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-17	369	16		mov __SRSTmpLongVal, __constVal6
-17	369	18		flatten __SRSFlattenBuf, __SRSTmpLongVal
-17	369	21		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-17	369	26		brcmp 0, __ConnWrite_Else0, __constVal0, __constVal4
-17	369	30		acquire __CHSWMutex
-17	369	31		sub __WFRRTmpByte, __constVal0, __constVal4
-17	369	35		arrbuild __CHSWArgs.Buffer, __WFRRTmpByte, __SRSSendBuf
-17	369	40		syscall 37, __CHSWArgs
-17	369	43		mov __D0MandaContinuar, __CHSWArgs.Status
-17	369	46		release __CHSWMutex
-17	369	47		jmp __ConnWrite_EndIf0
-17	369	49		acquire __CBTWMutex
-17	369	50		mov __CBTWArgs.Connection, __constVal0
-17	369	52		mov __CBTWArgs.Buffer, __SRSSendBuf
-17	369	54		syscall 29, __CBTWArgs
-17	369	57		mov __D0MandaContinuar, __CBTWArgs.Result
-17	369	60		release __CBTWMutex
-17	369	61		release __RemoteMutex
+16	362	191	#line 362 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	363	191		mov __signed_stack_001Rejeitar, __Rejeitar_7qG2_passei_7qG2_000
+16	362	193	#line 362 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	362	193	#line 362 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	363	193		set __D0Rejeitar, 8
+16	362	196	#line 362 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	363	196		cmp 5, __D0Rejeitar, __signed_stack_001Rejeitar, __D0Rejeitar
+16	362	200	#line 362 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	363	200		brtst 4, __ASM_Label_903, __D0Rejeitar
+16	362	203	#line 362 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	363	203		jmp __ASM_Label_902
+16	362	205	#line 362 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	362	205	#line 362 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	366	205	#line 366 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+16	367	205		subret __Rejeitar_return
+17	367	0	#line 367 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+17	368	0		set __MandaContinuar_7qG2_passei_7qG2_000, 0
+17	367	3	#line 367 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+17	369	3	#line 369 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+17	370	3	#pragma macro 25
+17	370	3		acquire __RemoteMutex
+17	370	4		mov __SRSTmpBuf, __DCMessageWritePacket
+17	370	6		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
+17	370	11		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+17	370	16		mov __SRSTmpLongVal, __constVal6
+17	370	18		flatten __SRSFlattenBuf, __SRSTmpLongVal
+17	370	21		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+17	370	26		brcmp 0, __ConnWrite_Else0, __constVal0, __constVal4
+17	370	30		acquire __CHSWMutex
+17	370	31		sub __WFRRTmpByte, __constVal0, __constVal4
+17	370	35		arrbuild __CHSWArgs.Buffer, __WFRRTmpByte, __SRSSendBuf
+17	370	40		syscall 37, __CHSWArgs
+17	370	43		mov __D0MandaContinuar, __CHSWArgs.Status
+17	370	46		release __CHSWMutex
+17	370	47		jmp __ConnWrite_EndIf0
+17	370	49		acquire __CBTWMutex
+17	370	50		mov __CBTWArgs.Connection, __constVal0
+17	370	52		mov __CBTWArgs.Buffer, __SRSSendBuf
+17	370	54		syscall 29, __CBTWArgs
+17	370	57		mov __D0MandaContinuar, __CBTWArgs.Result
+17	370	60		release __CBTWMutex
+17	370	61		release __RemoteMutex
 17	10306	62	#line 10306 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-17	368	62	#line 368 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-17	368	62	#line 368 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 17	369	62	#line 369 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-17	370	62	#pragma macro 9
-17	370	62		acquire __MRMutex
-17	370	63		mov __MRArgs.QueueID, __constVal2
-17	370	65		mov __MRArgs.Remove, __constVal0
-17	370	67		set __RRNTmpVal, 0
-17	370	70		syscall 27, __MRArgs
-17	370	73		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-17	370	78		mov __MandaContinuar_7qG2_passei_7qG2_000, __RRNTmpVal
-17	370	80		mov __D0MandaContinuar, __MRArgs.Result
-17	370	83		release __MRMutex
+17	369	62	#line 369 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+17	370	62	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+17	371	62	#pragma macro 9
+17	371	62		acquire __MRMutex
+17	371	63		mov __MRArgs.QueueID, __constVal2
+17	371	65		mov __MRArgs.Remove, __constVal1
+17	371	67		set __RRNTmpVal, 0
+17	371	70		syscall 27, __MRArgs
+17	371	73		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+17	371	78		mov __MandaContinuar_7qG2_passei_7qG2_000, __RRNTmpVal
+17	371	80		mov __D0MandaContinuar, __MRArgs.Result
+17	371	83		release __MRMutex
 17	10310	84	#line 10310 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-17	369	84	#line 369 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-17	369	84	#line 369 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 17	370	84	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-17	371	84		set __Wait_7qG2_ms_7qG2_000_inline_MandaContinuar, 30
-17	370	87	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+17	370	84	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+17	371	84	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+17	372	84		set __Wait_7qG2_ms_7qG2_000_inline_MandaContinuar, 30
+17	371	87	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 17	8869	87	#line 8869 "NXCDefs.h"
 17	8870	87		waitv __Wait_7qG2_ms_7qG2_000_inline_MandaContinuar
 17	8869	89	#line 8869 "NXCDefs.h"
-17	370	89	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 17	371	89	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-17	372	89		mov __signed_stack_001MandaContinuar, __MandaContinuar_7qG2_passei_7qG2_000
-17	371	91	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-17	371	91	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-17	372	91		set __D0MandaContinuar, 6
-17	371	94	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-17	372	94		cmp 5, __D0MandaContinuar, __signed_stack_001MandaContinuar, __D0MandaContinuar
-17	371	98	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-17	372	98		brtst 4, __ASM_Label_911, __D0MandaContinuar
-17	371	101	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-17	372	101		jmp __ASM_Label_910
-17	371	103	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-17	371	103	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-17	374	103	#line 374 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-17	375	103		subret __MandaContinuar_return
-18	375	0	#line 375 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	376	0		getout __signed_stack_001Pega, __constVal0, 4
-18	375	4	#line 375 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	375	4	#line 375 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	376	4		set __D0Pega, 0
-18	375	7	#line 375 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	376	7		cmp 5, __D0Pega, __signed_stack_001Pega, __D0Pega
-18	376	11	#line 376 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	377	11		brtst 4, __ASM_Label_917, __D0Pega
-18	376	14	#line 376 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	377	14	#pragma macro 7
-18	377	14		setout __constVal0, 0, __constVal8
+17	372	89	#line 372 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+17	373	89		mov __signed_stack_001MandaContinuar, __MandaContinuar_7qG2_passei_7qG2_000
+17	372	91	#line 372 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+17	372	91	#line 372 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+17	373	91		set __D0MandaContinuar, 6
+17	372	94	#line 372 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+17	373	94		cmp 5, __D0MandaContinuar, __signed_stack_001MandaContinuar, __D0MandaContinuar
+17	372	98	#line 372 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+17	373	98		brtst 4, __ASM_Label_911, __D0MandaContinuar
+17	372	101	#line 372 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+17	373	101		jmp __ASM_Label_910
+17	372	103	#line 372 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+17	372	103	#line 372 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+17	375	103	#line 375 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+17	376	103		subret __MandaContinuar_return
+18	376	0	#line 376 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	377	0		getout __signed_stack_001Pega, __constVal0, 4
+18	376	4	#line 376 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	376	4	#line 376 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	377	4		set __D0Pega, 0
+18	376	7	#line 376 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	377	7		cmp 5, __D0Pega, __signed_stack_001Pega, __D0Pega
+18	377	11	#line 377 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	378	11		brtst 4, __ASM_Label_917, __D0Pega
+18	377	14	#line 377 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	378	14	#pragma macro 7
+18	378	14		setout __constVal0, 0, __constVal8
 18	10365	19	#line 10365 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	376	19	#line 376 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	378	19	#line 378 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	379	19		jmp __ASM_Label_916
-18	378	21	#line 378 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	378	21	#line 378 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	379	21		mov __D0Pega, __constValNeg70
-18	378	23	#line 378 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	379	23	#pragma macro 7
-18	379	23		setout __constVal0, 2, __D0Pega, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+18	377	19	#line 377 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	379	19	#line 379 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	380	19		jmp __ASM_Label_916
+18	379	21	#line 379 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	379	21	#line 379 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	380	21		mov __D0Pega, __constValNeg70
+18	379	23	#line 379 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	380	23	#pragma macro 7
+18	380	23		setout __constVal0, 2, __D0Pega, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
 18	10374	46	#line 10374 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	378	46	#line 378 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 18	379	46	#line 379 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	380	46		getout __signed_stack_001Pega, __constVal0, 4
-18	379	50	#line 379 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	379	50	#line 379 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	380	50		mov __D0Pega, __constValNeg77
-18	379	52	#line 379 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	380	52		cmp 1, __D0Pega, __signed_stack_001Pega, __D0Pega
-18	379	56	#line 379 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	380	56		brtst 4, __ASM_Label_923, __D0Pega
-18	379	59	#line 379 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	379	59	#line 379 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	380	59		jmp __ASM_Label_922
-18	379	61	#line 379 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	380	46	#line 380 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	381	46		getout __signed_stack_001Pega, __constVal0, 4
+18	380	50	#line 380 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	380	50	#line 380 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	381	50		mov __D0Pega, __constValNeg77
+18	380	52	#line 380 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	381	52		cmp 1, __D0Pega, __signed_stack_001Pega, __D0Pega
+18	380	56	#line 380 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	381	56		brtst 4, __ASM_Label_923, __D0Pega
+18	380	59	#line 380 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	380	59	#line 380 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	381	59		jmp __ASM_Label_922
 18	380	61	#line 380 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	381	61	#pragma macro 7
-18	381	61		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+18	381	61	#line 381 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	382	61	#pragma macro 7
+18	382	61		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
 18	10397	84	#line 10397 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	380	84	#line 380 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 18	381	84	#line 381 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	382	84		set __Wait_7qG2_ms_7qG2_000_inline_Pega, 200
-18	381	87	#line 381 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	382	84	#line 382 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	383	84		set __Wait_7qG2_ms_7qG2_000_inline_Pega, 200
+18	382	87	#line 382 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 18	8869	87	#line 8869 "NXCDefs.h"
 18	8870	87		waitv __Wait_7qG2_ms_7qG2_000_inline_Pega
 18	8869	89	#line 8869 "NXCDefs.h"
-18	381	89	#line 381 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	384	89	#line 384 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-18	385	89		subret __Pega_return
-19	387	0	#line 387 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	388	0		mov __D0FechaDeLeves, __constValNeg40
-19	387	2	#line 387 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	388	2	#pragma macro 7
-19	388	2		setout __constVal0, 2, __D0FechaDeLeves, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+18	382	89	#line 382 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	385	89	#line 385 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+18	386	89		subret __Pega_return
+19	388	0	#line 388 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	389	0		mov __D0FechaDeLeves, __constValNeg40
+19	388	2	#line 388 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	389	2	#pragma macro 7
+19	389	2		setout __constVal0, 2, __D0FechaDeLeves, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
 19	10427	25	#line 10427 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	387	25	#line 387 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 19	388	25	#line 388 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	389	25		getout __FechaDeLeves_7qG2_tc_7qG2_000, __constVal0, 4
-19	388	29	#line 388 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	388	29	#line 388 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	390	29	#line 390 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	391	29		set __Wait_7qG2_ms_7qG2_000_inline_FechaDeLeves, 50
-19	390	32	#line 390 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	389	25	#line 389 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	390	25		getout __FechaDeLeves_7qG2_tc_7qG2_000, __constVal0, 4
+19	389	29	#line 389 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	389	29	#line 389 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	391	29	#line 391 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	392	29		set __Wait_7qG2_ms_7qG2_000_inline_FechaDeLeves, 50
+19	391	32	#line 391 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 19	8869	32	#line 8869 "NXCDefs.h"
 19	8870	32		waitv __Wait_7qG2_ms_7qG2_000_inline_FechaDeLeves
 19	8869	34	#line 8869 "NXCDefs.h"
-19	390	34	#line 390 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 19	391	34	#line 391 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	392	34		mov __FechaDeLeves_7qG2_tc1_7qG2_000, __FechaDeLeves_7qG2_tc_7qG2_000
-19	391	36	#line 391 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	391	36	#line 391 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	392	34	#line 392 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	393	34		mov __FechaDeLeves_7qG2_tc1_7qG2_000, __FechaDeLeves_7qG2_tc_7qG2_000
 19	392	36	#line 392 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	393	36		getout __FechaDeLeves_7qG2_tc_7qG2_000, __constVal0, 4
-19	392	40	#line 392 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	392	40	#line 392 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	394	40	#line 394 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	395	40		mov __signed_stack_001FechaDeLeves, __FechaDeLeves_7qG2_tc1_7qG2_000
-19	394	42	#line 394 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	392	36	#line 392 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	393	36	#line 393 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	394	36		getout __FechaDeLeves_7qG2_tc_7qG2_000, __constVal0, 4
+19	393	40	#line 393 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	393	40	#line 393 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	395	40	#line 395 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	396	40		mov __signed_stack_001FechaDeLeves, __FechaDeLeves_7qG2_tc1_7qG2_000
 19	395	42	#line 395 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	396	42		mov __D0FechaDeLeves, __FechaDeLeves_7qG2_tc_7qG2_000
-19	395	44	#line 395 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	396	44		cmp 5, __D0FechaDeLeves, __signed_stack_001FechaDeLeves, __D0FechaDeLeves
-19	395	48	#line 395 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	396	48		brtst 4, __ASM_Label_935, __D0FechaDeLeves
-19	395	51	#line 395 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	396	51		jmp __ASM_Label_934
-19	395	53	#line 395 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	395	53	#line 395 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	396	53	#pragma macro 7
-19	396	53		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+19	396	42	#line 396 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	397	42		mov __D0FechaDeLeves, __FechaDeLeves_7qG2_tc_7qG2_000
+19	396	44	#line 396 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	397	44		cmp 5, __D0FechaDeLeves, __signed_stack_001FechaDeLeves, __D0FechaDeLeves
+19	396	48	#line 396 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	397	48		brtst 4, __ASM_Label_935, __D0FechaDeLeves
+19	396	51	#line 396 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	397	51		jmp __ASM_Label_934
+19	396	53	#line 396 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	396	53	#line 396 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	397	53	#pragma macro 7
+19	397	53		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
 19	10482	76	#line 10482 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	395	76	#line 395 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	398	76	#line 398 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-19	399	76		subret __FechaDeLeves_return
-20	400	0	#line 400 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	401	0		getout __signed_stack_001VoltaAoNormal, __constVal0, 4
-20	400	4	#line 400 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	400	4	#line 400 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	401	4		set __D0VoltaAoNormal, 0
-20	400	7	#line 400 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	401	7		cmp 5, __D0VoltaAoNormal, __signed_stack_001VoltaAoNormal, __D0VoltaAoNormal
-20	401	11	#line 401 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	402	11		brtst 4, __ASM_Label_945, __D0VoltaAoNormal
-20	401	14	#line 401 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	402	14	#pragma macro 7
-20	402	14		setout __constVal0, 0, __constVal8
+19	396	76	#line 396 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	399	76	#line 399 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+19	400	76		subret __FechaDeLeves_return
+20	401	0	#line 401 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	402	0		getout __signed_stack_001VoltaAoNormal, __constVal0, 4
+20	401	4	#line 401 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	401	4	#line 401 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	402	4		set __D0VoltaAoNormal, 0
+20	401	7	#line 401 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	402	7		cmp 5, __D0VoltaAoNormal, __signed_stack_001VoltaAoNormal, __D0VoltaAoNormal
+20	402	11	#line 402 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	403	11		brtst 4, __ASM_Label_945, __D0VoltaAoNormal
+20	402	14	#line 402 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	403	14	#pragma macro 7
+20	403	14		setout __constVal0, 0, __constVal8
 20	10513	19	#line 10513 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	401	19	#line 401 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	403	19	#line 403 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	404	19		jmp __ASM_Label_944
-20	403	21	#line 403 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	403	21	#line 403 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	404	21		set __Wait_7qG2_ms_7qG2_000_inline_VoltaAoNormal, 200
-20	403	24	#line 403 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	402	19	#line 402 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	404	19	#line 404 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	405	19		jmp __ASM_Label_944
+20	404	21	#line 404 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	404	21	#line 404 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	405	21		set __Wait_7qG2_ms_7qG2_000_inline_VoltaAoNormal, 200
+20	404	24	#line 404 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 20	8869	24	#line 8869 "NXCDefs.h"
 20	8870	24		waitv __Wait_7qG2_ms_7qG2_000_inline_VoltaAoNormal
 20	8869	26	#line 8869 "NXCDefs.h"
-20	403	26	#line 403 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 20	404	26	#line 404 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	404	26	#line 404 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	405	26	#pragma macro 10
-20	405	26		neg __OnRev_Tmp, __constValNeg40
-20	405	29		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+20	405	26	#line 405 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	405	26	#line 405 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	406	26	#pragma macro 10
+20	406	26		neg __OnRev_Tmp, __constValNeg40
+20	406	29		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
 20	10534	52	#line 10534 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	404	52	#line 404 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 20	405	52	#line 405 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	406	52		getout __VoltaAoNormal_7qG2_tc_7qG2_000, __constVal0, 4
-20	405	56	#line 405 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	405	56	#line 405 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	407	56	#line 407 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	408	56		set __Wait_7qG2_ms_7qG2_000_inline_VoltaAoNormal, 50
-20	407	59	#line 407 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	406	52	#line 406 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	407	52		getout __VoltaAoNormal_7qG2_tc_7qG2_000, __constVal0, 4
+20	406	56	#line 406 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	406	56	#line 406 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	408	56	#line 408 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	409	56		set __Wait_7qG2_ms_7qG2_000_inline_VoltaAoNormal, 50
+20	408	59	#line 408 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 20	8869	59	#line 8869 "NXCDefs.h"
 20	8870	59		waitv __Wait_7qG2_ms_7qG2_000_inline_VoltaAoNormal
 20	8869	61	#line 8869 "NXCDefs.h"
-20	407	61	#line 407 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
 20	408	61	#line 408 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	409	61		mov __VoltaAoNormal_7qG2_tc1_7qG2_000, __VoltaAoNormal_7qG2_tc_7qG2_000
-20	408	63	#line 408 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	408	63	#line 408 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	409	61	#line 409 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	410	61		mov __VoltaAoNormal_7qG2_tc1_7qG2_000, __VoltaAoNormal_7qG2_tc_7qG2_000
 20	409	63	#line 409 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	410	63		getout __VoltaAoNormal_7qG2_tc_7qG2_000, __constVal0, 4
-20	409	67	#line 409 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	409	67	#line 409 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	411	67	#line 411 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	412	67		mov __signed_stack_001VoltaAoNormal, __VoltaAoNormal_7qG2_tc1_7qG2_000
-20	411	69	#line 411 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	413	69	#line 413 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	414	69		mov __D0VoltaAoNormal, __VoltaAoNormal_7qG2_tc_7qG2_000
-20	413	71	#line 413 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	414	71		cmp 5, __D0VoltaAoNormal, __signed_stack_001VoltaAoNormal, __D0VoltaAoNormal
-20	415	75	#line 415 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	416	75		brtst 4, __ASM_Label_955, __D0VoltaAoNormal
-20	415	78	#line 415 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	416	78		jmp __ASM_Label_954
-20	415	80	#line 415 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	415	80	#line 415 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-20	416	80		subret __VoltaAoNormal_return
-21	417	0	#line 417 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	418	0		set __D0filterRGB, 0
-21	417	3	#line 417 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	418	3		mov __filterRGB_7qG2_media_7qG2_000, __D0filterRGB
-21	417	5	#line 417 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	418	5		mov __filterRGB_7qG2_alfa_7qG2_000, __constValf0P01
-21	417	7	#line 417 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	420	7	#line 420 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	421	7		getin __filterRGB_7qG2_leitura_7qG2_000, __filterRGB_7qG2_s_7qG2_000, 2
-21	420	11	#line 420 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	420	11	#line 420 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	409	63	#line 409 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	410	63	#line 410 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	411	63		getout __VoltaAoNormal_7qG2_tc_7qG2_000, __constVal0, 4
+20	410	67	#line 410 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	410	67	#line 410 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	412	67	#line 412 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	413	67		mov __signed_stack_001VoltaAoNormal, __VoltaAoNormal_7qG2_tc1_7qG2_000
+20	412	69	#line 412 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	414	69	#line 414 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	415	69		mov __D0VoltaAoNormal, __VoltaAoNormal_7qG2_tc_7qG2_000
+20	414	71	#line 414 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	415	71		cmp 5, __D0VoltaAoNormal, __signed_stack_001VoltaAoNormal, __D0VoltaAoNormal
+20	416	75	#line 416 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	417	75		brtst 4, __ASM_Label_955, __D0VoltaAoNormal
+20	416	78	#line 416 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	417	78		jmp __ASM_Label_954
+20	416	80	#line 416 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	416	80	#line 416 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+20	417	80		subret __VoltaAoNormal_return
+21	418	0	#line 418 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	419	0		set __D0filterRGB, 0
+21	418	3	#line 418 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	419	3		mov __filterRGB_7qG2_media_7qG2_000, __D0filterRGB
+21	418	5	#line 418 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	419	5		mov __filterRGB_7qG2_alfa_7qG2_000, __constValf0P01
+21	418	7	#line 418 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	421	7	#line 421 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	422	7		getin __filterRGB_7qG2_leitura_7qG2_000, __filterRGB_7qG2_s_7qG2_000, 2
 21	421	11	#line 421 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	422	11		mov __filterRGB_7qG2_media_7qG2_000, __filterRGB_7qG2_leitura_7qG2_000
-21	421	13	#line 421 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	421	13	#line 421 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	423	13	#line 423 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	424	13		gettick __filterRGB_7qG2_x_7qG2_000
-21	423	15	#line 423 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	423	15	#line 423 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	424	15		mov __unsigned_stack_001filterRGB, __filterRGB_7qG2_x_7qG2_000
-21	423	17	#line 423 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	423	17	#line 423 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	424	17		mov __unsigned_stack_002filterRGB, __filterRGB_7qG2_x_7qG2_000
-21	423	19	#line 423 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	423	19	#line 423 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	424	19		set __D0filterRGB, 2
-21	423	22	#line 423 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	424	22		add __D0filterRGB, __unsigned_stack_002filterRGB, __D0filterRGB
-21	423	26	#line 423 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	424	26		cmp 0, __D0filterRGB, __unsigned_stack_001filterRGB, __D0filterRGB
-21	424	30	#line 424 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	425	30		brtst 4, __ASM_Label_973, __D0filterRGB
-21	424	33	#line 424 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	425	33		getin __filterRGB_7qG2_leitura_7qG2_000, __filterRGB_7qG2_s_7qG2_000, 2
-21	424	37	#line 424 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	424	37	#line 424 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	421	11	#line 421 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	422	11	#line 422 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	423	11		mov __filterRGB_7qG2_media_7qG2_000, __filterRGB_7qG2_leitura_7qG2_000
+21	422	13	#line 422 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	422	13	#line 422 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	424	13	#line 424 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	425	13		gettick __filterRGB_7qG2_x_7qG2_000
+21	424	15	#line 424 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	424	15	#line 424 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	425	15		mov __unsigned_stack_001filterRGB, __filterRGB_7qG2_x_7qG2_000
+21	424	17	#line 424 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	424	17	#line 424 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	425	17		mov __unsigned_stack_002filterRGB, __filterRGB_7qG2_x_7qG2_000
+21	424	19	#line 424 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	424	19	#line 424 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	425	19		set __D0filterRGB, 2
+21	424	22	#line 424 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	425	22		add __D0filterRGB, __unsigned_stack_002filterRGB, __D0filterRGB
+21	424	26	#line 424 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	425	26		cmp 0, __D0filterRGB, __unsigned_stack_001filterRGB, __D0filterRGB
+21	425	30	#line 425 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	426	30		brtst 4, __ASM_Label_973, __D0filterRGB
+21	425	33	#line 425 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	426	33		getin __filterRGB_7qG2_leitura_7qG2_000, __filterRGB_7qG2_s_7qG2_000, 2
 21	425	37	#line 425 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	426	37		set __signed_stack_001filterRGB, 1
-21	425	40	#line 425 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	425	40	#line 425 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	425	40	#line 425 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	426	40		sub __float_stack_001filterRGB, __signed_stack_001filterRGB, __filterRGB_7qG2_alfa_7qG2_000
-21	425	44	#line 425 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	425	44	#line 425 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	425	44	#line 425 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	426	44		mul __float_stack_001filterRGB, __float_stack_001filterRGB, __filterRGB_7qG2_media_7qG2_000
-21	425	48	#line 425 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	425	48	#line 425 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	425	48	#line 425 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	425	48	#line 425 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	425	48	#line 425 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	426	48		mul __DF0filterRGB, __filterRGB_7qG2_alfa_7qG2_000, __filterRGB_7qG2_leitura_7qG2_000
-21	425	52	#line 425 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	426	52		add __filterRGB_7qG2_media_7qG2_000, __float_stack_001filterRGB, __DF0filterRGB
-21	425	56	#line 425 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	425	56	#line 425 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	430	56	#line 430 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	431	56		jmp __ASM_Label_972
-21	430	58	#line 430 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	430	58	#line 430 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	431	58		mov __signed_stack_001filterRGB, __filterRGB_7qG2_s_7qG2_000
-21	430	60	#line 430 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	430	60	#line 430 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	431	60		set __D0filterRGB, 0
-21	430	63	#line 430 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	431	63		cmp 4, __D0filterRGB, __signed_stack_001filterRGB, __D0filterRGB
-21	431	67	#line 431 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	432	67		brtst 4, __ASM_Label_994, __D0filterRGB
-21	431	70	#line 431 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	432	70		mov __float_stack_001filterRGB, __filterRGB_7qG2_media_7qG2_000
-21	431	72	#line 431 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	431	72	#line 431 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	432	72		mov __DF0filterRGB, __constVal260
-21	431	74	#line 431 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	432	74		cmp 1, __D0filterRGB, __float_stack_001filterRGB, __DF0filterRGB
-21	431	78	#line 431 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	432	78		brtst 4, __ASM_Label_996, __D0filterRGB
-21	431	81	#line 431 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	432	81		mov __float_stack_001filterRGB, __filterRGB_7qG2_media_7qG2_000
-21	431	83	#line 431 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	431	83	#line 431 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	432	83		mov __DF0filterRGB, __constVal240
-21	431	85	#line 431 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	432	85		cmp 0, __D0filterRGB, __float_stack_001filterRGB, __DF0filterRGB
-21	432	89	#line 432 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	433	89		brtst 4, __ASM_Label_997, __D0filterRGB
-21	432	92	#line 432 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	433	92		set __D0filterRGB, 0
-21	432	95	#line 432 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	433	95		subret __filterRGB_return
-21	432	97	#line 432 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	434	97	#line 434 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	435	97		jmp __ASM_Label_1000
-21	434	99	#line 434 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	435	99		set __D0filterRGB, 1
-21	434	102	#line 434 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	435	102		subret __filterRGB_return
-21	434	104	#line 434 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	436	104	#line 436 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	436	104	#line 436 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	437	104		jmp __ASM_Label_1003
-21	436	106	#line 436 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	437	106		mov __signed_stack_001filterRGB, __filterRGB_7qG2_s_7qG2_000
-21	436	108	#line 436 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	436	108	#line 436 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	437	108		set __D0filterRGB, 1
-21	436	111	#line 436 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	437	111		cmp 4, __D0filterRGB, __signed_stack_001filterRGB, __D0filterRGB
-21	437	115	#line 437 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	438	115		brtst 4, __ASM_Label_1006, __D0filterRGB
-21	437	118	#line 437 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	438	118		mov __float_stack_001filterRGB, __filterRGB_7qG2_media_7qG2_000
-21	437	120	#line 437 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	437	120	#line 437 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	438	120		mov __DF0filterRGB, __constVal210
-21	437	122	#line 437 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	438	122		cmp 1, __D0filterRGB, __float_stack_001filterRGB, __DF0filterRGB
-21	437	126	#line 437 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	438	126		brtst 4, __ASM_Label_1008, __D0filterRGB
-21	437	129	#line 437 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	438	129		mov __float_stack_001filterRGB, __filterRGB_7qG2_media_7qG2_000
-21	437	131	#line 437 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	437	131	#line 437 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	438	131		mov __DF0filterRGB, __constVal195
-21	437	133	#line 437 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	438	133		cmp 0, __D0filterRGB, __float_stack_001filterRGB, __DF0filterRGB
-21	438	137	#line 438 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	439	137		brtst 4, __ASM_Label_1009, __D0filterRGB
-21	438	140	#line 438 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	439	140		set __D0filterRGB, 0
-21	438	143	#line 438 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	439	143		subret __filterRGB_return
-21	438	145	#line 438 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	440	145	#line 440 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	441	145		jmp __ASM_Label_1012
-21	440	147	#line 440 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	441	147		set __D0filterRGB, 1
-21	440	150	#line 440 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	441	150		subret __filterRGB_return
-21	440	152	#line 440 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	444	152	#line 444 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	446	152	#line 446 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	446	152	#line 446 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	446	152	#line 446 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-21	447	152		subret __filterRGB_return
-22	447	0	#line 447 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
-22	448	0		subret ____initialize_global_data_return
+21	425	37	#line 425 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	426	37	#line 426 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	427	37		set __signed_stack_001filterRGB, 1
+21	426	40	#line 426 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	426	40	#line 426 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	426	40	#line 426 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	427	40		sub __float_stack_001filterRGB, __signed_stack_001filterRGB, __filterRGB_7qG2_alfa_7qG2_000
+21	426	44	#line 426 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	426	44	#line 426 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	426	44	#line 426 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	427	44		mul __float_stack_001filterRGB, __float_stack_001filterRGB, __filterRGB_7qG2_media_7qG2_000
+21	426	48	#line 426 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	426	48	#line 426 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	426	48	#line 426 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	426	48	#line 426 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	426	48	#line 426 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	427	48		mul __DF0filterRGB, __filterRGB_7qG2_alfa_7qG2_000, __filterRGB_7qG2_leitura_7qG2_000
+21	426	52	#line 426 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	427	52		add __filterRGB_7qG2_media_7qG2_000, __float_stack_001filterRGB, __DF0filterRGB
+21	426	56	#line 426 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	426	56	#line 426 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	431	56	#line 431 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	432	56		jmp __ASM_Label_972
+21	431	58	#line 431 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	431	58	#line 431 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	432	58		mov __signed_stack_001filterRGB, __filterRGB_7qG2_s_7qG2_000
+21	431	60	#line 431 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	431	60	#line 431 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	432	60		set __D0filterRGB, 0
+21	431	63	#line 431 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	432	63		cmp 4, __D0filterRGB, __signed_stack_001filterRGB, __D0filterRGB
+21	432	67	#line 432 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	433	67		brtst 4, __ASM_Label_994, __D0filterRGB
+21	432	70	#line 432 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	433	70		mov __float_stack_001filterRGB, __filterRGB_7qG2_media_7qG2_000
+21	432	72	#line 432 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	432	72	#line 432 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	433	72		mov __DF0filterRGB, __constVal260
+21	432	74	#line 432 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	433	74		cmp 1, __D0filterRGB, __float_stack_001filterRGB, __DF0filterRGB
+21	432	78	#line 432 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	433	78		brtst 4, __ASM_Label_996, __D0filterRGB
+21	432	81	#line 432 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	433	81		mov __float_stack_001filterRGB, __filterRGB_7qG2_media_7qG2_000
+21	432	83	#line 432 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	432	83	#line 432 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	433	83		mov __DF0filterRGB, __constVal240
+21	432	85	#line 432 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	433	85		cmp 0, __D0filterRGB, __float_stack_001filterRGB, __DF0filterRGB
+21	433	89	#line 433 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	434	89		brtst 4, __ASM_Label_997, __D0filterRGB
+21	433	92	#line 433 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	434	92		set __D0filterRGB, 0
+21	433	95	#line 433 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	434	95		subret __filterRGB_return
+21	433	97	#line 433 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	435	97	#line 435 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	436	97		jmp __ASM_Label_1000
+21	435	99	#line 435 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	436	99		set __D0filterRGB, 1
+21	435	102	#line 435 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	436	102		subret __filterRGB_return
+21	435	104	#line 435 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	437	104	#line 437 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	437	104	#line 437 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	438	104		jmp __ASM_Label_1003
+21	437	106	#line 437 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	438	106		mov __signed_stack_001filterRGB, __filterRGB_7qG2_s_7qG2_000
+21	437	108	#line 437 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	437	108	#line 437 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	438	108		set __D0filterRGB, 1
+21	437	111	#line 437 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	438	111		cmp 4, __D0filterRGB, __signed_stack_001filterRGB, __D0filterRGB
+21	438	115	#line 438 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	439	115		brtst 4, __ASM_Label_1006, __D0filterRGB
+21	438	118	#line 438 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	439	118		mov __float_stack_001filterRGB, __filterRGB_7qG2_media_7qG2_000
+21	438	120	#line 438 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	438	120	#line 438 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	439	120		mov __DF0filterRGB, __constVal210
+21	438	122	#line 438 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	439	122		cmp 1, __D0filterRGB, __float_stack_001filterRGB, __DF0filterRGB
+21	438	126	#line 438 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	439	126		brtst 4, __ASM_Label_1008, __D0filterRGB
+21	438	129	#line 438 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	439	129		mov __float_stack_001filterRGB, __filterRGB_7qG2_media_7qG2_000
+21	438	131	#line 438 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	438	131	#line 438 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	439	131		mov __DF0filterRGB, __constVal195
+21	438	133	#line 438 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	439	133		cmp 0, __D0filterRGB, __float_stack_001filterRGB, __DF0filterRGB
+21	439	137	#line 439 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	440	137		brtst 4, __ASM_Label_1009, __D0filterRGB
+21	439	140	#line 439 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	440	140		set __D0filterRGB, 0
+21	439	143	#line 439 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	440	143		subret __filterRGB_return
+21	439	145	#line 439 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	441	145	#line 441 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	442	145		jmp __ASM_Label_1012
+21	441	147	#line 441 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	442	147		set __D0filterRGB, 1
+21	441	150	#line 441 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	442	150		subret __filterRGB_return
+21	441	152	#line 441 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	445	152	#line 445 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	447	152	#line 447 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	447	152	#line 447 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	447	152	#line 447 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+21	448	152		subret __filterRGB_return
+22	448	0	#line 448 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc"
+22	449	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\Consultor\Funcionando\principal_consultor.nxc

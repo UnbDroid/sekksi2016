@@ -109,9 +109,8 @@ task main(){
 //assinatura das funções
 void executivo(){
 	inicializaSensores();
-	iniciaBlue();
+	//iniciaBlue();
   
-
 	IniciaCorDoChao(corEsq, corDir);
 
   andaRetoDireita(DIST_DA_PAREDE, 50);
@@ -244,7 +243,7 @@ void Rejeitar(){// TESTAR
 	ViraUmaRoda(ANGULO_DESCARTA_ESQUERDA);// manda o motor da direita virar um angulo dado pelo tachocount
 	SendRemoteNumber(CONEXAO, OUTBOX, VIROU);
 	do{
-		ReceiveRemoteNumber(INBOX, 0, passei);
+		ReceiveRemoteNumber(INBOX, true, passei);
 		Wait(30);
 	}while(passei != DESVIROU);
 	ViraUmaRoda(-ANGULO_DESCARTA_ESQUERDA);
@@ -275,7 +274,7 @@ void CorDoChao(int corEsq, int corDir){//TESTAR SE DA RE
 
 void RetornaBoneco(int cor){//FUNFOU BONITO
     int passei = 0;
-  
+    ClearScreen();
     do{
       if(cor == COR_AZUL){//BONECO COR BRANCA
         SendRemoteNumber(CONEXAO, OUTBOX, BONECO_BRANCO);
@@ -284,6 +283,7 @@ void RetornaBoneco(int cor){//FUNFOU BONITO
         SendRemoteNumber(CONEXAO, OUTBOX, BONECO_PRETO);
         Wait(30);
       }
+      TextOut(0, LCD_LINE4, "SINAL MANDADO");
       ReceiveRemoteNumber(INBOX, true, passei);
 
    }while(passei != SIM);
