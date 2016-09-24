@@ -5,9 +5,9 @@ task main()
   byte fp;
   int aux;
   
-    remove("matriz.txt");
+    remove("memoria.txt");
   
-    fp = fopen("matriz.txt", "w");
+    fp = fopen("memoria.txt", "w");
     if (fp != NULL)
     {
       fprintf( fp, "%s", "12t2t-3tn123t234t345tn98t-98t98tn" );

@@ -45,7 +45,7 @@ task main()
     {
       fprintf(handle,"%d",cont);
       fclose(handle);
-      bib();
+      //bib();
     }
 
   NumOut(0,LCD_LINE1,cont);
