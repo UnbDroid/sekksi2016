@@ -23,7 +23,7 @@
 #define COR_BASE_MEIO_MIN 185
 #define COR_BASE_MEIO_MAX 260
 
-// Defines de leitura do RGB da esquerda do robÃ´
+// Defines de leitura do RGB da esquerda do robô
 #define COR_PRETA_ESQ_PERTO_MIN 75
 #define COR_PRETA_ESQ_PERTO_MAX 100
 #define COR_PRETA_ESQ_LONGE_MIN 120
@@ -35,7 +35,7 @@
 #define COR_BASE_ESQ_MIN 265
 #define COR_BASE_ESQ_MAX 310
 
-// Defines de leitura do RGB da direita do robÃ´
+// Defines de leitura do RGB da direita do robô
 #define COR_PRETA_DIR_PERTO_MIN 130
 #define COR_PRETA_DIR_PERTO_MAX 160
 #define COR_PRETA_DIR_LONGE_MIN 185
@@ -64,8 +64,8 @@
 #define direita
 #define esquerda 2
 
-//defines dos buffers utilizados na comunicaÃ§Ã£o, com cada um sendo utilizado para uma atividade especÃ­fica
-#define OUTBOX_INICIALIZA 0  /*buffers referentes ao processo de conectar os cÃ©rebros*/
+//defines dos buffers utilizados na comunicação, com cada um sendo utilizado para uma atividade específica
+#define OUTBOX_INICIALIZA 0  /*buffers referentes ao processo de conectar os cérebros*/
 #define INBOX_INICIALIZA 1
 #define OUTBOX_USFRENTE 2   /*buffers referentes aos processos relacionados com o sensor US frontal*/
 #define INBOX_USFRENTE 3
@@ -107,18 +107,11 @@ int lerSensor(int sensor){
    return leitura[(VETOR_CALIBRACAO - 1)/2];
 }
 
-void Bip(){
-  PlaySound(SOUND_UP);
-  PlaySound(SOUND_DOWN);
-  Wait(SEC_1);
-}
-
-
 
 
 task main(){
    InicializaSensores();
-   int tc, old_tc, deu_merda,min, max, leitura;
+   int tc, old_tc, min, max, leitura;
 
    while(1){
       ClearScreen();
@@ -132,54 +125,49 @@ task main(){
       Wait(1000);
       ClearScreen();
 
-      deu_merda = 0;
-
       OnFwd(MOTOR_GARRA,-30);
       tc = MotorTachoCount(MOTOR_GARRA);
-      do
-      {
-        Wait(200);
+      Wait(200);
         old_tc = tc;
         tc = MotorTachoCount(MOTOR_GARRA);
-        if(tc<-125)
+        if(tc<-118)
         {
             OnFwd(MOTOR_GARRA,0);
-            Bip();
-            deu_merda = 1;
-            old_tc = tc;
+            //Bip();//colocar uma fun��o mais r�pida de bipar
+            VoltaGarra();
+            OnFwd(MOTOR_GARRA,0);
+            goto vai;
         }
       }while(tc!=old_tc);
-
-      OnFwd(MOTOR_GARRA,0);
-
-      //NumOut(0,LCD_LINE1,tc);
-      if(!deu_merda)
-      {
-        min = 9900;
-        max = -100;
-        while(SensorUS(US_FRENTE) > 7)
-        {
-           leitura = lerSensor(RGB_MEIO);
-
-           if(leitura < min){
-             min = leitura;
-           }
-           if(leitura > max){
-              max = leitura;
-           }
+      
 
 
-          ClearScreen();
+      
 
-           NumOut(0, LCD_LINE1, max);
-           NumOut(0, LCD_LINE2, leitura);
-           NumOut(0, LCD_LINE3, min);
-        }
+      min = 9900;
+      max = -100;
+
+      while(SensorUS(US_FRENTE) > 7){
+
+         leitura = lerSensor(RGB_MEIO);
+
+         if(leitura < min){
+            min = leitura;
+         }
+         if(leitura > max){
+            max = leitura;
+         }
+
+
+         ClearScreen();
+
+         NumOut(0, LCD_LINE1, max);
+         NumOut(0, LCD_LINE2, leitura);
+         NumOut(0, LCD_LINE3, min);
+
       }
-
-      ClearScreen();
-
-      OnFwd(MOTOR_GARRA,30);
+      
+vai:      OnFwd(MOTOR_GARRA,30);
       tc = MotorTachoCount(MOTOR_GARRA);
       do
       {
@@ -187,7 +175,7 @@ task main(){
         old_tc = tc;
         tc = MotorTachoCount(MOTOR_GARRA);
       }while(tc!=old_tc);
-
+      
       OnFwd(MOTOR_GARRA,0);
 
    }

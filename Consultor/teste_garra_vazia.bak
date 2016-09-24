@@ -107,11 +107,18 @@ int lerSensor(int sensor){
    return leitura[(VETOR_CALIBRACAO - 1)/2];
 }
 
+void Bip(){
+  PlaySound(SOUND_UP);
+  PlaySound(SOUND_DOWN);
+  Wait(SEC_1);
+}
+
+
 
 
 task main(){
    InicializaSensores();
-   int tc, old_tc;
+   int tc, old_tc, deu_merda,min, max, leitura;
 
    while(1){
       ClearScreen();
@@ -125,6 +132,8 @@ task main(){
       Wait(1000);
       ClearScreen();
 
+      deu_merda = 0;
+
       OnFwd(MOTOR_GARRA,-30);
       tc = MotorTachoCount(MOTOR_GARRA);
       do
@@ -132,13 +141,37 @@ task main(){
         Wait(200);
         old_tc = tc;
         tc = MotorTachoCount(MOTOR_GARRA);
+        if(tc<-125)
+        {
+            OnFwd(MOTOR_GARRA,0);
+            Bip();
+            deu_merda = 1;
+            old_tc = tc;
+        }
       }while(tc!=old_tc);
 
       OnFwd(MOTOR_GARRA,0);
 
-      NumOut(0,LCD_LINE1,tc);
+      //NumOut(0,LCD_LINE1,tc);
+      if(!deu_merda)
+        while(SensorUS(US_FRENTE) > 7)
+        {
+           leitura = lerSensor(RGB_MEIO);
 
-      while(SensorUS(US_FRENTE) > 7){}
+           if(leitura < min){
+             min = leitura;
+           }
+           if(leitura > max){
+              max = leitura;
+           }
+
+
+          ClearScreen();
+
+           NumOut(0, LCD_LINE1, max);
+           NumOut(0, LCD_LINE2, leitura);
+           NumOut(0, LCD_LINE3, min);
+        }
 
       ClearScreen();
 

@@ -118,7 +118,7 @@ void Bip(){
 
 task main(){
    InicializaSensores();
-   int tc, old_tc, deu_merda;
+   int tc, old_tc, deu_merda,min, max, leitura;
 
    while(1){
       ClearScreen();
@@ -141,7 +141,7 @@ task main(){
         Wait(200);
         old_tc = tc;
         tc = MotorTachoCount(MOTOR_GARRA);
-        if(tc<-118)
+        if(tc<-125)
         {
             OnFwd(MOTOR_GARRA,0);
             Bip();
@@ -154,7 +154,28 @@ task main(){
 
       //NumOut(0,LCD_LINE1,tc);
       if(!deu_merda)
-        while(SensorUS(US_FRENTE) > 7){}
+      {
+        min = 9900;
+        max = -100;
+        while(SensorUS(US_FRENTE) > 7)
+        {
+           leitura = lerSensor(RGB_MEIO);
+
+           if(leitura < min){
+             min = leitura;
+           }
+           if(leitura > max){
+              max = leitura;
+           }
+
+
+          ClearScreen();
+
+           NumOut(0, LCD_LINE1, max);
+           NumOut(0, LCD_LINE2, leitura);
+           NumOut(0, LCD_LINE3, min);
+        }
+      }
 
       ClearScreen();
 
