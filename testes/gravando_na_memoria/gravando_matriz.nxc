@@ -1,0 +1,35 @@
+task main()
+{
+  string msg;
+  int strT, str_pot;
+  byte fp;
+  int i,j;
+  int mat[5][5];
+  
+    remove("matriz.txt");
+  
+    fp = fopen("matriz.txt", "w");
+    if (fp == NULL)
+    {
+      //Error****** retornar erro aqui, não permitir que a função progrida para não travar o código mais para frente
+      //TRATAR TRATAR TRATAR TRATAR TRATAR TRATAR TRATAR TRATAR TRATAR
+    }
+    
+
+    for(i=0;i<5;i++)
+    {
+      for(j=0; j<5; j++)
+      {
+        fprintf(fp,"%df",mat[i][j]);
+      }
+      fprintf(fp,"n");
+    }
+
+    fclose(fp);
+    TextOut(0,LCD_LINE1,"Done!");
+    Wait(SEC_1);
+    
+
+
+}
+

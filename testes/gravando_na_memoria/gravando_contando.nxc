@@ -8,14 +8,14 @@ void bib()
 task main()
 {
   string msg;
-  int str_cont, strT, str_pot;
-  byte handle;
+  int i, strT, str_pot;
+  byte fp;
   int aux;
   int cont;
-  
-    handle = fopen("memoria.txt", "r");
 
-    if (handle == NULL)
+    fp = fopen("memoria.txt", "r");
+
+    if (fp == NULL)
     {
       cont=1;
       //bib();
@@ -23,28 +23,28 @@ task main()
     else
     {
 
-      fgets(msg, 10, handle);
-      fclose(handle);
+      fgets(msg, 10, fp);
+      fclose(fp);
       //TextOut(0, LCD_LINE1, msg);
-      for(str_cont = 0; msg[str_cont] != NULL; str_cont++){}
-      strT = str_cont;
-      for(str_pot = 0, aux = 0, str_cont = strT - 1; str_cont >= 0; str_cont--, str_pot++)
+      for(i = 0; msg[i] != NULL; i++){}
+      strT = i;
+      for(str_pot = 0, aux = 0, i = strT - 1; i >= 0; i--, str_pot++)
       {
-        aux += (msg[str_cont]-48)*pow(10,str_pot);
+        aux += (msg[i]-48)*pow(10,str_pot);
       }
-      
+
       cont = aux;
-      
+
       cont++;
-      
+
 
     }
     remove("memoria.txt");
-    handle = fopen("memoria.txt", "w");
-    if (handle != NULL)
+    fp = fopen("memoria.txt", "w");
+    if (fp != NULL)
     {
-      fprintf(handle,"%d",cont);
-      fclose(handle);
+      fprintf(fp,"%d",cont);
+      fclose(fp);
       //bib();
     }
 

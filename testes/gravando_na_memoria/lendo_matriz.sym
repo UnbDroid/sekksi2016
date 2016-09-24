@@ -1,0 +1,1124 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__signed_stack_003main	6	1	0	4	6
+1	__signed_stack_002main	6	1	4	4	8
+2	__signed_stack_004main	6	1	8	4	6
+3	__signed_stack_001PlaySound	6	1	12	4	44
+4	__unsigned_stack_001main	5	1	16	4	2
+5	__signed_stack_001main	6	1	20	4	29
+6	__D0PlaySound	6	1	24	4	69
+7	__D0main	6	1	28	4	44
+8	__D0str2num	6	1	32	4	19
+9	__signed_stack_001fopen	6	1	36	4	2
+10	__DF0str2num	10	1	40	4	4
+11	__fopen_7qG2_fsize_7qG2_000	5	1	44	4	4
+12	__constVal37632	6	0	48	4	1
+13	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	52	4	8
+14	__pow_7qG2_exponent_7qG2_000_inline_str2num	10	1	56	4	2
+15	__pow_7qG2_base_7qG2_000_inline_str2num	10	1	60	4	2
+16	__fopen_default_size	5	0	64	4	1
+17	__signed_stack_003PlaySound	6	1	68	4	14
+18	__signed_stack_002PlaySound	6	1	72	4	14
+19	__signed_stack_001str2num	6	1	76	4	12
+20	__unsigned_stack_001str2num	5	1	80	4	4
+21	__signed_stack_002str2num	6	1	84	4	2
+22	__DU0fopen	5	1	88	4	2
+23	__SPTArgsMutex	9	0	92	4	14
+24	__D0fopen	6	1	96	4	4
+25	__TextOutMutex	9	0	100	4	8
+26	__fopen_7qG2_result_7qG2_000	4	1	104	2	5
+27	__fgets_7qG2_num_7qG2_000_inline_main	4	1	106	2	2
+28	__RLSReturn	3	1	108	2	2
+29	__main_7qG2_j_7qG2_000	4	1	110	2	5
+30	__main_7qG2_fim_7qG2_000	4	1	112	2	8
+31	__main_7qG2_inicio_7qG2_000	4	1	114	2	2
+32	__PlaySound_7qG2_i_7qG2_001	4	1	116	2	15
+33	__PlaySound_7qG2_aCode_7qG2_000	4	1	118	2	7
+34	__main_7qG2_k_7qG2_000	4	1	120	2	6
+35	__str2num_7qG2_str_pot_7qG2_000	4	1	122	2	4
+36	__str2num_7qG2_fim_7qG2_000	4	1	124	2	2
+37	__str2num_7qG2_i_7qG2_000	4	1	126	2	7
+38	__str2num_7qG2_aux_7qG2_000	4	1	128	2	6
+39	__RLSByteCount	3	1	130	2	4
+40	__RLSMaxBytes	3	1	132	2	2
+41	__str2num_7qG2_inicio_7qG2_000	4	1	134	2	2
+42	__main_7qG2_i_7qG2_000	4	1	136	2	23
+43	__fopen_7qG2_handle_7qG2_000	1	1	138	1	5
+44	__main_7qG2_fp_7qG2_000	1	1	139	1	3
+45	____initialize_global_data_return	1	1	140	1	3
+46	__fopen_return	1	1	141	1	4
+47	__constVal10	2	0	142	1	1
+48	____readStringLine_return	1	1	143	1	1
+49	__constVal13	2	0	144	1	1
+50	__constVal1	2	0	145	1	15
+51	__constVal0	2	1	146	1	2
+52	__RLSReturnAddress	1	1	147	1	2
+53	__bib_return	1	1	148	1	3
+54	__PlaySound_return	1	1	149	1	3
+55	__FReadTmpByte	1	1	150	1	3
+56	__constVal3	2	0	151	1	2
+57	__str2num_return	1	1	152	1	4
+58	__FOArgs	8	0	4	12	15
+59	__FOArgs.Result	3	1	156	2	15
+60	__FOArgs.FileHandle	1	1	158	1	15
+61	__FOArgs.Filename	7	0	160	4	15
+62	__FOArgs.Filename.Filename_type	1	0	0	1	0
+63	__FOArgs.Length	5	1	164	4	15
+64	__TextOutArgs	8	0	4	16	24
+65	__TextOutArgs.Result	2	1	168	1	24
+66	__TextOutArgs.Location	8	0	2	4	24
+67	__TextOutArgs.Location.X	4	1	172	2	24
+68	__TextOutArgs.Location.Y	4	1	174	2	24
+69	__TextOutArgs.Text	7	0	176	4	24
+70	__TextOutArgs.Text.Text_type	1	0	0	1	0
+71	__TextOutArgs.Options	5	1	180	4	24
+72	__FCArgs	8	0	2	4	3
+73	__FCArgs.Result	3	1	184	2	3
+74	__FCArgs.FileHandle	1	1	186	1	3
+75	__FReadArgs	8	0	4	12	6
+76	__FReadArgs.Result	3	1	188	2	6
+77	__FReadArgs.FileHandle	1	1	190	1	6
+78	__FReadArgs.Buffer	7	0	192	4	6
+79	__FReadArgs.Buffer.Buffer_type	1	0	0	1	0
+80	__FReadArgs.Length	5	1	196	4	6
+81	__SPTArgs	8	0	5	8	42
+82	__SPTArgs.Result	2	1	200	1	42
+83	__SPTArgs.Frequency	3	1	202	2	42
+84	__SPTArgs.Duration	3	1	204	2	42
+85	__SPTArgs.Loop	1	1	206	1	42
+86	__SPTArgs.Volume	1	1	207	1	42
+87	__strbufmain	7	0	208	4	6
+88	__strbufmain.__strbufmain_type	1	0	0	1	0
+89	__strbuffopen	7	0	210	4	4
+90	__strbuffopen.__strbuffopen_type	1	0	0	1	0
+91	__fgets_7qG2_str_7qG2_000_inline_main	7	0	212	4	4
+92	__fgets_7qG2_str_7qG2_000_inline_main.__fgets_7qG2_str_7qG2_000_inline_main_type	1	0	0	1	0
+93	__ArrHelper__main_236_0	7	0	214	4	10
+94	__ArrHelper__main_236_0.__ArrHelper__main_236_0_type	4	0	0	2	0
+95	__strbuffgets_inline_main	7	0	216	4	1
+96	__strbuffgets_inline_main.__strbuffgets_inline_main_type	1	0	0	1	0
+97	__RLSOutput	7	0	218	4	4
+98	__RLSOutput.__RLSOutput_type	1	0	0	1	0
+99	__RLSBuffer	7	0	220	4	2
+100	__RLSBuffer.__RLSBuffer_type	1	0	0	1	0
+101	__constStr0007	7	0	222	4	1
+102	__constStr0007.__constStr0007_type	1	1	0	1	0
+103	__constStr0006	7	0	224	4	2
+104	__constStr0006.__constStr0006_type	1	1	0	1	0
+105	__main_7qG2_msg_7qG2_000	7	0	226	4	4
+106	__main_7qG2_msg_7qG2_000.__main_7qG2_msg_7qG2_000_type	1	0	0	1	0
+107	__str2num_7qG2_str_7qG2_000	7	0	228	4	3
+108	__str2num_7qG2_str_7qG2_000.__str2num_7qG2_str_7qG2_000_type	1	0	0	1	0
+109	__constStr0008	7	0	230	4	1
+110	__constStr0008.__constStr0008_type	1	1	0	1	0
+111	____main_7qG2_mat_7qG2_000_2	7	0	232	4	2
+112	____main_7qG2_mat_7qG2_000_2.____main_7qG2_mat_7qG2_000_2_type	4	0	0	2	0
+113	__constStr0009	7	0	234	4	1
+114	__constStr0009.__constStr0009_type	1	1	0	1	0
+115	__main_7qG2_mat_7qG2_000	7	0	236	4	7
+116	__main_7qG2_mat_7qG2_000.__main_7qG2_mat_7qG2_000_type	7	0	0	4	0
+117	__main_7qG2_mat_7qG2_000.__main_7qG2_mat_7qG2_000_type.__main_7qG2_mat_7qG2_000_type_type	4	0	0	2	0
+118	__fopen_7qG2_mode_7qG2_000	7	0	238	4	2
+119	__fopen_7qG2_mode_7qG2_000.__fopen_7qG2_mode_7qG2_000_type	1	0	0	1	0
+120	__fopen_7qG2_filename_7qG2_000	7	0	240	4	4
+121	__fopen_7qG2_filename_7qG2_000.__fopen_7qG2_filename_7qG2_000_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	7	0	#line 7 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	8	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	7	2	#line 7 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	13	2	#line 13 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	13	2	#line 13 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	14	2		arrinit ____main_7qG2_mat_7qG2_000_2, __constVal0, __constVal3
+0	13	6	#line 13 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	14	6		arrinit __main_7qG2_mat_7qG2_000, ____main_7qG2_mat_7qG2_000_2, __constVal3
+0	13	10	#line 13 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	14	10		strcat __strbufmain, __constStr0009
+0	13	14	#line 13 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	14	14		mov __fopen_7qG2_filename_7qG2_000, __strbufmain
+0	13	16	#line 13 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	14	16		strcat __strbufmain, __constStr0006
+0	13	20	#line 13 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	14	20		mov __fopen_7qG2_mode_7qG2_000, __strbufmain
+0	17	22	#line 17 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	18	22		subcall fopen, __fopen_return
+0	17	24	#line 17 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	18	24		mov __main_7qG2_fp_7qG2_000, __DU0fopen
+0	17	26	#line 17 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	17	26	#line 17 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	17	26	#line 17 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	18	26		mov __fgets_7qG2_str_7qG2_000_inline_main, __main_7qG2_msg_7qG2_000
+0	17	28	#line 17 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	18	28		set __fgets_7qG2_num_7qG2_000_inline_main, 1000
+0	17	31	#line 17 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	17	31	#line 17 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	17	31	#line 17 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	19265	31	#line 19265 "NXCDefs.h"
+0	19266	31	#pragma macro 7
+0	19266	31		mov __FReadArgs.FileHandle, __main_7qG2_fp_7qG2_000
+0	19266	33		mov __RLSMaxBytes, __fgets_7qG2_num_7qG2_000_inline_main
+0	19266	35		subcall __readStringLine, __RLSReturnAddress
+0	19266	37		mov __fgets_7qG2_str_7qG2_000_inline_main, __RLSOutput
+0	6294	39	#line 6294 "NXCDefs.h"
+0	19265	39	#line 19265 "NXCDefs.h"
+0	19265	39	#line 19265 "NXCDefs.h"
+0	19267	39	#line 19267 "NXCDefs.h"
+0	19268	39		strcat __strbuffgets_inline_main, __fgets_7qG2_str_7qG2_000_inline_main
+0	19267	43	#line 19267 "NXCDefs.h"
+0	19267	43	#line 19267 "NXCDefs.h"
+0	18	43	#line 18 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	19	43		mov __main_7qG2_msg_7qG2_000, __fgets_7qG2_str_7qG2_000_inline_main
+0	18	45	#line 18 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	18	45	#line 18 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	18	45	#line 18 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	18	45	#line 18 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	19196	45	#line 19196 "NXCDefs.h"
+0	19197	45	#pragma macro 5
+0	19197	45		mov __FCArgs.FileHandle, __main_7qG2_fp_7qG2_000
+0	19197	47		syscall 5, __FCArgs
+0	19197	50		mov __D0main, __FCArgs.Result
+0	6320	52	#line 6320 "NXCDefs.h"
+0	19196	52	#line 19196 "NXCDefs.h"
+0	19196	52	#line 19196 "NXCDefs.h"
+0	19196	52	#line 19196 "NXCDefs.h"
+0	23	52	#line 23 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	23	52	#line 23 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	24	52	#line 24 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	25	52		set __main_7qG2_k_7qG2_000, 0
+0	24	55	#line 24 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	24	55	#line 24 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	24	55	#line 24 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	25	55		set __main_7qG2_i_7qG2_000, 0
+0	24	58	#line 24 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	24	58	#line 24 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	25	58		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	24	60	#line 24 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	24	60	#line 24 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	25	60		set __D0main, 3
+0	24	63	#line 24 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	25	63		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	24	67	#line 24 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	25	67		brtst 4, __ASM_Label_615, __D0main
+0	24	70	#line 24 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	25	70		jmp __ASM_Label_616
+0	25	72	#line 25 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	26	72		add __main_7qG2_i_7qG2_000, __main_7qG2_i_7qG2_000, __constVal1
+0	27	76	#line 27 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	28	76		jmp __ASM_Label_614
+0	27	78	#line 27 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	28	78		set __main_7qG2_j_7qG2_000, 0
+0	27	81	#line 27 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	27	81	#line 27 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	28	81		mov __signed_stack_001main, __main_7qG2_j_7qG2_000
+0	27	83	#line 27 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	27	83	#line 27 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	28	83		set __D0main, 3
+0	27	86	#line 27 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	28	86		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	27	90	#line 27 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	28	90		brtst 4, __ASM_Label_623, __D0main
+0	27	93	#line 27 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	28	93		jmp __ASM_Label_624
+0	28	95	#line 28 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	29	95		add __main_7qG2_j_7qG2_000, __main_7qG2_j_7qG2_000, __constVal1
+0	30	99	#line 30 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	31	99		jmp __ASM_Label_622
+0	31	101	#line 31 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	32	101		mov __main_7qG2_inicio_7qG2_000, __main_7qG2_k_7qG2_000
+0	31	103	#line 31 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	31	103	#line 31 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	33	103	#line 33 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	34	103		mov __main_7qG2_fim_7qG2_000, __main_7qG2_k_7qG2_000
+0	33	105	#line 33 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	33	105	#line 33 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	33	105	#line 33 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	34	105		mov __signed_stack_001main, __main_7qG2_fim_7qG2_000
+0	33	107	#line 33 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	33	107	#line 33 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	34	107		index __unsigned_stack_001main, __main_7qG2_msg_7qG2_000, __signed_stack_001main
+0	33	111	#line 33 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	33	111	#line 33 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	34	111	#line 34 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	35	111		set __D0main, 116
+0	34	114	#line 34 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	35	114		cmp 5, __D0main, __unsigned_stack_001main, __D0main
+0	36	118	#line 36 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	37	118		brtst 4, __ASM_Label_635, __D0main
+0	38	121	#line 38 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	39	121		add __main_7qG2_fim_7qG2_000, __main_7qG2_fim_7qG2_000, __constVal1
+0	38	125	#line 38 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	39	125	#line 39 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	40	125		jmp __ASM_Label_634
+0	39	127	#line 39 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	40	127	#line 40 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	41	127		subcall bib, __bib_return
+0	40	129	#line 40 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	42	129	#line 42 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	43	129		sub __main_7qG2_fim_7qG2_000, __main_7qG2_fim_7qG2_000, __constVal1
+0	42	133	#line 42 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	42	133	#line 42 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	43	133		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	42	135	#line 42 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	42	135	#line 42 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	43	135		index __ArrHelper__main_236_0, __main_7qG2_mat_7qG2_000, __signed_stack_001main
+0	42	139	#line 42 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	43	139		mov __signed_stack_002main, __main_7qG2_j_7qG2_000
+0	42	141	#line 42 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	42	141	#line 42 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	43	141		strcat __strbufmain, __main_7qG2_msg_7qG2_000
+0	42	145	#line 42 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	43	145		mov __str2num_7qG2_str_7qG2_000, __strbufmain
+0	42	147	#line 42 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	43	147		mov __str2num_7qG2_inicio_7qG2_000, __main_7qG2_inicio_7qG2_000
+0	42	149	#line 42 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	42	149	#line 42 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	43	149		mov __str2num_7qG2_fim_7qG2_000, __main_7qG2_fim_7qG2_000
+0	42	151	#line 42 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	44	151	#line 44 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	45	151		subcall str2num, __str2num_return
+0	44	153	#line 44 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	45	153		mov __D0main, __D0str2num
+0	44	155	#line 44 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	45	155		replace __ArrHelper__main_236_0, __ArrHelper__main_236_0, __signed_stack_002main, __D0main
+0	44	160	#line 44 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	45	160		replace __main_7qG2_mat_7qG2_000, __main_7qG2_mat_7qG2_000, __signed_stack_001main, __ArrHelper__main_236_0
+0	44	165	#line 44 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	44	165	#line 44 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	45	165		mov __signed_stack_001main, __main_7qG2_fim_7qG2_000
+0	44	167	#line 44 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	45	167	#line 45 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	46	167		set __D0main, 2
+0	45	170	#line 45 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	46	170		add __main_7qG2_k_7qG2_000, __signed_stack_001main, __D0main
+0	45	174	#line 45 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	45	174	#line 45 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	46	174	#line 46 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	47	174		jmp __ASM_Label_625
+0	46	176	#line 46 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	47	176	#line 47 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	48	176		add __main_7qG2_k_7qG2_000, __main_7qG2_k_7qG2_000, __constVal1
+0	47	180	#line 47 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	49	180	#line 49 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	50	180		jmp __ASM_Label_617
+0	49	182	#line 49 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	49	182	#line 49 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	50	182		set __main_7qG2_i_7qG2_000, 0
+0	49	185	#line 49 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	49	185	#line 49 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	50	185		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	49	187	#line 49 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	49	187	#line 49 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	50	187		set __D0main, 3
+0	49	190	#line 49 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	50	190		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	49	194	#line 49 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	50	194		brtst 4, __ASM_Label_653, __D0main
+0	49	197	#line 49 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	50	197		jmp __ASM_Label_654
+0	50	199	#line 50 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	51	199		add __main_7qG2_i_7qG2_000, __main_7qG2_i_7qG2_000, __constVal1
+0	50	203	#line 50 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	51	203		jmp __ASM_Label_652
+0	50	205	#line 50 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	51	205		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	50	207	#line 50 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	50	207	#line 50 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	51	207		set __D0main, 20
+0	50	210	#line 50 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	51	210		mul __signed_stack_001main, __signed_stack_001main, __D0main
+0	50	214	#line 50 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	50	214	#line 50 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	51	214		set __signed_stack_002main, 56
+0	50	217	#line 50 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	50	217	#line 50 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	51	217		set __signed_stack_003main, 0
+0	50	220	#line 50 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	50	220	#line 50 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	51	220		index __ArrHelper__main_236_0, __main_7qG2_mat_7qG2_000, __signed_stack_003main
+0	50	224	#line 50 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	51	224		mov __signed_stack_004main, __main_7qG2_i_7qG2_000
+0	50	226	#line 50 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	50	226	#line 50 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	51	226		index __D0main, __ArrHelper__main_236_0, __signed_stack_004main
+0	50	230	#line 50 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	52	230	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	53	230		acquire __TextOutMutex
+0	52	231	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	53	231		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	52	233	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	53	233		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	52	235	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	53	235		set __TextOutArgs.Options, 0
+0	52	238	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	53	238		numtostr __TextOutArgs.Text, __D0main
+0	52	241	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	53	241		syscall 13, __TextOutArgs
+0	52	244	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	53	244		mov __D0main, __TextOutArgs.Result
+0	52	246	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	53	246		release __TextOutMutex
+0	52	247	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	52	247	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	53	247		jmp __ASM_Label_655
+0	52	249	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	52	249	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	53	249		set __main_7qG2_i_7qG2_000, 0
+0	52	252	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	52	252	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	53	252		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	52	254	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	52	254	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	53	254		set __D0main, 3
+0	52	257	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	53	257		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	52	261	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	53	261		brtst 4, __ASM_Label_671, __D0main
+0	52	264	#line 52 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	53	264		jmp __ASM_Label_672
+0	53	266	#line 53 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	54	266		add __main_7qG2_i_7qG2_000, __main_7qG2_i_7qG2_000, __constVal1
+0	53	270	#line 53 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	54	270		jmp __ASM_Label_670
+0	53	272	#line 53 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	54	272		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	53	274	#line 53 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	53	274	#line 53 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	54	274		set __D0main, 20
+0	53	277	#line 53 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	54	277		mul __signed_stack_001main, __signed_stack_001main, __D0main
+0	53	281	#line 53 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	53	281	#line 53 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	54	281		set __signed_stack_002main, 48
+0	53	284	#line 53 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	53	284	#line 53 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	54	284		set __signed_stack_003main, 1
+0	53	287	#line 53 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	53	287	#line 53 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	54	287		index __ArrHelper__main_236_0, __main_7qG2_mat_7qG2_000, __signed_stack_003main
+0	53	291	#line 53 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	54	291		mov __signed_stack_004main, __main_7qG2_i_7qG2_000
+0	53	293	#line 53 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	53	293	#line 53 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	54	293		index __D0main, __ArrHelper__main_236_0, __signed_stack_004main
+0	53	297	#line 53 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	55	297	#line 55 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	56	297		acquire __TextOutMutex
+0	55	298	#line 55 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	56	298		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	55	300	#line 55 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	56	300		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	55	302	#line 55 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	56	302		set __TextOutArgs.Options, 0
+0	55	305	#line 55 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	56	305		numtostr __TextOutArgs.Text, __D0main
+0	55	308	#line 55 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	56	308		syscall 13, __TextOutArgs
+0	55	311	#line 55 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	56	311		mov __D0main, __TextOutArgs.Result
+0	55	313	#line 55 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	56	313		release __TextOutMutex
+0	55	314	#line 55 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	55	314	#line 55 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	56	314		jmp __ASM_Label_673
+0	55	316	#line 55 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	55	316	#line 55 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	56	316		set __main_7qG2_i_7qG2_000, 0
+0	55	319	#line 55 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	55	319	#line 55 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	56	319		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	55	321	#line 55 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	55	321	#line 55 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	56	321		set __D0main, 3
+0	55	324	#line 55 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	56	324		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	55	328	#line 55 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	56	328		brtst 4, __ASM_Label_689, __D0main
+0	55	331	#line 55 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	56	331		jmp __ASM_Label_690
+0	56	333	#line 56 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	57	333		add __main_7qG2_i_7qG2_000, __main_7qG2_i_7qG2_000, __constVal1
+0	56	337	#line 56 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	57	337		jmp __ASM_Label_688
+0	56	339	#line 56 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	57	339		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	56	341	#line 56 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	56	341	#line 56 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	57	341		set __D0main, 20
+0	56	344	#line 56 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	57	344		mul __signed_stack_001main, __signed_stack_001main, __D0main
+0	56	348	#line 56 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	56	348	#line 56 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	57	348		set __signed_stack_002main, 40
+0	56	351	#line 56 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	56	351	#line 56 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	57	351		set __signed_stack_003main, 2
+0	56	354	#line 56 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	56	354	#line 56 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	57	354		index __ArrHelper__main_236_0, __main_7qG2_mat_7qG2_000, __signed_stack_003main
+0	56	358	#line 56 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	57	358		mov __signed_stack_004main, __main_7qG2_i_7qG2_000
+0	56	360	#line 56 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	56	360	#line 56 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	57	360		index __D0main, __ArrHelper__main_236_0, __signed_stack_004main
+0	56	364	#line 56 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	58	364	#line 58 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	59	364		acquire __TextOutMutex
+0	58	365	#line 58 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	59	365		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	58	367	#line 58 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	59	367		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	58	369	#line 58 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	59	369		set __TextOutArgs.Options, 0
+0	58	372	#line 58 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	59	372		numtostr __TextOutArgs.Text, __D0main
+0	58	375	#line 58 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	59	375		syscall 13, __TextOutArgs
+0	58	378	#line 58 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	59	378		mov __D0main, __TextOutArgs.Result
+0	58	380	#line 58 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	59	380		release __TextOutMutex
+0	58	381	#line 58 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	58	381	#line 58 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	59	381		jmp __ASM_Label_691
+0	58	383	#line 58 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	58	383	#line 58 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	59	383		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	58	386	#line 58 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	8551	386	#line 8551 "NXCDefs.h"
+0	8552	386		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	388	#line 8551 "NXCDefs.h"
+0	59	388	#line 59 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	59	388	#line 59 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	60	388		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	59	391	#line 59 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	8551	391	#line 8551 "NXCDefs.h"
+0	8552	391		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	393	#line 8551 "NXCDefs.h"
+0	60	393	#line 60 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	60	393	#line 60 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	61	393		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	60	396	#line 60 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	8551	396	#line 8551 "NXCDefs.h"
+0	8552	396		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	398	#line 8551 "NXCDefs.h"
+0	61	398	#line 61 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	61	398	#line 61 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	62	398		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	61	401	#line 61 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	8551	401	#line 8551 "NXCDefs.h"
+0	8552	401		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	403	#line 8551 "NXCDefs.h"
+0	62	403	#line 62 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+0	63	403		exit -1, -1
+1	8683	0		arrinit __RLSOutput, __constVal0, __constVal1
+1	8684	4		set __RLSByteCount, 0
+1	8686	7		set __FReadArgs.Length, 1
+1	8687	10		mov __RLSBuffer, __RLSOutput
+1	8688	12		syscall 3, __FReadArgs
+1	8689	15		mov __RLSReturn, __FReadArgs.Result
+1	8690	17		brtst 5, __RLSStringDone, __RLSReturn
+1	8691	20		index __FReadTmpByte, __FReadArgs.Buffer, 65535
+1	8692	24		brcmp 4, __RLSStringDone, __FReadTmpByte, __constVal10
+1	8693	28		brcmp 4, __RLSStringSkip, __FReadTmpByte, __constVal13
+1	8694	32		strcat __RLSOutput, __RLSBuffer, __FReadArgs.Buffer
+1	8695	37		add __RLSByteCount, __RLSByteCount, __constVal1
+1	8696	41		brcmp 3, __RLSStringDone, __RLSByteCount, __RLSMaxBytes
+1	8698	45		jmp __RLSStringLoop
+1	8700	47		subret __RLSReturnAddress
+2	7127	0	#line 7127 "NXCDefs.h"
+2	7128	0		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+2	7127	2	#line 7127 "NXCDefs.h"
+2	7128	2	#line 7128 "NXCDefs.h"
+2	7129	2		set __D0PlaySound, 0
+2	7128	5	#line 7128 "NXCDefs.h"
+2	7129	5		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+2	7128	9	#line 7128 "NXCDefs.h"
+2	7129	9		brtst 4, __ASM_Label_56, __D0PlaySound
+2	7128	12	#line 7128 "NXCDefs.h"
+2	7129	12		set __signed_stack_001PlaySound, 600
+2	7128	15	#line 7128 "NXCDefs.h"
+2	7128	15	#line 7128 "NXCDefs.h"
+2	7129	15		set __signed_stack_002PlaySound, 200
+2	7128	18	#line 7128 "NXCDefs.h"
+2	7128	18	#line 7128 "NXCDefs.h"
+2	7129	18		set __signed_stack_003PlaySound, 4
+2	7128	21	#line 7128 "NXCDefs.h"
+2	7128	21	#line 7128 "NXCDefs.h"
+2	7129	21		set __D0PlaySound, 0
+2	7129	24	#line 7129 "NXCDefs.h"
+2	7130	24		acquire __SPTArgsMutex
+2	7129	25	#line 7129 "NXCDefs.h"
+2	7130	25		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+2	7129	27	#line 7129 "NXCDefs.h"
+2	7130	27		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+2	7129	29	#line 7129 "NXCDefs.h"
+2	7130	29		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+2	7129	31	#line 7129 "NXCDefs.h"
+2	7130	31		mov __SPTArgs.Loop, __D0PlaySound
+2	7129	33	#line 7129 "NXCDefs.h"
+2	7130	33		syscall 10, __SPTArgs
+2	7129	36	#line 7129 "NXCDefs.h"
+2	7130	36		mov __D0PlaySound, __SPTArgs.Result
+2	7129	38	#line 7129 "NXCDefs.h"
+2	7130	38		release __SPTArgsMutex
+2	7129	39	#line 7129 "NXCDefs.h"
+2	7129	39	#line 7129 "NXCDefs.h"
+2	7130	39		jmp __ASM_Label_65
+2	7129	41	#line 7129 "NXCDefs.h"
+2	7130	41		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+2	7129	43	#line 7129 "NXCDefs.h"
+2	7130	43	#line 7130 "NXCDefs.h"
+2	7131	43		set __D0PlaySound, 1
+2	7130	46	#line 7130 "NXCDefs.h"
+2	7131	46		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+2	7131	50	#line 7131 "NXCDefs.h"
+2	7132	50		brtst 4, __ASM_Label_68, __D0PlaySound
+2	7131	53	#line 7131 "NXCDefs.h"
+2	7132	53		set __signed_stack_001PlaySound, 600
+2	7131	56	#line 7131 "NXCDefs.h"
+2	7131	56	#line 7131 "NXCDefs.h"
+2	7132	56		set __signed_stack_002PlaySound, 150
+2	7131	59	#line 7131 "NXCDefs.h"
+2	7131	59	#line 7131 "NXCDefs.h"
+2	7132	59		set __signed_stack_003PlaySound, 4
+2	7131	62	#line 7131 "NXCDefs.h"
+2	7131	62	#line 7131 "NXCDefs.h"
+2	7132	62		set __D0PlaySound, 0
+2	7132	65	#line 7132 "NXCDefs.h"
+2	7133	65		acquire __SPTArgsMutex
+2	7132	66	#line 7132 "NXCDefs.h"
+2	7133	66		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+2	7132	68	#line 7132 "NXCDefs.h"
+2	7133	68		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+2	7132	70	#line 7132 "NXCDefs.h"
+2	7133	70		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+2	7132	72	#line 7132 "NXCDefs.h"
+2	7133	72		mov __SPTArgs.Loop, __D0PlaySound
+2	7132	74	#line 7132 "NXCDefs.h"
+2	7133	74		syscall 10, __SPTArgs
+2	7132	77	#line 7132 "NXCDefs.h"
+2	7133	77		mov __D0PlaySound, __SPTArgs.Result
+2	7132	79	#line 7132 "NXCDefs.h"
+2	7133	79		release __SPTArgsMutex
+2	7132	80	#line 7132 "NXCDefs.h"
+2	7132	80	#line 7132 "NXCDefs.h"
+2	7133	80		wait 200
+2	7132	82	#line 7132 "NXCDefs.h"
+2	7132	82	#line 7132 "NXCDefs.h"
+2	7133	82	#line 7133 "NXCDefs.h"
+2	7134	82		set __signed_stack_001PlaySound, 600
+2	7133	85	#line 7133 "NXCDefs.h"
+2	7133	85	#line 7133 "NXCDefs.h"
+2	7134	85		set __signed_stack_002PlaySound, 150
+2	7133	88	#line 7133 "NXCDefs.h"
+2	7133	88	#line 7133 "NXCDefs.h"
+2	7134	88		set __signed_stack_003PlaySound, 4
+2	7133	91	#line 7133 "NXCDefs.h"
+2	7133	91	#line 7133 "NXCDefs.h"
+2	7134	91		set __D0PlaySound, 0
+2	7134	94	#line 7134 "NXCDefs.h"
+2	7135	94		acquire __SPTArgsMutex
+2	7134	95	#line 7134 "NXCDefs.h"
+2	7135	95		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+2	7134	97	#line 7134 "NXCDefs.h"
+2	7135	97		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+2	7134	99	#line 7134 "NXCDefs.h"
+2	7135	99		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+2	7134	101	#line 7134 "NXCDefs.h"
+2	7135	101		mov __SPTArgs.Loop, __D0PlaySound
+2	7134	103	#line 7134 "NXCDefs.h"
+2	7135	103		syscall 10, __SPTArgs
+2	7134	106	#line 7134 "NXCDefs.h"
+2	7135	106		mov __D0PlaySound, __SPTArgs.Result
+2	7134	108	#line 7134 "NXCDefs.h"
+2	7135	108		release __SPTArgsMutex
+2	7134	109	#line 7134 "NXCDefs.h"
+2	7134	109	#line 7134 "NXCDefs.h"
+2	7135	109		wait 150
+2	7134	111	#line 7134 "NXCDefs.h"
+2	7134	111	#line 7134 "NXCDefs.h"
+2	7136	111	#line 7136 "NXCDefs.h"
+2	7137	111		jmp __ASM_Label_85
+2	7136	113	#line 7136 "NXCDefs.h"
+2	7137	113		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+2	7136	115	#line 7136 "NXCDefs.h"
+2	7137	115	#line 7137 "NXCDefs.h"
+2	7138	115		set __D0PlaySound, 3
+2	7137	118	#line 7137 "NXCDefs.h"
+2	7138	118		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+2	7137	122	#line 7137 "NXCDefs.h"
+2	7138	122		brtst 4, __ASM_Label_88, __D0PlaySound
+2	7137	125	#line 7137 "NXCDefs.h"
+2	7138	125		set __PlaySound_7qG2_i_7qG2_001, 4
+2	7137	128	#line 7137 "NXCDefs.h"
+2	7137	128	#line 7137 "NXCDefs.h"
+2	7138	128		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+2	7137	130	#line 7137 "NXCDefs.h"
+2	7137	130	#line 7137 "NXCDefs.h"
+2	7138	130		set __D0PlaySound, 8
+2	7137	133	#line 7137 "NXCDefs.h"
+2	7138	133		cmp 0, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+2	7137	137	#line 7137 "NXCDefs.h"
+2	7138	137		brtst 4, __ASM_Label_90, __D0PlaySound
+2	7137	140	#line 7137 "NXCDefs.h"
+2	7138	140		jmp __ASM_Label_91
+2	7138	142	#line 7138 "NXCDefs.h"
+2	7139	142		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
+2	7139	146	#line 7139 "NXCDefs.h"
+2	7140	146		jmp __ASM_Label_89
+2	7139	148	#line 7139 "NXCDefs.h"
+2	7140	148		set __signed_stack_001PlaySound, 523
+2	7139	151	#line 7139 "NXCDefs.h"
+2	7139	151	#line 7139 "NXCDefs.h"
+2	7140	151		mov __D0PlaySound, __PlaySound_7qG2_i_7qG2_001
+2	7139	153	#line 7139 "NXCDefs.h"
+2	7140	153		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+2	7139	157	#line 7139 "NXCDefs.h"
+2	7139	157	#line 7139 "NXCDefs.h"
+2	7140	157		set __D0PlaySound, 4
+2	7139	160	#line 7139 "NXCDefs.h"
+2	7140	160		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+2	7139	164	#line 7139 "NXCDefs.h"
+2	7139	164	#line 7139 "NXCDefs.h"
+2	7140	164		set __signed_stack_002PlaySound, 100
+2	7139	167	#line 7139 "NXCDefs.h"
+2	7139	167	#line 7139 "NXCDefs.h"
+2	7140	167		set __signed_stack_003PlaySound, 4
+2	7139	170	#line 7139 "NXCDefs.h"
+2	7139	170	#line 7139 "NXCDefs.h"
+2	7140	170		set __D0PlaySound, 0
+2	7140	173	#line 7140 "NXCDefs.h"
+2	7141	173		acquire __SPTArgsMutex
+2	7140	174	#line 7140 "NXCDefs.h"
+2	7141	174		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+2	7140	176	#line 7140 "NXCDefs.h"
+2	7141	176		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+2	7140	178	#line 7140 "NXCDefs.h"
+2	7141	178		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+2	7140	180	#line 7140 "NXCDefs.h"
+2	7141	180		mov __SPTArgs.Loop, __D0PlaySound
+2	7140	182	#line 7140 "NXCDefs.h"
+2	7141	182		syscall 10, __SPTArgs
+2	7140	185	#line 7140 "NXCDefs.h"
+2	7141	185		mov __D0PlaySound, __SPTArgs.Result
+2	7140	187	#line 7140 "NXCDefs.h"
+2	7141	187		release __SPTArgsMutex
+2	7140	188	#line 7140 "NXCDefs.h"
+2	7140	188	#line 7140 "NXCDefs.h"
+2	7141	188		wait 100
+2	7140	190	#line 7140 "NXCDefs.h"
+2	7140	190	#line 7140 "NXCDefs.h"
+2	7142	190	#line 7142 "NXCDefs.h"
+2	7143	190		jmp __ASM_Label_92
+2	7142	192	#line 7142 "NXCDefs.h"
+2	7142	192	#line 7142 "NXCDefs.h"
+2	7143	192		jmp __ASM_Label_105
+2	7142	194	#line 7142 "NXCDefs.h"
+2	7143	194		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+2	7142	196	#line 7142 "NXCDefs.h"
+2	7143	196	#line 7143 "NXCDefs.h"
+2	7144	196		set __D0PlaySound, 2
+2	7143	199	#line 7143 "NXCDefs.h"
+2	7144	199		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+2	7143	203	#line 7143 "NXCDefs.h"
+2	7144	203		brtst 4, __ASM_Label_108, __D0PlaySound
+2	7143	206	#line 7143 "NXCDefs.h"
+2	7144	206		set __PlaySound_7qG2_i_7qG2_001, 7
+2	7143	209	#line 7143 "NXCDefs.h"
+2	7143	209	#line 7143 "NXCDefs.h"
+2	7144	209		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+2	7143	211	#line 7143 "NXCDefs.h"
+2	7143	211	#line 7143 "NXCDefs.h"
+2	7144	211		set __D0PlaySound, 3
+2	7143	214	#line 7143 "NXCDefs.h"
+2	7144	214		cmp 1, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+2	7143	218	#line 7143 "NXCDefs.h"
+2	7144	218		brtst 4, __ASM_Label_110, __D0PlaySound
+2	7143	221	#line 7143 "NXCDefs.h"
+2	7144	221		jmp __ASM_Label_111
+2	7144	223	#line 7144 "NXCDefs.h"
+2	7145	223		sub __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
+2	7145	227	#line 7145 "NXCDefs.h"
+2	7146	227		jmp __ASM_Label_109
+2	7145	229	#line 7145 "NXCDefs.h"
+2	7146	229		set __signed_stack_001PlaySound, 523
+2	7145	232	#line 7145 "NXCDefs.h"
+2	7145	232	#line 7145 "NXCDefs.h"
+2	7146	232		mov __D0PlaySound, __PlaySound_7qG2_i_7qG2_001
+2	7145	234	#line 7145 "NXCDefs.h"
+2	7146	234		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+2	7145	238	#line 7145 "NXCDefs.h"
+2	7145	238	#line 7145 "NXCDefs.h"
+2	7146	238		set __D0PlaySound, 4
+2	7145	241	#line 7145 "NXCDefs.h"
+2	7146	241		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+2	7145	245	#line 7145 "NXCDefs.h"
+2	7145	245	#line 7145 "NXCDefs.h"
+2	7146	245		set __signed_stack_002PlaySound, 100
+2	7145	248	#line 7145 "NXCDefs.h"
+2	7145	248	#line 7145 "NXCDefs.h"
+2	7146	248		set __signed_stack_003PlaySound, 4
+2	7145	251	#line 7145 "NXCDefs.h"
+2	7145	251	#line 7145 "NXCDefs.h"
+2	7146	251		set __D0PlaySound, 0
+2	7146	254	#line 7146 "NXCDefs.h"
+2	7147	254		acquire __SPTArgsMutex
+2	7146	255	#line 7146 "NXCDefs.h"
+2	7147	255		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+2	7146	257	#line 7146 "NXCDefs.h"
+2	7147	257		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+2	7146	259	#line 7146 "NXCDefs.h"
+2	7147	259		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+2	7146	261	#line 7146 "NXCDefs.h"
+2	7147	261		mov __SPTArgs.Loop, __D0PlaySound
+2	7146	263	#line 7146 "NXCDefs.h"
+2	7147	263		syscall 10, __SPTArgs
+2	7146	266	#line 7146 "NXCDefs.h"
+2	7147	266		mov __D0PlaySound, __SPTArgs.Result
+2	7146	268	#line 7146 "NXCDefs.h"
+2	7147	268		release __SPTArgsMutex
+2	7146	269	#line 7146 "NXCDefs.h"
+2	7146	269	#line 7146 "NXCDefs.h"
+2	7147	269		wait 100
+2	7146	271	#line 7146 "NXCDefs.h"
+2	7146	271	#line 7146 "NXCDefs.h"
+2	7148	271	#line 7148 "NXCDefs.h"
+2	7149	271		jmp __ASM_Label_112
+2	7148	273	#line 7148 "NXCDefs.h"
+2	7148	273	#line 7148 "NXCDefs.h"
+2	7149	273		jmp __ASM_Label_125
+2	7148	275	#line 7148 "NXCDefs.h"
+2	7149	275		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+2	7148	277	#line 7148 "NXCDefs.h"
+2	7149	277	#line 7149 "NXCDefs.h"
+2	7150	277		set __D0PlaySound, 4
+2	7149	280	#line 7149 "NXCDefs.h"
+2	7150	280		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+2	7150	284	#line 7150 "NXCDefs.h"
+2	7151	284		brtst 4, __ASM_Label_128, __D0PlaySound
+2	7150	287	#line 7150 "NXCDefs.h"
+2	7151	287		set __signed_stack_001PlaySound, 100
+2	7150	290	#line 7150 "NXCDefs.h"
+2	7150	290	#line 7150 "NXCDefs.h"
+2	7151	290		set __signed_stack_002PlaySound, 500
+2	7150	293	#line 7150 "NXCDefs.h"
+2	7150	293	#line 7150 "NXCDefs.h"
+2	7151	293		set __signed_stack_003PlaySound, 4
+2	7150	296	#line 7150 "NXCDefs.h"
+2	7150	296	#line 7150 "NXCDefs.h"
+2	7151	296		set __D0PlaySound, 0
+2	7151	299	#line 7151 "NXCDefs.h"
+2	7152	299		acquire __SPTArgsMutex
+2	7151	300	#line 7151 "NXCDefs.h"
+2	7152	300		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+2	7151	302	#line 7151 "NXCDefs.h"
+2	7152	302		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+2	7151	304	#line 7151 "NXCDefs.h"
+2	7152	304		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+2	7151	306	#line 7151 "NXCDefs.h"
+2	7152	306		mov __SPTArgs.Loop, __D0PlaySound
+2	7151	308	#line 7151 "NXCDefs.h"
+2	7152	308		syscall 10, __SPTArgs
+2	7151	311	#line 7151 "NXCDefs.h"
+2	7152	311		mov __D0PlaySound, __SPTArgs.Result
+2	7151	313	#line 7151 "NXCDefs.h"
+2	7152	313		release __SPTArgsMutex
+2	7151	314	#line 7151 "NXCDefs.h"
+2	7151	314	#line 7151 "NXCDefs.h"
+2	7152	314		wait 500
+2	7151	316	#line 7151 "NXCDefs.h"
+2	7151	316	#line 7151 "NXCDefs.h"
+2	7153	316	#line 7153 "NXCDefs.h"
+2	7154	316		jmp __ASM_Label_137
+2	7153	318	#line 7153 "NXCDefs.h"
+2	7154	318		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+2	7153	320	#line 7153 "NXCDefs.h"
+2	7154	320	#line 7154 "NXCDefs.h"
+2	7155	320		set __D0PlaySound, 5
+2	7154	323	#line 7154 "NXCDefs.h"
+2	7155	323		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+2	7154	327	#line 7154 "NXCDefs.h"
+2	7155	327		brtst 4, __ASM_Label_140, __D0PlaySound
+2	7154	330	#line 7154 "NXCDefs.h"
+2	7155	330		set __PlaySound_7qG2_i_7qG2_001, 4
+2	7154	333	#line 7154 "NXCDefs.h"
+2	7154	333	#line 7154 "NXCDefs.h"
+2	7155	333		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+2	7154	335	#line 7154 "NXCDefs.h"
+2	7154	335	#line 7154 "NXCDefs.h"
+2	7155	335		set __D0PlaySound, 8
+2	7154	338	#line 7154 "NXCDefs.h"
+2	7155	338		cmp 0, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+2	7154	342	#line 7154 "NXCDefs.h"
+2	7155	342		brtst 4, __ASM_Label_142, __D0PlaySound
+2	7154	345	#line 7154 "NXCDefs.h"
+2	7155	345		jmp __ASM_Label_143
+2	7155	347	#line 7155 "NXCDefs.h"
+2	7156	347		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
+2	7156	351	#line 7156 "NXCDefs.h"
+2	7157	351		jmp __ASM_Label_141
+2	7156	353	#line 7156 "NXCDefs.h"
+2	7157	353		set __signed_stack_001PlaySound, 523
+2	7156	356	#line 7156 "NXCDefs.h"
+2	7156	356	#line 7156 "NXCDefs.h"
+2	7157	356		mov __D0PlaySound, __PlaySound_7qG2_i_7qG2_001
+2	7156	358	#line 7156 "NXCDefs.h"
+2	7157	358		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+2	7156	362	#line 7156 "NXCDefs.h"
+2	7156	362	#line 7156 "NXCDefs.h"
+2	7157	362		set __D0PlaySound, 4
+2	7156	365	#line 7156 "NXCDefs.h"
+2	7157	365		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+2	7156	369	#line 7156 "NXCDefs.h"
+2	7156	369	#line 7156 "NXCDefs.h"
+2	7157	369		set __signed_stack_002PlaySound, 50
+2	7156	372	#line 7156 "NXCDefs.h"
+2	7156	372	#line 7156 "NXCDefs.h"
+2	7157	372		set __signed_stack_003PlaySound, 4
+2	7156	375	#line 7156 "NXCDefs.h"
+2	7156	375	#line 7156 "NXCDefs.h"
+2	7157	375		set __D0PlaySound, 0
+2	7157	378	#line 7157 "NXCDefs.h"
+2	7158	378		acquire __SPTArgsMutex
+2	7157	379	#line 7157 "NXCDefs.h"
+2	7158	379		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+2	7157	381	#line 7157 "NXCDefs.h"
+2	7158	381		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+2	7157	383	#line 7157 "NXCDefs.h"
+2	7158	383		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+2	7157	385	#line 7157 "NXCDefs.h"
+2	7158	385		mov __SPTArgs.Loop, __D0PlaySound
+2	7157	387	#line 7157 "NXCDefs.h"
+2	7158	387		syscall 10, __SPTArgs
+2	7157	390	#line 7157 "NXCDefs.h"
+2	7158	390		mov __D0PlaySound, __SPTArgs.Result
+2	7157	392	#line 7157 "NXCDefs.h"
+2	7158	392		release __SPTArgsMutex
+2	7157	393	#line 7157 "NXCDefs.h"
+2	7157	393	#line 7157 "NXCDefs.h"
+2	7158	393		wait 50
+2	7157	395	#line 7157 "NXCDefs.h"
+2	7157	395	#line 7157 "NXCDefs.h"
+2	7169	395	#line 7169 "NXCDefs.h"
+2	7170	395		jmp __ASM_Label_144
+2	7169	397	#line 7169 "NXCDefs.h"
+2	7169	397	#line 7169 "NXCDefs.h"
+2	7169	397	#line 7169 "NXCDefs.h"
+2	7169	397	#line 7169 "NXCDefs.h"
+2	7169	397	#line 7169 "NXCDefs.h"
+2	7169	397	#line 7169 "NXCDefs.h"
+2	7169	397	#line 7169 "NXCDefs.h"
+2	7169	397	#line 7169 "NXCDefs.h"
+2	7170	397		subret __PlaySound_return
+3	19305	0	#line 19305 "NXCDefs.h"
+3	19306	0		mov __fopen_7qG2_result_7qG2_000, __constVal37632
+3	19305	2	#line 19305 "NXCDefs.h"
+3	19306	2	#line 19306 "NXCDefs.h"
+3	19307	2		strcat __strbuffopen, __fopen_7qG2_mode_7qG2_000
+3	19308	6		brcmp 4, __ASM_Label_291, __constStr0006, __strbuffopen
+3	19309	10		brcmp 4, __ASM_Label_294, __constStr0007, __strbuffopen
+3	19310	14		brcmp 4, __ASM_Label_299, __constStr0008, __strbuffopen
+3	19311	18		jmp __ASM_Label_290
+3	19308	20	#line 19308 "NXCDefs.h"
+3	19308	20	#line 19308 "NXCDefs.h"
+3	19309	20	#pragma macro 7
+3	19309	20		mov __FOArgs.Filename, __fopen_7qG2_filename_7qG2_000
+3	19309	22		syscall 0, __FOArgs
+3	19309	25		mov __fopen_7qG2_fsize_7qG2_000, __FOArgs.Length
+3	19309	27		mov __fopen_7qG2_handle_7qG2_000, __FOArgs.FileHandle
+3	19309	29		mov __fopen_7qG2_result_7qG2_000, __FOArgs.Result
+3	6044	31	#line 6044 "NXCDefs.h"
+3	19308	31	#line 19308 "NXCDefs.h"
+3	19308	31	#line 19308 "NXCDefs.h"
+3	19308	31	#line 19308 "NXCDefs.h"
+3	19310	31	#line 19310 "NXCDefs.h"
+3	19311	31		jmp __ASM_Label_290
+3	19310	33	#line 19310 "NXCDefs.h"
+3	19311	33	#line 19311 "NXCDefs.h"
+3	19312	33	#line 19312 "NXCDefs.h"
+3	19313	33		mov __fopen_7qG2_fsize_7qG2_000, __fopen_default_size
+3	19312	35	#line 19312 "NXCDefs.h"
+3	19312	35	#line 19312 "NXCDefs.h"
+3	19312	35	#line 19312 "NXCDefs.h"
+3	19313	35	#pragma macro 7
+3	19313	35		mov __FOArgs.Filename, __fopen_7qG2_filename_7qG2_000
+3	19313	37		mov __FOArgs.Length, __fopen_7qG2_fsize_7qG2_000
+3	19313	39		syscall 1, __FOArgs
+3	19313	42		mov __fopen_7qG2_handle_7qG2_000, __FOArgs.FileHandle
+3	19313	44		mov __fopen_7qG2_result_7qG2_000, __FOArgs.Result
+3	6064	46	#line 6064 "NXCDefs.h"
+3	19312	46	#line 19312 "NXCDefs.h"
+3	19312	46	#line 19312 "NXCDefs.h"
+3	19312	46	#line 19312 "NXCDefs.h"
+3	19314	46	#line 19314 "NXCDefs.h"
+3	19315	46		jmp __ASM_Label_290
+3	19314	48	#line 19314 "NXCDefs.h"
+3	19315	48	#line 19315 "NXCDefs.h"
+3	19315	48	#line 19315 "NXCDefs.h"
+3	19316	48	#pragma macro 7
+3	19316	48		mov __FOArgs.Filename, __fopen_7qG2_filename_7qG2_000
+3	19316	50		syscall 2, __FOArgs
+3	19316	53		mov __fopen_7qG2_fsize_7qG2_000, __FOArgs.Length
+3	19316	55		mov __fopen_7qG2_handle_7qG2_000, __FOArgs.FileHandle
+3	19316	57		mov __fopen_7qG2_result_7qG2_000, __FOArgs.Result
+3	6077	59	#line 6077 "NXCDefs.h"
+3	19315	59	#line 19315 "NXCDefs.h"
+3	19315	59	#line 19315 "NXCDefs.h"
+3	19315	59	#line 19315 "NXCDefs.h"
+3	19317	59	#line 19317 "NXCDefs.h"
+3	19317	59	#line 19317 "NXCDefs.h"
+3	19318	59	#line 19318 "NXCDefs.h"
+3	19318	59	#line 19318 "NXCDefs.h"
+3	19319	59		mov __signed_stack_001fopen, __fopen_7qG2_result_7qG2_000
+3	19318	61	#line 19318 "NXCDefs.h"
+3	19319	61	#line 19319 "NXCDefs.h"
+3	19320	61		set __D0fopen, 0
+3	19319	64	#line 19319 "NXCDefs.h"
+3	19320	64		cmp 5, __D0fopen, __signed_stack_001fopen, __D0fopen
+3	19319	68	#line 19319 "NXCDefs.h"
+3	19320	68		brtst 4, __ASM_Label_304, __D0fopen
+3	19320	71	#line 19320 "NXCDefs.h"
+3	19321	71		set __fopen_7qG2_handle_7qG2_000, 0
+3	19320	74	#line 19320 "NXCDefs.h"
+3	19320	74	#line 19320 "NXCDefs.h"
+3	19320	74	#line 19320 "NXCDefs.h"
+3	19321	74	#line 19321 "NXCDefs.h"
+3	19322	74		mov __DU0fopen, __fopen_7qG2_handle_7qG2_000
+3	19321	76	#line 19321 "NXCDefs.h"
+3	19322	76		subret __fopen_return
+3	19321	78	#line 19321 "NXCDefs.h"
+3	19330	78	#line 19330 "NXCDefs.h"
+3	19331	78		subret __fopen_return
+4	67	0	#line 67 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+4	68	0		set __PlaySound_7qG2_aCode_7qG2_000, 3
+4	67	3	#line 67 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+4	70	3	#line 70 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+4	71	3		subcall PlaySound, __PlaySound_return
+4	70	5	#line 70 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+4	72	5	#line 72 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+4	73	5		subret __bib_return
+5	78	0	#line 78 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	79	0		set __str2num_7qG2_str_pot_7qG2_000, 0
+5	78	3	#line 78 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	78	3	#line 78 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	79	3		set __str2num_7qG2_aux_7qG2_000, 0
+5	78	6	#line 78 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	78	6	#line 78 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	79	6		mov __str2num_7qG2_i_7qG2_000, __str2num_7qG2_fim_7qG2_000
+5	78	8	#line 78 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	78	8	#line 78 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	79	8		mov __signed_stack_001str2num, __str2num_7qG2_i_7qG2_000
+5	78	10	#line 78 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	78	10	#line 78 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	79	10		mov __D0str2num, __str2num_7qG2_inicio_7qG2_000
+5	78	12	#line 78 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	79	12		cmp 3, __D0str2num, __signed_stack_001str2num, __D0str2num
+5	78	16	#line 78 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	79	16		brtst 4, __ASM_Label_717, __D0str2num
+5	78	19	#line 78 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	79	19		jmp __ASM_Label_718
+5	78	21	#line 78 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	79	21		sub __str2num_7qG2_i_7qG2_000, __str2num_7qG2_i_7qG2_000, __constVal1
+5	79	25	#line 79 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	80	25		add __str2num_7qG2_str_pot_7qG2_000, __str2num_7qG2_str_pot_7qG2_000, __constVal1
+5	80	29	#line 80 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	81	29		jmp __ASM_Label_716
+5	80	31	#line 80 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	81	31		set __signed_stack_001str2num, 0
+5	80	34	#line 80 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	80	34	#line 80 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	81	34		set __signed_stack_002str2num, 56
+5	80	37	#line 80 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	80	37	#line 80 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	81	37		mov __D0str2num, __str2num_7qG2_i_7qG2_000
+5	82	39	#line 82 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	83	39		acquire __TextOutMutex
+5	82	40	#line 82 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	83	40		mov __TextOutArgs.Location.X, __signed_stack_001str2num
+5	82	42	#line 82 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	83	42		mov __TextOutArgs.Location.Y, __signed_stack_002str2num
+5	82	44	#line 82 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	83	44		set __TextOutArgs.Options, 0
+5	82	47	#line 82 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	83	47		numtostr __TextOutArgs.Text, __D0str2num
+5	82	50	#line 82 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	83	50		syscall 13, __TextOutArgs
+5	82	53	#line 82 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	83	53		mov __D0str2num, __TextOutArgs.Result
+5	82	55	#line 82 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	83	55		release __TextOutMutex
+5	82	56	#line 82 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	82	56	#line 82 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	83	56		mov __signed_stack_001str2num, __str2num_7qG2_i_7qG2_000
+5	82	58	#line 82 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	82	58	#line 82 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	83	58		index __unsigned_stack_001str2num, __str2num_7qG2_str_7qG2_000, __signed_stack_001str2num
+5	82	62	#line 82 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	82	62	#line 82 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	83	62	#line 83 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	84	62		set __D0str2num, 45
+5	83	65	#line 83 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	84	65		cmp 5, __D0str2num, __unsigned_stack_001str2num, __D0str2num
+5	85	69	#line 85 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	86	69		brtst 4, __ASM_Label_738, __D0str2num
+5	85	72	#line 85 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	86	72		mov __signed_stack_001str2num, __str2num_7qG2_i_7qG2_000
+5	85	74	#line 85 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	85	74	#line 85 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	86	74		index __unsigned_stack_001str2num, __str2num_7qG2_str_7qG2_000, __signed_stack_001str2num
+5	85	78	#line 85 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	85	78	#line 85 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	85	78	#line 85 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	86	78		set __D0str2num, 48
+5	85	81	#line 85 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	86	81		sub __signed_stack_001str2num, __unsigned_stack_001str2num, __D0str2num
+5	85	85	#line 85 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	85	85	#line 85 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	86	85		set __D0str2num, 10
+5	85	88	#line 85 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	86	88		mov __pow_7qG2_base_7qG2_000_inline_str2num, __D0str2num
+5	85	90	#line 85 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	86	90		mov __pow_7qG2_exponent_7qG2_000_inline_str2num, __str2num_7qG2_str_pot_7qG2_000
+5	85	92	#line 85 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	18922	92	#line 18922 "NXCDefs.h"
+5	18923	92		pow __DF0str2num, __pow_7qG2_base_7qG2_000_inline_str2num, __pow_7qG2_exponent_7qG2_000_inline_str2num
+5	18922	96	#line 18922 "NXCDefs.h"
+5	86	96	#line 86 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	86	96	#line 86 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	87	96		mul __DF0str2num, __signed_stack_001str2num, __DF0str2num
+5	86	100	#line 86 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	87	100		add __str2num_7qG2_aux_7qG2_000, __str2num_7qG2_aux_7qG2_000, __DF0str2num
+5	86	104	#line 86 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	90	104	#line 90 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	91	104		jmp __ASM_Label_749
+5	90	106	#line 90 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	91	106		set __signed_stack_001str2num, 0
+5	90	109	#line 90 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	90	109	#line 90 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	91	109		mov __D0str2num, __str2num_7qG2_aux_7qG2_000
+5	91	111	#line 91 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	92	111		sub __str2num_7qG2_aux_7qG2_000, __signed_stack_001str2num, __D0str2num
+5	91	115	#line 91 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	91	115	#line 91 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	96	115	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	96	115	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	97	115		jmp __ASM_Label_719
+5	96	117	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	97	117	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	98	117		mov __D0str2num, __str2num_7qG2_aux_7qG2_000
+5	97	119	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	98	119		subret __str2num_return
+5	97	121	#line 97 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	100	121	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+5	101	121		subret __str2num_return
+6	101	0	#line 101 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc"
+6	102	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc
+1	__readStringLine	406	NXTDefs.h
+2	PlaySound	455	NXCDefs.h
+3	fopen	854	NXCDefs.h
+4	bib	934	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc
+5	str2num	941	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc
+6	__initialize_global_data	1064	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\lendo_matriz.nxc

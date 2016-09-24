@@ -1,0 +1,302 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__signed_stack_001main	6	1	0	4	2
+1	__signed_stack_002main	6	1	4	4	2
+2	__D0fputs_inline_main	6	1	8	4	8
+3	__signed_stack_001fopen	6	1	12	4	2
+4	__unsigned_stack_001main	5	1	16	4	2
+5	__constVal37632	6	0	20	4	1
+6	__fopen_7qG2_fsize_7qG2_000	5	1	24	4	4
+7	__signed_stack_001fputs_inline_main	6	1	28	4	2
+8	__fopen_default_size	5	0	32	4	1
+9	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	36	4	2
+10	__DU0fopen	5	1	40	4	2
+11	__D0fopen	6	1	44	4	4
+12	__D0main	6	1	48	4	9
+13	__fopen_7qG2_result_7qG2_000	4	1	52	2	5
+14	__fputs_7qG2_cnt_7qG2_000_inline_main	4	1	54	2	2
+15	__main_7qG2_fp_7qG2_000	1	1	56	1	4
+16	__fopen_return	1	1	57	1	4
+17	__fopen_7qG2_handle_7qG2_000	1	1	58	1	5
+18	____initialize_global_data_return	1	1	59	1	3
+19	__constValNeg1	2	0	60	1	1
+20	__TextOutArgs	8	0	4	16	6
+21	__TextOutArgs.Result	2	1	64	1	6
+22	__TextOutArgs.Location	8	0	2	4	6
+23	__TextOutArgs.Location.X	4	1	68	2	6
+24	__TextOutArgs.Location.Y	4	1	70	2	6
+25	__TextOutArgs.Text	7	0	72	4	6
+26	__TextOutArgs.Text.Text_type	1	0	0	1	0
+27	__TextOutArgs.Options	5	1	76	4	6
+28	__FOArgs	8	0	4	12	15
+29	__FOArgs.Result	3	1	80	2	15
+30	__FOArgs.FileHandle	1	1	82	1	15
+31	__FOArgs.Filename	7	0	84	4	15
+32	__FOArgs.Filename.Filename_type	1	0	0	1	0
+33	__FOArgs.Length	5	1	88	4	15
+34	__FDArgs	8	0	2	8	3
+35	__FDArgs.Result	3	1	92	2	3
+36	__FDArgs.Filename	7	0	94	4	3
+37	__FDArgs.Filename.Filename_type	1	0	0	1	0
+38	__FWriteArgs	8	0	4	12	7
+39	__FWriteArgs.Result	3	1	96	2	7
+40	__FWriteArgs.FileHandle	1	1	98	1	7
+41	__FWriteArgs.Buffer	7	0	100	4	7
+42	__FWriteArgs.Buffer.Buffer_type	1	0	0	1	0
+43	__FWriteArgs.Length	5	1	104	4	7
+44	__FCArgs	8	0	2	4	3
+45	__FCArgs.Result	3	1	108	2	3
+46	__FCArgs.FileHandle	1	1	110	1	3
+47	__constStr0009	7	0	112	4	2
+48	__constStr0009.__constStr0009_type	1	1	0	1	0
+49	__fputs_7qG2_str_7qG2_000_inline_main	7	0	114	4	2
+50	__fputs_7qG2_str_7qG2_000_inline_main.__fputs_7qG2_str_7qG2_000_inline_main_type	1	0	0	1	0
+51	__constStr0012	7	0	116	4	1
+52	__constStr0012.__constStr0012_type	1	1	0	1	0
+53	__constStr0011	7	0	118	4	1
+54	__constStr0011.__constStr0011_type	1	1	0	1	0
+55	__constStr0010	7	0	120	4	1
+56	__constStr0010.__constStr0010_type	1	1	0	1	0
+57	__strretvalmain	7	0	122	4	2
+58	__strretvalmain.__strretvalmain_type	1	0	0	1	0
+59	__fopen_7qG2_filename_7qG2_000	7	0	124	4	4
+60	__fopen_7qG2_filename_7qG2_000.__fopen_7qG2_filename_7qG2_000_type	1	0	0	1	0
+61	__strbuffopen	7	0	126	4	4
+62	__strbuffopen.__strbuffopen_type	1	0	0	1	0
+63	__strbufmain	7	0	128	4	13
+64	__strbufmain.__strbufmain_type	1	0	0	1	0
+65	__constStr0007	7	0	130	4	2
+66	__constStr0007.__constStr0007_type	1	1	0	1	0
+67	__constStr0008	7	0	132	4	1
+68	__constStr0008.__constStr0008_type	1	1	0	1	0
+69	__fopen_7qG2_mode_7qG2_000	7	0	134	4	2
+70	__fopen_7qG2_mode_7qG2_000.__fopen_7qG2_mode_7qG2_000_type	1	0	0	1	0
+71	__constStr0006	7	0	136	4	1
+72	__constStr0006.__constStr0006_type	1	1	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	2	0	#line 2 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	3	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	2	2	#line 2 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	7	2	#line 7 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	8	2		strcat __strbufmain, __constStr0009
+0	7	6	#line 7 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	19206	6	#line 19206 "NXCDefs.h"
+0	19207	6	#pragma macro 5
+0	19207	6		mov __FDArgs.Filename, __strbufmain
+0	19207	8		syscall 8, __FDArgs
+0	19207	11		mov __D0main, __FDArgs.Result
+0	6063	13	#line 6063 "NXCDefs.h"
+0	19206	13	#line 19206 "NXCDefs.h"
+0	19206	13	#line 19206 "NXCDefs.h"
+0	19206	13	#line 19206 "NXCDefs.h"
+0	9	13	#line 9 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	9	13	#line 9 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	9	13	#line 9 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	10	13		strcat __strbufmain, __constStr0009
+0	9	17	#line 9 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	10	17		mov __fopen_7qG2_filename_7qG2_000, __strbufmain
+0	9	19	#line 9 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	10	19		strcat __strbufmain, __constStr0007
+0	9	23	#line 9 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	10	23		mov __fopen_7qG2_mode_7qG2_000, __strbufmain
+0	10	25	#line 10 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	11	25		subcall fopen, __fopen_return
+0	10	27	#line 10 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	11	27		mov __main_7qG2_fp_7qG2_000, __DU0fopen
+0	10	29	#line 10 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	10	29	#line 10 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	10	29	#line 10 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	11	29		mov __unsigned_stack_001main, __main_7qG2_fp_7qG2_000
+0	10	31	#line 10 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	11	31	#line 11 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	12	31		set __D0main, 0
+0	11	34	#line 11 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	12	34		cmp 5, __D0main, __unsigned_stack_001main, __D0main
+0	12	38	#line 12 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	13	38		brtst 4, __ASM_Label_608, __D0main
+0	14	41	#line 14 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	15	41	#pragma macro 3
+0	14	41	#line 14 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	15	41		strcat __strbufmain, __constStr0010
+0	14	45	#line 14 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	15	45		strcat __strbufmain, __constStr0011
+0	14	49	#line 14 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	15	49		set __D0main, 1
+0	14	52	#line 14 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	15	52		fmtnum __strretvalmain, __strbufmain, __D0main
+0	14	56	#line 14 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	15	56		strcat __strbufmain, __strretvalmain
+0	14	60	#line 14 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	15	60		mov __fputs_7qG2_str_7qG2_000_inline_main, __strbufmain
+0	14	62	#line 14 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	14	62	#line 14 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	19398	62	#line 19398 "NXCDefs.h"
+0	19399	62	#pragma macro 8
+0	19399	62		mov __FWriteArgs.FileHandle, __main_7qG2_fp_7qG2_000
+0	19399	64		strtoarr __FWriteArgs.Buffer, __fputs_7qG2_str_7qG2_000_inline_main
+0	19399	67		arrsize __FWriteArgs.Length, __FWriteArgs.Buffer
+0	19399	70		syscall 4, __FWriteArgs
+0	19399	73		mov __D0fputs_inline_main, __FWriteArgs.Result
+0	19399	75		mov __fputs_7qG2_cnt_7qG2_000_inline_main, __FWriteArgs.Length
+0	6145	77	#line 6145 "NXCDefs.h"
+0	19398	77	#line 19398 "NXCDefs.h"
+0	19399	77		mov __signed_stack_001fputs_inline_main, __D0fputs_inline_main
+0	19399	79	#line 19399 "NXCDefs.h"
+0	19400	79		set __D0fputs_inline_main, 0
+0	19399	82	#line 19399 "NXCDefs.h"
+0	19400	82		cmp 4, __D0fputs_inline_main, __signed_stack_001fputs_inline_main, __D0fputs_inline_main
+0	19399	86	#line 19399 "NXCDefs.h"
+0	19400	86		brtst 4, __001__ASM_Label_325, __D0fputs_inline_main
+0	19400	89	#line 19400 "NXCDefs.h"
+0	19401	89		mov __D0fputs_inline_main, __fputs_7qG2_cnt_7qG2_000_inline_main
+0	19400	91	#line 19400 "NXCDefs.h"
+0	19401	91		jmp __ASM_Label_main_inline_fputs_001_end_lbl
+0	19400	93	#line 19400 "NXCDefs.h"
+0	19401	93	#line 19401 "NXCDefs.h"
+0	19402	93		jmp __001__ASM_Label_328
+0	19402	95	#line 19402 "NXCDefs.h"
+0	19403	95		mov __D0fputs_inline_main, __constValNeg1
+0	19402	97	#line 19402 "NXCDefs.h"
+0	19403	97		jmp __ASM_Label_main_inline_fputs_001_end_lbl
+0	19402	99	#line 19402 "NXCDefs.h"
+0	19402	99	#line 19402 "NXCDefs.h"
+0	15	99	#line 15 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	15	99	#line 15 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	16	99	#line 16 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	13	99	#line 13 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	12	99	#line 12 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	13	99	#line 13 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	13	99	#line 13 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	13	99	#line 13 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	13	99	#line 13 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	13	99	#line 13 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	19196	99	#line 19196 "NXCDefs.h"
+0	19197	99	#pragma macro 5
+0	19197	99		mov __FCArgs.FileHandle, __main_7qG2_fp_7qG2_000
+0	19197	101		syscall 5, __FCArgs
+0	19197	104		mov __D0main, __FCArgs.Result
+0	6200	106	#line 6200 "NXCDefs.h"
+0	19196	106	#line 19196 "NXCDefs.h"
+0	19196	106	#line 19196 "NXCDefs.h"
+0	19196	106	#line 19196 "NXCDefs.h"
+0	14	106	#line 14 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	14	106	#line 14 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	14	106	#line 14 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	15	106		set __signed_stack_001main, 0
+0	14	109	#line 14 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	14	109	#line 14 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	15	109		set __signed_stack_002main, 56
+0	14	112	#line 14 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	14	112	#line 14 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	15	112		strcat __strbufmain, __constStr0012
+0	15	116	#line 15 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	15	116	#line 15 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	16	116		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	15	118	#line 15 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	16	118		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	15	120	#line 15 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	16	120		set __TextOutArgs.Options, 0
+0	15	123	#line 15 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	16	123		mov __TextOutArgs.Text, __strbufmain
+0	15	125	#line 15 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	16	125		syscall 13, __TextOutArgs
+0	15	128	#line 15 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	16	128		mov __D0main, __TextOutArgs.Result
+0	15	130	#line 15 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	15	130	#line 15 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	15	130	#line 15 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	16	130		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	15	133	#line 15 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	8551	133	#line 8551 "NXCDefs.h"
+0	8552	133		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	135	#line 8551 "NXCDefs.h"
+0	16	135	#line 16 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	21	135	#line 21 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+0	22	135		exit -1, -1
+1	19305	0	#line 19305 "NXCDefs.h"
+1	19306	0		mov __fopen_7qG2_result_7qG2_000, __constVal37632
+1	19305	2	#line 19305 "NXCDefs.h"
+1	19306	2	#line 19306 "NXCDefs.h"
+1	19307	2		strcat __strbuffopen, __fopen_7qG2_mode_7qG2_000
+1	19308	6		brcmp 4, __ASM_Label_291, __constStr0006, __strbuffopen
+1	19309	10		brcmp 4, __ASM_Label_294, __constStr0007, __strbuffopen
+1	19310	14		brcmp 4, __ASM_Label_299, __constStr0008, __strbuffopen
+1	19311	18		jmp __ASM_Label_290
+1	19308	20	#line 19308 "NXCDefs.h"
+1	19308	20	#line 19308 "NXCDefs.h"
+1	19309	20	#pragma macro 7
+1	19309	20		mov __FOArgs.Filename, __fopen_7qG2_filename_7qG2_000
+1	19309	22		syscall 0, __FOArgs
+1	19309	25		mov __fopen_7qG2_fsize_7qG2_000, __FOArgs.Length
+1	19309	27		mov __fopen_7qG2_handle_7qG2_000, __FOArgs.FileHandle
+1	19309	29		mov __fopen_7qG2_result_7qG2_000, __FOArgs.Result
+1	5880	31	#line 5880 "NXCDefs.h"
+1	19308	31	#line 19308 "NXCDefs.h"
+1	19308	31	#line 19308 "NXCDefs.h"
+1	19308	31	#line 19308 "NXCDefs.h"
+1	19310	31	#line 19310 "NXCDefs.h"
+1	19311	31		jmp __ASM_Label_290
+1	19310	33	#line 19310 "NXCDefs.h"
+1	19311	33	#line 19311 "NXCDefs.h"
+1	19312	33	#line 19312 "NXCDefs.h"
+1	19313	33		mov __fopen_7qG2_fsize_7qG2_000, __fopen_default_size
+1	19312	35	#line 19312 "NXCDefs.h"
+1	19312	35	#line 19312 "NXCDefs.h"
+1	19312	35	#line 19312 "NXCDefs.h"
+1	19313	35	#pragma macro 7
+1	19313	35		mov __FOArgs.Filename, __fopen_7qG2_filename_7qG2_000
+1	19313	37		mov __FOArgs.Length, __fopen_7qG2_fsize_7qG2_000
+1	19313	39		syscall 1, __FOArgs
+1	19313	42		mov __fopen_7qG2_handle_7qG2_000, __FOArgs.FileHandle
+1	19313	44		mov __fopen_7qG2_result_7qG2_000, __FOArgs.Result
+1	5900	46	#line 5900 "NXCDefs.h"
+1	19312	46	#line 19312 "NXCDefs.h"
+1	19312	46	#line 19312 "NXCDefs.h"
+1	19312	46	#line 19312 "NXCDefs.h"
+1	19314	46	#line 19314 "NXCDefs.h"
+1	19315	46		jmp __ASM_Label_290
+1	19314	48	#line 19314 "NXCDefs.h"
+1	19315	48	#line 19315 "NXCDefs.h"
+1	19315	48	#line 19315 "NXCDefs.h"
+1	19316	48	#pragma macro 7
+1	19316	48		mov __FOArgs.Filename, __fopen_7qG2_filename_7qG2_000
+1	19316	50		syscall 2, __FOArgs
+1	19316	53		mov __fopen_7qG2_fsize_7qG2_000, __FOArgs.Length
+1	19316	55		mov __fopen_7qG2_handle_7qG2_000, __FOArgs.FileHandle
+1	19316	57		mov __fopen_7qG2_result_7qG2_000, __FOArgs.Result
+1	5913	59	#line 5913 "NXCDefs.h"
+1	19315	59	#line 19315 "NXCDefs.h"
+1	19315	59	#line 19315 "NXCDefs.h"
+1	19315	59	#line 19315 "NXCDefs.h"
+1	19317	59	#line 19317 "NXCDefs.h"
+1	19317	59	#line 19317 "NXCDefs.h"
+1	19318	59	#line 19318 "NXCDefs.h"
+1	19318	59	#line 19318 "NXCDefs.h"
+1	19319	59		mov __signed_stack_001fopen, __fopen_7qG2_result_7qG2_000
+1	19318	61	#line 19318 "NXCDefs.h"
+1	19319	61	#line 19319 "NXCDefs.h"
+1	19320	61		set __D0fopen, 0
+1	19319	64	#line 19319 "NXCDefs.h"
+1	19320	64		cmp 5, __D0fopen, __signed_stack_001fopen, __D0fopen
+1	19319	68	#line 19319 "NXCDefs.h"
+1	19320	68		brtst 4, __ASM_Label_304, __D0fopen
+1	19320	71	#line 19320 "NXCDefs.h"
+1	19321	71		set __fopen_7qG2_handle_7qG2_000, 0
+1	19320	74	#line 19320 "NXCDefs.h"
+1	19320	74	#line 19320 "NXCDefs.h"
+1	19320	74	#line 19320 "NXCDefs.h"
+1	19321	74	#line 19321 "NXCDefs.h"
+1	19322	74		mov __DU0fopen, __fopen_7qG2_handle_7qG2_000
+1	19321	76	#line 19321 "NXCDefs.h"
+1	19322	76		subret __fopen_return
+1	19321	78	#line 19321 "NXCDefs.h"
+1	19330	78	#line 19330 "NXCDefs.h"
+1	19331	78		subret __fopen_return
+2	22	0	#line 22 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc"
+2	23	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc
+1	fopen	138	NXCDefs.h
+2	__initialize_global_data	218	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\testes\gravando_na_memoria\gravando_matriz.nxc

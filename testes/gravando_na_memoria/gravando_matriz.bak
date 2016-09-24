@@ -1,0 +1,21 @@
+task main()
+{
+  string msg;
+  int strT, str_pot;
+  byte fp;
+  int aux;
+  
+    remove("memoria.txt");
+  
+    fp = fopen("memoria.txt", "w");
+    if (fp != NULL)
+    {
+      fprintf( fp, "%s", "12t2t-3tn123t234t345tn98t-98t98tn" );
+      fclose(fp);
+      TextOut(0,LCD_LINE1,"Done!");
+      Wait(SEC_1);
+    }
+
+
+}
+
