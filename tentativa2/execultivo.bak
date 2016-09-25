@@ -71,13 +71,26 @@ void  bip()
 //função principal
 task main()
 {
-	executivo();
+	//executivo();
+	//AbrirPorta();
+	FecharPorta();
+	bip();
+	bip();
 }
 
 //assinatura das funções
 void executivo()
 {
 	init();
+}
+
+void init()
+{
+	int aux;
+
+	desligaBlue();
+  	inicializaSensores();
+	iniciaBlue();
 
 	andar();//implementar
 	while(1)//void loop
@@ -97,16 +110,6 @@ void executivo()
    				break;
    			}
 	}
-}
-
-void init()
-{
-	int aux;
-
-	desligaBlue();
-  	inicializaSensores();
-  	FecharPorta();
-	iniciaBlue();
 }
 
 void desligaBlue()

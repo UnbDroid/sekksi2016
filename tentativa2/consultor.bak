@@ -1,7 +1,7 @@
 //Valores Calibraveis
 // Defines de leitura do RGB do meio (ainda precisa testar mais)
-    #define COR_BRANCA_MEIO_MIN 339
-    #define COR_BRANCA_MEIO_MAX 564
+    #define COR_BRANCA_MEIO_MIN 564
+    #define COR_BRANCA_MEIO_MAX 339
     #define COR_PRETA_MEIO_MIN 100
     #define COR_PRETA_MEIO_MAX 126
     #define COR_VERMELHA_MEIO_MIN 112
@@ -297,10 +297,24 @@ int CorBoneco()//TESTAR
     int leitura;
 
     leitura = lerSensor(RGB_MEIO);
+    if(!leitura)
+    {
+      bip();
+    }
+    else
+    {
+
+      ClearScreen();
+      NumOut(0,LCD_LINE1,leitura);
+      Wait(1000);
+    }
 
     if((leitura < COR_BRANCA_MEIO_MAX)&&(leitura > COR_BRANCA_MEIO_MIN))
     {
-      return BONECO_BRANCO;
+        bip();
+      bip();
+      bip();
+        return BONECO_BRANCO;
     }
     if((leitura < COR_PRETA_MEIO_MAX)&&(leitura > COR_PRETA_MEIO_MIN))
         return BONECO_PRETO;
