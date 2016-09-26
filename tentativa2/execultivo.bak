@@ -1,11 +1,16 @@
 //SENSORES E MOTORES
 #define MD OUT_B //motor da direita
 #define ME OUT_A //motor da esquerda
+#define MED OUT_AB
+#define MDE OUT_AB
 #define MP OUT_C //motor da porta
 #define USD IN_1 //Utrasonico da direita
 #define USE IN_2 //Utrasonico da esquerda
 #define HTD IN_3//hitech da direita
 #define HTE IN_4//hitech da esquerda
+
+//constantes de locamoção
+#define FATORSYNC 1
 
 //LOGICA
 #define direita 1
@@ -14,10 +19,12 @@
 //DEFINES BLUETOOTH
 	#define CONECTA TRUE
 	#define DESCONECTA FALSE
+	#define TEMPO_CONECTAR_BT 4000
 	//defines da conexao
 	#define CONN 1
 	#define INBOX 1
 	#define OUTBOX 2
+	#define INBOX_US 3
 
 //defines da struct
 
@@ -31,7 +38,7 @@
 #define BONECO_VERMELHO 3
 
 //angulos
-#define ANGULOREJEITADIREITA 1700
+#define ANGULOREJEITADIREITA 1500
 #define ANGCORRECAOVOLTA 165
 
 //
@@ -39,6 +46,7 @@
 #define SIM_ALIEN 1
 
 //códigos para comunicação BlueTooth
+#define TESTE -1
 #define PARAR 1
 #define SEGUIR 2
 #define GIREI 3
@@ -63,6 +71,13 @@ void MandaGirei();
 void AbrirPorta();
 void FecharPorta();
 void MandaDesGirei();
+int RecebeUS();
+int RecebeDesgirar();
+void viraEsq(int angulo);
+void viraDir(int angulo);
+int distanciaGiroDireita(int grau);
+int distanciaGiroEsquerda(int grau);
+
 
 //função para dbug
 void  bip()
@@ -79,32 +94,54 @@ task main()
 //assinatura das funções
 void executivo()
 {
+  int aux, us_frente = 200, us_frente_temp;
+
 	init();
 
 	andar();//implementar
 	while(1)//void loop
 	{
 		ReceiveRemoteNumber(INBOX, true, aux);
-		switch (aux)
-   			{
-   				case PARAR:
-   					parar();
-   				break;
-   				case SEGUIR:
-   					andar();
-   				break;
-   				case REJEITAR:
-   					rejeitar();
-   					andar();
-   				break;
-   			}
+		aux=TESTE;
+		switch(aux)
+		{
+			case PARAR:
+				parar();
+			break;
+			case SEGUIR:
+				andar();
+			break;
+			case REJEITAR:
+				rejeitar();
+				andar();
+			break;
+			case TESTE:
+				viraDir(180);
+				AbrirPorta();
+				//andar();
+				for(int i=0;i<31;i++)
+				{
+					Off(ME);
+					OnFwd(MD,90);
+					Wait(30);
+					Off(MD);
+					OnFwd(ME,90);
+					Wait(100);
+				}
+				//Wait(4000);
+				parar();
+				while(1){}
+			break;
+			default :
+				us_frente_temp = RecebeUS();
+				if(us_frente_temp)
+					us_frente = us_frente_temp;
+		}
 	}
 }
 
 void init()
 {
-	int aux;
-
 	desligaBlue();
   	inicializaSensores();
   	FecharPorta();
@@ -142,14 +179,15 @@ void iniciaBlue()
 	DADOS_BT.Action = ACAO;
 
 	SysCommBTConnection(DADOS_BT);
-	Wait(4000);
+	Wait(TEMPO_CONECTAR_BT);
 	TextOut(0, LCD_LINE2, "Conectou Bluetooth");
 }
 
 void andar()//melhorar esse função - apneas testes por enquanto
 {
-	OnFwd(MD,90);
-	OnFwd(ME,90);
+	//OnFwd(MD,90);
+	//OnFwd(ME,90);
+	OnFwdSync(MDE,90,FATORSYNC);
 }
 
 void parar()
@@ -164,6 +202,7 @@ void rejeitar()
 	//implementar uma função para decidir para qual lado deve girar
 	rejeitarDireita();
 	MandaGirei();
+	while(!RecebeDesgirar()){}
 	voltarejeitarDireita();
 	MandaDesGirei();
 }
@@ -235,4 +274,55 @@ void FecharPorta()
 	}while(tc!=old_tc);
 
 	OnFwd(MP,0);
+}
+
+int RecebeUS()
+{
+	int aux;
+
+	ReceiveRemoteNumber(INBOX_US, true, aux);
+
+	return aux;
+}
+
+int RecebeDesgirar()
+{
+	int aux;
+  	ReceiveRemoteNumber(INBOX, true, aux);
+  	if(aux == DESGIRAR)
+    	return 1;
+  	return 0;
+}
+
+void viraEsq(int angulo){ // função que faz o robô girar para a esquerda o ângulo recebido
+     OnFwd(MD, 90);
+     OnFwd(ME, -90);
+
+     while(distanciaGiroEsquerda((MotorTachoCount(MD) - MotorTachoCount(ME))/2) < angulo)
+     {
+      //lol
+     }
+     Off(MD);
+     Off(ME);
+}
+
+
+void viraDir(int angulo){ // função que faz o robô girar para a direita o ângulo recebido
+     OnFwd(MD, -90);
+     OnFwd(ME, 90);
+
+     while(distanciaGiroDireita((- MotorTachoCount(MD) + MotorTachoCount(ME))/2) < angulo)
+     {
+      //lol
+     }
+     Off(MD);
+     Off(ME);
+}
+
+int distanciaGiroDireita(int grau){
+	   return (((grau*17)/149)); // COMO FOI FEITA ESSA CONVERSÃO??? [na base da tentativa e erro]
+}
+
+int distanciaGiroEsquerda(int grau){
+	   return (((grau*17)/159));
 }

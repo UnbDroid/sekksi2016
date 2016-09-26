@@ -102,6 +102,7 @@ void executivo()
 	while(1)//void loop
 	{
 		ReceiveRemoteNumber(INBOX, true, aux);
+		//aux=TESTE;
 		switch(aux)
 		{
 			case PARAR:
@@ -117,8 +118,17 @@ void executivo()
 			case TESTE:
 				viraDir(180);
 				AbrirPorta();
-				andar();
-				Wait(4000);
+				//andar();
+				for(int i=0;i<15;i++)
+				{
+					Off(ME);
+					OnFwd(MD,90);
+					Wait(200);
+					Off(MD);
+					OnFwd(ME,90);
+					Wait(200);
+				}
+				//Wait(4000);
 				parar();
 				while(1){}
 			break;

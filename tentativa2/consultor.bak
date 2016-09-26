@@ -1,24 +1,25 @@
 //Valores Calibraveis
 // Defines de leitura do RGB do meio (ainda precisa testar mais)
-    #define COR_BRANCA_MEIO_MIN 564
-    #define COR_BRANCA_MEIO_MAX 339
-    #define COR_PRETA_MEIO_MIN 100
-    #define COR_PRETA_MEIO_MAX 126
-    #define COR_VERMELHA_MEIO_MIN 112
-    #define COR_VERMELHA_MEIO_MAX 141
-
- // Defines de leitura do RGB da esquerda do robô
-    #define COR_BASE_ESQ_MIN 209
-    #define COR_BASE_ESQ_MAX 276
+    #define COR_BRANCA_MEIO_MIN 334
+    #define COR_BRANCA_MEIO_MAX 573
+    #define COR_PRETA_MEIO_MIN 74
+    #define COR_PRETA_MEIO_MAX 172
+    #define COR_VERMELHA_MEIO_MIN 149
+    #define COR_VERMELHA_MEIO_MAX 214
 
 // Defines de leitura do RGB da direita do robô
-    #define COR_BASE_DIR_MIN 222
-    #define COR_BASE_DIR_MAX 286
-
+    #define COR_BASE_DIR_MAX 675
+    #define COR_BASE_DIR_MIN 433
+    
+ // Defines de leitura do RGB da esquerda do robô
+    #define COR_BASE_ESQ_MAX 473
+    #define COR_BASE_ESQ_MIN 192
+   
 //Bluetooth
 	#define CONEXAO 0
 	#define INBOX 2
 	#define OUTBOX 1
+  #define OUTBOX_US 3
 
 
 //IO
@@ -45,11 +46,13 @@
 	#define esquerda 2
 
 //códigos para comunicação BlueTooth
+#define TESTE -1
 #define PARAR 1
 #define SEGUIR 2
 #define GIREI 3
 #define DESGIRAR 4
 #define REJEITAR 5
+#define DESGIREI 6
 
 //cor dos boncos
 #define BONECO_BRANCO 1
@@ -68,16 +71,20 @@
 
   //Tempos
   #define TEMPO_DEPOIS_DE_JOGAR_DENTRO 200
+  
+  #define TEMPO_DEPOIS_DO_BONECO_ESCAPULIR 400
 
   //Defines angulos da garra
-  #define ANGULO_1 -100 //-77
+  #define ANGULO_1 -110 //-77
   #define ANG_SEGURO -125
+  #define ANG_LEVANTAR -60
 
   #define VETOR_CALIBRACAO 11
 
 //declaração das variáveis globais
 int bonecoAlvo;
 int bonecoNaoAlvo;
+int BonecosCapturados;
 
 //declaração das funções
 void InicializaSensores();
@@ -100,7 +107,13 @@ void BonecoNaFrente();
 void Rejeita();
 int RecebiGirei();
 void MandaDesgirar();
-void MandaGirar();
+void MandaRejeitar();
+int RecebiDesGirei();
+void MandaUs();
+void LevantaBoneco();
+
+//funções de testes
+void MandaTeste();
 
 //função para dbug
 void  bip()
@@ -119,10 +132,14 @@ void consultor()
 
     while(1)//void loop
     {
-       if(TemBoneco())
-       {
-       		BonecoNaFrente();
-       }
+      //if(TemBoneco())
+      {
+      	BonecoNaFrente();
+      }
+      //else//caso não tenha mais nada para fazer manda o sinal do us
+      {
+        MandaUs();
+      }
     }
 }
 
@@ -131,6 +148,8 @@ void init()
 	InicializaSensores();
 	VoltaGarra();
 	BonecoAlvo();
+
+  BonecosCapturados = 0;
 
 }
 
@@ -297,24 +316,10 @@ int CorBoneco()//TESTAR
     int leitura;
 
     leitura = lerSensor(RGB_MEIO);
-    if(!leitura)
-    {
-      bip();
-    }
-    else
-    {
-
-      ClearScreen();
-      NumOut(0,LCD_LINE1,leitura);
-      Wait(1000);
-    }
 
     if((leitura < COR_BRANCA_MEIO_MAX)&&(leitura > COR_BRANCA_MEIO_MIN))
     {
-        bip();
-      bip();
-      bip();
-        return BONECO_BRANCO;
+      return BONECO_BRANCO;
     }
     if((leitura < COR_PRETA_MEIO_MAX)&&(leitura > COR_PRETA_MEIO_MIN))
         return BONECO_PRETO;
@@ -366,10 +371,25 @@ void BonecoNaFrente()
   if(PegaBoneco())
   {
     cor = CorBoneco();
+    cor = bonecoAlvo;////DEBUG
+    BonecosCapturados = 3;
     if(cor == bonecoAlvo)
     {
-      Pega();
-      MandarSeguir();
+      if(BonecosCapturados == 3)
+      {
+        bip();
+        bip();
+        bip();
+        MandaTeste();
+        LevantaBoneco();
+        while(1){}
+      }
+      else
+      {
+        Pega();
+        MandarSeguir();
+        BonecosCapturados++;
+      }
     }
     else if(cor == bonecoNaoAlvo)
     {
@@ -402,16 +422,17 @@ void BonecoNaFrente()
   {
     VoltaGarra();
     MandarSeguir();
-    Wait(500);
+    Wait(TEMPO_DEPOIS_DO_BONECO_ESCAPULIR);
   }
 }
 
 void Rejeita()
 {
-  MandaGirar();
+  MandaRejeitar();
   while(!RecebiGirei()){}//espera acabar de girar
   VoltaGarra();
   MandaDesgirar();
+  while(!RecebiDesGirei()){}//espera acabar de desgirar
 }
 
 int RecebiGirei()
@@ -423,7 +444,16 @@ int RecebiGirei()
   return 0;
 }
 
-void MandaGirar()
+int RecebiDesGirei()
+{
+  int aux;
+  ReceiveRemoteNumber(INBOX, true, aux);
+  if(aux == DESGIREI)
+    return 1;
+  return 0;
+}
+
+void MandaRejeitar()
 {
   SendRemoteNumber(CONEXAO, OUTBOX, REJEITAR);
 }
@@ -431,4 +461,25 @@ void MandaGirar()
 void MandaDesgirar()
 {
   SendRemoteNumber(CONEXAO, OUTBOX, DESGIRAR);
+}
+
+void MandaUs()
+{
+  int aux;
+
+  aux = SensorUS(US_FRENTE);
+
+  SendRemoteNumber(CONEXAO, OUTBOX_US, aux);
+}
+
+void MandaTeste()
+{
+  SendRemoteNumber(CONEXAO, OUTBOX, TESTE);
+}
+
+void LevantaBoneco()
+{
+  OnFwd(MOTOR_GARRA,-90);
+  while(MotorTachoCount(MOTOR_GARRA)>ANG_LEVANTAR){}
+  Off(MOTOR_GARRA);
 }

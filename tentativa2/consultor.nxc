@@ -1,19 +1,19 @@
 //Valores Calibraveis
 // Defines de leitura do RGB do meio (ainda precisa testar mais)
-    #define COR_BRANCA_MEIO_MIN 426
-    #define COR_BRANCA_MEIO_MAX 533
-    #define COR_PRETA_MEIO_MIN 99
-    #define COR_PRETA_MEIO_MAX 152
-    #define COR_VERMELHA_MEIO_MIN 179
-    #define COR_VERMELHA_MEIO_MAX 196
+    #define COR_BRANCA_MEIO_MIN 334
+    #define COR_BRANCA_MEIO_MAX 573
+    #define COR_PRETA_MEIO_MIN 74
+    #define COR_PRETA_MEIO_MAX 172
+    #define COR_VERMELHA_MEIO_MIN 149
+    #define COR_VERMELHA_MEIO_MAX 214
 
 // Defines de leitura do RGB da direita do robô
-    #define COR_BASE_DIR_MAX 602
-    #define COR_BASE_DIR_MIN 390
+    #define COR_BASE_DIR_MAX 675
+    #define COR_BASE_DIR_MIN 433
     
  // Defines de leitura do RGB da esquerda do robô
-    #define COR_BASE_ESQ_MAX 504 
-    #define COR_BASE_ESQ_MIN 194
+    #define COR_BASE_ESQ_MAX 473
+    #define COR_BASE_ESQ_MIN 192
    
 //Bluetooth
 	#define CONEXAO 0
@@ -77,6 +77,7 @@
   //Defines angulos da garra
   #define ANGULO_1 -110 //-77
   #define ANG_SEGURO -125
+  #define ANG_LEVANTAR -60
 
   #define VETOR_CALIBRACAO 11
 
@@ -109,6 +110,7 @@ void MandaDesgirar();
 void MandaRejeitar();
 int RecebiDesGirei();
 void MandaUs();
+void LevantaBoneco();
 
 //funções de testes
 void MandaTeste();
@@ -369,6 +371,8 @@ void BonecoNaFrente()
   if(PegaBoneco())
   {
     cor = CorBoneco();
+    //cor = bonecoAlvo;////DEBUG
+    //BonecosCapturados = 3;////DEBUG
     if(cor == bonecoAlvo)
     {
       if(BonecosCapturados == 3)
@@ -376,6 +380,7 @@ void BonecoNaFrente()
         bip();
         bip();
         bip();
+        LevantaBoneco();
         MandaTeste();
         while(1){}
       }
@@ -423,6 +428,7 @@ void BonecoNaFrente()
 
 void Rejeita()
 {
+  LevantaBoneco();
   MandaRejeitar();
   while(!RecebiGirei()){}//espera acabar de girar
   VoltaGarra();
@@ -470,4 +476,11 @@ void MandaUs()
 void MandaTeste()
 {
   SendRemoteNumber(CONEXAO, OUTBOX, TESTE);
+}
+
+void LevantaBoneco()
+{
+  OnFwd(MOTOR_GARRA,POTENCIA_MAXIMA_GARRA);
+  while(MotorTachoCount(MOTOR_GARRA)>ANG_LEVANTAR){}
+  Off(MOTOR_GARRA);
 }
