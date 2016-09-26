@@ -19,6 +19,7 @@
 	#define CONEXAO 0
 	#define INBOX 2
 	#define OUTBOX 1
+  #define OUTBOX_US 3
 
 
 //IO
@@ -103,6 +104,7 @@ int RecebiGirei();
 void MandaDesgirar();
 void MandaGirar();
 int RecebiDesGirei();
+void MandaUs();
 
 //função para dbug
 void  bip()
@@ -121,10 +123,14 @@ void consultor()
 
     while(1)//void loop
     {
-       if(TemBoneco())
-       {
-       		BonecoNaFrente();
-       }
+      if(TemBoneco())
+      {
+      	BonecoNaFrente();
+      }
+      else//caso não tenha mais nada para fazer manda o sinal do us
+      {
+        MandaUs();
+      }
     }
 }
 
@@ -429,4 +435,13 @@ void MandaGirar()
 void MandaDesgirar()
 {
   SendRemoteNumber(CONEXAO, OUTBOX, DESGIRAR);
+}
+
+void MandaUs()
+{
+  int aux;
+
+  aux = SensorUS(US_FRENTE);
+
+  SendRemoteNumber(CONEXAO, OUTBOX_US, aux);
 }
