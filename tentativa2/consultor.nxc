@@ -1,20 +1,20 @@
 //Valores Calibraveis
 // Defines de leitura do RGB do meio (ainda precisa testar mais)
-    #define COR_BRANCA_MEIO_MIN 430
+    #define COR_BRANCA_MEIO_MIN 426
     #define COR_BRANCA_MEIO_MAX 533
-    #define COR_PRETA_MEIO_MIN 124
-    #define COR_PRETA_MEIO_MAX 164
-    #define COR_VERMELHA_MEIO_MIN 237
-    #define COR_VERMELHA_MEIO_MAX 240
-
- // Defines de leitura do RGB da esquerda do robô
-    #define COR_BASE_ESQ_MIN 348
-    #define COR_BASE_ESQ_MAX 453
+    #define COR_PRETA_MEIO_MIN 99
+    #define COR_PRETA_MEIO_MAX 152
+    #define COR_VERMELHA_MEIO_MIN 179
+    #define COR_VERMELHA_MEIO_MAX 196
 
 // Defines de leitura do RGB da direita do robô
-    #define COR_BASE_DIR_MIN 593
-    #define COR_BASE_DIR_MAX 702
-
+    #define COR_BASE_DIR_MAX 562
+    #define COR_BASE_DIR_MIN 430
+    
+ // Defines de leitura do RGB da esquerda do robô
+    #define COR_BASE_ESQ_MAX 464 
+    #define COR_BASE_ESQ_MIN 234
+   
 //Bluetooth
 	#define CONEXAO 0
 	#define INBOX 2
@@ -46,6 +46,7 @@
 	#define esquerda 2
 
 //códigos para comunicação BlueTooth
+#define TESTE -1
 #define PARAR 1
 #define SEGUIR 2
 #define GIREI 3
@@ -70,9 +71,11 @@
 
   //Tempos
   #define TEMPO_DEPOIS_DE_JOGAR_DENTRO 200
+  
+  #define TEMPO_DEPOIS_DO_BONECO_ESCAPULIR 400
 
   //Defines angulos da garra
-  #define ANGULO_1 -100 //-77
+  #define ANGULO_1 -110 //-77
   #define ANG_SEGURO -125
 
   #define VETOR_CALIBRACAO 11
@@ -80,6 +83,7 @@
 //declaração das variáveis globais
 int bonecoAlvo;
 int bonecoNaoAlvo;
+int BonecosCapturados;
 
 //declaração das funções
 void InicializaSensores();
@@ -102,9 +106,12 @@ void BonecoNaFrente();
 void Rejeita();
 int RecebiGirei();
 void MandaDesgirar();
-void MandaGirar();
+void MandaRejeitar();
 int RecebiDesGirei();
 void MandaUs();
+
+//funções de testes
+void MandaTeste();
 
 //função para dbug
 void  bip()
@@ -139,6 +146,8 @@ void init()
 	InicializaSensores();
 	VoltaGarra();
 	BonecoAlvo();
+
+  BonecosCapturados = 0;
 
 }
 
@@ -362,8 +371,19 @@ void BonecoNaFrente()
     cor = CorBoneco();
     if(cor == bonecoAlvo)
     {
-      Pega();
-      MandarSeguir();
+      if(BonecosCapturados == 3)
+      {
+        bip();
+        bip();
+        bip();
+        MandaTeste();
+      }
+      else
+      {
+        Pega();
+        MandarSeguir();
+        BonecosCapturados++;
+      }
     }
     else if(cor == bonecoNaoAlvo)
     {
@@ -396,13 +416,13 @@ void BonecoNaFrente()
   {
     VoltaGarra();
     MandarSeguir();
-    Wait(500);
+    Wait(TEMPO_DEPOIS_DO_BONECO_ESCAPULIR);
   }
 }
 
 void Rejeita()
 {
-  MandaGirar();
+  MandaRejeitar();
   while(!RecebiGirei()){}//espera acabar de girar
   VoltaGarra();
   MandaDesgirar();
@@ -427,7 +447,7 @@ int RecebiDesGirei()
   return 0;
 }
 
-void MandaGirar()
+void MandaRejeitar()
 {
   SendRemoteNumber(CONEXAO, OUTBOX, REJEITAR);
 }
@@ -444,4 +464,9 @@ void MandaUs()
   aux = SensorUS(US_FRENTE);
 
   SendRemoteNumber(CONEXAO, OUTBOX_US, aux);
+}
+
+void MandaTeste()
+{
+  SendRemoteNumber(CONEXAO, OUTBOX, TESTE);
 }

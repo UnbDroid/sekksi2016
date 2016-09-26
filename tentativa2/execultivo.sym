@@ -2,1237 +2,1034 @@
 Index	Identifier	Type	Flag	Data	Size	RefCount
 0	__D0SetSensorLowspeed_inline_inicializaSensores	6	1	0	4	8
 1	__D0voltarejeitarDireita	6	1	4	4	8
-2	__D0rejeitarDireita	6	1	8	4	6
-3	__signed_stack_002desligaBlue	6	1	12	4	2
+2	__D0viraDir	6	1	8	4	14
+3	__DU0SetSensorLowspeed_inline_inicializaSensores	5	1	12	4	20
 4	__signed_stack_001desligaBlue	6	1	16	4	4
-5	__DU0SetSensorLowspeed_inline_inicializaSensores	5	1	20	4	20
-6	__D0RecebeUS	6	1	24	4	3
-7	__D0desligaBlue	6	1	28	4	5
-8	__D0andar	6	1	32	4	4
-9	__SPTArgsMutex	9	0	36	4	14
-10	__D0PlaySound	6	1	40	4	69
+5	__signed_stack_001andar	6	1	20	4	2
+6	__signed_stack_001AbrirPorta	6	1	24	4	2
+7	__D0rejeitarDireita	6	1	28	4	6
+8	__D0executivo	6	1	32	4	18
+9	__D0distanciaGiroDireita	6	1	36	4	6
+10	__D0desligaBlue	6	1	40	4	5
 11	__D0FecharPorta	6	1	44	4	8
-12	__D0executivo	6	1	48	4	17
-13	__signed_stack_002voltarejeitarDireita	6	1	52	4	2
-14	__signed_stack_001voltarejeitarDireita	6	1	56	4	2
-15	__signed_stack_001rejeitarDireita	6	1	60	4	2
-16	__Wait_7qG2_ms_7qG2_000_inline_FecharPorta	5	1	64	4	2
-17	__Wait_7qG2_ms_7qG2_000_inline_iniciaBlue	5	1	68	4	2
+12	__D0rejeitar	6	1	48	4	4
+13	__D0RecebeUS	6	1	52	4	3
+14	__D0RecebeDesgirar	6	1	56	4	9
+15	__Wait_7qG2_ms_7qG2_000_inline_executivo	5	1	60	4	2
+16	__signed_stack_002voltarejeitarDireita	6	1	64	4	2
+17	__signed_stack_001voltarejeitarDireita	6	1	68	4	2
 18	__Wait_7qG2_ms_7qG2_000_inline_desligaBlue	5	1	72	4	2
-19	__signed_stack_003PlaySound	6	1	76	4	14
-20	__signed_stack_001iniciaBlue	6	1	80	4	2
-21	__signed_stack_001FecharPorta	6	1	84	4	2
-22	__signed_stack_001executivo	6	1	88	4	2
-23	__signed_stack_002PlaySound	6	1	92	4	14
-24	__signed_stack_001PlaySound	6	1	96	4	44
-25	__signed_stack_002iniciaBlue	6	1	100	4	2
-26	__CBTWMutex	9	0	104	4	4
-27	__SRSTmpLongVal	6	1	108	4	4
-28	__RemoteMutex	9	0	112	4	4
-29	__MRMutex	9	0	116	4	4
-30	__TextOutMutex	9	0	120	4	4
-31	__RRNTmpVal	6	1	124	4	8
-32	__constVal500	4	0	128	2	1
-33	__PlaySound_7qG2_aCode_7qG2_000	4	1	130	2	7
-34	__constVal150	4	0	132	2	1
-35	__PlaySound_7qG2_i_7qG2_001	4	1	134	2	15
-36	__executivo_7qG2_aux_7qG2_000	4	1	136	2	2
-37	__FecharPorta_7qG2_tc_7qG2_000	4	1	138	2	4
-38	__constValNeg1700	4	0	140	2	1
-39	__RecebeUS_7qG2_aux_7qG2_000	4	1	142	2	2
-40	__FecharPorta_7qG2_old_tc_7qG2_000	4	1	144	2	2
-41	__executivo_7qG2_us_frente_temp_7qG2_000	4	1	146	2	3
-42	__executivo_7qG2_us_frente_7qG2_000	4	1	148	2	3
-43	__voltarejeitarDireita_7qG2_tc_7qG2_000	4	1	150	2	2
-44	__rejeitarDireita_7qG2_tc_7qG2_000	4	1	152	2	2
-45	__constVal200	4	0	154	2	1
-46	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	156	1	8
-47	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores	1	1	157	1	8
-48	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	158	1	8
-49	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	159	1	4
-50	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	160	1	8
-51	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	161	1	8
-52	__FecharPorta_return	1	1	162	1	3
-53	__inicializaSensores_return	1	1	163	1	3
-54	__desligaBlue_return	1	1	164	1	3
-55	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	165	1	20
-56	__constVal0	2	1	166	1	32
-57	__iniciaBlue_return	1	1	167	1	3
-58	__PFTmp	1	1	168	1	1
-59	__constValNeg90	2	0	169	1	1
-60	__MandaDesGirei_return	1	1	170	1	3
-61	__constVal100	2	0	171	1	2
-62	__constVal32	2	0	172	1	24
-63	__constValNeg70	2	0	173	1	1
-64	__constVal63	2	0	174	1	8
-65	__constVal96	2	0	175	1	8
-66	__constVal1	2	0	176	1	17
-67	__voltarejeitarDireita_return	1	1	177	1	3
-68	__MandaGirei_return	1	1	178	1	3
-69	__rejeitarDireita_return	1	1	179	1	3
-70	__RecebeUS_return	1	1	180	1	4
-71	____initialize_global_data_return	1	1	181	1	3
-72	__bip_return	1	1	182	1	5
-73	__constVal50	2	0	183	1	1
-74	__executivo_return	1	1	184	1	3
-75	__constVal6	2	0	185	1	1
-76	__constVal3	2	0	186	1	12
-77	__ResetSensorPort	1	1	187	1	6
-78	__constVal5	2	0	188	1	3
-79	__ResetSensorTmp	1	1	189	1	2
-80	__andar_return	1	1	190	1	5
-81	__init_return	1	1	191	1	3
-82	__rejeitar_return	1	1	192	1	3
-83	__parar_return	1	1	193	1	6
-84	__PlaySound_return	1	1	194	1	3
-85	____ResetSensorSubroutine_return	1	1	195	1	6
-86	__constVal2	2	0	196	1	9
-87	__RRNErr	1	1	197	1	2
-88	__TextOutArgs	8	0	4	16	11
-89	__TextOutArgs.Result	2	1	200	1	11
-90	__TextOutArgs.Location	8	0	2	4	11
-91	__TextOutArgs.Location.X	4	1	204	2	11
-92	__TextOutArgs.Location.Y	4	1	206	2	11
-93	__TextOutArgs.Text	7	0	208	4	11
-94	__TextOutArgs.Text.Text_type	1	0	0	1	0
-95	__TextOutArgs.Options	5	1	212	4	11
-96	__MRArgs	8	0	4	8	10
-97	__MRArgs.Result	2	1	216	1	10
-98	__MRArgs.QueueID	1	1	217	1	10
-99	__MRArgs.Remove	1	1	218	1	10
-100	__MRArgs.Message	7	0	220	4	10
-101	__MRArgs.Message.Message_type	1	0	0	1	0
-102	__SPTArgs	8	0	5	8	42
-103	__SPTArgs.Result	2	1	224	1	42
-104	__SPTArgs.Frequency	3	1	226	2	42
-105	__SPTArgs.Duration	3	1	228	2	42
-106	__SPTArgs.Loop	1	1	230	1	42
-107	__SPTArgs.Volume	1	1	231	1	42
-108	__iniciaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	5
-109	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Result	2	1	232	1	5
-110	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	233	1	5
-111	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	234	4	5
-112	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
-113	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	236	1	5
-114	__CBTWArgs	8	0	3	8	6
-115	__CBTWArgs.Result	2	1	240	1	6
-116	__CBTWArgs.Connection	1	1	241	1	6
-117	__CBTWArgs.Buffer	7	0	242	4	6
-118	__CBTWArgs.Buffer.Buffer_type	1	0	0	1	0
-119	__desligaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	5
-120	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Result	2	1	244	1	5
-121	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	245	1	5
-122	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	246	4	5
-123	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
-124	__desligaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	248	1	5
-125	__CBTCSArgs	8	0	2	4	3
-126	__CBTCSArgs.Result	2	1	252	1	3
-127	__CBTCSArgs.Connection	1	1	253	1	3
-128	__constStr0010	7	0	254	4	1
-129	__constStr0010.__constStr0010_type	1	1	0	1	0
-130	__SRSSendBuf	7	0	256	4	4
-131	__SRSSendBuf.__SRSSendBuf_type	1	0	0	1	0
-132	__constStr0009	7	0	258	4	2
-133	__constStr0009.__constStr0009_type	1	1	0	1	0
-134	__strbufdesligaBlue	7	0	260	4	4
+19	__Wait_7qG2_ms_7qG2_000_inline_FecharPorta	5	1	76	4	2
+20	__Wait_7qG2_ms_7qG2_000_inline_AbrirPorta	5	1	80	4	2
+21	__Wait_7qG2_ms_7qG2_000_inline_iniciaBlue	5	1	84	4	2
+22	__signed_stack_001viraDir	6	1	88	4	8
+23	__signed_stack_001FecharPorta	6	1	92	4	2
+24	__signed_stack_001distanciaGiroDireita	6	1	96	4	4
+25	__signed_stack_002desligaBlue	6	1	100	4	2
+26	__signed_stack_001iniciaBlue	6	1	104	4	2
+27	__signed_stack_001rejeitarDireita	6	1	108	4	2
+28	__signed_stack_001RecebeDesgirar	6	1	112	4	2
+29	__signed_stack_002iniciaBlue	6	1	116	4	2
+30	__CBTWMutex	9	0	120	4	4
+31	__SRSTmpLongVal	6	1	124	4	4
+32	__RemoteMutex	9	0	128	4	4
+33	__TextOutMutex	9	0	132	4	4
+34	__MRMutex	9	0	136	4	6
+35	__RRNTmpVal	6	1	140	4	12
+36	__D0AbrirPorta	6	1	144	4	8
+37	__D0andar	6	1	148	4	2
+38	__executivo_7qG2_us_frente_temp_7qG2_000	4	1	152	2	3
+39	__constValNeg1700	4	0	154	2	1
+40	__voltarejeitarDireita_7qG2_tc_7qG2_000	4	1	156	2	2
+41	__viraDir_7qG2_angulo_7qG2_000	4	1	158	2	2
+42	__rejeitarDireita_7qG2_tc_7qG2_000	4	1	160	2	2
+43	__distanciaGiroDireita_7qG2_grau_7qG2_000	4	1	162	2	2
+44	__FecharPorta_7qG2_tc_7qG2_000	4	1	164	2	4
+45	__RecebeUS_7qG2_aux_7qG2_000	4	1	166	2	2
+46	__FecharPorta_7qG2_old_tc_7qG2_000	4	1	168	2	2
+47	__executivo_7qG2_aux_7qG2_000	4	1	170	2	2
+48	__RecebeDesgirar_7qG2_aux_7qG2_000	4	1	172	2	2
+49	__AbrirPorta_7qG2_tc_7qG2_000	4	1	174	2	4
+50	__executivo_7qG2_us_frente_7qG2_000	4	1	176	2	2
+51	__AbrirPorta_7qG2_old_tc_7qG2_000	4	1	178	2	2
+52	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	180	1	8
+53	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	181	1	4
+54	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	182	1	8
+55	__constVal0	2	1	183	1	49
+56	__iniciaBlue_return	1	1	184	1	3
+57	__FecharPorta_return	1	1	185	1	3
+58	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	186	1	20
+59	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	187	1	8
+60	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	188	1	8
+61	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores	1	1	189	1	8
+62	__distanciaGiroDireita_return	1	1	190	1	4
+63	__MandaDesGirei_return	1	1	191	1	3
+64	__voltarejeitarDireita_return	1	1	192	1	3
+65	__constValNeg70	2	0	193	1	1
+66	__constVal32	2	0	194	1	39
+67	__constValNeg90	2	0	195	1	2
+68	__constVal63	2	0	196	1	13
+69	__constVal96	2	0	197	1	13
+70	__constVal1	2	0	198	1	18
+71	__RecebeDesgirar_return	1	1	199	1	5
+72	__MandaGirei_return	1	1	200	1	3
+73	__rejeitarDireita_return	1	1	201	1	3
+74	__inicializaSensores_return	1	1	202	1	3
+75	__constVal6	2	0	203	1	1
+76	__constVal5	2	0	204	1	3
+77	__ResetSensorPort	1	1	205	1	6
+78	__init_return	1	1	206	1	3
+79	__executivo_return	1	1	207	1	3
+80	____initialize_global_data_return	1	1	208	1	3
+81	__RRNErr	1	1	209	1	3
+82	__PFTmp	1	1	210	1	1
+83	__constVal7	2	0	211	1	1
+84	__ResetSensorTmp	1	1	212	1	2
+85	____ResetSensorSubroutine_return	1	1	213	1	6
+86	__constVal2	2	0	214	1	14
+87	__viraDir_return	1	1	215	1	3
+88	__rejeitar_return	1	1	216	1	3
+89	__constVal3	2	0	217	1	16
+90	__AbrirPorta_return	1	1	218	1	3
+91	__parar_return	1	1	219	1	7
+92	__desligaBlue_return	1	1	220	1	3
+93	__andar_return	1	1	221	1	6
+94	__RecebeUS_return	1	1	222	1	4
+95	__constValNeg1	2	0	223	1	1
+96	__desligaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	5
+97	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Result	2	1	224	1	5
+98	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	225	1	5
+99	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	226	4	5
+100	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
+101	__desligaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	228	1	5
+102	__CBTCSArgs	8	0	2	4	3
+103	__CBTCSArgs.Result	2	1	232	1	3
+104	__CBTCSArgs.Connection	1	1	233	1	3
+105	__CBTWArgs	8	0	3	8	6
+106	__CBTWArgs.Result	2	1	236	1	6
+107	__CBTWArgs.Connection	1	1	237	1	6
+108	__CBTWArgs.Buffer	7	0	238	4	6
+109	__CBTWArgs.Buffer.Buffer_type	1	0	0	1	0
+110	__MRArgs	8	0	4	8	15
+111	__MRArgs.Result	2	1	240	1	15
+112	__MRArgs.QueueID	1	1	241	1	15
+113	__MRArgs.Remove	1	1	242	1	15
+114	__MRArgs.Message	7	0	244	4	15
+115	__MRArgs.Message.Message_type	1	0	0	1	0
+116	__iniciaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	5
+117	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Result	2	1	248	1	5
+118	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	249	1	5
+119	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	250	4	5
+120	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
+121	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	252	1	5
+122	__TextOutArgs	8	0	4	16	11
+123	__TextOutArgs.Result	2	1	256	1	11
+124	__TextOutArgs.Location	8	0	2	4	11
+125	__TextOutArgs.Location.X	4	1	260	2	11
+126	__TextOutArgs.Location.Y	4	1	262	2	11
+127	__TextOutArgs.Text	7	0	264	4	11
+128	__TextOutArgs.Text.Text_type	1	0	0	1	0
+129	__TextOutArgs.Options	5	1	268	4	11
+130	__OUT_AB	7	0	272	4	1
+131	__OUT_AB.__OUT_AB_type	1	0	0	1	0
+132	__strbufiniciaBlue	7	0	274	4	4
+133	__strbufiniciaBlue.__strbufiniciaBlue_type	1	0	0	1	0
+134	__strbufdesligaBlue	7	0	276	4	4
 135	__strbufdesligaBlue.__strbufdesligaBlue_type	1	0	0	1	0
-136	__SRSFlattenBuf	7	0	262	4	4
-137	__SRSFlattenBuf.__SRSFlattenBuf_type	1	0	0	1	0
-138	__constStr0011	7	0	264	4	1
-139	__constStr0011.__constStr0011_type	1	1	0	1	0
-140	__DCMessageWritePacket	7	0	266	4	2
-141	__DCMessageWritePacket.__DCMessageWritePacket_type	1	0	0	1	0
-142	__strbufiniciaBlue	7	0	268	4	4
-143	__strbufiniciaBlue.__strbufiniciaBlue_type	1	0	0	1	0
-144	__SRSTmpBuf	7	0	270	4	12
+136	__constStr0011	7	0	278	4	1
+137	__constStr0011.__constStr0011_type	1	1	0	1	0
+138	__DCMessageWritePacket	7	0	280	4	2
+139	__DCMessageWritePacket.__DCMessageWritePacket_type	1	0	0	1	0
+140	__constStr0010	7	0	282	4	1
+141	__constStr0010.__constStr0010_type	1	1	0	1	0
+142	__constStr0009	7	0	284	4	2
+143	__constStr0009.__constStr0009_type	1	1	0	1	0
+144	__SRSTmpBuf	7	0	286	4	12
 145	__SRSTmpBuf.__SRSTmpBuf_type	1	0	0	1	0
+146	__SRSFlattenBuf	7	0	288	4	4
+147	__SRSFlattenBuf.__SRSFlattenBuf_type	1	0	0	1	0
+148	__SRSSendBuf	7	0	290	4	4
+149	__SRSSendBuf.__SRSSendBuf_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	77	0	#line 77 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-0	78	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	77	2	#line 77 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-0	78	2	#line 78 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-0	79	2		subcall executivo, __executivo_return
-0	78	4	#line 78 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-0	79	4		exit -1, -1
+0	90	0	#line 90 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+0	91	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	90	2	#line 90 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+0	91	2	#line 91 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+0	92	2		subcall executivo, __executivo_return
+0	91	4	#line 91 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+0	92	4		exit -1, -1
 1	5476	0		setin __constVal1, __ResetSensorPort, 5
 1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
 1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
 1	5480	11		subret ____ResetSensorSubroutine_return
-2	7127	0	#line 7127 "NXCDefs.h"
-2	7128	0		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-2	7127	2	#line 7127 "NXCDefs.h"
-2	7128	2	#line 7128 "NXCDefs.h"
-2	7129	2		set __D0PlaySound, 0
-2	7128	5	#line 7128 "NXCDefs.h"
-2	7129	5		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-2	7128	9	#line 7128 "NXCDefs.h"
-2	7129	9		brtst 4, __ASM_Label_56, __D0PlaySound
-2	7128	12	#line 7128 "NXCDefs.h"
-2	7129	12		set __signed_stack_001PlaySound, 600
-2	7128	15	#line 7128 "NXCDefs.h"
-2	7128	15	#line 7128 "NXCDefs.h"
-2	7129	15		set __signed_stack_002PlaySound, 200
-2	7128	18	#line 7128 "NXCDefs.h"
-2	7128	18	#line 7128 "NXCDefs.h"
-2	7129	18		set __signed_stack_003PlaySound, 4
-2	7128	21	#line 7128 "NXCDefs.h"
-2	7128	21	#line 7128 "NXCDefs.h"
-2	7129	21		set __D0PlaySound, 0
-2	7129	24	#line 7129 "NXCDefs.h"
-2	7130	24		acquire __SPTArgsMutex
-2	7129	25	#line 7129 "NXCDefs.h"
-2	7130	25		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-2	7129	27	#line 7129 "NXCDefs.h"
-2	7130	27		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-2	7129	29	#line 7129 "NXCDefs.h"
-2	7130	29		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-2	7129	31	#line 7129 "NXCDefs.h"
-2	7130	31		mov __SPTArgs.Loop, __D0PlaySound
-2	7129	33	#line 7129 "NXCDefs.h"
-2	7130	33		syscall 10, __SPTArgs
-2	7129	36	#line 7129 "NXCDefs.h"
-2	7130	36		mov __D0PlaySound, __SPTArgs.Result
-2	7129	38	#line 7129 "NXCDefs.h"
-2	7130	38		release __SPTArgsMutex
-2	7129	39	#line 7129 "NXCDefs.h"
-2	7129	39	#line 7129 "NXCDefs.h"
-2	7130	39		jmp __ASM_Label_65
-2	7129	41	#line 7129 "NXCDefs.h"
-2	7130	41		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-2	7129	43	#line 7129 "NXCDefs.h"
-2	7130	43	#line 7130 "NXCDefs.h"
-2	7131	43		set __D0PlaySound, 1
-2	7130	46	#line 7130 "NXCDefs.h"
-2	7131	46		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-2	7131	50	#line 7131 "NXCDefs.h"
-2	7132	50		brtst 4, __ASM_Label_68, __D0PlaySound
-2	7131	53	#line 7131 "NXCDefs.h"
-2	7132	53		set __signed_stack_001PlaySound, 600
-2	7131	56	#line 7131 "NXCDefs.h"
-2	7131	56	#line 7131 "NXCDefs.h"
-2	7132	56		set __signed_stack_002PlaySound, 150
-2	7131	59	#line 7131 "NXCDefs.h"
-2	7131	59	#line 7131 "NXCDefs.h"
-2	7132	59		set __signed_stack_003PlaySound, 4
-2	7131	62	#line 7131 "NXCDefs.h"
-2	7131	62	#line 7131 "NXCDefs.h"
-2	7132	62		set __D0PlaySound, 0
-2	7132	65	#line 7132 "NXCDefs.h"
-2	7133	65		acquire __SPTArgsMutex
-2	7132	66	#line 7132 "NXCDefs.h"
-2	7133	66		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-2	7132	68	#line 7132 "NXCDefs.h"
-2	7133	68		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-2	7132	70	#line 7132 "NXCDefs.h"
-2	7133	70		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-2	7132	72	#line 7132 "NXCDefs.h"
-2	7133	72		mov __SPTArgs.Loop, __D0PlaySound
-2	7132	74	#line 7132 "NXCDefs.h"
-2	7133	74		syscall 10, __SPTArgs
-2	7132	77	#line 7132 "NXCDefs.h"
-2	7133	77		mov __D0PlaySound, __SPTArgs.Result
-2	7132	79	#line 7132 "NXCDefs.h"
-2	7133	79		release __SPTArgsMutex
-2	7132	80	#line 7132 "NXCDefs.h"
-2	7132	80	#line 7132 "NXCDefs.h"
-2	7133	80		wait2 NA, __constVal200
-2	7132	83	#line 7132 "NXCDefs.h"
-2	7132	83	#line 7132 "NXCDefs.h"
-2	7133	83	#line 7133 "NXCDefs.h"
-2	7134	83		set __signed_stack_001PlaySound, 600
-2	7133	86	#line 7133 "NXCDefs.h"
-2	7133	86	#line 7133 "NXCDefs.h"
-2	7134	86		set __signed_stack_002PlaySound, 150
-2	7133	89	#line 7133 "NXCDefs.h"
-2	7133	89	#line 7133 "NXCDefs.h"
-2	7134	89		set __signed_stack_003PlaySound, 4
-2	7133	92	#line 7133 "NXCDefs.h"
-2	7133	92	#line 7133 "NXCDefs.h"
-2	7134	92		set __D0PlaySound, 0
-2	7134	95	#line 7134 "NXCDefs.h"
-2	7135	95		acquire __SPTArgsMutex
-2	7134	96	#line 7134 "NXCDefs.h"
-2	7135	96		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-2	7134	98	#line 7134 "NXCDefs.h"
-2	7135	98		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-2	7134	100	#line 7134 "NXCDefs.h"
-2	7135	100		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-2	7134	102	#line 7134 "NXCDefs.h"
-2	7135	102		mov __SPTArgs.Loop, __D0PlaySound
-2	7134	104	#line 7134 "NXCDefs.h"
-2	7135	104		syscall 10, __SPTArgs
-2	7134	107	#line 7134 "NXCDefs.h"
-2	7135	107		mov __D0PlaySound, __SPTArgs.Result
-2	7134	109	#line 7134 "NXCDefs.h"
-2	7135	109		release __SPTArgsMutex
-2	7134	110	#line 7134 "NXCDefs.h"
-2	7134	110	#line 7134 "NXCDefs.h"
-2	7135	110		wait2 NA, __constVal150
-2	7134	113	#line 7134 "NXCDefs.h"
-2	7134	113	#line 7134 "NXCDefs.h"
-2	7136	113	#line 7136 "NXCDefs.h"
-2	7137	113		jmp __ASM_Label_85
-2	7136	115	#line 7136 "NXCDefs.h"
-2	7137	115		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-2	7136	117	#line 7136 "NXCDefs.h"
-2	7137	117	#line 7137 "NXCDefs.h"
-2	7138	117		set __D0PlaySound, 3
-2	7137	120	#line 7137 "NXCDefs.h"
-2	7138	120		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-2	7137	124	#line 7137 "NXCDefs.h"
-2	7138	124		brtst 4, __ASM_Label_88, __D0PlaySound
-2	7137	127	#line 7137 "NXCDefs.h"
-2	7138	127		set __PlaySound_7qG2_i_7qG2_001, 4
-2	7137	130	#line 7137 "NXCDefs.h"
-2	7137	130	#line 7137 "NXCDefs.h"
-2	7138	130		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
-2	7137	132	#line 7137 "NXCDefs.h"
-2	7137	132	#line 7137 "NXCDefs.h"
-2	7138	132		set __D0PlaySound, 8
-2	7137	135	#line 7137 "NXCDefs.h"
-2	7138	135		cmp 0, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-2	7137	139	#line 7137 "NXCDefs.h"
-2	7138	139		brtst 4, __ASM_Label_90, __D0PlaySound
-2	7137	142	#line 7137 "NXCDefs.h"
-2	7138	142		jmp __ASM_Label_91
-2	7138	144	#line 7138 "NXCDefs.h"
-2	7139	144		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
-2	7139	148	#line 7139 "NXCDefs.h"
-2	7140	148		jmp __ASM_Label_89
-2	7139	150	#line 7139 "NXCDefs.h"
-2	7140	150		set __signed_stack_001PlaySound, 523
-2	7139	153	#line 7139 "NXCDefs.h"
-2	7139	153	#line 7139 "NXCDefs.h"
-2	7140	153		mov __D0PlaySound, __PlaySound_7qG2_i_7qG2_001
-2	7139	155	#line 7139 "NXCDefs.h"
-2	7140	155		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-2	7139	159	#line 7139 "NXCDefs.h"
-2	7139	159	#line 7139 "NXCDefs.h"
-2	7140	159		set __D0PlaySound, 4
-2	7139	162	#line 7139 "NXCDefs.h"
-2	7140	162		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-2	7139	166	#line 7139 "NXCDefs.h"
-2	7139	166	#line 7139 "NXCDefs.h"
-2	7140	166		set __signed_stack_002PlaySound, 100
-2	7139	169	#line 7139 "NXCDefs.h"
-2	7139	169	#line 7139 "NXCDefs.h"
-2	7140	169		set __signed_stack_003PlaySound, 4
-2	7139	172	#line 7139 "NXCDefs.h"
-2	7139	172	#line 7139 "NXCDefs.h"
-2	7140	172		set __D0PlaySound, 0
-2	7140	175	#line 7140 "NXCDefs.h"
-2	7141	175		acquire __SPTArgsMutex
-2	7140	176	#line 7140 "NXCDefs.h"
-2	7141	176		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-2	7140	178	#line 7140 "NXCDefs.h"
-2	7141	178		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-2	7140	180	#line 7140 "NXCDefs.h"
-2	7141	180		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-2	7140	182	#line 7140 "NXCDefs.h"
-2	7141	182		mov __SPTArgs.Loop, __D0PlaySound
-2	7140	184	#line 7140 "NXCDefs.h"
-2	7141	184		syscall 10, __SPTArgs
-2	7140	187	#line 7140 "NXCDefs.h"
-2	7141	187		mov __D0PlaySound, __SPTArgs.Result
-2	7140	189	#line 7140 "NXCDefs.h"
-2	7141	189		release __SPTArgsMutex
-2	7140	190	#line 7140 "NXCDefs.h"
-2	7140	190	#line 7140 "NXCDefs.h"
-2	7141	190		wait2 NA, __constVal100
-2	7140	193	#line 7140 "NXCDefs.h"
-2	7140	193	#line 7140 "NXCDefs.h"
-2	7142	193	#line 7142 "NXCDefs.h"
-2	7143	193		jmp __ASM_Label_92
-2	7142	195	#line 7142 "NXCDefs.h"
-2	7142	195	#line 7142 "NXCDefs.h"
-2	7143	195		jmp __ASM_Label_105
-2	7142	197	#line 7142 "NXCDefs.h"
-2	7143	197		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-2	7142	199	#line 7142 "NXCDefs.h"
-2	7143	199	#line 7143 "NXCDefs.h"
-2	7144	199		set __D0PlaySound, 2
-2	7143	202	#line 7143 "NXCDefs.h"
-2	7144	202		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-2	7143	206	#line 7143 "NXCDefs.h"
-2	7144	206		brtst 4, __ASM_Label_108, __D0PlaySound
-2	7143	209	#line 7143 "NXCDefs.h"
-2	7144	209		set __PlaySound_7qG2_i_7qG2_001, 7
-2	7143	212	#line 7143 "NXCDefs.h"
-2	7143	212	#line 7143 "NXCDefs.h"
-2	7144	212		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
-2	7143	214	#line 7143 "NXCDefs.h"
-2	7143	214	#line 7143 "NXCDefs.h"
-2	7144	214		set __D0PlaySound, 3
-2	7143	217	#line 7143 "NXCDefs.h"
-2	7144	217		cmp 1, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-2	7143	221	#line 7143 "NXCDefs.h"
-2	7144	221		brtst 4, __ASM_Label_110, __D0PlaySound
-2	7143	224	#line 7143 "NXCDefs.h"
-2	7144	224		jmp __ASM_Label_111
-2	7144	226	#line 7144 "NXCDefs.h"
-2	7145	226		sub __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
-2	7145	230	#line 7145 "NXCDefs.h"
-2	7146	230		jmp __ASM_Label_109
-2	7145	232	#line 7145 "NXCDefs.h"
-2	7146	232		set __signed_stack_001PlaySound, 523
-2	7145	235	#line 7145 "NXCDefs.h"
-2	7145	235	#line 7145 "NXCDefs.h"
-2	7146	235		mov __D0PlaySound, __PlaySound_7qG2_i_7qG2_001
-2	7145	237	#line 7145 "NXCDefs.h"
-2	7146	237		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-2	7145	241	#line 7145 "NXCDefs.h"
-2	7145	241	#line 7145 "NXCDefs.h"
-2	7146	241		set __D0PlaySound, 4
-2	7145	244	#line 7145 "NXCDefs.h"
-2	7146	244		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-2	7145	248	#line 7145 "NXCDefs.h"
-2	7145	248	#line 7145 "NXCDefs.h"
-2	7146	248		set __signed_stack_002PlaySound, 100
-2	7145	251	#line 7145 "NXCDefs.h"
-2	7145	251	#line 7145 "NXCDefs.h"
-2	7146	251		set __signed_stack_003PlaySound, 4
-2	7145	254	#line 7145 "NXCDefs.h"
-2	7145	254	#line 7145 "NXCDefs.h"
-2	7146	254		set __D0PlaySound, 0
-2	7146	257	#line 7146 "NXCDefs.h"
-2	7147	257		acquire __SPTArgsMutex
-2	7146	258	#line 7146 "NXCDefs.h"
-2	7147	258		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-2	7146	260	#line 7146 "NXCDefs.h"
-2	7147	260		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-2	7146	262	#line 7146 "NXCDefs.h"
-2	7147	262		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-2	7146	264	#line 7146 "NXCDefs.h"
-2	7147	264		mov __SPTArgs.Loop, __D0PlaySound
-2	7146	266	#line 7146 "NXCDefs.h"
-2	7147	266		syscall 10, __SPTArgs
-2	7146	269	#line 7146 "NXCDefs.h"
-2	7147	269		mov __D0PlaySound, __SPTArgs.Result
-2	7146	271	#line 7146 "NXCDefs.h"
-2	7147	271		release __SPTArgsMutex
-2	7146	272	#line 7146 "NXCDefs.h"
-2	7146	272	#line 7146 "NXCDefs.h"
-2	7147	272		wait2 NA, __constVal100
-2	7146	275	#line 7146 "NXCDefs.h"
-2	7146	275	#line 7146 "NXCDefs.h"
-2	7148	275	#line 7148 "NXCDefs.h"
-2	7149	275		jmp __ASM_Label_112
-2	7148	277	#line 7148 "NXCDefs.h"
-2	7148	277	#line 7148 "NXCDefs.h"
-2	7149	277		jmp __ASM_Label_125
-2	7148	279	#line 7148 "NXCDefs.h"
-2	7149	279		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-2	7148	281	#line 7148 "NXCDefs.h"
-2	7149	281	#line 7149 "NXCDefs.h"
-2	7150	281		set __D0PlaySound, 4
-2	7149	284	#line 7149 "NXCDefs.h"
-2	7150	284		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-2	7150	288	#line 7150 "NXCDefs.h"
-2	7151	288		brtst 4, __ASM_Label_128, __D0PlaySound
-2	7150	291	#line 7150 "NXCDefs.h"
-2	7151	291		set __signed_stack_001PlaySound, 100
-2	7150	294	#line 7150 "NXCDefs.h"
-2	7150	294	#line 7150 "NXCDefs.h"
-2	7151	294		set __signed_stack_002PlaySound, 500
-2	7150	297	#line 7150 "NXCDefs.h"
-2	7150	297	#line 7150 "NXCDefs.h"
-2	7151	297		set __signed_stack_003PlaySound, 4
-2	7150	300	#line 7150 "NXCDefs.h"
-2	7150	300	#line 7150 "NXCDefs.h"
-2	7151	300		set __D0PlaySound, 0
-2	7151	303	#line 7151 "NXCDefs.h"
-2	7152	303		acquire __SPTArgsMutex
-2	7151	304	#line 7151 "NXCDefs.h"
-2	7152	304		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-2	7151	306	#line 7151 "NXCDefs.h"
-2	7152	306		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-2	7151	308	#line 7151 "NXCDefs.h"
-2	7152	308		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-2	7151	310	#line 7151 "NXCDefs.h"
-2	7152	310		mov __SPTArgs.Loop, __D0PlaySound
-2	7151	312	#line 7151 "NXCDefs.h"
-2	7152	312		syscall 10, __SPTArgs
-2	7151	315	#line 7151 "NXCDefs.h"
-2	7152	315		mov __D0PlaySound, __SPTArgs.Result
-2	7151	317	#line 7151 "NXCDefs.h"
-2	7152	317		release __SPTArgsMutex
-2	7151	318	#line 7151 "NXCDefs.h"
-2	7151	318	#line 7151 "NXCDefs.h"
-2	7152	318		wait2 NA, __constVal500
-2	7151	321	#line 7151 "NXCDefs.h"
-2	7151	321	#line 7151 "NXCDefs.h"
-2	7153	321	#line 7153 "NXCDefs.h"
-2	7154	321		jmp __ASM_Label_137
-2	7153	323	#line 7153 "NXCDefs.h"
-2	7154	323		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-2	7153	325	#line 7153 "NXCDefs.h"
-2	7154	325	#line 7154 "NXCDefs.h"
-2	7155	325		set __D0PlaySound, 5
-2	7154	328	#line 7154 "NXCDefs.h"
-2	7155	328		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-2	7154	332	#line 7154 "NXCDefs.h"
-2	7155	332		brtst 4, __ASM_Label_140, __D0PlaySound
-2	7154	335	#line 7154 "NXCDefs.h"
-2	7155	335		set __PlaySound_7qG2_i_7qG2_001, 4
-2	7154	338	#line 7154 "NXCDefs.h"
-2	7154	338	#line 7154 "NXCDefs.h"
-2	7155	338		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
-2	7154	340	#line 7154 "NXCDefs.h"
-2	7154	340	#line 7154 "NXCDefs.h"
-2	7155	340		set __D0PlaySound, 8
-2	7154	343	#line 7154 "NXCDefs.h"
-2	7155	343		cmp 0, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-2	7154	347	#line 7154 "NXCDefs.h"
-2	7155	347		brtst 4, __ASM_Label_142, __D0PlaySound
-2	7154	350	#line 7154 "NXCDefs.h"
-2	7155	350		jmp __ASM_Label_143
-2	7155	352	#line 7155 "NXCDefs.h"
-2	7156	352		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
-2	7156	356	#line 7156 "NXCDefs.h"
-2	7157	356		jmp __ASM_Label_141
-2	7156	358	#line 7156 "NXCDefs.h"
-2	7157	358		set __signed_stack_001PlaySound, 523
-2	7156	361	#line 7156 "NXCDefs.h"
-2	7156	361	#line 7156 "NXCDefs.h"
-2	7157	361		mov __D0PlaySound, __PlaySound_7qG2_i_7qG2_001
-2	7156	363	#line 7156 "NXCDefs.h"
-2	7157	363		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-2	7156	367	#line 7156 "NXCDefs.h"
-2	7156	367	#line 7156 "NXCDefs.h"
-2	7157	367		set __D0PlaySound, 4
-2	7156	370	#line 7156 "NXCDefs.h"
-2	7157	370		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-2	7156	374	#line 7156 "NXCDefs.h"
-2	7156	374	#line 7156 "NXCDefs.h"
-2	7157	374		set __signed_stack_002PlaySound, 50
-2	7156	377	#line 7156 "NXCDefs.h"
-2	7156	377	#line 7156 "NXCDefs.h"
-2	7157	377		set __signed_stack_003PlaySound, 4
-2	7156	380	#line 7156 "NXCDefs.h"
-2	7156	380	#line 7156 "NXCDefs.h"
-2	7157	380		set __D0PlaySound, 0
-2	7157	383	#line 7157 "NXCDefs.h"
-2	7158	383		acquire __SPTArgsMutex
-2	7157	384	#line 7157 "NXCDefs.h"
-2	7158	384		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-2	7157	386	#line 7157 "NXCDefs.h"
-2	7158	386		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-2	7157	388	#line 7157 "NXCDefs.h"
-2	7158	388		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-2	7157	390	#line 7157 "NXCDefs.h"
-2	7158	390		mov __SPTArgs.Loop, __D0PlaySound
-2	7157	392	#line 7157 "NXCDefs.h"
-2	7158	392		syscall 10, __SPTArgs
-2	7157	395	#line 7157 "NXCDefs.h"
-2	7158	395		mov __D0PlaySound, __SPTArgs.Result
-2	7157	397	#line 7157 "NXCDefs.h"
-2	7158	397		release __SPTArgsMutex
-2	7157	398	#line 7157 "NXCDefs.h"
-2	7157	398	#line 7157 "NXCDefs.h"
-2	7158	398		wait2 NA, __constVal50
-2	7157	401	#line 7157 "NXCDefs.h"
-2	7157	401	#line 7157 "NXCDefs.h"
-2	7169	401	#line 7169 "NXCDefs.h"
-2	7170	401		jmp __ASM_Label_144
-2	7169	403	#line 7169 "NXCDefs.h"
-2	7169	403	#line 7169 "NXCDefs.h"
-2	7169	403	#line 7169 "NXCDefs.h"
-2	7169	403	#line 7169 "NXCDefs.h"
-2	7169	403	#line 7169 "NXCDefs.h"
-2	7169	403	#line 7169 "NXCDefs.h"
-2	7169	403	#line 7169 "NXCDefs.h"
-2	7169	403	#line 7169 "NXCDefs.h"
-2	7170	403		subret __PlaySound_return
-3	71	0	#line 71 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-3	72	0		set __PlaySound_7qG2_aCode_7qG2_000, 2
-3	71	3	#line 71 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-3	72	3	#line 72 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-3	73	3		subcall PlaySound, __PlaySound_return
-3	72	5	#line 72 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-3	75	5	#line 75 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-3	76	5		subret __bip_return
-4	83	0	#line 83 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	84	0		set __executivo_7qG2_us_frente_7qG2_000, 200
-4	83	3	#line 83 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	87	3	#line 87 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	88	3		subcall init, __init_return
-4	87	5	#line 87 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	88	5	#line 88 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	89	5		subcall andar, __andar_return
-4	88	7	#line 88 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	89	7	#line 89 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	90	7		set __D0executivo, 1
-4	90	10	#line 90 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	91	10		tst 5, __D0executivo, __D0executivo
-4	90	13	#line 90 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	91	13		brtst 4, __ASM_Label_494, __D0executivo
-4	90	16	#line 90 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	91	16		mov __signed_stack_001executivo, __executivo_7qG2_us_frente_7qG2_000
-4	90	18	#line 90 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	91	18	#line 91 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	92	18		set __D0executivo, 16
-4	91	21	#line 91 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	92	21		cmp 0, __D0executivo, __signed_stack_001executivo, __D0executivo
-4	92	25	#line 92 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	93	25		brtst 4, __ASM_Label_499, __D0executivo
-4	93	28	#line 93 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	94	28		subcall bip, __bip_return
-4	93	30	#line 93 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	94	30	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	95	30		subcall bip, __bip_return
-4	94	32	#line 94 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	95	32	#line 95 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	96	32		subcall bip, __bip_return
-4	95	34	#line 95 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	96	34	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	96	34	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	97	34	#pragma macro 9
-4	97	34		acquire __MRMutex
-4	97	35		mov __MRArgs.QueueID, __constVal1
-4	97	37		mov __MRArgs.Remove, __constVal1
-4	97	39		set __RRNTmpVal, 0
-4	97	42		syscall 27, __MRArgs
-4	97	45		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-4	97	50		mov __executivo_7qG2_aux_7qG2_000, __RRNTmpVal
-4	97	52		mov __D0executivo, __MRArgs.Result
-4	97	54		release __MRMutex
-4	4440	55	#line 4440 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	96	55	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	96	55	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	98	55	#line 98 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	99	55		mov __D0executivo, __executivo_7qG2_aux_7qG2_000
-4	102	57		brcmp 4, __ASM_Label_503, __constVal1, __D0executivo
-4	103	61		brcmp 4, __ASM_Label_504, __constVal2, __D0executivo
-4	104	65		brcmp 4, __ASM_Label_505, __constVal5, __D0executivo
-4	105	69		jmp __ASM_Label_506
-4	100	71	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	101	71	#line 101 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	102	71		subcall parar, __parar_return
-4	101	73	#line 101 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	102	73	#line 102 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	103	73		jmp __ASM_Label_502
-4	102	75	#line 102 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	103	75	#line 103 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	104	75	#line 104 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	105	75		subcall andar, __andar_return
-4	104	77	#line 104 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	105	77	#line 105 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	106	77		jmp __ASM_Label_502
-4	105	79	#line 105 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	106	79	#line 106 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	107	79	#line 107 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	108	79		subcall rejeitar, __rejeitar_return
-4	107	81	#line 107 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	108	81	#line 108 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	109	81		subcall andar, __andar_return
-4	108	83	#line 108 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	109	83	#line 109 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	110	83		jmp __ASM_Label_502
-4	109	85	#line 109 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	110	85	#line 110 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	111	85	#line 111 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	112	85		subcall RecebeUS, __RecebeUS_return
-4	111	87	#line 111 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	112	87		mov __executivo_7qG2_us_frente_temp_7qG2_000, __D0RecebeUS
-4	111	89	#line 111 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	111	89	#line 111 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	112	89	#line 112 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	113	89		mov __D0executivo, __executivo_7qG2_us_frente_temp_7qG2_000
-4	112	91	#line 112 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	113	91		tst 5, __D0executivo, __D0executivo
-4	112	94	#line 112 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	113	94		brtst 4, __ASM_Label_511, __D0executivo
-4	113	97	#line 113 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	114	97		mov __executivo_7qG2_us_frente_7qG2_000, __executivo_7qG2_us_frente_temp_7qG2_000
-4	113	99	#line 113 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	113	99	#line 113 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	114	99	#line 114 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	115	99	#line 115 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	117	99	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	118	99		jmp __ASM_Label_493
-4	117	101	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	117	101	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-4	118	101		subret __executivo_return
-5	122	0	#line 122 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-5	123	0		subcall desligaBlue, __desligaBlue_return
-5	122	2	#line 122 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-5	123	2	#line 123 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-5	124	2		subcall inicializaSensores, __inicializaSensores_return
-5	123	4	#line 123 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-5	124	4	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-5	125	4		subcall FecharPorta, __FecharPorta_return
-5	124	6	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-5	125	6	#line 125 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-5	126	6		subcall iniciaBlue, __iniciaBlue_return
-5	125	8	#line 125 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-5	127	8	#line 127 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-5	128	8		subret __init_return
-6	131	0	#line 131 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	132	0		strcat __strbufdesligaBlue, __constStr0009
-6	131	4	#line 131 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	132	4		mov __desligaBlue_7qG2_DADOS_BT_7qG2_000.Name, __strbufdesligaBlue
-6	131	6	#line 131 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	132	6	#line 132 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	133	6		set __desligaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot, 1
-6	132	9	#line 132 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	132	9	#line 132 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	133	9	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	134	9		set __desligaBlue_7qG2_DADOS_BT_7qG2_000.Action, 0
-6	133	12	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	133	12	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	135	12	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	136	12	#pragma macro 4
-6	136	12	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	136	12		syscall 36, __desligaBlue_7qG2_DADOS_BT_7qG2_000
-6	134	15	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	134	15	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	134	15	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	134	15	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	136	15	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	135	15	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	136	15	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	137	15		set __Wait_7qG2_ms_7qG2_000_inline_desligaBlue, 30
-6	136	18	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	96	0	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	97	0		set __executivo_7qG2_us_frente_7qG2_000, 200
+2	96	3	#line 96 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	100	3	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	101	3		subcall init, __init_return
+2	100	5	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	101	5	#line 101 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	102	5		subcall andar, __andar_return
+2	101	7	#line 101 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	102	7	#line 102 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	103	7		set __D0executivo, 1
+2	103	10	#line 103 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	104	10		tst 5, __D0executivo, __D0executivo
+2	103	13	#line 103 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	104	13		brtst 4, __ASM_Label_494, __D0executivo
+2	103	16	#line 103 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	104	16	#pragma macro 9
+2	104	16		acquire __MRMutex
+2	104	17		mov __MRArgs.QueueID, __constVal1
+2	104	19		mov __MRArgs.Remove, __constVal1
+2	104	21		set __RRNTmpVal, 0
+2	104	24		syscall 27, __MRArgs
+2	104	27		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+2	104	32		mov __executivo_7qG2_aux_7qG2_000, __RRNTmpVal
+2	104	34		mov __D0executivo, __MRArgs.Result
+2	104	36		release __MRMutex
+2	4683	37	#line 4683 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	103	37	#line 103 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	103	37	#line 103 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	105	37	#line 105 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	106	37		mov __D0executivo, __executivo_7qG2_aux_7qG2_000
+2	109	39		brcmp 4, __ASM_Label_500, __constVal1, __D0executivo
+2	110	43		brcmp 4, __ASM_Label_501, __constVal2, __D0executivo
+2	111	47		brcmp 4, __ASM_Label_502, __constVal5, __D0executivo
+2	112	51		brcmp 4, __ASM_Label_503, __constValNeg1, __D0executivo
+2	113	55		jmp __ASM_Label_512
+2	107	57	#line 107 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	108	57	#line 108 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	109	57		subcall parar, __parar_return
+2	108	59	#line 108 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	109	59	#line 109 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	110	59		jmp __ASM_Label_499
+2	109	61	#line 109 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	110	61	#line 110 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	111	61	#line 111 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	112	61		subcall andar, __andar_return
+2	111	63	#line 111 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	112	63	#line 112 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	113	63		jmp __ASM_Label_499
+2	112	65	#line 112 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	113	65	#line 113 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	114	65	#line 114 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	115	65		subcall rejeitar, __rejeitar_return
+2	114	67	#line 114 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	115	67	#line 115 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	116	67		subcall andar, __andar_return
+2	115	69	#line 115 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	116	69	#line 116 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	117	69		jmp __ASM_Label_499
+2	116	71	#line 116 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	117	71	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	117	71	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	118	71		set __viraDir_7qG2_angulo_7qG2_000, 180
+2	117	74	#line 117 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	118	74	#line 118 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	119	74		subcall viraDir, __viraDir_return
+2	118	76	#line 118 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	119	76	#line 119 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	120	76		subcall AbrirPorta, __AbrirPorta_return
+2	119	78	#line 119 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	120	78	#line 120 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	121	78		subcall andar, __andar_return
+2	120	80	#line 120 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	120	80	#line 120 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	121	80		set __Wait_7qG2_ms_7qG2_000_inline_executivo, 4000
+2	120	83	#line 120 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	8551	83	#line 8551 "NXCDefs.h"
+2	8552	83		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_executivo
+2	8551	86	#line 8551 "NXCDefs.h"
+2	121	86	#line 121 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	122	86	#line 122 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	123	86		subcall parar, __parar_return
+2	122	88	#line 122 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	122	88	#line 122 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	123	88		set __D0executivo, 1
+2	122	91	#line 122 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	123	91		tst 5, __D0executivo, __D0executivo
+2	122	94	#line 122 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	123	94		brtst 4, __ASM_Label_509, __D0executivo
+2	123	97	#line 123 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	124	97		jmp __ASM_Label_508
+2	123	99	#line 123 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	124	99	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	125	99		jmp __ASM_Label_499
+2	124	101	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	125	101	#line 125 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	126	101	#line 126 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	127	101		subcall RecebeUS, __RecebeUS_return
+2	126	103	#line 126 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	127	103		mov __executivo_7qG2_us_frente_temp_7qG2_000, __D0RecebeUS
+2	126	105	#line 126 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	126	105	#line 126 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	127	105	#line 127 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	128	105		mov __D0executivo, __executivo_7qG2_us_frente_temp_7qG2_000
+2	127	107	#line 127 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	128	107		tst 5, __D0executivo, __D0executivo
+2	127	110	#line 127 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	128	110		brtst 4, __ASM_Label_517, __D0executivo
+2	128	113	#line 128 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	129	113		mov __executivo_7qG2_us_frente_7qG2_000, __executivo_7qG2_us_frente_temp_7qG2_000
+2	128	115	#line 128 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	128	115	#line 128 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	129	115	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	130	115	#line 130 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	132	115	#line 132 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	133	115		jmp __ASM_Label_493
+2	132	117	#line 132 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	132	117	#line 132 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+2	133	117		subret __executivo_return
+3	135	0	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+3	136	0		subcall desligaBlue, __desligaBlue_return
+3	135	2	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+3	136	2	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+3	137	2		subcall inicializaSensores, __inicializaSensores_return
+3	136	4	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+3	137	4	#line 137 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+3	138	4		subcall FecharPorta, __FecharPorta_return
+3	137	6	#line 137 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+3	138	6	#line 138 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+3	139	6		subcall iniciaBlue, __iniciaBlue_return
+3	138	8	#line 138 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+3	140	8	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+3	141	8		subret __init_return
+4	144	0	#line 144 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	145	0		strcat __strbufdesligaBlue, __constStr0009
+4	144	4	#line 144 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	145	4		mov __desligaBlue_7qG2_DADOS_BT_7qG2_000.Name, __strbufdesligaBlue
+4	144	6	#line 144 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	145	6	#line 145 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	146	6		set __desligaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot, 1
+4	145	9	#line 145 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	145	9	#line 145 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	146	9	#line 146 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	147	9		set __desligaBlue_7qG2_DADOS_BT_7qG2_000.Action, 0
+4	146	12	#line 146 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	146	12	#line 146 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	148	12	#line 148 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	149	12	#pragma macro 4
+4	149	12	#line 149 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	149	12		syscall 36, __desligaBlue_7qG2_DADOS_BT_7qG2_000
+4	147	15	#line 147 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	147	15	#line 147 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	147	15	#line 147 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	147	15	#line 147 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	149	15	#line 149 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	148	15	#line 148 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	149	15	#line 149 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	150	15		set __Wait_7qG2_ms_7qG2_000_inline_desligaBlue, 30
+4	149	18	#line 149 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	8551	18	#line 8551 "NXCDefs.h"
+4	8552	18		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_desligaBlue
+4	8551	21	#line 8551 "NXCDefs.h"
+4	151	21	#line 151 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	151	21	#line 151 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	152	21	#pragma macro 5
+4	152	21		mov __CBTCSArgs.Connection, __constVal1
+4	152	23		syscall 28, __CBTCSArgs
+4	152	26		mov __signed_stack_001desligaBlue, __CBTCSArgs.Result
+4	4866	28	#line 4866 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	151	28	#line 151 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	151	28	#line 151 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	152	28		set __D0desligaBlue, 0
+4	151	31	#line 151 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	152	31		cmp 4, __D0desligaBlue, __signed_stack_001desligaBlue, __D0desligaBlue
+4	152	35	#line 152 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	153	35		brtst 4, __ASM_Label_525, __D0desligaBlue
+4	152	38	#line 152 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	153	38		jmp __ASM_Label_524
+4	152	40	#line 152 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	152	40	#line 152 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	152	40	#line 152 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	153	40		set __signed_stack_001desligaBlue, 0
+4	152	43	#line 152 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	152	43	#line 152 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	153	43		set __signed_stack_002desligaBlue, 56
+4	152	46	#line 152 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	152	46	#line 152 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	153	46		strcat __strbufdesligaBlue, __constStr0010
+4	153	50	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	154	50		acquire __TextOutMutex
+4	153	51	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	154	51		mov __TextOutArgs.Location.X, __signed_stack_001desligaBlue
+4	153	53	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	154	53		mov __TextOutArgs.Location.Y, __signed_stack_002desligaBlue
+4	153	55	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	154	55		set __TextOutArgs.Options, 0
+4	153	58	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	154	58		mov __TextOutArgs.Text, __strbufdesligaBlue
+4	153	60	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	154	60		syscall 13, __TextOutArgs
+4	153	63	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	154	63		mov __D0desligaBlue, __TextOutArgs.Result
+4	153	65	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	154	65		release __TextOutMutex
+4	153	66	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	155	66	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+4	156	66		subret __desligaBlue_return
+5	157	0	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+5	158	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 0
+5	157	3	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+5	158	3	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+5	159	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+5	4342	5	#line 4342 "NXCDefs.h"
+5	4343	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4342	7	#line 4342 "NXCDefs.h"
+5	4342	7	#line 4342 "NXCDefs.h"
+5	4343	7		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+5	4342	9	#line 4342 "NXCDefs.h"
+5	4343	9		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+5	4342	12	#line 4342 "NXCDefs.h"
+5	4343	12		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+5	4342	15	#line 4342 "NXCDefs.h"
+5	4343	15		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+5	4342	18	#line 4342 "NXCDefs.h"
+5	4342	18	#line 4342 "NXCDefs.h"
+5	4343	18		jmp __004__ASM_Label_37
+5	4342	20	#line 4342 "NXCDefs.h"
+5	4343	20		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+5	4342	23	#line 4342 "NXCDefs.h"
+5	4342	23	#line 4342 "NXCDefs.h"
+5	4343	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+5	4247	25	#line 4247 "NXCDefs.h"
+5	4248	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+5	4247	29	#line 4247 "NXCDefs.h"
+5	4343	29	#line 4343 "NXCDefs.h"
+5	4343	29	#line 4343 "NXCDefs.h"
+5	4344	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4343	31	#line 4343 "NXCDefs.h"
+5	4343	31	#line 4343 "NXCDefs.h"
+5	4344	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+5	4343	34	#line 4343 "NXCDefs.h"
+5	4260	34	#line 4260 "NXCDefs.h"
+5	4261	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+5	4260	38	#line 4260 "NXCDefs.h"
+5	4344	38	#line 4344 "NXCDefs.h"
+5	4344	38	#line 4344 "NXCDefs.h"
+5	4345	38		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4344	40	#line 4344 "NXCDefs.h"
+5	4278	40	#line 4278 "NXCDefs.h"
+5	4279	40	#pragma macro 4
+5	4279	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4279	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+5	5007	44	#line 5007 "NXCDefs.h"
+5	4278	44	#line 4278 "NXCDefs.h"
+5	4345	44	#line 4345 "NXCDefs.h"
+5	158	44	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+5	158	44	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+5	159	44		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 1
+5	158	47	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+5	159	47	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+5	160	47		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+5	4342	49	#line 4342 "NXCDefs.h"
+5	4343	49		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4342	51	#line 4342 "NXCDefs.h"
+5	4342	51	#line 4342 "NXCDefs.h"
+5	4343	51		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+5	4342	53	#line 4342 "NXCDefs.h"
+5	4343	53		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+5	4342	56	#line 4342 "NXCDefs.h"
+5	4343	56		brtst 4, __005__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+5	4342	59	#line 4342 "NXCDefs.h"
+5	4343	59		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+5	4342	62	#line 4342 "NXCDefs.h"
+5	4342	62	#line 4342 "NXCDefs.h"
+5	4343	62		jmp __005__ASM_Label_37
+5	4342	64	#line 4342 "NXCDefs.h"
+5	4343	64		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+5	4342	67	#line 4342 "NXCDefs.h"
+5	4342	67	#line 4342 "NXCDefs.h"
+5	4343	67		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+5	4247	69	#line 4247 "NXCDefs.h"
+5	4248	69		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+5	4247	73	#line 4247 "NXCDefs.h"
+5	4343	73	#line 4343 "NXCDefs.h"
+5	4343	73	#line 4343 "NXCDefs.h"
+5	4344	73		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4343	75	#line 4343 "NXCDefs.h"
+5	4343	75	#line 4343 "NXCDefs.h"
+5	4344	75		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+5	4343	78	#line 4343 "NXCDefs.h"
+5	4260	78	#line 4260 "NXCDefs.h"
+5	4261	78		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+5	4260	82	#line 4260 "NXCDefs.h"
+5	4344	82	#line 4344 "NXCDefs.h"
+5	4344	82	#line 4344 "NXCDefs.h"
+5	4345	82		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4344	84	#line 4344 "NXCDefs.h"
+5	4278	84	#line 4278 "NXCDefs.h"
+5	4279	84	#pragma macro 4
+5	4279	84		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4279	86		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+5	5070	88	#line 5070 "NXCDefs.h"
+5	4278	88	#line 4278 "NXCDefs.h"
+5	4345	88	#line 4345 "NXCDefs.h"
+5	159	88	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+5	159	88	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+5	160	88		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 2
+5	159	91	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+5	160	91	#line 160 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+5	161	91		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+5	4342	93	#line 4342 "NXCDefs.h"
+5	4343	93		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4342	95	#line 4342 "NXCDefs.h"
+5	4342	95	#line 4342 "NXCDefs.h"
+5	4343	95		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+5	4342	97	#line 4342 "NXCDefs.h"
+5	4343	97		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+5	4342	100	#line 4342 "NXCDefs.h"
+5	4343	100		brtst 4, __006__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+5	4342	103	#line 4342 "NXCDefs.h"
+5	4343	103		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+5	4342	106	#line 4342 "NXCDefs.h"
+5	4342	106	#line 4342 "NXCDefs.h"
+5	4343	106		jmp __006__ASM_Label_37
+5	4342	108	#line 4342 "NXCDefs.h"
+5	4343	108		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+5	4342	111	#line 4342 "NXCDefs.h"
+5	4342	111	#line 4342 "NXCDefs.h"
+5	4343	111		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+5	4247	113	#line 4247 "NXCDefs.h"
+5	4248	113		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+5	4247	117	#line 4247 "NXCDefs.h"
+5	4343	117	#line 4343 "NXCDefs.h"
+5	4343	117	#line 4343 "NXCDefs.h"
+5	4344	117		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4343	119	#line 4343 "NXCDefs.h"
+5	4343	119	#line 4343 "NXCDefs.h"
+5	4344	119		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+5	4343	122	#line 4343 "NXCDefs.h"
+5	4260	122	#line 4260 "NXCDefs.h"
+5	4261	122		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+5	4260	126	#line 4260 "NXCDefs.h"
+5	4344	126	#line 4344 "NXCDefs.h"
+5	4344	126	#line 4344 "NXCDefs.h"
+5	4345	126		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4344	128	#line 4344 "NXCDefs.h"
+5	4278	128	#line 4278 "NXCDefs.h"
+5	4279	128	#pragma macro 4
+5	4279	128		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4279	130		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+5	5133	132	#line 5133 "NXCDefs.h"
+5	4278	132	#line 4278 "NXCDefs.h"
+5	4345	132	#line 4345 "NXCDefs.h"
+5	160	132	#line 160 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+5	160	132	#line 160 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+5	161	132		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 3
+5	160	135	#line 160 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+5	161	135	#line 161 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+5	162	135		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+5	4342	137	#line 4342 "NXCDefs.h"
+5	4343	137		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4342	139	#line 4342 "NXCDefs.h"
+5	4342	139	#line 4342 "NXCDefs.h"
+5	4343	139		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+5	4342	141	#line 4342 "NXCDefs.h"
+5	4343	141		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+5	4342	144	#line 4342 "NXCDefs.h"
+5	4343	144		brtst 4, __007__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+5	4342	147	#line 4342 "NXCDefs.h"
+5	4343	147		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+5	4342	150	#line 4342 "NXCDefs.h"
+5	4342	150	#line 4342 "NXCDefs.h"
+5	4343	150		jmp __007__ASM_Label_37
+5	4342	152	#line 4342 "NXCDefs.h"
+5	4343	152		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+5	4342	155	#line 4342 "NXCDefs.h"
+5	4342	155	#line 4342 "NXCDefs.h"
+5	4343	155		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+5	4247	157	#line 4247 "NXCDefs.h"
+5	4248	157		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+5	4247	161	#line 4247 "NXCDefs.h"
+5	4343	161	#line 4343 "NXCDefs.h"
+5	4343	161	#line 4343 "NXCDefs.h"
+5	4344	161		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4343	163	#line 4343 "NXCDefs.h"
+5	4343	163	#line 4343 "NXCDefs.h"
+5	4344	163		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+5	4343	166	#line 4343 "NXCDefs.h"
+5	4260	166	#line 4260 "NXCDefs.h"
+5	4261	166		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+5	4260	170	#line 4260 "NXCDefs.h"
+5	4344	170	#line 4344 "NXCDefs.h"
+5	4344	170	#line 4344 "NXCDefs.h"
+5	4345	170		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4344	172	#line 4344 "NXCDefs.h"
+5	4278	172	#line 4278 "NXCDefs.h"
+5	4279	172	#pragma macro 4
+5	4279	172		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4279	174		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+5	5196	176	#line 5196 "NXCDefs.h"
+5	4278	176	#line 4278 "NXCDefs.h"
+5	4345	176	#line 4345 "NXCDefs.h"
+5	161	176	#line 161 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+5	163	176	#line 163 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+5	164	176		subret __inicializaSensores_return
+6	167	0	#line 167 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	168	0		strcat __strbufiniciaBlue, __constStr0009
+6	167	4	#line 167 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	168	4		mov __iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name, __strbufiniciaBlue
+6	167	6	#line 167 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	168	6	#line 168 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	169	6		set __iniciaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot, 1
+6	168	9	#line 168 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	168	9	#line 168 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	170	9	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	171	9		set __iniciaBlue_7qG2_DADOS_BT_7qG2_000.Action, 1
+6	170	12	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	170	12	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	171	12	#line 171 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	172	12	#pragma macro 4
+6	172	12	#line 172 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	172	12		syscall 36, __iniciaBlue_7qG2_DADOS_BT_7qG2_000
+6	170	15	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	170	15	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	170	15	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	170	15	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	171	15	#line 171 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	171	15	#line 171 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	171	15	#line 171 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	172	15		set __Wait_7qG2_ms_7qG2_000_inline_iniciaBlue, 4000
+6	171	18	#line 171 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
 6	8551	18	#line 8551 "NXCDefs.h"
-6	8552	18		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_desligaBlue
+6	8552	18		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_iniciaBlue
 6	8551	21	#line 8551 "NXCDefs.h"
-6	138	21	#line 138 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	138	21	#line 138 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	139	21	#pragma macro 5
-6	139	21		mov __CBTCSArgs.Connection, __constVal1
-6	139	23		syscall 28, __CBTCSArgs
-6	139	26		mov __signed_stack_001desligaBlue, __CBTCSArgs.Result
-6	4582	28	#line 4582 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	138	28	#line 138 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	138	28	#line 138 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	139	28		set __D0desligaBlue, 0
-6	138	31	#line 138 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	139	31		cmp 4, __D0desligaBlue, __signed_stack_001desligaBlue, __D0desligaBlue
-6	139	35	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	140	35		brtst 4, __ASM_Label_519, __D0desligaBlue
-6	139	38	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	140	38		jmp __ASM_Label_518
-6	139	40	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	139	40	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	139	40	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	140	40		set __signed_stack_001desligaBlue, 0
-6	139	43	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	139	43	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	140	43		set __signed_stack_002desligaBlue, 56
-6	139	46	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	139	46	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	140	46		strcat __strbufdesligaBlue, __constStr0010
-6	140	50	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	141	50		acquire __TextOutMutex
-6	140	51	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	141	51		mov __TextOutArgs.Location.X, __signed_stack_001desligaBlue
-6	140	53	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	141	53		mov __TextOutArgs.Location.Y, __signed_stack_002desligaBlue
-6	140	55	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	141	55		set __TextOutArgs.Options, 0
-6	140	58	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	141	58		mov __TextOutArgs.Text, __strbufdesligaBlue
-6	140	60	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	141	60		syscall 13, __TextOutArgs
-6	140	63	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	141	63		mov __D0desligaBlue, __TextOutArgs.Result
-6	140	65	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	141	65		release __TextOutMutex
-6	140	66	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	142	66	#line 142 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-6	143	66		subret __desligaBlue_return
-7	144	0	#line 144 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-7	145	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 0
-7	144	3	#line 144 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-7	145	3	#line 145 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-7	146	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
-7	4342	5	#line 4342 "NXCDefs.h"
-7	4343	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-7	4342	7	#line 4342 "NXCDefs.h"
-7	4342	7	#line 4342 "NXCDefs.h"
-7	4343	7		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
-7	4342	9	#line 4342 "NXCDefs.h"
-7	4343	9		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-7	4342	12	#line 4342 "NXCDefs.h"
-7	4343	12		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
-7	4342	15	#line 4342 "NXCDefs.h"
-7	4343	15		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
-7	4342	18	#line 4342 "NXCDefs.h"
-7	4342	18	#line 4342 "NXCDefs.h"
-7	4343	18		jmp __004__ASM_Label_37
-7	4342	20	#line 4342 "NXCDefs.h"
-7	4343	20		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
-7	4342	23	#line 4342 "NXCDefs.h"
-7	4342	23	#line 4342 "NXCDefs.h"
-7	4343	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-7	4247	25	#line 4247 "NXCDefs.h"
-7	4248	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-7	4247	29	#line 4247 "NXCDefs.h"
-7	4343	29	#line 4343 "NXCDefs.h"
-7	4343	29	#line 4343 "NXCDefs.h"
-7	4344	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-7	4343	31	#line 4343 "NXCDefs.h"
-7	4343	31	#line 4343 "NXCDefs.h"
-7	4344	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-7	4343	34	#line 4343 "NXCDefs.h"
-7	4260	34	#line 4260 "NXCDefs.h"
-7	4261	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
-7	4260	38	#line 4260 "NXCDefs.h"
-7	4344	38	#line 4344 "NXCDefs.h"
-7	4344	38	#line 4344 "NXCDefs.h"
-7	4345	38		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-7	4344	40	#line 4344 "NXCDefs.h"
-7	4278	40	#line 4278 "NXCDefs.h"
-7	4279	40	#pragma macro 4
-7	4279	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-7	4279	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-7	4723	44	#line 4723 "NXCDefs.h"
-7	4278	44	#line 4278 "NXCDefs.h"
-7	4345	44	#line 4345 "NXCDefs.h"
-7	145	44	#line 145 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-7	145	44	#line 145 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-7	146	44		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 1
-7	145	47	#line 145 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-7	146	47	#line 146 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-7	147	47		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
-7	4342	49	#line 4342 "NXCDefs.h"
-7	4343	49		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-7	4342	51	#line 4342 "NXCDefs.h"
-7	4342	51	#line 4342 "NXCDefs.h"
-7	4343	51		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
-7	4342	53	#line 4342 "NXCDefs.h"
-7	4343	53		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-7	4342	56	#line 4342 "NXCDefs.h"
-7	4343	56		brtst 4, __005__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
-7	4342	59	#line 4342 "NXCDefs.h"
-7	4343	59		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
-7	4342	62	#line 4342 "NXCDefs.h"
-7	4342	62	#line 4342 "NXCDefs.h"
-7	4343	62		jmp __005__ASM_Label_37
-7	4342	64	#line 4342 "NXCDefs.h"
-7	4343	64		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
-7	4342	67	#line 4342 "NXCDefs.h"
-7	4342	67	#line 4342 "NXCDefs.h"
-7	4343	67		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-7	4247	69	#line 4247 "NXCDefs.h"
-7	4248	69		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-7	4247	73	#line 4247 "NXCDefs.h"
-7	4343	73	#line 4343 "NXCDefs.h"
-7	4343	73	#line 4343 "NXCDefs.h"
-7	4344	73		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-7	4343	75	#line 4343 "NXCDefs.h"
-7	4343	75	#line 4343 "NXCDefs.h"
-7	4344	75		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-7	4343	78	#line 4343 "NXCDefs.h"
-7	4260	78	#line 4260 "NXCDefs.h"
-7	4261	78		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
-7	4260	82	#line 4260 "NXCDefs.h"
-7	4344	82	#line 4344 "NXCDefs.h"
-7	4344	82	#line 4344 "NXCDefs.h"
-7	4345	82		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-7	4344	84	#line 4344 "NXCDefs.h"
-7	4278	84	#line 4278 "NXCDefs.h"
-7	4279	84	#pragma macro 4
-7	4279	84		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-7	4279	86		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-7	4786	88	#line 4786 "NXCDefs.h"
-7	4278	88	#line 4278 "NXCDefs.h"
-7	4345	88	#line 4345 "NXCDefs.h"
-7	146	88	#line 146 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-7	146	88	#line 146 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-7	147	88		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 2
-7	146	91	#line 146 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-7	147	91	#line 147 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-7	148	91		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
-7	4342	93	#line 4342 "NXCDefs.h"
-7	4343	93		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-7	4342	95	#line 4342 "NXCDefs.h"
-7	4342	95	#line 4342 "NXCDefs.h"
-7	4343	95		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
-7	4342	97	#line 4342 "NXCDefs.h"
-7	4343	97		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-7	4342	100	#line 4342 "NXCDefs.h"
-7	4343	100		brtst 4, __006__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
-7	4342	103	#line 4342 "NXCDefs.h"
-7	4343	103		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
-7	4342	106	#line 4342 "NXCDefs.h"
-7	4342	106	#line 4342 "NXCDefs.h"
-7	4343	106		jmp __006__ASM_Label_37
-7	4342	108	#line 4342 "NXCDefs.h"
-7	4343	108		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
-7	4342	111	#line 4342 "NXCDefs.h"
-7	4342	111	#line 4342 "NXCDefs.h"
-7	4343	111		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-7	4247	113	#line 4247 "NXCDefs.h"
-7	4248	113		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-7	4247	117	#line 4247 "NXCDefs.h"
-7	4343	117	#line 4343 "NXCDefs.h"
-7	4343	117	#line 4343 "NXCDefs.h"
-7	4344	117		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-7	4343	119	#line 4343 "NXCDefs.h"
-7	4343	119	#line 4343 "NXCDefs.h"
-7	4344	119		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-7	4343	122	#line 4343 "NXCDefs.h"
-7	4260	122	#line 4260 "NXCDefs.h"
-7	4261	122		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
-7	4260	126	#line 4260 "NXCDefs.h"
-7	4344	126	#line 4344 "NXCDefs.h"
-7	4344	126	#line 4344 "NXCDefs.h"
-7	4345	126		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-7	4344	128	#line 4344 "NXCDefs.h"
-7	4278	128	#line 4278 "NXCDefs.h"
-7	4279	128	#pragma macro 4
-7	4279	128		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-7	4279	130		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-7	4849	132	#line 4849 "NXCDefs.h"
-7	4278	132	#line 4278 "NXCDefs.h"
-7	4345	132	#line 4345 "NXCDefs.h"
-7	147	132	#line 147 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-7	147	132	#line 147 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-7	148	132		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 3
-7	147	135	#line 147 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-7	148	135	#line 148 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-7	149	135		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
-7	4342	137	#line 4342 "NXCDefs.h"
-7	4343	137		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-7	4342	139	#line 4342 "NXCDefs.h"
-7	4342	139	#line 4342 "NXCDefs.h"
-7	4343	139		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
-7	4342	141	#line 4342 "NXCDefs.h"
-7	4343	141		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-7	4342	144	#line 4342 "NXCDefs.h"
-7	4343	144		brtst 4, __007__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
-7	4342	147	#line 4342 "NXCDefs.h"
-7	4343	147		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
-7	4342	150	#line 4342 "NXCDefs.h"
-7	4342	150	#line 4342 "NXCDefs.h"
-7	4343	150		jmp __007__ASM_Label_37
-7	4342	152	#line 4342 "NXCDefs.h"
-7	4343	152		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
-7	4342	155	#line 4342 "NXCDefs.h"
-7	4342	155	#line 4342 "NXCDefs.h"
-7	4343	155		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-7	4247	157	#line 4247 "NXCDefs.h"
-7	4248	157		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-7	4247	161	#line 4247 "NXCDefs.h"
-7	4343	161	#line 4343 "NXCDefs.h"
-7	4343	161	#line 4343 "NXCDefs.h"
-7	4344	161		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-7	4343	163	#line 4343 "NXCDefs.h"
-7	4343	163	#line 4343 "NXCDefs.h"
-7	4344	163		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-7	4343	166	#line 4343 "NXCDefs.h"
-7	4260	166	#line 4260 "NXCDefs.h"
-7	4261	166		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
-7	4260	170	#line 4260 "NXCDefs.h"
-7	4344	170	#line 4344 "NXCDefs.h"
-7	4344	170	#line 4344 "NXCDefs.h"
-7	4345	170		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-7	4344	172	#line 4344 "NXCDefs.h"
-7	4278	172	#line 4278 "NXCDefs.h"
-7	4279	172	#pragma macro 4
-7	4279	172		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-7	4279	174		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-7	4912	176	#line 4912 "NXCDefs.h"
-7	4278	176	#line 4278 "NXCDefs.h"
-7	4345	176	#line 4345 "NXCDefs.h"
-7	148	176	#line 148 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-7	150	176	#line 150 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-7	151	176		subret __inicializaSensores_return
-8	154	0	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	155	0		strcat __strbufiniciaBlue, __constStr0009
-8	154	4	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	155	4		mov __iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name, __strbufiniciaBlue
-8	154	6	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	155	6	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	156	6		set __iniciaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot, 1
-8	155	9	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	155	9	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	157	9	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	158	9		set __iniciaBlue_7qG2_DADOS_BT_7qG2_000.Action, 1
-8	157	12	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	157	12	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	158	12	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	159	12	#pragma macro 4
-8	159	12	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	159	12		syscall 36, __iniciaBlue_7qG2_DADOS_BT_7qG2_000
-8	157	15	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	157	15	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	157	15	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	157	15	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	158	15	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	158	15	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	158	15	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	159	15		set __Wait_7qG2_ms_7qG2_000_inline_iniciaBlue, 4000
-8	158	18	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	8551	18	#line 8551 "NXCDefs.h"
-8	8552	18		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_iniciaBlue
-8	8551	21	#line 8551 "NXCDefs.h"
-8	159	21	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	159	21	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	160	21		set __signed_stack_001iniciaBlue, 0
-8	159	24	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	159	24	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	160	24		set __signed_stack_002iniciaBlue, 48
-8	159	27	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	159	27	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	160	27		strcat __strbufiniciaBlue, __constStr0011
-8	160	31	#line 160 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	161	31		acquire __TextOutMutex
-8	160	32	#line 160 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	161	32		mov __TextOutArgs.Location.X, __signed_stack_001iniciaBlue
-8	160	34	#line 160 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	161	34		mov __TextOutArgs.Location.Y, __signed_stack_002iniciaBlue
-8	160	36	#line 160 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	161	36		set __TextOutArgs.Options, 0
-8	160	39	#line 160 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	161	39		mov __TextOutArgs.Text, __strbufiniciaBlue
-8	160	41	#line 160 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	161	41		syscall 13, __TextOutArgs
-8	160	44	#line 160 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	160	44	#line 160 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	161	44		release __TextOutMutex
-8	160	45	#line 160 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	162	45	#line 162 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-8	163	45		subret __iniciaBlue_return
-9	164	0	#line 164 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-9	165	0		set __D0andar, 90
-9	165	3	#line 165 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-9	166	3	#pragma macro 7
-9	166	3		setout __constVal1, 2, __D0andar, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-9	5002	26	#line 5002 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-9	165	26	#line 165 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-9	165	26	#line 165 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-9	166	26		set __D0andar, 90
-9	166	29	#line 166 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-9	167	29	#pragma macro 7
-9	167	29		setout __constVal0, 2, __D0andar, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-9	5007	52	#line 5007 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-9	166	52	#line 166 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-9	168	52	#line 168 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-9	169	52		subret __andar_return
-10	171	0	#line 171 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-10	172	0	#pragma macro 7
-10	172	0		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-10	5015	23	#line 5015 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-10	171	23	#line 171 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-10	172	23	#line 172 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-10	173	23	#pragma macro 7
-10	173	23		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-10	5018	46	#line 5018 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-10	172	46	#line 172 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-10	174	46	#line 174 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-10	175	46		subret __parar_return
-11	178	0	#line 178 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-11	179	0		subcall parar, __parar_return
-11	178	2	#line 178 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-11	179	2	#line 179 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-11	180	2		subcall rejeitarDireita, __rejeitarDireita_return
-11	179	4	#line 179 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-11	180	4	#line 180 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-11	181	4		subcall MandaGirei, __MandaGirei_return
-11	180	6	#line 180 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-11	181	6	#line 181 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-11	182	6		subcall voltarejeitarDireita, __voltarejeitarDireita_return
-11	181	8	#line 181 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-11	182	8	#line 182 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-11	183	8		subcall MandaDesGirei, __MandaDesGirei_return
-11	182	10	#line 182 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-11	184	10	#line 184 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-11	185	10		subret __rejeitar_return
-12	188	0	#line 188 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-12	189	0		set __D0rejeitarDireita, 90
-12	190	3	#line 190 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-12	191	3	#pragma macro 7
-12	191	3		setout __constVal0, 2, __D0rejeitarDireita, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-12	5052	26	#line 5052 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-12	190	26	#line 190 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-12	192	26	#line 192 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-12	193	26		getout __rejeitarDireita_7qG2_tc_7qG2_000, __constVal0, 4
-12	192	30	#line 192 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-12	192	30	#line 192 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-12	192	30	#line 192 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-12	193	30		mov __signed_stack_001rejeitarDireita, __rejeitarDireita_7qG2_tc_7qG2_000
-12	192	32	#line 192 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-12	192	32	#line 192 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-12	193	32		set __D0rejeitarDireita, 1700
-12	192	35	#line 192 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-12	193	35		cmp 0, __D0rejeitarDireita, __signed_stack_001rejeitarDireita, __D0rejeitarDireita
-12	194	39	#line 194 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-12	195	39		brtst 4, __ASM_Label_553, __D0rejeitarDireita
-12	194	42	#line 194 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-12	195	42		jmp __ASM_Label_552
-12	194	44	#line 194 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-12	194	44	#line 194 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-12	195	44	#line 195 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-12	196	44		subcall parar, __parar_return
-12	195	46	#line 195 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-12	197	46	#line 197 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-12	198	46		subret __rejeitarDireita_return
-13	201	0	#line 201 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-13	202	0		mov __D0voltarejeitarDireita, __constValNeg90
-13	203	2	#line 203 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-13	204	2	#pragma macro 7
-13	204	2		setout __constVal0, 2, __D0voltarejeitarDireita, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-13	5096	25	#line 5096 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-13	203	25	#line 203 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-13	205	25	#line 205 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-13	206	25		getout __voltarejeitarDireita_7qG2_tc_7qG2_000, __constVal0, 4
-13	205	29	#line 205 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-13	205	29	#line 205 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-13	205	29	#line 205 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-13	206	29		mov __signed_stack_001voltarejeitarDireita, __voltarejeitarDireita_7qG2_tc_7qG2_000
-13	205	31	#line 205 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-13	205	31	#line 205 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-13	206	31		mov __signed_stack_002voltarejeitarDireita, __constValNeg1700
-13	205	33	#line 205 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-13	205	33	#line 205 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-13	206	33		set __D0voltarejeitarDireita, 165
-13	205	36	#line 205 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-13	206	36		sub __D0voltarejeitarDireita, __signed_stack_002voltarejeitarDireita, __D0voltarejeitarDireita
-13	205	40	#line 205 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-13	206	40		cmp 1, __D0voltarejeitarDireita, __signed_stack_001voltarejeitarDireita, __D0voltarejeitarDireita
-13	207	44	#line 207 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-13	208	44		brtst 4, __ASM_Label_561, __D0voltarejeitarDireita
-13	207	47	#line 207 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-13	208	47		jmp __ASM_Label_560
-13	207	49	#line 207 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-13	207	49	#line 207 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-13	208	49	#line 208 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-13	209	49		subcall parar, __parar_return
-13	208	51	#line 208 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-13	210	51	#line 210 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-13	211	51		subret __voltarejeitarDireita_return
-14	212	0	#line 212 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-14	213	0	#pragma macro 14
-14	213	0		acquire __RemoteMutex
-14	213	1		mov __SRSTmpBuf, __DCMessageWritePacket
-14	213	3		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
-14	213	8		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-14	213	13		mov __SRSTmpLongVal, __constVal3
-14	213	15		flatten __SRSFlattenBuf, __SRSTmpLongVal
-14	213	18		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-14	213	23		acquire __CBTWMutex
-14	213	24		mov __CBTWArgs.Connection, __constVal1
-14	213	26		mov __CBTWArgs.Buffer, __SRSSendBuf
-14	213	28		syscall 29, __CBTWArgs
-14	213	31		release __CBTWMutex
-14	213	32		release __RemoteMutex
-14	5142	33	#line 5142 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-14	212	33	#line 212 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-14	212	33	#line 212 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-14	215	33	#line 215 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-14	216	33		subret __MandaGirei_return
-15	217	0	#line 217 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-15	218	0	#pragma macro 14
-15	218	0		acquire __RemoteMutex
-15	218	1		mov __SRSTmpBuf, __DCMessageWritePacket
-15	218	3		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
-15	218	8		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-15	218	13		mov __SRSTmpLongVal, __constVal6
-15	218	15		flatten __SRSFlattenBuf, __SRSTmpLongVal
-15	218	18		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-15	218	23		acquire __CBTWMutex
-15	218	24		mov __CBTWArgs.Connection, __constVal1
-15	218	26		mov __CBTWArgs.Buffer, __SRSSendBuf
-15	218	28		syscall 29, __CBTWArgs
-15	218	31		release __CBTWMutex
-15	218	32		release __RemoteMutex
-15	5151	33	#line 5151 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-15	217	33	#line 217 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-15	217	33	#line 217 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-15	221	33	#line 221 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-15	222	33		subret __MandaDesGirei_return
-16	241	0	#line 241 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	242	0		mov __D0FecharPorta, __constValNeg70
-16	242	2	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	243	2	#pragma macro 7
-16	243	2		setout __constVal2, 2, __D0FecharPorta, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-16	5246	25	#line 5246 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	242	25	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	243	25	#line 243 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	244	25		getout __FecharPorta_7qG2_tc_7qG2_000, __constVal2, 4
-16	243	29	#line 243 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	243	29	#line 243 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	245	29	#line 245 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	246	29		set __Wait_7qG2_ms_7qG2_000_inline_FecharPorta, 200
-16	245	32	#line 245 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	8551	32	#line 8551 "NXCDefs.h"
-16	8552	32		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_FecharPorta
-16	8551	35	#line 8551 "NXCDefs.h"
-16	246	35	#line 246 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	247	35	#line 247 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	248	35		mov __FecharPorta_7qG2_old_tc_7qG2_000, __FecharPorta_7qG2_tc_7qG2_000
-16	247	37	#line 247 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	247	37	#line 247 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	248	37	#line 248 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	249	37		getout __FecharPorta_7qG2_tc_7qG2_000, __constVal2, 4
-16	248	41	#line 248 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	248	41	#line 248 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	248	41	#line 248 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	249	41		mov __signed_stack_001FecharPorta, __FecharPorta_7qG2_tc_7qG2_000
-16	248	43	#line 248 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	248	43	#line 248 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	249	43		mov __D0FecharPorta, __FecharPorta_7qG2_old_tc_7qG2_000
-16	248	45	#line 248 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	249	45		cmp 5, __D0FecharPorta, __signed_stack_001FecharPorta, __D0FecharPorta
-16	250	49	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	251	49		brtst 4, __ASM_Label_589, __D0FecharPorta
-16	250	52	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	251	52		jmp __ASM_Label_588
-16	250	54	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	250	54	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	250	54	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	251	54		set __D0FecharPorta, 0
-16	251	57	#line 251 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	252	57	#pragma macro 7
-16	252	57		setout __constVal2, 2, __D0FecharPorta, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-16	5304	80	#line 5304 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	251	80	#line 251 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	253	80	#line 253 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-16	254	80		subret __FecharPorta_return
-17	257	0	#line 257 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-17	258	0	#pragma macro 9
-17	258	0		acquire __MRMutex
-17	258	1		mov __MRArgs.QueueID, __constVal3
-17	258	3		mov __MRArgs.Remove, __constVal1
-17	258	5		set __RRNTmpVal, 0
-17	258	8		syscall 27, __MRArgs
-17	258	11		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-17	258	16		mov __RecebeUS_7qG2_aux_7qG2_000, __RRNTmpVal
-17	258	18		mov __D0RecebeUS, __MRArgs.Result
-17	258	20		release __MRMutex
-17	5316	21	#line 5316 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-17	257	21	#line 257 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-17	257	21	#line 257 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-17	260	21	#line 260 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-17	261	21		mov __D0RecebeUS, __RecebeUS_7qG2_aux_7qG2_000
-17	260	23	#line 260 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-17	261	23		subret __RecebeUS_return
-17	260	25	#line 260 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-17	262	25	#line 262 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-17	263	25		subret __RecebeUS_return
-18	263	0	#line 263 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
-18	264	0		subret ____initialize_global_data_return
+6	172	21	#line 172 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	172	21	#line 172 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	173	21		set __signed_stack_001iniciaBlue, 0
+6	172	24	#line 172 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	172	24	#line 172 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	173	24		set __signed_stack_002iniciaBlue, 48
+6	172	27	#line 172 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	172	27	#line 172 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	173	27		strcat __strbufiniciaBlue, __constStr0011
+6	173	31	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	174	31		acquire __TextOutMutex
+6	173	32	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	174	32		mov __TextOutArgs.Location.X, __signed_stack_001iniciaBlue
+6	173	34	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	174	34		mov __TextOutArgs.Location.Y, __signed_stack_002iniciaBlue
+6	173	36	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	174	36		set __TextOutArgs.Options, 0
+6	173	39	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	174	39		mov __TextOutArgs.Text, __strbufiniciaBlue
+6	173	41	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	174	41		syscall 13, __TextOutArgs
+6	173	44	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	173	44	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	174	44		release __TextOutMutex
+6	173	45	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	175	45	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+6	176	45		subret __iniciaBlue_return
+7	179	0	#line 179 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+7	180	0		set __signed_stack_001andar, 90
+7	179	3	#line 179 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+7	179	3	#line 179 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+7	180	3		set __D0andar, 1
+7	180	6	#line 180 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+7	181	6	#pragma macro 7
+7	181	6		setout __OUT_AB, 2, __signed_stack_001andar, 1, __constVal7, 8, __constVal2, 7, __D0andar, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	5291	29	#line 5291 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+7	180	29	#line 180 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+7	182	29	#line 182 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+7	183	29		subret __andar_return
+8	185	0	#line 185 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+8	186	0	#pragma macro 7
+8	186	0		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	5300	23	#line 5300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+8	185	23	#line 185 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+8	186	23	#line 186 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+8	187	23	#pragma macro 7
+8	187	23		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	5303	46	#line 5303 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+8	186	46	#line 186 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+8	188	46	#line 188 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+8	189	46		subret __parar_return
+9	192	0	#line 192 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+9	193	0		subcall parar, __parar_return
+9	192	2	#line 192 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+9	193	2	#line 193 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+9	194	2		subcall rejeitarDireita, __rejeitarDireita_return
+9	193	4	#line 193 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+9	194	4	#line 194 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+9	195	4		subcall MandaGirei, __MandaGirei_return
+9	194	6	#line 194 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+9	194	6	#line 194 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+9	195	6		subcall RecebeDesgirar, __RecebeDesgirar_return
+9	194	8	#line 194 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+9	194	8	#line 194 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+9	195	8		not __D0rejeitar, __D0RecebeDesgirar
+9	194	11	#line 194 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+9	195	11		tst 5, __D0rejeitar, __D0rejeitar
+9	194	14	#line 194 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+9	195	14		brtst 4, __ASM_Label_557, __D0rejeitar
+9	195	17	#line 195 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+9	196	17		jmp __ASM_Label_556
+9	195	19	#line 195 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+9	196	19	#line 196 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+9	197	19		subcall voltarejeitarDireita, __voltarejeitarDireita_return
+9	196	21	#line 196 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+9	197	21	#line 197 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+9	198	21		subcall MandaDesGirei, __MandaDesGirei_return
+9	197	23	#line 197 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+9	199	23	#line 199 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+9	200	23		subret __rejeitar_return
+10	203	0	#line 203 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+10	204	0		set __D0rejeitarDireita, 90
+10	205	3	#line 205 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+10	206	3	#pragma macro 7
+10	206	3		setout __constVal0, 2, __D0rejeitarDireita, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+10	5354	26	#line 5354 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+10	205	26	#line 205 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+10	207	26	#line 207 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+10	208	26		getout __rejeitarDireita_7qG2_tc_7qG2_000, __constVal0, 4
+10	207	30	#line 207 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+10	207	30	#line 207 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+10	207	30	#line 207 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+10	208	30		mov __signed_stack_001rejeitarDireita, __rejeitarDireita_7qG2_tc_7qG2_000
+10	207	32	#line 207 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+10	207	32	#line 207 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+10	208	32		set __D0rejeitarDireita, 1700
+10	207	35	#line 207 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+10	208	35		cmp 0, __D0rejeitarDireita, __signed_stack_001rejeitarDireita, __D0rejeitarDireita
+10	209	39	#line 209 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+10	210	39		brtst 4, __ASM_Label_563, __D0rejeitarDireita
+10	209	42	#line 209 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+10	210	42		jmp __ASM_Label_562
+10	209	44	#line 209 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+10	209	44	#line 209 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+10	210	44	#line 210 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+10	211	44		subcall parar, __parar_return
+10	210	46	#line 210 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+10	212	46	#line 212 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+10	213	46		subret __rejeitarDireita_return
+11	216	0	#line 216 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+11	217	0		mov __D0voltarejeitarDireita, __constValNeg90
+11	218	2	#line 218 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+11	219	2	#pragma macro 7
+11	219	2		setout __constVal0, 2, __D0voltarejeitarDireita, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+11	5398	25	#line 5398 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+11	218	25	#line 218 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+11	220	25	#line 220 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+11	221	25		getout __voltarejeitarDireita_7qG2_tc_7qG2_000, __constVal0, 4
+11	220	29	#line 220 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+11	220	29	#line 220 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+11	220	29	#line 220 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+11	221	29		mov __signed_stack_001voltarejeitarDireita, __voltarejeitarDireita_7qG2_tc_7qG2_000
+11	220	31	#line 220 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+11	220	31	#line 220 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+11	221	31		mov __signed_stack_002voltarejeitarDireita, __constValNeg1700
+11	220	33	#line 220 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+11	220	33	#line 220 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+11	221	33		set __D0voltarejeitarDireita, 165
+11	220	36	#line 220 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+11	221	36		sub __D0voltarejeitarDireita, __signed_stack_002voltarejeitarDireita, __D0voltarejeitarDireita
+11	220	40	#line 220 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+11	221	40		cmp 1, __D0voltarejeitarDireita, __signed_stack_001voltarejeitarDireita, __D0voltarejeitarDireita
+11	222	44	#line 222 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+11	223	44		brtst 4, __ASM_Label_571, __D0voltarejeitarDireita
+11	222	47	#line 222 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+11	223	47		jmp __ASM_Label_570
+11	222	49	#line 222 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+11	222	49	#line 222 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+11	223	49	#line 223 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+11	224	49		subcall parar, __parar_return
+11	223	51	#line 223 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+11	225	51	#line 225 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+11	226	51		subret __voltarejeitarDireita_return
+12	227	0	#line 227 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+12	228	0	#pragma macro 14
+12	228	0		acquire __RemoteMutex
+12	228	1		mov __SRSTmpBuf, __DCMessageWritePacket
+12	228	3		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
+12	228	8		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+12	228	13		mov __SRSTmpLongVal, __constVal3
+12	228	15		flatten __SRSFlattenBuf, __SRSTmpLongVal
+12	228	18		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+12	228	23		acquire __CBTWMutex
+12	228	24		mov __CBTWArgs.Connection, __constVal1
+12	228	26		mov __CBTWArgs.Buffer, __SRSSendBuf
+12	228	28		syscall 29, __CBTWArgs
+12	228	31		release __CBTWMutex
+12	228	32		release __RemoteMutex
+12	5444	33	#line 5444 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+12	227	33	#line 227 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+12	227	33	#line 227 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+12	230	33	#line 230 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+12	231	33		subret __MandaGirei_return
+13	232	0	#line 232 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+13	233	0	#pragma macro 14
+13	233	0		acquire __RemoteMutex
+13	233	1		mov __SRSTmpBuf, __DCMessageWritePacket
+13	233	3		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
+13	233	8		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+13	233	13		mov __SRSTmpLongVal, __constVal6
+13	233	15		flatten __SRSFlattenBuf, __SRSTmpLongVal
+13	233	18		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+13	233	23		acquire __CBTWMutex
+13	233	24		mov __CBTWArgs.Connection, __constVal1
+13	233	26		mov __CBTWArgs.Buffer, __SRSSendBuf
+13	233	28		syscall 29, __CBTWArgs
+13	233	31		release __CBTWMutex
+13	233	32		release __RemoteMutex
+13	5453	33	#line 5453 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+13	232	33	#line 232 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+13	232	33	#line 232 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+13	236	33	#line 236 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+13	237	33		subret __MandaDesGirei_return
+14	240	0	#line 240 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	241	0		set __D0AbrirPorta, 70
+14	241	3	#line 241 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	242	3	#pragma macro 7
+14	242	3		setout __constVal2, 2, __D0AbrirPorta, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+14	5472	26	#line 5472 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	241	26	#line 241 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	242	26	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	243	26		getout __AbrirPorta_7qG2_tc_7qG2_000, __constVal2, 4
+14	242	30	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	242	30	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	244	30	#line 244 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	245	30		set __Wait_7qG2_ms_7qG2_000_inline_AbrirPorta, 200
+14	244	33	#line 244 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	8551	33	#line 8551 "NXCDefs.h"
+14	8552	33		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_AbrirPorta
+14	8551	36	#line 8551 "NXCDefs.h"
+14	245	36	#line 245 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	246	36	#line 246 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	247	36		mov __AbrirPorta_7qG2_old_tc_7qG2_000, __AbrirPorta_7qG2_tc_7qG2_000
+14	246	38	#line 246 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	246	38	#line 246 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	247	38	#line 247 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	248	38		getout __AbrirPorta_7qG2_tc_7qG2_000, __constVal2, 4
+14	247	42	#line 247 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	247	42	#line 247 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	247	42	#line 247 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	248	42		mov __signed_stack_001AbrirPorta, __AbrirPorta_7qG2_tc_7qG2_000
+14	247	44	#line 247 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	247	44	#line 247 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	248	44		mov __D0AbrirPorta, __AbrirPorta_7qG2_old_tc_7qG2_000
+14	247	46	#line 247 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	248	46		cmp 5, __D0AbrirPorta, __signed_stack_001AbrirPorta, __D0AbrirPorta
+14	249	50	#line 249 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	250	50		brtst 4, __ASM_Label_583, __D0AbrirPorta
+14	249	53	#line 249 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	250	53		jmp __ASM_Label_582
+14	249	55	#line 249 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	249	55	#line 249 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	249	55	#line 249 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	250	55		set __D0AbrirPorta, 0
+14	250	58	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	251	58	#pragma macro 7
+14	251	58		setout __constVal2, 2, __D0AbrirPorta, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+14	5530	81	#line 5530 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	250	81	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	252	81	#line 252 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+14	253	81		subret __AbrirPorta_return
+15	256	0	#line 256 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	257	0		mov __D0FecharPorta, __constValNeg70
+15	257	2	#line 257 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	258	2	#pragma macro 7
+15	258	2		setout __constVal2, 2, __D0FecharPorta, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+15	5548	25	#line 5548 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	257	25	#line 257 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	258	25	#line 258 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	259	25		getout __FecharPorta_7qG2_tc_7qG2_000, __constVal2, 4
+15	258	29	#line 258 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	258	29	#line 258 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	260	29	#line 260 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	261	29		set __Wait_7qG2_ms_7qG2_000_inline_FecharPorta, 200
+15	260	32	#line 260 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	8551	32	#line 8551 "NXCDefs.h"
+15	8552	32		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_FecharPorta
+15	8551	35	#line 8551 "NXCDefs.h"
+15	261	35	#line 261 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	262	35	#line 262 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	263	35		mov __FecharPorta_7qG2_old_tc_7qG2_000, __FecharPorta_7qG2_tc_7qG2_000
+15	262	37	#line 262 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	262	37	#line 262 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	263	37	#line 263 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	264	37		getout __FecharPorta_7qG2_tc_7qG2_000, __constVal2, 4
+15	263	41	#line 263 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	263	41	#line 263 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	263	41	#line 263 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	264	41		mov __signed_stack_001FecharPorta, __FecharPorta_7qG2_tc_7qG2_000
+15	263	43	#line 263 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	263	43	#line 263 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	264	43		mov __D0FecharPorta, __FecharPorta_7qG2_old_tc_7qG2_000
+15	263	45	#line 263 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	264	45		cmp 5, __D0FecharPorta, __signed_stack_001FecharPorta, __D0FecharPorta
+15	265	49	#line 265 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	266	49		brtst 4, __ASM_Label_599, __D0FecharPorta
+15	265	52	#line 265 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	266	52		jmp __ASM_Label_598
+15	265	54	#line 265 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	265	54	#line 265 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	265	54	#line 265 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	266	54		set __D0FecharPorta, 0
+15	266	57	#line 266 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	267	57	#pragma macro 7
+15	267	57		setout __constVal2, 2, __D0FecharPorta, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+15	5606	80	#line 5606 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	266	80	#line 266 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	268	80	#line 268 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+15	269	80		subret __FecharPorta_return
+16	272	0	#line 272 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+16	273	0	#pragma macro 9
+16	273	0		acquire __MRMutex
+16	273	1		mov __MRArgs.QueueID, __constVal3
+16	273	3		mov __MRArgs.Remove, __constVal1
+16	273	5		set __RRNTmpVal, 0
+16	273	8		syscall 27, __MRArgs
+16	273	11		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+16	273	16		mov __RecebeUS_7qG2_aux_7qG2_000, __RRNTmpVal
+16	273	18		mov __D0RecebeUS, __MRArgs.Result
+16	273	20		release __MRMutex
+16	5618	21	#line 5618 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+16	272	21	#line 272 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+16	272	21	#line 272 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+16	275	21	#line 275 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+16	276	21		mov __D0RecebeUS, __RecebeUS_7qG2_aux_7qG2_000
+16	275	23	#line 275 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+16	276	23		subret __RecebeUS_return
+16	275	25	#line 275 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+16	277	25	#line 277 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+16	278	25		subret __RecebeUS_return
+17	280	0	#line 280 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+17	281	0	#pragma macro 9
+17	281	0		acquire __MRMutex
+17	281	1		mov __MRArgs.QueueID, __constVal1
+17	281	3		mov __MRArgs.Remove, __constVal1
+17	281	5		set __RRNTmpVal, 0
+17	281	8		syscall 27, __MRArgs
+17	281	11		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+17	281	16		mov __RecebeDesgirar_7qG2_aux_7qG2_000, __RRNTmpVal
+17	281	18		mov __D0RecebeDesgirar, __MRArgs.Result
+17	281	20		release __MRMutex
+17	5638	21	#line 5638 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+17	280	21	#line 280 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+17	280	21	#line 280 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+17	281	21	#line 281 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+17	282	21		mov __signed_stack_001RecebeDesgirar, __RecebeDesgirar_7qG2_aux_7qG2_000
+17	281	23	#line 281 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+17	282	23	#line 282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+17	283	23		set __D0RecebeDesgirar, 4
+17	282	26	#line 282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+17	283	26		cmp 4, __D0RecebeDesgirar, __signed_stack_001RecebeDesgirar, __D0RecebeDesgirar
+17	282	30	#line 282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+17	283	30		brtst 4, __ASM_Label_614, __D0RecebeDesgirar
+17	283	33	#line 283 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+17	284	33		set __D0RecebeDesgirar, 1
+17	283	36	#line 283 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+17	284	36		subret __RecebeDesgirar_return
+17	283	38	#line 283 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+17	283	38	#line 283 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+17	284	38	#line 284 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+17	285	38		set __D0RecebeDesgirar, 0
+17	284	41	#line 284 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+17	285	41		subret __RecebeDesgirar_return
+17	284	43	#line 284 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+17	286	43	#line 286 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+17	287	43		subret __RecebeDesgirar_return
+18	300	0	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	301	0		mov __D0viraDir, __constValNeg90
+18	301	2	#line 301 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	302	2	#pragma macro 7
+18	302	2		setout __constVal1, 2, __D0viraDir, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+18	5741	25	#line 5741 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	301	25	#line 301 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	301	25	#line 301 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	302	25		set __D0viraDir, 90
+18	303	28	#line 303 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	304	28	#pragma macro 7
+18	304	28		setout __constVal0, 2, __D0viraDir, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+18	5746	51	#line 5746 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	303	51	#line 303 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	303	51	#line 303 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	304	51		set __signed_stack_001viraDir, 0
+18	303	54	#line 303 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	303	54	#line 303 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	304	54		getout __D0viraDir, __constVal1, 4
+18	303	58	#line 303 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	304	58		sub __signed_stack_001viraDir, __signed_stack_001viraDir, __D0viraDir
+18	303	62	#line 303 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	303	62	#line 303 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	304	62		getout __D0viraDir, __constVal0, 4
+18	303	66	#line 303 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	304	66		add __signed_stack_001viraDir, __signed_stack_001viraDir, __D0viraDir
+18	303	70	#line 303 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	303	70	#line 303 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	304	70		set __D0viraDir, 2
+18	303	73	#line 303 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	304	73		div __distanciaGiroDireita_7qG2_grau_7qG2_000, __signed_stack_001viraDir, __D0viraDir
+18	303	77	#line 303 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	303	77	#line 303 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	304	77		subcall distanciaGiroDireita, __distanciaGiroDireita_return
+18	303	79	#line 303 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	304	79		mov __signed_stack_001viraDir, __D0distanciaGiroDireita
+18	303	81	#line 303 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	304	81	#line 304 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	305	81		mov __D0viraDir, __viraDir_7qG2_angulo_7qG2_000
+18	304	83	#line 304 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	305	83		cmp 0, __D0viraDir, __signed_stack_001viraDir, __D0viraDir
+18	306	87	#line 306 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	307	87		brtst 4, __ASM_Label_636, __D0viraDir
+18	307	90	#line 307 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	308	90		jmp __ASM_Label_635
+18	307	92	#line 307 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	308	92	#line 308 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	309	92	#pragma macro 7
+18	309	92		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+18	5802	115	#line 5802 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	308	115	#line 308 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	309	115	#line 309 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	310	115	#pragma macro 7
+18	310	115		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+18	5805	138	#line 5805 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	309	138	#line 309 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	311	138	#line 311 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+18	312	138		subret __viraDir_return
+19	312	0	#line 312 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+19	313	0		mov __signed_stack_001distanciaGiroDireita, __distanciaGiroDireita_7qG2_grau_7qG2_000
+19	312	2	#line 312 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+19	312	2	#line 312 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+19	313	2		set __D0distanciaGiroDireita, 17
+19	312	5	#line 312 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+19	313	5		mul __signed_stack_001distanciaGiroDireita, __signed_stack_001distanciaGiroDireita, __D0distanciaGiroDireita
+19	312	9	#line 312 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+19	312	9	#line 312 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+19	313	9		set __D0distanciaGiroDireita, 149
+19	312	12	#line 312 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+19	313	12		div __D0distanciaGiroDireita, __signed_stack_001distanciaGiroDireita, __D0distanciaGiroDireita
+19	313	16	#line 313 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+19	314	16		subret __distanciaGiroDireita_return
+19	313	18	#line 313 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+19	315	18	#line 315 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+19	316	18		subret __distanciaGiroDireita_return
+20	320	0	#line 320 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc"
+20	321	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
 1	__ResetSensorSubroutine	7	NXTDefs.h
-2	PlaySound	20	NXCDefs.h
-3	bip	425	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
-4	executivo	432	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
-5	init	535	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
-6	desligaBlue	545	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
-7	inicializaSensores	613	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
-8	iniciaBlue	791	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
-9	andar	838	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
-10	parar	892	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
-11	rejeitar	940	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
-12	rejeitarDireita	952	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
-13	voltarejeitarDireita	1000	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
-14	MandaGirei	1053	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
-15	MandaDesGirei	1088	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
-16	FecharPorta	1123	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
-17	RecebeUS	1205	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
-18	__initialize_global_data	1232	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
+2	executivo	20	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
+3	init	139	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
+4	desligaBlue	149	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
+5	inicializaSensores	217	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
+6	iniciaBlue	395	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
+7	andar	442	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
+8	parar	473	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
+9	rejeitar	521	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
+10	rejeitarDireita	546	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
+11	voltarejeitarDireita	594	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
+12	MandaGirei	647	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
+13	MandaDesGirei	682	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
+14	AbrirPorta	717	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
+15	FecharPorta	800	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
+16	RecebeUS	882	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
+17	RecebeDesgirar	909	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
+18	viraDir	954	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
+19	distanciaGiroDireita	1094	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
+20	__initialize_global_data	1114	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\execultivo.nxc
