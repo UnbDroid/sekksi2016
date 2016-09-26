@@ -1,19 +1,19 @@
 //Valores Calibraveis
 // Defines de leitura do RGB do meio (ainda precisa testar mais)
-    #define COR_BRANCA_MEIO_MIN 339
-    #define COR_BRANCA_MEIO_MAX 564
-    #define COR_PRETA_MEIO_MIN 100
-    #define COR_PRETA_MEIO_MAX 126
-    #define COR_VERMELHA_MEIO_MIN 112
-    #define COR_VERMELHA_MEIO_MAX 141
+    #define COR_BRANCA_MEIO_MIN 430
+    #define COR_BRANCA_MEIO_MAX 533
+    #define COR_PRETA_MEIO_MIN 124
+    #define COR_PRETA_MEIO_MAX 164
+    #define COR_VERMELHA_MEIO_MIN 237
+    #define COR_VERMELHA_MEIO_MAX 240
 
  // Defines de leitura do RGB da esquerda do robô
-    #define COR_BASE_ESQ_MIN 209
-    #define COR_BASE_ESQ_MAX 276
+    #define COR_BASE_ESQ_MIN 348
+    #define COR_BASE_ESQ_MAX 453
 
 // Defines de leitura do RGB da direita do robô
-    #define COR_BASE_DIR_MIN 222
-    #define COR_BASE_DIR_MAX 286
+    #define COR_BASE_DIR_MIN 593
+    #define COR_BASE_DIR_MAX 702
 
 //Bluetooth
 	#define CONEXAO 0
@@ -50,6 +50,7 @@
 #define GIREI 3
 #define DESGIRAR 4
 #define REJEITAR 5
+#define DESGIREI 6
 
 //cor dos boncos
 #define BONECO_BRANCO 1
@@ -101,6 +102,7 @@ void Rejeita();
 int RecebiGirei();
 void MandaDesgirar();
 void MandaGirar();
+int RecebiDesGirei();
 
 //função para dbug
 void  bip()
@@ -398,6 +400,7 @@ void Rejeita()
   while(!RecebiGirei()){}//espera acabar de girar
   VoltaGarra();
   MandaDesgirar();
+  while(!RecebiDesGirei()){}//espera acabar de desgirar
 }
 
 int RecebiGirei()
@@ -405,6 +408,15 @@ int RecebiGirei()
   int aux;
   ReceiveRemoteNumber(INBOX, true, aux);
   if(aux == GIREI)
+    return 1;
+  return 0;
+}
+
+int RecebiDesGirei()
+{
+  int aux;
+  ReceiveRemoteNumber(INBOX, true, aux);
+  if(aux == DESGIREI)
     return 1;
   return 0;
 }

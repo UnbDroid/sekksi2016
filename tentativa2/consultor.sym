@@ -1,172 +1,176 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__D0Rejeita	6	1	0	4	4
-1	__D0TemBoneco	6	1	4	4	19
+0	__D0RecebiGirei	6	1	0	4	9
+1	__D0Rejeita	6	1	4	4	8
 2	__D0RecebeBoneco	6	1	8	4	2
-3	__D0RecebiGirei	6	1	12	4	9
-4	__DU0SetSensorLowspeed_inline_InicializaSensores	5	1	16	4	5
-5	__signed_stack_001BonecoAlvo	6	1	20	4	4
-6	__D0VoltaGarra	6	1	24	4	10
-7	__D0SetSensorLowspeed_inline_InicializaSensores	6	1	28	4	2
-8	__D0PlaySound	6	1	32	4	69
+3	__D0RecebiDesGirei	6	1	12	4	9
+4	__D0TemBoneco	6	1	16	4	19
+5	__DU0SetSensorLowspeed_inline_InicializaSensores	5	1	20	4	5
+6	__signed_stack_001BonecoAlvo	6	1	24	4	4
+7	__D0VoltaGarra	6	1	28	4	10
+8	__D0SetSensorLowspeed_inline_InicializaSensores	6	1	32	4	2
 9	__D0BonecoNaFrente	6	1	36	4	19
 10	__D0consultor	6	1	40	4	8
 11	__SPTArgsMutex	9	0	44	4	14
 12	__D0BonecoAlvo	6	1	48	4	8
-13	__D0Pega	6	1	52	4	10
+13	__D0CorBoneco	6	1	52	4	28
 14	__D0PegaBoneco	6	1	56	4	17
-15	__D0CorBoneco	6	1	60	4	28
+15	__D0PlaySound	6	1	60	4	69
 16	__D0lerSensor	6	1	64	4	32
-17	__signed_stack_001TemBoneco	6	1	68	4	8
-18	__signed_stack_001VoltaGarra	6	1	72	4	4
-19	__signed_stack_003PlaySound	6	1	76	4	14
-20	__signed_stack_001RecebiGirei	6	1	80	4	2
-21	__Wait_7qG2_ms_7qG2_000_inline_Pega	5	1	84	4	2
-22	__Wait_7qG2_ms_7qG2_000_inline_BonecoNaFrente	5	1	88	4	2
-23	__Wait_7qG2_ms_7qG2_000_inline_PegaBoneco	5	1	92	4	2
-24	__Wait_7qG2_ms_7qG2_000_inline_VoltaGarra	5	1	96	4	2
-25	__signed_stack_002PlaySound	6	1	100	4	14
-26	__signed_stack_001CorBoneco	6	1	104	4	12
-27	__signed_stack_001lerSensor	6	1	108	4	18
-28	__signed_stack_001BonecoNaFrente	6	1	112	4	8
-29	__signed_stack_002BonecoNaFrente	6	1	116	4	2
-30	__signed_stack_001PegaBoneco	6	1	120	4	4
-31	__signed_stack_001PlaySound	6	1	124	4	44
-32	__signed_stack_002lerSensor	6	1	128	4	6
-33	__signed_stack_001Pega	6	1	132	4	4
-34	__SRSTmpLongVal	6	1	136	4	8
-35	__RemoteMutex	9	0	140	4	8
-36	__TextOutMutex	9	0	144	4	2
-37	__RRNTmpVal	6	1	148	4	4
-38	__CBTWMutex	9	0	152	4	8
-39	__MRMutex	9	0	156	4	2
-40	__PlaySound_7qG2_aCode_7qG2_000	4	1	160	2	11
-41	__VoltaGarra_7qG2_old_tc_7qG2_000	4	1	162	2	2
-42	__PegaBoneco_7qG2_tc_7qG2_000	4	1	164	2	5
-43	__constVal150	4	0	166	2	1
-44	__lerSensor_7qG2_k_7qG2_000	4	1	168	2	6
-45	__PlaySound_7qG2_i_7qG2_001	4	1	170	2	15
-46	__VoltaGarra_7qG2_tc_7qG2_000	4	1	172	2	4
-47	__lerSensor_7qG2_sensor_7qG2_000	4	1	174	2	4
-48	bonecoNaoAlvo	4	1	176	2	3
-49	bonecoAlvo	4	1	178	2	4
-50	__PegaBoneco_7qG2_old_tc_7qG2_000	4	1	180	2	2
-51	__lerSensor_7qG2_aux_7qG2_000	4	1	182	2	4
-52	__constVal500	4	0	184	2	1
-53	__BonecoNaFrente_7qG2_cor_7qG2_000	4	1	186	2	5
-54	__TemBoneco_7qG2_rgb_esq_7qG2_000	4	1	188	2	3
-55	__constVal128	4	0	190	2	3
-56	__constVal200	4	0	192	2	3
-57	__RecebiGirei_7qG2_aux_7qG2_000	4	1	194	2	2
-58	__CorBoneco_7qG2_leitura_7qG2_000	4	1	196	2	7
-59	__lerSensor_7qG2_i_7qG2_000	4	1	198	2	8
-60	__TemBoneco_7qG2_rgb_dir_7qG2_000	4	1	200	2	3
-61	__lerSensor_7qG2_j_7qG2_000	4	1	202	2	8
-62	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	204	1	2
-63	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	205	1	2
-64	__lerSensor_return	1	1	206	1	6
-65	__BipBranco_return	1	1	207	1	3
-66	__BipPreto_return	1	1	208	1	3
-67	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	209	1	2
-68	__RecebeBoneco_return	1	1	210	1	4
-69	__MandarParar_return	1	1	211	1	3
-70	__MandarSeguir_return	1	1	212	1	5
-71	__constValNeg70	2	0	213	1	1
-72	__constVal1	2	0	214	1	15
-73	__Rejeita_return	1	1	215	1	4
-74	__RecebiGirei_return	1	1	216	1	5
-75	__MandaDesgirar_return	1	1	217	1	3
-76	__constVal32	2	0	218	1	21
-77	__MandaGirar_return	1	1	219	1	3
-78	__constVal96	2	0	220	1	7
-79	__constVal63	2	0	221	1	7
-80	__PegaBoneco_return	1	1	222	1	5
-81	__constValNeg30	2	0	223	1	2
-82	__constVal50	2	0	224	1	1
-83	__CorBoneco_return	1	1	225	1	6
-84	__Pega_return	1	1	226	1	3
-85	__constValNeg125	2	0	227	1	1
-86	__constVal0	2	1	228	1	41
-87	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	229	1	2
-88	__ResetSensorTmp	1	1	230	1	2
-89	____ResetSensorSubroutine_return	1	1	231	1	6
-90	__constVal2	2	0	232	1	6
-91	__ResetSensorPort	1	1	233	1	6
-92	__constVal3	2	0	234	1	11
-93	__constVal4	2	0	235	1	1
-94	__constVal5	2	0	236	1	5
-95	__RRNErr	1	1	237	1	1
-96	__constVal15	2	0	238	1	2
-97	__constVal11	2	0	239	1	1
-98	__constVal14	2	0	240	1	2
-99	__constVal8	2	0	241	1	1
-100	__constVal100	2	0	242	1	2
-101	__constValNeg100	2	0	243	1	1
-102	__PFTmp	1	1	244	1	1
-103	__BonecoNaFrente_return	1	1	245	1	3
-104	__SetSensorColorGreen_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	246	1	4
-105	__TemBoneco_return	1	1	247	1	5
-106	__SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	248	1	8
-107	__InicializaSensores_return	1	1	249	1	3
-108	__VoltaGarra_return	1	1	250	1	8
-109	__BonecoAlvo_return	1	1	251	1	3
-110	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	252	1	4
-111	____initialize_global_data_return	1	1	253	1	3
-112	__bip_return	1	1	254	1	4
-113	__PlaySound_return	1	1	255	1	7
-114	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_InicializaSensores	1	1	256	1	2
-115	__init_return	1	1	257	1	3
-116	__consultor_return	1	1	258	1	3
-117	__SPTArgs	8	0	5	8	42
-118	__SPTArgs.Result	2	1	260	1	42
-119	__SPTArgs.Frequency	3	1	262	2	42
-120	__SPTArgs.Duration	3	1	264	2	42
-121	__SPTArgs.Loop	1	1	266	1	42
-122	__SPTArgs.Volume	1	1	267	1	42
-123	__MRArgs	8	0	4	8	5
-124	__MRArgs.Result	2	1	268	1	5
-125	__MRArgs.QueueID	1	1	269	1	5
-126	__MRArgs.Remove	1	1	270	1	5
-127	__MRArgs.Message	7	0	272	4	5
-128	__MRArgs.Message.Message_type	1	0	0	1	0
-129	__CBTWArgs	8	0	3	8	12
-130	__CBTWArgs.Result	2	1	276	1	12
-131	__CBTWArgs.Connection	1	1	277	1	12
-132	__CBTWArgs.Buffer	7	0	278	4	12
-133	__CBTWArgs.Buffer.Buffer_type	1	0	0	1	0
-134	__TextOutArgs	8	0	4	16	6
-135	__TextOutArgs.Result	2	1	280	1	6
-136	__TextOutArgs.Location	8	0	2	4	6
-137	__TextOutArgs.Location.X	4	1	284	2	6
-138	__TextOutArgs.Location.Y	4	1	286	2	6
-139	__TextOutArgs.Text	7	0	288	4	6
-140	__TextOutArgs.Text.Text_type	1	0	0	1	0
-141	__TextOutArgs.Options	5	1	292	4	6
-142	__PointOutArgs	8	0	3	12	4
-143	__PointOutArgs.Result	2	1	296	1	4
-144	__PointOutArgs.Location	8	0	2	4	4
-145	__PointOutArgs.Location.X	4	1	300	2	4
-146	__PointOutArgs.Location.Y	4	1	302	2	4
-147	__PointOutArgs.Options	5	1	304	4	4
-148	__DCMessageWritePacket	7	0	308	4	4
-149	__DCMessageWritePacket.__DCMessageWritePacket_type	1	0	0	1	0
-150	__lerSensor_7qG2_leitura_7qG2_000	7	0	310	4	10
-151	__lerSensor_7qG2_leitura_7qG2_000.__lerSensor_7qG2_leitura_7qG2_000_type	4	0	0	2	0
-152	__SRSFlattenBuf	7	0	312	4	8
-153	__SRSFlattenBuf.__SRSFlattenBuf_type	1	0	0	1	0
-154	__SRSTmpBuf	7	0	314	4	24
-155	__SRSTmpBuf.__SRSTmpBuf_type	1	0	0	1	0
-156	__SRSSendBuf	7	0	316	4	8
-157	__SRSSendBuf.__SRSSendBuf_type	1	0	0	1	0
+17	__D0Pega	6	1	68	4	10
+18	__signed_stack_001RecebiGirei	6	1	72	4	2
+19	__signed_stack_001TemBoneco	6	1	76	4	8
+20	__signed_stack_003PlaySound	6	1	80	4	14
+21	__signed_stack_001RecebiDesGirei	6	1	84	4	2
+22	__signed_stack_001VoltaGarra	6	1	88	4	4
+23	__Wait_7qG2_ms_7qG2_000_inline_Pega	5	1	92	4	2
+24	__Wait_7qG2_ms_7qG2_000_inline_BonecoNaFrente	5	1	96	4	2
+25	__Wait_7qG2_ms_7qG2_000_inline_PegaBoneco	5	1	100	4	2
+26	__Wait_7qG2_ms_7qG2_000_inline_VoltaGarra	5	1	104	4	2
+27	__signed_stack_001CorBoneco	6	1	108	4	12
+28	__signed_stack_001lerSensor	6	1	112	4	18
+29	__signed_stack_001BonecoNaFrente	6	1	116	4	8
+30	__signed_stack_002BonecoNaFrente	6	1	120	4	2
+31	__signed_stack_002lerSensor	6	1	124	4	6
+32	__signed_stack_001PlaySound	6	1	128	4	44
+33	__signed_stack_002PlaySound	6	1	132	4	14
+34	__signed_stack_001Pega	6	1	136	4	4
+35	__signed_stack_001PegaBoneco	6	1	140	4	4
+36	__CBTWMutex	9	0	144	4	8
+37	__SRSTmpLongVal	6	1	148	4	8
+38	__RemoteMutex	9	0	152	4	8
+39	__MRMutex	9	0	156	4	4
+40	__TextOutMutex	9	0	160	4	2
+41	__RRNTmpVal	6	1	164	4	8
+42	__PlaySound_7qG2_aCode_7qG2_000	4	1	168	2	11
+43	__VoltaGarra_7qG2_tc_7qG2_000	4	1	170	2	4
+44	__PegaBoneco_7qG2_old_tc_7qG2_000	4	1	172	2	2
+45	__lerSensor_7qG2_j_7qG2_000	4	1	174	2	8
+46	__TemBoneco_7qG2_rgb_esq_7qG2_000	4	1	176	2	3
+47	__VoltaGarra_7qG2_old_tc_7qG2_000	4	1	178	2	2
+48	__lerSensor_7qG2_i_7qG2_000	4	1	180	2	8
+49	__TemBoneco_7qG2_rgb_dir_7qG2_000	4	1	182	2	3
+50	__constVal150	4	0	184	2	1
+51	bonecoNaoAlvo	4	1	186	2	3
+52	bonecoAlvo	4	1	188	2	4
+53	__PegaBoneco_7qG2_tc_7qG2_000	4	1	190	2	5
+54	__lerSensor_7qG2_sensor_7qG2_000	4	1	192	2	4
+55	__PlaySound_7qG2_i_7qG2_001	4	1	194	2	15
+56	__lerSensor_7qG2_k_7qG2_000	4	1	196	2	6
+57	__constVal500	4	0	198	2	1
+58	__lerSensor_7qG2_aux_7qG2_000	4	1	200	2	4
+59	__constVal200	4	0	202	2	3
+60	__RecebiDesGirei_7qG2_aux_7qG2_000	4	1	204	2	2
+61	__constVal128	4	0	206	2	3
+62	__BonecoNaFrente_7qG2_cor_7qG2_000	4	1	208	2	5
+63	__RecebiGirei_7qG2_aux_7qG2_000	4	1	210	2	2
+64	__CorBoneco_7qG2_leitura_7qG2_000	4	1	212	2	7
+65	__MandaDesgirar_return	1	1	214	1	3
+66	__RecebiDesGirei_return	1	1	215	1	5
+67	__RecebiGirei_return	1	1	216	1	5
+68	__PegaBoneco_return	1	1	217	1	5
+69	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	218	1	2
+70	__BipPreto_return	1	1	219	1	3
+71	__BipBranco_return	1	1	220	1	3
+72	__RecebeBoneco_return	1	1	221	1	4
+73	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	222	1	2
+74	__lerSensor_return	1	1	223	1	6
+75	__MandaGirar_return	1	1	224	1	3
+76	__constVal50	2	0	225	1	1
+77	__constVal63	2	0	226	1	7
+78	__constVal96	2	0	227	1	7
+79	__constValNeg125	2	0	228	1	1
+80	__constVal0	2	1	229	1	41
+81	__CorBoneco_return	1	1	230	1	6
+82	__Pega_return	1	1	231	1	3
+83	__MandarSeguir_return	1	1	232	1	5
+84	__Rejeita_return	1	1	233	1	4
+85	__constVal32	2	0	234	1	21
+86	__MandarParar_return	1	1	235	1	3
+87	__constValNeg30	2	0	236	1	2
+88	__constValNeg70	2	0	237	1	1
+89	__constVal1	2	0	238	1	16
+90	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	239	1	2
+91	__ResetSensorTmp	1	1	240	1	2
+92	____ResetSensorSubroutine_return	1	1	241	1	6
+93	__constVal2	2	0	242	1	7
+94	__ResetSensorPort	1	1	243	1	6
+95	__constVal3	2	0	244	1	11
+96	__constVal4	2	0	245	1	1
+97	__constVal5	2	0	246	1	5
+98	__RRNErr	1	1	247	1	2
+99	__constVal15	2	0	248	1	2
+100	__constVal11	2	0	249	1	1
+101	__constVal14	2	0	250	1	2
+102	__constVal8	2	0	251	1	1
+103	__constVal100	2	0	252	1	2
+104	__constValNeg100	2	0	253	1	1
+105	__PFTmp	1	1	254	1	1
+106	__PlaySound_return	1	1	255	1	7
+107	__InicializaSensores_return	1	1	256	1	3
+108	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	257	1	4
+109	__BonecoNaFrente_return	1	1	258	1	3
+110	__SetSensorColorGreen_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	259	1	4
+111	__VoltaGarra_return	1	1	260	1	8
+112	__BonecoAlvo_return	1	1	261	1	3
+113	__SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores	1	1	262	1	8
+114	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_InicializaSensores	1	1	263	1	2
+115	__consultor_return	1	1	264	1	3
+116	____initialize_global_data_return	1	1	265	1	3
+117	__bip_return	1	1	266	1	4
+118	__TemBoneco_return	1	1	267	1	5
+119	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores	1	1	268	1	2
+120	__init_return	1	1	269	1	3
+121	__SPTArgs	8	0	5	8	42
+122	__SPTArgs.Result	2	1	272	1	42
+123	__SPTArgs.Frequency	3	1	274	2	42
+124	__SPTArgs.Duration	3	1	276	2	42
+125	__SPTArgs.Loop	1	1	278	1	42
+126	__SPTArgs.Volume	1	1	279	1	42
+127	__MRArgs	8	0	4	8	10
+128	__MRArgs.Result	2	1	280	1	10
+129	__MRArgs.QueueID	1	1	281	1	10
+130	__MRArgs.Remove	1	1	282	1	10
+131	__MRArgs.Message	7	0	284	4	10
+132	__MRArgs.Message.Message_type	1	0	0	1	0
+133	__CBTWArgs	8	0	3	8	12
+134	__CBTWArgs.Result	2	1	288	1	12
+135	__CBTWArgs.Connection	1	1	289	1	12
+136	__CBTWArgs.Buffer	7	0	290	4	12
+137	__CBTWArgs.Buffer.Buffer_type	1	0	0	1	0
+138	__TextOutArgs	8	0	4	16	6
+139	__TextOutArgs.Result	2	1	292	1	6
+140	__TextOutArgs.Location	8	0	2	4	6
+141	__TextOutArgs.Location.X	4	1	296	2	6
+142	__TextOutArgs.Location.Y	4	1	298	2	6
+143	__TextOutArgs.Text	7	0	300	4	6
+144	__TextOutArgs.Text.Text_type	1	0	0	1	0
+145	__TextOutArgs.Options	5	1	304	4	6
+146	__PointOutArgs	8	0	3	12	4
+147	__PointOutArgs.Result	2	1	308	1	4
+148	__PointOutArgs.Location	8	0	2	4	4
+149	__PointOutArgs.Location.X	4	1	312	2	4
+150	__PointOutArgs.Location.Y	4	1	314	2	4
+151	__PointOutArgs.Options	5	1	316	4	4
+152	__DCMessageWritePacket	7	0	320	4	4
+153	__DCMessageWritePacket.__DCMessageWritePacket_type	1	0	0	1	0
+154	__lerSensor_7qG2_leitura_7qG2_000	7	0	322	4	10
+155	__lerSensor_7qG2_leitura_7qG2_000.__lerSensor_7qG2_leitura_7qG2_000_type	4	0	0	2	0
+156	__SRSFlattenBuf	7	0	324	4	8
+157	__SRSFlattenBuf.__SRSFlattenBuf_type	1	0	0	1	0
+158	__SRSTmpBuf	7	0	326	4	24
+159	__SRSTmpBuf.__SRSTmpBuf_type	1	0	0	1	0
+160	__SRSSendBuf	7	0	328	4	8
+161	__SRSSendBuf.__SRSSendBuf_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	112	0	#line 112 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-0	113	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	112	2	#line 112 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-0	113	2	#line 113 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-0	114	2		subcall consultor, __consultor_return
-0	113	4	#line 113 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-0	114	4		exit -1, -1
+0	114	0	#line 114 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+0	115	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	114	2	#line 114 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+0	115	2	#line 115 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+0	116	2		subcall consultor, __consultor_return
+0	115	4	#line 115 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+0	116	4		exit -1, -1
 1	5476	0		setin __constVal1, __ResetSensorPort, 5
 1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
 1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
@@ -556,92 +560,92 @@ Clump	Line	PC	Source
 2	7169	403	#line 7169 "NXCDefs.h"
 2	7169	403	#line 7169 "NXCDefs.h"
 2	7170	403		subret __PlaySound_return
-3	107	0	#line 107 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-3	108	0		set __PlaySound_7qG2_aCode_7qG2_000, 2
-3	107	3	#line 107 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-3	108	3	#line 108 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-3	109	3		subcall PlaySound, __PlaySound_return
-3	108	5	#line 108 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+3	109	0	#line 109 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+3	110	0		set __PlaySound_7qG2_aCode_7qG2_000, 2
+3	109	3	#line 109 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+3	110	3	#line 110 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+3	111	3		subcall PlaySound, __PlaySound_return
 3	110	5	#line 110 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-3	111	5		subret __bip_return
-4	119	0	#line 119 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-4	120	0		subcall init, __init_return
-4	119	2	#line 119 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-4	120	2	#line 120 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-4	121	2		set __D0consultor, 1
-4	121	5	#line 121 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-4	122	5		tst 5, __D0consultor, __D0consultor
-4	121	8	#line 121 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-4	122	8		brtst 4, __ASM_Label_492, __D0consultor
-4	122	11	#line 122 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-4	123	11		subcall TemBoneco, __TemBoneco_return
-4	122	13	#line 122 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-4	123	13		mov __D0consultor, __D0TemBoneco
-4	123	15	#line 123 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-4	124	15		tst 5, __D0consultor, __D0consultor
-4	123	18	#line 123 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-4	124	18		brtst 4, __ASM_Label_497, __D0consultor
-4	124	21	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-4	125	21		subcall BonecoNaFrente, __BonecoNaFrente_return
-4	124	23	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+3	112	5	#line 112 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+3	113	5		subret __bip_return
+4	121	0	#line 121 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+4	122	0		subcall init, __init_return
+4	121	2	#line 121 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+4	122	2	#line 122 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+4	123	2		set __D0consultor, 1
+4	123	5	#line 123 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+4	124	5		tst 5, __D0consultor, __D0consultor
+4	123	8	#line 123 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+4	124	8		brtst 4, __ASM_Label_492, __D0consultor
+4	124	11	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+4	125	11		subcall TemBoneco, __TemBoneco_return
+4	124	13	#line 124 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+4	125	13		mov __D0consultor, __D0TemBoneco
+4	125	15	#line 125 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+4	126	15		tst 5, __D0consultor, __D0consultor
+4	125	18	#line 125 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+4	126	18		brtst 4, __ASM_Label_497, __D0consultor
+4	126	21	#line 126 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+4	127	21		subcall BonecoNaFrente, __BonecoNaFrente_return
 4	126	23	#line 126 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 4	128	23	#line 128 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-4	129	23		jmp __ASM_Label_491
-4	128	25	#line 128 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-4	128	25	#line 128 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-4	129	25		subret __consultor_return
-5	131	0	#line 131 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-5	132	0		subcall InicializaSensores, __InicializaSensores_return
-5	131	2	#line 131 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-5	132	2	#line 132 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-5	133	2		subcall VoltaGarra, __VoltaGarra_return
-5	132	4	#line 132 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+4	130	23	#line 130 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+4	131	23		jmp __ASM_Label_491
+4	130	25	#line 130 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+4	130	25	#line 130 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+4	131	25		subret __consultor_return
+5	133	0	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+5	134	0		subcall InicializaSensores, __InicializaSensores_return
+5	133	2	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+5	134	2	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+5	135	2		subcall VoltaGarra, __VoltaGarra_return
 5	134	4	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-5	135	4		subcall BonecoAlvo, __BonecoAlvo_return
-5	134	6	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+5	136	4	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+5	137	4		subcall BonecoAlvo, __BonecoAlvo_return
 5	136	6	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-5	137	6		subret __init_return
-6	138	0	#line 138 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-6	139	0		set __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 0
-6	138	3	#line 138 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+5	138	6	#line 138 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+5	139	6		subret __init_return
+6	140	0	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+6	141	0		set __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 0
+6	140	3	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 6	4396	3	#line 4396 "NXCDefs.h"
 6	4397	3	#pragma macro 6
 6	4397	3		setin __constVal14, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 0
 6	4397	7		setin __constVal128, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 1
 6	4397	11		mov __ResetSensorPort, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores
 6	4397	13		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-6	4918	15	#line 4918 "NXCDefs.h"
+6	4960	15	#line 4960 "NXCDefs.h"
 6	4396	15	#line 4396 "NXCDefs.h"
-6	139	15	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-6	139	15	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-6	140	15		set __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 1
-6	139	18	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+6	141	15	#line 141 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+6	141	15	#line 141 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+6	142	15		set __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 1
+6	141	18	#line 141 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 6	4396	18	#line 4396 "NXCDefs.h"
 6	4397	18	#pragma macro 6
 6	4397	18		setin __constVal14, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 0
 6	4397	22		setin __constVal128, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores, 1
 6	4397	26		mov __ResetSensorPort, __SetSensorColorRed_7qG2_port_7qG2_000_inline_InicializaSensores
 6	4397	28		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-6	4926	30	#line 4926 "NXCDefs.h"
+6	4968	30	#line 4968 "NXCDefs.h"
 6	4396	30	#line 4396 "NXCDefs.h"
-6	140	30	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-6	140	30	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-6	141	30		set __SetSensorColorGreen_7qG2_port_7qG2_000_inline_InicializaSensores, 2
-6	140	33	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+6	142	30	#line 142 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+6	142	30	#line 142 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+6	143	30		set __SetSensorColorGreen_7qG2_port_7qG2_000_inline_InicializaSensores, 2
+6	142	33	#line 142 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 6	4406	33	#line 4406 "NXCDefs.h"
 6	4407	33	#pragma macro 6
 6	4407	33		setin __constVal15, __SetSensorColorGreen_7qG2_port_7qG2_000_inline_InicializaSensores, 0
 6	4407	37		setin __constVal128, __SetSensorColorGreen_7qG2_port_7qG2_000_inline_InicializaSensores, 1
 6	4407	41		mov __ResetSensorPort, __SetSensorColorGreen_7qG2_port_7qG2_000_inline_InicializaSensores
 6	4407	43		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-6	4938	45	#line 4938 "NXCDefs.h"
+6	4980	45	#line 4980 "NXCDefs.h"
 6	4406	45	#line 4406 "NXCDefs.h"
-6	141	45	#line 141 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-6	141	45	#line 141 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-6	142	45		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores, 3
-6	141	48	#line 141 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-6	142	48	#line 142 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-6	143	48		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_InicializaSensores, __constVal1
+6	143	45	#line 143 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+6	143	45	#line 143 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+6	144	45		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores, 3
+6	143	48	#line 143 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+6	144	48	#line 144 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+6	145	48		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_InicializaSensores, __constVal1
 6	4342	50	#line 4342 "NXCDefs.h"
 6	4343	50		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_InicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores
 6	4342	52	#line 4342 "NXCDefs.h"
@@ -681,834 +685,882 @@ Clump	Line	PC	Source
 6	4279	83	#pragma macro 4
 6	4279	83		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_InicializaSensores
 6	4279	85		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-6	5028	87	#line 5028 "NXCDefs.h"
+6	5070	87	#line 5070 "NXCDefs.h"
 6	4278	87	#line 4278 "NXCDefs.h"
 6	4345	87	#line 4345 "NXCDefs.h"
-6	142	87	#line 142 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 6	144	87	#line 144 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-6	145	87		subret __InicializaSensores_return
-7	149	0	#line 149 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	150	0		subcall RecebeBoneco, __RecebeBoneco_return
-7	149	2	#line 149 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	150	2		mov bonecoAlvo, __D0RecebeBoneco
-7	149	4	#line 149 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	149	4	#line 149 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	149	4	#line 149 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	150	4		mov __signed_stack_001BonecoAlvo, bonecoAlvo
-7	149	6	#line 149 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	150	6	#line 150 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	151	6		set __D0BonecoAlvo, 2
-7	150	9	#line 150 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	151	9		cmp 4, __D0BonecoAlvo, __signed_stack_001BonecoAlvo, __D0BonecoAlvo
-7	151	13	#line 151 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	152	13		brtst 4, __ASM_Label_510, __D0BonecoAlvo
-7	152	16	#line 152 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	153	16		subcall BipPreto, __BipPreto_return
-7	152	18	#line 152 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	153	18	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	154	18		set bonecoNaoAlvo, 1
-7	153	21	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	153	21	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	154	21	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	155	21		jmp __ASM_Label_513
-7	154	23	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	155	23		mov __signed_stack_001BonecoAlvo, bonecoAlvo
-7	154	25	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	155	25	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	156	25		set __D0BonecoAlvo, 1
-7	155	28	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	156	28		cmp 4, __D0BonecoAlvo, __signed_stack_001BonecoAlvo, __D0BonecoAlvo
-7	156	32	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	157	32		brtst 4, __ASM_Label_516, __D0BonecoAlvo
-7	157	35	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	158	35		subcall BipBranco, __BipBranco_return
-7	157	37	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	158	37	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	159	37		set bonecoNaoAlvo, 2
-7	158	40	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	158	40	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	161	40	#line 161 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	161	40	#line 161 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	161	40	#line 161 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-7	162	40		subret __BonecoAlvo_return
-8	167	0	#line 167 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	168	0		set __lerSensor_7qG2_sensor_7qG2_000, 0
-8	167	3	#line 167 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	168	3	#line 168 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	169	3		subcall lerSensor, __lerSensor_return
-8	168	5	#line 168 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	169	5		mov __TemBoneco_7qG2_rgb_dir_7qG2_000, __D0lerSensor
-8	168	7	#line 168 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	168	7	#line 168 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	168	7	#line 168 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	169	7		set __lerSensor_7qG2_sensor_7qG2_000, 1
-8	168	10	#line 168 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	173	10	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	174	10		subcall lerSensor, __lerSensor_return
-8	173	12	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	174	12		mov __TemBoneco_7qG2_rgb_esq_7qG2_000, __D0lerSensor
-8	173	14	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	173	14	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	173	14	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	174	14		mov __signed_stack_001TemBoneco, __TemBoneco_7qG2_rgb_dir_7qG2_000
-8	173	16	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	173	16	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	174	16		set __D0TemBoneco, 286
-8	173	19	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	174	19		cmp 0, __D0TemBoneco, __signed_stack_001TemBoneco, __D0TemBoneco
-8	173	23	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	174	23		brtst 4, __ASM_Label_530, __D0TemBoneco
-8	173	26	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	174	26		mov __signed_stack_001TemBoneco, __TemBoneco_7qG2_rgb_dir_7qG2_000
-8	173	28	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	173	28	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	174	28		set __D0TemBoneco, 222
-8	173	31	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	174	31		cmp 1, __D0TemBoneco, __signed_stack_001TemBoneco, __D0TemBoneco
-8	173	35	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	174	35		brtst 4, __ASM_Label_528, __D0TemBoneco
-8	173	38	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	174	38		mov __signed_stack_001TemBoneco, __TemBoneco_7qG2_rgb_esq_7qG2_000
-8	173	40	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	173	40	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	174	40		set __D0TemBoneco, 276
-8	173	43	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	174	43		cmp 0, __D0TemBoneco, __signed_stack_001TemBoneco, __D0TemBoneco
-8	173	47	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	174	47		brtst 4, __ASM_Label_536, __D0TemBoneco
-8	173	50	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	174	50		mov __signed_stack_001TemBoneco, __TemBoneco_7qG2_rgb_esq_7qG2_000
-8	173	52	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	173	52	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	174	52		set __D0TemBoneco, 209
-8	173	55	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	174	55		cmp 1, __D0TemBoneco, __signed_stack_001TemBoneco, __D0TemBoneco
-8	174	59	#line 174 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	175	59		brtst 4, __ASM_Label_541, __D0TemBoneco
-8	175	62	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	176	62		set __D0TemBoneco, 0
-8	175	65	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	176	65		subret __TemBoneco_return
-8	175	67	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	175	67	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	176	67	#line 176 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	177	67		set __D0TemBoneco, 1
-8	176	70	#line 176 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	177	70		subret __TemBoneco_return
-8	176	72	#line 176 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+6	146	87	#line 146 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+6	147	87		subret __InicializaSensores_return
+7	151	0	#line 151 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	152	0		subcall RecebeBoneco, __RecebeBoneco_return
+7	151	2	#line 151 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	152	2		mov bonecoAlvo, __D0RecebeBoneco
+7	151	4	#line 151 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	151	4	#line 151 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	151	4	#line 151 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	152	4		mov __signed_stack_001BonecoAlvo, bonecoAlvo
+7	151	6	#line 151 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	152	6	#line 152 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	153	6		set __D0BonecoAlvo, 2
+7	152	9	#line 152 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	153	9		cmp 4, __D0BonecoAlvo, __signed_stack_001BonecoAlvo, __D0BonecoAlvo
+7	153	13	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	154	13		brtst 4, __ASM_Label_510, __D0BonecoAlvo
+7	154	16	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	155	16		subcall BipPreto, __BipPreto_return
+7	154	18	#line 154 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	155	18	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	156	18		set bonecoNaoAlvo, 1
+7	155	21	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	155	21	#line 155 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	156	21	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	157	21		jmp __ASM_Label_513
+7	156	23	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	157	23		mov __signed_stack_001BonecoAlvo, bonecoAlvo
+7	156	25	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	157	25	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	158	25		set __D0BonecoAlvo, 1
+7	157	28	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	158	28		cmp 4, __D0BonecoAlvo, __signed_stack_001BonecoAlvo, __D0BonecoAlvo
+7	158	32	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	159	32		brtst 4, __ASM_Label_516, __D0BonecoAlvo
+7	159	35	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	160	35		subcall BipBranco, __BipBranco_return
+7	159	37	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	160	37	#line 160 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	161	37		set bonecoNaoAlvo, 2
+7	160	40	#line 160 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	160	40	#line 160 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	163	40	#line 163 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	163	40	#line 163 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	163	40	#line 163 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+7	164	40		subret __BonecoAlvo_return
+8	169	0	#line 169 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	170	0		set __lerSensor_7qG2_sensor_7qG2_000, 0
+8	169	3	#line 169 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	170	3	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	171	3		subcall lerSensor, __lerSensor_return
+8	170	5	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	171	5		mov __TemBoneco_7qG2_rgb_dir_7qG2_000, __D0lerSensor
+8	170	7	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	170	7	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	170	7	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	171	7		set __lerSensor_7qG2_sensor_7qG2_000, 1
+8	170	10	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	175	10	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	176	10		subcall lerSensor, __lerSensor_return
+8	175	12	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	176	12		mov __TemBoneco_7qG2_rgb_esq_7qG2_000, __D0lerSensor
+8	175	14	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	175	14	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	175	14	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	176	14		mov __signed_stack_001TemBoneco, __TemBoneco_7qG2_rgb_dir_7qG2_000
+8	175	16	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	175	16	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	176	16		set __D0TemBoneco, 702
+8	175	19	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	176	19		cmp 0, __D0TemBoneco, __signed_stack_001TemBoneco, __D0TemBoneco
+8	175	23	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	176	23		brtst 4, __ASM_Label_530, __D0TemBoneco
+8	175	26	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	176	26		mov __signed_stack_001TemBoneco, __TemBoneco_7qG2_rgb_dir_7qG2_000
+8	175	28	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	175	28	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	176	28		set __D0TemBoneco, 593
+8	175	31	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	176	31		cmp 1, __D0TemBoneco, __signed_stack_001TemBoneco, __D0TemBoneco
+8	175	35	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	176	35		brtst 4, __ASM_Label_528, __D0TemBoneco
+8	175	38	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	176	38		mov __signed_stack_001TemBoneco, __TemBoneco_7qG2_rgb_esq_7qG2_000
+8	175	40	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	175	40	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	176	40		set __D0TemBoneco, 453
+8	175	43	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	176	43		cmp 0, __D0TemBoneco, __signed_stack_001TemBoneco, __D0TemBoneco
+8	175	47	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	176	47		brtst 4, __ASM_Label_536, __D0TemBoneco
+8	175	50	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	176	50		mov __signed_stack_001TemBoneco, __TemBoneco_7qG2_rgb_esq_7qG2_000
+8	175	52	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	175	52	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	176	52		set __D0TemBoneco, 348
+8	175	55	#line 175 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	176	55		cmp 1, __D0TemBoneco, __signed_stack_001TemBoneco, __D0TemBoneco
+8	176	59	#line 176 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	177	59		brtst 4, __ASM_Label_541, __D0TemBoneco
+8	177	62	#line 177 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	178	62		set __D0TemBoneco, 0
+8	177	65	#line 177 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	178	65		subret __TemBoneco_return
+8	177	67	#line 177 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	177	67	#line 177 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	178	67	#line 178 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	179	67		set __D0TemBoneco, 1
+8	178	70	#line 178 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	179	70		subret __TemBoneco_return
 8	178	72	#line 178 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-8	179	72		subret __TemBoneco_return
-9	210	0	#line 210 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-9	210	0	#line 210 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	180	72	#line 180 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+8	181	72		subret __TemBoneco_return
 9	212	0	#line 212 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-9	213	0		set __D0RecebeBoneco, 1
-9	212	3	#line 212 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-9	213	3		subret __RecebeBoneco_return
-9	212	5	#line 212 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+9	212	0	#line 212 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+9	214	0	#line 214 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+9	215	0		set __D0RecebeBoneco, 1
+9	214	3	#line 214 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+9	215	3		subret __RecebeBoneco_return
 9	214	5	#line 214 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-9	215	5		subret __RecebeBoneco_return
-10	229	0	#line 229 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	230	0		arrinit __lerSensor_7qG2_leitura_7qG2_000, __constVal0, __constVal11
-10	229	4	#line 229 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	230	4		set __lerSensor_7qG2_i_7qG2_000, 0
-10	229	7	#line 229 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	229	7	#line 229 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	230	7		mov __signed_stack_001lerSensor, __lerSensor_7qG2_i_7qG2_000
-10	229	9	#line 229 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	229	9	#line 229 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	230	9		set __D0lerSensor, 11
-10	229	12	#line 229 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	230	12		cmp 0, __D0lerSensor, __signed_stack_001lerSensor, __D0lerSensor
-10	229	16	#line 229 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	230	16		brtst 4, __ASM_Label_579, __D0lerSensor
-10	229	19	#line 229 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	230	19		jmp __ASM_Label_580
-10	229	21	#line 229 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	230	21		add __lerSensor_7qG2_i_7qG2_000, __lerSensor_7qG2_i_7qG2_000, __constVal1
-10	230	25	#line 230 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	231	25		jmp __ASM_Label_578
-10	232	27	#line 232 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	233	27		getin __lerSensor_7qG2_aux_7qG2_000, __lerSensor_7qG2_sensor_7qG2_000, 2
-10	232	31	#line 232 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	232	31	#line 232 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	233	31	#line 233 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	234	31		set __lerSensor_7qG2_j_7qG2_000, 0
-10	233	34	#line 233 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	233	34	#line 233 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	233	34	#line 233 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	234	34		mov __signed_stack_001lerSensor, __lerSensor_7qG2_aux_7qG2_000
-10	233	36	#line 233 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	233	36	#line 233 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	234	36		mov __signed_stack_002lerSensor, __lerSensor_7qG2_j_7qG2_000
-10	233	38	#line 233 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	233	38	#line 233 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	234	38		index __D0lerSensor, __lerSensor_7qG2_leitura_7qG2_000, __signed_stack_002lerSensor
-10	233	42	#line 233 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	233	42	#line 233 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	234	42		cmp 0, __D0lerSensor, __signed_stack_001lerSensor, __D0lerSensor
-10	233	46	#line 233 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	234	46		brtst 4, __ASM_Label_593, __D0lerSensor
-10	233	49	#line 233 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	234	49		mov __signed_stack_001lerSensor, __lerSensor_7qG2_j_7qG2_000
-10	233	51	#line 233 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	234	51	#line 234 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	235	51		mov __D0lerSensor, __lerSensor_7qG2_i_7qG2_000
-10	234	53	#line 234 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	235	53		cmp 0, __D0lerSensor, __signed_stack_001lerSensor, __D0lerSensor
-10	235	57	#line 235 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	236	57		brtst 4, __ASM_Label_591, __D0lerSensor
-10	236	60	#line 236 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	237	60		add __lerSensor_7qG2_j_7qG2_000, __lerSensor_7qG2_j_7qG2_000, __constVal1
-10	236	64	#line 236 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+9	216	5	#line 216 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+9	217	5		subret __RecebeBoneco_return
+10	231	0	#line 231 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	232	0		arrinit __lerSensor_7qG2_leitura_7qG2_000, __constVal0, __constVal11
+10	231	4	#line 231 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	232	4		set __lerSensor_7qG2_i_7qG2_000, 0
+10	231	7	#line 231 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	231	7	#line 231 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	232	7		mov __signed_stack_001lerSensor, __lerSensor_7qG2_i_7qG2_000
+10	231	9	#line 231 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	231	9	#line 231 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	232	9		set __D0lerSensor, 11
+10	231	12	#line 231 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	232	12		cmp 0, __D0lerSensor, __signed_stack_001lerSensor, __D0lerSensor
+10	231	16	#line 231 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	232	16		brtst 4, __ASM_Label_579, __D0lerSensor
+10	231	19	#line 231 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	232	19		jmp __ASM_Label_580
+10	231	21	#line 231 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	232	21		add __lerSensor_7qG2_i_7qG2_000, __lerSensor_7qG2_i_7qG2_000, __constVal1
+10	232	25	#line 232 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	233	25		jmp __ASM_Label_578
+10	234	27	#line 234 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	235	27		getin __lerSensor_7qG2_aux_7qG2_000, __lerSensor_7qG2_sensor_7qG2_000, 2
+10	234	31	#line 234 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	234	31	#line 234 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	235	31	#line 235 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	236	31		set __lerSensor_7qG2_j_7qG2_000, 0
+10	235	34	#line 235 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	235	34	#line 235 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	235	34	#line 235 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	236	34		mov __signed_stack_001lerSensor, __lerSensor_7qG2_aux_7qG2_000
+10	235	36	#line 235 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	235	36	#line 235 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	236	36		mov __signed_stack_002lerSensor, __lerSensor_7qG2_j_7qG2_000
+10	235	38	#line 235 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	235	38	#line 235 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	236	38		index __D0lerSensor, __lerSensor_7qG2_leitura_7qG2_000, __signed_stack_002lerSensor
+10	235	42	#line 235 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	235	42	#line 235 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	236	42		cmp 0, __D0lerSensor, __signed_stack_001lerSensor, __D0lerSensor
+10	235	46	#line 235 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	236	46		brtst 4, __ASM_Label_593, __D0lerSensor
+10	235	49	#line 235 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	236	49		mov __signed_stack_001lerSensor, __lerSensor_7qG2_j_7qG2_000
+10	235	51	#line 235 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	236	51	#line 236 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	237	51		mov __D0lerSensor, __lerSensor_7qG2_i_7qG2_000
+10	236	53	#line 236 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	237	53		cmp 0, __D0lerSensor, __signed_stack_001lerSensor, __D0lerSensor
+10	237	57	#line 237 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	238	57		brtst 4, __ASM_Label_591, __D0lerSensor
+10	238	60	#line 238 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	239	60		add __lerSensor_7qG2_j_7qG2_000, __lerSensor_7qG2_j_7qG2_000, __constVal1
 10	238	64	#line 238 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	239	64		jmp __ASM_Label_590
-10	238	66	#line 238 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	238	66	#line 238 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	239	66		mov __signed_stack_001lerSensor, __lerSensor_7qG2_j_7qG2_000
-10	238	68	#line 238 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	238	68	#line 238 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	239	68		mov __D0lerSensor, __lerSensor_7qG2_i_7qG2_000
-10	238	70	#line 238 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	239	70		cmp 0, __D0lerSensor, __signed_stack_001lerSensor, __D0lerSensor
-10	239	74	#line 239 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	240	74		brtst 4, __ASM_Label_598, __D0lerSensor
-10	239	77	#line 239 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	240	77		mov __lerSensor_7qG2_k_7qG2_000, __lerSensor_7qG2_i_7qG2_000
-10	239	79	#line 239 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	239	79	#line 239 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	240	79		mov __signed_stack_001lerSensor, __lerSensor_7qG2_k_7qG2_000
-10	239	81	#line 239 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	239	81	#line 239 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	240	81		mov __D0lerSensor, __lerSensor_7qG2_j_7qG2_000
-10	239	83	#line 239 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	240	83		cmp 1, __D0lerSensor, __signed_stack_001lerSensor, __D0lerSensor
-10	239	87	#line 239 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	240	87		brtst 4, __ASM_Label_600, __D0lerSensor
-10	239	90	#line 239 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	240	90		jmp __ASM_Label_601
-10	239	92	#line 239 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	240	92		sub __lerSensor_7qG2_k_7qG2_000, __lerSensor_7qG2_k_7qG2_000, __constVal1
-10	240	96	#line 240 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	241	96		jmp __ASM_Label_599
-10	240	98	#line 240 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	241	98		mov __signed_stack_001lerSensor, __lerSensor_7qG2_k_7qG2_000
-10	240	100	#line 240 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	240	100	#line 240 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	241	100		mov __signed_stack_002lerSensor, __lerSensor_7qG2_k_7qG2_000
-10	240	102	#line 240 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	240	102	#line 240 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	241	102		set __D0lerSensor, 1
-10	240	105	#line 240 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	241	105		sub __signed_stack_002lerSensor, __signed_stack_002lerSensor, __D0lerSensor
-10	240	109	#line 240 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	240	109	#line 240 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	241	109		index __D0lerSensor, __lerSensor_7qG2_leitura_7qG2_000, __signed_stack_002lerSensor
-10	240	113	#line 240 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	241	113	#line 241 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	242	113		replace __lerSensor_7qG2_leitura_7qG2_000, __lerSensor_7qG2_leitura_7qG2_000, __signed_stack_001lerSensor, __D0lerSensor
-10	241	118	#line 241 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	242	118	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	243	118		jmp __ASM_Label_602
-10	242	120	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	242	120	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	243	120		mov __signed_stack_001lerSensor, __lerSensor_7qG2_j_7qG2_000
-10	242	122	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	243	122	#line 243 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	244	122		mov __D0lerSensor, __lerSensor_7qG2_aux_7qG2_000
-10	243	124	#line 243 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	244	124		replace __lerSensor_7qG2_leitura_7qG2_000, __lerSensor_7qG2_leitura_7qG2_000, __signed_stack_001lerSensor, __D0lerSensor
-10	243	129	#line 243 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	240	64	#line 240 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	241	64		jmp __ASM_Label_590
+10	240	66	#line 240 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	240	66	#line 240 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	241	66		mov __signed_stack_001lerSensor, __lerSensor_7qG2_j_7qG2_000
+10	240	68	#line 240 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	240	68	#line 240 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	241	68		mov __D0lerSensor, __lerSensor_7qG2_i_7qG2_000
+10	240	70	#line 240 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	241	70		cmp 0, __D0lerSensor, __signed_stack_001lerSensor, __D0lerSensor
+10	241	74	#line 241 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	242	74		brtst 4, __ASM_Label_598, __D0lerSensor
+10	241	77	#line 241 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	242	77		mov __lerSensor_7qG2_k_7qG2_000, __lerSensor_7qG2_i_7qG2_000
+10	241	79	#line 241 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	241	79	#line 241 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	242	79		mov __signed_stack_001lerSensor, __lerSensor_7qG2_k_7qG2_000
+10	241	81	#line 241 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	241	81	#line 241 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	242	81		mov __D0lerSensor, __lerSensor_7qG2_j_7qG2_000
+10	241	83	#line 241 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	242	83		cmp 1, __D0lerSensor, __signed_stack_001lerSensor, __D0lerSensor
+10	241	87	#line 241 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	242	87		brtst 4, __ASM_Label_600, __D0lerSensor
+10	241	90	#line 241 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	242	90		jmp __ASM_Label_601
+10	241	92	#line 241 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	242	92		sub __lerSensor_7qG2_k_7qG2_000, __lerSensor_7qG2_k_7qG2_000, __constVal1
+10	242	96	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	243	96		jmp __ASM_Label_599
+10	242	98	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	243	98		mov __signed_stack_001lerSensor, __lerSensor_7qG2_k_7qG2_000
+10	242	100	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	242	100	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	243	100		mov __signed_stack_002lerSensor, __lerSensor_7qG2_k_7qG2_000
+10	242	102	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	242	102	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	243	102		set __D0lerSensor, 1
+10	242	105	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	243	105		sub __signed_stack_002lerSensor, __signed_stack_002lerSensor, __D0lerSensor
+10	242	109	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	242	109	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	243	109		index __D0lerSensor, __lerSensor_7qG2_leitura_7qG2_000, __signed_stack_002lerSensor
+10	242	113	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	243	113	#line 243 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	244	113		replace __lerSensor_7qG2_leitura_7qG2_000, __lerSensor_7qG2_leitura_7qG2_000, __signed_stack_001lerSensor, __D0lerSensor
+10	243	118	#line 243 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	244	118	#line 244 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	245	118		jmp __ASM_Label_602
+10	244	120	#line 244 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	244	120	#line 244 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	245	120		mov __signed_stack_001lerSensor, __lerSensor_7qG2_j_7qG2_000
+10	244	122	#line 244 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	245	122	#line 245 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	246	122		mov __D0lerSensor, __lerSensor_7qG2_aux_7qG2_000
+10	245	124	#line 245 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	246	124		replace __lerSensor_7qG2_leitura_7qG2_000, __lerSensor_7qG2_leitura_7qG2_000, __signed_stack_001lerSensor, __D0lerSensor
 10	245	129	#line 245 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	246	129		jmp __ASM_Label_617
-10	245	131	#line 245 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	246	131		mov __signed_stack_001lerSensor, __lerSensor_7qG2_i_7qG2_000
-10	245	133	#line 245 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	246	133	#line 246 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	247	133		mov __D0lerSensor, __lerSensor_7qG2_aux_7qG2_000
-10	246	135	#line 246 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	247	135		replace __lerSensor_7qG2_leitura_7qG2_000, __lerSensor_7qG2_leitura_7qG2_000, __signed_stack_001lerSensor, __D0lerSensor
-10	246	140	#line 246 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	249	140	#line 249 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	249	140	#line 249 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	250	140		jmp __ASM_Label_581
-10	249	142	#line 249 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	249	142	#line 249 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	250	142		set __signed_stack_001lerSensor, 5
-10	249	145	#line 249 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	249	145	#line 249 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	250	145		index __D0lerSensor, __lerSensor_7qG2_leitura_7qG2_000, __signed_stack_001lerSensor
-10	249	149	#line 249 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	250	149	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	251	149		subret __lerSensor_return
-10	250	151	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	247	129	#line 247 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	248	129		jmp __ASM_Label_617
+10	247	131	#line 247 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	248	131		mov __signed_stack_001lerSensor, __lerSensor_7qG2_i_7qG2_000
+10	247	133	#line 247 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	248	133	#line 248 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	249	133		mov __D0lerSensor, __lerSensor_7qG2_aux_7qG2_000
+10	248	135	#line 248 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	249	135		replace __lerSensor_7qG2_leitura_7qG2_000, __lerSensor_7qG2_leitura_7qG2_000, __signed_stack_001lerSensor, __D0lerSensor
+10	248	140	#line 248 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	251	140	#line 251 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	251	140	#line 251 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	252	140		jmp __ASM_Label_581
+10	251	142	#line 251 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	251	142	#line 251 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	252	142		set __signed_stack_001lerSensor, 5
+10	251	145	#line 251 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	251	145	#line 251 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	252	145		index __D0lerSensor, __lerSensor_7qG2_leitura_7qG2_000, __signed_stack_001lerSensor
+10	251	149	#line 251 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	252	149	#line 252 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	253	149		subret __lerSensor_return
 10	252	151	#line 252 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-10	253	151		subret __lerSensor_return
-11	256	0	#line 256 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	257	0		mov __D0PegaBoneco, __constValNeg30
-11	257	2	#line 257 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	258	2	#pragma macro 7
-11	258	2		setout __constVal0, 2, __D0PegaBoneco, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-11	5637	25	#line 5637 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	257	25	#line 257 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	254	151	#line 254 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+10	255	151		subret __lerSensor_return
+11	258	0	#line 258 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	259	0		mov __D0PegaBoneco, __constValNeg30
+11	259	2	#line 259 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	260	2	#pragma macro 7
+11	260	2		setout __constVal0, 2, __D0PegaBoneco, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+11	5679	25	#line 5679 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 11	259	25	#line 259 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	260	25		getout __PegaBoneco_7qG2_tc_7qG2_000, __constVal0, 4
-11	259	29	#line 259 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	259	29	#line 259 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	261	25	#line 261 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	262	25		getout __PegaBoneco_7qG2_tc_7qG2_000, __constVal0, 4
 11	261	29	#line 261 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	262	29		set __Wait_7qG2_ms_7qG2_000_inline_PegaBoneco, 200
-11	261	32	#line 261 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	261	29	#line 261 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	263	29	#line 263 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	264	29		set __Wait_7qG2_ms_7qG2_000_inline_PegaBoneco, 200
+11	263	32	#line 263 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 11	8551	32	#line 8551 "NXCDefs.h"
 11	8552	32		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_PegaBoneco
 11	8551	35	#line 8551 "NXCDefs.h"
-11	262	35	#line 262 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	263	35	#line 263 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	264	35		mov __PegaBoneco_7qG2_old_tc_7qG2_000, __PegaBoneco_7qG2_tc_7qG2_000
-11	263	37	#line 263 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	263	37	#line 263 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	264	37	#line 264 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	265	37		getout __PegaBoneco_7qG2_tc_7qG2_000, __constVal0, 4
-11	264	41	#line 264 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	264	41	#line 264 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	264	41	#line 264 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	265	41		mov __signed_stack_001PegaBoneco, __PegaBoneco_7qG2_tc_7qG2_000
-11	264	43	#line 264 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	265	43	#line 265 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	266	43		mov __D0PegaBoneco, __constValNeg125
-11	265	45	#line 265 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	266	45		cmp 0, __D0PegaBoneco, __signed_stack_001PegaBoneco, __D0PegaBoneco
-11	266	49	#line 266 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	267	49		brtst 4, __ASM_Label_642, __D0PegaBoneco
-11	266	52	#line 266 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	267	52		set __D0PegaBoneco, 0
-11	268	55	#line 268 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	269	55	#pragma macro 7
-11	269	55		setout __constVal0, 2, __D0PegaBoneco, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-11	5690	78	#line 5690 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	268	78	#line 268 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	269	78	#line 269 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	270	78		subcall VoltaGarra, __VoltaGarra_return
-11	269	80	#line 269 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	270	80	#line 270 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	271	80		set __D0PegaBoneco, 0
-11	270	83	#line 270 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	271	83		subret __PegaBoneco_return
-11	270	85	#line 270 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	271	85	#line 271 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	271	85	#line 271 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	272	85		mov __signed_stack_001PegaBoneco, __PegaBoneco_7qG2_tc_7qG2_000
-11	271	87	#line 271 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	271	87	#line 271 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	272	87		mov __D0PegaBoneco, __PegaBoneco_7qG2_old_tc_7qG2_000
-11	271	89	#line 271 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	272	89		cmp 5, __D0PegaBoneco, __signed_stack_001PegaBoneco, __D0PegaBoneco
-11	273	93	#line 273 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	274	93		brtst 4, __ASM_Label_633, __D0PegaBoneco
-11	273	96	#line 273 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	274	96		jmp __ASM_Label_632
-11	273	98	#line 273 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	273	98	#line 273 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	273	98	#line 273 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	274	98		set __D0PegaBoneco, 0
-11	275	101	#line 275 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	276	101	#pragma macro 7
-11	276	101		setout __constVal0, 2, __D0PegaBoneco, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-11	5724	124	#line 5724 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	275	124	#line 275 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	276	124	#line 276 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	277	124		set __D0PegaBoneco, 1
-11	276	127	#line 276 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	277	127		subret __PegaBoneco_return
-11	276	129	#line 276 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	264	35	#line 264 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	265	35	#line 265 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	266	35		mov __PegaBoneco_7qG2_old_tc_7qG2_000, __PegaBoneco_7qG2_tc_7qG2_000
+11	265	37	#line 265 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	265	37	#line 265 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	266	37	#line 266 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	267	37		getout __PegaBoneco_7qG2_tc_7qG2_000, __constVal0, 4
+11	266	41	#line 266 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	266	41	#line 266 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	266	41	#line 266 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	267	41		mov __signed_stack_001PegaBoneco, __PegaBoneco_7qG2_tc_7qG2_000
+11	266	43	#line 266 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	267	43	#line 267 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	268	43		mov __D0PegaBoneco, __constValNeg125
+11	267	45	#line 267 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	268	45		cmp 0, __D0PegaBoneco, __signed_stack_001PegaBoneco, __D0PegaBoneco
+11	268	49	#line 268 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	269	49		brtst 4, __ASM_Label_642, __D0PegaBoneco
+11	268	52	#line 268 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	269	52		set __D0PegaBoneco, 0
+11	270	55	#line 270 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	271	55	#pragma macro 7
+11	271	55		setout __constVal0, 2, __D0PegaBoneco, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+11	5732	78	#line 5732 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	270	78	#line 270 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	271	78	#line 271 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	272	78		subcall VoltaGarra, __VoltaGarra_return
+11	271	80	#line 271 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	272	80	#line 272 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	273	80		set __D0PegaBoneco, 0
+11	272	83	#line 272 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	273	83		subret __PegaBoneco_return
+11	272	85	#line 272 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	273	85	#line 273 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	273	85	#line 273 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	274	85		mov __signed_stack_001PegaBoneco, __PegaBoneco_7qG2_tc_7qG2_000
+11	273	87	#line 273 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	273	87	#line 273 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	274	87		mov __D0PegaBoneco, __PegaBoneco_7qG2_old_tc_7qG2_000
+11	273	89	#line 273 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	274	89		cmp 5, __D0PegaBoneco, __signed_stack_001PegaBoneco, __D0PegaBoneco
+11	275	93	#line 275 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	276	93		brtst 4, __ASM_Label_633, __D0PegaBoneco
+11	275	96	#line 275 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	276	96		jmp __ASM_Label_632
+11	275	98	#line 275 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	275	98	#line 275 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	275	98	#line 275 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	276	98		set __D0PegaBoneco, 0
+11	277	101	#line 277 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	278	101	#pragma macro 7
+11	278	101		setout __constVal0, 2, __D0PegaBoneco, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+11	5766	124	#line 5766 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	277	124	#line 277 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	278	124	#line 278 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	279	124		set __D0PegaBoneco, 1
+11	278	127	#line 278 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	279	127		subret __PegaBoneco_return
 11	278	129	#line 278 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	279	129		subret __PegaBoneco_return
-12	282	0	#line 282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	283	0		set __signed_stack_001VoltaGarra, 0
-12	282	3	#line 282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	282	3	#line 282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	283	3		mov __D0VoltaGarra, __constValNeg30
-12	282	5	#line 282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	283	5		sub __D0VoltaGarra, __signed_stack_001VoltaGarra, __D0VoltaGarra
-12	283	9	#line 283 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	284	9	#pragma macro 7
-12	284	9		setout __constVal0, 2, __D0VoltaGarra, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-12	5757	32	#line 5757 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	283	32	#line 283 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	284	32	#line 284 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	285	32		getout __VoltaGarra_7qG2_tc_7qG2_000, __constVal0, 4
-12	284	36	#line 284 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	284	36	#line 284 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	280	129	#line 280 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+11	281	129		subret __PegaBoneco_return
+12	284	0	#line 284 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	285	0		set __signed_stack_001VoltaGarra, 0
+12	284	3	#line 284 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	284	3	#line 284 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	285	3		mov __D0VoltaGarra, __constValNeg30
+12	284	5	#line 284 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	285	5		sub __D0VoltaGarra, __signed_stack_001VoltaGarra, __D0VoltaGarra
+12	285	9	#line 285 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	286	9	#pragma macro 7
+12	286	9		setout __constVal0, 2, __D0VoltaGarra, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+12	5799	32	#line 5799 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	285	32	#line 285 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	286	32	#line 286 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	287	32		getout __VoltaGarra_7qG2_tc_7qG2_000, __constVal0, 4
 12	286	36	#line 286 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	287	36		set __Wait_7qG2_ms_7qG2_000_inline_VoltaGarra, 200
-12	286	39	#line 286 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	286	36	#line 286 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	288	36	#line 288 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	289	36		set __Wait_7qG2_ms_7qG2_000_inline_VoltaGarra, 200
+12	288	39	#line 288 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 12	8551	39	#line 8551 "NXCDefs.h"
 12	8552	39		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_VoltaGarra
 12	8551	42	#line 8551 "NXCDefs.h"
-12	287	42	#line 287 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	288	42	#line 288 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	289	42		mov __VoltaGarra_7qG2_old_tc_7qG2_000, __VoltaGarra_7qG2_tc_7qG2_000
-12	288	44	#line 288 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	288	44	#line 288 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	289	44	#line 289 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	290	44		getout __VoltaGarra_7qG2_tc_7qG2_000, __constVal0, 4
-12	289	48	#line 289 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	289	48	#line 289 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	289	48	#line 289 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	290	48		mov __signed_stack_001VoltaGarra, __VoltaGarra_7qG2_tc_7qG2_000
-12	289	50	#line 289 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	289	50	#line 289 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	290	50		mov __D0VoltaGarra, __VoltaGarra_7qG2_old_tc_7qG2_000
-12	289	52	#line 289 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	290	52		cmp 5, __D0VoltaGarra, __signed_stack_001VoltaGarra, __D0VoltaGarra
-12	291	56	#line 291 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	292	56		brtst 4, __ASM_Label_660, __D0VoltaGarra
-12	291	59	#line 291 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	292	59		jmp __ASM_Label_659
-12	291	61	#line 291 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	291	61	#line 291 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	291	61	#line 291 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	292	61		set __D0VoltaGarra, 0
-12	292	64	#line 292 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	293	64	#pragma macro 7
-12	293	64		setout __constVal0, 2, __D0VoltaGarra, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-12	5815	87	#line 5815 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	292	87	#line 292 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	289	42	#line 289 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	290	42	#line 290 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	291	42		mov __VoltaGarra_7qG2_old_tc_7qG2_000, __VoltaGarra_7qG2_tc_7qG2_000
+12	290	44	#line 290 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	290	44	#line 290 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	291	44	#line 291 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	292	44		getout __VoltaGarra_7qG2_tc_7qG2_000, __constVal0, 4
+12	291	48	#line 291 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	291	48	#line 291 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	291	48	#line 291 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	292	48		mov __signed_stack_001VoltaGarra, __VoltaGarra_7qG2_tc_7qG2_000
+12	291	50	#line 291 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	291	50	#line 291 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	292	50		mov __D0VoltaGarra, __VoltaGarra_7qG2_old_tc_7qG2_000
+12	291	52	#line 291 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	292	52		cmp 5, __D0VoltaGarra, __signed_stack_001VoltaGarra, __D0VoltaGarra
+12	293	56	#line 293 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	294	56		brtst 4, __ASM_Label_660, __D0VoltaGarra
+12	293	59	#line 293 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	294	59		jmp __ASM_Label_659
+12	293	61	#line 293 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	293	61	#line 293 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	293	61	#line 293 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	294	61		set __D0VoltaGarra, 0
+12	294	64	#line 294 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	295	64	#pragma macro 7
+12	295	64		setout __constVal0, 2, __D0VoltaGarra, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+12	5857	87	#line 5857 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 12	294	87	#line 294 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-12	295	87		subret __VoltaGarra_return
-13	298	0	#line 298 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	299	0		set __lerSensor_7qG2_sensor_7qG2_000, 2
-13	298	3	#line 298 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	296	87	#line 296 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+12	297	87		subret __VoltaGarra_return
+13	300	0	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	301	0		set __lerSensor_7qG2_sensor_7qG2_000, 2
 13	300	3	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	301	3		subcall lerSensor, __lerSensor_return
-13	300	5	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	301	5		mov __CorBoneco_7qG2_leitura_7qG2_000, __D0lerSensor
-13	300	7	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	300	7	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	300	7	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	301	7		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
-13	300	9	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	300	9	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	301	9		set __D0CorBoneco, 564
-13	300	12	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	301	12		cmp 0, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
-13	300	16	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	301	16		brtst 4, __ASM_Label_676, __D0CorBoneco
-13	300	19	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	301	19		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
-13	300	21	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	300	21	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	301	21		set __D0CorBoneco, 339
-13	300	24	#line 300 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	301	24		cmp 1, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
-13	302	28	#line 302 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	303	28		brtst 4, __ASM_Label_681, __D0CorBoneco
-13	303	31	#line 303 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	304	31		set __D0CorBoneco, 1
-13	303	34	#line 303 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	304	34		subret __CorBoneco_return
-13	303	36	#line 303 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	304	36	#line 304 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	304	36	#line 304 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	305	36		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
-13	304	38	#line 304 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	304	38	#line 304 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	305	38		set __D0CorBoneco, 126
-13	304	41	#line 304 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	305	41		cmp 0, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
-13	304	45	#line 304 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	305	45		brtst 4, __ASM_Label_685, __D0CorBoneco
-13	304	48	#line 304 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	305	48		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
-13	304	50	#line 304 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	304	50	#line 304 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	305	50		set __D0CorBoneco, 100
-13	304	53	#line 304 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	305	53		cmp 1, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
-13	305	57	#line 305 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	306	57		brtst 4, __ASM_Label_690, __D0CorBoneco
-13	306	60	#line 306 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	307	60		set __D0CorBoneco, 2
-13	306	63	#line 306 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	307	63		subret __CorBoneco_return
-13	306	65	#line 306 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	306	65	#line 306 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	306	65	#line 306 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	307	65		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
-13	306	67	#line 306 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	306	67	#line 306 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	307	67		set __D0CorBoneco, 141
-13	306	70	#line 306 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	307	70		cmp 0, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
-13	306	74	#line 306 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	307	74		brtst 4, __ASM_Label_694, __D0CorBoneco
-13	306	77	#line 306 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	307	77		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
-13	306	79	#line 306 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	306	79	#line 306 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	307	79		set __D0CorBoneco, 112
-13	306	82	#line 306 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	307	82		cmp 1, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
-13	307	86	#line 307 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	308	86		brtst 4, __ASM_Label_699, __D0CorBoneco
-13	308	89	#line 308 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	309	89		set __D0CorBoneco, 3
-13	308	92	#line 308 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	309	92		subret __CorBoneco_return
-13	308	94	#line 308 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	302	3	#line 302 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	303	3		subcall lerSensor, __lerSensor_return
+13	302	5	#line 302 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	303	5		mov __CorBoneco_7qG2_leitura_7qG2_000, __D0lerSensor
+13	302	7	#line 302 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	302	7	#line 302 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	302	7	#line 302 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	303	7		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
+13	302	9	#line 302 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	302	9	#line 302 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	303	9		set __D0CorBoneco, 533
+13	302	12	#line 302 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	303	12		cmp 0, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
+13	302	16	#line 302 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	303	16		brtst 4, __ASM_Label_676, __D0CorBoneco
+13	302	19	#line 302 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	303	19		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
+13	302	21	#line 302 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	302	21	#line 302 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	303	21		set __D0CorBoneco, 430
+13	302	24	#line 302 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	303	24		cmp 1, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
+13	304	28	#line 304 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	305	28		brtst 4, __ASM_Label_681, __D0CorBoneco
+13	305	31	#line 305 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	306	31		set __D0CorBoneco, 1
+13	305	34	#line 305 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	306	34		subret __CorBoneco_return
+13	305	36	#line 305 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	306	36	#line 306 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	306	36	#line 306 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	307	36		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
+13	306	38	#line 306 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	306	38	#line 306 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	307	38		set __D0CorBoneco, 164
+13	306	41	#line 306 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	307	41		cmp 0, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
+13	306	45	#line 306 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	307	45		brtst 4, __ASM_Label_685, __D0CorBoneco
+13	306	48	#line 306 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	307	48		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
+13	306	50	#line 306 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	306	50	#line 306 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	307	50		set __D0CorBoneco, 124
+13	306	53	#line 306 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	307	53		cmp 1, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
+13	307	57	#line 307 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	308	57		brtst 4, __ASM_Label_690, __D0CorBoneco
+13	308	60	#line 308 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	309	60		set __D0CorBoneco, 2
+13	308	63	#line 308 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	309	63		subret __CorBoneco_return
+13	308	65	#line 308 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	308	65	#line 308 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	308	65	#line 308 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	309	65		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
+13	308	67	#line 308 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	308	67	#line 308 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	309	67		set __D0CorBoneco, 240
+13	308	70	#line 308 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	309	70		cmp 0, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
+13	308	74	#line 308 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	309	74		brtst 4, __ASM_Label_694, __D0CorBoneco
+13	308	77	#line 308 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	309	77		mov __signed_stack_001CorBoneco, __CorBoneco_7qG2_leitura_7qG2_000
+13	308	79	#line 308 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	308	79	#line 308 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	309	79		set __D0CorBoneco, 237
+13	308	82	#line 308 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	309	82		cmp 1, __D0CorBoneco, __signed_stack_001CorBoneco, __D0CorBoneco
+13	309	86	#line 309 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	310	86		brtst 4, __ASM_Label_699, __D0CorBoneco
+13	310	89	#line 310 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	311	89		set __D0CorBoneco, 3
+13	310	92	#line 310 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	311	92		subret __CorBoneco_return
 13	310	94	#line 310 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	310	94	#line 310 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-13	311	94		subret __CorBoneco_return
-14	311	0	#line 311 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	312	0		getout __signed_stack_001Pega, __constVal0, 4
-14	311	4	#line 311 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	312	4	#line 312 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	313	4		set __D0Pega, 0
-14	312	7	#line 312 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	313	7		cmp 5, __D0Pega, __signed_stack_001Pega, __D0Pega
-14	313	11	#line 313 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	314	11		brtst 4, __ASM_Label_703, __D0Pega
-14	314	14	#line 314 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	315	14	#pragma macro 7
-14	315	14		setout __constVal0, 0, __constVal8
-14	5971	19	#line 5971 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	314	19	#line 314 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	315	19	#line 315 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	316	19		jmp __ASM_Label_702
-14	315	21	#line 315 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	315	21	#line 315 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	316	21		mov __D0Pega, __constValNeg70
-14	316	23	#line 316 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	317	23	#pragma macro 7
-14	317	23		setout __constVal0, 2, __D0Pega, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-14	5980	46	#line 5980 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	316	46	#line 316 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	316	46	#line 316 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	317	46		getout __signed_stack_001Pega, __constVal0, 4
-14	316	50	#line 316 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	316	50	#line 316 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	317	50		mov __D0Pega, __constValNeg100
-14	316	52	#line 316 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	317	52		cmp 1, __D0Pega, __signed_stack_001Pega, __D0Pega
-14	317	56	#line 317 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	318	56		brtst 4, __ASM_Label_709, __D0Pega
-14	317	59	#line 317 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	317	59	#line 317 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	318	59		jmp __ASM_Label_708
-14	317	61	#line 317 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	318	61	#line 318 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	319	61	#pragma macro 7
-14	319	61		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-14	6003	84	#line 6003 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	318	84	#line 318 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	318	84	#line 318 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	319	84		set __Wait_7qG2_ms_7qG2_000_inline_Pega, 200
-14	318	87	#line 318 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	312	94	#line 312 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	312	94	#line 312 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+13	313	94		subret __CorBoneco_return
+14	313	0	#line 313 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	314	0		getout __signed_stack_001Pega, __constVal0, 4
+14	313	4	#line 313 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	314	4	#line 314 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	315	4		set __D0Pega, 0
+14	314	7	#line 314 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	315	7		cmp 5, __D0Pega, __signed_stack_001Pega, __D0Pega
+14	315	11	#line 315 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	316	11		brtst 4, __ASM_Label_703, __D0Pega
+14	316	14	#line 316 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	317	14	#pragma macro 7
+14	317	14		setout __constVal0, 0, __constVal8
+14	6013	19	#line 6013 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	316	19	#line 316 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	317	19	#line 317 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	318	19		jmp __ASM_Label_702
+14	317	21	#line 317 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	317	21	#line 317 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	318	21		mov __D0Pega, __constValNeg70
+14	318	23	#line 318 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	319	23	#pragma macro 7
+14	319	23		setout __constVal0, 2, __D0Pega, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+14	6022	46	#line 6022 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	318	46	#line 318 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	318	46	#line 318 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	319	46		getout __signed_stack_001Pega, __constVal0, 4
+14	318	50	#line 318 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	318	50	#line 318 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	319	50		mov __D0Pega, __constValNeg100
+14	318	52	#line 318 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	319	52		cmp 1, __D0Pega, __signed_stack_001Pega, __D0Pega
+14	319	56	#line 319 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	320	56		brtst 4, __ASM_Label_709, __D0Pega
+14	319	59	#line 319 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	319	59	#line 319 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	320	59		jmp __ASM_Label_708
+14	319	61	#line 319 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	320	61	#line 320 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	321	61	#pragma macro 7
+14	321	61		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+14	6045	84	#line 6045 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	320	84	#line 320 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	320	84	#line 320 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	321	84		set __Wait_7qG2_ms_7qG2_000_inline_Pega, 200
+14	320	87	#line 320 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 14	8551	87	#line 8551 "NXCDefs.h"
 14	8552	87		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_Pega
 14	8551	90	#line 8551 "NXCDefs.h"
-14	319	90	#line 319 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	320	90	#line 320 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	321	90		subcall VoltaGarra, __VoltaGarra_return
-14	320	92	#line 320 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	321	90	#line 321 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	322	90	#line 322 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	323	90		subcall VoltaGarra, __VoltaGarra_return
 14	322	92	#line 322 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-14	323	92		subret __Pega_return
-15	324	0	#line 324 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-15	325	0	#pragma macro 14
-15	325	0		acquire __RemoteMutex
-15	325	1		mov __SRSTmpBuf, __DCMessageWritePacket
-15	325	3		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
-15	325	8		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-15	325	13		mov __SRSTmpLongVal, __constVal1
-15	325	15		flatten __SRSFlattenBuf, __SRSTmpLongVal
-15	325	18		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-15	325	23		acquire __CBTWMutex
-15	325	24		mov __CBTWArgs.Connection, __constVal0
-15	325	26		mov __CBTWArgs.Buffer, __SRSSendBuf
-15	325	28		syscall 29, __CBTWArgs
-15	325	31		release __CBTWMutex
-15	325	32		release __RemoteMutex
-15	6026	33	#line 6026 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-15	324	33	#line 324 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-15	324	33	#line 324 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-15	327	33	#line 327 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-15	328	33		subret __MandarParar_return
-16	329	0	#line 329 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-16	330	0	#pragma macro 14
-16	330	0		acquire __RemoteMutex
-16	330	1		mov __SRSTmpBuf, __DCMessageWritePacket
-16	330	3		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
-16	330	8		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-16	330	13		mov __SRSTmpLongVal, __constVal2
-16	330	15		flatten __SRSFlattenBuf, __SRSTmpLongVal
-16	330	18		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-16	330	23		acquire __CBTWMutex
-16	330	24		mov __CBTWArgs.Connection, __constVal0
-16	330	26		mov __CBTWArgs.Buffer, __SRSSendBuf
-16	330	28		syscall 29, __CBTWArgs
-16	330	31		release __CBTWMutex
-16	330	32		release __RemoteMutex
-16	6035	33	#line 6035 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-16	329	33	#line 329 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-16	329	33	#line 329 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-16	332	33	#line 332 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-16	333	33		subret __MandarSeguir_return
-17	334	0	#line 334 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-17	335	0		set __PlaySound_7qG2_aCode_7qG2_000, 3
-17	334	3	#line 334 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-17	335	3	#line 335 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-17	336	3		subcall PlaySound, __PlaySound_return
-17	335	5	#line 335 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-17	335	5	#line 335 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-17	336	5		set __PlaySound_7qG2_aCode_7qG2_000, 2
-17	335	8	#line 335 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-17	336	8	#line 336 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-17	337	8		subcall PlaySound, __PlaySound_return
-17	336	10	#line 336 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	324	92	#line 324 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+14	325	92		subret __Pega_return
+15	326	0	#line 326 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+15	327	0	#pragma macro 14
+15	327	0		acquire __RemoteMutex
+15	327	1		mov __SRSTmpBuf, __DCMessageWritePacket
+15	327	3		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
+15	327	8		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+15	327	13		mov __SRSTmpLongVal, __constVal1
+15	327	15		flatten __SRSFlattenBuf, __SRSTmpLongVal
+15	327	18		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+15	327	23		acquire __CBTWMutex
+15	327	24		mov __CBTWArgs.Connection, __constVal0
+15	327	26		mov __CBTWArgs.Buffer, __SRSSendBuf
+15	327	28		syscall 29, __CBTWArgs
+15	327	31		release __CBTWMutex
+15	327	32		release __RemoteMutex
+15	6068	33	#line 6068 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+15	326	33	#line 326 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+15	326	33	#line 326 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+15	329	33	#line 329 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+15	330	33		subret __MandarParar_return
+16	331	0	#line 331 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+16	332	0	#pragma macro 14
+16	332	0		acquire __RemoteMutex
+16	332	1		mov __SRSTmpBuf, __DCMessageWritePacket
+16	332	3		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
+16	332	8		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+16	332	13		mov __SRSTmpLongVal, __constVal2
+16	332	15		flatten __SRSFlattenBuf, __SRSTmpLongVal
+16	332	18		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+16	332	23		acquire __CBTWMutex
+16	332	24		mov __CBTWArgs.Connection, __constVal0
+16	332	26		mov __CBTWArgs.Buffer, __SRSSendBuf
+16	332	28		syscall 29, __CBTWArgs
+16	332	31		release __CBTWMutex
+16	332	32		release __RemoteMutex
+16	6077	33	#line 6077 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+16	331	33	#line 331 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+16	331	33	#line 331 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+16	334	33	#line 334 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+16	335	33		subret __MandarSeguir_return
+17	336	0	#line 336 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+17	337	0		set __PlaySound_7qG2_aCode_7qG2_000, 3
+17	336	3	#line 336 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+17	337	3	#line 337 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+17	338	3		subcall PlaySound, __PlaySound_return
+17	337	5	#line 337 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+17	337	5	#line 337 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+17	338	5		set __PlaySound_7qG2_aCode_7qG2_000, 2
+17	337	8	#line 337 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+17	338	8	#line 338 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+17	339	8		subcall PlaySound, __PlaySound_return
 17	338	10	#line 338 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-17	339	10		subret __BipBranco_return
-18	341	0	#line 341 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-18	342	0		set __PlaySound_7qG2_aCode_7qG2_000, 2
-18	341	3	#line 341 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-18	342	3	#line 342 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-18	343	3		subcall PlaySound, __PlaySound_return
-18	342	5	#line 342 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-18	342	5	#line 342 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-18	343	5		set __PlaySound_7qG2_aCode_7qG2_000, 3
-18	342	8	#line 342 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-18	343	8	#line 343 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-18	344	8		subcall PlaySound, __PlaySound_return
-18	343	10	#line 343 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+17	340	10	#line 340 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+17	341	10		subret __BipBranco_return
+18	343	0	#line 343 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+18	344	0		set __PlaySound_7qG2_aCode_7qG2_000, 2
+18	343	3	#line 343 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+18	344	3	#line 344 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+18	345	3		subcall PlaySound, __PlaySound_return
+18	344	5	#line 344 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+18	344	5	#line 344 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+18	345	5		set __PlaySound_7qG2_aCode_7qG2_000, 3
+18	344	8	#line 344 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+18	345	8	#line 345 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+18	346	8		subcall PlaySound, __PlaySound_return
 18	345	10	#line 345 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-18	346	10		subret __BipPreto_return
-19	351	0	#line 351 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	352	0		subcall MandarParar, __MandarParar_return
-19	351	2	#line 351 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	352	2	#line 352 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	353	2		subcall PegaBoneco, __PegaBoneco_return
-19	352	4	#line 352 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	353	4		mov __D0BonecoNaFrente, __D0PegaBoneco
-19	353	6	#line 353 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	354	6		tst 5, __D0BonecoNaFrente, __D0BonecoNaFrente
-19	353	9	#line 353 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	354	9		brtst 4, __ASM_Label_726, __D0BonecoNaFrente
-19	354	12	#line 354 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	355	12		subcall CorBoneco, __CorBoneco_return
-19	354	14	#line 354 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	355	14		mov __BonecoNaFrente_7qG2_cor_7qG2_000, __D0CorBoneco
-19	354	16	#line 354 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	354	16	#line 354 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	354	16	#line 354 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	355	16		mov __signed_stack_001BonecoNaFrente, __BonecoNaFrente_7qG2_cor_7qG2_000
-19	354	18	#line 354 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	355	18	#line 355 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	356	18		mov __D0BonecoNaFrente, bonecoAlvo
-19	355	20	#line 355 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	356	20		cmp 4, __D0BonecoNaFrente, __signed_stack_001BonecoNaFrente, __D0BonecoNaFrente
-19	356	24	#line 356 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	357	24		brtst 4, __ASM_Label_731, __D0BonecoNaFrente
-19	357	27	#line 357 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	358	27		subcall Pega, __Pega_return
-19	357	29	#line 357 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	358	29	#line 358 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	359	29		subcall MandarSeguir, __MandarSeguir_return
-19	358	31	#line 358 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	359	31	#line 359 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	360	31		jmp __ASM_Label_732
-19	359	33	#line 359 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	360	33		mov __signed_stack_001BonecoNaFrente, __BonecoNaFrente_7qG2_cor_7qG2_000
-19	359	35	#line 359 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	360	35	#line 360 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	361	35		mov __D0BonecoNaFrente, bonecoNaoAlvo
-19	360	37	#line 360 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	361	37		cmp 4, __D0BonecoNaFrente, __signed_stack_001BonecoNaFrente, __D0BonecoNaFrente
-19	363	41	#line 363 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	364	41		brtst 4, __ASM_Label_735, __D0BonecoNaFrente
-19	364	44	#line 364 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	365	44		subcall Rejeita, __Rejeita_return
-19	364	46	#line 364 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	365	46	#line 365 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	366	46		jmp __ASM_Label_736
-19	365	48	#line 365 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	366	48		mov __signed_stack_001BonecoNaFrente, __BonecoNaFrente_7qG2_cor_7qG2_000
-19	365	50	#line 365 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	366	50	#line 366 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	367	50		set __D0BonecoNaFrente, 3
-19	366	53	#line 366 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	367	53		cmp 4, __D0BonecoNaFrente, __signed_stack_001BonecoNaFrente, __D0BonecoNaFrente
-19	369	57	#line 369 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	370	57		brtst 4, __ASM_Label_739, __D0BonecoNaFrente
-19	371	60	#line 371 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	372	60		subcall Rejeita, __Rejeita_return
-19	371	62	#line 371 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	374	62	#line 374 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	375	62		jmp __ASM_Label_740
-19	375	64	#line 375 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	376	64		subcall bip, __bip_return
-19	375	66	#line 375 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+18	347	10	#line 347 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+18	348	10		subret __BipPreto_return
+19	353	0	#line 353 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	354	0		subcall MandarParar, __MandarParar_return
+19	353	2	#line 353 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	354	2	#line 354 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	355	2		subcall PegaBoneco, __PegaBoneco_return
+19	354	4	#line 354 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	355	4		mov __D0BonecoNaFrente, __D0PegaBoneco
+19	355	6	#line 355 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	356	6		tst 5, __D0BonecoNaFrente, __D0BonecoNaFrente
+19	355	9	#line 355 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	356	9		brtst 4, __ASM_Label_726, __D0BonecoNaFrente
+19	356	12	#line 356 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	357	12		subcall CorBoneco, __CorBoneco_return
+19	356	14	#line 356 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	357	14		mov __BonecoNaFrente_7qG2_cor_7qG2_000, __D0CorBoneco
+19	356	16	#line 356 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	356	16	#line 356 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	356	16	#line 356 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	357	16		mov __signed_stack_001BonecoNaFrente, __BonecoNaFrente_7qG2_cor_7qG2_000
+19	356	18	#line 356 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	357	18	#line 357 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	358	18		mov __D0BonecoNaFrente, bonecoAlvo
+19	357	20	#line 357 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	358	20		cmp 4, __D0BonecoNaFrente, __signed_stack_001BonecoNaFrente, __D0BonecoNaFrente
+19	358	24	#line 358 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	359	24		brtst 4, __ASM_Label_731, __D0BonecoNaFrente
+19	359	27	#line 359 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	360	27		subcall Pega, __Pega_return
+19	359	29	#line 359 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	360	29	#line 360 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	361	29		subcall MandarSeguir, __MandarSeguir_return
+19	360	31	#line 360 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	361	31	#line 361 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	362	31		jmp __ASM_Label_732
+19	361	33	#line 361 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	362	33		mov __signed_stack_001BonecoNaFrente, __BonecoNaFrente_7qG2_cor_7qG2_000
+19	361	35	#line 361 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	362	35	#line 362 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	363	35		mov __D0BonecoNaFrente, bonecoNaoAlvo
+19	362	37	#line 362 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	363	37		cmp 4, __D0BonecoNaFrente, __signed_stack_001BonecoNaFrente, __D0BonecoNaFrente
+19	365	41	#line 365 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	366	41		brtst 4, __ASM_Label_735, __D0BonecoNaFrente
+19	366	44	#line 366 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	367	44		subcall Rejeita, __Rejeita_return
+19	366	46	#line 366 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	367	46	#line 367 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	368	46		jmp __ASM_Label_736
+19	367	48	#line 367 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	368	48		mov __signed_stack_001BonecoNaFrente, __BonecoNaFrente_7qG2_cor_7qG2_000
+19	367	50	#line 367 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	368	50	#line 368 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	369	50		set __D0BonecoNaFrente, 3
+19	368	53	#line 368 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	369	53		cmp 4, __D0BonecoNaFrente, __signed_stack_001BonecoNaFrente, __D0BonecoNaFrente
+19	371	57	#line 371 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	372	57		brtst 4, __ASM_Label_739, __D0BonecoNaFrente
+19	373	60	#line 373 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	374	60		subcall Rejeita, __Rejeita_return
+19	373	62	#line 373 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	376	62	#line 376 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	377	62		jmp __ASM_Label_740
+19	377	64	#line 377 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	378	64		subcall bip, __bip_return
 19	377	66	#line 377 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	378	66		subcall bip, __bip_return
-19	377	68	#line 377 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	379	66	#line 379 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	380	66		subcall bip, __bip_return
+19	379	68	#line 379 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 19	6678	68	#line 6678 "NXCDefs.h"
 19	6679	68	#pragma macro 6
 19	6679	68		mov __PointOutArgs.Location.X, __constVal200
 19	6679	70		mov __PointOutArgs.Location.Y, __constVal200
 19	6679	72		mov __PointOutArgs.Options, __constVal1
 19	6679	74		syscall 14, __PointOutArgs
-19	6177	77	#line 6177 "NXCDefs.h"
+19	6219	77	#line 6219 "NXCDefs.h"
 19	6678	77	#line 6678 "NXCDefs.h"
-19	378	77	#line 378 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	378	77	#line 378 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	379	77		set __signed_stack_001BonecoNaFrente, 0
-19	378	80	#line 378 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	378	80	#line 378 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	379	80		set __signed_stack_002BonecoNaFrente, 56
-19	378	83	#line 378 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	378	83	#line 378 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	379	83		mov __D0BonecoNaFrente, __BonecoNaFrente_7qG2_cor_7qG2_000
-19	382	85	#line 382 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	383	85		acquire __TextOutMutex
-19	382	86	#line 382 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	383	86		mov __TextOutArgs.Location.X, __signed_stack_001BonecoNaFrente
-19	382	88	#line 382 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	383	88		mov __TextOutArgs.Location.Y, __signed_stack_002BonecoNaFrente
-19	382	90	#line 382 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	383	90		set __TextOutArgs.Options, 0
-19	382	93	#line 382 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	383	93		numtostr __TextOutArgs.Text, __D0BonecoNaFrente
-19	382	96	#line 382 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	383	96		syscall 13, __TextOutArgs
-19	382	99	#line 382 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	383	99		mov __D0BonecoNaFrente, __TextOutArgs.Result
-19	382	101	#line 382 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	383	101		release __TextOutMutex
-19	382	102	#line 382 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	383	102	#line 383 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	384	102		subcall VoltaGarra, __VoltaGarra_return
-19	383	104	#line 383 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	384	104	#line 384 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	385	104		subcall MandarSeguir, __MandarSeguir_return
-19	384	106	#line 384 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	386	106	#line 386 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	386	106	#line 386 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	386	106	#line 386 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	388	106	#line 388 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	389	106		jmp __ASM_Label_747
-19	389	108	#line 389 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	390	108		subcall VoltaGarra, __VoltaGarra_return
-19	389	110	#line 389 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	390	110	#line 390 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	391	110		subcall MandarSeguir, __MandarSeguir_return
-19	390	112	#line 390 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	390	112	#line 390 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	391	112		set __Wait_7qG2_ms_7qG2_000_inline_BonecoNaFrente, 500
-19	390	115	#line 390 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	8551	115	#line 8551 "NXCDefs.h"
-19	8552	115		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_BonecoNaFrente
-19	8551	118	#line 8551 "NXCDefs.h"
-19	391	118	#line 391 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	394	118	#line 394 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	394	118	#line 394 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-19	395	118		subret __BonecoNaFrente_return
-20	397	0	#line 397 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-20	398	0		subcall MandaGirar, __MandaGirar_return
-20	397	2	#line 397 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-20	397	2	#line 397 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-20	398	2		subcall RecebiGirei, __RecebiGirei_return
-20	397	4	#line 397 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-20	397	4	#line 397 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-20	398	4		not __D0Rejeita, __D0RecebiGirei
-20	397	7	#line 397 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-20	398	7		tst 5, __D0Rejeita, __D0Rejeita
-20	397	10	#line 397 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-20	398	10		brtst 4, __ASM_Label_751, __D0Rejeita
-20	398	13	#line 398 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-20	399	13		jmp __ASM_Label_750
-20	398	15	#line 398 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-20	399	15	#line 399 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-20	400	15		subcall VoltaGarra, __VoltaGarra_return
-20	399	17	#line 399 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-20	400	17	#line 400 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-20	401	17		subcall MandaDesgirar, __MandaDesgirar_return
-20	400	19	#line 400 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	380	77	#line 380 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	380	77	#line 380 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	381	77		set __signed_stack_001BonecoNaFrente, 0
+19	380	80	#line 380 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	380	80	#line 380 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	381	80		set __signed_stack_002BonecoNaFrente, 56
+19	380	83	#line 380 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	380	83	#line 380 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	381	83		mov __D0BonecoNaFrente, __BonecoNaFrente_7qG2_cor_7qG2_000
+19	384	85	#line 384 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	385	85		acquire __TextOutMutex
+19	384	86	#line 384 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	385	86		mov __TextOutArgs.Location.X, __signed_stack_001BonecoNaFrente
+19	384	88	#line 384 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	385	88		mov __TextOutArgs.Location.Y, __signed_stack_002BonecoNaFrente
+19	384	90	#line 384 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	385	90		set __TextOutArgs.Options, 0
+19	384	93	#line 384 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	385	93		numtostr __TextOutArgs.Text, __D0BonecoNaFrente
+19	384	96	#line 384 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	385	96		syscall 13, __TextOutArgs
+19	384	99	#line 384 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	385	99		mov __D0BonecoNaFrente, __TextOutArgs.Result
+19	384	102	#line 384 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	385	102		release __TextOutMutex
+19	384	103	#line 384 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	385	103	#line 385 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	386	103		subcall VoltaGarra, __VoltaGarra_return
+19	385	105	#line 385 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	386	105	#line 386 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	387	105		subcall MandarSeguir, __MandarSeguir_return
+19	386	107	#line 386 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	388	107	#line 388 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	388	107	#line 388 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	388	107	#line 388 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	390	107	#line 390 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	391	107		jmp __ASM_Label_747
+19	391	109	#line 391 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	392	109		subcall VoltaGarra, __VoltaGarra_return
+19	391	111	#line 391 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	392	111	#line 392 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	393	111		subcall MandarSeguir, __MandarSeguir_return
+19	392	113	#line 392 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	392	113	#line 392 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	393	113		set __Wait_7qG2_ms_7qG2_000_inline_BonecoNaFrente, 500
+19	392	116	#line 392 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	8551	116	#line 8551 "NXCDefs.h"
+19	8552	116		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_BonecoNaFrente
+19	8551	119	#line 8551 "NXCDefs.h"
+19	393	119	#line 393 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	396	119	#line 396 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	396	119	#line 396 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+19	397	119		subret __BonecoNaFrente_return
+20	399	0	#line 399 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+20	400	0		subcall MandaGirar, __MandaGirar_return
+20	399	2	#line 399 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+20	399	2	#line 399 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+20	400	2		subcall RecebiGirei, __RecebiGirei_return
+20	399	4	#line 399 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+20	399	4	#line 399 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+20	400	4		not __D0Rejeita, __D0RecebiGirei
+20	399	7	#line 399 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+20	400	7		tst 5, __D0Rejeita, __D0Rejeita
+20	399	10	#line 399 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+20	400	10		brtst 4, __ASM_Label_751, __D0Rejeita
+20	400	13	#line 400 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+20	401	13		jmp __ASM_Label_750
+20	400	15	#line 400 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+20	401	15	#line 401 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+20	402	15		subcall VoltaGarra, __VoltaGarra_return
+20	401	17	#line 401 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+20	402	17	#line 402 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+20	403	17		subcall MandaDesgirar, __MandaDesgirar_return
 20	402	19	#line 402 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-20	403	19		subret __Rejeita_return
-21	405	0	#line 405 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-21	406	0	#pragma macro 9
-21	406	0		acquire __MRMutex
-21	406	1		mov __MRArgs.QueueID, __constVal2
-21	406	3		mov __MRArgs.Remove, __constVal1
-21	406	5		set __RRNTmpVal, 0
-21	406	8		syscall 27, __MRArgs
-21	406	11		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-21	406	16		mov __RecebiGirei_7qG2_aux_7qG2_000, __RRNTmpVal
-21	406	18		mov __D0RecebiGirei, __MRArgs.Result
-21	406	20		release __MRMutex
-21	6289	21	#line 6289 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-21	405	21	#line 405 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-21	405	21	#line 405 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-21	406	21	#line 406 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-21	407	21		mov __signed_stack_001RecebiGirei, __RecebiGirei_7qG2_aux_7qG2_000
-21	406	23	#line 406 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-21	407	23	#line 407 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-21	408	23		set __D0RecebiGirei, 3
-21	407	26	#line 407 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-21	408	26		cmp 4, __D0RecebiGirei, __signed_stack_001RecebiGirei, __D0RecebiGirei
-21	407	30	#line 407 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-21	408	30		brtst 4, __ASM_Label_756, __D0RecebiGirei
-21	408	33	#line 408 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-21	409	33		set __D0RecebiGirei, 1
-21	408	36	#line 408 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-21	409	36		subret __RecebiGirei_return
-21	408	38	#line 408 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-21	408	38	#line 408 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-21	409	38	#line 409 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-21	410	38		set __D0RecebiGirei, 0
-21	409	41	#line 409 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-21	410	41		subret __RecebiGirei_return
-21	409	43	#line 409 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-21	411	43	#line 411 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-21	412	43		subret __RecebiGirei_return
-22	413	0	#line 413 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-22	414	0	#pragma macro 14
-22	414	0		acquire __RemoteMutex
-22	414	1		mov __SRSTmpBuf, __DCMessageWritePacket
-22	414	3		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
-22	414	8		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-22	414	13		mov __SRSTmpLongVal, __constVal5
-22	414	15		flatten __SRSFlattenBuf, __SRSTmpLongVal
-22	414	18		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-22	414	23		acquire __CBTWMutex
-22	414	24		mov __CBTWArgs.Connection, __constVal0
-22	414	26		mov __CBTWArgs.Buffer, __SRSSendBuf
-22	414	28		syscall 29, __CBTWArgs
-22	414	31		release __CBTWMutex
-22	414	32		release __RemoteMutex
-22	6324	33	#line 6324 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-22	413	33	#line 413 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-22	413	33	#line 413 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-22	416	33	#line 416 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-22	417	33		subret __MandaGirar_return
-23	418	0	#line 418 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-23	419	0	#pragma macro 14
-23	419	0		acquire __RemoteMutex
-23	419	1		mov __SRSTmpBuf, __DCMessageWritePacket
-23	419	3		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
-23	419	8		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-23	419	13		mov __SRSTmpLongVal, __constVal4
-23	419	15		flatten __SRSFlattenBuf, __SRSTmpLongVal
-23	419	18		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-23	419	23		acquire __CBTWMutex
-23	419	24		mov __CBTWArgs.Connection, __constVal0
-23	419	26		mov __CBTWArgs.Buffer, __SRSSendBuf
-23	419	28		syscall 29, __CBTWArgs
-23	419	31		release __CBTWMutex
-23	419	32		release __RemoteMutex
-23	6333	33	#line 6333 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-23	418	33	#line 418 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-23	418	33	#line 418 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-23	421	33	#line 421 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-23	422	33		subret __MandaDesgirar_return
-24	422	0	#line 422 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-24	423	0		subret ____initialize_global_data_return
+20	402	19	#line 402 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+20	403	19		subcall RecebiDesGirei, __RecebiDesGirei_return
+20	402	21	#line 402 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+20	402	21	#line 402 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+20	403	21		not __D0Rejeita, __D0RecebiDesGirei
+20	402	24	#line 402 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+20	403	24		tst 5, __D0Rejeita, __D0Rejeita
+20	402	27	#line 402 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+20	403	27		brtst 4, __ASM_Label_755, __D0Rejeita
+20	405	30	#line 405 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+20	406	30		jmp __ASM_Label_754
+20	405	32	#line 405 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+20	405	32	#line 405 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+20	406	32		subret __Rejeita_return
+21	408	0	#line 408 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+21	409	0	#pragma macro 9
+21	409	0		acquire __MRMutex
+21	409	1		mov __MRArgs.QueueID, __constVal2
+21	409	3		mov __MRArgs.Remove, __constVal1
+21	409	5		set __RRNTmpVal, 0
+21	409	8		syscall 27, __MRArgs
+21	409	11		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+21	409	16		mov __RecebiGirei_7qG2_aux_7qG2_000, __RRNTmpVal
+21	409	18		mov __D0RecebiGirei, __MRArgs.Result
+21	409	20		release __MRMutex
+21	6348	21	#line 6348 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+21	408	21	#line 408 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+21	408	21	#line 408 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+21	409	21	#line 409 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+21	410	21		mov __signed_stack_001RecebiGirei, __RecebiGirei_7qG2_aux_7qG2_000
+21	409	23	#line 409 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+21	410	23	#line 410 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+21	411	23		set __D0RecebiGirei, 3
+21	410	26	#line 410 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+21	411	26		cmp 4, __D0RecebiGirei, __signed_stack_001RecebiGirei, __D0RecebiGirei
+21	410	30	#line 410 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+21	411	30		brtst 4, __ASM_Label_760, __D0RecebiGirei
+21	411	33	#line 411 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+21	412	33		set __D0RecebiGirei, 1
+21	411	36	#line 411 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+21	412	36		subret __RecebiGirei_return
+21	411	38	#line 411 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+21	411	38	#line 411 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+21	412	38	#line 412 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+21	413	38		set __D0RecebiGirei, 0
+21	412	41	#line 412 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+21	413	41		subret __RecebiGirei_return
+21	412	43	#line 412 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+21	414	43	#line 414 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+21	415	43		subret __RecebiGirei_return
+22	417	0	#line 417 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+22	418	0	#pragma macro 9
+22	418	0		acquire __MRMutex
+22	418	1		mov __MRArgs.QueueID, __constVal2
+22	418	3		mov __MRArgs.Remove, __constVal1
+22	418	5		set __RRNTmpVal, 0
+22	418	8		syscall 27, __MRArgs
+22	418	11		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+22	418	16		mov __RecebiDesGirei_7qG2_aux_7qG2_000, __RRNTmpVal
+22	418	18		mov __D0RecebiDesGirei, __MRArgs.Result
+22	418	20		release __MRMutex
+22	6387	21	#line 6387 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+22	417	21	#line 417 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+22	417	21	#line 417 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+22	418	21	#line 418 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+22	419	21		mov __signed_stack_001RecebiDesGirei, __RecebiDesGirei_7qG2_aux_7qG2_000
+22	418	23	#line 418 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+22	419	23	#line 419 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+22	420	23		set __D0RecebiDesGirei, 6
+22	419	26	#line 419 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+22	420	26		cmp 4, __D0RecebiDesGirei, __signed_stack_001RecebiDesGirei, __D0RecebiDesGirei
+22	419	30	#line 419 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+22	420	30		brtst 4, __ASM_Label_767, __D0RecebiDesGirei
+22	420	33	#line 420 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+22	421	33		set __D0RecebiDesGirei, 1
+22	420	36	#line 420 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+22	421	36		subret __RecebiDesGirei_return
+22	420	38	#line 420 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+22	420	38	#line 420 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+22	421	38	#line 421 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+22	422	38		set __D0RecebiDesGirei, 0
+22	421	41	#line 421 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+22	422	41		subret __RecebiDesGirei_return
+22	421	43	#line 421 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+22	423	43	#line 423 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+22	424	43		subret __RecebiDesGirei_return
+23	425	0	#line 425 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+23	426	0	#pragma macro 14
+23	426	0		acquire __RemoteMutex
+23	426	1		mov __SRSTmpBuf, __DCMessageWritePacket
+23	426	3		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
+23	426	8		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+23	426	13		mov __SRSTmpLongVal, __constVal5
+23	426	15		flatten __SRSFlattenBuf, __SRSTmpLongVal
+23	426	18		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+23	426	23		acquire __CBTWMutex
+23	426	24		mov __CBTWArgs.Connection, __constVal0
+23	426	26		mov __CBTWArgs.Buffer, __SRSSendBuf
+23	426	28		syscall 29, __CBTWArgs
+23	426	31		release __CBTWMutex
+23	426	32		release __RemoteMutex
+23	6422	33	#line 6422 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+23	425	33	#line 425 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+23	425	33	#line 425 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+23	428	33	#line 428 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+23	429	33		subret __MandaGirar_return
+24	430	0	#line 430 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+24	431	0	#pragma macro 14
+24	431	0		acquire __RemoteMutex
+24	431	1		mov __SRSTmpBuf, __DCMessageWritePacket
+24	431	3		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal1
+24	431	8		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+24	431	13		mov __SRSTmpLongVal, __constVal4
+24	431	15		flatten __SRSFlattenBuf, __SRSTmpLongVal
+24	431	18		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+24	431	23		acquire __CBTWMutex
+24	431	24		mov __CBTWArgs.Connection, __constVal0
+24	431	26		mov __CBTWArgs.Buffer, __SRSSendBuf
+24	431	28		syscall 29, __CBTWArgs
+24	431	31		release __CBTWMutex
+24	431	32		release __RemoteMutex
+24	6431	33	#line 6431 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+24	430	33	#line 430 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+24	430	33	#line 430 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+24	433	33	#line 433 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+24	434	33		subret __MandaDesgirar_return
+25	434	0	#line 434 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
+25	435	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc
@@ -1531,8 +1583,9 @@ Clump	Name	Offset	File
 17	BipBranco	1312	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc
 18	BipPreto	1324	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc
 19	BonecoNaFrente	1336	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc
-20	Rejeita	1456	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc
-21	RecebiGirei	1477	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc
-22	MandaGirar	1522	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc
-23	MandaDesgirar	1557	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc
-24	__initialize_global_data	1592	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc
+20	Rejeita	1457	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc
+21	RecebiGirei	1491	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc
+22	RecebiDesGirei	1536	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc
+23	MandaGirar	1581	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc
+24	MandaDesgirar	1616	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc
+25	__initialize_global_data	1651	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc

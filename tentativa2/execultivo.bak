@@ -44,6 +44,7 @@
 #define GIREI 3
 #define DESGIRAR 4
 #define REJEITAR 5
+#define DESGIREI 6
 
 //variáveis globais
 
@@ -61,6 +62,7 @@ void voltarejeitarDireita();
 void MandaGirei();
 void AbrirPorta();
 void FecharPorta();
+void MandaDesGirei();
 
 //função para dbug
 void  bip()
@@ -71,26 +73,13 @@ void  bip()
 //função principal
 task main()
 {
-	//executivo();
-	//AbrirPorta();
-	FecharPorta();
-	bip();
-	bip();
+	executivo();
 }
 
 //assinatura das funções
 void executivo()
 {
 	init();
-}
-
-void init()
-{
-	int aux;
-
-	desligaBlue();
-  	inicializaSensores();
-	iniciaBlue();
 
 	andar();//implementar
 	while(1)//void loop
@@ -110,6 +99,16 @@ void init()
    				break;
    			}
 	}
+}
+
+void init()
+{
+	int aux;
+
+	desligaBlue();
+  	inicializaSensores();
+  	FecharPorta();
+	iniciaBlue();
 }
 
 void desligaBlue()
@@ -166,6 +165,7 @@ void rejeitar()
 	rejeitarDireita();
 	MandaGirei();
 	voltarejeitarDireita();
+	MandaDesGirei();
 }
 
 void rejeitarDireita()
@@ -198,6 +198,12 @@ void MandaGirei()
 {
 	SendRemoteNumber(CONEXAO, OUTBOX, GIREI);
 }
+
+void MandaDesGirei()
+{
+	SendRemoteNumber(CONEXAO, OUTBOX, DESGIREI);
+}
+
 
 void AbrirPorta()
 {
