@@ -8,12 +8,12 @@
     #define COR_VERMELHA_MEIO_MAX 196
 
 // Defines de leitura do RGB da direita do robô
-    #define COR_BASE_DIR_MAX 562
-    #define COR_BASE_DIR_MIN 430
+    #define COR_BASE_DIR_MAX 602
+    #define COR_BASE_DIR_MIN 390
     
  // Defines de leitura do RGB da esquerda do robô
-    #define COR_BASE_ESQ_MAX 464 
-    #define COR_BASE_ESQ_MIN 234
+    #define COR_BASE_ESQ_MAX 504 
+    #define COR_BASE_ESQ_MIN 194
    
 //Bluetooth
 	#define CONEXAO 0
@@ -377,6 +377,7 @@ void BonecoNaFrente()
         bip();
         bip();
         MandaTeste();
+        while(1){}
       }
       else
       {
