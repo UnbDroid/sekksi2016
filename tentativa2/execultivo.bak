@@ -9,7 +9,7 @@
 #define HTD IN_3//hitech da direita
 #define HTE IN_4//hitech da esquerda
 
-//constantes de locamoção
+//constantes de locomoção
 #define FATORSYNC 1
 
 //LOGICA
@@ -42,6 +42,9 @@
 #define ANGCORRECAOVOLTA 165
 
 //
+#define DIFERENCIALDEERRODOANGULO 5
+
+//
 #define NAO_ALIEN 0
 #define SIM_ALIEN 1
 
@@ -55,6 +58,13 @@
 #define DESGIREI 6
 
 //variáveis globais
+int MyTcD;
+int MyTcE;
+
+//funções de subistituições
+void MyOnFwd(int motor, int pot);
+int MyMotorTachoCount(int motor);
+void MyResetTachoCount(int motor);
 
 //declaração das funções
 void executivo();
@@ -102,7 +112,7 @@ void executivo()
 	while(1)//void loop
 	{
 		ReceiveRemoteNumber(INBOX, true, aux);
-		aux=TESTE;
+		//aux=TESTE;
 		switch(aux)
 		{
 			case PARAR:
@@ -119,16 +129,15 @@ void executivo()
 				viraDir(180);
 				AbrirPorta();
 				//andar();
-				for(int i=0;i<31;i++)
+				for(int i=0;i<7;i++)
 				{
-					Off(ME);
-					OnFwd(MD,90);
-					Wait(30);
-					Off(MD);
-					OnFwd(ME,90);
-					Wait(100);
+					MyOnFwd(ME, 0);
+					MyOnFwd(MD,90);
+					Wait(400);
+					MyOnFwd(MD, 0);
+					MyOnFwd(ME,90);
+					Wait(400);
 				}
-				//Wait(4000);
 				parar();
 				while(1){}
 			break;
@@ -185,15 +194,15 @@ void iniciaBlue()
 
 void andar()//melhorar esse função - apneas testes por enquanto
 {
-	//OnFwd(MD,90);
-	//OnFwd(ME,90);
-	OnFwdSync(MDE,90,FATORSYNC);
+	MyOnFwd(MD,90);
+	MyOnFwd(ME,90);
+	//OnFwdSync(MDE,90,FATORSYNC);
 }
 
 void parar()
 {
-	Off(MD);
-	Off(ME);
+	MyOnFwd(MD,0);
+	MyOnFwd(ME,0);
 }
 
 void rejeitar()
@@ -211,10 +220,10 @@ void rejeitarDireita()
 {
 	int tc;
 
-	OnFwd(ME,90);
+	MyOnFwd(ME,90);
 
 	do{
-     tc = MotorTachoCount(ME);
+     tc = MyMotorTachoCount(ME);
   }while(tc<ANGULOREJEITADIREITA);
 
 	parar();
@@ -224,10 +233,10 @@ void voltarejeitarDireita()
 {
 	int tc;
 
-	OnFwd(ME,-90);
+	MyOnFwd(ME,-90);
 
 	do {
-		tc = MotorTachoCount(ME);
+		tc = MyMotorTachoCount(ME);
 	} while(tc>(-ANGULOREJEITADIREITA)-ANGCORRECAOVOLTA);
 
 	parar();
@@ -249,31 +258,31 @@ void AbrirPorta()
     int tc, old_tc;
 
    	OnFwd(MP,70);
-	tc = MotorTachoCount(MP);
+	tc = MyMotorTachoCount(MP);
 	do
 	 {
 	  Wait(200);
 	  old_tc = tc;
-	  tc = MotorTachoCount(MP);
+	  tc = MyMotorTachoCount(MP);
 	}while(tc!=old_tc);
 
-	OnFwd(MP,0);
+	MyOnFwd(MP,0);
 }
 
 void FecharPorta()
 {
 	int tc, old_tc;
 
-   	OnFwd(MP,-70);
-	tc = MotorTachoCount(MP);
+   	MyOnFwd(MP,-70);
+	tc = MyMotorTachoCount(MP);
 	do
 	 {
 	  Wait(200);
 	  old_tc = tc;
-	  tc = MotorTachoCount(MP);
+	  tc = MyMotorTachoCount(MP);
 	}while(tc!=old_tc);
 
-	OnFwd(MP,0);
+	MyOnFwd(MP,0);
 }
 
 int RecebeUS()
@@ -295,15 +304,14 @@ int RecebeDesgirar()
 }
 
 void viraEsq(int angulo){ // função que faz o robô girar para a esquerda o ângulo recebido
-     OnFwd(MD, 90);
-     OnFwd(ME, -90);
+     MyOnFwd(MD, 90);
+     MyOnFwd(ME, -90);
 
      while(distanciaGiroEsquerda((MotorTachoCount(MD) - MotorTachoCount(ME))/2) < angulo)
      {
       //lol
      }
-     Off(MD);
-     Off(ME);
+    
 }
 
 
@@ -315,8 +323,8 @@ void viraDir(int angulo){ // função que faz o robô girar para a direita o ân
      {
       //lol
      }
-     Off(MD);
-     Off(ME);
+     MyOnFwd(MD,0);
+     MyOnFwd(ME,0);
 }
 
 int distanciaGiroDireita(int grau){
@@ -325,4 +333,56 @@ int distanciaGiroDireita(int grau){
 
 int distanciaGiroEsquerda(int grau){
 	   return (((grau*17)/159));
+}
+
+void MyOnFwd(int motor, int pot)
+{
+	if(motor == MD)
+	{
+		MyTcD += MotorTachoCount(motor);
+	}
+	else if(motor == ME)
+	{
+		MyTcE += MotorTachoCount(motor);
+	}
+
+	OnFwd(motor,pot);
+}
+
+int MyMotorTachoCount(int motor, int pot)
+{
+	int retorno;
+
+	if(motor == MD)
+	{
+		MyTcD += MotorTachoCount(motor);
+		retorno = MyTcD;
+	}
+	else if(motor == ME)
+	{
+		MyTcE += MotorTachoCount(motor);
+		retorno = MyTcE;
+	}
+
+	do{
+		ResetTachoCount(motor);
+	}while((MotorTachoCount(motor)>DIFERENCIALDEERRODOANGULO) || (MotorTachoCount(motor)<DIFERENCIALDEERRODOANGULO));
+
+	return retorno;
+}
+
+void MyResetTachoCount(int motor)
+{
+	if(motor == MD)
+	{
+		MyTcD = 0;
+	}
+	else if(motor == ME)
+	{
+		MyTcE = 0;
+	}
+
+	do{
+		ResetTachoCount(motor);
+	}while((MotorTachoCount(motor)>DIFERENCIALDEERRODOANGULO) || (MotorTachoCount(motor)<DIFERENCIALDEERRODOANGULO));
 }

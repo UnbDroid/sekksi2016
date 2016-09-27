@@ -9,7 +9,7 @@
 #define HTD IN_3//hitech da direita
 #define HTE IN_4//hitech da esquerda
 
-//constantes de locamo√ß√£o
+//constantes de locamoÁ„o
 #define FATORSYNC 1
 
 //LOGICA
@@ -45,7 +45,7 @@
 #define NAO_ALIEN 0
 #define SIM_ALIEN 1
 
-//c√≥digos para comunica√ß√£o BlueTooth
+//cÛdigos para comunicaÁ„o BlueTooth
 #define TESTE -1
 #define PARAR 1
 #define SEGUIR 2
@@ -54,9 +54,9 @@
 #define REJEITAR 5
 #define DESGIREI 6
 
-//vari√°veis globais
+//vari·veis globais
 
-//declara√ß√£o das fun√ß√µes
+//declaraÁ„o das funÁıes
 void executivo();
 void init();
 void desligaBlue();
@@ -79,19 +79,19 @@ int distanciaGiroDireita(int grau);
 int distanciaGiroEsquerda(int grau);
 
 
-//fun√ß√£o para dbug
+//funÁ„o para dbug
 void  bip()
 {
   PlaySound(SOUND_DOWN);
 }
 
-//fun√ß√£o principal
+//funÁ„o principal
 task main()
 {
 	executivo();
 }
 
-//assinatura das fun√ß√µes
+//assinatura das funÁıes
 void executivo()
 {
   int aux, us_frente = 200, us_frente_temp;
@@ -183,7 +183,7 @@ void iniciaBlue()
 	TextOut(0, LCD_LINE2, "Conectou Bluetooth");
 }
 
-void andar()//melhorar esse fun√ß√£o - apneas testes por enquanto
+void andar()//melhorar esse funÁ„o - apneas testes por enquanto
 {
 	//OnFwd(MD,90);
 	//OnFwd(ME,90);
@@ -199,7 +199,7 @@ void parar()
 void rejeitar()
 {
 	parar();
-	//implementar uma fun√ß√£o para decidir para qual lado deve girar
+	//implementar uma funÁ„o para decidir para qual lado deve girar
 	rejeitarDireita();
 	MandaGirei();
 	while(!RecebeDesgirar()){}
@@ -294,7 +294,7 @@ int RecebeDesgirar()
   	return 0;
 }
 
-void viraEsq(int angulo){ // fun√ß√£o que faz o rob√¥ girar para a esquerda o √¢ngulo recebido
+void viraEsq(int angulo){ // funÁ„o que faz o robÙ girar para a esquerda o ‚ngulo recebido
      OnFwd(MD, 90);
      OnFwd(ME, -90);
 
@@ -307,7 +307,7 @@ void viraEsq(int angulo){ // fun√ß√£o que faz o rob√¥ girar para a esquerda o √¢
 }
 
 
-void viraDir(int angulo){ // fun√ß√£o que faz o rob√¥ girar para a direita o √¢ngulo recebido
+void viraDir(int angulo){ // funÁ„o que faz o robÙ girar para a direita o ‚ngulo recebido
      OnFwd(MD, -90);
      OnFwd(ME, 90);
 
@@ -320,7 +320,7 @@ void viraDir(int angulo){ // fun√ß√£o que faz o rob√¥ girar para a direita o √¢n
 }
 
 int distanciaGiroDireita(int grau){
-	   return (((grau*17)/149)); // COMO FOI FEITA ESSA CONVERS√ÉO??? [na base da tentativa e erro]
+	   return (((grau*17)/149)); // COMO FOI FEITA ESSA CONVERS√O??? [na base da tentativa e erro]
 }
 
 int distanciaGiroEsquerda(int grau){
