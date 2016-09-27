@@ -1,19 +1,19 @@
 //Valores Calibraveis
 // Defines de leitura do RGB do meio (ainda precisa testar mais)
-    #define COR_BRANCA_MEIO_MIN 419
+    #define COR_BRANCA_MEIO_MIN 441
     #define COR_BRANCA_MEIO_MAX 561
-    #define COR_PRETA_MEIO_MIN 71
-    #define COR_PRETA_MEIO_MAX 142
+    #define COR_PRETA_MEIO_MIN 108
+    #define COR_PRETA_MEIO_MAX 166
     #define COR_VERMELHA_MEIO_MIN 78
     #define COR_VERMELHA_MEIO_MAX 168
 
 // Defines de leitura do RGB da direita do robô
-    #define COR_BASE_DIR_MAX 284 
-    #define COR_BASE_DIR_MIN 160
+    #define COR_BASE_DIR_MAX 481
+    #define COR_BASE_DIR_MIN 302
     
  // Defines de leitura do RGB da esquerda do robô
-    #define COR_BASE_ESQ_MAX 284
-    #define COR_BASE_ESQ_MIN 163
+    #define COR_BASE_ESQ_MAX 367
+    #define COR_BASE_ESQ_MIN 240
    
 //Bluetooth
 	#define CONEXAO 0

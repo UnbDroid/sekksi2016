@@ -1,1086 +1,1166 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__DU0SetSensorLowspeed_inline_inicializaSensores	5	1	0	4	20
-1	__D0SetSensorLowspeed_inline_inicializaSensores	6	1	4	4	8
-2	__D0voltarejeitarDireita	6	1	8	4	8
-3	__signed_stack_001AbrirPorta	6	1	12	4	2
-4	__signed_stack_002desligaBlue	6	1	16	4	2
-5	__signed_stack_001desligaBlue	6	1	20	4	4
-6	__signed_stack_001andar	6	1	24	4	2
-7	__D0viraDir	6	1	28	4	14
-8	__D0FecharPorta	6	1	32	4	8
-9	__D0executivo	6	1	36	4	26
-10	__D0distanciaGiroDireita	6	1	40	4	6
-11	__D0RecebeDesgirar	6	1	44	4	9
-12	__D0rejeitarDireita	6	1	48	4	6
-13	__D0rejeitar	6	1	52	4	4
-14	__D0RecebeUS	6	1	56	4	4
-15	__Wait_7qG2_ms_7qG2_000_inline_executivo	5	1	60	4	4
-16	__signed_stack_002voltarejeitarDireita	6	1	64	4	2
-17	__signed_stack_001voltarejeitarDireita	6	1	68	4	2
-18	__Wait_7qG2_ms_7qG2_000_inline_desligaBlue	5	1	72	4	2
-19	__Wait_7qG2_ms_7qG2_000_inline_FecharPorta	5	1	76	4	2
-20	__Wait_7qG2_ms_7qG2_000_inline_AbrirPorta	5	1	80	4	2
-21	__Wait_7qG2_ms_7qG2_000_inline_iniciaBlue	5	1	84	4	2
-22	__signed_stack_001viraDir	6	1	88	4	8
-23	__signed_stack_001FecharPorta	6	1	92	4	2
-24	__signed_stack_001executivo	6	1	96	4	2
-25	__signed_stack_001distanciaGiroDireita	6	1	100	4	4
-26	__signed_stack_001iniciaBlue	6	1	104	4	2
-27	__signed_stack_001rejeitarDireita	6	1	108	4	2
-28	__signed_stack_001RecebeDesgirar	6	1	112	4	2
-29	__signed_stack_002iniciaBlue	6	1	116	4	2
-30	__D0desligaBlue	6	1	120	4	5
-31	__RemoteMutex	9	0	124	4	4
-32	__MRMutex	9	0	128	4	6
-33	__SRSTmpLongVal	6	1	132	4	4
-34	__CBTWMutex	9	0	136	4	4
-35	__RRNTmpVal	6	1	140	4	12
-36	__D0AbrirPorta	6	1	144	4	8
-37	__D0andar	6	1	148	4	2
-38	__TextOutMutex	9	0	152	4	4
-39	__executivo_7qG2_us_frente_temp_7qG2_000	4	1	156	2	2
-40	__viraDir_7qG2_angulo_7qG2_000	4	1	158	2	2
-41	__executivo_7qG2_i_7qG2_003	4	1	160	2	4
-42	__executivo_7qG2_us_frente_7qG2_000	4	1	162	2	2
-43	__distanciaGiroDireita_7qG2_grau_7qG2_000	4	1	164	2	2
-44	__executivo_7qG2_aux_7qG2_000	4	1	166	2	2
-45	__FecharPorta_7qG2_old_tc_7qG2_000	4	1	168	2	2
-46	__FecharPorta_7qG2_tc_7qG2_000	4	1	170	2	4
-47	__RecebeDesgirar_7qG2_aux_7qG2_000	4	1	172	2	2
-48	__RecebeUS_7qG2_aux_7qG2_000	4	1	174	2	2
-49	__AbrirPorta_7qG2_old_tc_7qG2_000	4	1	176	2	2
-50	__voltarejeitarDireita_7qG2_tc_7qG2_000	4	1	178	2	2
-51	__rejeitarDireita_7qG2_tc_7qG2_000	4	1	180	2	2
-52	__AbrirPorta_7qG2_tc_7qG2_000	4	1	182	2	4
-53	__constValNeg1500	4	0	184	2	1
-54	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	186	1	8
-55	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	187	1	8
-56	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	188	1	8
-57	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	189	1	4
-58	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	190	1	8
-59	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores	1	1	191	1	8
-60	__FecharPorta_return	1	1	192	1	3
-61	__inicializaSensores_return	1	1	193	1	3
-62	__iniciaBlue_return	1	1	194	1	3
-63	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	195	1	20
-64	__constVal1	2	0	196	1	21
-65	__constVal0	2	1	197	1	65
-66	__PFTmp	1	1	198	1	1
-67	__constVal32	2	0	199	1	51
-68	__constValNeg70	2	0	200	1	1
-69	__distanciaGiroDireita_return	1	1	201	1	4
-70	__constVal7	2	0	202	1	1
-71	__constValNeg90	2	0	203	1	2
-72	__MandaGirei_return	1	1	204	1	3
-73	__rejeitarDireita_return	1	1	205	1	3
-74	__RecebeDesgirar_return	1	1	206	1	5
-75	__MandaDesGirei_return	1	1	207	1	3
-76	__voltarejeitarDireita_return	1	1	208	1	3
-77	__desligaBlue_return	1	1	209	1	3
-78	__RRNErr	1	1	210	1	3
-79	__constVal2	2	0	211	1	14
-80	__executivo_return	1	1	212	1	3
-81	__constValNeg1	2	0	213	1	1
-82	__andar_return	1	1	214	1	5
-83	__init_return	1	1	215	1	3
-84	__constVal5	2	0	216	1	3
-85	__ResetSensorPort	1	1	217	1	6
-86	__ResetSensorTmp	1	1	218	1	2
-87	____initialize_global_data_return	1	1	219	1	3
-88	____ResetSensorSubroutine_return	1	1	220	1	6
-89	__constVal6	2	0	221	1	1
-90	__AbrirPorta_return	1	1	222	1	3
-91	__RecebeUS_return	1	1	223	1	4
-92	__constVal96	2	0	224	1	17
-93	__constVal3	2	0	225	1	20
-94	__parar_return	1	1	226	1	7
-95	__rejeitar_return	1	1	227	1	3
-96	__viraDir_return	1	1	228	1	3
-97	__constVal63	2	0	229	1	17
-98	__CBTWArgs	8	0	3	8	6
-99	__CBTWArgs.Result	2	1	232	1	6
-100	__CBTWArgs.Connection	1	1	233	1	6
-101	__CBTWArgs.Buffer	7	0	234	4	6
-102	__CBTWArgs.Buffer.Buffer_type	1	0	0	1	0
-103	__TextOutArgs	8	0	4	16	11
-104	__TextOutArgs.Result	2	1	236	1	11
-105	__TextOutArgs.Location	8	0	2	4	11
-106	__TextOutArgs.Location.X	4	1	240	2	11
-107	__TextOutArgs.Location.Y	4	1	242	2	11
-108	__TextOutArgs.Text	7	0	244	4	11
-109	__TextOutArgs.Text.Text_type	1	0	0	1	0
-110	__TextOutArgs.Options	5	1	248	4	11
-111	__MRArgs	8	0	4	8	15
-112	__MRArgs.Result	2	1	252	1	15
-113	__MRArgs.QueueID	1	1	253	1	15
-114	__MRArgs.Remove	1	1	254	1	15
-115	__MRArgs.Message	7	0	256	4	15
-116	__MRArgs.Message.Message_type	1	0	0	1	0
-117	__iniciaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	5
-118	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Result	2	1	260	1	5
-119	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	261	1	5
-120	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	262	4	5
-121	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
-122	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	264	1	5
-123	__desligaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	5
-124	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Result	2	1	268	1	5
-125	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	269	1	5
-126	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	270	4	5
-127	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
-128	__desligaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	272	1	5
-129	__CBTCSArgs	8	0	2	4	3
-130	__CBTCSArgs.Result	2	1	276	1	3
-131	__CBTCSArgs.Connection	1	1	277	1	3
-132	__strbufiniciaBlue	7	0	278	4	4
-133	__strbufiniciaBlue.__strbufiniciaBlue_type	1	0	0	1	0
-134	__strbufdesligaBlue	7	0	280	4	4
-135	__strbufdesligaBlue.__strbufdesligaBlue_type	1	0	0	1	0
-136	__OUT_AB	7	0	282	4	1
-137	__OUT_AB.__OUT_AB_type	1	0	0	1	0
-138	__SRSTmpBuf	7	0	284	4	12
-139	__SRSTmpBuf.__SRSTmpBuf_type	1	0	0	1	0
-140	__constStr0010	7	0	286	4	1
-141	__constStr0010.__constStr0010_type	1	1	0	1	0
-142	__constStr0011	7	0	288	4	1
-143	__constStr0011.__constStr0011_type	1	1	0	1	0
-144	__SRSSendBuf	7	0	290	4	4
-145	__SRSSendBuf.__SRSSendBuf_type	1	0	0	1	0
-146	__constStr0009	7	0	292	4	2
-147	__constStr0009.__constStr0009_type	1	1	0	1	0
-148	__DCMessageWritePacket	7	0	294	4	2
-149	__DCMessageWritePacket.__DCMessageWritePacket_type	1	0	0	1	0
-150	__SRSFlattenBuf	7	0	296	4	4
+0	__D0viraDir	6	1	0	4	14
+1	__D0rejeitarDireita	6	1	4	4	4
+2	__D0rejeitar	6	1	8	4	4
+3	__DU0SetSensorLowspeed_inline_inicializaSensores	5	1	12	4	20
+4	__D0SetSensorLowspeed_inline_inicializaSensores	6	1	16	4	8
+5	__D0voltarejeitarDireita	6	1	20	4	6
+6	__D0RecebeUS	6	1	24	4	3
+7	__D0executivo	6	1	28	4	22
+8	__D0distanciaGiroDireita	6	1	32	4	6
+9	__D0desligaBlue	6	1	36	4	5
+10	__D0RecebeDesgirar	6	1	40	4	9
+11	__D0MyOnFwd	6	1	44	4	12
+12	__D0FecharPorta	6	1	48	4	8
+13	__signed_stack_001AbrirPorta	6	1	52	4	2
+14	__signed_stack_001rejeitarDireita	6	1	56	4	2
+15	__signed_stack_001RecebeDesgirar	6	1	60	4	2
+16	__signed_stack_001MyOnFwd	6	1	64	4	4
+17	__signed_stack_002voltarejeitarDireita	6	1	68	4	2
+18	__signed_stack_001voltarejeitarDireita	6	1	72	4	2
+19	__signed_stack_001viraDir	6	1	76	4	8
+20	__signed_stack_002iniciaBlue	6	1	80	4	2
+21	__signed_stack_001distanciaGiroDireita	6	1	84	4	4
+22	__signed_stack_002desligaBlue	6	1	88	4	2
+23	__signed_stack_001desligaBlue	6	1	92	4	4
+24	__signed_stack_001iniciaBlue	6	1	96	4	2
+25	__signed_stack_001FecharPorta	6	1	100	4	2
+26	__signed_stack_001executivo	6	1	104	4	2
+27	__Wait_7qG2_ms_7qG2_000_inline_desligaBlue	5	1	108	4	2
+28	__RRNTmpVal	6	1	112	4	12
+29	__CBTWMutex	9	0	116	4	4
+30	__Wait_7qG2_ms_7qG2_000_inline_executivo	5	1	120	4	4
+31	__Wait_7qG2_ms_7qG2_000_inline_iniciaBlue	5	1	124	4	2
+32	__Wait_7qG2_ms_7qG2_000_inline_AbrirPorta	5	1	128	4	2
+33	__Wait_7qG2_ms_7qG2_000_inline_FecharPorta	5	1	132	4	2
+34	__MRMutex	9	0	136	4	6
+35	__TextOutMutex	9	0	140	4	4
+36	__SRSTmpLongVal	6	1	144	4	4
+37	__RemoteMutex	9	0	148	4	4
+38	__D0AbrirPorta	6	1	152	4	8
+39	__MyOnFwd_7qG2_pot_7qG2_000	4	1	156	2	13
+40	__constValNeg1500	4	0	158	2	1
+41	__AbrirPorta_7qG2_tc_7qG2_000	4	1	160	2	4
+42	__AbrirPorta_7qG2_old_tc_7qG2_000	4	1	162	2	2
+43	__RecebeUS_7qG2_aux_7qG2_000	4	1	164	2	2
+44	__RecebeDesgirar_7qG2_aux_7qG2_000	4	1	166	2	2
+45	__FecharPorta_7qG2_tc_7qG2_000	4	1	168	2	4
+46	__FecharPorta_7qG2_old_tc_7qG2_000	4	1	170	2	2
+47	__executivo_7qG2_i_7qG2_003	4	1	172	2	4
+48	__executivo_7qG2_aux_7qG2_000	4	1	174	2	2
+49	__executivo_7qG2_us_frente_temp_7qG2_000	4	1	176	2	3
+50	__executivo_7qG2_us_frente_7qG2_000	4	1	178	2	2
+51	__MyOnFwd_7qG2_motor_7qG2_000	4	1	180	2	17
+52	__voltarejeitarDireita_7qG2_tc_7qG2_000	4	1	182	2	2
+53	__viraDir_7qG2_angulo_7qG2_000	4	1	184	2	2
+54	__distanciaGiroDireita_7qG2_grau_7qG2_000	4	1	186	2	2
+55	__rejeitarDireita_7qG2_tc_7qG2_000	4	1	188	2	2
+56	__RecebeDesgirar_return	1	1	190	1	5
+57	__MandaGirei_return	1	1	191	1	3
+58	__rejeitarDireita_return	1	1	192	1	3
+59	__constVal2	2	0	193	1	13
+60	__MandaDesGirei_return	1	1	194	1	3
+61	__voltarejeitarDireita_return	1	1	195	1	3
+62	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	196	1	4
+63	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	197	1	8
+64	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores	1	1	198	1	8
+65	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	199	1	20
+66	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	200	1	8
+67	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	201	1	8
+68	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	202	1	8
+69	__constValNeg90	2	0	203	1	2
+70	__constVal0	2	1	204	1	25
+71	__constValNeg70	2	0	205	1	1
+72	__constVal3	2	0	206	1	11
+73	__distanciaGiroDireita_return	1	1	207	1	4
+74	__constVal32	2	0	208	1	21
+75	__constVal1	2	0	209	1	17
+76	__constVal6	2	0	210	1	1
+77	__ResetSensorPort	1	1	211	1	6
+78	__ResetSensorTmp	1	1	212	1	2
+79	____ResetSensorSubroutine_return	1	1	213	1	6
+80	__constVal5	2	0	214	1	3
+81	__constVal63	2	0	215	1	7
+82	__constVal96	2	0	216	1	7
+83	__rejeitar_return	1	1	217	1	3
+84	__parar_return	1	1	218	1	7
+85	__viraDir_return	1	1	219	1	3
+86	__MyOnFwd_return	1	1	220	1	14
+87	__AbrirPorta_return	1	1	221	1	3
+88	__constValNeg1	2	0	222	1	1
+89	____initialize_global_data_return	1	1	223	1	3
+90	__PFTmp	1	1	224	1	1
+91	__executivo_return	1	1	225	1	3
+92	__andar_return	1	1	226	1	5
+93	__init_return	1	1	227	1	3
+94	__RecebeUS_return	1	1	228	1	4
+95	__inicializaSensores_return	1	1	229	1	3
+96	__desligaBlue_return	1	1	230	1	3
+97	__FecharPorta_return	1	1	231	1	3
+98	__RRNErr	1	1	232	1	3
+99	__iniciaBlue_return	1	1	233	1	3
+100	__CBTWArgs	8	0	3	8	6
+101	__CBTWArgs.Result	2	1	236	1	6
+102	__CBTWArgs.Connection	1	1	237	1	6
+103	__CBTWArgs.Buffer	7	0	238	4	6
+104	__CBTWArgs.Buffer.Buffer_type	1	0	0	1	0
+105	__CBTCSArgs	8	0	2	4	3
+106	__CBTCSArgs.Result	2	1	240	1	3
+107	__CBTCSArgs.Connection	1	1	241	1	3
+108	__desligaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	5
+109	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Result	2	1	244	1	5
+110	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	245	1	5
+111	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	246	4	5
+112	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
+113	__desligaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	248	1	5
+114	__TextOutArgs	8	0	4	16	11
+115	__TextOutArgs.Result	2	1	252	1	11
+116	__TextOutArgs.Location	8	0	2	4	11
+117	__TextOutArgs.Location.X	4	1	256	2	11
+118	__TextOutArgs.Location.Y	4	1	258	2	11
+119	__TextOutArgs.Text	7	0	260	4	11
+120	__TextOutArgs.Text.Text_type	1	0	0	1	0
+121	__TextOutArgs.Options	5	1	264	4	11
+122	__iniciaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	5
+123	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Result	2	1	268	1	5
+124	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	269	1	5
+125	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	270	4	5
+126	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
+127	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	272	1	5
+128	__MRArgs	8	0	4	8	15
+129	__MRArgs.Result	2	1	276	1	15
+130	__MRArgs.QueueID	1	1	277	1	15
+131	__MRArgs.Remove	1	1	278	1	15
+132	__MRArgs.Message	7	0	280	4	15
+133	__MRArgs.Message.Message_type	1	0	0	1	0
+134	__DCMessageWritePacket	7	0	282	4	2
+135	__DCMessageWritePacket.__DCMessageWritePacket_type	1	0	0	1	0
+136	__constStr0010	7	0	284	4	1
+137	__constStr0010.__constStr0010_type	1	1	0	1	0
+138	__strbufiniciaBlue	7	0	286	4	4
+139	__strbufiniciaBlue.__strbufiniciaBlue_type	1	0	0	1	0
+140	__strbufdesligaBlue	7	0	288	4	4
+141	__strbufdesligaBlue.__strbufdesligaBlue_type	1	0	0	1	0
+142	__SRSTmpBuf	7	0	290	4	12
+143	__SRSTmpBuf.__SRSTmpBuf_type	1	0	0	1	0
+144	__constStr0011	7	0	292	4	1
+145	__constStr0011.__constStr0011_type	1	1	0	1	0
+146	__SRSSendBuf	7	0	294	4	4
+147	__SRSSendBuf.__SRSSendBuf_type	1	0	0	1	0
+148	__constStr0009	7	0	296	4	2
+149	__constStr0009.__constStr0009_type	1	1	0	1	0
+150	__SRSFlattenBuf	7	0	298	4	4
 151	__SRSFlattenBuf.__SRSFlattenBuf_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	90	0	#line 90 "C:\Users\luan\Desktop\execultivo.nxc"
-0	91	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	90	2	#line 90 "C:\Users\luan\Desktop\execultivo.nxc"
-0	90	2	#line 90 "C:\Users\luan\Desktop\execultivo.nxc"
-0	91	2		subcall executivo, __executivo_return
-0	90	4	#line 90 "C:\Users\luan\Desktop\execultivo.nxc"
-0	91	4		exit -1, -1
-1	5724	0		setin __constVal1, __ResetSensorPort, 5
-1	5726	4		getin __ResetSensorTmp, __ResetSensorPort, 5
-1	5727	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
-1	5728	11		subret ____ResetSensorSubroutine_return
-2	96	0	#line 96 "C:\Users\luan\Desktop\execultivo.nxc"
-2	97	0		set __executivo_7qG2_us_frente_7qG2_000, 200
-2	96	3	#line 96 "C:\Users\luan\Desktop\execultivo.nxc"
-2	98	3	#line 98 "C:\Users\luan\Desktop\execultivo.nxc"
-2	99	3		subcall init, __init_return
-2	98	5	#line 98 "C:\Users\luan\Desktop\execultivo.nxc"
-2	100	5	#line 100 "C:\Users\luan\Desktop\execultivo.nxc"
-2	101	5		subcall andar, __andar_return
-2	100	7	#line 100 "C:\Users\luan\Desktop\execultivo.nxc"
-2	102	7	#line 102 "C:\Users\luan\Desktop\execultivo.nxc"
-2	103	7		set __D0executivo, 1
-2	103	10	#line 103 "C:\Users\luan\Desktop\execultivo.nxc"
-2	104	10		tst 5, __D0executivo, __D0executivo
-2	103	13	#line 103 "C:\Users\luan\Desktop\execultivo.nxc"
-2	104	13		brtst 4, __ASM_Label_563, __D0executivo
-2	103	16	#line 103 "C:\Users\luan\Desktop\execultivo.nxc"
-2	104	16	#pragma macro 9
-2	104	16		acquire __MRMutex
-2	104	17		mov __MRArgs.QueueID, __constVal1
-2	104	19		mov __MRArgs.Remove, __constVal1
-2	104	21		set __RRNTmpVal, 0
-2	104	24		syscall 27, __MRArgs
-2	104	27		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-2	104	32		mov __executivo_7qG2_aux_7qG2_000, __RRNTmpVal
-2	104	34		mov __D0executivo, __MRArgs.Result
-2	104	36		release __MRMutex
-2	4867	37	#line 4867 "C:\Users\luan\Desktop\execultivo.nxc"
-2	103	37	#line 103 "C:\Users\luan\Desktop\execultivo.nxc"
-2	103	37	#line 103 "C:\Users\luan\Desktop\execultivo.nxc"
-2	106	37	#line 106 "C:\Users\luan\Desktop\execultivo.nxc"
-2	107	37		mov __D0executivo, __executivo_7qG2_aux_7qG2_000
-2	110	39		brcmp 4, __ASM_Label_569, __constVal1, __D0executivo
-2	111	43		brcmp 4, __ASM_Label_570, __constVal2, __D0executivo
-2	112	47		brcmp 4, __ASM_Label_571, __constVal5, __D0executivo
-2	113	51		brcmp 4, __ASM_Label_572, __constValNeg1, __D0executivo
-2	114	55		jmp __ASM_Label_595
-2	108	57	#line 108 "C:\Users\luan\Desktop\execultivo.nxc"
-2	108	57	#line 108 "C:\Users\luan\Desktop\execultivo.nxc"
-2	109	57		subcall parar, __parar_return
-2	108	59	#line 108 "C:\Users\luan\Desktop\execultivo.nxc"
-2	109	59	#line 109 "C:\Users\luan\Desktop\execultivo.nxc"
-2	110	59		jmp __ASM_Label_568
-2	109	61	#line 109 "C:\Users\luan\Desktop\execultivo.nxc"
-2	111	61	#line 111 "C:\Users\luan\Desktop\execultivo.nxc"
-2	111	61	#line 111 "C:\Users\luan\Desktop\execultivo.nxc"
-2	112	61		subcall andar, __andar_return
-2	111	63	#line 111 "C:\Users\luan\Desktop\execultivo.nxc"
-2	112	63	#line 112 "C:\Users\luan\Desktop\execultivo.nxc"
-2	113	63		jmp __ASM_Label_568
-2	112	65	#line 112 "C:\Users\luan\Desktop\execultivo.nxc"
-2	114	65	#line 114 "C:\Users\luan\Desktop\execultivo.nxc"
-2	114	65	#line 114 "C:\Users\luan\Desktop\execultivo.nxc"
-2	115	65		subcall rejeitar, __rejeitar_return
-2	114	67	#line 114 "C:\Users\luan\Desktop\execultivo.nxc"
-2	115	67	#line 115 "C:\Users\luan\Desktop\execultivo.nxc"
-2	116	67		subcall andar, __andar_return
-2	115	69	#line 115 "C:\Users\luan\Desktop\execultivo.nxc"
-2	116	69	#line 116 "C:\Users\luan\Desktop\execultivo.nxc"
-2	117	69		jmp __ASM_Label_568
-2	116	71	#line 116 "C:\Users\luan\Desktop\execultivo.nxc"
-2	118	71	#line 118 "C:\Users\luan\Desktop\execultivo.nxc"
-2	118	71	#line 118 "C:\Users\luan\Desktop\execultivo.nxc"
-2	119	71		set __viraDir_7qG2_angulo_7qG2_000, 180
-2	118	74	#line 118 "C:\Users\luan\Desktop\execultivo.nxc"
-2	118	74	#line 118 "C:\Users\luan\Desktop\execultivo.nxc"
-2	119	74		subcall viraDir, __viraDir_return
-2	118	76	#line 118 "C:\Users\luan\Desktop\execultivo.nxc"
-2	119	76	#line 119 "C:\Users\luan\Desktop\execultivo.nxc"
-2	120	76		subcall AbrirPorta, __AbrirPorta_return
-2	119	78	#line 119 "C:\Users\luan\Desktop\execultivo.nxc"
-2	121	78	#line 121 "C:\Users\luan\Desktop\execultivo.nxc"
-2	122	78		set __executivo_7qG2_i_7qG2_003, 0
-2	121	81	#line 121 "C:\Users\luan\Desktop\execultivo.nxc"
-2	121	81	#line 121 "C:\Users\luan\Desktop\execultivo.nxc"
-2	122	81		mov __signed_stack_001executivo, __executivo_7qG2_i_7qG2_003
-2	121	83	#line 121 "C:\Users\luan\Desktop\execultivo.nxc"
-2	121	83	#line 121 "C:\Users\luan\Desktop\execultivo.nxc"
-2	122	83		set __D0executivo, 15
-2	121	86	#line 121 "C:\Users\luan\Desktop\execultivo.nxc"
-2	122	86		cmp 0, __D0executivo, __signed_stack_001executivo, __D0executivo
-2	121	90	#line 121 "C:\Users\luan\Desktop\execultivo.nxc"
-2	122	90		brtst 4, __ASM_Label_576, __D0executivo
-2	121	93	#line 121 "C:\Users\luan\Desktop\execultivo.nxc"
-2	122	93		jmp __ASM_Label_577
-2	122	95	#line 122 "C:\Users\luan\Desktop\execultivo.nxc"
-2	123	95		add __executivo_7qG2_i_7qG2_003, __executivo_7qG2_i_7qG2_003, __constVal1
-2	123	99	#line 123 "C:\Users\luan\Desktop\execultivo.nxc"
-2	124	99		jmp __ASM_Label_575
-2	123	101	#line 123 "C:\Users\luan\Desktop\execultivo.nxc"
-2	124	101	#pragma macro 7
-2	124	101		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-2	4950	124	#line 4950 "C:\Users\luan\Desktop\execultivo.nxc"
-2	123	124	#line 123 "C:\Users\luan\Desktop\execultivo.nxc"
-2	124	124	#line 124 "C:\Users\luan\Desktop\execultivo.nxc"
-2	125	124		set __D0executivo, 90
-2	124	127	#line 124 "C:\Users\luan\Desktop\execultivo.nxc"
-2	125	127	#pragma macro 7
-2	125	127		setout __constVal1, 2, __D0executivo, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-2	4955	150	#line 4955 "C:\Users\luan\Desktop\execultivo.nxc"
-2	124	150	#line 124 "C:\Users\luan\Desktop\execultivo.nxc"
-2	125	150	#line 125 "C:\Users\luan\Desktop\execultivo.nxc"
-2	126	150		set __Wait_7qG2_ms_7qG2_000_inline_executivo, 200
-2	125	153	#line 125 "C:\Users\luan\Desktop\execultivo.nxc"
-2	8869	153	#line 8869 "NXCDefs.h"
-2	8870	153		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_executivo
-2	8869	156	#line 8869 "NXCDefs.h"
-2	125	156	#line 125 "C:\Users\luan\Desktop\execultivo.nxc"
-2	126	156	#line 126 "C:\Users\luan\Desktop\execultivo.nxc"
-2	127	156	#pragma macro 7
-2	127	156		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-2	4970	179	#line 4970 "C:\Users\luan\Desktop\execultivo.nxc"
-2	126	179	#line 126 "C:\Users\luan\Desktop\execultivo.nxc"
-2	127	179	#line 127 "C:\Users\luan\Desktop\execultivo.nxc"
-2	128	179		set __D0executivo, 90
-2	127	182	#line 127 "C:\Users\luan\Desktop\execultivo.nxc"
-2	128	182	#pragma macro 7
-2	128	182		setout __constVal0, 2, __D0executivo, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-2	4975	205	#line 4975 "C:\Users\luan\Desktop\execultivo.nxc"
-2	127	205	#line 127 "C:\Users\luan\Desktop\execultivo.nxc"
-2	128	205	#line 128 "C:\Users\luan\Desktop\execultivo.nxc"
-2	129	205		set __Wait_7qG2_ms_7qG2_000_inline_executivo, 200
-2	128	208	#line 128 "C:\Users\luan\Desktop\execultivo.nxc"
-2	8869	208	#line 8869 "NXCDefs.h"
-2	8870	208		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_executivo
-2	8869	211	#line 8869 "NXCDefs.h"
-2	128	211	#line 128 "C:\Users\luan\Desktop\execultivo.nxc"
-2	131	211	#line 131 "C:\Users\luan\Desktop\execultivo.nxc"
-2	132	211		jmp __ASM_Label_578
-2	131	213	#line 131 "C:\Users\luan\Desktop\execultivo.nxc"
-2	131	213	#line 131 "C:\Users\luan\Desktop\execultivo.nxc"
-2	132	213		subcall parar, __parar_return
-2	131	215	#line 131 "C:\Users\luan\Desktop\execultivo.nxc"
-2	132	215	#line 132 "C:\Users\luan\Desktop\execultivo.nxc"
-2	133	215		set __D0executivo, 1
-2	132	218	#line 132 "C:\Users\luan\Desktop\execultivo.nxc"
-2	133	218		tst 5, __D0executivo, __D0executivo
-2	132	221	#line 132 "C:\Users\luan\Desktop\execultivo.nxc"
-2	133	221		brtst 4, __ASM_Label_592, __D0executivo
-2	133	224	#line 133 "C:\Users\luan\Desktop\execultivo.nxc"
-2	134	224		jmp __ASM_Label_591
-2	133	226	#line 133 "C:\Users\luan\Desktop\execultivo.nxc"
-2	133	226	#line 133 "C:\Users\luan\Desktop\execultivo.nxc"
-2	134	226		jmp __ASM_Label_568
-2	133	228	#line 133 "C:\Users\luan\Desktop\execultivo.nxc"
-2	135	228	#line 135 "C:\Users\luan\Desktop\execultivo.nxc"
-2	135	228	#line 135 "C:\Users\luan\Desktop\execultivo.nxc"
-2	136	228		subcall RecebeUS, __RecebeUS_return
-2	135	230	#line 135 "C:\Users\luan\Desktop\execultivo.nxc"
-2	136	230		mov __executivo_7qG2_us_frente_temp_7qG2_000, __D0RecebeUS
-2	135	232	#line 135 "C:\Users\luan\Desktop\execultivo.nxc"
-2	135	232	#line 135 "C:\Users\luan\Desktop\execultivo.nxc"
-2	137	232	#line 137 "C:\Users\luan\Desktop\execultivo.nxc"
-2	138	232		mov __D0executivo, __D0RecebeUS
-2	137	234	#line 137 "C:\Users\luan\Desktop\execultivo.nxc"
-2	138	234		tst 5, __D0executivo, __D0executivo
-2	137	237	#line 137 "C:\Users\luan\Desktop\execultivo.nxc"
-2	138	237		brtst 4, __ASM_Label_600, __D0executivo
-2	137	240	#line 137 "C:\Users\luan\Desktop\execultivo.nxc"
-2	138	240		mov __executivo_7qG2_us_frente_7qG2_000, __executivo_7qG2_us_frente_temp_7qG2_000
-2	137	242	#line 137 "C:\Users\luan\Desktop\execultivo.nxc"
-2	137	242	#line 137 "C:\Users\luan\Desktop\execultivo.nxc"
-2	139	242	#line 139 "C:\Users\luan\Desktop\execultivo.nxc"
-2	140	242	#line 140 "C:\Users\luan\Desktop\execultivo.nxc"
-2	142	242	#line 142 "C:\Users\luan\Desktop\execultivo.nxc"
-2	143	242		jmp __ASM_Label_562
-2	142	244	#line 142 "C:\Users\luan\Desktop\execultivo.nxc"
-2	142	244	#line 142 "C:\Users\luan\Desktop\execultivo.nxc"
-2	143	244		subret __executivo_return
-3	144	0	#line 144 "C:\Users\luan\Desktop\execultivo.nxc"
-3	145	0		subcall desligaBlue, __desligaBlue_return
-3	144	2	#line 144 "C:\Users\luan\Desktop\execultivo.nxc"
-3	145	2	#line 145 "C:\Users\luan\Desktop\execultivo.nxc"
-3	146	2		subcall inicializaSensores, __inicializaSensores_return
-3	145	4	#line 145 "C:\Users\luan\Desktop\execultivo.nxc"
-3	146	4	#line 146 "C:\Users\luan\Desktop\execultivo.nxc"
-3	147	4		subcall FecharPorta, __FecharPorta_return
-3	146	6	#line 146 "C:\Users\luan\Desktop\execultivo.nxc"
-3	147	6	#line 147 "C:\Users\luan\Desktop\execultivo.nxc"
-3	148	6		subcall iniciaBlue, __iniciaBlue_return
-3	147	8	#line 147 "C:\Users\luan\Desktop\execultivo.nxc"
-3	150	8	#line 150 "C:\Users\luan\Desktop\execultivo.nxc"
-3	151	8		subret __init_return
-4	153	0	#line 153 "C:\Users\luan\Desktop\execultivo.nxc"
-4	154	0		strcat __strbufdesligaBlue, __constStr0009
-4	153	4	#line 153 "C:\Users\luan\Desktop\execultivo.nxc"
-4	154	4		mov __desligaBlue_7qG2_DADOS_BT_7qG2_000.Name, __strbufdesligaBlue
-4	153	6	#line 153 "C:\Users\luan\Desktop\execultivo.nxc"
-4	154	6	#line 154 "C:\Users\luan\Desktop\execultivo.nxc"
-4	155	6		set __desligaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot, 1
-4	154	9	#line 154 "C:\Users\luan\Desktop\execultivo.nxc"
-4	154	9	#line 154 "C:\Users\luan\Desktop\execultivo.nxc"
-4	155	9	#line 155 "C:\Users\luan\Desktop\execultivo.nxc"
-4	156	9		set __desligaBlue_7qG2_DADOS_BT_7qG2_000.Action, 0
-4	155	12	#line 155 "C:\Users\luan\Desktop\execultivo.nxc"
-4	155	12	#line 155 "C:\Users\luan\Desktop\execultivo.nxc"
-4	158	12	#line 158 "C:\Users\luan\Desktop\execultivo.nxc"
-4	159	12	#pragma macro 4
-4	159	12	#line 159 "C:\Users\luan\Desktop\execultivo.nxc"
-4	159	12		syscall 36, __desligaBlue_7qG2_DADOS_BT_7qG2_000
-4	157	15	#line 157 "C:\Users\luan\Desktop\execultivo.nxc"
-4	157	15	#line 157 "C:\Users\luan\Desktop\execultivo.nxc"
-4	157	15	#line 157 "C:\Users\luan\Desktop\execultivo.nxc"
-4	157	15	#line 157 "C:\Users\luan\Desktop\execultivo.nxc"
-4	159	15	#line 159 "C:\Users\luan\Desktop\execultivo.nxc"
-4	158	15	#line 158 "C:\Users\luan\Desktop\execultivo.nxc"
-4	159	15	#line 159 "C:\Users\luan\Desktop\execultivo.nxc"
-4	160	15		set __Wait_7qG2_ms_7qG2_000_inline_desligaBlue, 30
-4	159	18	#line 159 "C:\Users\luan\Desktop\execultivo.nxc"
-4	8869	18	#line 8869 "NXCDefs.h"
-4	8870	18		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_desligaBlue
-4	8869	21	#line 8869 "NXCDefs.h"
-4	159	21	#line 159 "C:\Users\luan\Desktop\execultivo.nxc"
-4	161	21	#line 161 "C:\Users\luan\Desktop\execultivo.nxc"
-4	162	21	#pragma macro 5
-4	162	21		mov __CBTCSArgs.Connection, __constVal1
-4	162	23		syscall 28, __CBTCSArgs
-4	162	26		mov __signed_stack_001desligaBlue, __CBTCSArgs.Result
-4	5106	28	#line 5106 "C:\Users\luan\Desktop\execultivo.nxc"
-4	161	28	#line 161 "C:\Users\luan\Desktop\execultivo.nxc"
-4	161	28	#line 161 "C:\Users\luan\Desktop\execultivo.nxc"
-4	162	28		set __D0desligaBlue, 0
-4	161	31	#line 161 "C:\Users\luan\Desktop\execultivo.nxc"
-4	162	31		cmp 4, __D0desligaBlue, __signed_stack_001desligaBlue, __D0desligaBlue
-4	161	35	#line 161 "C:\Users\luan\Desktop\execultivo.nxc"
-4	162	35		brtst 4, __ASM_Label_608, __D0desligaBlue
-4	161	38	#line 161 "C:\Users\luan\Desktop\execultivo.nxc"
-4	162	38		jmp __ASM_Label_607
-4	161	40	#line 161 "C:\Users\luan\Desktop\execultivo.nxc"
-4	161	40	#line 161 "C:\Users\luan\Desktop\execultivo.nxc"
-4	162	40	#line 162 "C:\Users\luan\Desktop\execultivo.nxc"
-4	163	40		set __signed_stack_001desligaBlue, 0
-4	162	43	#line 162 "C:\Users\luan\Desktop\execultivo.nxc"
-4	162	43	#line 162 "C:\Users\luan\Desktop\execultivo.nxc"
-4	163	43		set __signed_stack_002desligaBlue, 56
-4	162	46	#line 162 "C:\Users\luan\Desktop\execultivo.nxc"
-4	162	46	#line 162 "C:\Users\luan\Desktop\execultivo.nxc"
-4	163	46		strcat __strbufdesligaBlue, __constStr0010
-4	162	50	#line 162 "C:\Users\luan\Desktop\execultivo.nxc"
-4	163	50		acquire __TextOutMutex
-4	162	51	#line 162 "C:\Users\luan\Desktop\execultivo.nxc"
-4	163	51		mov __TextOutArgs.Location.X, __signed_stack_001desligaBlue
-4	162	53	#line 162 "C:\Users\luan\Desktop\execultivo.nxc"
-4	163	53		mov __TextOutArgs.Location.Y, __signed_stack_002desligaBlue
-4	162	55	#line 162 "C:\Users\luan\Desktop\execultivo.nxc"
-4	163	55		set __TextOutArgs.Options, 0
-4	162	58	#line 162 "C:\Users\luan\Desktop\execultivo.nxc"
-4	163	58		mov __TextOutArgs.Text, __strbufdesligaBlue
-4	162	60	#line 162 "C:\Users\luan\Desktop\execultivo.nxc"
-4	163	60		syscall 13, __TextOutArgs
-4	162	63	#line 162 "C:\Users\luan\Desktop\execultivo.nxc"
-4	163	63		mov __D0desligaBlue, __TextOutArgs.Result
-4	162	65	#line 162 "C:\Users\luan\Desktop\execultivo.nxc"
-4	163	65		release __TextOutMutex
-4	162	66	#line 162 "C:\Users\luan\Desktop\execultivo.nxc"
-4	165	66	#line 165 "C:\Users\luan\Desktop\execultivo.nxc"
-4	166	66		subret __desligaBlue_return
-5	167	0	#line 167 "C:\Users\luan\Desktop\execultivo.nxc"
-5	168	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 0
-5	167	3	#line 167 "C:\Users\luan\Desktop\execultivo.nxc"
-5	167	3	#line 167 "C:\Users\luan\Desktop\execultivo.nxc"
-5	168	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
-5	4523	5	#line 4523 "NXCDefs.h"
-5	4524	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-5	4523	7	#line 4523 "NXCDefs.h"
-5	4523	7	#line 4523 "NXCDefs.h"
-5	4524	7		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
-5	4523	9	#line 4523 "NXCDefs.h"
-5	4524	9		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-5	4523	12	#line 4523 "NXCDefs.h"
-5	4524	12		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
-5	4523	15	#line 4523 "NXCDefs.h"
-5	4524	15		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
-5	4523	18	#line 4523 "NXCDefs.h"
-5	4523	18	#line 4523 "NXCDefs.h"
-5	4524	18		jmp __004__ASM_Label_37
-5	4523	20	#line 4523 "NXCDefs.h"
-5	4524	20		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
-5	4523	23	#line 4523 "NXCDefs.h"
-5	4523	23	#line 4523 "NXCDefs.h"
-5	4524	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-5	4428	25	#line 4428 "NXCDefs.h"
-5	4429	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-5	4428	29	#line 4428 "NXCDefs.h"
-5	4523	29	#line 4523 "NXCDefs.h"
-5	4524	29	#line 4524 "NXCDefs.h"
-5	4525	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-5	4524	31	#line 4524 "NXCDefs.h"
-5	4524	31	#line 4524 "NXCDefs.h"
-5	4525	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-5	4524	34	#line 4524 "NXCDefs.h"
-5	4441	34	#line 4441 "NXCDefs.h"
-5	4442	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
-5	4441	38	#line 4441 "NXCDefs.h"
-5	4524	38	#line 4524 "NXCDefs.h"
-5	4525	38	#line 4525 "NXCDefs.h"
-5	4526	38		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-5	4525	40	#line 4525 "NXCDefs.h"
-5	4459	40	#line 4459 "NXCDefs.h"
-5	4460	40	#pragma macro 4
-5	4460	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-5	4460	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-5	5247	44	#line 5247 "NXCDefs.h"
-5	4459	44	#line 4459 "NXCDefs.h"
-5	4525	44	#line 4525 "NXCDefs.h"
-5	167	44	#line 167 "C:\Users\luan\Desktop\execultivo.nxc"
-5	168	44	#line 168 "C:\Users\luan\Desktop\execultivo.nxc"
-5	169	44		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 1
-5	168	47	#line 168 "C:\Users\luan\Desktop\execultivo.nxc"
-5	168	47	#line 168 "C:\Users\luan\Desktop\execultivo.nxc"
-5	169	47		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
-5	4523	49	#line 4523 "NXCDefs.h"
-5	4524	49		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-5	4523	51	#line 4523 "NXCDefs.h"
-5	4523	51	#line 4523 "NXCDefs.h"
-5	4524	51		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
-5	4523	53	#line 4523 "NXCDefs.h"
-5	4524	53		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-5	4523	56	#line 4523 "NXCDefs.h"
-5	4524	56		brtst 4, __005__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
-5	4523	59	#line 4523 "NXCDefs.h"
-5	4524	59		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
-5	4523	62	#line 4523 "NXCDefs.h"
-5	4523	62	#line 4523 "NXCDefs.h"
-5	4524	62		jmp __005__ASM_Label_37
-5	4523	64	#line 4523 "NXCDefs.h"
-5	4524	64		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
-5	4523	67	#line 4523 "NXCDefs.h"
-5	4523	67	#line 4523 "NXCDefs.h"
-5	4524	67		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-5	4428	69	#line 4428 "NXCDefs.h"
-5	4429	69		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-5	4428	73	#line 4428 "NXCDefs.h"
-5	4523	73	#line 4523 "NXCDefs.h"
-5	4524	73	#line 4524 "NXCDefs.h"
-5	4525	73		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-5	4524	75	#line 4524 "NXCDefs.h"
-5	4524	75	#line 4524 "NXCDefs.h"
-5	4525	75		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-5	4524	78	#line 4524 "NXCDefs.h"
-5	4441	78	#line 4441 "NXCDefs.h"
-5	4442	78		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
-5	4441	82	#line 4441 "NXCDefs.h"
-5	4524	82	#line 4524 "NXCDefs.h"
-5	4525	82	#line 4525 "NXCDefs.h"
-5	4526	82		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-5	4525	84	#line 4525 "NXCDefs.h"
-5	4459	84	#line 4459 "NXCDefs.h"
-5	4460	84	#pragma macro 4
-5	4460	84		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-5	4460	86		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-5	5310	88	#line 5310 "NXCDefs.h"
-5	4459	88	#line 4459 "NXCDefs.h"
-5	4525	88	#line 4525 "NXCDefs.h"
-5	168	88	#line 168 "C:\Users\luan\Desktop\execultivo.nxc"
-5	169	88	#line 169 "C:\Users\luan\Desktop\execultivo.nxc"
-5	170	88		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 2
-5	169	91	#line 169 "C:\Users\luan\Desktop\execultivo.nxc"
-5	169	91	#line 169 "C:\Users\luan\Desktop\execultivo.nxc"
-5	170	91		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
-5	4523	93	#line 4523 "NXCDefs.h"
-5	4524	93		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-5	4523	95	#line 4523 "NXCDefs.h"
-5	4523	95	#line 4523 "NXCDefs.h"
-5	4524	95		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
-5	4523	97	#line 4523 "NXCDefs.h"
-5	4524	97		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-5	4523	100	#line 4523 "NXCDefs.h"
-5	4524	100		brtst 4, __006__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
-5	4523	103	#line 4523 "NXCDefs.h"
-5	4524	103		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
-5	4523	106	#line 4523 "NXCDefs.h"
-5	4523	106	#line 4523 "NXCDefs.h"
-5	4524	106		jmp __006__ASM_Label_37
-5	4523	108	#line 4523 "NXCDefs.h"
-5	4524	108		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
-5	4523	111	#line 4523 "NXCDefs.h"
-5	4523	111	#line 4523 "NXCDefs.h"
-5	4524	111		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-5	4428	113	#line 4428 "NXCDefs.h"
-5	4429	113		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-5	4428	117	#line 4428 "NXCDefs.h"
-5	4523	117	#line 4523 "NXCDefs.h"
-5	4524	117	#line 4524 "NXCDefs.h"
-5	4525	117		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-5	4524	119	#line 4524 "NXCDefs.h"
-5	4524	119	#line 4524 "NXCDefs.h"
-5	4525	119		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-5	4524	122	#line 4524 "NXCDefs.h"
-5	4441	122	#line 4441 "NXCDefs.h"
-5	4442	122		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
-5	4441	126	#line 4441 "NXCDefs.h"
-5	4524	126	#line 4524 "NXCDefs.h"
-5	4525	126	#line 4525 "NXCDefs.h"
-5	4526	126		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-5	4525	128	#line 4525 "NXCDefs.h"
-5	4459	128	#line 4459 "NXCDefs.h"
-5	4460	128	#pragma macro 4
-5	4460	128		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-5	4460	130		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-5	5373	132	#line 5373 "NXCDefs.h"
-5	4459	132	#line 4459 "NXCDefs.h"
-5	4525	132	#line 4525 "NXCDefs.h"
-5	169	132	#line 169 "C:\Users\luan\Desktop\execultivo.nxc"
-5	170	132	#line 170 "C:\Users\luan\Desktop\execultivo.nxc"
-5	171	132		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 3
-5	170	135	#line 170 "C:\Users\luan\Desktop\execultivo.nxc"
-5	170	135	#line 170 "C:\Users\luan\Desktop\execultivo.nxc"
-5	171	135		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
-5	4523	137	#line 4523 "NXCDefs.h"
-5	4524	137		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-5	4523	139	#line 4523 "NXCDefs.h"
-5	4523	139	#line 4523 "NXCDefs.h"
-5	4524	139		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
-5	4523	141	#line 4523 "NXCDefs.h"
-5	4524	141		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-5	4523	144	#line 4523 "NXCDefs.h"
-5	4524	144		brtst 4, __007__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
-5	4523	147	#line 4523 "NXCDefs.h"
-5	4524	147		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
-5	4523	150	#line 4523 "NXCDefs.h"
-5	4523	150	#line 4523 "NXCDefs.h"
-5	4524	150		jmp __007__ASM_Label_37
-5	4523	152	#line 4523 "NXCDefs.h"
-5	4524	152		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
-5	4523	155	#line 4523 "NXCDefs.h"
-5	4523	155	#line 4523 "NXCDefs.h"
-5	4524	155		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
-5	4428	157	#line 4428 "NXCDefs.h"
-5	4429	157		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-5	4428	161	#line 4428 "NXCDefs.h"
-5	4523	161	#line 4523 "NXCDefs.h"
-5	4524	161	#line 4524 "NXCDefs.h"
-5	4525	161		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-5	4524	163	#line 4524 "NXCDefs.h"
-5	4524	163	#line 4524 "NXCDefs.h"
-5	4525	163		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
-5	4524	166	#line 4524 "NXCDefs.h"
-5	4441	166	#line 4441 "NXCDefs.h"
-5	4442	166		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
-5	4441	170	#line 4441 "NXCDefs.h"
-5	4524	170	#line 4524 "NXCDefs.h"
-5	4525	170	#line 4525 "NXCDefs.h"
-5	4526	170		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-5	4525	172	#line 4525 "NXCDefs.h"
-5	4459	172	#line 4459 "NXCDefs.h"
-5	4460	172	#pragma macro 4
-5	4460	172		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
-5	4460	174		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-5	5436	176	#line 5436 "NXCDefs.h"
-5	4459	176	#line 4459 "NXCDefs.h"
-5	4525	176	#line 4525 "NXCDefs.h"
-5	170	176	#line 170 "C:\Users\luan\Desktop\execultivo.nxc"
-5	173	176	#line 173 "C:\Users\luan\Desktop\execultivo.nxc"
-5	174	176		subret __inicializaSensores_return
-6	176	0	#line 176 "C:\Users\luan\Desktop\execultivo.nxc"
-6	177	0		strcat __strbufiniciaBlue, __constStr0009
-6	176	4	#line 176 "C:\Users\luan\Desktop\execultivo.nxc"
-6	177	4		mov __iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name, __strbufiniciaBlue
-6	176	6	#line 176 "C:\Users\luan\Desktop\execultivo.nxc"
-6	177	6	#line 177 "C:\Users\luan\Desktop\execultivo.nxc"
-6	178	6		set __iniciaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot, 1
-6	177	9	#line 177 "C:\Users\luan\Desktop\execultivo.nxc"
-6	177	9	#line 177 "C:\Users\luan\Desktop\execultivo.nxc"
-6	178	9	#line 178 "C:\Users\luan\Desktop\execultivo.nxc"
-6	179	9		set __iniciaBlue_7qG2_DADOS_BT_7qG2_000.Action, 1
-6	178	12	#line 178 "C:\Users\luan\Desktop\execultivo.nxc"
-6	178	12	#line 178 "C:\Users\luan\Desktop\execultivo.nxc"
-6	181	12	#line 181 "C:\Users\luan\Desktop\execultivo.nxc"
-6	182	12	#pragma macro 4
-6	182	12	#line 182 "C:\Users\luan\Desktop\execultivo.nxc"
-6	182	12		syscall 36, __iniciaBlue_7qG2_DADOS_BT_7qG2_000
-6	180	15	#line 180 "C:\Users\luan\Desktop\execultivo.nxc"
-6	180	15	#line 180 "C:\Users\luan\Desktop\execultivo.nxc"
-6	180	15	#line 180 "C:\Users\luan\Desktop\execultivo.nxc"
-6	180	15	#line 180 "C:\Users\luan\Desktop\execultivo.nxc"
-6	181	15	#line 181 "C:\Users\luan\Desktop\execultivo.nxc"
-6	181	15	#line 181 "C:\Users\luan\Desktop\execultivo.nxc"
-6	181	15	#line 181 "C:\Users\luan\Desktop\execultivo.nxc"
-6	182	15		set __Wait_7qG2_ms_7qG2_000_inline_iniciaBlue, 4000
-6	181	18	#line 181 "C:\Users\luan\Desktop\execultivo.nxc"
-6	8869	18	#line 8869 "NXCDefs.h"
-6	8870	18		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_iniciaBlue
-6	8869	21	#line 8869 "NXCDefs.h"
-6	181	21	#line 181 "C:\Users\luan\Desktop\execultivo.nxc"
-6	182	21	#line 182 "C:\Users\luan\Desktop\execultivo.nxc"
-6	183	21		set __signed_stack_001iniciaBlue, 0
-6	182	24	#line 182 "C:\Users\luan\Desktop\execultivo.nxc"
-6	182	24	#line 182 "C:\Users\luan\Desktop\execultivo.nxc"
-6	183	24		set __signed_stack_002iniciaBlue, 48
-6	182	27	#line 182 "C:\Users\luan\Desktop\execultivo.nxc"
-6	182	27	#line 182 "C:\Users\luan\Desktop\execultivo.nxc"
-6	183	27		strcat __strbufiniciaBlue, __constStr0011
-6	182	31	#line 182 "C:\Users\luan\Desktop\execultivo.nxc"
-6	183	31		acquire __TextOutMutex
-6	182	32	#line 182 "C:\Users\luan\Desktop\execultivo.nxc"
-6	183	32		mov __TextOutArgs.Location.X, __signed_stack_001iniciaBlue
-6	182	34	#line 182 "C:\Users\luan\Desktop\execultivo.nxc"
-6	183	34		mov __TextOutArgs.Location.Y, __signed_stack_002iniciaBlue
-6	182	36	#line 182 "C:\Users\luan\Desktop\execultivo.nxc"
-6	183	36		set __TextOutArgs.Options, 0
-6	182	39	#line 182 "C:\Users\luan\Desktop\execultivo.nxc"
-6	183	39		mov __TextOutArgs.Text, __strbufiniciaBlue
-6	182	41	#line 182 "C:\Users\luan\Desktop\execultivo.nxc"
-6	183	41		syscall 13, __TextOutArgs
-6	182	44	#line 182 "C:\Users\luan\Desktop\execultivo.nxc"
-6	182	44	#line 182 "C:\Users\luan\Desktop\execultivo.nxc"
-6	183	44		release __TextOutMutex
-6	182	45	#line 182 "C:\Users\luan\Desktop\execultivo.nxc"
-6	185	45	#line 185 "C:\Users\luan\Desktop\execultivo.nxc"
-6	186	45		subret __iniciaBlue_return
-7	189	0	#line 189 "C:\Users\luan\Desktop\execultivo.nxc"
-7	190	0		set __signed_stack_001andar, 90
-7	189	3	#line 189 "C:\Users\luan\Desktop\execultivo.nxc"
-7	189	3	#line 189 "C:\Users\luan\Desktop\execultivo.nxc"
-7	190	3		set __D0andar, 1
-7	189	6	#line 189 "C:\Users\luan\Desktop\execultivo.nxc"
-7	190	6	#pragma macro 7
-7	190	6		setout __OUT_AB, 2, __signed_stack_001andar, 1, __constVal7, 8, __constVal2, 7, __D0andar, 6, __constVal32, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-7	5531	29	#line 5531 "C:\Users\luan\Desktop\execultivo.nxc"
-7	189	29	#line 189 "C:\Users\luan\Desktop\execultivo.nxc"
-7	192	29	#line 192 "C:\Users\luan\Desktop\execultivo.nxc"
-7	193	29		subret __andar_return
-8	194	0	#line 194 "C:\Users\luan\Desktop\execultivo.nxc"
-8	195	0	#pragma macro 7
-8	195	0		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-8	5540	23	#line 5540 "C:\Users\luan\Desktop\execultivo.nxc"
-8	194	23	#line 194 "C:\Users\luan\Desktop\execultivo.nxc"
-8	195	23	#line 195 "C:\Users\luan\Desktop\execultivo.nxc"
-8	196	23	#pragma macro 7
-8	196	23		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-8	5543	46	#line 5543 "C:\Users\luan\Desktop\execultivo.nxc"
-8	195	46	#line 195 "C:\Users\luan\Desktop\execultivo.nxc"
-8	198	46	#line 198 "C:\Users\luan\Desktop\execultivo.nxc"
-8	199	46		subret __parar_return
-9	200	0	#line 200 "C:\Users\luan\Desktop\execultivo.nxc"
-9	201	0		subcall parar, __parar_return
-9	200	2	#line 200 "C:\Users\luan\Desktop\execultivo.nxc"
-9	202	2	#line 202 "C:\Users\luan\Desktop\execultivo.nxc"
-9	203	2		subcall rejeitarDireita, __rejeitarDireita_return
-9	202	4	#line 202 "C:\Users\luan\Desktop\execultivo.nxc"
-9	203	4	#line 203 "C:\Users\luan\Desktop\execultivo.nxc"
-9	204	4		subcall MandaGirei, __MandaGirei_return
-9	203	6	#line 203 "C:\Users\luan\Desktop\execultivo.nxc"
-9	204	6	#line 204 "C:\Users\luan\Desktop\execultivo.nxc"
-9	205	6		subcall RecebeDesgirar, __RecebeDesgirar_return
-9	204	8	#line 204 "C:\Users\luan\Desktop\execultivo.nxc"
-9	204	8	#line 204 "C:\Users\luan\Desktop\execultivo.nxc"
-9	205	8		not __D0rejeitar, __D0RecebeDesgirar
-9	204	11	#line 204 "C:\Users\luan\Desktop\execultivo.nxc"
-9	205	11		tst 5, __D0rejeitar, __D0rejeitar
-9	204	14	#line 204 "C:\Users\luan\Desktop\execultivo.nxc"
-9	205	14		brtst 4, __ASM_Label_640, __D0rejeitar
-9	205	17	#line 205 "C:\Users\luan\Desktop\execultivo.nxc"
-9	206	17		jmp __ASM_Label_639
-9	205	19	#line 205 "C:\Users\luan\Desktop\execultivo.nxc"
-9	205	19	#line 205 "C:\Users\luan\Desktop\execultivo.nxc"
-9	206	19		subcall voltarejeitarDireita, __voltarejeitarDireita_return
-9	205	21	#line 205 "C:\Users\luan\Desktop\execultivo.nxc"
-9	206	21	#line 206 "C:\Users\luan\Desktop\execultivo.nxc"
-9	207	21		subcall MandaDesGirei, __MandaDesGirei_return
-9	206	23	#line 206 "C:\Users\luan\Desktop\execultivo.nxc"
-9	209	23	#line 209 "C:\Users\luan\Desktop\execultivo.nxc"
-9	210	23		subret __rejeitar_return
-10	213	0	#line 213 "C:\Users\luan\Desktop\execultivo.nxc"
-10	214	0		set __D0rejeitarDireita, 90
-10	213	3	#line 213 "C:\Users\luan\Desktop\execultivo.nxc"
-10	214	3	#pragma macro 7
-10	214	3		setout __constVal0, 2, __D0rejeitarDireita, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-10	5594	26	#line 5594 "C:\Users\luan\Desktop\execultivo.nxc"
-10	213	26	#line 213 "C:\Users\luan\Desktop\execultivo.nxc"
-10	216	26	#line 216 "C:\Users\luan\Desktop\execultivo.nxc"
-10	217	26		getout __rejeitarDireita_7qG2_tc_7qG2_000, __constVal0, 4
-10	216	30	#line 216 "C:\Users\luan\Desktop\execultivo.nxc"
-10	216	30	#line 216 "C:\Users\luan\Desktop\execultivo.nxc"
-10	217	30	#line 217 "C:\Users\luan\Desktop\execultivo.nxc"
-10	218	30		mov __signed_stack_001rejeitarDireita, __rejeitarDireita_7qG2_tc_7qG2_000
-10	217	32	#line 217 "C:\Users\luan\Desktop\execultivo.nxc"
-10	217	32	#line 217 "C:\Users\luan\Desktop\execultivo.nxc"
-10	218	32		set __D0rejeitarDireita, 1500
-10	217	35	#line 217 "C:\Users\luan\Desktop\execultivo.nxc"
-10	218	35		cmp 0, __D0rejeitarDireita, __signed_stack_001rejeitarDireita, __D0rejeitarDireita
-10	217	39	#line 217 "C:\Users\luan\Desktop\execultivo.nxc"
-10	218	39		brtst 4, __ASM_Label_646, __D0rejeitarDireita
-10	217	42	#line 217 "C:\Users\luan\Desktop\execultivo.nxc"
-10	218	42		jmp __ASM_Label_645
-10	217	44	#line 217 "C:\Users\luan\Desktop\execultivo.nxc"
-10	217	44	#line 217 "C:\Users\luan\Desktop\execultivo.nxc"
-10	219	44	#line 219 "C:\Users\luan\Desktop\execultivo.nxc"
-10	220	44		subcall parar, __parar_return
-10	219	46	#line 219 "C:\Users\luan\Desktop\execultivo.nxc"
-10	222	46	#line 222 "C:\Users\luan\Desktop\execultivo.nxc"
-10	223	46		subret __rejeitarDireita_return
-11	226	0	#line 226 "C:\Users\luan\Desktop\execultivo.nxc"
-11	227	0		mov __D0voltarejeitarDireita, __constValNeg90
-11	226	2	#line 226 "C:\Users\luan\Desktop\execultivo.nxc"
-11	227	2	#pragma macro 7
-11	227	2		setout __constVal0, 2, __D0voltarejeitarDireita, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-11	5638	25	#line 5638 "C:\Users\luan\Desktop\execultivo.nxc"
-11	226	25	#line 226 "C:\Users\luan\Desktop\execultivo.nxc"
-11	229	25	#line 229 "C:\Users\luan\Desktop\execultivo.nxc"
-11	230	25		getout __voltarejeitarDireita_7qG2_tc_7qG2_000, __constVal0, 4
-11	229	29	#line 229 "C:\Users\luan\Desktop\execultivo.nxc"
-11	229	29	#line 229 "C:\Users\luan\Desktop\execultivo.nxc"
-11	230	29	#line 230 "C:\Users\luan\Desktop\execultivo.nxc"
-11	231	29		mov __signed_stack_001voltarejeitarDireita, __voltarejeitarDireita_7qG2_tc_7qG2_000
-11	230	31	#line 230 "C:\Users\luan\Desktop\execultivo.nxc"
-11	230	31	#line 230 "C:\Users\luan\Desktop\execultivo.nxc"
-11	231	31		mov __signed_stack_002voltarejeitarDireita, __constValNeg1500
-11	230	33	#line 230 "C:\Users\luan\Desktop\execultivo.nxc"
-11	230	33	#line 230 "C:\Users\luan\Desktop\execultivo.nxc"
-11	231	33		set __D0voltarejeitarDireita, 165
-11	230	36	#line 230 "C:\Users\luan\Desktop\execultivo.nxc"
-11	231	36		sub __D0voltarejeitarDireita, __signed_stack_002voltarejeitarDireita, __D0voltarejeitarDireita
-11	230	40	#line 230 "C:\Users\luan\Desktop\execultivo.nxc"
-11	231	40		cmp 1, __D0voltarejeitarDireita, __signed_stack_001voltarejeitarDireita, __D0voltarejeitarDireita
-11	230	44	#line 230 "C:\Users\luan\Desktop\execultivo.nxc"
-11	231	44		brtst 4, __ASM_Label_654, __D0voltarejeitarDireita
-11	230	47	#line 230 "C:\Users\luan\Desktop\execultivo.nxc"
-11	231	47		jmp __ASM_Label_653
-11	230	49	#line 230 "C:\Users\luan\Desktop\execultivo.nxc"
-11	230	49	#line 230 "C:\Users\luan\Desktop\execultivo.nxc"
-11	232	49	#line 232 "C:\Users\luan\Desktop\execultivo.nxc"
-11	233	49		subcall parar, __parar_return
-11	232	51	#line 232 "C:\Users\luan\Desktop\execultivo.nxc"
-11	235	51	#line 235 "C:\Users\luan\Desktop\execultivo.nxc"
-11	236	51		subret __voltarejeitarDireita_return
-12	237	0	#line 237 "C:\Users\luan\Desktop\execultivo.nxc"
-12	238	0	#pragma macro 14
-12	238	0		acquire __RemoteMutex
-12	238	1		mov __SRSTmpBuf, __DCMessageWritePacket
-12	238	3		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
-12	238	8		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-12	238	13		mov __SRSTmpLongVal, __constVal3
-12	238	15		flatten __SRSFlattenBuf, __SRSTmpLongVal
-12	238	18		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-12	238	23		acquire __CBTWMutex
-12	238	24		mov __CBTWArgs.Connection, __constVal1
-12	238	26		mov __CBTWArgs.Buffer, __SRSSendBuf
-12	238	28		syscall 29, __CBTWArgs
-12	238	31		release __CBTWMutex
-12	238	32		release __RemoteMutex
-12	5684	33	#line 5684 "C:\Users\luan\Desktop\execultivo.nxc"
-12	237	33	#line 237 "C:\Users\luan\Desktop\execultivo.nxc"
-12	237	33	#line 237 "C:\Users\luan\Desktop\execultivo.nxc"
-12	240	33	#line 240 "C:\Users\luan\Desktop\execultivo.nxc"
-12	241	33		subret __MandaGirei_return
-13	242	0	#line 242 "C:\Users\luan\Desktop\execultivo.nxc"
-13	243	0	#pragma macro 14
-13	243	0		acquire __RemoteMutex
-13	243	1		mov __SRSTmpBuf, __DCMessageWritePacket
-13	243	3		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
-13	243	8		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
-13	243	13		mov __SRSTmpLongVal, __constVal6
-13	243	15		flatten __SRSFlattenBuf, __SRSTmpLongVal
-13	243	18		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
-13	243	23		acquire __CBTWMutex
-13	243	24		mov __CBTWArgs.Connection, __constVal1
-13	243	26		mov __CBTWArgs.Buffer, __SRSSendBuf
-13	243	28		syscall 29, __CBTWArgs
-13	243	31		release __CBTWMutex
-13	243	32		release __RemoteMutex
-13	5693	33	#line 5693 "C:\Users\luan\Desktop\execultivo.nxc"
-13	242	33	#line 242 "C:\Users\luan\Desktop\execultivo.nxc"
-13	242	33	#line 242 "C:\Users\luan\Desktop\execultivo.nxc"
-13	246	33	#line 246 "C:\Users\luan\Desktop\execultivo.nxc"
-13	247	33		subret __MandaDesGirei_return
-14	250	0	#line 250 "C:\Users\luan\Desktop\execultivo.nxc"
-14	251	0		set __D0AbrirPorta, 70
-14	250	3	#line 250 "C:\Users\luan\Desktop\execultivo.nxc"
-14	251	3	#pragma macro 7
-14	251	3		setout __constVal2, 2, __D0AbrirPorta, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-14	5712	26	#line 5712 "C:\Users\luan\Desktop\execultivo.nxc"
-14	250	26	#line 250 "C:\Users\luan\Desktop\execultivo.nxc"
-14	251	26	#line 251 "C:\Users\luan\Desktop\execultivo.nxc"
-14	252	26		getout __AbrirPorta_7qG2_tc_7qG2_000, __constVal2, 4
-14	251	30	#line 251 "C:\Users\luan\Desktop\execultivo.nxc"
-14	251	30	#line 251 "C:\Users\luan\Desktop\execultivo.nxc"
-14	254	30	#line 254 "C:\Users\luan\Desktop\execultivo.nxc"
-14	255	30		set __Wait_7qG2_ms_7qG2_000_inline_AbrirPorta, 200
-14	254	33	#line 254 "C:\Users\luan\Desktop\execultivo.nxc"
-14	8869	33	#line 8869 "NXCDefs.h"
-14	8870	33		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_AbrirPorta
-14	8869	36	#line 8869 "NXCDefs.h"
-14	254	36	#line 254 "C:\Users\luan\Desktop\execultivo.nxc"
-14	255	36	#line 255 "C:\Users\luan\Desktop\execultivo.nxc"
-14	256	36		mov __AbrirPorta_7qG2_old_tc_7qG2_000, __AbrirPorta_7qG2_tc_7qG2_000
-14	255	38	#line 255 "C:\Users\luan\Desktop\execultivo.nxc"
-14	255	38	#line 255 "C:\Users\luan\Desktop\execultivo.nxc"
-14	256	38	#line 256 "C:\Users\luan\Desktop\execultivo.nxc"
-14	257	38		getout __AbrirPorta_7qG2_tc_7qG2_000, __constVal2, 4
-14	256	42	#line 256 "C:\Users\luan\Desktop\execultivo.nxc"
-14	256	42	#line 256 "C:\Users\luan\Desktop\execultivo.nxc"
-14	257	42	#line 257 "C:\Users\luan\Desktop\execultivo.nxc"
-14	258	42		mov __signed_stack_001AbrirPorta, __AbrirPorta_7qG2_tc_7qG2_000
-14	257	44	#line 257 "C:\Users\luan\Desktop\execultivo.nxc"
-14	257	44	#line 257 "C:\Users\luan\Desktop\execultivo.nxc"
-14	258	44		mov __D0AbrirPorta, __AbrirPorta_7qG2_old_tc_7qG2_000
-14	257	46	#line 257 "C:\Users\luan\Desktop\execultivo.nxc"
-14	258	46		cmp 5, __D0AbrirPorta, __signed_stack_001AbrirPorta, __D0AbrirPorta
-14	257	50	#line 257 "C:\Users\luan\Desktop\execultivo.nxc"
-14	258	50		brtst 4, __ASM_Label_666, __D0AbrirPorta
-14	257	53	#line 257 "C:\Users\luan\Desktop\execultivo.nxc"
-14	258	53		jmp __ASM_Label_665
-14	257	55	#line 257 "C:\Users\luan\Desktop\execultivo.nxc"
-14	257	55	#line 257 "C:\Users\luan\Desktop\execultivo.nxc"
-14	259	55	#line 259 "C:\Users\luan\Desktop\execultivo.nxc"
-14	260	55		set __D0AbrirPorta, 0
-14	259	58	#line 259 "C:\Users\luan\Desktop\execultivo.nxc"
-14	260	58	#pragma macro 7
-14	260	58		setout __constVal2, 2, __D0AbrirPorta, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-14	5770	81	#line 5770 "C:\Users\luan\Desktop\execultivo.nxc"
-14	259	81	#line 259 "C:\Users\luan\Desktop\execultivo.nxc"
-14	262	81	#line 262 "C:\Users\luan\Desktop\execultivo.nxc"
-14	263	81		subret __AbrirPorta_return
-15	266	0	#line 266 "C:\Users\luan\Desktop\execultivo.nxc"
-15	267	0		mov __D0FecharPorta, __constValNeg70
-15	266	2	#line 266 "C:\Users\luan\Desktop\execultivo.nxc"
-15	267	2	#pragma macro 7
-15	267	2		setout __constVal2, 2, __D0FecharPorta, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-15	5788	25	#line 5788 "C:\Users\luan\Desktop\execultivo.nxc"
-15	266	25	#line 266 "C:\Users\luan\Desktop\execultivo.nxc"
-15	267	25	#line 267 "C:\Users\luan\Desktop\execultivo.nxc"
-15	268	25		getout __FecharPorta_7qG2_tc_7qG2_000, __constVal2, 4
-15	267	29	#line 267 "C:\Users\luan\Desktop\execultivo.nxc"
-15	267	29	#line 267 "C:\Users\luan\Desktop\execultivo.nxc"
-15	270	29	#line 270 "C:\Users\luan\Desktop\execultivo.nxc"
-15	271	29		set __Wait_7qG2_ms_7qG2_000_inline_FecharPorta, 200
-15	270	32	#line 270 "C:\Users\luan\Desktop\execultivo.nxc"
-15	8869	32	#line 8869 "NXCDefs.h"
-15	8870	32		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_FecharPorta
-15	8869	35	#line 8869 "NXCDefs.h"
-15	270	35	#line 270 "C:\Users\luan\Desktop\execultivo.nxc"
-15	271	35	#line 271 "C:\Users\luan\Desktop\execultivo.nxc"
-15	272	35		mov __FecharPorta_7qG2_old_tc_7qG2_000, __FecharPorta_7qG2_tc_7qG2_000
-15	271	37	#line 271 "C:\Users\luan\Desktop\execultivo.nxc"
-15	271	37	#line 271 "C:\Users\luan\Desktop\execultivo.nxc"
-15	272	37	#line 272 "C:\Users\luan\Desktop\execultivo.nxc"
-15	273	37		getout __FecharPorta_7qG2_tc_7qG2_000, __constVal2, 4
-15	272	41	#line 272 "C:\Users\luan\Desktop\execultivo.nxc"
-15	272	41	#line 272 "C:\Users\luan\Desktop\execultivo.nxc"
-15	273	41	#line 273 "C:\Users\luan\Desktop\execultivo.nxc"
-15	274	41		mov __signed_stack_001FecharPorta, __FecharPorta_7qG2_tc_7qG2_000
-15	273	43	#line 273 "C:\Users\luan\Desktop\execultivo.nxc"
-15	273	43	#line 273 "C:\Users\luan\Desktop\execultivo.nxc"
-15	274	43		mov __D0FecharPorta, __FecharPorta_7qG2_old_tc_7qG2_000
-15	273	45	#line 273 "C:\Users\luan\Desktop\execultivo.nxc"
-15	274	45		cmp 5, __D0FecharPorta, __signed_stack_001FecharPorta, __D0FecharPorta
-15	273	49	#line 273 "C:\Users\luan\Desktop\execultivo.nxc"
-15	274	49		brtst 4, __ASM_Label_682, __D0FecharPorta
-15	273	52	#line 273 "C:\Users\luan\Desktop\execultivo.nxc"
-15	274	52		jmp __ASM_Label_681
-15	273	54	#line 273 "C:\Users\luan\Desktop\execultivo.nxc"
-15	273	54	#line 273 "C:\Users\luan\Desktop\execultivo.nxc"
-15	275	54	#line 275 "C:\Users\luan\Desktop\execultivo.nxc"
-15	276	54		set __D0FecharPorta, 0
-15	275	57	#line 275 "C:\Users\luan\Desktop\execultivo.nxc"
-15	276	57	#pragma macro 7
-15	276	57		setout __constVal2, 2, __D0FecharPorta, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-15	5846	80	#line 5846 "C:\Users\luan\Desktop\execultivo.nxc"
-15	275	80	#line 275 "C:\Users\luan\Desktop\execultivo.nxc"
-15	278	80	#line 278 "C:\Users\luan\Desktop\execultivo.nxc"
-15	279	80		subret __FecharPorta_return
-16	282	0	#line 282 "C:\Users\luan\Desktop\execultivo.nxc"
-16	283	0	#pragma macro 9
-16	283	0		acquire __MRMutex
-16	283	1		mov __MRArgs.QueueID, __constVal3
-16	283	3		mov __MRArgs.Remove, __constVal1
-16	283	5		set __RRNTmpVal, 0
-16	283	8		syscall 27, __MRArgs
-16	283	11		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-16	283	16		mov __RecebeUS_7qG2_aux_7qG2_000, __RRNTmpVal
-16	283	18		mov __D0RecebeUS, __MRArgs.Result
-16	283	20		release __MRMutex
-16	5858	21	#line 5858 "C:\Users\luan\Desktop\execultivo.nxc"
-16	282	21	#line 282 "C:\Users\luan\Desktop\execultivo.nxc"
-16	282	21	#line 282 "C:\Users\luan\Desktop\execultivo.nxc"
-16	284	21	#line 284 "C:\Users\luan\Desktop\execultivo.nxc"
-16	285	21		mov __D0RecebeUS, __RecebeUS_7qG2_aux_7qG2_000
-16	284	23	#line 284 "C:\Users\luan\Desktop\execultivo.nxc"
-16	285	23		subret __RecebeUS_return
-16	284	25	#line 284 "C:\Users\luan\Desktop\execultivo.nxc"
-16	287	25	#line 287 "C:\Users\luan\Desktop\execultivo.nxc"
-16	288	25		subret __RecebeUS_return
-17	290	0	#line 290 "C:\Users\luan\Desktop\execultivo.nxc"
-17	291	0	#pragma macro 9
-17	291	0		acquire __MRMutex
-17	291	1		mov __MRArgs.QueueID, __constVal1
-17	291	3		mov __MRArgs.Remove, __constVal1
-17	291	5		set __RRNTmpVal, 0
-17	291	8		syscall 27, __MRArgs
-17	291	11		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
-17	291	16		mov __RecebeDesgirar_7qG2_aux_7qG2_000, __RRNTmpVal
-17	291	18		mov __D0RecebeDesgirar, __MRArgs.Result
-17	291	20		release __MRMutex
-17	5878	21	#line 5878 "C:\Users\luan\Desktop\execultivo.nxc"
-17	290	21	#line 290 "C:\Users\luan\Desktop\execultivo.nxc"
-17	290	21	#line 290 "C:\Users\luan\Desktop\execultivo.nxc"
-17	291	21	#line 291 "C:\Users\luan\Desktop\execultivo.nxc"
-17	292	21		mov __signed_stack_001RecebeDesgirar, __RecebeDesgirar_7qG2_aux_7qG2_000
-17	291	23	#line 291 "C:\Users\luan\Desktop\execultivo.nxc"
-17	292	23	#line 292 "C:\Users\luan\Desktop\execultivo.nxc"
-17	293	23		set __D0RecebeDesgirar, 4
-17	292	26	#line 292 "C:\Users\luan\Desktop\execultivo.nxc"
-17	293	26		cmp 4, __D0RecebeDesgirar, __signed_stack_001RecebeDesgirar, __D0RecebeDesgirar
-17	292	30	#line 292 "C:\Users\luan\Desktop\execultivo.nxc"
-17	293	30		brtst 4, __ASM_Label_697, __D0RecebeDesgirar
-17	292	33	#line 292 "C:\Users\luan\Desktop\execultivo.nxc"
-17	293	33		set __D0RecebeDesgirar, 1
-17	292	36	#line 292 "C:\Users\luan\Desktop\execultivo.nxc"
-17	293	36		subret __RecebeDesgirar_return
-17	292	38	#line 292 "C:\Users\luan\Desktop\execultivo.nxc"
-17	293	38	#line 293 "C:\Users\luan\Desktop\execultivo.nxc"
-17	293	38	#line 293 "C:\Users\luan\Desktop\execultivo.nxc"
-17	294	38		set __D0RecebeDesgirar, 0
-17	293	41	#line 293 "C:\Users\luan\Desktop\execultivo.nxc"
-17	294	41		subret __RecebeDesgirar_return
-17	293	43	#line 293 "C:\Users\luan\Desktop\execultivo.nxc"
-17	296	43	#line 296 "C:\Users\luan\Desktop\execultivo.nxc"
-17	297	43		subret __RecebeDesgirar_return
-18	310	0	#line 310 "C:\Users\luan\Desktop\execultivo.nxc"
-18	311	0		mov __D0viraDir, __constValNeg90
-18	310	2	#line 310 "C:\Users\luan\Desktop\execultivo.nxc"
-18	311	2	#pragma macro 7
-18	311	2		setout __constVal1, 2, __D0viraDir, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-18	5981	25	#line 5981 "C:\Users\luan\Desktop\execultivo.nxc"
-18	310	25	#line 310 "C:\Users\luan\Desktop\execultivo.nxc"
-18	311	25	#line 311 "C:\Users\luan\Desktop\execultivo.nxc"
-18	312	25		set __D0viraDir, 90
-18	311	28	#line 311 "C:\Users\luan\Desktop\execultivo.nxc"
-18	312	28	#pragma macro 7
-18	312	28		setout __constVal0, 2, __D0viraDir, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-18	5986	51	#line 5986 "C:\Users\luan\Desktop\execultivo.nxc"
-18	311	51	#line 311 "C:\Users\luan\Desktop\execultivo.nxc"
-18	313	51	#line 313 "C:\Users\luan\Desktop\execultivo.nxc"
-18	314	51		set __signed_stack_001viraDir, 0
-18	313	54	#line 313 "C:\Users\luan\Desktop\execultivo.nxc"
-18	313	54	#line 313 "C:\Users\luan\Desktop\execultivo.nxc"
-18	314	54		getout __D0viraDir, __constVal1, 4
-18	313	58	#line 313 "C:\Users\luan\Desktop\execultivo.nxc"
-18	314	58		sub __signed_stack_001viraDir, __signed_stack_001viraDir, __D0viraDir
-18	313	62	#line 313 "C:\Users\luan\Desktop\execultivo.nxc"
-18	313	62	#line 313 "C:\Users\luan\Desktop\execultivo.nxc"
-18	314	62		getout __D0viraDir, __constVal0, 4
-18	313	66	#line 313 "C:\Users\luan\Desktop\execultivo.nxc"
-18	314	66		add __signed_stack_001viraDir, __signed_stack_001viraDir, __D0viraDir
-18	313	70	#line 313 "C:\Users\luan\Desktop\execultivo.nxc"
-18	313	70	#line 313 "C:\Users\luan\Desktop\execultivo.nxc"
-18	314	70		set __D0viraDir, 2
-18	313	73	#line 313 "C:\Users\luan\Desktop\execultivo.nxc"
-18	314	73		div __distanciaGiroDireita_7qG2_grau_7qG2_000, __signed_stack_001viraDir, __D0viraDir
-18	313	77	#line 313 "C:\Users\luan\Desktop\execultivo.nxc"
-18	313	77	#line 313 "C:\Users\luan\Desktop\execultivo.nxc"
-18	314	77		subcall distanciaGiroDireita, __distanciaGiroDireita_return
-18	313	79	#line 313 "C:\Users\luan\Desktop\execultivo.nxc"
-18	314	79		mov __signed_stack_001viraDir, __D0distanciaGiroDireita
-18	313	81	#line 313 "C:\Users\luan\Desktop\execultivo.nxc"
-18	314	81	#line 314 "C:\Users\luan\Desktop\execultivo.nxc"
-18	315	81		mov __D0viraDir, __viraDir_7qG2_angulo_7qG2_000
-18	314	83	#line 314 "C:\Users\luan\Desktop\execultivo.nxc"
-18	315	83		cmp 0, __D0viraDir, __signed_stack_001viraDir, __D0viraDir
-18	316	87	#line 316 "C:\Users\luan\Desktop\execultivo.nxc"
-18	317	87		brtst 4, __ASM_Label_719, __D0viraDir
-18	317	90	#line 317 "C:\Users\luan\Desktop\execultivo.nxc"
-18	318	90		jmp __ASM_Label_718
-18	317	92	#line 317 "C:\Users\luan\Desktop\execultivo.nxc"
-18	317	92	#line 317 "C:\Users\luan\Desktop\execultivo.nxc"
-18	318	92	#pragma macro 7
-18	318	92		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-18	6042	115	#line 6042 "C:\Users\luan\Desktop\execultivo.nxc"
-18	317	115	#line 317 "C:\Users\luan\Desktop\execultivo.nxc"
-18	318	115	#line 318 "C:\Users\luan\Desktop\execultivo.nxc"
-18	319	115	#pragma macro 7
-18	319	115		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-18	6045	138	#line 6045 "C:\Users\luan\Desktop\execultivo.nxc"
-18	318	138	#line 318 "C:\Users\luan\Desktop\execultivo.nxc"
-18	321	138	#line 321 "C:\Users\luan\Desktop\execultivo.nxc"
-18	322	138		subret __viraDir_return
-19	322	0	#line 322 "C:\Users\luan\Desktop\execultivo.nxc"
-19	323	0		mov __signed_stack_001distanciaGiroDireita, __distanciaGiroDireita_7qG2_grau_7qG2_000
-19	322	2	#line 322 "C:\Users\luan\Desktop\execultivo.nxc"
-19	322	2	#line 322 "C:\Users\luan\Desktop\execultivo.nxc"
-19	323	2		set __D0distanciaGiroDireita, 17
-19	322	5	#line 322 "C:\Users\luan\Desktop\execultivo.nxc"
-19	323	5		mul __signed_stack_001distanciaGiroDireita, __signed_stack_001distanciaGiroDireita, __D0distanciaGiroDireita
-19	322	9	#line 322 "C:\Users\luan\Desktop\execultivo.nxc"
-19	322	9	#line 322 "C:\Users\luan\Desktop\execultivo.nxc"
-19	323	9		set __D0distanciaGiroDireita, 149
-19	322	12	#line 322 "C:\Users\luan\Desktop\execultivo.nxc"
-19	323	12		div __D0distanciaGiroDireita, __signed_stack_001distanciaGiroDireita, __D0distanciaGiroDireita
-19	322	16	#line 322 "C:\Users\luan\Desktop\execultivo.nxc"
-19	323	16		subret __distanciaGiroDireita_return
-19	322	18	#line 322 "C:\Users\luan\Desktop\execultivo.nxc"
-19	325	18	#line 325 "C:\Users\luan\Desktop\execultivo.nxc"
-19	326	18		subret __distanciaGiroDireita_return
-20	330	0	#line 330 "C:\Users\luan\Desktop\execultivo.nxc"
-20	331	0		subret ____initialize_global_data_return
+0	100	0	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+0	101	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	100	2	#line 100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+0	101	2	#line 101 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+0	102	2		subcall executivo, __executivo_return
+0	101	4	#line 101 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+0	102	4		exit -1, -1
+1	5476	0		setin __constVal1, __ResetSensorPort, 5
+1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5480	11		subret ____ResetSensorSubroutine_return
+2	106	0	#line 106 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	107	0		set __executivo_7qG2_us_frente_7qG2_000, 200
+2	106	3	#line 106 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	110	3	#line 110 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	111	3		subcall init, __init_return
+2	110	5	#line 110 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	111	5	#line 111 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	112	5		subcall andar, __andar_return
+2	111	7	#line 111 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	112	7	#line 112 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	113	7		set __D0executivo, 1
+2	113	10	#line 113 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	114	10		tst 5, __D0executivo, __D0executivo
+2	113	13	#line 113 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	114	13		brtst 4, __ASM_Label_494, __D0executivo
+2	113	16	#line 113 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	114	16	#pragma macro 9
+2	114	16		acquire __MRMutex
+2	114	17		mov __MRArgs.QueueID, __constVal1
+2	114	19		mov __MRArgs.Remove, __constVal1
+2	114	21		set __RRNTmpVal, 0
+2	114	24		syscall 27, __MRArgs
+2	114	27		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+2	114	32		mov __executivo_7qG2_aux_7qG2_000, __RRNTmpVal
+2	114	34		mov __D0executivo, __MRArgs.Result
+2	114	36		release __MRMutex
+2	4833	37	#line 4833 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	113	37	#line 113 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	113	37	#line 113 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	116	37	#line 116 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	117	37		mov __D0executivo, __executivo_7qG2_aux_7qG2_000
+2	120	39		brcmp 4, __ASM_Label_500, __constVal1, __D0executivo
+2	121	43		brcmp 4, __ASM_Label_501, __constVal2, __D0executivo
+2	122	47		brcmp 4, __ASM_Label_502, __constVal5, __D0executivo
+2	123	51		brcmp 4, __ASM_Label_503, __constValNeg1, __D0executivo
+2	124	55		jmp __ASM_Label_538
+2	118	57	#line 118 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	119	57	#line 119 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	120	57		subcall parar, __parar_return
+2	119	59	#line 119 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	120	59	#line 120 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	121	59		jmp __ASM_Label_499
+2	120	61	#line 120 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	121	61	#line 121 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	122	61	#line 122 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	123	61		subcall andar, __andar_return
+2	122	63	#line 122 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	123	63	#line 123 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	124	63		jmp __ASM_Label_499
+2	123	65	#line 123 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	125	65	#line 125 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	127	65	#line 127 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	128	65		subcall rejeitar, __rejeitar_return
+2	127	67	#line 127 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	128	67	#line 128 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	129	67		subcall andar, __andar_return
+2	128	69	#line 128 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	129	69	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	130	69		jmp __ASM_Label_499
+2	129	71	#line 129 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	130	71	#line 130 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	130	71	#line 130 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	131	71		set __viraDir_7qG2_angulo_7qG2_000, 180
+2	130	74	#line 130 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	131	74	#line 131 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	132	74		subcall viraDir, __viraDir_return
+2	131	76	#line 131 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	133	76	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	134	76		subcall AbrirPorta, __AbrirPorta_return
+2	133	78	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	133	78	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	134	78		set __executivo_7qG2_i_7qG2_003, 0
+2	133	81	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	133	81	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	134	81		mov __signed_stack_001executivo, __executivo_7qG2_i_7qG2_003
+2	133	83	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	133	83	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	134	83		set __D0executivo, 7
+2	133	86	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	134	86		cmp 0, __D0executivo, __signed_stack_001executivo, __D0executivo
+2	133	90	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	134	90		brtst 4, __ASM_Label_507, __D0executivo
+2	133	93	#line 133 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	134	93		jmp __ASM_Label_508
+2	134	95	#line 134 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	135	95		add __executivo_7qG2_i_7qG2_003, __executivo_7qG2_i_7qG2_003, __constVal1
+2	135	99	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	136	99		jmp __ASM_Label_506
+2	135	101	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	136	101		set __MyOnFwd_7qG2_motor_7qG2_000, 0
+2	135	104	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	135	104	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	136	104		set __MyOnFwd_7qG2_pot_7qG2_000, 0
+2	135	107	#line 135 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	136	107	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	137	107		subcall MyOnFwd, __MyOnFwd_return
+2	136	109	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	136	109	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	137	109		set __MyOnFwd_7qG2_motor_7qG2_000, 1
+2	136	112	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	136	112	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	137	112		set __MyOnFwd_7qG2_pot_7qG2_000, 90
+2	136	115	#line 136 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	137	115	#line 137 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	138	115		subcall MyOnFwd, __MyOnFwd_return
+2	137	117	#line 137 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	137	117	#line 137 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	138	117		set __Wait_7qG2_ms_7qG2_000_inline_executivo, 400
+2	137	120	#line 137 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	8551	120	#line 8551 "NXCDefs.h"
+2	8552	120		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_executivo
+2	8551	123	#line 8551 "NXCDefs.h"
+2	138	123	#line 138 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	138	123	#line 138 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	139	123		set __MyOnFwd_7qG2_motor_7qG2_000, 1
+2	138	126	#line 138 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	138	126	#line 138 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	139	126		set __MyOnFwd_7qG2_pot_7qG2_000, 0
+2	138	129	#line 138 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	139	129	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	140	129		subcall MyOnFwd, __MyOnFwd_return
+2	139	131	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	139	131	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	140	131		set __MyOnFwd_7qG2_motor_7qG2_000, 0
+2	139	134	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	139	134	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	140	134		set __MyOnFwd_7qG2_pot_7qG2_000, 90
+2	139	137	#line 139 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	140	137	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	141	137		subcall MyOnFwd, __MyOnFwd_return
+2	140	139	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	140	139	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	141	139		set __Wait_7qG2_ms_7qG2_000_inline_executivo, 400
+2	140	142	#line 140 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	8551	142	#line 8551 "NXCDefs.h"
+2	8552	142		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_executivo
+2	8551	145	#line 8551 "NXCDefs.h"
+2	141	145	#line 141 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	142	145	#line 142 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	143	145		jmp __ASM_Label_509
+2	142	147	#line 142 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	143	147	#line 143 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	144	147		subcall parar, __parar_return
+2	143	149	#line 143 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	143	149	#line 143 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	144	149		set __D0executivo, 1
+2	143	152	#line 143 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	144	152		tst 5, __D0executivo, __D0executivo
+2	143	155	#line 143 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	144	155		brtst 4, __ASM_Label_535, __D0executivo
+2	144	158	#line 144 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	145	158		jmp __ASM_Label_534
+2	144	160	#line 144 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	145	160	#line 145 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	146	160		jmp __ASM_Label_499
+2	145	162	#line 145 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	146	162	#line 146 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	147	162	#line 147 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	148	162		subcall RecebeUS, __RecebeUS_return
+2	147	164	#line 147 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	148	164		mov __executivo_7qG2_us_frente_temp_7qG2_000, __D0RecebeUS
+2	147	166	#line 147 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	147	166	#line 147 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	148	166	#line 148 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	149	166		mov __D0executivo, __executivo_7qG2_us_frente_temp_7qG2_000
+2	148	168	#line 148 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	149	168		tst 5, __D0executivo, __D0executivo
+2	148	171	#line 148 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	149	171		brtst 4, __ASM_Label_543, __D0executivo
+2	149	174	#line 149 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	150	174		mov __executivo_7qG2_us_frente_7qG2_000, __executivo_7qG2_us_frente_temp_7qG2_000
+2	149	176	#line 149 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	149	176	#line 149 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	150	176	#line 150 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	151	176	#line 151 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	153	176	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	154	176		jmp __ASM_Label_493
+2	153	178	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	153	178	#line 153 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+2	154	178		subret __executivo_return
+3	156	0	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+3	157	0		subcall desligaBlue, __desligaBlue_return
+3	156	2	#line 156 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+3	157	2	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+3	158	2		subcall inicializaSensores, __inicializaSensores_return
+3	157	4	#line 157 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+3	158	4	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+3	159	4		subcall FecharPorta, __FecharPorta_return
+3	158	6	#line 158 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+3	159	6	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+3	160	6		subcall iniciaBlue, __iniciaBlue_return
+3	159	8	#line 159 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+3	161	8	#line 161 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+3	162	8		subret __init_return
+4	165	0	#line 165 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	166	0		strcat __strbufdesligaBlue, __constStr0009
+4	165	4	#line 165 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	166	4		mov __desligaBlue_7qG2_DADOS_BT_7qG2_000.Name, __strbufdesligaBlue
+4	165	6	#line 165 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	166	6	#line 166 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	167	6		set __desligaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot, 1
+4	166	9	#line 166 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	166	9	#line 166 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	167	9	#line 167 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	168	9		set __desligaBlue_7qG2_DADOS_BT_7qG2_000.Action, 0
+4	167	12	#line 167 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	167	12	#line 167 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	169	12	#line 169 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	170	12	#pragma macro 4
+4	170	12	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	170	12		syscall 36, __desligaBlue_7qG2_DADOS_BT_7qG2_000
+4	168	15	#line 168 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	168	15	#line 168 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	168	15	#line 168 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	168	15	#line 168 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	170	15	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	169	15	#line 169 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	170	15	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	171	15		set __Wait_7qG2_ms_7qG2_000_inline_desligaBlue, 30
+4	170	18	#line 170 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	8551	18	#line 8551 "NXCDefs.h"
+4	8552	18		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_desligaBlue
+4	8551	21	#line 8551 "NXCDefs.h"
+4	172	21	#line 172 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	172	21	#line 172 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	173	21	#pragma macro 5
+4	173	21		mov __CBTCSArgs.Connection, __constVal1
+4	173	23		syscall 28, __CBTCSArgs
+4	173	26		mov __signed_stack_001desligaBlue, __CBTCSArgs.Result
+4	5100	28	#line 5100 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	172	28	#line 172 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	172	28	#line 172 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	173	28		set __D0desligaBlue, 0
+4	172	31	#line 172 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	173	31		cmp 4, __D0desligaBlue, __signed_stack_001desligaBlue, __D0desligaBlue
+4	173	35	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	174	35		brtst 4, __ASM_Label_551, __D0desligaBlue
+4	173	38	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	174	38		jmp __ASM_Label_550
+4	173	40	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	173	40	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	173	40	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	174	40		set __signed_stack_001desligaBlue, 0
+4	173	43	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	173	43	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	174	43		set __signed_stack_002desligaBlue, 56
+4	173	46	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	173	46	#line 173 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	174	46		strcat __strbufdesligaBlue, __constStr0010
+4	174	50	#line 174 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	175	50		acquire __TextOutMutex
+4	174	51	#line 174 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	175	51		mov __TextOutArgs.Location.X, __signed_stack_001desligaBlue
+4	174	53	#line 174 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	175	53		mov __TextOutArgs.Location.Y, __signed_stack_002desligaBlue
+4	174	55	#line 174 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	175	55		set __TextOutArgs.Options, 0
+4	174	58	#line 174 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	175	58		mov __TextOutArgs.Text, __strbufdesligaBlue
+4	174	60	#line 174 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	175	60		syscall 13, __TextOutArgs
+4	174	63	#line 174 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	175	63		mov __D0desligaBlue, __TextOutArgs.Result
+4	174	65	#line 174 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	175	65		release __TextOutMutex
+4	174	66	#line 174 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	176	66	#line 176 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+4	177	66		subret __desligaBlue_return
+5	178	0	#line 178 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+5	179	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 0
+5	178	3	#line 178 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+5	179	3	#line 179 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+5	180	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+5	4342	5	#line 4342 "NXCDefs.h"
+5	4343	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4342	7	#line 4342 "NXCDefs.h"
+5	4342	7	#line 4342 "NXCDefs.h"
+5	4343	7		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+5	4342	9	#line 4342 "NXCDefs.h"
+5	4343	9		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+5	4342	12	#line 4342 "NXCDefs.h"
+5	4343	12		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+5	4342	15	#line 4342 "NXCDefs.h"
+5	4343	15		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+5	4342	18	#line 4342 "NXCDefs.h"
+5	4342	18	#line 4342 "NXCDefs.h"
+5	4343	18		jmp __004__ASM_Label_37
+5	4342	20	#line 4342 "NXCDefs.h"
+5	4343	20		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+5	4342	23	#line 4342 "NXCDefs.h"
+5	4342	23	#line 4342 "NXCDefs.h"
+5	4343	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+5	4247	25	#line 4247 "NXCDefs.h"
+5	4248	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+5	4247	29	#line 4247 "NXCDefs.h"
+5	4343	29	#line 4343 "NXCDefs.h"
+5	4343	29	#line 4343 "NXCDefs.h"
+5	4344	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4343	31	#line 4343 "NXCDefs.h"
+5	4343	31	#line 4343 "NXCDefs.h"
+5	4344	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+5	4343	34	#line 4343 "NXCDefs.h"
+5	4260	34	#line 4260 "NXCDefs.h"
+5	4261	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+5	4260	38	#line 4260 "NXCDefs.h"
+5	4344	38	#line 4344 "NXCDefs.h"
+5	4344	38	#line 4344 "NXCDefs.h"
+5	4345	38		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4344	40	#line 4344 "NXCDefs.h"
+5	4278	40	#line 4278 "NXCDefs.h"
+5	4279	40	#pragma macro 4
+5	4279	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4279	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+5	5241	44	#line 5241 "NXCDefs.h"
+5	4278	44	#line 4278 "NXCDefs.h"
+5	4345	44	#line 4345 "NXCDefs.h"
+5	179	44	#line 179 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+5	179	44	#line 179 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+5	180	44		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 1
+5	179	47	#line 179 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+5	180	47	#line 180 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+5	181	47		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+5	4342	49	#line 4342 "NXCDefs.h"
+5	4343	49		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4342	51	#line 4342 "NXCDefs.h"
+5	4342	51	#line 4342 "NXCDefs.h"
+5	4343	51		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+5	4342	53	#line 4342 "NXCDefs.h"
+5	4343	53		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+5	4342	56	#line 4342 "NXCDefs.h"
+5	4343	56		brtst 4, __005__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+5	4342	59	#line 4342 "NXCDefs.h"
+5	4343	59		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+5	4342	62	#line 4342 "NXCDefs.h"
+5	4342	62	#line 4342 "NXCDefs.h"
+5	4343	62		jmp __005__ASM_Label_37
+5	4342	64	#line 4342 "NXCDefs.h"
+5	4343	64		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+5	4342	67	#line 4342 "NXCDefs.h"
+5	4342	67	#line 4342 "NXCDefs.h"
+5	4343	67		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+5	4247	69	#line 4247 "NXCDefs.h"
+5	4248	69		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+5	4247	73	#line 4247 "NXCDefs.h"
+5	4343	73	#line 4343 "NXCDefs.h"
+5	4343	73	#line 4343 "NXCDefs.h"
+5	4344	73		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4343	75	#line 4343 "NXCDefs.h"
+5	4343	75	#line 4343 "NXCDefs.h"
+5	4344	75		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+5	4343	78	#line 4343 "NXCDefs.h"
+5	4260	78	#line 4260 "NXCDefs.h"
+5	4261	78		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+5	4260	82	#line 4260 "NXCDefs.h"
+5	4344	82	#line 4344 "NXCDefs.h"
+5	4344	82	#line 4344 "NXCDefs.h"
+5	4345	82		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4344	84	#line 4344 "NXCDefs.h"
+5	4278	84	#line 4278 "NXCDefs.h"
+5	4279	84	#pragma macro 4
+5	4279	84		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4279	86		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+5	5304	88	#line 5304 "NXCDefs.h"
+5	4278	88	#line 4278 "NXCDefs.h"
+5	4345	88	#line 4345 "NXCDefs.h"
+5	180	88	#line 180 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+5	180	88	#line 180 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+5	181	88		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 2
+5	180	91	#line 180 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+5	181	91	#line 181 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+5	182	91		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+5	4342	93	#line 4342 "NXCDefs.h"
+5	4343	93		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4342	95	#line 4342 "NXCDefs.h"
+5	4342	95	#line 4342 "NXCDefs.h"
+5	4343	95		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+5	4342	97	#line 4342 "NXCDefs.h"
+5	4343	97		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+5	4342	100	#line 4342 "NXCDefs.h"
+5	4343	100		brtst 4, __006__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+5	4342	103	#line 4342 "NXCDefs.h"
+5	4343	103		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+5	4342	106	#line 4342 "NXCDefs.h"
+5	4342	106	#line 4342 "NXCDefs.h"
+5	4343	106		jmp __006__ASM_Label_37
+5	4342	108	#line 4342 "NXCDefs.h"
+5	4343	108		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+5	4342	111	#line 4342 "NXCDefs.h"
+5	4342	111	#line 4342 "NXCDefs.h"
+5	4343	111		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+5	4247	113	#line 4247 "NXCDefs.h"
+5	4248	113		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+5	4247	117	#line 4247 "NXCDefs.h"
+5	4343	117	#line 4343 "NXCDefs.h"
+5	4343	117	#line 4343 "NXCDefs.h"
+5	4344	117		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4343	119	#line 4343 "NXCDefs.h"
+5	4343	119	#line 4343 "NXCDefs.h"
+5	4344	119		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+5	4343	122	#line 4343 "NXCDefs.h"
+5	4260	122	#line 4260 "NXCDefs.h"
+5	4261	122		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+5	4260	126	#line 4260 "NXCDefs.h"
+5	4344	126	#line 4344 "NXCDefs.h"
+5	4344	126	#line 4344 "NXCDefs.h"
+5	4345	126		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4344	128	#line 4344 "NXCDefs.h"
+5	4278	128	#line 4278 "NXCDefs.h"
+5	4279	128	#pragma macro 4
+5	4279	128		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4279	130		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+5	5367	132	#line 5367 "NXCDefs.h"
+5	4278	132	#line 4278 "NXCDefs.h"
+5	4345	132	#line 4345 "NXCDefs.h"
+5	181	132	#line 181 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+5	181	132	#line 181 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+5	182	132		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 3
+5	181	135	#line 181 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+5	182	135	#line 182 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+5	183	135		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+5	4342	137	#line 4342 "NXCDefs.h"
+5	4343	137		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4342	139	#line 4342 "NXCDefs.h"
+5	4342	139	#line 4342 "NXCDefs.h"
+5	4343	139		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+5	4342	141	#line 4342 "NXCDefs.h"
+5	4343	141		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+5	4342	144	#line 4342 "NXCDefs.h"
+5	4343	144		brtst 4, __007__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+5	4342	147	#line 4342 "NXCDefs.h"
+5	4343	147		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+5	4342	150	#line 4342 "NXCDefs.h"
+5	4342	150	#line 4342 "NXCDefs.h"
+5	4343	150		jmp __007__ASM_Label_37
+5	4342	152	#line 4342 "NXCDefs.h"
+5	4343	152		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+5	4342	155	#line 4342 "NXCDefs.h"
+5	4342	155	#line 4342 "NXCDefs.h"
+5	4343	155		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+5	4247	157	#line 4247 "NXCDefs.h"
+5	4248	157		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+5	4247	161	#line 4247 "NXCDefs.h"
+5	4343	161	#line 4343 "NXCDefs.h"
+5	4343	161	#line 4343 "NXCDefs.h"
+5	4344	161		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4343	163	#line 4343 "NXCDefs.h"
+5	4343	163	#line 4343 "NXCDefs.h"
+5	4344	163		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+5	4343	166	#line 4343 "NXCDefs.h"
+5	4260	166	#line 4260 "NXCDefs.h"
+5	4261	166		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+5	4260	170	#line 4260 "NXCDefs.h"
+5	4344	170	#line 4344 "NXCDefs.h"
+5	4344	170	#line 4344 "NXCDefs.h"
+5	4345	170		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4344	172	#line 4344 "NXCDefs.h"
+5	4278	172	#line 4278 "NXCDefs.h"
+5	4279	172	#pragma macro 4
+5	4279	172		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+5	4279	174		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+5	5430	176	#line 5430 "NXCDefs.h"
+5	4278	176	#line 4278 "NXCDefs.h"
+5	4345	176	#line 4345 "NXCDefs.h"
+5	182	176	#line 182 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+5	184	176	#line 184 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+5	185	176		subret __inicializaSensores_return
+6	188	0	#line 188 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	189	0		strcat __strbufiniciaBlue, __constStr0009
+6	188	4	#line 188 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	189	4		mov __iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name, __strbufiniciaBlue
+6	188	6	#line 188 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	189	6	#line 189 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	190	6		set __iniciaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot, 1
+6	189	9	#line 189 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	189	9	#line 189 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	191	9	#line 191 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	192	9		set __iniciaBlue_7qG2_DADOS_BT_7qG2_000.Action, 1
+6	191	12	#line 191 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	191	12	#line 191 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	192	12	#line 192 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	193	12	#pragma macro 4
+6	193	12	#line 193 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	193	12		syscall 36, __iniciaBlue_7qG2_DADOS_BT_7qG2_000
+6	191	15	#line 191 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	191	15	#line 191 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	191	15	#line 191 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	191	15	#line 191 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	192	15	#line 192 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	192	15	#line 192 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	192	15	#line 192 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	193	15		set __Wait_7qG2_ms_7qG2_000_inline_iniciaBlue, 4000
+6	192	18	#line 192 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	8551	18	#line 8551 "NXCDefs.h"
+6	8552	18		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_iniciaBlue
+6	8551	21	#line 8551 "NXCDefs.h"
+6	193	21	#line 193 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	193	21	#line 193 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	194	21		set __signed_stack_001iniciaBlue, 0
+6	193	24	#line 193 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	193	24	#line 193 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	194	24		set __signed_stack_002iniciaBlue, 48
+6	193	27	#line 193 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	193	27	#line 193 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	194	27		strcat __strbufiniciaBlue, __constStr0011
+6	194	31	#line 194 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	195	31		acquire __TextOutMutex
+6	194	32	#line 194 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	195	32		mov __TextOutArgs.Location.X, __signed_stack_001iniciaBlue
+6	194	34	#line 194 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	195	34		mov __TextOutArgs.Location.Y, __signed_stack_002iniciaBlue
+6	194	36	#line 194 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	195	36		set __TextOutArgs.Options, 0
+6	194	39	#line 194 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	195	39		mov __TextOutArgs.Text, __strbufiniciaBlue
+6	194	41	#line 194 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	195	41		syscall 13, __TextOutArgs
+6	194	44	#line 194 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	194	44	#line 194 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	195	44		release __TextOutMutex
+6	194	45	#line 194 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	196	45	#line 196 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+6	197	45		subret __iniciaBlue_return
+7	198	0	#line 198 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+7	199	0		set __MyOnFwd_7qG2_motor_7qG2_000, 1
+7	198	3	#line 198 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+7	198	3	#line 198 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+7	199	3		set __MyOnFwd_7qG2_pot_7qG2_000, 90
+7	198	6	#line 198 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+7	199	6	#line 199 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+7	200	6		subcall MyOnFwd, __MyOnFwd_return
+7	199	8	#line 199 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+7	199	8	#line 199 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+7	200	8		set __MyOnFwd_7qG2_motor_7qG2_000, 0
+7	199	11	#line 199 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+7	199	11	#line 199 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+7	200	11		set __MyOnFwd_7qG2_pot_7qG2_000, 90
+7	199	14	#line 199 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+7	201	14	#line 201 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+7	202	14		subcall MyOnFwd, __MyOnFwd_return
+7	201	16	#line 201 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+7	203	16	#line 203 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+7	204	16		subret __andar_return
+8	205	0	#line 205 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+8	206	0		set __MyOnFwd_7qG2_motor_7qG2_000, 1
+8	205	3	#line 205 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+8	205	3	#line 205 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+8	206	3		set __MyOnFwd_7qG2_pot_7qG2_000, 0
+8	205	6	#line 205 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+8	206	6	#line 206 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+8	207	6		subcall MyOnFwd, __MyOnFwd_return
+8	206	8	#line 206 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+8	206	8	#line 206 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+8	207	8		set __MyOnFwd_7qG2_motor_7qG2_000, 0
+8	206	11	#line 206 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+8	206	11	#line 206 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+8	207	11		set __MyOnFwd_7qG2_pot_7qG2_000, 0
+8	206	14	#line 206 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+8	207	14	#line 207 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+8	208	14		subcall MyOnFwd, __MyOnFwd_return
+8	207	16	#line 207 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+8	209	16	#line 209 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+8	210	16		subret __parar_return
+9	215	0	#line 215 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+9	216	0		subcall parar, __parar_return
+9	215	2	#line 215 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+9	217	2	#line 217 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+9	218	2		subcall rejeitarDireita, __rejeitarDireita_return
+9	217	4	#line 217 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+9	219	4	#line 219 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+9	220	4		subcall MandaGirei, __MandaGirei_return
+9	219	6	#line 219 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+9	219	6	#line 219 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+9	220	6		subcall RecebeDesgirar, __RecebeDesgirar_return
+9	219	8	#line 219 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+9	219	8	#line 219 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+9	220	8		not __D0rejeitar, __D0RecebeDesgirar
+9	219	11	#line 219 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+9	220	11		tst 5, __D0rejeitar, __D0rejeitar
+9	219	14	#line 219 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+9	220	14		brtst 4, __ASM_Label_595, __D0rejeitar
+9	221	17	#line 221 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+9	222	17		jmp __ASM_Label_594
+9	221	19	#line 221 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+9	223	19	#line 223 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+9	224	19		subcall voltarejeitarDireita, __voltarejeitarDireita_return
+9	223	21	#line 223 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+9	225	21	#line 225 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+9	226	21		subcall MandaDesGirei, __MandaDesGirei_return
+9	225	23	#line 225 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+9	227	23	#line 227 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+9	228	23		subret __rejeitar_return
+10	232	0	#line 232 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+10	233	0		set __MyOnFwd_7qG2_motor_7qG2_000, 0
+10	232	3	#line 232 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+10	232	3	#line 232 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+10	233	3		set __MyOnFwd_7qG2_pot_7qG2_000, 90
+10	232	6	#line 232 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+10	235	6	#line 235 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+10	236	6		subcall MyOnFwd, __MyOnFwd_return
+10	235	8	#line 235 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+10	237	8	#line 237 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+10	238	8		getout __rejeitarDireita_7qG2_tc_7qG2_000, __constVal0, 4
+10	237	12	#line 237 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+10	237	12	#line 237 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+10	237	12	#line 237 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+10	238	12		mov __signed_stack_001rejeitarDireita, __rejeitarDireita_7qG2_tc_7qG2_000
+10	237	14	#line 237 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+10	237	14	#line 237 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+10	238	14		set __D0rejeitarDireita, 1500
+10	237	17	#line 237 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+10	238	17		cmp 0, __D0rejeitarDireita, __signed_stack_001rejeitarDireita, __D0rejeitarDireita
+10	239	21	#line 239 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+10	240	21		brtst 4, __ASM_Label_603, __D0rejeitarDireita
+10	239	24	#line 239 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+10	240	24		jmp __ASM_Label_602
+10	239	26	#line 239 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+10	239	26	#line 239 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+10	240	26	#line 240 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+10	241	26		subcall parar, __parar_return
+10	240	28	#line 240 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+10	242	28	#line 242 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+10	243	28		subret __rejeitarDireita_return
+11	246	0	#line 246 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+11	247	0		set __MyOnFwd_7qG2_motor_7qG2_000, 0
+11	246	3	#line 246 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+11	246	3	#line 246 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+11	247	3		mov __MyOnFwd_7qG2_pot_7qG2_000, __constValNeg90
+11	246	5	#line 246 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+11	248	5	#line 248 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+11	249	5		subcall MyOnFwd, __MyOnFwd_return
+11	248	7	#line 248 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+11	250	7	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+11	251	7		getout __voltarejeitarDireita_7qG2_tc_7qG2_000, __constVal0, 4
+11	250	11	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+11	250	11	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+11	250	11	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+11	251	11		mov __signed_stack_001voltarejeitarDireita, __voltarejeitarDireita_7qG2_tc_7qG2_000
+11	250	13	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+11	250	13	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+11	251	13		mov __signed_stack_002voltarejeitarDireita, __constValNeg1500
+11	250	15	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+11	250	15	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+11	251	15		set __D0voltarejeitarDireita, 165
+11	250	18	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+11	251	18		sub __D0voltarejeitarDireita, __signed_stack_002voltarejeitarDireita, __D0voltarejeitarDireita
+11	250	22	#line 250 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+11	251	22		cmp 1, __D0voltarejeitarDireita, __signed_stack_001voltarejeitarDireita, __D0voltarejeitarDireita
+11	252	26	#line 252 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+11	253	26		brtst 4, __ASM_Label_613, __D0voltarejeitarDireita
+11	252	29	#line 252 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+11	253	29		jmp __ASM_Label_612
+11	252	31	#line 252 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+11	252	31	#line 252 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+11	253	31	#line 253 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+11	254	31		subcall parar, __parar_return
+11	253	33	#line 253 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+11	255	33	#line 255 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+11	256	33		subret __voltarejeitarDireita_return
+12	257	0	#line 257 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+12	258	0	#pragma macro 14
+12	258	0		acquire __RemoteMutex
+12	258	1		mov __SRSTmpBuf, __DCMessageWritePacket
+12	258	3		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
+12	258	8		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+12	258	13		mov __SRSTmpLongVal, __constVal3
+12	258	15		flatten __SRSFlattenBuf, __SRSTmpLongVal
+12	258	18		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+12	258	23		acquire __CBTWMutex
+12	258	24		mov __CBTWArgs.Connection, __constVal1
+12	258	26		mov __CBTWArgs.Buffer, __SRSSendBuf
+12	258	28		syscall 29, __CBTWArgs
+12	258	31		release __CBTWMutex
+12	258	32		release __RemoteMutex
+12	5717	33	#line 5717 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+12	257	33	#line 257 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+12	257	33	#line 257 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+12	260	33	#line 260 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+12	261	33		subret __MandaGirei_return
+13	262	0	#line 262 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+13	263	0	#pragma macro 14
+13	263	0		acquire __RemoteMutex
+13	263	1		mov __SRSTmpBuf, __DCMessageWritePacket
+13	263	3		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
+13	263	8		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+13	263	13		mov __SRSTmpLongVal, __constVal6
+13	263	15		flatten __SRSFlattenBuf, __SRSTmpLongVal
+13	263	18		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+13	263	23		acquire __CBTWMutex
+13	263	24		mov __CBTWArgs.Connection, __constVal1
+13	263	26		mov __CBTWArgs.Buffer, __SRSSendBuf
+13	263	28		syscall 29, __CBTWArgs
+13	263	31		release __CBTWMutex
+13	263	32		release __RemoteMutex
+13	5726	33	#line 5726 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+13	262	33	#line 262 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+13	262	33	#line 262 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+13	266	33	#line 266 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+13	267	33		subret __MandaDesGirei_return
+14	270	0	#line 270 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	271	0		set __D0AbrirPorta, 70
+14	271	3	#line 271 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	272	3	#pragma macro 7
+14	272	3		setout __constVal2, 2, __D0AbrirPorta, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+14	5745	26	#line 5745 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	271	26	#line 271 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	272	26	#line 272 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	273	26		getout __AbrirPorta_7qG2_tc_7qG2_000, __constVal2, 4
+14	272	30	#line 272 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	272	30	#line 272 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	274	30	#line 274 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	275	30		set __Wait_7qG2_ms_7qG2_000_inline_AbrirPorta, 200
+14	274	33	#line 274 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	8551	33	#line 8551 "NXCDefs.h"
+14	8552	33		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_AbrirPorta
+14	8551	36	#line 8551 "NXCDefs.h"
+14	275	36	#line 275 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	276	36	#line 276 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	277	36		mov __AbrirPorta_7qG2_old_tc_7qG2_000, __AbrirPorta_7qG2_tc_7qG2_000
+14	276	38	#line 276 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	276	38	#line 276 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	277	38	#line 277 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	278	38		getout __AbrirPorta_7qG2_tc_7qG2_000, __constVal2, 4
+14	277	42	#line 277 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	277	42	#line 277 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	277	42	#line 277 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	278	42		mov __signed_stack_001AbrirPorta, __AbrirPorta_7qG2_tc_7qG2_000
+14	277	44	#line 277 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	277	44	#line 277 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	278	44		mov __D0AbrirPorta, __AbrirPorta_7qG2_old_tc_7qG2_000
+14	277	46	#line 277 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	278	46		cmp 5, __D0AbrirPorta, __signed_stack_001AbrirPorta, __D0AbrirPorta
+14	279	50	#line 279 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	280	50		brtst 4, __ASM_Label_625, __D0AbrirPorta
+14	279	53	#line 279 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	280	53		jmp __ASM_Label_624
+14	279	55	#line 279 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	279	55	#line 279 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	279	55	#line 279 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	280	55		set __D0AbrirPorta, 0
+14	280	58	#line 280 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	281	58	#pragma macro 7
+14	281	58		setout __constVal2, 2, __D0AbrirPorta, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+14	5803	81	#line 5803 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	280	81	#line 280 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	282	81	#line 282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+14	283	81		subret __AbrirPorta_return
+15	286	0	#line 286 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	287	0		mov __D0FecharPorta, __constValNeg70
+15	287	2	#line 287 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	288	2	#pragma macro 7
+15	288	2		setout __constVal2, 2, __D0FecharPorta, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+15	5821	25	#line 5821 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	287	25	#line 287 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	288	25	#line 288 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	289	25		getout __FecharPorta_7qG2_tc_7qG2_000, __constVal2, 4
+15	288	29	#line 288 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	288	29	#line 288 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	290	29	#line 290 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	291	29		set __Wait_7qG2_ms_7qG2_000_inline_FecharPorta, 200
+15	290	32	#line 290 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	8551	32	#line 8551 "NXCDefs.h"
+15	8552	32		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_FecharPorta
+15	8551	35	#line 8551 "NXCDefs.h"
+15	291	35	#line 291 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	292	35	#line 292 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	293	35		mov __FecharPorta_7qG2_old_tc_7qG2_000, __FecharPorta_7qG2_tc_7qG2_000
+15	292	37	#line 292 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	292	37	#line 292 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	293	37	#line 293 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	294	37		getout __FecharPorta_7qG2_tc_7qG2_000, __constVal2, 4
+15	293	41	#line 293 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	293	41	#line 293 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	293	41	#line 293 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	294	41		mov __signed_stack_001FecharPorta, __FecharPorta_7qG2_tc_7qG2_000
+15	293	43	#line 293 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	293	43	#line 293 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	294	43		mov __D0FecharPorta, __FecharPorta_7qG2_old_tc_7qG2_000
+15	293	45	#line 293 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	294	45		cmp 5, __D0FecharPorta, __signed_stack_001FecharPorta, __D0FecharPorta
+15	295	49	#line 295 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	296	49		brtst 4, __ASM_Label_641, __D0FecharPorta
+15	295	52	#line 295 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	296	52		jmp __ASM_Label_640
+15	295	54	#line 295 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	295	54	#line 295 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	295	54	#line 295 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	296	54		set __D0FecharPorta, 0
+15	296	57	#line 296 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	297	57	#pragma macro 7
+15	297	57		setout __constVal2, 2, __D0FecharPorta, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+15	5879	80	#line 5879 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	296	80	#line 296 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	298	80	#line 298 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+15	299	80		subret __FecharPorta_return
+16	302	0	#line 302 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+16	303	0	#pragma macro 9
+16	303	0		acquire __MRMutex
+16	303	1		mov __MRArgs.QueueID, __constVal3
+16	303	3		mov __MRArgs.Remove, __constVal1
+16	303	5		set __RRNTmpVal, 0
+16	303	8		syscall 27, __MRArgs
+16	303	11		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+16	303	16		mov __RecebeUS_7qG2_aux_7qG2_000, __RRNTmpVal
+16	303	18		mov __D0RecebeUS, __MRArgs.Result
+16	303	20		release __MRMutex
+16	5891	21	#line 5891 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+16	302	21	#line 302 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+16	302	21	#line 302 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+16	305	21	#line 305 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+16	306	21		mov __D0RecebeUS, __RecebeUS_7qG2_aux_7qG2_000
+16	305	23	#line 305 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+16	306	23		subret __RecebeUS_return
+16	305	25	#line 305 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+16	307	25	#line 307 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+16	308	25		subret __RecebeUS_return
+17	310	0	#line 310 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+17	311	0	#pragma macro 9
+17	311	0		acquire __MRMutex
+17	311	1		mov __MRArgs.QueueID, __constVal1
+17	311	3		mov __MRArgs.Remove, __constVal1
+17	311	5		set __RRNTmpVal, 0
+17	311	8		syscall 27, __MRArgs
+17	311	11		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+17	311	16		mov __RecebeDesgirar_7qG2_aux_7qG2_000, __RRNTmpVal
+17	311	18		mov __D0RecebeDesgirar, __MRArgs.Result
+17	311	20		release __MRMutex
+17	5911	21	#line 5911 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+17	310	21	#line 310 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+17	310	21	#line 310 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+17	311	21	#line 311 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+17	312	21		mov __signed_stack_001RecebeDesgirar, __RecebeDesgirar_7qG2_aux_7qG2_000
+17	311	23	#line 311 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+17	312	23	#line 312 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+17	313	23		set __D0RecebeDesgirar, 4
+17	312	26	#line 312 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+17	313	26		cmp 4, __D0RecebeDesgirar, __signed_stack_001RecebeDesgirar, __D0RecebeDesgirar
+17	312	30	#line 312 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+17	313	30		brtst 4, __ASM_Label_656, __D0RecebeDesgirar
+17	313	33	#line 313 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+17	314	33		set __D0RecebeDesgirar, 1
+17	313	36	#line 313 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+17	314	36		subret __RecebeDesgirar_return
+17	313	38	#line 313 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+17	313	38	#line 313 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+17	314	38	#line 314 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+17	315	38		set __D0RecebeDesgirar, 0
+17	314	41	#line 314 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+17	315	41		subret __RecebeDesgirar_return
+17	314	43	#line 314 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+17	316	43	#line 316 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+17	317	43		subret __RecebeDesgirar_return
+18	330	0	#line 330 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	331	0		mov __D0viraDir, __constValNeg90
+18	331	2	#line 331 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	332	2	#pragma macro 7
+18	332	2		setout __constVal1, 2, __D0viraDir, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+18	6042	25	#line 6042 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	331	25	#line 331 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	331	25	#line 331 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	332	25		set __D0viraDir, 90
+18	333	28	#line 333 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	334	28	#pragma macro 7
+18	334	28		setout __constVal0, 2, __D0viraDir, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+18	6047	51	#line 6047 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	333	51	#line 333 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	333	51	#line 333 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	334	51		set __signed_stack_001viraDir, 0
+18	333	54	#line 333 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	333	54	#line 333 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	334	54		getout __D0viraDir, __constVal1, 4
+18	333	58	#line 333 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	334	58		sub __signed_stack_001viraDir, __signed_stack_001viraDir, __D0viraDir
+18	333	62	#line 333 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	333	62	#line 333 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	334	62		getout __D0viraDir, __constVal0, 4
+18	333	66	#line 333 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	334	66		add __signed_stack_001viraDir, __signed_stack_001viraDir, __D0viraDir
+18	333	70	#line 333 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	333	70	#line 333 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	334	70		set __D0viraDir, 2
+18	333	73	#line 333 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	334	73		div __distanciaGiroDireita_7qG2_grau_7qG2_000, __signed_stack_001viraDir, __D0viraDir
+18	333	77	#line 333 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	333	77	#line 333 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	334	77		subcall distanciaGiroDireita, __distanciaGiroDireita_return
+18	333	79	#line 333 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	334	79		mov __signed_stack_001viraDir, __D0distanciaGiroDireita
+18	333	81	#line 333 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	334	81	#line 334 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	335	81		mov __D0viraDir, __viraDir_7qG2_angulo_7qG2_000
+18	334	83	#line 334 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	335	83		cmp 0, __D0viraDir, __signed_stack_001viraDir, __D0viraDir
+18	336	87	#line 336 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	337	87		brtst 4, __ASM_Label_690, __D0viraDir
+18	337	90	#line 337 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	338	90		jmp __ASM_Label_689
+18	337	92	#line 337 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	337	92	#line 337 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	338	92		set __MyOnFwd_7qG2_motor_7qG2_000, 1
+18	337	95	#line 337 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	337	95	#line 337 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	338	95		set __MyOnFwd_7qG2_pot_7qG2_000, 0
+18	337	98	#line 337 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	338	98	#line 338 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	339	98		subcall MyOnFwd, __MyOnFwd_return
+18	338	100	#line 338 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	338	100	#line 338 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	339	100		set __MyOnFwd_7qG2_motor_7qG2_000, 0
+18	338	103	#line 338 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	338	103	#line 338 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	339	103		set __MyOnFwd_7qG2_pot_7qG2_000, 0
+18	338	106	#line 338 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	339	106	#line 339 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	340	106		subcall MyOnFwd, __MyOnFwd_return
+18	339	108	#line 339 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	341	108	#line 341 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+18	342	108		subret __viraDir_return
+19	342	0	#line 342 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+19	343	0		mov __signed_stack_001distanciaGiroDireita, __distanciaGiroDireita_7qG2_grau_7qG2_000
+19	342	2	#line 342 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+19	342	2	#line 342 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+19	343	2		set __D0distanciaGiroDireita, 17
+19	342	5	#line 342 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+19	343	5		mul __signed_stack_001distanciaGiroDireita, __signed_stack_001distanciaGiroDireita, __D0distanciaGiroDireita
+19	342	9	#line 342 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+19	342	9	#line 342 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+19	343	9		set __D0distanciaGiroDireita, 149
+19	342	12	#line 342 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+19	343	12		div __D0distanciaGiroDireita, __signed_stack_001distanciaGiroDireita, __D0distanciaGiroDireita
+19	343	16	#line 343 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+19	344	16		subret __distanciaGiroDireita_return
+19	343	18	#line 343 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+19	345	18	#line 345 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+19	346	18		subret __distanciaGiroDireita_return
+20	353	0	#line 353 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+20	354	0		mov __signed_stack_001MyOnFwd, __MyOnFwd_7qG2_motor_7qG2_000
+20	353	2	#line 353 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+20	354	2	#line 354 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+20	355	2		set __D0MyOnFwd, 1
+20	354	5	#line 354 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+20	355	5		cmp 4, __D0MyOnFwd, __signed_stack_001MyOnFwd, __D0MyOnFwd
+20	355	9	#line 355 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+20	356	9		brtst 4, __ASM_Label_723, __D0MyOnFwd
+20	356	12	#line 356 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+20	357	12		getout __D0MyOnFwd, __MyOnFwd_7qG2_motor_7qG2_000, 4
+20	356	16	#line 356 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+20	356	16	#line 356 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+20	357	16	#line 357 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+20	358	16		jmp __ASM_Label_726
+20	357	18	#line 357 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+20	358	18		mov __signed_stack_001MyOnFwd, __MyOnFwd_7qG2_motor_7qG2_000
+20	357	20	#line 357 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+20	358	20	#line 358 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+20	359	20		set __D0MyOnFwd, 0
+20	358	23	#line 358 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+20	359	23		cmp 4, __D0MyOnFwd, __signed_stack_001MyOnFwd, __D0MyOnFwd
+20	359	27	#line 359 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+20	360	27		brtst 4, __ASM_Label_729, __D0MyOnFwd
+20	360	30	#line 360 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+20	361	30		getout __D0MyOnFwd, __MyOnFwd_7qG2_motor_7qG2_000, 4
+20	360	34	#line 360 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+20	360	34	#line 360 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+20	362	34	#line 362 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+20	362	34	#line 362 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+20	362	34	#line 362 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+20	363	34		mov __D0MyOnFwd, __MyOnFwd_7qG2_pot_7qG2_000
+20	363	36	#line 363 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+20	364	36	#pragma macro 7
+20	364	36		setout __MyOnFwd_7qG2_motor_7qG2_000, 2, __D0MyOnFwd, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+20	6251	59	#line 6251 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+20	363	59	#line 363 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+20	365	59	#line 365 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+20	366	59		subret __MyOnFwd_return
+21	407	0	#line 407 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc"
+21	408	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
-0	main	0	C:\Users\luan\Desktop\execultivo.nxc
+0	main	0	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc
 1	__ResetSensorSubroutine	7	NXTDefs.h
-2	executivo	20	C:\Users\luan\Desktop\execultivo.nxc
-3	init	266	C:\Users\luan\Desktop\execultivo.nxc
-4	desligaBlue	276	C:\Users\luan\Desktop\execultivo.nxc
-5	inicializaSensores	344	C:\Users\luan\Desktop\execultivo.nxc
-6	iniciaBlue	522	C:\Users\luan\Desktop\execultivo.nxc
-7	andar	569	C:\Users\luan\Desktop\execultivo.nxc
-8	parar	600	C:\Users\luan\Desktop\execultivo.nxc
-9	rejeitar	648	C:\Users\luan\Desktop\execultivo.nxc
-10	rejeitarDireita	673	C:\Users\luan\Desktop\execultivo.nxc
-11	voltarejeitarDireita	721	C:\Users\luan\Desktop\execultivo.nxc
-12	MandaGirei	774	C:\Users\luan\Desktop\execultivo.nxc
-13	MandaDesGirei	809	C:\Users\luan\Desktop\execultivo.nxc
-14	AbrirPorta	844	C:\Users\luan\Desktop\execultivo.nxc
-15	FecharPorta	927	C:\Users\luan\Desktop\execultivo.nxc
-16	RecebeUS	1009	C:\Users\luan\Desktop\execultivo.nxc
-17	RecebeDesgirar	1036	C:\Users\luan\Desktop\execultivo.nxc
-18	viraDir	1081	C:\Users\luan\Desktop\execultivo.nxc
-19	distanciaGiroDireita	1221	C:\Users\luan\Desktop\execultivo.nxc
-20	__initialize_global_data	1241	C:\Users\luan\Desktop\execultivo.nxc
+2	executivo	20	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc
+3	init	200	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc
+4	desligaBlue	210	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc
+5	inicializaSensores	278	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc
+6	iniciaBlue	456	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc
+7	andar	503	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc
+8	parar	521	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc
+9	rejeitar	539	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc
+10	rejeitarDireita	564	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc
+11	voltarejeitarDireita	594	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc
+12	MandaGirei	629	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc
+13	MandaDesGirei	664	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc
+14	AbrirPorta	699	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc
+15	FecharPorta	782	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc
+16	RecebeUS	864	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc
+17	RecebeDesgirar	891	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc
+18	viraDir	936	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc
+19	distanciaGiroDireita	1046	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc
+20	MyOnFwd	1066	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc
+21	__initialize_global_data	1127	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\Quarentena\execultivo.nxc

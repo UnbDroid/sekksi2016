@@ -9,7 +9,7 @@
 #define HTD IN_3//hitech da direita
 #define HTE IN_4//hitech da esquerda
 
-//constantes de locamoÁ„o
+//constantes de locomo√ß√£o
 #define FATORSYNC 1
 
 //LOGICA
@@ -42,10 +42,13 @@
 #define ANGCORRECAOVOLTA 165
 
 //
+#define DIFERENCIALDEERRODOANGULO 5
+
+//
 #define NAO_ALIEN 0
 #define SIM_ALIEN 1
 
-//cÛdigos para comunicaÁ„o BlueTooth
+//c√≥digos para comunica√ß√£o BlueTooth
 #define TESTE -1
 #define PARAR 1
 #define SEGUIR 2
@@ -54,9 +57,16 @@
 #define REJEITAR 5
 #define DESGIREI 6
 
-//vari·veis globais
+//vari√°veis globais
+int MyTcD;
+int MyTcE;
 
-//declaraÁ„o das funÁıes
+//fun√ß√µes de subistitui√ß√µes
+void MyOnFwd(int motor, int pot);
+int MyMotorTachoCount(int motor);
+void MyResetTachoCount(int motor);
+
+//declara√ß√£o das fun√ß√µes
 void executivo();
 void init();
 void desligaBlue();
@@ -79,19 +89,19 @@ int distanciaGiroDireita(int grau);
 int distanciaGiroEsquerda(int grau);
 
 
-//funÁ„o para dbug
+//fun√ß√£o para dbug
 void  bip()
 {
   PlaySound(SOUND_DOWN);
 }
 
-//funÁ„o principal
+//fun√ß√£o principal
 task main()
 {
 	executivo();
 }
 
-//assinatura das funÁıes
+//assinatura das fun√ß√µes
 void executivo()
 {
   int aux, us_frente = 200, us_frente_temp;
@@ -112,23 +122,24 @@ void executivo()
 				andar();
 			break;
 			case REJEITAR:
+				//bip();
 				rejeitar();
+				//bip();
 				andar();
 			break;
 			case TESTE:
 				viraDir(180);
 				AbrirPorta();
 				//andar();
-				for(int i=0;i<15;i++)
+				for(int i=0;i<7;i++)
 				{
-					Off(ME);
-					OnFwd(MD,90);
-					Wait(200);
-					Off(MD);
-					OnFwd(ME,90);
-					Wait(200);
+					MyOnFwd(ME, 0);
+					MyOnFwd(MD,90);
+					Wait(400);
+					MyOnFwd(MD, 0);
+					MyOnFwd(ME,90);
+					Wait(400);
 				}
-				//Wait(4000);
 				parar();
 				while(1){}
 			break;
@@ -183,40 +194,49 @@ void iniciaBlue()
 	TextOut(0, LCD_LINE2, "Conectou Bluetooth");
 }
 
-void andar()//melhorar esse funÁ„o - apneas testes por enquanto
+void andar()//melhorar esse fun√ß√£o - apneas testes por enquanto
 {
-	//OnFwd(MD,90);
-	//OnFwd(ME,90);
-	OnFwdSync(MDE,90,FATORSYNC);
+	MyOnFwd(MD,90);
+	MyOnFwd(ME,90);
+	//OnFwdSync(MDE,90,FATORSYNC);
 }
 
 void parar()
 {
-	Off(MD);
-	Off(ME);
+	MyOnFwd(MD,0);
+	MyOnFwd(ME,0);
 }
 
 void rejeitar()
 {
+	//bip();
 	parar();
-	//implementar uma funÁ„o para decidir para qual lado deve girar
+	//bip();
+	//implementar uma fun√ß√£o para decidir para qual lado deve girar
 	rejeitarDireita();
+	//bip();
 	MandaGirei();
+	//bip();
 	while(!RecebeDesgirar()){}
+	//bip();
 	voltarejeitarDireita();
+	//bip();
 	MandaDesGirei();
+	//bip();
 }
 
 void rejeitarDireita()
 {
 	int tc;
 
-	OnFwd(ME,90);
+	//bip();
+	MyOnFwd(ME,90);
+	//bip();
 
 	do{
      tc = MotorTachoCount(ME);
-  }while(tc<ANGULOREJEITADIREITA);
-
+  	}while(tc<ANGULOREJEITADIREITA);
+  	//bip();
 	parar();
 }
 
@@ -224,7 +244,7 @@ void voltarejeitarDireita()
 {
 	int tc;
 
-	OnFwd(ME,-90);
+	MyOnFwd(ME,-90);
 
 	do {
 		tc = MotorTachoCount(ME);
@@ -294,20 +314,20 @@ int RecebeDesgirar()
   	return 0;
 }
 
-void viraEsq(int angulo){ // funÁ„o que faz o robÙ girar para a esquerda o ‚ngulo recebido
-     OnFwd(MD, 90);
-     OnFwd(ME, -90);
+void viraEsq(int angulo){ // fun√ß√£o que faz o rob√¥ girar para a esquerda o √¢ngulo recebido
+     MyOnFwd(MD, 90);
+     MyOnFwd(ME, -90);
 
      while(distanciaGiroEsquerda((MotorTachoCount(MD) - MotorTachoCount(ME))/2) < angulo)
      {
       //lol
      }
-     Off(MD);
-     Off(ME);
+     MyOnFwd(MD,0);
+     MyOnFwd(ME,0);
 }
 
 
-void viraDir(int angulo){ // funÁ„o que faz o robÙ girar para a direita o ‚ngulo recebido
+void viraDir(int angulo){ // fun√ß√£o que faz o rob√¥ girar para a direita o √¢ngulo recebido
      OnFwd(MD, -90);
      OnFwd(ME, 90);
 
@@ -315,14 +335,71 @@ void viraDir(int angulo){ // funÁ„o que faz o robÙ girar para a direita o ‚ngulo
      {
       //lol
      }
-     Off(MD);
-     Off(ME);
+     MyOnFwd(MD,0);
+     MyOnFwd(ME,0);
 }
 
 int distanciaGiroDireita(int grau){
-	   return (((grau*17)/149)); // COMO FOI FEITA ESSA CONVERS√O??? [na base da tentativa e erro]
+	   return (((grau*17)/149)); // COMO FOI FEITA ESSA CONVERS√ÉO??? [na base da tentativa e erro]
 }
 
 int distanciaGiroEsquerda(int grau){
 	   return (((grau*17)/159));
+}
+
+void MyOnFwd(int motor, int pot)
+{
+	//bip();
+	//Wait(350)
+	if(motor == MD)
+	{
+		MyTcD += MotorTachoCount(motor);
+	}
+	else if(motor == ME)
+	{
+		MyTcE += MotorTachoCount(motor);
+	}
+	//bip();
+	OnFwd(motor,pot);
+}
+
+int MyMotorTachoCount(int motor)
+{
+	int retorno;
+
+	if(motor == MD)
+	{
+		MyTcD += MotorTachoCount(motor);
+		retorno = MyTcD;
+	}
+	else if(motor == ME)
+	{
+		MyTcE += MotorTachoCount(motor);
+		retorno = MyTcE;
+	}
+
+	do{
+		ResetTachoCount(motor);
+		//bip();
+	}while((MotorTachoCount(motor)>DIFERENCIALDEERRODOANGULO) || (MotorTachoCount(motor)<-DIFERENCIALDEERRODOANGULO));
+
+	return retorno;
+}
+
+void MyResetTachoCount(int motor)
+{
+	if(motor == MD)
+	{
+		MyTcD = 0;
+	}
+	else if(motor == ME)
+	{
+		MyTcE = 0;
+	}
+
+	do{
+		ResetTachoCount(motor);
+		//bip();
+		//bip();
+	}while((MotorTachoCount(motor)>DIFERENCIALDEERRODOANGULO) || (MotorTachoCount(motor)<-DIFERENCIALDEERRODOANGULO));
 }

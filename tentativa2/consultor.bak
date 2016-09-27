@@ -1,19 +1,19 @@
 //Valores Calibraveis
 // Defines de leitura do RGB do meio (ainda precisa testar mais)
-    #define COR_BRANCA_MEIO_MIN 446
-    #define COR_BRANCA_MEIO_MAX 555
-    #define COR_PRETA_MEIO_MIN 94
-    #define COR_PRETA_MEIO_MAX 174
-    #define COR_VERMELHA_MEIO_MIN 105
-    #define COR_VERMELHA_MEIO_MAX 171
+    #define COR_BRANCA_MEIO_MIN 441
+    #define COR_BRANCA_MEIO_MAX 461
+    #define COR_PRETA_MEIO_MIN 108
+    #define COR_PRETA_MEIO_MAX 166
+    #define COR_VERMELHA_MEIO_MIN 78
+    #define COR_VERMELHA_MEIO_MAX 168
 
 // Defines de leitura do RGB da direita do robô
-    #define COR_BASE_DIR_MAX 265
-    #define COR_BASE_DIR_MIN 181
+    #define COR_BASE_DIR_MAX 441 
+    #define COR_BASE_DIR_MIN 322
     
  // Defines de leitura do RGB da esquerda do robô
-    #define COR_BASE_ESQ_MAX 269
-    #define COR_BASE_ESQ_MIN 178
+    #define COR_BASE_ESQ_MAX 327
+    #define COR_BASE_ESQ_MIN 280
    
 //Bluetooth
 	#define CONEXAO 0
@@ -416,6 +416,7 @@ void BonecoNaFrente()
       
       VoltaGarra();
       MandarSeguir();
+      Wait(TEMPO_DEPOIS_DO_BONECO_ESCAPULIR);
     }
   }
   else
@@ -456,6 +457,9 @@ int RecebiDesGirei()
 
 void MandaRejeitar()
 {
+  //bip();
+  //bip();
+  //bip();
   SendRemoteNumber(CONEXAO, OUTBOX, REJEITAR);
 }
 
