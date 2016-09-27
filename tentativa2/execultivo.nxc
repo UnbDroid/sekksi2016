@@ -60,6 +60,7 @@
 //variáveis globais
 int MyTcD;
 int MyTcE;
+int free_to_go;
 
 //funções de subistituições
 void MyOnFwd(int motor, int pot);
@@ -87,6 +88,8 @@ void viraEsq(int angulo);
 void viraDir(int angulo);
 int distanciaGiroDireita(int grau);
 int distanciaGiroEsquerda(int grau);
+int MediaTC();
+int distanciaTachoCount(int grau);
 
 
 //função para dbug
@@ -94,6 +97,15 @@ void  bip()
 {
   PlaySound(SOUND_DOWN);
 }
+ void nbip(int n)
+ {
+ 	int i;
+ 	
+ 	for(i=0; i<n; i++)
+ 	{
+ 		bip();
+ 	}
+ }
 
 //função principal
 task main()
@@ -105,12 +117,17 @@ task main()
 void executivo()
 {
   int aux, us_frente = 200, us_frente_temp;
+  int temp_tc_D, temp_tc_E;
 
 	init();
 
 	andar();//implementar
 	while(1)//void loop
 	{
+		us_frente_temp = RecebeUS();
+		if(us_frente_temp)
+			us_frente = us_frente_temp;
+
 		ReceiveRemoteNumber(INBOX, true, aux);
 		//aux=TESTE;
 		switch(aux)
@@ -122,9 +139,12 @@ void executivo()
 				andar();
 			break;
 			case REJEITAR:
-				//bip();
+				parar();
+				temp_tc_D = MyTcD;
+				temp_tc_E = MyTcE;
 				rejeitar();
-				//bip();
+				MyTcD = temp_tc_D;
+				MyTcE = temp_tc_E;
 				andar();
 			break;
 			case TESTE:
@@ -143,11 +163,13 @@ void executivo()
 				parar();
 				while(1){}
 			break;
-			default :
-				us_frente_temp = RecebeUS();
-				if(us_frente_temp)
-					us_frente = us_frente_temp;
 		}
+
+		if(free_to_go)
+		{
+			andar();
+		}
+
 	}
 }
 
@@ -196,13 +218,30 @@ void iniciaBlue()
 
 void andar()//melhorar esse função - apneas testes por enquanto
 {
-	MyOnFwd(MD,90);
-	MyOnFwd(ME,90);
-	//OnFwdSync(MDE,90,FATORSYNC);
+	free_to_go = 1;
+
+	if(distanciaTachoCount(MediaTC()) <= 10000)//um metro
+	{
+		MyOnFwd(MD,84);
+		MyOnFwd(ME,90);
+		//bip();
+	}
+	else
+	{
+		//nbip(3);
+		//Wait(10000);
+		viraEsq(90);
+		MyResetTachoCount(ME);
+		MyResetTachoCount(MD);
+		MyTcD = 0;
+		MyTcE = 0;
+	}
 }
 
 void parar()
 {
+	free_to_go = 0;
+
 	MyOnFwd(MD,0);
 	MyOnFwd(ME,0);
 }
@@ -210,7 +249,6 @@ void parar()
 void rejeitar()
 {
 	//bip();
-	parar();
 	//bip();
 	//implementar uma função para decidir para qual lado deve girar
 	rejeitarDireita();
@@ -344,7 +382,7 @@ int distanciaGiroDireita(int grau){
 }
 
 int distanciaGiroEsquerda(int grau){
-	   return (((grau*17)/159));
+	   return (((grau*17)/150));
 }
 
 void MyOnFwd(int motor, int pot)
@@ -378,28 +416,31 @@ int MyMotorTachoCount(int motor)
 		retorno = MyTcE;
 	}
 
-	do{
-		ResetTachoCount(motor);
-		//bip();
-	}while((MotorTachoCount(motor)>DIFERENCIALDEERRODOANGULO) || (MotorTachoCount(motor)<-DIFERENCIALDEERRODOANGULO));
+	MyResetTachoCount(motor);
 
-	return retorno;
+	return (retorno);
 }
 
 void MyResetTachoCount(int motor)
 {
-	if(motor == MD)
-	{
-		MyTcD = 0;
-	}
-	else if(motor == ME)
-	{
-		MyTcE = 0;
-	}
-
 	do{
 		ResetTachoCount(motor);
 		//bip();
 		//bip();
 	}while((MotorTachoCount(motor)>DIFERENCIALDEERRODOANGULO) || (MotorTachoCount(motor)<-DIFERENCIALDEERRODOANGULO));
+}
+
+int MediaTC()
+{
+	int aux_tc_d, aux_tc_e;
+
+	aux_tc_d = MyMotorTachoCount(MD);
+	aux_tc_e = MyMotorTachoCount(ME);
+
+	return((aux_tc_d+aux_tc_e)/2);
+}
+
+int distanciaTachoCount(int grau)
+{
+	return ((267*grau)/100);  //Distancia a ser percorrid/Raio da roda
 }

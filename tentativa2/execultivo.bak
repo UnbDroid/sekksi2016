@@ -60,6 +60,7 @@
 //variáveis globais
 int MyTcD;
 int MyTcE;
+int free_to_go;
 
 //funções de subistituições
 void MyOnFwd(int motor, int pot);
@@ -87,6 +88,8 @@ void viraEsq(int angulo);
 void viraDir(int angulo);
 int distanciaGiroDireita(int grau);
 int distanciaGiroEsquerda(int grau);
+int MediaTC();
+int distanciaTachoCount(int grau);
 
 
 //função para dbug
@@ -111,6 +114,10 @@ void executivo()
 	andar();//implementar
 	while(1)//void loop
 	{
+		us_frente_temp = RecebeUS();
+		if(us_frente_temp)
+			us_frente = us_frente_temp;
+
 		ReceiveRemoteNumber(INBOX, true, aux);
 		//aux=TESTE;
 		switch(aux)
@@ -122,7 +129,12 @@ void executivo()
 				andar();
 			break;
 			case REJEITAR:
+				parar();
+				tem_tc_D = MyTcD;
+				tem_tc_E = MyTcE;
 				rejeitar();
+				MyTcD = tem_tc_D;
+				MyTcE = tem_tc_E;
 				andar();
 			break;
 			case TESTE:
@@ -141,11 +153,13 @@ void executivo()
 				parar();
 				while(1){}
 			break;
-			default :
-				us_frente_temp = RecebeUS();
-				if(us_frente_temp)
-					us_frente = us_frente_temp;
 		}
+
+		if(free_to_go)
+		{
+			andar();
+		}
+
 	}
 }
 
@@ -194,38 +208,61 @@ void iniciaBlue()
 
 void andar()//melhorar esse função - apneas testes por enquanto
 {
-	MyOnFwd(MD,90);
-	MyOnFwd(ME,90);
-	//OnFwdSync(MDE,90,FATORSYNC);
+	free_to_go = 1;
+
+	if(distanciaTachoCount(MediaTC()) <= 1000)//um metro
+	{
+		MyOnFwd(MD,90);
+		MyOnFwd(ME,90);
+		//bip();
+	}
+	else
+	{
+		viraEsq(90);
+		MyResetTachoCount(ME);
+		MyResetTachoCount(MD);
+		MyTcD = 0;
+		MyTcE = 0;
+	}
 }
 
 void parar()
 {
+	free_to_go = 0;
+
 	MyOnFwd(MD,0);
 	MyOnFwd(ME,0);
 }
 
 void rejeitar()
 {
-	parar();
+	//bip();
+	//bip();
 	//implementar uma função para decidir para qual lado deve girar
 	rejeitarDireita();
+	//bip();
 	MandaGirei();
+	//bip();
 	while(!RecebeDesgirar()){}
+	//bip();
 	voltarejeitarDireita();
+	//bip();
 	MandaDesGirei();
+	//bip();
 }
 
 void rejeitarDireita()
 {
 	int tc;
 
+	//bip();
 	MyOnFwd(ME,90);
+	//bip();
 
 	do{
-     tc = MyMotorTachoCount(ME);
-  }while(tc<ANGULOREJEITADIREITA);
-
+     tc = MotorTachoCount(ME);
+  	}while(tc<ANGULOREJEITADIREITA);
+  	//bip();
 	parar();
 }
 
@@ -236,7 +273,7 @@ void voltarejeitarDireita()
 	MyOnFwd(ME,-90);
 
 	do {
-		tc = MyMotorTachoCount(ME);
+		tc = MotorTachoCount(ME);
 	} while(tc>(-ANGULOREJEITADIREITA)-ANGCORRECAOVOLTA);
 
 	parar();
@@ -258,31 +295,31 @@ void AbrirPorta()
     int tc, old_tc;
 
    	OnFwd(MP,70);
-	tc = MyMotorTachoCount(MP);
+	tc = MotorTachoCount(MP);
 	do
 	 {
 	  Wait(200);
 	  old_tc = tc;
-	  tc = MyMotorTachoCount(MP);
+	  tc = MotorTachoCount(MP);
 	}while(tc!=old_tc);
 
-	MyOnFwd(MP,0);
+	OnFwd(MP,0);
 }
 
 void FecharPorta()
 {
 	int tc, old_tc;
 
-   	MyOnFwd(MP,-70);
-	tc = MyMotorTachoCount(MP);
+   	OnFwd(MP,-70);
+	tc = MotorTachoCount(MP);
 	do
 	 {
 	  Wait(200);
 	  old_tc = tc;
-	  tc = MyMotorTachoCount(MP);
+	  tc = MotorTachoCount(MP);
 	}while(tc!=old_tc);
 
-	MyOnFwd(MP,0);
+	OnFwd(MP,0);
 }
 
 int RecebeUS()
@@ -311,7 +348,8 @@ void viraEsq(int angulo){ // função que faz o robô girar para a esquerda o â
      {
       //lol
      }
-    
+     MyOnFwd(MD,0);
+     MyOnFwd(ME,0);
 }
 
 
@@ -337,6 +375,8 @@ int distanciaGiroEsquerda(int grau){
 
 void MyOnFwd(int motor, int pot)
 {
+	//bip();
+	//Wait(350)
 	if(motor == MD)
 	{
 		MyTcD += MotorTachoCount(motor);
@@ -345,11 +385,11 @@ void MyOnFwd(int motor, int pot)
 	{
 		MyTcE += MotorTachoCount(motor);
 	}
-
+	//bip();
 	OnFwd(motor,pot);
 }
 
-int MyMotorTachoCount(int motor, int pot)
+int MyMotorTachoCount(int motor)
 {
 	int retorno;
 
@@ -364,25 +404,31 @@ int MyMotorTachoCount(int motor, int pot)
 		retorno = MyTcE;
 	}
 
-	do{
-		ResetTachoCount(motor);
-	}while((MotorTachoCount(motor)>DIFERENCIALDEERRODOANGULO) || (MotorTachoCount(motor)<DIFERENCIALDEERRODOANGULO));
+	MyResetTachoCount(motor);
 
-	return retorno;
+	return (retorno);
 }
 
 void MyResetTachoCount(int motor)
 {
-	if(motor == MD)
-	{
-		MyTcD = 0;
-	}
-	else if(motor == ME)
-	{
-		MyTcE = 0;
-	}
-
 	do{
 		ResetTachoCount(motor);
-	}while((MotorTachoCount(motor)>DIFERENCIALDEERRODOANGULO) || (MotorTachoCount(motor)<DIFERENCIALDEERRODOANGULO));
+		//bip();
+		//bip();
+	}while((MotorTachoCount(motor)>DIFERENCIALDEERRODOANGULO) || (MotorTachoCount(motor)<-DIFERENCIALDEERRODOANGULO));
+}
+
+int MediaTC()
+{
+	int aux_tc_d, aux_tc_e;
+
+	aux_tc_d = MyMotorTachoCount(MD);
+	aux_tc_e = MyMotorTachoCount(ME);
+
+	return((aux_tc_d+aux_tc_e)/2);
+}
+
+int distanciaTachoCount(int grau)
+{
+	return (3*grau);                   //Distancia a ser percorrid/Raio da roda
 }
