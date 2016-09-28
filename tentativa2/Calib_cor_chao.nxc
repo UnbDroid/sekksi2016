@@ -36,7 +36,7 @@ void PrintaSensores(){
 		dir = SensorHTColorNum(HTD);
 		TextOut(0, LCD_LINE1, "Dir");
 		NumOut(0, LCD_LINE2, dir);
-		TextOut(0, LCD_LINE3, "Esq");
+		TextOutt(0, LCD_LINE3, "Esq");
 		NumOut(0, LCD_LINE4, esq);
 		Wait(50);
 	}
