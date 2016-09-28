@@ -8,13 +8,15 @@
     #define COR_VERMELHA_MEIO_MAX 168
 
 // Defines de leitura do RGB da direita do robô
-    #define COR_BASE_DIR_MAX 556
-    #define COR_BASE_DIR_MIN 259
+    //#define COR_BASE_DIR_MAX 586
+    //#define COR_BASE_DIR_MIN 229
     
  // Defines de leitura do RGB da esquerda do robô
-    #define COR_BASE_ESQ_MAX 404
-    #define COR_BASE_ESQ_MIN 245
-   
+    //#define COR_BASE_ESQ_MAX 434
+    //#define COR_BASE_ESQ_MIN 215
+  #define FAIXA_SENSORES_LATERAL 67
+  #define FAIXA_SENSORES_MEIO 197
+
 //Bluetooth
 	#define CONEXAO 0
 	#define INBOX 2
@@ -53,6 +55,7 @@
 #define DESGIRAR 4
 #define REJEITAR 5
 #define DESGIREI 6
+#define CALIBRA 7
 
 //cor dos boncos
 #define BONECO_BRANCO 1
@@ -76,10 +79,12 @@
 
   //Defines angulos da garra
   #define ANGULO_1 -110 //-77
-  #define ANG_SEGURO -125
+  #define ANG_SEGURO -153
   #define ANG_LEVANTAR -60
 
   #define VETOR_CALIBRACAO 11
+//mais variáveis globais
+int CorBaseDirMax, CorBaseDirMin, CorBaseEsqMax, CorBaseEsqMin, CorBaseMeioMin, CorBaseMeioMax; 
 
 //declaração das variáveis globais
 int bonecoAlvo;
@@ -111,15 +116,25 @@ void MandaRejeitar();
 int RecebiDesGirei();
 void MandaUs();
 void LevantaBoneco();
+void CalibraFaixaBase();
 
 //funções de testes
 void MandaTeste();
-
 //função para dbug
 void  bip()
 {
   PlaySound(SOUND_DOWN);
 }
+
+void nbip(int n)
+ {
+  int i;
+  
+  for(i=0; i<n; i++)
+  {
+    bip();
+  }
+ }
 
 task main()
 {
@@ -128,10 +143,17 @@ task main()
 
 void consultor()
 {
+    int mensagem;
+
     init();
+
+    
 
     while(1)//void loop
     {
+
+      ReceiveRemoteNumber(INBOX,true,mensagem);
+
       if(TemBoneco())
       {
       	BonecoNaFrente();
@@ -139,6 +161,11 @@ void consultor()
       else//caso não tenha mais nada para fazer manda o sinal do us
       {
         MandaUs();
+      }
+
+      if(mensagem == CALIBRA)
+      {
+        CalibraFaixaBase();
       }
     }
 }
@@ -148,6 +175,8 @@ void init()
 	InicializaSensores();
 	VoltaGarra();
 	BonecoAlvo();
+
+  CalibraFaixaBase();
 
   BonecosCapturados = 0;
 
@@ -180,17 +209,18 @@ void BonecoAlvo()
 
 int TemBoneco()
 {
-   int rgb_esq, rgb_dir;
+   int rgb_esq, rgb_dir, rgb_meio;
    
    //bip();
    
    rgb_dir = lerSensor(RGB_DIR);
    rgb_esq = lerSensor(RGB_ESQ);
+   rgb_meio = lerSensor(RGB_MEIO);
    
    //NumOut(0, LCD_LINE2, rgb_dir);
    //NumOut(0, LCD_LINE3, rgb_esq);
    
-   if(((rgb_dir < COR_BASE_DIR_MAX) && (rgb_dir > COR_BASE_DIR_MIN)) && ((rgb_esq < COR_BASE_ESQ_MAX) && (rgb_esq > COR_BASE_ESQ_MIN)))
+   if(((rgb_dir < CorBaseDirMax) && (rgb_dir > CorBaseDirMin)) && ((rgb_esq < CorBaseEsqMax) && (rgb_esq > CorBaseEsqMin)) && ((rgb_meio < CorBaseMeioMax) && (rgb_meio > CorBaseMeioMin)))
       return NAO_ALIEN;
    return SIM_ALIEN;
 }
@@ -487,4 +517,26 @@ void LevantaBoneco()
   OnFwd(MOTOR_GARRA,POTENCIA_MAXIMA_GARRA);
   while(MotorTachoCount(MOTOR_GARRA)>ANG_LEVANTAR){}
   Off(MOTOR_GARRA);
+}
+
+void CalibraFaixaBase()
+{
+  int rgb_esq, rgb_dir, rgb_meio;
+   
+  //bip();
+   
+  rgb_dir = lerSensor(RGB_DIR);
+  rgb_esq = lerSensor(RGB_ESQ);
+  rgb_meio = lerSensor(RGB_MEIO);
+
+  CorBaseDirMax = rgb_dir + FAIXA_SENSORES_LATERAL;
+  CorBaseDirMin = rgb_dir - FAIXA_SENSORES_LATERAL;
+  CorBaseEsqMax = rgb_esq + FAIXA_SENSORES_LATERAL;
+  CorBaseEsqMin = rgb_esq - FAIXA_SENSORES_LATERAL;
+  CorBaseMeioMax = rgb_meio + FAIXA_SENSORES_MEIO;
+  CorBaseMeioMin = rgb_meio - FAIXA_SENSORES_MEIO;
+
+  nbip(2);
+
+
 }

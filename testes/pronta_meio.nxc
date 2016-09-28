@@ -1,0 +1,57 @@
+// Defines de sensores
+	#define RGB_DIR IN_1
+	#define RGB_ESQ IN_2
+	#define RGB_MEIO IN_3
+	#define US_FRENTE IN_4
+
+void InicializaSensores()
+{
+  SetSensorColorRed(RGB_DIR);
+  SetSensorColorRed(RGB_ESQ);
+  SetSensorColorGreen(RGB_MEIO);
+  SetSensorLowspeed(US_FRENTE);
+}
+
+int lerSensor(int sensor)
+{
+   int i, j, k, aux;
+   int leitura[11];
+
+   for(i=0; i<11; i++){
+      aux = SensorRaw(sensor);
+
+      j = 0;
+      while(aux < leitura[j] && j<i)
+      {
+         j++;
+      }
+
+      if(j<i){
+         for(k=i; k>j; k--){
+            leitura[k] = leitura[k-1];
+         }
+         leitura[j] = aux;
+      }
+      else{
+         leitura[i] = aux;
+      }
+   }
+
+   return leitura[5];
+}
+
+task main()
+{
+	int meio;
+	
+	InicializaSensores();
+
+	while(1)
+	{
+		meio = lerSensor(RGB_MEIO);
+
+		ClearScreen();
+		NumOut(0,LCD_LINE1,meio);
+		Wait(50);
+	}
+}

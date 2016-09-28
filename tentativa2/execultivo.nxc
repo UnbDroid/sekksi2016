@@ -56,6 +56,7 @@
 #define DESGIRAR 4
 #define REJEITAR 5
 #define DESGIREI 6
+#define CALIBRA 7
 
 //variáveis globais
 int MyTcD;
@@ -90,6 +91,7 @@ int distanciaGiroDireita(int grau);
 int distanciaGiroEsquerda(int grau);
 int MediaTC();
 int distanciaTachoCount(int grau);
+void MandaCalibra();
 
 
 //função para dbug
@@ -231,6 +233,7 @@ void andar()//melhorar esse função - apneas testes por enquanto
 		//nbip(3);
 		//Wait(10000);
 		viraEsq(90);
+		MandaCalibra();
 		MyResetTachoCount(ME);
 		MyResetTachoCount(MD);
 		MyTcD = 0;
@@ -331,7 +334,7 @@ void FecharPorta()
 	  tc = MotorTachoCount(MP);
 	}while(tc!=old_tc);
 
-	OnFwd(MP,0);
+	OnFwd(MP,-10);
 }
 
 int RecebeUS()
@@ -382,7 +385,7 @@ int distanciaGiroDireita(int grau){
 }
 
 int distanciaGiroEsquerda(int grau){
-	   return (((grau*17)/150));
+	   return (((grau*17)/152));
 }
 
 void MyOnFwd(int motor, int pot)
@@ -443,4 +446,9 @@ int MediaTC()
 int distanciaTachoCount(int grau)
 {
 	return ((267*grau)/100);  //Distancia a ser percorrid/Raio da roda
+}
+
+void MandaCalibra()
+{
+	SendRemoteNumber(CONEXAO, OUTBOX, CALIBRA);
 }
