@@ -1,777 +1,1160 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__signed_stack_002MyOnFwdSyncPID	6	1	0	4	2
-1	__signed_stack_001MyOnFwdSyncPID	6	1	4	4	2
-2	__signed_stack_004MyOnFwdSyncPID	6	1	8	4	2
-3	__signed_stack_003MyOnFwdSyncPID	6	1	12	4	2
-4	__signed_stack_001MyOnFwd	6	1	16	4	4
-5	__D0PlaySound	6	1	20	4	63
-6	__D0MyOnRevSyncPID	6	1	24	4	6
-7	__signed_stack_001distanciaTachoCount	6	1	28	4	2
-8	__D0RetoPID	6	1	32	4	12
-9	__signed_stack_003PlaySound	6	1	36	4	14
-10	__signed_stack_002PlaySound	6	1	40	4	14
-11	__Wait_7qG2_ms_7qG2_000_inline_RetoPID	5	1	44	4	2
-12	__signed_stack_001RetoPID	6	1	48	4	8
-13	__signed_stack_001PlaySound	6	1	52	4	44
-14	__signed_stack_002MyOnRevSyncPID	6	1	56	4	2
-15	__signed_stack_001MyOnRevSyncPID	6	1	60	4	2
-16	__signed_stack_004MyOnRevSyncPID	6	1	64	4	2
-17	__signed_stack_003MyOnRevSyncPID	6	1	68	4	2
-18	__SPTArgsMutex	9	0	72	4	14
-19	__OnRevMutex	9	0	76	4	2
-20	__D0distanciaTachoCount	6	1	80	4	3
-21	__D0MyOnFwdSyncPID	6	1	84	4	6
-22	__D0MyOnFwd	6	1	88	4	14
-23	__MyOnFwdSyncPID_7qG2_i_7qG2_000	4	1	92	2	2
-24	__MyOnFwdSyncPID_7qG2_d_7qG2_000	4	1	94	2	2
-25	__MyOnRevSyncPID_7qG2_pot_7qG2_000	4	1	96	2	2
-26	__MyOnFwdSyncPID_7qG2_p_7qG2_000	4	1	98	2	2
-27	__MyOnFwd_7qG2_pot_7qG2_000	4	1	100	2	5
-28	__MyOnFwd_7qG2_motor_7qG2_000	4	1	102	2	9
-29	__MyOnFwdSyncPID_7qG2_turnDirEsq_7qG2_000	4	1	104	2	2
-30	__MyOnFwdSyncPID_7qG2_pot_7qG2_000	4	1	106	2	2
-31	__MyOnRevSyncPID_7qG2_turnDirEsq_7qG2_000	4	1	108	2	2
-32	__RetoPID_7qG2_tachoE_7qG2_000	4	1	110	2	6
-33	MyTcE	4	1	112	2	6
-34	__constValNeg29500	4	0	114	2	1
-35	__RetoPID_7qG2_tachoD_7qG2_000	4	1	116	2	6
-36	MyTcD	4	1	118	2	6
-37	__MyOnRevSyncPID_7qG2_i_7qG2_000	4	1	120	2	2
-38	__MyOnRevSyncPID_7qG2_p_7qG2_000	4	1	122	2	2
-39	potdGlobal	4	0	124	2	2
-40	__MyOnRevSyncPID_7qG2_d_7qG2_000	4	1	126	2	2
-41	__constVal150	4	0	128	2	1
-42	__constVal200	4	0	130	2	1
-43	__PlaySound_7qG2_aCode_7qG2_000	4	1	132	2	7
-44	__distanciaTachoCount_7qG2_grau_7qG2_000	4	1	134	2	3
-45	__constVal500	4	0	136	2	1
-46	__PlaySound_7qG2_i_7qG2_001	4	1	138	2	15
-47	__distanciaTachoCount_return	1	1	140	1	5
-48	__MyOnFwd_return	1	1	141	1	6
-49	____initialize_global_data_return	1	1	142	1	3
-50	__RetoPID_return	1	1	143	1	3
-51	__constVal96	2	0	144	1	1
-52	__MyOnRevSyncPID_return	1	1	145	1	3
-53	__constVal7	2	0	146	1	2
-54	__constVal63	2	0	147	1	3
-55	__MyOnFwdSyncPID_return	1	1	148	1	3
-56	__PFTmp	1	1	149	1	1
-57	__constVal0	2	1	150	1	9
-58	__constVal1	2	0	151	1	7
-59	__constVal32	2	0	152	1	5
-60	__PlaySound_return	1	1	153	1	3
-61	__OnRev_Tmp	2	1	154	1	2
-62	__constVal2	2	0	155	1	2
-63	__constVal100	2	0	156	1	2
-64	__bip_return	1	1	157	1	4
-65	__constVal50	2	0	158	1	1
-66	__constVal3	2	0	159	1	1
-67	__SPTArgs	8	0	5	8	42
-68	__SPTArgs.Result	2	1	160	1	42
-69	__SPTArgs.Frequency	3	1	162	2	42
-70	__SPTArgs.Duration	3	1	164	2	42
-71	__SPTArgs.Loop	1	1	166	1	42
-72	__SPTArgs.Volume	1	1	167	1	42
-73	__OUT_AB	7	0	168	4	2
-74	__OUT_AB.__OUT_AB_type	1	0	0	1	0
+0	__CLSWMutex3	9	0	0	4	2
+1	__CLSCSMutex3	9	0	4	4	2
+2	__signed_stack_002CorDoChao	6	1	8	4	2
+3	__CLSRMutex3	9	0	12	4	2
+4	__signed_stack_001CorDoChao	6	1	16	4	4
+5	__CLSCSMutex2	9	0	20	4	2
+6	__CLSRMutex1	9	0	24	4	2
+7	__CLSRMutex2	9	0	28	4	2
+8	__CLSWMutex2	9	0	32	4	2
+9	__RLSBmutex0	9	0	36	4	2
+10	__RLSBmutex2	9	0	40	4	2
+11	__RLSBmutex1	9	0	44	4	2
+12	__signed_stack_003MyOnRevSyncPID	6	1	48	4	2
+13	__signed_stack_004MyOnRevSyncPID	6	1	52	4	2
+14	__RLSBmutex3	9	0	56	4	2
+15	__signed_stack_001MyOnFwd	6	1	60	4	4
+16	__signed_stack_001DaReh	6	1	64	4	4
+17	__signed_stack_002MyOnRevSyncPID	6	1	68	4	2
+18	__signed_stack_001MyOnRevSyncPID	6	1	72	4	2
+19	__CLSWMutex1	9	0	76	4	2
+20	__D0CorDoChao	6	1	80	4	13
+21	__D0SetSensorLowspeed_inline_inicializaSensores	6	1	84	4	12
+22	__DU0SetSensorLowspeed_inline_inicializaSensores	5	1	88	4	8
+23	__CLSCSMutex0	9	0	92	4	2
+24	__D0andaRetoUS	6	1	96	4	50
+25	__D0distanciaTachoCount	6	1	100	4	4
+26	__D0MyOnFwd	6	1	104	4	12
+27	__OnRevMutex	9	0	108	4	2
+28	__D0DaReh	6	1	112	4	3
+29	__D0MyOnRevSyncPID	6	1	116	4	6
+30	__CLSRMutex0	9	0	120	4	2
+31	__signed_stack_001andaRetoUS	6	1	124	4	24
+32	__CLSCSMutex1	9	0	128	4	2
+33	__CLSWMutex0	9	0	132	4	2
+34	__MyOnRevSyncPID_7qG2_p_7qG2_000	4	1	136	2	2
+35	__andaRetoUS_7qG2_pote_7qG2_000	4	1	138	2	8
+36	__MyOnRevSyncPID_7qG2_turnDirEsq_7qG2_000	4	1	140	2	2
+37	__CorDoChao_7qG2_corEsq_7qG2_000	4	1	142	2	4
+38	__MyOnRevSyncPID_7qG2_d_7qG2_000	4	1	144	2	2
+39	__MyOnRevSyncPID_7qG2_i_7qG2_000	4	1	146	2	2
+40	__distanciaTachoCount_7qG2_grau_7qG2_000	4	1	148	2	4
+41	__andaRetoUS_7qG2_corDir_7qG2_000	4	1	150	2	2
+42	__andaRetoUS_7qG2_corEsq_7qG2_000	4	1	152	2	2
+43	__MyOnRevSyncPID_7qG2_pot_7qG2_000	4	1	154	2	2
+44	__MyOnFwd_7qG2_pot_7qG2_000	4	1	156	2	3
+45	__MyOnFwd_7qG2_motor_7qG2_000	4	1	158	2	7
+46	__CorDoChao_7qG2_corDir_7qG2_000	4	1	160	2	3
+47	__andaRetoUS_7qG2_distAndar_7qG2_000	4	1	162	2	3
+48	__andaRetoUS_7qG2_distanciaAtual_7qG2_000	4	1	164	2	8
+49	__DaReh_7qG2_tachoE_7qG2_000	4	1	166	2	3
+50	__andaRetoUS_7qG2_distParede_7qG2_000	4	1	168	2	7
+51	__constValNeg3000	4	0	170	2	1
+52	__DaReh_7qG2_tachoD_7qG2_000	4	1	172	2	3
+53	__andaRetoUS_7qG2_lado_7qG2_000	4	1	174	2	3
+54	potdGlobal	4	0	176	2	1
+55	MyTcD	4	1	178	2	11
+56	__andaRetoUS_7qG2_potd_7qG2_000	4	1	180	2	8
+57	MyTcE	4	1	182	2	11
+58	__zfSetSensorLowspeed_inline_inicializaSensores	1	1	184	1	8
+59	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	185	1	8
+60	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	186	1	8
+61	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	187	1	20
+62	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores	1	1	188	1	8
+63	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	189	1	4
+64	____initialize_global_data_return	1	1	190	1	3
+65	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	191	1	8
+66	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	192	1	8
+67	__inicializaSensores_return	1	1	193	1	3
+68	__constVal96	2	0	194	1	9
+69	__constVal63	2	0	195	1	10
+70	__distanciaTachoCount_return	1	1	196	1	6
+71	__MyOnFwd_return	1	1	197	1	4
+72	__andaRetoUS_return	1	1	198	1	3
+73	__DaReh_return	1	1	199	1	3
+74	__MyOnRevSyncPID_return	1	1	200	1	3
+75	__CorDoChao_return	1	1	201	1	4
+76	__zfMyOnFwd	1	1	202	1	6
+77	__RLSBResult1	2	1	203	1	7
+78	__RLSBytesCount1	1	1	204	1	7
+79	____ReadLSBytes1_return	1	1	205	1	3
+80	__constVal3	2	0	206	1	10
+81	____ReadLSBytes2_return	1	1	207	1	3
+82	__constVal1	2	0	208	1	17
+83	__RLSBIterations1	1	1	209	1	4
+84	__constVal0	2	1	210	1	44
+85	__ResetSensorTmp	1	1	211	1	2
+86	__RLSBResult0	2	1	212	1	7
+87	____ResetSensorSubroutine_return	1	1	213	1	6
+88	____ReadLSBytes0_return	1	1	214	1	3
+89	__ResetSensorPort	1	1	215	1	6
+90	__constVal15	2	0	216	1	10
+91	__RLSBytesCount0	1	1	217	1	7
+92	__RLSBIterations0	1	1	218	1	4
+93	__RLSBResult2	2	1	219	1	7
+94	__PFTmp	1	1	220	1	1
+95	__constVal100	2	0	221	1	2
+96	__RLSBIterations3	1	1	222	1	4
+97	__constVal7	2	0	223	1	1
+98	__zfDaReh	1	1	224	1	3
+99	__zfCorDoChao	1	1	225	1	7
+100	__zfandaRetoUS	1	1	226	1	30
+101	__RLSBytesCount3	1	1	227	1	7
+102	__constVal32	2	0	228	1	28
+103	__constVal2	2	0	229	1	4
+104	__RLSBytesCount2	1	1	230	1	7
+105	__RLSBIterations2	1	1	231	1	4
+106	__RLSBResult3	2	1	232	1	7
+107	__OnRev_Tmp	2	1	233	1	2
+108	____ReadLSBytes3_return	1	1	234	1	3
+109	__CLSCSArgs1	8	0	3	4	4
+110	__CLSCSArgs1.Result	2	1	236	1	4
+111	__CLSCSArgs1.Port	1	1	237	1	4
+112	__CLSCSArgs1.BytesReady	1	1	238	1	4
+113	__CLSWArgs1	8	0	4	12	5
+114	__CLSWArgs1.Result	2	1	240	1	5
+115	__CLSWArgs1.Port	1	1	241	1	5
+116	__CLSWArgs1.Buffer	7	0	242	4	5
+117	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
+118	__CLSWArgs1.ReturnLen	1	1	244	1	5
+119	__CLSRArgs1	8	0	4	12	5
+120	__CLSRArgs1.Result	2	1	248	1	5
+121	__CLSRArgs1.Port	1	1	249	1	5
+122	__CLSRArgs1.Buffer	7	0	250	4	5
+123	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
+124	__CLSRArgs1.BufferLen	1	1	252	1	5
+125	__CLSCSArgs0	8	0	3	4	4
+126	__CLSCSArgs0.Result	2	1	256	1	4
+127	__CLSCSArgs0.Port	1	1	257	1	4
+128	__CLSCSArgs0.BytesReady	1	1	258	1	4
+129	__CLSWArgs0	8	0	4	12	5
+130	__CLSWArgs0.Result	2	1	260	1	5
+131	__CLSWArgs0.Port	1	1	261	1	5
+132	__CLSWArgs0.Buffer	7	0	262	4	5
+133	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+134	__CLSWArgs0.ReturnLen	1	1	264	1	5
+135	__CLSRArgs0	8	0	4	12	5
+136	__CLSRArgs0.Result	2	1	268	1	5
+137	__CLSRArgs0.Port	1	1	269	1	5
+138	__CLSRArgs0.Buffer	7	0	270	4	5
+139	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+140	__CLSRArgs0.BufferLen	1	1	272	1	5
+141	__CLSCSArgs2	8	0	3	4	4
+142	__CLSCSArgs2.Result	2	1	276	1	4
+143	__CLSCSArgs2.Port	1	1	277	1	4
+144	__CLSCSArgs2.BytesReady	1	1	278	1	4
+145	__CLSWArgs3	8	0	4	12	5
+146	__CLSWArgs3.Result	2	1	280	1	5
+147	__CLSWArgs3.Port	1	1	281	1	5
+148	__CLSWArgs3.Buffer	7	0	282	4	5
+149	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
+150	__CLSWArgs3.ReturnLen	1	1	284	1	5
+151	__CLSRArgs3	8	0	4	12	5
+152	__CLSRArgs3.Result	2	1	288	1	5
+153	__CLSRArgs3.Port	1	1	289	1	5
+154	__CLSRArgs3.Buffer	7	0	290	4	5
+155	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
+156	__CLSRArgs3.BufferLen	1	1	292	1	5
+157	__CLSCSArgs3	8	0	3	4	4
+158	__CLSCSArgs3.Result	2	1	296	1	4
+159	__CLSCSArgs3.Port	1	1	297	1	4
+160	__CLSCSArgs3.BytesReady	1	1	298	1	4
+161	__CLSWArgs2	8	0	4	12	5
+162	__CLSWArgs2.Result	2	1	300	1	5
+163	__CLSWArgs2.Port	1	1	301	1	5
+164	__CLSWArgs2.Buffer	7	0	302	4	5
+165	__CLSWArgs2.Buffer.Buffer_type	1	0	0	1	0
+166	__CLSWArgs2.ReturnLen	1	1	304	1	5
+167	__CLSRArgs2	8	0	4	12	5
+168	__CLSRArgs2.Result	2	1	308	1	5
+169	__CLSRArgs2.Port	1	1	309	1	5
+170	__CLSRArgs2.Buffer	7	0	310	4	5
+171	__CLSRArgs2.Buffer.Buffer_type	1	0	0	1	0
+172	__CLSRArgs2.BufferLen	1	1	312	1	5
+173	__OUT_AB	7	0	314	4	1
+174	__OUT_AB.__OUT_AB_type	1	0	0	1	0
+175	__RLSReadBuf2	7	0	316	4	8
+176	__RLSReadBuf2.__RLSReadBuf2_type	1	0	0	1	0
+177	__RLSLastGoodRead2	7	0	318	4	2
+178	__RLSLastGoodRead2.__RLSLastGoodRead2_type	1	0	0	1	0
+179	__RLSReadBuf3	7	0	320	4	8
+180	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
+181	__RLSLastGoodRead3	7	0	322	4	2
+182	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
+183	__RLSReadBuf1	7	0	324	4	8
+184	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
+185	__RLSLastGoodRead0	7	0	326	4	2
+186	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
+187	__RLSBbufLSWrite1	7	0	328	4	4
+188	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+189	__RLSLastGoodRead1	7	0	330	4	2
+190	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
+191	__RLSReadBuf0	7	0	332	4	8
+192	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	66	0	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-0	67	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	66	2	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-0	66	2	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-0	67	2		subcall RetoPID, __RetoPID_return
-0	66	4	#line 66 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-0	67	4		exit -1, -1
-1	7372	0	#line 7372 "NXCDefs.h"
-1	7373	0		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-1	7372	2	#line 7372 "NXCDefs.h"
-1	7373	2	#line 7373 "NXCDefs.h"
-1	7374	2		set __D0PlaySound, 0
-1	7373	5	#line 7373 "NXCDefs.h"
-1	7374	5		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-1	7373	9	#line 7373 "NXCDefs.h"
-1	7374	9		brtst 4, __ASM_Label_56, __D0PlaySound
-1	7373	12	#line 7373 "NXCDefs.h"
-1	7374	12		set __signed_stack_001PlaySound, 600
-1	7373	15	#line 7373 "NXCDefs.h"
-1	7373	15	#line 7373 "NXCDefs.h"
-1	7374	15		set __signed_stack_002PlaySound, 200
-1	7373	18	#line 7373 "NXCDefs.h"
-1	7373	18	#line 7373 "NXCDefs.h"
-1	7374	18		set __signed_stack_003PlaySound, 4
-1	7373	21	#line 7373 "NXCDefs.h"
-1	7373	21	#line 7373 "NXCDefs.h"
-1	7374	21		set __D0PlaySound, 0
-1	7373	24	#line 7373 "NXCDefs.h"
-1	7374	24		acquire __SPTArgsMutex
-1	7373	25	#line 7373 "NXCDefs.h"
-1	7374	25		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-1	7373	27	#line 7373 "NXCDefs.h"
-1	7374	27		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-1	7373	29	#line 7373 "NXCDefs.h"
-1	7374	29		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-1	7373	31	#line 7373 "NXCDefs.h"
-1	7374	31		mov __SPTArgs.Loop, __D0PlaySound
-1	7373	33	#line 7373 "NXCDefs.h"
-1	7374	33		syscall 10, __SPTArgs
-1	7373	36	#line 7373 "NXCDefs.h"
-1	7374	36		mov __D0PlaySound, __SPTArgs.Result
-1	7373	38	#line 7373 "NXCDefs.h"
-1	7374	38		release __SPTArgsMutex
-1	7373	39	#line 7373 "NXCDefs.h"
-1	7374	39	#line 7374 "NXCDefs.h"
-1	7375	39		jmp __ASM_Label_65
-1	7374	41	#line 7374 "NXCDefs.h"
-1	7375	41		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-1	7374	43	#line 7374 "NXCDefs.h"
-1	7375	43	#line 7375 "NXCDefs.h"
-1	7376	43		set __D0PlaySound, 1
-1	7375	46	#line 7375 "NXCDefs.h"
-1	7376	46		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-1	7376	50	#line 7376 "NXCDefs.h"
-1	7377	50		brtst 4, __ASM_Label_68, __D0PlaySound
-1	7376	53	#line 7376 "NXCDefs.h"
-1	7377	53		set __signed_stack_001PlaySound, 600
-1	7376	56	#line 7376 "NXCDefs.h"
-1	7376	56	#line 7376 "NXCDefs.h"
-1	7377	56		set __signed_stack_002PlaySound, 150
-1	7376	59	#line 7376 "NXCDefs.h"
-1	7376	59	#line 7376 "NXCDefs.h"
-1	7377	59		set __signed_stack_003PlaySound, 4
-1	7376	62	#line 7376 "NXCDefs.h"
-1	7376	62	#line 7376 "NXCDefs.h"
-1	7377	62		set __D0PlaySound, 0
-1	7376	65	#line 7376 "NXCDefs.h"
-1	7377	65		acquire __SPTArgsMutex
-1	7376	66	#line 7376 "NXCDefs.h"
-1	7377	66		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-1	7376	68	#line 7376 "NXCDefs.h"
-1	7377	68		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-1	7376	70	#line 7376 "NXCDefs.h"
-1	7377	70		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-1	7376	72	#line 7376 "NXCDefs.h"
-1	7377	72		mov __SPTArgs.Loop, __D0PlaySound
-1	7376	74	#line 7376 "NXCDefs.h"
-1	7377	74		syscall 10, __SPTArgs
-1	7376	77	#line 7376 "NXCDefs.h"
-1	7377	77		mov __D0PlaySound, __SPTArgs.Result
-1	7376	79	#line 7376 "NXCDefs.h"
-1	7377	79		release __SPTArgsMutex
-1	7376	80	#line 7376 "NXCDefs.h"
-1	7377	80	#line 7377 "NXCDefs.h"
-1	7378	80		wait2 NA, __constVal200
-1	7377	83	#line 7377 "NXCDefs.h"
-1	7377	83	#line 7377 "NXCDefs.h"
-1	7378	83	#line 7378 "NXCDefs.h"
-1	7379	83		set __signed_stack_001PlaySound, 600
-1	7378	86	#line 7378 "NXCDefs.h"
-1	7378	86	#line 7378 "NXCDefs.h"
-1	7379	86		set __signed_stack_002PlaySound, 150
-1	7378	89	#line 7378 "NXCDefs.h"
-1	7378	89	#line 7378 "NXCDefs.h"
-1	7379	89		set __signed_stack_003PlaySound, 4
-1	7378	92	#line 7378 "NXCDefs.h"
-1	7378	92	#line 7378 "NXCDefs.h"
-1	7379	92		set __D0PlaySound, 0
-1	7378	95	#line 7378 "NXCDefs.h"
-1	7379	95		acquire __SPTArgsMutex
-1	7378	96	#line 7378 "NXCDefs.h"
-1	7379	96		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-1	7378	98	#line 7378 "NXCDefs.h"
-1	7379	98		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-1	7378	100	#line 7378 "NXCDefs.h"
-1	7379	100		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-1	7378	102	#line 7378 "NXCDefs.h"
-1	7379	102		mov __SPTArgs.Loop, __D0PlaySound
-1	7378	104	#line 7378 "NXCDefs.h"
-1	7379	104		syscall 10, __SPTArgs
-1	7378	107	#line 7378 "NXCDefs.h"
-1	7379	107		mov __D0PlaySound, __SPTArgs.Result
-1	7378	109	#line 7378 "NXCDefs.h"
-1	7379	109		release __SPTArgsMutex
-1	7378	110	#line 7378 "NXCDefs.h"
-1	7379	110	#line 7379 "NXCDefs.h"
-1	7380	110		wait2 NA, __constVal150
-1	7379	113	#line 7379 "NXCDefs.h"
-1	7379	113	#line 7379 "NXCDefs.h"
-1	7381	113	#line 7381 "NXCDefs.h"
-1	7382	113		jmp __ASM_Label_85
-1	7381	115	#line 7381 "NXCDefs.h"
-1	7382	115		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-1	7381	117	#line 7381 "NXCDefs.h"
-1	7382	117	#line 7382 "NXCDefs.h"
-1	7383	117		set __D0PlaySound, 3
-1	7382	120	#line 7382 "NXCDefs.h"
-1	7383	120		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-1	7382	124	#line 7382 "NXCDefs.h"
-1	7383	124		brtst 4, __ASM_Label_88, __D0PlaySound
-1	7382	127	#line 7382 "NXCDefs.h"
-1	7383	127		set __PlaySound_7qG2_i_7qG2_001, 4
-1	7382	130	#line 7382 "NXCDefs.h"
-1	7382	130	#line 7382 "NXCDefs.h"
-1	7383	130		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
-1	7382	132	#line 7382 "NXCDefs.h"
-1	7382	132	#line 7382 "NXCDefs.h"
-1	7383	132		set __D0PlaySound, 8
-1	7382	135	#line 7382 "NXCDefs.h"
-1	7383	135		cmp 0, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-1	7382	139	#line 7382 "NXCDefs.h"
-1	7383	139		brtst 4, __ASM_Label_90, __D0PlaySound
-1	7382	142	#line 7382 "NXCDefs.h"
-1	7383	142		jmp __ASM_Label_91
-1	7383	144	#line 7383 "NXCDefs.h"
-1	7384	144		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
-1	7384	148	#line 7384 "NXCDefs.h"
-1	7385	148		jmp __ASM_Label_89
-1	7384	150	#line 7384 "NXCDefs.h"
-1	7385	150		set __signed_stack_001PlaySound, 523
-1	7384	153	#line 7384 "NXCDefs.h"
-1	7384	153	#line 7384 "NXCDefs.h"
-1	7384	153	#line 7384 "NXCDefs.h"
-1	7385	153		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
-1	7384	157	#line 7384 "NXCDefs.h"
-1	7384	157	#line 7384 "NXCDefs.h"
-1	7385	157		set __D0PlaySound, 4
-1	7384	160	#line 7384 "NXCDefs.h"
-1	7385	160		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-1	7384	164	#line 7384 "NXCDefs.h"
-1	7384	164	#line 7384 "NXCDefs.h"
-1	7385	164		set __signed_stack_002PlaySound, 100
-1	7384	167	#line 7384 "NXCDefs.h"
-1	7384	167	#line 7384 "NXCDefs.h"
-1	7385	167		set __signed_stack_003PlaySound, 4
-1	7384	170	#line 7384 "NXCDefs.h"
-1	7384	170	#line 7384 "NXCDefs.h"
-1	7385	170		set __D0PlaySound, 0
-1	7384	173	#line 7384 "NXCDefs.h"
-1	7385	173		acquire __SPTArgsMutex
-1	7384	174	#line 7384 "NXCDefs.h"
-1	7385	174		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-1	7384	176	#line 7384 "NXCDefs.h"
-1	7385	176		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-1	7384	178	#line 7384 "NXCDefs.h"
-1	7385	178		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-1	7384	180	#line 7384 "NXCDefs.h"
-1	7385	180		mov __SPTArgs.Loop, __D0PlaySound
-1	7384	182	#line 7384 "NXCDefs.h"
-1	7385	182		syscall 10, __SPTArgs
-1	7384	185	#line 7384 "NXCDefs.h"
-1	7385	185		mov __D0PlaySound, __SPTArgs.Result
-1	7384	187	#line 7384 "NXCDefs.h"
-1	7385	187		release __SPTArgsMutex
-1	7384	188	#line 7384 "NXCDefs.h"
-1	7385	188	#line 7385 "NXCDefs.h"
-1	7386	188		wait2 NA, __constVal100
-1	7385	191	#line 7385 "NXCDefs.h"
-1	7385	191	#line 7385 "NXCDefs.h"
-1	7387	191	#line 7387 "NXCDefs.h"
-1	7388	191		jmp __ASM_Label_92
-1	7387	193	#line 7387 "NXCDefs.h"
-1	7387	193	#line 7387 "NXCDefs.h"
-1	7388	193		jmp __ASM_Label_105
-1	7387	195	#line 7387 "NXCDefs.h"
-1	7388	195		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-1	7387	197	#line 7387 "NXCDefs.h"
-1	7388	197	#line 7388 "NXCDefs.h"
-1	7389	197		set __D0PlaySound, 2
-1	7388	200	#line 7388 "NXCDefs.h"
-1	7389	200		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-1	7388	204	#line 7388 "NXCDefs.h"
-1	7389	204		brtst 4, __ASM_Label_108, __D0PlaySound
-1	7388	207	#line 7388 "NXCDefs.h"
-1	7389	207		set __PlaySound_7qG2_i_7qG2_001, 7
-1	7388	210	#line 7388 "NXCDefs.h"
-1	7388	210	#line 7388 "NXCDefs.h"
-1	7389	210		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
-1	7388	212	#line 7388 "NXCDefs.h"
-1	7388	212	#line 7388 "NXCDefs.h"
-1	7389	212		set __D0PlaySound, 3
-1	7388	215	#line 7388 "NXCDefs.h"
-1	7389	215		cmp 1, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-1	7388	219	#line 7388 "NXCDefs.h"
-1	7389	219		brtst 4, __ASM_Label_110, __D0PlaySound
-1	7388	222	#line 7388 "NXCDefs.h"
-1	7389	222		jmp __ASM_Label_111
-1	7389	224	#line 7389 "NXCDefs.h"
-1	7390	224		sub __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
-1	7390	228	#line 7390 "NXCDefs.h"
-1	7391	228		jmp __ASM_Label_109
-1	7390	230	#line 7390 "NXCDefs.h"
-1	7391	230		set __signed_stack_001PlaySound, 523
-1	7390	233	#line 7390 "NXCDefs.h"
-1	7390	233	#line 7390 "NXCDefs.h"
-1	7390	233	#line 7390 "NXCDefs.h"
-1	7391	233		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
-1	7390	237	#line 7390 "NXCDefs.h"
-1	7390	237	#line 7390 "NXCDefs.h"
-1	7391	237		set __D0PlaySound, 4
-1	7390	240	#line 7390 "NXCDefs.h"
-1	7391	240		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-1	7390	244	#line 7390 "NXCDefs.h"
-1	7390	244	#line 7390 "NXCDefs.h"
-1	7391	244		set __signed_stack_002PlaySound, 100
-1	7390	247	#line 7390 "NXCDefs.h"
-1	7390	247	#line 7390 "NXCDefs.h"
-1	7391	247		set __signed_stack_003PlaySound, 4
-1	7390	250	#line 7390 "NXCDefs.h"
-1	7390	250	#line 7390 "NXCDefs.h"
-1	7391	250		set __D0PlaySound, 0
-1	7390	253	#line 7390 "NXCDefs.h"
-1	7391	253		acquire __SPTArgsMutex
-1	7390	254	#line 7390 "NXCDefs.h"
-1	7391	254		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-1	7390	256	#line 7390 "NXCDefs.h"
-1	7391	256		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-1	7390	258	#line 7390 "NXCDefs.h"
-1	7391	258		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-1	7390	260	#line 7390 "NXCDefs.h"
-1	7391	260		mov __SPTArgs.Loop, __D0PlaySound
-1	7390	262	#line 7390 "NXCDefs.h"
-1	7391	262		syscall 10, __SPTArgs
-1	7390	265	#line 7390 "NXCDefs.h"
-1	7391	265		mov __D0PlaySound, __SPTArgs.Result
-1	7390	267	#line 7390 "NXCDefs.h"
-1	7391	267		release __SPTArgsMutex
-1	7390	268	#line 7390 "NXCDefs.h"
-1	7391	268	#line 7391 "NXCDefs.h"
-1	7392	268		wait2 NA, __constVal100
-1	7391	271	#line 7391 "NXCDefs.h"
-1	7391	271	#line 7391 "NXCDefs.h"
-1	7393	271	#line 7393 "NXCDefs.h"
-1	7394	271		jmp __ASM_Label_112
-1	7393	273	#line 7393 "NXCDefs.h"
-1	7393	273	#line 7393 "NXCDefs.h"
-1	7394	273		jmp __ASM_Label_125
-1	7393	275	#line 7393 "NXCDefs.h"
-1	7394	275		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-1	7393	277	#line 7393 "NXCDefs.h"
-1	7394	277	#line 7394 "NXCDefs.h"
-1	7395	277		set __D0PlaySound, 4
-1	7394	280	#line 7394 "NXCDefs.h"
-1	7395	280		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-1	7395	284	#line 7395 "NXCDefs.h"
-1	7396	284		brtst 4, __ASM_Label_128, __D0PlaySound
-1	7395	287	#line 7395 "NXCDefs.h"
-1	7396	287		set __signed_stack_001PlaySound, 100
-1	7395	290	#line 7395 "NXCDefs.h"
-1	7395	290	#line 7395 "NXCDefs.h"
-1	7396	290		set __signed_stack_002PlaySound, 500
-1	7395	293	#line 7395 "NXCDefs.h"
-1	7395	293	#line 7395 "NXCDefs.h"
-1	7396	293		set __signed_stack_003PlaySound, 4
-1	7395	296	#line 7395 "NXCDefs.h"
-1	7395	296	#line 7395 "NXCDefs.h"
-1	7396	296		set __D0PlaySound, 0
-1	7395	299	#line 7395 "NXCDefs.h"
-1	7396	299		acquire __SPTArgsMutex
-1	7395	300	#line 7395 "NXCDefs.h"
-1	7396	300		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-1	7395	302	#line 7395 "NXCDefs.h"
-1	7396	302		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-1	7395	304	#line 7395 "NXCDefs.h"
-1	7396	304		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-1	7395	306	#line 7395 "NXCDefs.h"
-1	7396	306		mov __SPTArgs.Loop, __D0PlaySound
-1	7395	308	#line 7395 "NXCDefs.h"
-1	7396	308		syscall 10, __SPTArgs
-1	7395	311	#line 7395 "NXCDefs.h"
-1	7396	311		mov __D0PlaySound, __SPTArgs.Result
-1	7395	313	#line 7395 "NXCDefs.h"
-1	7396	313		release __SPTArgsMutex
-1	7395	314	#line 7395 "NXCDefs.h"
-1	7396	314	#line 7396 "NXCDefs.h"
-1	7397	314		wait2 NA, __constVal500
-1	7396	317	#line 7396 "NXCDefs.h"
-1	7396	317	#line 7396 "NXCDefs.h"
-1	7398	317	#line 7398 "NXCDefs.h"
-1	7399	317		jmp __ASM_Label_137
-1	7398	319	#line 7398 "NXCDefs.h"
-1	7399	319		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-1	7398	321	#line 7398 "NXCDefs.h"
-1	7399	321	#line 7399 "NXCDefs.h"
-1	7400	321		set __D0PlaySound, 5
-1	7399	324	#line 7399 "NXCDefs.h"
-1	7400	324		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-1	7399	328	#line 7399 "NXCDefs.h"
-1	7400	328		brtst 4, __ASM_Label_140, __D0PlaySound
-1	7399	331	#line 7399 "NXCDefs.h"
-1	7400	331		set __PlaySound_7qG2_i_7qG2_001, 4
-1	7399	334	#line 7399 "NXCDefs.h"
-1	7399	334	#line 7399 "NXCDefs.h"
-1	7400	334		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
-1	7399	336	#line 7399 "NXCDefs.h"
-1	7399	336	#line 7399 "NXCDefs.h"
-1	7400	336		set __D0PlaySound, 8
-1	7399	339	#line 7399 "NXCDefs.h"
-1	7400	339		cmp 0, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-1	7399	343	#line 7399 "NXCDefs.h"
-1	7400	343		brtst 4, __ASM_Label_142, __D0PlaySound
-1	7399	346	#line 7399 "NXCDefs.h"
-1	7400	346		jmp __ASM_Label_143
-1	7400	348	#line 7400 "NXCDefs.h"
-1	7401	348		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
-1	7401	352	#line 7401 "NXCDefs.h"
-1	7402	352		jmp __ASM_Label_141
-1	7401	354	#line 7401 "NXCDefs.h"
-1	7402	354		set __signed_stack_001PlaySound, 523
-1	7401	357	#line 7401 "NXCDefs.h"
-1	7401	357	#line 7401 "NXCDefs.h"
-1	7401	357	#line 7401 "NXCDefs.h"
-1	7402	357		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
-1	7401	361	#line 7401 "NXCDefs.h"
-1	7401	361	#line 7401 "NXCDefs.h"
-1	7402	361		set __D0PlaySound, 4
-1	7401	364	#line 7401 "NXCDefs.h"
-1	7402	364		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
-1	7401	368	#line 7401 "NXCDefs.h"
-1	7401	368	#line 7401 "NXCDefs.h"
-1	7402	368		set __signed_stack_002PlaySound, 50
-1	7401	371	#line 7401 "NXCDefs.h"
-1	7401	371	#line 7401 "NXCDefs.h"
-1	7402	371		set __signed_stack_003PlaySound, 4
-1	7401	374	#line 7401 "NXCDefs.h"
-1	7401	374	#line 7401 "NXCDefs.h"
-1	7402	374		set __D0PlaySound, 0
-1	7401	377	#line 7401 "NXCDefs.h"
-1	7402	377		acquire __SPTArgsMutex
-1	7401	378	#line 7401 "NXCDefs.h"
-1	7402	378		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-1	7401	380	#line 7401 "NXCDefs.h"
-1	7402	380		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-1	7401	382	#line 7401 "NXCDefs.h"
-1	7402	382		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-1	7401	384	#line 7401 "NXCDefs.h"
-1	7402	384		mov __SPTArgs.Loop, __D0PlaySound
-1	7401	386	#line 7401 "NXCDefs.h"
-1	7402	386		syscall 10, __SPTArgs
-1	7401	389	#line 7401 "NXCDefs.h"
-1	7402	389		mov __D0PlaySound, __SPTArgs.Result
-1	7401	391	#line 7401 "NXCDefs.h"
-1	7402	391		release __SPTArgsMutex
-1	7401	392	#line 7401 "NXCDefs.h"
-1	7402	392	#line 7402 "NXCDefs.h"
-1	7403	392		wait2 NA, __constVal50
-1	7402	395	#line 7402 "NXCDefs.h"
-1	7402	395	#line 7402 "NXCDefs.h"
-1	7414	395	#line 7414 "NXCDefs.h"
-1	7415	395		jmp __ASM_Label_144
-1	7414	397	#line 7414 "NXCDefs.h"
-1	7414	397	#line 7414 "NXCDefs.h"
-1	7414	397	#line 7414 "NXCDefs.h"
-1	7414	397	#line 7414 "NXCDefs.h"
-1	7414	397	#line 7414 "NXCDefs.h"
-1	7414	397	#line 7414 "NXCDefs.h"
-1	7414	397	#line 7414 "NXCDefs.h"
-1	7414	397	#line 7414 "NXCDefs.h"
-1	7415	397		subret __PlaySound_return
-2	55	0	#line 55 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-2	56	0		set __PlaySound_7qG2_aCode_7qG2_000, 2
-2	55	3	#line 55 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-2	55	3	#line 55 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-2	56	3		subcall PlaySound, __PlaySound_return
-2	55	5	#line 55 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-2	58	5	#line 58 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-2	59	5		subret __bip_return
-3	71	0	#line 71 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-3	72	0		set __signed_stack_001distanciaTachoCount, 3
-3	71	3	#line 71 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-3	71	3	#line 71 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-3	71	3	#line 71 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-3	72	3		mul __D0distanciaTachoCount, __signed_stack_001distanciaTachoCount, __distanciaTachoCount_7qG2_grau_7qG2_000
-3	71	7	#line 71 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-3	72	7		subret __distanciaTachoCount_return
-3	71	9	#line 71 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-3	74	9	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-3	75	9		subret __distanciaTachoCount_return
-4	117	0	#line 117 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	118	0		mov __signed_stack_001MyOnFwd, __MyOnFwd_7qG2_motor_7qG2_000
-4	117	2	#line 117 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	118	2	#line 118 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	119	2		set __D0MyOnFwd, 1
-4	118	5	#line 118 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	119	5		cmp 4, __D0MyOnFwd, __signed_stack_001MyOnFwd, __D0MyOnFwd
-4	119	9	#line 119 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	120	9		brtst 4, __ASM_Label_639, __D0MyOnFwd
-4	119	12	#line 119 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	120	12		getout __D0MyOnFwd, __MyOnFwd_7qG2_motor_7qG2_000, 4
-4	119	16	#line 119 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	120	16		add MyTcD, MyTcD, __D0MyOnFwd
-4	119	20	#line 119 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	121	20	#line 121 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	122	20		jmp __ASM_Label_642
-4	121	22	#line 121 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	122	22		mov __signed_stack_001MyOnFwd, __MyOnFwd_7qG2_motor_7qG2_000
-4	121	24	#line 121 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	122	24	#line 122 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	123	24		set __D0MyOnFwd, 0
-4	122	27	#line 122 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	123	27		cmp 4, __D0MyOnFwd, __signed_stack_001MyOnFwd, __D0MyOnFwd
-4	123	31	#line 123 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	124	31		brtst 4, __ASM_Label_645, __D0MyOnFwd
-4	123	34	#line 123 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	124	34		getout __D0MyOnFwd, __MyOnFwd_7qG2_motor_7qG2_000, 4
-4	123	38	#line 123 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	124	38		add MyTcE, MyTcE, __D0MyOnFwd
-4	123	42	#line 123 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	126	42	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	126	42	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	126	42	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	127	42		mov __D0MyOnFwd, __MyOnFwd_7qG2_pot_7qG2_000
-4	126	44	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	127	44	#pragma macro 7
-4	127	44		setout __MyOnFwd_7qG2_motor_7qG2_000, 2, __D0MyOnFwd, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	5297	67	#line 5297 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	126	67	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	129	67	#line 129 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	130	67		subret __MyOnFwd_return
-5	147	0	#line 147 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	148	0		getout __D0MyOnFwdSyncPID, __constVal1, 4
-5	147	4	#line 147 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	148	4		add MyTcD, MyTcD, __D0MyOnFwdSyncPID
-5	147	8	#line 147 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	148	8	#line 148 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	149	8		getout __D0MyOnFwdSyncPID, __constVal0, 4
-5	148	12	#line 148 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	149	12		add MyTcE, MyTcE, __D0MyOnFwdSyncPID
-5	148	16	#line 148 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	149	16	#line 149 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	150	16		subcall bip, __bip_return
-5	149	18	#line 149 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	151	18	#line 151 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	152	18		mov __signed_stack_001MyOnFwdSyncPID, __MyOnFwdSyncPID_7qG2_pot_7qG2_000
-5	151	20	#line 151 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	151	20	#line 151 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	152	20		mov __signed_stack_002MyOnFwdSyncPID, __MyOnFwdSyncPID_7qG2_turnDirEsq_7qG2_000
-5	151	22	#line 151 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	151	22	#line 151 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	152	22		mov __signed_stack_003MyOnFwdSyncPID, __MyOnFwdSyncPID_7qG2_p_7qG2_000
-5	151	24	#line 151 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	151	24	#line 151 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	152	24		mov __signed_stack_004MyOnFwdSyncPID, __MyOnFwdSyncPID_7qG2_i_7qG2_000
-5	151	26	#line 151 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	151	26	#line 151 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	152	26		mov __D0MyOnFwdSyncPID, __MyOnFwdSyncPID_7qG2_d_7qG2_000
-5	151	28	#line 151 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	152	28	#pragma macro 7
-5	152	28		setout __OUT_AB, 2, __signed_stack_001MyOnFwdSyncPID, 1, __constVal7, 8, __constVal2, 7, __signed_stack_002MyOnFwdSyncPID, 6, __constVal32, 5, __constVal0, 10, __signed_stack_003MyOnFwdSyncPID, 11, __signed_stack_004MyOnFwdSyncPID, 12, __D0MyOnFwdSyncPID, 0, __constVal63
-5	5415	51	#line 5415 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	151	51	#line 151 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	152	51	#line 152 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	153	51		subcall bip, __bip_return
-5	152	53	#line 152 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	155	53	#line 155 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	156	53		subret __MyOnFwdSyncPID_return
-6	156	0	#line 156 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-6	157	0		getout __D0MyOnRevSyncPID, __constVal1, 4
-6	156	4	#line 156 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-6	157	4		add MyTcD, MyTcD, __D0MyOnRevSyncPID
-6	156	8	#line 156 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-6	157	8	#line 157 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-6	158	8		getout __D0MyOnRevSyncPID, __constVal0, 4
-6	157	12	#line 157 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-6	158	12		add MyTcE, MyTcE, __D0MyOnRevSyncPID
-6	157	16	#line 157 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-6	158	16	#line 158 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-6	159	16		mov __signed_stack_001MyOnRevSyncPID, __MyOnRevSyncPID_7qG2_pot_7qG2_000
-6	158	18	#line 158 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-6	158	18	#line 158 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-6	159	18		mov __signed_stack_002MyOnRevSyncPID, __MyOnRevSyncPID_7qG2_turnDirEsq_7qG2_000
-6	158	20	#line 158 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-6	158	20	#line 158 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-6	159	20		mov __signed_stack_003MyOnRevSyncPID, __MyOnRevSyncPID_7qG2_p_7qG2_000
-6	158	22	#line 158 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-6	158	22	#line 158 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-6	159	22		mov __signed_stack_004MyOnRevSyncPID, __MyOnRevSyncPID_7qG2_i_7qG2_000
-6	158	24	#line 158 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-6	158	24	#line 158 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-6	159	24		mov __D0MyOnRevSyncPID, __MyOnRevSyncPID_7qG2_d_7qG2_000
-6	158	26	#line 158 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-6	159	26	#pragma macro 10
-6	159	26		acquire __OnRevMutex
-6	159	27		neg __OnRev_Tmp, __signed_stack_001MyOnRevSyncPID
-6	159	30		setout __OUT_AB, 2, __OnRev_Tmp, 1, __constVal7, 8, __constVal2, 7, __signed_stack_002MyOnRevSyncPID, 6, __constVal32, 5, __constVal0, 10, __signed_stack_003MyOnRevSyncPID, 11, __signed_stack_004MyOnRevSyncPID, 12, __D0MyOnRevSyncPID, 0, __constVal63
-6	159	53		release __OnRevMutex
-6	5476	54	#line 5476 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-6	158	54	#line 158 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-6	161	54	#line 161 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-6	162	54		subret __MyOnRevSyncPID_return
-7	223	0	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	224	0		set __RetoPID_7qG2_tachoE_7qG2_000, 0
-7	223	3	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	223	3	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	224	3		set __RetoPID_7qG2_tachoD_7qG2_000, 0
-7	223	6	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	224	6	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	224	6	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	224	6	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	225	6		mov __MyOnFwdSyncPID_7qG2_pot_7qG2_000, potdGlobal
-7	224	8	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	224	8	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	225	8		set __MyOnFwdSyncPID_7qG2_turnDirEsq_7qG2_000, 1
-7	224	11	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	224	11	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	225	11		set __MyOnFwdSyncPID_7qG2_p_7qG2_000, 300
-7	224	14	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	224	14	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	225	14		set __MyOnFwdSyncPID_7qG2_i_7qG2_000, 50
-7	224	17	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	224	17	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	225	17		set __MyOnFwdSyncPID_7qG2_d_7qG2_000, 150
-7	224	20	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	224	20	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	225	20		subcall MyOnFwdSyncPID, __MyOnFwdSyncPID_return
-7	224	22	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	227	22	#line 227 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	227	22	#line 227 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	227	22	#line 227 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	227	22	#line 227 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	228	22		add __signed_stack_001RetoPID, __RetoPID_7qG2_tachoE_7qG2_000, __RetoPID_7qG2_tachoD_7qG2_000
-7	227	26	#line 227 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	227	26	#line 227 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	228	26		set __D0RetoPID, 2
-7	227	29	#line 227 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	228	29		div __distanciaTachoCount_7qG2_grau_7qG2_000, __signed_stack_001RetoPID, __D0RetoPID
-7	227	33	#line 227 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	227	33	#line 227 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	228	33		subcall distanciaTachoCount, __distanciaTachoCount_return
-7	227	35	#line 227 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	228	35		mov __signed_stack_001RetoPID, __D0distanciaTachoCount
-7	227	37	#line 227 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	227	37	#line 227 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	228	37		set __D0RetoPID, 29500
-7	227	40	#line 227 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	228	40		cmp 0, __D0RetoPID, __signed_stack_001RetoPID, __D0RetoPID
-7	228	44	#line 228 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	229	44		brtst 4, __ASM_Label_807, __D0RetoPID
-7	228	47	#line 228 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	229	47		getout __RetoPID_7qG2_tachoE_7qG2_000, __constVal0, 4
-7	228	51	#line 228 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	228	51	#line 228 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	229	51	#line 229 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	230	51		getout __RetoPID_7qG2_tachoD_7qG2_000, __constVal1, 4
-7	229	55	#line 229 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	229	55	#line 229 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	231	55	#line 231 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	232	55		jmp __ASM_Label_806
-7	231	57	#line 231 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	231	57	#line 231 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	232	57		set __MyOnFwd_7qG2_motor_7qG2_000, 1
-7	231	60	#line 231 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	231	60	#line 231 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	232	60		set __MyOnFwd_7qG2_pot_7qG2_000, 0
-7	231	63	#line 231 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	231	63	#line 231 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	232	63		subcall MyOnFwd, __MyOnFwd_return
-7	231	65	#line 231 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	232	65	#line 232 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	233	65		set __MyOnFwd_7qG2_motor_7qG2_000, 0
-7	232	68	#line 232 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	232	68	#line 232 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	233	68		set __MyOnFwd_7qG2_pot_7qG2_000, 0
-7	232	71	#line 232 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	232	71	#line 232 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	233	71		subcall MyOnFwd, __MyOnFwd_return
-7	232	73	#line 232 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	233	73	#line 233 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	234	73		set __Wait_7qG2_ms_7qG2_000_inline_RetoPID, 100
-7	233	76	#line 233 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	8869	76	#line 8869 "NXCDefs.h"
-7	8870	76		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_RetoPID
-7	8869	79	#line 8869 "NXCDefs.h"
-7	233	79	#line 233 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	234	79	#line 234 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	235	79		set __RetoPID_7qG2_tachoE_7qG2_000, 0
-7	234	82	#line 234 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	234	82	#line 234 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	235	82	#line 235 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	236	82		set __RetoPID_7qG2_tachoD_7qG2_000, 0
-7	235	85	#line 235 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	235	85	#line 235 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	236	85	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	236	85	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	236	85	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	237	85		mov __MyOnRevSyncPID_7qG2_pot_7qG2_000, potdGlobal
-7	236	87	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	236	87	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	237	87		set __MyOnRevSyncPID_7qG2_turnDirEsq_7qG2_000, 1
-7	236	90	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	236	90	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	237	90		set __MyOnRevSyncPID_7qG2_p_7qG2_000, 200
-7	236	93	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	236	93	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	237	93		set __MyOnRevSyncPID_7qG2_i_7qG2_000, 100
-7	236	96	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	236	96	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	237	96		set __MyOnRevSyncPID_7qG2_d_7qG2_000, 200
-7	236	99	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	236	99	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	237	99		subcall MyOnRevSyncPID, __MyOnRevSyncPID_return
-7	236	101	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	237	101	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	237	101	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	237	101	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	237	101	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	238	101		add __signed_stack_001RetoPID, __RetoPID_7qG2_tachoE_7qG2_000, __RetoPID_7qG2_tachoD_7qG2_000
-7	237	105	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	237	105	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	238	105		set __D0RetoPID, 2
-7	237	108	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	238	108		div __distanciaTachoCount_7qG2_grau_7qG2_000, __signed_stack_001RetoPID, __D0RetoPID
-7	237	112	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	237	112	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	238	112		subcall distanciaTachoCount, __distanciaTachoCount_return
-7	237	114	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	238	114		mov __signed_stack_001RetoPID, __D0distanciaTachoCount
-7	237	116	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	237	116	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	238	116		mov __D0RetoPID, __constValNeg29500
-7	237	118	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	238	118		cmp 1, __D0RetoPID, __signed_stack_001RetoPID, __D0RetoPID
-7	238	122	#line 238 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	239	122		brtst 4, __ASM_Label_845, __D0RetoPID
-7	238	125	#line 238 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	239	125		getout __RetoPID_7qG2_tachoE_7qG2_000, __constVal0, 4
-7	238	129	#line 238 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	238	129	#line 238 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	239	129	#line 239 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	240	129		getout __RetoPID_7qG2_tachoD_7qG2_000, __constVal1, 4
-7	239	133	#line 239 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	239	133	#line 239 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	241	133	#line 241 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	242	133		jmp __ASM_Label_844
-7	241	135	#line 241 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	241	135	#line 241 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	242	135		set __MyOnFwd_7qG2_motor_7qG2_000, 1
-7	241	138	#line 241 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	241	138	#line 241 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	242	138		set __MyOnFwd_7qG2_pot_7qG2_000, 0
-7	241	141	#line 241 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	241	141	#line 241 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	242	141		subcall MyOnFwd, __MyOnFwd_return
-7	241	143	#line 241 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	242	143	#line 242 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	243	143		set __MyOnFwd_7qG2_motor_7qG2_000, 0
-7	242	146	#line 242 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	242	146	#line 242 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	243	146		set __MyOnFwd_7qG2_pot_7qG2_000, 0
-7	242	149	#line 242 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	242	149	#line 242 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	243	149		subcall MyOnFwd, __MyOnFwd_return
-7	242	151	#line 242 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	246	151	#line 246 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-7	247	151		subret __RetoPID_return
-8	259	0	#line 259 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-8	260	0		subret ____initialize_global_data_return
+0	365	0	#line 365 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	366	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	365	2	#line 365 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	366	2	#line 366 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	367	2		subcall inicializaSensores, __inicializaSensores_return
+0	366	4	#line 366 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	366	4	#line 366 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	367	4		set __andaRetoUS_7qG2_distParede_7qG2_000, 15
+0	366	7	#line 366 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	366	7	#line 366 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	367	7		set __andaRetoUS_7qG2_distAndar_7qG2_000, 150
+0	366	10	#line 366 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	366	10	#line 366 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	367	10		set __andaRetoUS_7qG2_lado_7qG2_000, 3
+0	366	13	#line 366 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	368	13	#line 368 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	369	13		subcall andaRetoUS, __andaRetoUS_return
+0	368	15	#line 368 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+0	369	15		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	5672	0	#pragma macro 25
+2	5672	0		acquire __CLSWMutex0
+2	5672	1		set __CLSWArgs0.Port, 0
+2	5672	4		mov __CLSWArgs0.ReturnLen, __RLSBytesCount0
+2	5672	6		mov __CLSWArgs0.Buffer, __RLSReadBuf0
+2	5672	8		syscall 21, __CLSWArgs0
+2	5672	11		mov __RLSBResult0, __CLSWArgs0.Result
+2	5672	13		release __CLSWMutex0
+2	5673	14	#line 5673 "NXTDefs.h"
+2	5674	14		brtst 4, __RLSBReturn0, __RLSBytesCount0
+2	5675	17		arrinit __RLSReadBuf0, __constVal0, __RLSBytesCount0
+2	5676	21		brtst 5, __RLSBError0, __RLSBResult0
+2	5677	24		set __RLSBIterations0, 4
+2	5679	27	#pragma macro 23
+2	5679	27		acquire __CLSCSMutex0
+2	5679	28		set __CLSCSArgs0.Port, 0
+2	5679	31		syscall 23, __CLSCSArgs0
+2	5679	34		mov __RLSBytesCount0, __CLSCSArgs0.BytesReady
+2	5679	36		mov __RLSBResult0, __CLSCSArgs0.Result
+2	5679	38		release __CLSCSMutex0
+2	5679	39	#line 5679 "NXTDefs.h"
+2	5680	39		sub __RLSBIterations0, __RLSBIterations0, __constVal1
+2	5681	43		brtst 2, __RLSBError0, __RLSBIterations0
+2	5682	46		brtst 0, __RLSBError0, __RLSBResult0
+2	5683	49		brtst 4, __RLSBReadyToRead0, __RLSBResult0
+2	5685	52		wait2 NA, __constVal15
+2	5686	55		jmp __RLSBDoCheckStatus0
+2	5689	57	#pragma macro 25
+2	5689	57		acquire __CLSRMutex0
+2	5689	58		set __CLSRArgs0.Port, 0
+2	5689	61		mov __CLSRArgs0.BufferLen, __RLSBytesCount0
+2	5689	63		syscall 22, __CLSRArgs0
+2	5689	66		mov __RLSReadBuf0, __CLSRArgs0.Buffer
+2	5689	68		mov __RLSBResult0, __CLSRArgs0.Result
+2	5689	70		release __CLSRMutex0
+2	5689	71	#line 5689 "NXTDefs.h"
+2	5690	71		brtst 5, __RLSBError0, __RLSBResult0
+2	5691	74		mov __RLSLastGoodRead0, __RLSReadBuf0
+2	5692	76		jmp __RLSBDone0
+2	5694	78		mov __RLSReadBuf0, __RLSLastGoodRead0
+2	5696	80		arrsize __RLSBytesCount0, __RLSReadBuf0
+2	5698	83		subret ____ReadLSBytes0_return
+3	5710	0	#pragma macro 25
+3	5710	0		acquire __CLSWMutex1
+3	5710	1		set __CLSWArgs1.Port, 1
+3	5710	4		mov __CLSWArgs1.ReturnLen, __RLSBytesCount1
+3	5710	6		mov __CLSWArgs1.Buffer, __RLSReadBuf1
+3	5710	8		syscall 21, __CLSWArgs1
+3	5710	11		mov __RLSBResult1, __CLSWArgs1.Result
+3	5710	13		release __CLSWMutex1
+3	5710	14	#line 5710 "NXTDefs.h"
+3	5711	14		brtst 4, __RLSBReturn1, __RLSBytesCount1
+3	5712	17		arrinit __RLSReadBuf1, __constVal0, __RLSBytesCount1
+3	5713	21		brtst 5, __RLSBError1, __RLSBResult1
+3	5714	24		set __RLSBIterations1, 4
+3	5716	27	#pragma macro 23
+3	5716	27		acquire __CLSCSMutex1
+3	5716	28		set __CLSCSArgs1.Port, 1
+3	5716	31		syscall 23, __CLSCSArgs1
+3	5716	34		mov __RLSBytesCount1, __CLSCSArgs1.BytesReady
+3	5716	36		mov __RLSBResult1, __CLSCSArgs1.Result
+3	5716	38		release __CLSCSMutex1
+3	5716	39	#line 5716 "NXTDefs.h"
+3	5717	39		sub __RLSBIterations1, __RLSBIterations1, __constVal1
+3	5718	43		brtst 2, __RLSBError1, __RLSBIterations1
+3	5719	46		brtst 0, __RLSBError1, __RLSBResult1
+3	5720	49		brtst 4, __RLSBReadyToRead1, __RLSBResult1
+3	5722	52		wait2 NA, __constVal15
+3	5723	55		jmp __RLSBDoCheckStatus1
+3	5726	57	#pragma macro 25
+3	5726	57		acquire __CLSRMutex1
+3	5726	58		set __CLSRArgs1.Port, 1
+3	5726	61		mov __CLSRArgs1.BufferLen, __RLSBytesCount1
+3	5726	63		syscall 22, __CLSRArgs1
+3	5726	66		mov __RLSReadBuf1, __CLSRArgs1.Buffer
+3	5726	68		mov __RLSBResult1, __CLSRArgs1.Result
+3	5726	70		release __CLSRMutex1
+3	5726	71	#line 5726 "NXTDefs.h"
+3	5727	71		brtst 5, __RLSBError1, __RLSBResult1
+3	5728	74		mov __RLSLastGoodRead1, __RLSReadBuf1
+3	5729	76		jmp __RLSBDone1
+3	5731	78		mov __RLSReadBuf1, __RLSLastGoodRead1
+3	5733	80		arrsize __RLSBytesCount1, __RLSReadBuf1
+3	5735	83		subret ____ReadLSBytes1_return
+4	5747	0	#pragma macro 25
+4	5747	0		acquire __CLSWMutex2
+4	5747	1		set __CLSWArgs2.Port, 2
+4	5747	4		mov __CLSWArgs2.ReturnLen, __RLSBytesCount2
+4	5747	6		mov __CLSWArgs2.Buffer, __RLSReadBuf2
+4	5747	8		syscall 21, __CLSWArgs2
+4	5747	11		mov __RLSBResult2, __CLSWArgs2.Result
+4	5747	13		release __CLSWMutex2
+4	5747	14	#line 5747 "NXTDefs.h"
+4	5748	14		brtst 4, __RLSBReturn2, __RLSBytesCount2
+4	5749	17		arrinit __RLSReadBuf2, __constVal0, __RLSBytesCount2
+4	5750	21		brtst 5, __RLSBError2, __RLSBResult2
+4	5751	24		set __RLSBIterations2, 4
+4	5753	27	#pragma macro 23
+4	5753	27		acquire __CLSCSMutex2
+4	5753	28		set __CLSCSArgs2.Port, 2
+4	5753	31		syscall 23, __CLSCSArgs2
+4	5753	34		mov __RLSBytesCount2, __CLSCSArgs2.BytesReady
+4	5753	36		mov __RLSBResult2, __CLSCSArgs2.Result
+4	5753	38		release __CLSCSMutex2
+4	5753	39	#line 5753 "NXTDefs.h"
+4	5754	39		sub __RLSBIterations2, __RLSBIterations2, __constVal1
+4	5755	43		brtst 2, __RLSBError2, __RLSBIterations2
+4	5756	46		brtst 0, __RLSBError2, __RLSBResult2
+4	5757	49		brtst 4, __RLSBReadyToRead2, __RLSBResult2
+4	5759	52		wait2 NA, __constVal15
+4	5760	55		jmp __RLSBDoCheckStatus2
+4	5763	57	#pragma macro 25
+4	5763	57		acquire __CLSRMutex2
+4	5763	58		set __CLSRArgs2.Port, 2
+4	5763	61		mov __CLSRArgs2.BufferLen, __RLSBytesCount2
+4	5763	63		syscall 22, __CLSRArgs2
+4	5763	66		mov __RLSReadBuf2, __CLSRArgs2.Buffer
+4	5763	68		mov __RLSBResult2, __CLSRArgs2.Result
+4	5763	70		release __CLSRMutex2
+4	5763	71	#line 5763 "NXTDefs.h"
+4	5764	71		brtst 5, __RLSBError2, __RLSBResult2
+4	5765	74		mov __RLSLastGoodRead2, __RLSReadBuf2
+4	5766	76		jmp __RLSBDone2
+4	5768	78		mov __RLSReadBuf2, __RLSLastGoodRead2
+4	5770	80		arrsize __RLSBytesCount2, __RLSReadBuf2
+4	5772	83		subret ____ReadLSBytes2_return
+5	5784	0	#pragma macro 25
+5	5784	0		acquire __CLSWMutex3
+5	5784	1		set __CLSWArgs3.Port, 3
+5	5784	4		mov __CLSWArgs3.ReturnLen, __RLSBytesCount3
+5	5784	6		mov __CLSWArgs3.Buffer, __RLSReadBuf3
+5	5784	8		syscall 21, __CLSWArgs3
+5	5784	11		mov __RLSBResult3, __CLSWArgs3.Result
+5	5784	13		release __CLSWMutex3
+5	5784	14	#line 5784 "NXTDefs.h"
+5	5785	14		brtst 4, __RLSBReturn3, __RLSBytesCount3
+5	5786	17		arrinit __RLSReadBuf3, __constVal0, __RLSBytesCount3
+5	5787	21		brtst 5, __RLSBError3, __RLSBResult3
+5	5788	24		set __RLSBIterations3, 4
+5	5790	27	#pragma macro 23
+5	5790	27		acquire __CLSCSMutex3
+5	5790	28		set __CLSCSArgs3.Port, 3
+5	5790	31		syscall 23, __CLSCSArgs3
+5	5790	34		mov __RLSBytesCount3, __CLSCSArgs3.BytesReady
+5	5790	36		mov __RLSBResult3, __CLSCSArgs3.Result
+5	5790	38		release __CLSCSMutex3
+5	5790	39	#line 5790 "NXTDefs.h"
+5	5791	39		sub __RLSBIterations3, __RLSBIterations3, __constVal1
+5	5792	43		brtst 2, __RLSBError3, __RLSBIterations3
+5	5793	46		brtst 0, __RLSBError3, __RLSBResult3
+5	5794	49		brtst 4, __RLSBReadyToRead3, __RLSBResult3
+5	5796	52		wait2 NA, __constVal15
+5	5797	55		jmp __RLSBDoCheckStatus3
+5	5800	57	#pragma macro 25
+5	5800	57		acquire __CLSRMutex3
+5	5800	58		set __CLSRArgs3.Port, 3
+5	5800	61		mov __CLSRArgs3.BufferLen, __RLSBytesCount3
+5	5800	63		syscall 22, __CLSRArgs3
+5	5800	66		mov __RLSReadBuf3, __CLSRArgs3.Buffer
+5	5800	68		mov __RLSBResult3, __CLSRArgs3.Result
+5	5800	70		release __CLSRMutex3
+5	5800	71	#line 5800 "NXTDefs.h"
+5	5801	71		brtst 5, __RLSBError3, __RLSBResult3
+5	5802	74		mov __RLSLastGoodRead3, __RLSReadBuf3
+5	5803	76		jmp __RLSBDone3
+5	5805	78		mov __RLSReadBuf3, __RLSLastGoodRead3
+5	5807	80		arrsize __RLSBytesCount3, __RLSReadBuf3
+5	5809	83		subret ____ReadLSBytes3_return
+6	68	0	#line 68 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+6	68	0	#line 68 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+6	68	0	#line 68 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+6	68	0	#line 68 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+6	69	0		mul __D0distanciaTachoCount, __constVal3, __distanciaTachoCount_7qG2_grau_7qG2_000
+6	69	4	#line 69 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+6	70	4		subret __distanciaTachoCount_return
+6	69	6	#line 69 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+6	71	6	#line 71 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+6	72	6		subret __distanciaTachoCount_return
+7	114	0	#line 114 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	115	0		mov __signed_stack_001MyOnFwd, __MyOnFwd_7qG2_motor_7qG2_000
+7	114	2	#line 114 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	115	2	#line 115 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	116	2		set __D0MyOnFwd, 1
+7	115	5	#line 115 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	116	5		cmp 4, __zfMyOnFwd, __signed_stack_001MyOnFwd, __D0MyOnFwd
+7	115	9	#line 115 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	116	9		mov __D0MyOnFwd, __zfMyOnFwd
+7	116	11	#line 116 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	117	11		brtst 4, __NXC_Label_570, __zfMyOnFwd
+7	117	14	#line 117 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	118	14		getout __D0MyOnFwd, __MyOnFwd_7qG2_motor_7qG2_000, 4
+7	117	18	#line 117 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	118	18		add MyTcD, MyTcD, __D0MyOnFwd
+7	117	22	#line 117 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	118	22	#line 118 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	119	22		jmp __NXC_Label_573
+7	118	24	#line 118 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	119	24		mov __signed_stack_001MyOnFwd, __MyOnFwd_7qG2_motor_7qG2_000
+7	118	26	#line 118 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	119	26	#line 119 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	120	26		set __D0MyOnFwd, 0
+7	119	29	#line 119 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	120	29		cmp 4, __zfMyOnFwd, __signed_stack_001MyOnFwd, __D0MyOnFwd
+7	119	33	#line 119 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	120	33		mov __D0MyOnFwd, __zfMyOnFwd
+7	120	35	#line 120 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	121	35		brtst 4, __NXC_Label_576, __zfMyOnFwd
+7	121	38	#line 121 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	122	38		getout __D0MyOnFwd, __MyOnFwd_7qG2_motor_7qG2_000, 4
+7	121	42	#line 121 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	122	42		add MyTcE, MyTcE, __D0MyOnFwd
+7	121	46	#line 121 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	123	46	#line 123 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	123	46	#line 123 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	123	46	#line 123 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	124	46		mov __D0MyOnFwd, __MyOnFwd_7qG2_pot_7qG2_000
+7	124	48	#line 124 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	125	48	#pragma macro 7
+7	125	48		setout __MyOnFwd_7qG2_motor_7qG2_000, 2, __D0MyOnFwd, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	5192	71	#line 5192 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	124	71	#line 124 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	126	71	#line 126 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+7	127	71		subret __MyOnFwd_return
+8	154	0	#line 154 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+8	155	0		getout __D0MyOnRevSyncPID, __constVal1, 4
+8	154	4	#line 154 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+8	155	4		add MyTcD, MyTcD, __D0MyOnRevSyncPID
+8	154	8	#line 154 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+8	155	8	#line 155 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+8	156	8		getout __D0MyOnRevSyncPID, __constVal0, 4
+8	155	12	#line 155 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+8	156	12		add MyTcE, MyTcE, __D0MyOnRevSyncPID
+8	155	16	#line 155 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+8	155	16	#line 155 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+8	156	16		mov __signed_stack_001MyOnRevSyncPID, __MyOnRevSyncPID_7qG2_pot_7qG2_000
+8	155	18	#line 155 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+8	155	18	#line 155 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+8	156	18		mov __signed_stack_002MyOnRevSyncPID, __MyOnRevSyncPID_7qG2_turnDirEsq_7qG2_000
+8	155	20	#line 155 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+8	155	20	#line 155 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+8	156	20		mov __signed_stack_003MyOnRevSyncPID, __MyOnRevSyncPID_7qG2_p_7qG2_000
+8	155	22	#line 155 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+8	155	22	#line 155 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+8	156	22		mov __signed_stack_004MyOnRevSyncPID, __MyOnRevSyncPID_7qG2_i_7qG2_000
+8	155	24	#line 155 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+8	155	24	#line 155 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+8	156	24		mov __D0MyOnRevSyncPID, __MyOnRevSyncPID_7qG2_d_7qG2_000
+8	156	26	#line 156 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+8	157	26	#pragma macro 10
+8	157	26		acquire __OnRevMutex
+8	157	27		neg __OnRev_Tmp, __signed_stack_001MyOnRevSyncPID
+8	157	30		setout __OUT_AB, 2, __OnRev_Tmp, 1, __constVal7, 8, __constVal2, 7, __signed_stack_002MyOnRevSyncPID, 6, __constVal32, 5, __constVal0, 10, __signed_stack_003MyOnRevSyncPID, 11, __signed_stack_004MyOnRevSyncPID, 12, __D0MyOnRevSyncPID, 0, __constVal63
+8	157	53		release __OnRevMutex
+8	5359	54	#line 5359 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+8	156	54	#line 156 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+8	158	54	#line 158 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+8	159	54		subret __MyOnRevSyncPID_return
+9	236	0	#line 236 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	237	0		set MyTcD, 0
+9	236	3	#line 236 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	236	3	#line 236 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	238	3	#line 238 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	239	3		set MyTcE, 0
+9	238	6	#line 238 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	238	6	#line 238 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	238	6	#line 238 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	239	6		mov __signed_stack_001andaRetoUS, __andaRetoUS_7qG2_lado_7qG2_000
+9	238	8	#line 238 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	238	8	#line 238 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	239	8		set __D0andaRetoUS, 2
+9	238	11	#line 238 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	239	11		cmp 4, __zfandaRetoUS, __signed_stack_001andaRetoUS, __D0andaRetoUS
+9	238	15	#line 238 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	239	15		mov __D0andaRetoUS, __zfandaRetoUS
+9	240	17	#line 240 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	241	17		brtst 4, __NXC_Label_726, __zfandaRetoUS
+9	240	20	#line 240 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	240	20	#line 240 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	240	20	#line 240 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	240	20	#line 240 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	241	20		add __signed_stack_001andaRetoUS, MyTcD, MyTcE
+9	240	24	#line 240 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	240	24	#line 240 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	240	24	#line 240 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	241	24		div __distanciaTachoCount_7qG2_grau_7qG2_000, __signed_stack_001andaRetoUS, __constVal2
+9	240	28	#line 240 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	240	28	#line 240 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	241	28		subcall distanciaTachoCount, __distanciaTachoCount_return
+9	240	30	#line 240 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	241	30		mov __signed_stack_001andaRetoUS, __D0distanciaTachoCount
+9	240	32	#line 240 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	240	32	#line 240 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	240	32	#line 240 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	240	32	#line 240 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	240	32	#line 240 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	241	32		mul __D0andaRetoUS, __andaRetoUS_7qG2_distAndar_7qG2_000, __constVal100
+9	240	36	#line 240 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	241	36		cmp 0, __zfandaRetoUS, __signed_stack_001andaRetoUS, __D0andaRetoUS
+9	240	40	#line 240 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	241	40		mov __D0andaRetoUS, __zfandaRetoUS
+9	241	42	#line 241 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	242	42		brtst 4, __NXC_Label_728, __zfandaRetoUS
+9	241	45	#line 241 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	242	45	#pragma macro 26
+9	242	45		acquire __RLSBmutex1
+9	242	46		mov __RLSReadBuf1, __RLSBbufLSWrite1
+9	242	48		set __RLSBytesCount1, 1
+9	242	51		wait2 NA, __constVal15
+9	242	54		subcall __ReadLSBytes1, ____ReadLSBytes1_return
+9	242	56		index __D0andaRetoUS, __RLSReadBuf1, 65535
+9	242	60		release __RLSBmutex1
+9	5947	61	#line 5947 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	241	61	#line 241 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	242	61		mov __andaRetoUS_7qG2_distanciaAtual_7qG2_000, __D0andaRetoUS
+9	241	63	#line 241 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	241	63	#line 241 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	245	63	#line 245 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	246	63		mov __CorDoChao_7qG2_corEsq_7qG2_000, __andaRetoUS_7qG2_corEsq_7qG2_000
+9	245	65	#line 245 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	245	65	#line 245 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	246	65		mov __CorDoChao_7qG2_corDir_7qG2_000, __andaRetoUS_7qG2_corDir_7qG2_000
+9	245	67	#line 245 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	247	67	#line 247 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	248	67		subcall CorDoChao, __CorDoChao_return
+9	247	69	#line 247 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	247	69	#line 247 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	248	69		mov __signed_stack_001andaRetoUS, __andaRetoUS_7qG2_distanciaAtual_7qG2_000
+9	247	71	#line 247 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	247	71	#line 247 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	248	71		mov __D0andaRetoUS, __andaRetoUS_7qG2_distParede_7qG2_000
+9	247	73	#line 247 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	248	73		cmp 4, __zfandaRetoUS, __signed_stack_001andaRetoUS, __D0andaRetoUS
+9	247	77	#line 247 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	248	77		mov __D0andaRetoUS, __zfandaRetoUS
+9	248	79	#line 248 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	249	79		brtst 4, __NXC_Label_745, __zfandaRetoUS
+9	249	82	#line 249 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	250	82		set __andaRetoUS_7qG2_potd_7qG2_000, 90
+9	249	85	#line 249 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	249	85	#line 249 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	250	85	#line 250 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	251	85		set __andaRetoUS_7qG2_pote_7qG2_000, 90
+9	250	88	#line 250 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	250	88	#line 250 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	251	88	#line 251 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	252	88		jmp __NXC_Label_750
+9	251	90	#line 251 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	252	90		mov __signed_stack_001andaRetoUS, __andaRetoUS_7qG2_distanciaAtual_7qG2_000
+9	251	92	#line 251 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	251	92	#line 251 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	252	92		mov __D0andaRetoUS, __andaRetoUS_7qG2_distParede_7qG2_000
+9	251	94	#line 251 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	252	94		cmp 1, __zfandaRetoUS, __signed_stack_001andaRetoUS, __D0andaRetoUS
+9	251	98	#line 251 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	252	98		mov __D0andaRetoUS, __zfandaRetoUS
+9	252	100	#line 252 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	253	100		brtst 4, __NXC_Label_753, __zfandaRetoUS
+9	253	103	#line 253 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	254	103		set __andaRetoUS_7qG2_potd_7qG2_000, 90
+9	253	106	#line 253 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	253	106	#line 253 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	254	106	#line 254 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	255	106		set __andaRetoUS_7qG2_pote_7qG2_000, 70
+9	254	109	#line 254 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	254	109	#line 254 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	255	109	#line 255 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	256	109		jmp __NXC_Label_758
+9	255	111	#line 255 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	256	111		mov __signed_stack_001andaRetoUS, __andaRetoUS_7qG2_distanciaAtual_7qG2_000
+9	255	113	#line 255 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	255	113	#line 255 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	256	113		mov __D0andaRetoUS, __andaRetoUS_7qG2_distParede_7qG2_000
+9	255	115	#line 255 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	256	115		cmp 0, __zfandaRetoUS, __signed_stack_001andaRetoUS, __D0andaRetoUS
+9	255	119	#line 255 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	256	119		mov __D0andaRetoUS, __zfandaRetoUS
+9	256	121	#line 256 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	257	121		brtst 4, __NXC_Label_761, __zfandaRetoUS
+9	257	124	#line 257 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	258	124		set __andaRetoUS_7qG2_potd_7qG2_000, 70
+9	257	127	#line 257 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	257	127	#line 257 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	258	127	#line 258 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	259	127		set __andaRetoUS_7qG2_pote_7qG2_000, 90
+9	258	130	#line 258 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	258	130	#line 258 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	260	130	#line 260 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	260	130	#line 260 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	260	130	#line 260 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	261	130	#line 261 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	262	130		getout __D0andaRetoUS, __constVal1, 4
+9	261	134	#line 261 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	262	134		add MyTcD, MyTcD, __D0andaRetoUS
+9	261	138	#line 261 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	261	138	#line 261 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	262	138		mov __D0andaRetoUS, __andaRetoUS_7qG2_potd_7qG2_000
+9	262	140	#line 262 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	263	140	#pragma macro 7
+9	263	140		setout __constVal1, 2, __D0andaRetoUS, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	6077	163	#line 6077 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	262	163	#line 262 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	263	163	#line 263 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	264	163		getout __D0andaRetoUS, __constVal0, 4
+9	263	167	#line 263 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	264	167		add MyTcE, MyTcE, __D0andaRetoUS
+9	263	171	#line 263 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	263	171	#line 263 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	264	171		mov __D0andaRetoUS, __andaRetoUS_7qG2_pote_7qG2_000
+9	265	173	#line 265 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	266	173	#pragma macro 7
+9	266	173		setout __constVal0, 2, __D0andaRetoUS, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	6091	196	#line 6091 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	265	196	#line 265 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	267	196	#line 267 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	268	196		jmp __NXC_Label_727
+9	267	198	#line 267 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	268	198	#line 268 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	269	198	#pragma macro 7
+9	269	198		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	6098	221	#line 6098 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	268	221	#line 268 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	269	221	#line 269 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	270	221	#pragma macro 7
+9	270	221		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	6101	244	#line 6101 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	269	244	#line 269 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	270	244	#line 270 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	271	244		jmp __NXC_Label_774
+9	270	246	#line 270 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	271	246		mov __signed_stack_001andaRetoUS, __andaRetoUS_7qG2_lado_7qG2_000
+9	270	248	#line 270 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	270	248	#line 270 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	271	248		set __D0andaRetoUS, 3
+9	270	251	#line 270 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	271	251		cmp 4, __zfandaRetoUS, __signed_stack_001andaRetoUS, __D0andaRetoUS
+9	270	255	#line 270 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	271	255		mov __D0andaRetoUS, __zfandaRetoUS
+9	271	257	#line 271 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	272	257		brtst 4, __NXC_Label_777, __zfandaRetoUS
+9	271	260	#line 271 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	271	260	#line 271 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	271	260	#line 271 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	271	260	#line 271 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	272	260		add __signed_stack_001andaRetoUS, MyTcD, MyTcE
+9	271	264	#line 271 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	271	264	#line 271 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	271	264	#line 271 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	272	264		div __distanciaTachoCount_7qG2_grau_7qG2_000, __signed_stack_001andaRetoUS, __constVal2
+9	271	268	#line 271 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	271	268	#line 271 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	272	268		subcall distanciaTachoCount, __distanciaTachoCount_return
+9	271	270	#line 271 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	272	270		mov __signed_stack_001andaRetoUS, __D0distanciaTachoCount
+9	271	272	#line 271 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	271	272	#line 271 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	271	272	#line 271 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	271	272	#line 271 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	271	272	#line 271 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	272	272		mul __D0andaRetoUS, __andaRetoUS_7qG2_distAndar_7qG2_000, __constVal100
+9	271	276	#line 271 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	272	276		cmp 0, __zfandaRetoUS, __signed_stack_001andaRetoUS, __D0andaRetoUS
+9	271	280	#line 271 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	272	280		mov __D0andaRetoUS, __zfandaRetoUS
+9	272	282	#line 272 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	273	282		brtst 4, __NXC_Label_779, __zfandaRetoUS
+9	272	285	#line 272 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	273	285	#pragma macro 26
+9	273	285		acquire __RLSBmutex0
+9	273	286		mov __RLSReadBuf0, __RLSBbufLSWrite1
+9	273	288		set __RLSBytesCount0, 1
+9	273	291		wait2 NA, __constVal15
+9	273	294		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+9	273	296		index __D0andaRetoUS, __RLSReadBuf0, 65535
+9	273	300		release __RLSBmutex0
+9	6166	301	#line 6166 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	272	301	#line 272 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	273	301		mov __andaRetoUS_7qG2_distanciaAtual_7qG2_000, __D0andaRetoUS
+9	272	303	#line 272 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	272	303	#line 272 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	276	303	#line 276 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	277	303		mov __CorDoChao_7qG2_corEsq_7qG2_000, __andaRetoUS_7qG2_corEsq_7qG2_000
+9	276	305	#line 276 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	276	305	#line 276 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	277	305		mov __CorDoChao_7qG2_corDir_7qG2_000, __andaRetoUS_7qG2_corDir_7qG2_000
+9	276	307	#line 276 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	278	307	#line 278 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	279	307		subcall CorDoChao, __CorDoChao_return
+9	278	309	#line 278 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	278	309	#line 278 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	279	309		mov __signed_stack_001andaRetoUS, __andaRetoUS_7qG2_distanciaAtual_7qG2_000
+9	278	311	#line 278 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	278	311	#line 278 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	279	311		mov __D0andaRetoUS, __andaRetoUS_7qG2_distParede_7qG2_000
+9	278	313	#line 278 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	279	313		cmp 4, __zfandaRetoUS, __signed_stack_001andaRetoUS, __D0andaRetoUS
+9	278	317	#line 278 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	279	317		mov __D0andaRetoUS, __zfandaRetoUS
+9	279	319	#line 279 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	280	319		brtst 4, __NXC_Label_796, __zfandaRetoUS
+9	280	322	#line 280 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	281	322		set __andaRetoUS_7qG2_potd_7qG2_000, 90
+9	280	325	#line 280 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	280	325	#line 280 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	281	325	#line 281 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	282	325		set __andaRetoUS_7qG2_pote_7qG2_000, 90
+9	281	328	#line 281 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	281	328	#line 281 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	282	328	#line 282 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	283	328		jmp __NXC_Label_801
+9	282	330	#line 282 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	283	330		mov __signed_stack_001andaRetoUS, __andaRetoUS_7qG2_distanciaAtual_7qG2_000
+9	282	332	#line 282 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	282	332	#line 282 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	283	332		mov __D0andaRetoUS, __andaRetoUS_7qG2_distParede_7qG2_000
+9	282	334	#line 282 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	283	334		cmp 1, __zfandaRetoUS, __signed_stack_001andaRetoUS, __D0andaRetoUS
+9	282	338	#line 282 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	283	338		mov __D0andaRetoUS, __zfandaRetoUS
+9	283	340	#line 283 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	284	340		brtst 4, __NXC_Label_804, __zfandaRetoUS
+9	284	343	#line 284 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	285	343		set __andaRetoUS_7qG2_pote_7qG2_000, 90
+9	284	346	#line 284 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	284	346	#line 284 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	285	346	#line 285 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	286	346		set __andaRetoUS_7qG2_potd_7qG2_000, 70
+9	285	349	#line 285 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	285	349	#line 285 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	286	349	#line 286 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	287	349		jmp __NXC_Label_809
+9	286	351	#line 286 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	287	351		mov __signed_stack_001andaRetoUS, __andaRetoUS_7qG2_distanciaAtual_7qG2_000
+9	286	353	#line 286 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	286	353	#line 286 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	287	353		mov __D0andaRetoUS, __andaRetoUS_7qG2_distParede_7qG2_000
+9	286	355	#line 286 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	287	355		cmp 0, __zfandaRetoUS, __signed_stack_001andaRetoUS, __D0andaRetoUS
+9	286	359	#line 286 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	287	359		mov __D0andaRetoUS, __zfandaRetoUS
+9	287	361	#line 287 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	288	361		brtst 4, __NXC_Label_812, __zfandaRetoUS
+9	288	364	#line 288 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	289	364		set __andaRetoUS_7qG2_pote_7qG2_000, 70
+9	288	367	#line 288 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	288	367	#line 288 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	289	367	#line 289 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	290	367		set __andaRetoUS_7qG2_potd_7qG2_000, 90
+9	289	370	#line 289 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	289	370	#line 289 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	291	370	#line 291 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	291	370	#line 291 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	291	370	#line 291 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	292	370	#line 292 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	293	370		getout __D0andaRetoUS, __constVal1, 4
+9	292	374	#line 292 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	293	374		add MyTcD, MyTcD, __D0andaRetoUS
+9	292	378	#line 292 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	292	378	#line 292 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	293	378		mov __D0andaRetoUS, __andaRetoUS_7qG2_potd_7qG2_000
+9	293	380	#line 293 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	294	380	#pragma macro 7
+9	294	380		setout __constVal1, 2, __D0andaRetoUS, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	6296	403	#line 6296 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	293	403	#line 293 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	294	403	#line 294 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	295	403		getout __D0andaRetoUS, __constVal0, 4
+9	294	407	#line 294 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	295	407		add MyTcE, MyTcE, __D0andaRetoUS
+9	294	411	#line 294 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	294	411	#line 294 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	295	411		mov __D0andaRetoUS, __andaRetoUS_7qG2_pote_7qG2_000
+9	296	413	#line 296 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	297	413	#pragma macro 7
+9	297	413		setout __constVal0, 2, __D0andaRetoUS, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	6310	436	#line 6310 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	296	436	#line 296 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	298	436	#line 298 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	299	436		jmp __NXC_Label_778
+9	298	438	#line 298 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	299	438	#line 299 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	300	438	#pragma macro 7
+9	300	438		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	6317	461	#line 6317 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	299	461	#line 299 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	301	461	#line 301 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	302	461	#pragma macro 7
+9	302	461		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	6320	484	#line 6320 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	301	484	#line 301 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	304	484	#line 304 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	304	484	#line 304 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	304	484	#line 304 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+9	305	484		subret __andaRetoUS_return
+10	306	0	#line 306 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	307	0	#pragma macro 24
+10	307	0		acquire __RLSBmutex3
+10	307	1		mov __RLSReadBuf3, __RLSBbufLSWrite1
+10	307	3		set __RLSBytesCount3, 1
+10	307	6		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+10	307	8		index __D0CorDoChao, __RLSReadBuf3, 65535
+10	307	12		release __RLSBmutex3
+10	6332	13	#line 6332 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	306	13	#line 306 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	307	13		mov __CorDoChao_7qG2_corEsq_7qG2_000, __D0CorDoChao
+10	306	15	#line 306 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	306	15	#line 306 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	307	15	#line 307 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	308	15	#pragma macro 24
+10	308	15		acquire __RLSBmutex2
+10	308	16		mov __RLSReadBuf2, __RLSBbufLSWrite1
+10	308	18		set __RLSBytesCount2, 1
+10	308	21		subcall __ReadLSBytes2, ____ReadLSBytes2_return
+10	308	23		index __D0CorDoChao, __RLSReadBuf2, 65535
+10	308	27		release __RLSBmutex2
+10	6340	28	#line 6340 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	307	28	#line 307 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	308	28		mov __CorDoChao_7qG2_corDir_7qG2_000, __D0CorDoChao
+10	307	30	#line 307 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	307	30	#line 307 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	309	30	#line 309 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	310	30		mov __signed_stack_001CorDoChao, __D0CorDoChao
+10	309	32	#line 309 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	309	32	#line 309 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	310	32		set __D0CorDoChao, 14
+10	309	35	#line 309 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	310	35		cmp 4, __zfCorDoChao, __signed_stack_001CorDoChao, __D0CorDoChao
+10	309	39	#line 309 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	310	39		mov __D0CorDoChao, __zfCorDoChao
+10	309	41	#line 309 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	310	41		brtst 5, __NXC_Label_829, __zfCorDoChao
+10	309	44	#line 309 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	310	44		mov __signed_stack_001CorDoChao, __D0CorDoChao
+10	309	46	#line 309 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	310	46		mov __signed_stack_002CorDoChao, __CorDoChao_7qG2_corEsq_7qG2_000
+10	309	48	#line 309 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	309	48	#line 309 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	310	48		set __D0CorDoChao, 14
+10	309	51	#line 309 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	310	51		cmp 4, __zfCorDoChao, __signed_stack_002CorDoChao, __D0CorDoChao
+10	309	55	#line 309 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	309	55	#line 309 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	310	55		or __D0CorDoChao, __signed_stack_001CorDoChao, __zfCorDoChao
+10	310	59	#line 310 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	311	59		tst 5, __zfCorDoChao, __D0CorDoChao
+10	310	62	#line 310 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	311	62		brtst 4, __NXC_Label_836, __zfCorDoChao
+10	311	65	#line 311 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	312	65		subcall DaReh, __DaReh_return
+10	311	67	#line 311 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	314	67	#line 314 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	314	67	#line 314 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+10	315	67		subret __CorDoChao_return
+11	315	0	#line 315 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	316	0		set __DaReh_7qG2_tachoE_7qG2_000, 0
+11	315	3	#line 315 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	316	3	#line 316 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	317	3		set __DaReh_7qG2_tachoD_7qG2_000, 0
+11	316	6	#line 316 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	316	6	#line 316 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	316	6	#line 316 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	316	6	#line 316 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	317	6		mov __MyOnRevSyncPID_7qG2_pot_7qG2_000, potdGlobal
+11	316	8	#line 316 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	316	8	#line 316 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	317	8		set __MyOnRevSyncPID_7qG2_turnDirEsq_7qG2_000, 1
+11	316	11	#line 316 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	316	11	#line 316 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	317	11		set __MyOnRevSyncPID_7qG2_p_7qG2_000, 200
+11	316	14	#line 316 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	316	14	#line 316 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	317	14		set __MyOnRevSyncPID_7qG2_i_7qG2_000, 100
+11	316	17	#line 316 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	316	17	#line 316 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	317	17		set __MyOnRevSyncPID_7qG2_d_7qG2_000, 200
+11	316	20	#line 316 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	318	20	#line 318 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	319	20		subcall MyOnRevSyncPID, __MyOnRevSyncPID_return
+11	318	22	#line 318 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	318	22	#line 318 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	318	22	#line 318 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	318	22	#line 318 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	318	22	#line 318 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	319	22		add __signed_stack_001DaReh, __DaReh_7qG2_tachoE_7qG2_000, __DaReh_7qG2_tachoD_7qG2_000
+11	318	26	#line 318 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	318	26	#line 318 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	318	26	#line 318 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	319	26		div __distanciaTachoCount_7qG2_grau_7qG2_000, __signed_stack_001DaReh, __constVal2
+11	318	30	#line 318 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	318	30	#line 318 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	319	30		subcall distanciaTachoCount, __distanciaTachoCount_return
+11	318	32	#line 318 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	319	32		mov __signed_stack_001DaReh, __D0distanciaTachoCount
+11	318	34	#line 318 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	318	34	#line 318 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	319	34		mov __D0DaReh, __constValNeg3000
+11	318	36	#line 318 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	319	36		cmp 1, __zfDaReh, __signed_stack_001DaReh, __D0DaReh
+11	318	40	#line 318 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	319	40		mov __D0DaReh, __zfDaReh
+11	319	42	#line 319 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	320	42		brtst 4, __NXC_Label_854, __zfDaReh
+11	320	45	#line 320 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	321	45		getout __DaReh_7qG2_tachoE_7qG2_000, __constVal0, 4
+11	320	49	#line 320 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	320	49	#line 320 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	321	49	#line 321 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	322	49		getout __DaReh_7qG2_tachoD_7qG2_000, __constVal1, 4
+11	321	53	#line 321 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	321	53	#line 321 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	322	53	#line 322 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	323	53		jmp __NXC_Label_853
+11	322	55	#line 322 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	322	55	#line 322 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	323	55		set __MyOnFwd_7qG2_motor_7qG2_000, 1
+11	322	58	#line 322 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	322	58	#line 322 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	323	58		set __MyOnFwd_7qG2_pot_7qG2_000, 0
+11	322	61	#line 322 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	323	61	#line 323 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	324	61		subcall MyOnFwd, __MyOnFwd_return
+11	323	63	#line 323 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	323	63	#line 323 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	324	63		set __MyOnFwd_7qG2_motor_7qG2_000, 0
+11	323	66	#line 323 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	323	66	#line 323 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	324	66		set __MyOnFwd_7qG2_pot_7qG2_000, 0
+11	323	69	#line 323 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	324	69	#line 324 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	325	69		subcall MyOnFwd, __MyOnFwd_return
+11	324	71	#line 324 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	327	71	#line 327 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+11	328	71		subret __DaReh_return
+12	354	0	#line 354 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+12	355	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 0
+12	354	3	#line 354 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+12	355	3	#line 355 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+12	356	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+12	3758	5	#line 3758 "NXCDefs.h"
+12	3759	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+12	3758	7	#line 3758 "NXCDefs.h"
+12	3758	7	#line 3758 "NXCDefs.h"
+12	3759	7		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+12	3758	9	#line 3758 "NXCDefs.h"
+12	3759	9		tst 5, __zfSetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+12	3758	12	#line 3758 "NXCDefs.h"
+12	3759	12		brtst 4, __004__NXC_Label_36, __zfSetSensorLowspeed_inline_inicializaSensores
+12	3758	15	#line 3758 "NXCDefs.h"
+12	3759	15		set __D0SetSensorLowspeed_inline_inicializaSensores, 11
+12	3758	18	#line 3758 "NXCDefs.h"
+12	3759	18		jmp __004__NXC_Label_37
+12	3758	20	#line 3758 "NXCDefs.h"
+12	3759	20		set __D0SetSensorLowspeed_inline_inicializaSensores, 10
+12	3758	23	#line 3758 "NXCDefs.h"
+12	3759	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __D0SetSensorLowspeed_inline_inicializaSensores
+12	3663	25	#line 3663 "NXCDefs.h"
+12	3664	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+12	3663	29	#line 3663 "NXCDefs.h"
+12	3759	29	#line 3759 "NXCDefs.h"
+12	3759	29	#line 3759 "NXCDefs.h"
+12	3760	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+12	3759	31	#line 3759 "NXCDefs.h"
+12	3759	31	#line 3759 "NXCDefs.h"
+12	3760	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+12	3759	34	#line 3759 "NXCDefs.h"
+12	3676	34	#line 3676 "NXCDefs.h"
+12	3677	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+12	3676	38	#line 3676 "NXCDefs.h"
+12	3760	38	#line 3760 "NXCDefs.h"
+12	3760	38	#line 3760 "NXCDefs.h"
+12	3761	38		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+12	3760	40	#line 3760 "NXCDefs.h"
+12	3694	40	#line 3694 "NXCDefs.h"
+12	3695	40	#pragma macro 4
+12	3695	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+12	3695	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+12	6935	44	#line 6935 "NXCDefs.h"
+12	3694	44	#line 3694 "NXCDefs.h"
+12	3761	44	#line 3761 "NXCDefs.h"
+12	355	44	#line 355 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+12	355	44	#line 355 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+12	356	44		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 1
+12	355	47	#line 355 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+12	356	47	#line 356 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+12	357	47		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+12	3758	49	#line 3758 "NXCDefs.h"
+12	3759	49		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+12	3758	51	#line 3758 "NXCDefs.h"
+12	3758	51	#line 3758 "NXCDefs.h"
+12	3759	51		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+12	3758	53	#line 3758 "NXCDefs.h"
+12	3759	53		tst 5, __zfSetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+12	3758	56	#line 3758 "NXCDefs.h"
+12	3759	56		brtst 4, __005__NXC_Label_36, __zfSetSensorLowspeed_inline_inicializaSensores
+12	3758	59	#line 3758 "NXCDefs.h"
+12	3759	59		set __D0SetSensorLowspeed_inline_inicializaSensores, 11
+12	3758	62	#line 3758 "NXCDefs.h"
+12	3759	62		jmp __005__NXC_Label_37
+12	3758	64	#line 3758 "NXCDefs.h"
+12	3759	64		set __D0SetSensorLowspeed_inline_inicializaSensores, 10
+12	3758	67	#line 3758 "NXCDefs.h"
+12	3759	67		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __D0SetSensorLowspeed_inline_inicializaSensores
+12	3663	69	#line 3663 "NXCDefs.h"
+12	3664	69		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+12	3663	73	#line 3663 "NXCDefs.h"
+12	3759	73	#line 3759 "NXCDefs.h"
+12	3759	73	#line 3759 "NXCDefs.h"
+12	3760	73		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+12	3759	75	#line 3759 "NXCDefs.h"
+12	3759	75	#line 3759 "NXCDefs.h"
+12	3760	75		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+12	3759	78	#line 3759 "NXCDefs.h"
+12	3676	78	#line 3676 "NXCDefs.h"
+12	3677	78		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+12	3676	82	#line 3676 "NXCDefs.h"
+12	3760	82	#line 3760 "NXCDefs.h"
+12	3760	82	#line 3760 "NXCDefs.h"
+12	3761	82		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+12	3760	84	#line 3760 "NXCDefs.h"
+12	3694	84	#line 3694 "NXCDefs.h"
+12	3695	84	#pragma macro 4
+12	3695	84		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+12	3695	86		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+12	7002	88	#line 7002 "NXCDefs.h"
+12	3694	88	#line 3694 "NXCDefs.h"
+12	3761	88	#line 3761 "NXCDefs.h"
+12	356	88	#line 356 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+12	356	88	#line 356 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+12	357	88		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 2
+12	356	91	#line 356 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+12	357	91	#line 357 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+12	358	91		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+12	3758	93	#line 3758 "NXCDefs.h"
+12	3759	93		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+12	3758	95	#line 3758 "NXCDefs.h"
+12	3758	95	#line 3758 "NXCDefs.h"
+12	3759	95		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+12	3758	97	#line 3758 "NXCDefs.h"
+12	3759	97		tst 5, __zfSetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+12	3758	100	#line 3758 "NXCDefs.h"
+12	3759	100		brtst 4, __006__NXC_Label_36, __zfSetSensorLowspeed_inline_inicializaSensores
+12	3758	103	#line 3758 "NXCDefs.h"
+12	3759	103		set __D0SetSensorLowspeed_inline_inicializaSensores, 11
+12	3758	106	#line 3758 "NXCDefs.h"
+12	3759	106		jmp __006__NXC_Label_37
+12	3758	108	#line 3758 "NXCDefs.h"
+12	3759	108		set __D0SetSensorLowspeed_inline_inicializaSensores, 10
+12	3758	111	#line 3758 "NXCDefs.h"
+12	3759	111		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __D0SetSensorLowspeed_inline_inicializaSensores
+12	3663	113	#line 3663 "NXCDefs.h"
+12	3664	113		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+12	3663	117	#line 3663 "NXCDefs.h"
+12	3759	117	#line 3759 "NXCDefs.h"
+12	3759	117	#line 3759 "NXCDefs.h"
+12	3760	117		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+12	3759	119	#line 3759 "NXCDefs.h"
+12	3759	119	#line 3759 "NXCDefs.h"
+12	3760	119		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+12	3759	122	#line 3759 "NXCDefs.h"
+12	3676	122	#line 3676 "NXCDefs.h"
+12	3677	122		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+12	3676	126	#line 3676 "NXCDefs.h"
+12	3760	126	#line 3760 "NXCDefs.h"
+12	3760	126	#line 3760 "NXCDefs.h"
+12	3761	126		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+12	3760	128	#line 3760 "NXCDefs.h"
+12	3694	128	#line 3694 "NXCDefs.h"
+12	3695	128	#pragma macro 4
+12	3695	128		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+12	3695	130		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+12	7069	132	#line 7069 "NXCDefs.h"
+12	3694	132	#line 3694 "NXCDefs.h"
+12	3761	132	#line 3761 "NXCDefs.h"
+12	357	132	#line 357 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+12	357	132	#line 357 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+12	358	132		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 3
+12	357	135	#line 357 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+12	358	135	#line 358 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+12	359	135		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+12	3758	137	#line 3758 "NXCDefs.h"
+12	3759	137		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+12	3758	139	#line 3758 "NXCDefs.h"
+12	3758	139	#line 3758 "NXCDefs.h"
+12	3759	139		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+12	3758	141	#line 3758 "NXCDefs.h"
+12	3759	141		tst 5, __zfSetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+12	3758	144	#line 3758 "NXCDefs.h"
+12	3759	144		brtst 4, __007__NXC_Label_36, __zfSetSensorLowspeed_inline_inicializaSensores
+12	3758	147	#line 3758 "NXCDefs.h"
+12	3759	147		set __D0SetSensorLowspeed_inline_inicializaSensores, 11
+12	3758	150	#line 3758 "NXCDefs.h"
+12	3759	150		jmp __007__NXC_Label_37
+12	3758	152	#line 3758 "NXCDefs.h"
+12	3759	152		set __D0SetSensorLowspeed_inline_inicializaSensores, 10
+12	3758	155	#line 3758 "NXCDefs.h"
+12	3759	155		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __D0SetSensorLowspeed_inline_inicializaSensores
+12	3663	157	#line 3663 "NXCDefs.h"
+12	3664	157		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+12	3663	161	#line 3663 "NXCDefs.h"
+12	3759	161	#line 3759 "NXCDefs.h"
+12	3759	161	#line 3759 "NXCDefs.h"
+12	3760	161		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+12	3759	163	#line 3759 "NXCDefs.h"
+12	3759	163	#line 3759 "NXCDefs.h"
+12	3760	163		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+12	3759	166	#line 3759 "NXCDefs.h"
+12	3676	166	#line 3676 "NXCDefs.h"
+12	3677	166		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+12	3676	170	#line 3676 "NXCDefs.h"
+12	3760	170	#line 3760 "NXCDefs.h"
+12	3760	170	#line 3760 "NXCDefs.h"
+12	3761	170		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+12	3760	172	#line 3760 "NXCDefs.h"
+12	3694	172	#line 3694 "NXCDefs.h"
+12	3695	172	#pragma macro 4
+12	3695	172		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+12	3695	174		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+12	7136	176	#line 7136 "NXCDefs.h"
+12	3694	176	#line 3694 "NXCDefs.h"
+12	3761	176	#line 3761 "NXCDefs.h"
+12	358	176	#line 358 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+12	360	176	#line 360 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+12	361	176		subret __inicializaSensores_return
+13	371	0	#line 371 "C:\Users\natia\AppData\Local\Temp\temp.nxc"
+13	372	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
-0	main	0	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc
-1	PlaySound	7	NXCDefs.h
-2	bip	406	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc
-3	distanciaTachoCount	413	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc
-4	MyOnFwd	424	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc
-5	MyOnFwdSyncPID	493	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc
-6	MyOnRevSyncPID	548	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc
-7	RetoPID	604	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc
-8	__initialize_global_data	757	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc
+0	main	0	C:\Users\natia\AppData\Local\Temp\temp.nxc
+1	__ResetSensorSubroutine	18	NXTDefs.h
+2	__ReadLSBytes0	31	NXTDefs.h
+3	__ReadLSBytes1	116	NXTDefs.h
+4	__ReadLSBytes2	201	NXTDefs.h
+5	__ReadLSBytes3	286	NXTDefs.h
+6	distanciaTachoCount	371	C:\Users\natia\AppData\Local\Temp\temp.nxc
+7	MyOnFwd	379	C:\Users\natia\AppData\Local\Temp\temp.nxc
+8	MyOnRevSyncPID	452	C:\Users\natia\AppData\Local\Temp\temp.nxc
+9	andaRetoUS	508	C:\Users\natia\AppData\Local\Temp\temp.nxc
+10	CorDoChao	994	C:\Users\natia\AppData\Local\Temp\temp.nxc
+11	DaReh	1063	C:\Users\natia\AppData\Local\Temp\temp.nxc
+12	inicializaSensores	1136	C:\Users\natia\AppData\Local\Temp\temp.nxc
+13	__initialize_global_data	1314	C:\Users\natia\AppData\Local\Temp\temp.nxc

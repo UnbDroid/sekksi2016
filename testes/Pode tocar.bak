@@ -1,0 +1,95 @@
+//SENSORES E MOTORES
+#define MD OUT_B //motor da direita
+#define ME OUT_A //motor da esquerda
+#define MP OUT_C //motor da porta
+#define USD IN_1 //Utrasonico da direita
+#define USE IN_2 //Utrasonico da esquerda
+#define HTD IN_3//hitech da direita
+#define HTE IN_4//hitech da esquerda
+#define MD_ME OUT_AB// os dois motores de movimento
+
+//cor do chao
+#define CHAO_PRETO 14
+#define CHAO_BRANCO 13
+#define CHAO_VERDE 4
+#define CHAO_AZUL 2
+
+//CONSTANTES ANDAR
+#define DIST_0_9M 90
+#define DIST_1M 100
+#define DIST_2M 200
+#define DIST_2_95M 295
+#define DIST_PAREDE 8
+#define DIST_RE 30
+
+
+//CONSTANTES PID
+#define TENDE_DIRESQ 1// de -100(vira pra direita) a 100(vira pra esquerda)
+#define P_FRENTE 300
+#define I_FRENTE 50
+#define D_FRENTE 150
+#define P_TRAS 200
+#define I_TRAS 100
+#define D_TRAS 200
+
+//DECLARAÇÃO DE DIREÇÕES
+#define ESQUERDA 2
+#define DIREITA 3
+
+//Declaração de variáveis globais
+int poteGlobal = 90;
+int potdGlobal = 80;
+int MyTcD = 0;
+int MyTcE = 0;
+
+
+void andaRetoDireita(int distParede, int distAndar){ // função que faz o robô andar à "distParede" centímetros da parede por "distAndar" centímetros
+     int distanciaAtual, potd, pote;
+     int corEsq, corDir;
+     MyTcD = 0;
+     MyTcE = 0;
+
+     while(distanciaTachoCount((MyTcD + MyTcE)/2) < (distAndar*100)){
+       distanciaAtual = SensorUS(USD);
+
+       //bip();
+       //bip();
+       CorDoChao(corEsq, corDir);
+
+       if (distanciaAtual == distParede){
+         potd = 90;
+         pote = 90;
+       }
+       else if(distanciaAtual > distParede){
+         pote = 90;
+         potd = 70;
+       }
+       else if(distanciaAtual < distParede){
+         pote = 70;
+         potd = 90;
+       }
+
+       MyTcD += MotorTachoCount(MD);
+       OnFwd(MD, potd);
+       MyTcE += MotorTachoCount(ME);
+       OnFwd(ME, pote);
+
+     }
+
+     Off(MD);
+     Off(ME);
+}
+
+void inicializaSensores()
+{
+  SetSensorLowspeed(USD);
+  SetSensorLowspeed(USE);
+  SetSensorLowspeed(HTD);
+  SetSensorLowspeed(HTE);
+}
+
+task main(){
+   inicializaSensores();
+   andaRetoDireita( 15, 100);
+
+}
