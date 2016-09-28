@@ -1,0 +1,17 @@
+//funcao para receber a leitura dos sensores HT (leitura da cor do chao)
+
+#define HTESQ IN_4
+#define HTDIR IN_3
+
+task main() {
+     SetSensorLowspeed(HTESQ);
+     SetSensorLowspeed(HTDIR);
+     while(TRUE) {
+          ClearScreen();
+          TextOut(0, LCD_LINE1, "HT esquerdo:");
+          NumOut(40, LCD_LINE2, SensorHTColorNum(HTESQ));
+          TextOut(0, LCD_LINE4, "HT direito:");
+          NumOut(40, LCD_LINE5, SensorHTColorNum(HTDIR));
+          Wait(50);
+     }
+}
