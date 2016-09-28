@@ -18,9 +18,18 @@ int distanciaGiro(int grau);
 void AndaReto();
 void Regula(int iteracoes);
 void MyOnFwd(int motor, int pot);
-void testeTacho();
+void MyOnRev(int motor, int pot);
+void MyOnFwdSyncPID(int motores, int pot, int turnDirEsq, int p, int i, int d);
+void MyOnRevSyncPID(int motores, int pot, int turnDirEsq, int p, int i, int d);
 
+//Debug
+void testeTacho();
 void RetoPID();
+ 
+void  bip()
+{
+  PlaySound(SOUND_DOWN);
+}
 
 //Declaração de variáveis globais
 int poteGlobal = 90;
@@ -59,11 +68,8 @@ void Regula(int iteracoes){
                poteGlobal -= 1;
         }
         i++;
-     }
-     
-     
+     }   
 }
-
 
 void AndaReto(){
      int tachoE = 0, tachoD = 0;
@@ -96,10 +102,42 @@ void MyOnFwd(int motor, int pot)
   OnFwd(motor,pot);
 }
 
+void MyOnRev(int motor, int pot)
+{
+  //bip();
+  //Wait(350)
+  if(motor == MD)
+  {
+    MyTcD -= MotorTachoCount(motor);
+  }
+  else if(motor == ME)
+  {
+    MyTcE -= MotorTachoCount(motor);
+  }
+  //bip();
+  OnRev(motor,pot);
+}
+
+void MyOnFwdSyncPID(int motores, int pot, int turnDirEsq, int p, int i, int d){
+  
+  MyTcD += MotorTachoCount(MD);
+  MyTcE += MotorTachoCount(ME);
+  bip();
+  OnFwdSyncPID(motores, pot, turnDirEsq, p, i ,d);
+  bip();
+}
+
+void MyOnRevSyncPID(int motores, int pot, int turnDirEsq, int p, int i, int d){
+  MyTcD += MotorTachoCount(MD);
+  MyTcE += MotorTachoCount(ME);
+  OnRevSyncPID(motores, pot, turnDirEsq, p, i ,d);
+}
+
+
 void RetoPID()
 {
   int tachoE = 0, tachoD = 0;
-  OnFwdSyncPID(MD_ME,potdGlobal,1,200,100,200);
+  MyOnFwdSyncPID(MD_ME,potdGlobal,1,200,100,200);
 
   while(distanciaTachoCount((tachoE + tachoD)/2)<DIST_2M*100){
         tachoE = MotorTachoCount(ME);
@@ -110,38 +148,43 @@ void RetoPID()
      Wait(100);
      tachoE = 0;
      tachoD = 0;
-     OnRevSyncPID(MD_ME,potdGlobal,1,100,100,150);
+     MyOnRevSyncPID(MD_ME,potdGlobal,1,100,100,150);
      while(distanciaTachoCount((tachoE + tachoD)/2)> - DIST_2M*100){
         tachoE = MotorTachoCount(ME);
         tachoD = MotorTachoCount(MD);
      }
      MyOnFwd(MD, 0);
      MyOnFwd(ME, 0);
-
-
 }
 
 void testeTacho(){
   int tachoD = 0, tachoE = 0;
+  MyTcD = 0;
+  MyTcE = 0;
 
-  tachoD = MotorTachoCount(MD);
 
-  NumOut(0, LCD_LINE1, tachoD);
+  MyTcD = MotorTachoCount(MD);
+
+  NumOut(0, LCD_LINE1, MyTcD);
   
-  OnFwdSyncPID(MD_ME,potdGlobal,1,200,100,200);
+  
+  MyOnFwdSyncPID(MD_ME,potdGlobal,1,200,100,200);
   
    while(distanciaTachoCount((tachoE + tachoD)/2)<DIST_2M*100){
         tachoE = MotorTachoCount(ME);
         tachoD = MotorTachoCount(MD);
-        NumOut(0, LCD_LINE3, tachoD);
+        MyTcD = MotorTachoCount(MD);
+        NumOut(0, LCD_LINE3, MyTcD);
+        NumOut(0, LCD_LINE2, tachoD);
      }
-     OnFwdSyncPID(MD_ME,potdGlobal,1,200,100,200);
+     MyOnFwdSyncPID(MD_ME,potdGlobal,1,200,100,200);
      Wait(100);
 
      tachoD = MotorTachoCount(MD);
+     NumOut(0, LCD_LINE5, MyTcD);
      NumOut(0, LCD_LINE4, tachoD);
-     Off(MD_ME);
-     
+
+     Off(MD_ME); 
 while(1);
 }
  

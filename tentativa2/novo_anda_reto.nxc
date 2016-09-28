@@ -122,8 +122,9 @@ void MyOnFwdSyncPID(int motores, int pot, int turnDirEsq, int p, int i, int d){
   
   MyTcD += MotorTachoCount(MD);
   MyTcE += MotorTachoCount(ME);
-
-  OnFwdSyncPID(motores, pot, turnDirEsq, p, i ,d);
+  bip();
+  //OnFwdSyncPID(motores, pot, turnDirEsq, p, i ,d);
+  OnFwdSyncPID(MD_ME,potdGlobal,1,100,100,150);
   bip();
 }
 

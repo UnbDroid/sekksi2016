@@ -16,10 +16,10 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 13	__signed_stack_002PlaySound	6	1	52	4	14
 14	__D0distanciaTachoCount	6	1	56	4	2
 15	__SPTArgsMutex	9	0	60	4	14
-16	__MyOnFwdSyncPID_7qG2_pot_7qG2_000	4	1	64	2	3
-17	__MyOnFwdSyncPID_7qG2_turnDirEsq_7qG2_000	4	1	66	2	3
-18	__MyOnFwdSyncPID_7qG2_p_7qG2_000	4	1	68	2	3
-19	__MyOnFwdSyncPID_7qG2_motores_7qG2_000	4	1	70	2	3
+16	__MyOnFwdSyncPID_7qG2_pot_7qG2_000	4	1	64	2	2
+17	__MyOnFwdSyncPID_7qG2_turnDirEsq_7qG2_000	4	1	66	2	2
+18	__MyOnFwdSyncPID_7qG2_p_7qG2_000	4	1	68	2	2
+19	__MyOnFwdSyncPID_7qG2_motores_7qG2_000	4	1	70	2	2
 20	__PlaySound_7qG2_i_7qG2_001	4	1	72	2	15
 21	__constVal500	4	0	74	2	1
 22	__distanciaTachoCount_7qG2_grau_7qG2_000	4	1	76	2	2
@@ -27,9 +27,9 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 24	__testeTacho_7qG2_tachoD_7qG2_000	4	1	80	2	6
 25	__testeTacho_7qG2_tachoE_7qG2_000	4	1	82	2	3
 26	MyTcD	4	1	84	2	8
-27	__MyOnFwdSyncPID_7qG2_i_7qG2_000	4	1	86	2	3
-28	__MyOnFwdSyncPID_7qG2_d_7qG2_000	4	1	88	2	3
-29	potdGlobal	4	0	90	2	2
+27	__MyOnFwdSyncPID_7qG2_i_7qG2_000	4	1	86	2	2
+28	__MyOnFwdSyncPID_7qG2_d_7qG2_000	4	1	88	2	2
+29	potdGlobal	4	0	90	2	3
 30	__constVal150	4	0	92	2	1
 31	__PlaySound_7qG2_aCode_7qG2_000	4	1	94	2	7
 32	__constVal200	4	0	96	2	1
@@ -48,7 +48,7 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 45	__constVal32	2	0	110	1	4
 46	__constVal50	2	0	111	1	1
 47	__constVal2	2	0	112	1	1
-48	__bip_return	1	1	113	1	3
+48	__bip_return	1	1	113	1	4
 49	__constVal3	2	0	114	1	1
 50	__SPTArgs	8	0	5	8	42
 51	__SPTArgs.Result	2	1	116	1	42
@@ -64,7 +64,7 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 61	__TextOutArgs.Text	7	0	132	4	27
 62	__TextOutArgs.Text.Text_type	1	0	0	1	0
 63	__TextOutArgs.Options	5	1	136	4	27
-64	__OUT_AB	7	0	140	4	1
+64	__OUT_AB	7	0	140	4	2
 65	__OUT_AB.__OUT_AB_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
@@ -486,269 +486,272 @@ Clump	Line	PC	Source
 4	123	12	#line 123 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
 4	124	12		add MyTcE, MyTcE, __D0MyOnFwdSyncPID
 4	123	16	#line 123 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	125	16	#line 125 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	126	16		mov __signed_stack_001MyOnFwdSyncPID, __MyOnFwdSyncPID_7qG2_pot_7qG2_000
-4	125	18	#line 125 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	125	18	#line 125 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	126	18		mov __signed_stack_002MyOnFwdSyncPID, __MyOnFwdSyncPID_7qG2_turnDirEsq_7qG2_000
-4	125	20	#line 125 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	125	20	#line 125 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	126	20		mov __signed_stack_003MyOnFwdSyncPID, __MyOnFwdSyncPID_7qG2_p_7qG2_000
-4	125	22	#line 125 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	125	22	#line 125 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	126	22		mov __signed_stack_004MyOnFwdSyncPID, __MyOnFwdSyncPID_7qG2_i_7qG2_000
-4	125	24	#line 125 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	125	24	#line 125 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	126	24		mov __D0MyOnFwdSyncPID, __MyOnFwdSyncPID_7qG2_d_7qG2_000
-4	125	26	#line 125 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	126	26	#pragma macro 7
-4	126	26		setout __MyOnFwdSyncPID_7qG2_motores_7qG2_000, 2, __signed_stack_001MyOnFwdSyncPID, 1, __constVal7, 8, __constVal2, 7, __signed_stack_002MyOnFwdSyncPID, 6, __constVal32, 5, __constVal0, 10, __signed_stack_003MyOnFwdSyncPID, 11, __signed_stack_004MyOnFwdSyncPID, 12, __D0MyOnFwdSyncPID, 0, __constVal63
-4	5204	49	#line 5204 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	125	49	#line 125 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	126	49	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	127	49		subcall bip, __bip_return
-4	126	51	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	129	51	#line 129 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-4	130	51		subret __MyOnFwdSyncPID_return
-5	160	0	#line 160 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	161	0		set __testeTacho_7qG2_tachoD_7qG2_000, 0
-5	160	3	#line 160 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	160	3	#line 160 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	161	3		set __testeTacho_7qG2_tachoE_7qG2_000, 0
-5	160	6	#line 160 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+4	124	16	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+4	125	16		subcall bip, __bip_return
+4	124	18	#line 124 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+4	126	18	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+4	127	18		mov __signed_stack_001MyOnFwdSyncPID, potdGlobal
+4	126	20	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+4	126	20	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+4	127	20		set __signed_stack_002MyOnFwdSyncPID, 1
+4	126	23	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+4	126	23	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+4	127	23		set __signed_stack_003MyOnFwdSyncPID, 100
+4	126	26	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+4	126	26	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+4	127	26		set __signed_stack_004MyOnFwdSyncPID, 100
+4	126	29	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+4	126	29	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+4	127	29		set __D0MyOnFwdSyncPID, 150
+4	126	32	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+4	127	32	#pragma macro 7
+4	127	32		setout __OUT_AB, 2, __signed_stack_001MyOnFwdSyncPID, 1, __constVal7, 8, __constVal2, 7, __signed_stack_002MyOnFwdSyncPID, 6, __constVal32, 5, __constVal0, 10, __signed_stack_003MyOnFwdSyncPID, 11, __signed_stack_004MyOnFwdSyncPID, 12, __D0MyOnFwdSyncPID, 0, __constVal63
+4	5199	55	#line 5199 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+4	126	55	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+4	127	55	#line 127 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+4	128	55		subcall bip, __bip_return
+4	127	57	#line 127 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+4	130	57	#line 130 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+4	131	57		subret __MyOnFwdSyncPID_return
+5	161	0	#line 161 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	162	0		set __testeTacho_7qG2_tachoD_7qG2_000, 0
+5	161	3	#line 161 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	161	3	#line 161 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	162	3		set __testeTacho_7qG2_tachoE_7qG2_000, 0
 5	161	6	#line 161 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	162	6		set MyTcD, 0
-5	161	9	#line 161 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	161	9	#line 161 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	162	6	#line 162 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	163	6		set MyTcD, 0
 5	162	9	#line 162 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	163	9		set MyTcE, 0
-5	162	12	#line 162 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	162	12	#line 162 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	165	12	#line 165 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	166	12		getout MyTcD, __constVal1, 4
-5	165	16	#line 165 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	165	16	#line 165 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	167	16	#line 167 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	168	16		set __signed_stack_001testeTacho, 0
-5	167	19	#line 167 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	167	19	#line 167 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	168	19		set __signed_stack_002testeTacho, 56
-5	167	22	#line 167 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	167	22	#line 167 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	168	22		mov __D0testeTacho, MyTcD
-5	167	24	#line 167 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	167	24	#line 167 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	168	24		mov __TextOutArgs.Location.X, __signed_stack_001testeTacho
-5	167	26	#line 167 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	168	26		mov __TextOutArgs.Location.Y, __signed_stack_002testeTacho
-5	167	28	#line 167 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	168	28		set __TextOutArgs.Options, 0
-5	167	31	#line 167 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	168	31		numtostr __TextOutArgs.Text, __D0testeTacho
-5	167	34	#line 167 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	168	34		syscall 13, __TextOutArgs
-5	167	37	#line 167 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	167	37	#line 167 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	167	37	#line 167 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	170	37	#line 170 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	171	37		set __MyOnFwdSyncPID_7qG2_motores_7qG2_000, 3
-5	170	40	#line 170 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	170	40	#line 170 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	171	40		mov __MyOnFwdSyncPID_7qG2_pot_7qG2_000, potdGlobal
-5	170	42	#line 170 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	170	42	#line 170 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	171	42		set __MyOnFwdSyncPID_7qG2_turnDirEsq_7qG2_000, 1
-5	170	45	#line 170 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	170	45	#line 170 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	171	45		set __MyOnFwdSyncPID_7qG2_p_7qG2_000, 200
-5	170	48	#line 170 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	170	48	#line 170 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	171	48		set __MyOnFwdSyncPID_7qG2_i_7qG2_000, 100
-5	170	51	#line 170 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	170	51	#line 170 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	171	51		set __MyOnFwdSyncPID_7qG2_d_7qG2_000, 200
-5	170	54	#line 170 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	170	54	#line 170 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	171	54		subcall MyOnFwdSyncPID, __MyOnFwdSyncPID_return
-5	170	56	#line 170 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	172	56	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	172	56	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	172	56	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	172	56	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	173	56		add __signed_stack_001testeTacho, __testeTacho_7qG2_tachoE_7qG2_000, __testeTacho_7qG2_tachoD_7qG2_000
-5	172	60	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	172	60	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	173	60		set __D0testeTacho, 2
-5	172	63	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	173	63		div __distanciaTachoCount_7qG2_grau_7qG2_000, __signed_stack_001testeTacho, __D0testeTacho
-5	172	67	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	172	67	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	173	67		subcall distanciaTachoCount, __distanciaTachoCount_return
-5	172	69	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	173	69		mov __signed_stack_001testeTacho, __D0distanciaTachoCount
-5	172	71	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	172	71	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	173	71		set __D0testeTacho, 20000
-5	172	74	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	173	74		cmp 0, __D0testeTacho, __signed_stack_001testeTacho, __D0testeTacho
-5	173	78	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	174	78		brtst 4, __ASM_Label_794, __D0testeTacho
-5	173	81	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	174	81		getout __testeTacho_7qG2_tachoE_7qG2_000, __constVal0, 4
-5	173	85	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	173	85	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	162	9	#line 162 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	163	9	#line 163 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	164	9		set MyTcE, 0
+5	163	12	#line 163 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	163	12	#line 163 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	166	12	#line 166 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	167	12		getout MyTcD, __constVal1, 4
+5	166	16	#line 166 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	166	16	#line 166 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	168	16	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	169	16		set __signed_stack_001testeTacho, 0
+5	168	19	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	168	19	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	169	19		set __signed_stack_002testeTacho, 56
+5	168	22	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	168	22	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	169	22		mov __D0testeTacho, MyTcD
+5	168	24	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	168	24	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	169	24		mov __TextOutArgs.Location.X, __signed_stack_001testeTacho
+5	168	26	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	169	26		mov __TextOutArgs.Location.Y, __signed_stack_002testeTacho
+5	168	28	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	169	28		set __TextOutArgs.Options, 0
+5	168	31	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	169	31		numtostr __TextOutArgs.Text, __D0testeTacho
+5	168	34	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	169	34		syscall 13, __TextOutArgs
+5	168	37	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	168	37	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	168	37	#line 168 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	171	37	#line 171 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	172	37		set __MyOnFwdSyncPID_7qG2_motores_7qG2_000, 3
+5	171	40	#line 171 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	171	40	#line 171 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	172	40		mov __MyOnFwdSyncPID_7qG2_pot_7qG2_000, potdGlobal
+5	171	42	#line 171 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	171	42	#line 171 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	172	42		set __MyOnFwdSyncPID_7qG2_turnDirEsq_7qG2_000, 1
+5	171	45	#line 171 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	171	45	#line 171 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	172	45		set __MyOnFwdSyncPID_7qG2_p_7qG2_000, 200
+5	171	48	#line 171 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	171	48	#line 171 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	172	48		set __MyOnFwdSyncPID_7qG2_i_7qG2_000, 100
+5	171	51	#line 171 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	171	51	#line 171 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	172	51		set __MyOnFwdSyncPID_7qG2_d_7qG2_000, 200
+5	171	54	#line 171 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	171	54	#line 171 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	172	54		subcall MyOnFwdSyncPID, __MyOnFwdSyncPID_return
+5	171	56	#line 171 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	173	56	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	173	56	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	173	56	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	173	56	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	174	56		add __signed_stack_001testeTacho, __testeTacho_7qG2_tachoE_7qG2_000, __testeTacho_7qG2_tachoD_7qG2_000
+5	173	60	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	173	60	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	174	60		set __D0testeTacho, 2
+5	173	63	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	174	63		div __distanciaTachoCount_7qG2_grau_7qG2_000, __signed_stack_001testeTacho, __D0testeTacho
+5	173	67	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	173	67	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	174	67		subcall distanciaTachoCount, __distanciaTachoCount_return
+5	173	69	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	174	69		mov __signed_stack_001testeTacho, __D0distanciaTachoCount
+5	173	71	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	173	71	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	174	71		set __D0testeTacho, 20000
+5	173	74	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	174	74		cmp 0, __D0testeTacho, __signed_stack_001testeTacho, __D0testeTacho
+5	174	78	#line 174 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	175	78		brtst 4, __ASM_Label_794, __D0testeTacho
+5	174	81	#line 174 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	175	81		getout __testeTacho_7qG2_tachoE_7qG2_000, __constVal0, 4
 5	174	85	#line 174 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	175	85		getout __testeTacho_7qG2_tachoD_7qG2_000, __constVal1, 4
-5	174	89	#line 174 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	174	89	#line 174 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	174	85	#line 174 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	175	85	#line 175 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	176	85		getout __testeTacho_7qG2_tachoD_7qG2_000, __constVal1, 4
 5	175	89	#line 175 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	176	89		getout MyTcD, __constVal1, 4
-5	175	93	#line 175 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	175	93	#line 175 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	175	89	#line 175 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	176	89	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	177	89		getout MyTcD, __constVal1, 4
 5	176	93	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	177	93		set __signed_stack_001testeTacho, 0
-5	176	96	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	176	96	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	177	96		set __signed_stack_002testeTacho, 40
-5	176	99	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	176	99	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	177	99		mov __D0testeTacho, MyTcD
-5	176	101	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	176	101	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	177	101		mov __TextOutArgs.Location.X, __signed_stack_001testeTacho
-5	176	103	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	177	103		mov __TextOutArgs.Location.Y, __signed_stack_002testeTacho
-5	176	105	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	177	105		set __TextOutArgs.Options, 0
-5	176	108	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	177	108		numtostr __TextOutArgs.Text, __D0testeTacho
-5	176	111	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	177	111		syscall 13, __TextOutArgs
-5	176	114	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	176	114	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	176	114	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	176	93	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	177	93	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	178	93		set __signed_stack_001testeTacho, 0
+5	177	96	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	177	96	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	178	96		set __signed_stack_002testeTacho, 40
+5	177	99	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	177	99	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	178	99		mov __D0testeTacho, MyTcD
+5	177	101	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	177	101	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	178	101		mov __TextOutArgs.Location.X, __signed_stack_001testeTacho
+5	177	103	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	178	103		mov __TextOutArgs.Location.Y, __signed_stack_002testeTacho
+5	177	105	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	178	105		set __TextOutArgs.Options, 0
+5	177	108	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	178	108		numtostr __TextOutArgs.Text, __D0testeTacho
+5	177	111	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	178	111		syscall 13, __TextOutArgs
 5	177	114	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	178	114		set __signed_stack_001testeTacho, 0
-5	177	117	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	177	117	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	178	117		set __signed_stack_002testeTacho, 48
-5	177	120	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	177	120	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	178	120		mov __D0testeTacho, __testeTacho_7qG2_tachoD_7qG2_000
-5	177	122	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	177	122	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	178	122		mov __TextOutArgs.Location.X, __signed_stack_001testeTacho
-5	177	124	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	178	124		mov __TextOutArgs.Location.Y, __signed_stack_002testeTacho
-5	177	126	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	178	126		set __TextOutArgs.Options, 0
-5	177	129	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	178	129		numtostr __TextOutArgs.Text, __D0testeTacho
-5	177	132	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	178	132		syscall 13, __TextOutArgs
-5	177	135	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	178	135		mov __D0testeTacho, __TextOutArgs.Result
-5	177	137	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	177	137	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	179	137	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	180	137		jmp __ASM_Label_793
-5	179	139	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	179	139	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	180	139		set __MyOnFwdSyncPID_7qG2_motores_7qG2_000, 3
-5	179	142	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	179	142	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	180	142		mov __MyOnFwdSyncPID_7qG2_pot_7qG2_000, potdGlobal
-5	179	144	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	179	144	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	180	144		set __MyOnFwdSyncPID_7qG2_turnDirEsq_7qG2_000, 1
-5	179	147	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	179	147	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	180	147		set __MyOnFwdSyncPID_7qG2_p_7qG2_000, 200
-5	179	150	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	179	150	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	180	150		set __MyOnFwdSyncPID_7qG2_i_7qG2_000, 100
-5	179	153	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	179	153	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	180	153		set __MyOnFwdSyncPID_7qG2_d_7qG2_000, 200
-5	179	156	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	179	156	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	180	156		subcall MyOnFwdSyncPID, __MyOnFwdSyncPID_return
-5	179	158	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	177	114	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	177	114	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	178	114	#line 178 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	179	114		set __signed_stack_001testeTacho, 0
+5	178	117	#line 178 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	178	117	#line 178 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	179	117		set __signed_stack_002testeTacho, 48
+5	178	120	#line 178 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	178	120	#line 178 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	179	120		mov __D0testeTacho, __testeTacho_7qG2_tachoD_7qG2_000
+5	178	122	#line 178 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	178	122	#line 178 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	179	122		mov __TextOutArgs.Location.X, __signed_stack_001testeTacho
+5	178	124	#line 178 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	179	124		mov __TextOutArgs.Location.Y, __signed_stack_002testeTacho
+5	178	126	#line 178 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	179	126		set __TextOutArgs.Options, 0
+5	178	129	#line 178 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	179	129		numtostr __TextOutArgs.Text, __D0testeTacho
+5	178	132	#line 178 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	179	132		syscall 13, __TextOutArgs
+5	178	135	#line 178 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	179	135		mov __D0testeTacho, __TextOutArgs.Result
+5	178	137	#line 178 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	178	137	#line 178 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	180	137	#line 180 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	181	137		jmp __ASM_Label_793
+5	180	139	#line 180 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	180	139	#line 180 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	181	139		set __MyOnFwdSyncPID_7qG2_motores_7qG2_000, 3
+5	180	142	#line 180 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	180	142	#line 180 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	181	142		mov __MyOnFwdSyncPID_7qG2_pot_7qG2_000, potdGlobal
+5	180	144	#line 180 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	180	144	#line 180 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	181	144		set __MyOnFwdSyncPID_7qG2_turnDirEsq_7qG2_000, 1
+5	180	147	#line 180 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	180	147	#line 180 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	181	147		set __MyOnFwdSyncPID_7qG2_p_7qG2_000, 200
+5	180	150	#line 180 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	180	150	#line 180 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	181	150		set __MyOnFwdSyncPID_7qG2_i_7qG2_000, 100
+5	180	153	#line 180 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	180	153	#line 180 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	181	153		set __MyOnFwdSyncPID_7qG2_d_7qG2_000, 200
+5	180	156	#line 180 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	180	156	#line 180 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	181	156		subcall MyOnFwdSyncPID, __MyOnFwdSyncPID_return
 5	180	158	#line 180 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	181	158		set __Wait_7qG2_ms_7qG2_000_inline_testeTacho, 100
-5	180	161	#line 180 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	181	158	#line 181 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	182	158		set __Wait_7qG2_ms_7qG2_000_inline_testeTacho, 100
+5	181	161	#line 181 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
 5	8869	161	#line 8869 "NXCDefs.h"
 5	8870	161		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_testeTacho
 5	8869	164	#line 8869 "NXCDefs.h"
-5	180	164	#line 180 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	182	164	#line 182 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	183	164		getout __testeTacho_7qG2_tachoD_7qG2_000, __constVal1, 4
-5	182	168	#line 182 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	182	168	#line 182 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	181	164	#line 181 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	183	164	#line 183 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	184	164		getout __testeTacho_7qG2_tachoD_7qG2_000, __constVal1, 4
 5	183	168	#line 183 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	184	168		set __signed_stack_001testeTacho, 0
-5	183	171	#line 183 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	183	171	#line 183 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	184	171		set __signed_stack_002testeTacho, 24
-5	183	174	#line 183 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	183	174	#line 183 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	184	174		mov __D0testeTacho, MyTcD
-5	183	176	#line 183 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	183	176	#line 183 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	184	176		mov __TextOutArgs.Location.X, __signed_stack_001testeTacho
-5	183	178	#line 183 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	184	178		mov __TextOutArgs.Location.Y, __signed_stack_002testeTacho
-5	183	180	#line 183 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	184	180		set __TextOutArgs.Options, 0
-5	183	183	#line 183 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	184	183		numtostr __TextOutArgs.Text, __D0testeTacho
-5	183	186	#line 183 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	184	186		syscall 13, __TextOutArgs
-5	183	189	#line 183 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	183	189	#line 183 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	183	189	#line 183 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	183	168	#line 183 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	184	168	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	185	168		set __signed_stack_001testeTacho, 0
+5	184	171	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	184	171	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	185	171		set __signed_stack_002testeTacho, 24
+5	184	174	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	184	174	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	185	174		mov __D0testeTacho, MyTcD
+5	184	176	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	184	176	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	185	176		mov __TextOutArgs.Location.X, __signed_stack_001testeTacho
+5	184	178	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	185	178		mov __TextOutArgs.Location.Y, __signed_stack_002testeTacho
+5	184	180	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	185	180		set __TextOutArgs.Options, 0
+5	184	183	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	185	183		numtostr __TextOutArgs.Text, __D0testeTacho
+5	184	186	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	185	186		syscall 13, __TextOutArgs
 5	184	189	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	185	189		set __signed_stack_001testeTacho, 0
-5	184	192	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	184	192	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	185	192		set __signed_stack_002testeTacho, 32
-5	184	195	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	184	195	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	185	195		mov __D0testeTacho, __testeTacho_7qG2_tachoD_7qG2_000
-5	184	197	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	184	197	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	185	197		mov __TextOutArgs.Location.X, __signed_stack_001testeTacho
-5	184	199	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	185	199		mov __TextOutArgs.Location.Y, __signed_stack_002testeTacho
-5	184	201	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	185	201		set __TextOutArgs.Options, 0
-5	184	204	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	185	204		numtostr __TextOutArgs.Text, __D0testeTacho
-5	184	207	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	185	207		syscall 13, __TextOutArgs
-5	184	210	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	185	210		mov __D0testeTacho, __TextOutArgs.Result
-5	184	212	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	184	212	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	186	212	#line 186 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	187	212	#pragma macro 7
-5	187	212		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-5	5881	235	#line 5881 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	186	235	#line 186 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	184	189	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	184	189	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	185	189	#line 185 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	186	189		set __signed_stack_001testeTacho, 0
+5	185	192	#line 185 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	185	192	#line 185 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	186	192		set __signed_stack_002testeTacho, 32
+5	185	195	#line 185 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	185	195	#line 185 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	186	195		mov __D0testeTacho, __testeTacho_7qG2_tachoD_7qG2_000
+5	185	197	#line 185 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	185	197	#line 185 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	186	197		mov __TextOutArgs.Location.X, __signed_stack_001testeTacho
+5	185	199	#line 185 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	186	199		mov __TextOutArgs.Location.Y, __signed_stack_002testeTacho
+5	185	201	#line 185 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	186	201		set __TextOutArgs.Options, 0
+5	185	204	#line 185 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	186	204		numtostr __TextOutArgs.Text, __D0testeTacho
+5	185	207	#line 185 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	186	207		syscall 13, __TextOutArgs
+5	185	210	#line 185 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	186	210		mov __D0testeTacho, __TextOutArgs.Result
+5	185	212	#line 185 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	185	212	#line 185 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	187	212	#line 187 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	188	212	#pragma macro 7
+5	188	212		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	5876	235	#line 5876 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
 5	187	235	#line 187 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	188	235		set __D0testeTacho, 1
-5	187	238	#line 187 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	188	238		tst 5, __D0testeTacho, __D0testeTacho
-5	187	241	#line 187 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	188	241		brtst 4, __ASM_Label_848, __D0testeTacho
-5	187	244	#line 187 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	187	244	#line 187 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	188	244		jmp __ASM_Label_847
-5	187	246	#line 187 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	191	246	#line 191 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-5	192	246		subret __testeTacho_return
-6	192	0	#line 192 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
-6	193	0		subret ____initialize_global_data_return
+5	188	235	#line 188 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	189	235		set __D0testeTacho, 1
+5	188	238	#line 188 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	189	238		tst 5, __D0testeTacho, __D0testeTacho
+5	188	241	#line 188 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	189	241		brtst 4, __ASM_Label_848, __D0testeTacho
+5	188	244	#line 188 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	188	244	#line 188 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	189	244		jmp __ASM_Label_847
+5	188	246	#line 188 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	192	246	#line 192 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+5	193	246		subret __testeTacho_return
+6	193	0	#line 193 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc"
+6	194	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc
@@ -756,5 +759,5 @@ Clump	Name	Offset	File
 2	bip	406	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc
 3	distanciaTachoCount	413	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc
 4	MyOnFwdSyncPID	424	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc
-5	testeTacho	477	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc
-6	__initialize_global_data	725	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc
+5	testeTacho	483	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc
+6	__initialize_global_data	731	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\novo_anda_reto.nxc
