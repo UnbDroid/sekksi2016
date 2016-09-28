@@ -1,8 +1,7 @@
 //SENSORES E MOTORES
 #define MD OUT_B //motor da direita
 #define ME OUT_A //motor da esquerda
-#define MED OUT_AB
-#define MDE OUT_AB
+#define MD_ME OUT_AB// os dois motores de movimento
 #define MP OUT_C //motor da porta
 #define USD IN_1 //Utrasonico da direita
 #define USE IN_2 //Utrasonico da esquerda
@@ -32,10 +31,16 @@
 	#define ACAO CONECTA
 	#define CONEXAO 1
 
-//cor dos boncos
+//cor dos bonecos
 #define BONECO_BRANCO 1
 #define BONECO_PRETO 2
 #define BONECO_VERMELHO 3
+
+//cor do chao
+#define CHAO_PRETO 14
+#define CHAO_BRANCO 13
+#define CHAO_VERDE 4
+#define CHAO_AZUL 2
 
 //angulos
 #define ANGULOREJEITADIREITA 1500
@@ -102,7 +107,7 @@ void  bip()
  void nbip(int n)
  {
  	int i;
- 	
+
  	for(i=0; i<n; i++)
  	{
  		bip();
