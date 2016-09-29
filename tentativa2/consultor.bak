@@ -14,8 +14,8 @@
  // Defines de leitura do RGB da esquerda do robô
     //#define COR_BASE_ESQ_MAX 434
     //#define COR_BASE_ESQ_MIN 215
-  #define FAIXA_SENSORES_LATERAL 67
-  #define FAIXA_SENSORES_MEIO 197
+  #define FAIXA_SENSORES_LATERAL 97
+  #define FAIXA_SENSORES_MEIO 297
 
 //Bluetooth
 	#define CONEXAO 0
@@ -80,7 +80,7 @@
   //Defines angulos da garra
   #define ANGULO_1 -110 //-77
   #define ANG_SEGURO -153
-  #define ANG_LEVANTAR -60
+  #define ANG_LEVANTAR -50
 
   #define VETOR_CALIBRACAO 11
 //mais variáveis globais
@@ -407,10 +407,8 @@ void BonecoNaFrente()
     {
       if(BonecosCapturados == 3)
       {
-        bip();
-        bip();
-        bip();
         LevantaBoneco();
+        nbip(4);
         MandaTeste();
         while(1){}
       }
@@ -419,6 +417,7 @@ void BonecoNaFrente()
         Pega();
         MandarSeguir();
         BonecosCapturados++;
+        nbip(BonecosCapturados);
       }
     }
     else if(cor == bonecoNaoAlvo)

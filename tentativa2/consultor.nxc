@@ -14,8 +14,8 @@
  // Defines de leitura do RGB da esquerda do robô
     //#define COR_BASE_ESQ_MAX 434
     //#define COR_BASE_ESQ_MIN 215
-  #define FAIXA_SENSORES_LATERAL 67
-  #define FAIXA_SENSORES_MEIO 197
+  #define FAIXA_SENSORES_LATERAL 97
+  #define FAIXA_SENSORES_MEIO 247
 
 //Bluetooth
 	#define CONEXAO 0
@@ -257,7 +257,7 @@ int RecebeBoneco(){
       */
 
      //função para teste
-     return BONECO_BRANCO;
+     return BONECO_PRETO;
 
 }
 

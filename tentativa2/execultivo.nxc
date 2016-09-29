@@ -50,6 +50,9 @@
 #define DIFERENCIALDEERRODOANGULO 5
 
 //
+#define ANGULO_CAGADINHA 180
+
+//
 #define NAO_ALIEN 0
 #define SIM_ALIEN 1
 
@@ -162,12 +165,15 @@ void executivo()
 				{
 					MyOnFwd(ME, 0);
 					MyOnFwd(MD,90);
-					Wait(400);
+					while(MotorTachoCount(MD) < ANGULO_CAGADINHA){}
 					MyOnFwd(MD, 0);
 					MyOnFwd(ME,90);
-					Wait(400);
+					while(MotorTachoCount(ME) < ANGULO_CAGADINHA){}
 				}
 				parar();
+				FecharPorta();
+
+
 				while(1){}
 			break;
 		}

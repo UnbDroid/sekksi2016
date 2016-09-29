@@ -1000,7 +1000,7 @@ Clump	Line	PC	Source
 11	259	0	#line 259 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 11	259	0	#line 259 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 11	261	0	#line 261 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-11	262	0		set __D0RecebeBoneco, 1
+11	262	0		set __D0RecebeBoneco, 2
 11	261	3	#line 261 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 11	262	3		subret __RecebeBoneco_return
 11	261	5	#line 261 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
@@ -1918,7 +1918,7 @@ Clump	Line	PC	Source
 30	531	21		mov __signed_stack_001CalibraFaixaBase, __CalibraFaixaBase_7qG2_rgb_dir_7qG2_000
 30	530	23	#line 530 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 30	531	23	#line 531 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-30	532	23		set __D0CalibraFaixaBase, 67
+30	532	23		set __D0CalibraFaixaBase, 97
 30	531	26	#line 531 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 30	532	26		add CorBaseDirMax, __signed_stack_001CalibraFaixaBase, __D0CalibraFaixaBase
 30	531	30	#line 531 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
@@ -1927,7 +1927,7 @@ Clump	Line	PC	Source
 30	532	30		mov __signed_stack_001CalibraFaixaBase, __CalibraFaixaBase_7qG2_rgb_dir_7qG2_000
 30	531	32	#line 531 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 30	532	32	#line 532 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-30	533	32		set __D0CalibraFaixaBase, 67
+30	533	32		set __D0CalibraFaixaBase, 97
 30	532	35	#line 532 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 30	533	35		sub CorBaseDirMin, __signed_stack_001CalibraFaixaBase, __D0CalibraFaixaBase
 30	532	39	#line 532 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
@@ -1936,7 +1936,7 @@ Clump	Line	PC	Source
 30	533	39		mov __signed_stack_001CalibraFaixaBase, __CalibraFaixaBase_7qG2_rgb_esq_7qG2_000
 30	532	41	#line 532 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 30	533	41	#line 533 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-30	534	41		set __D0CalibraFaixaBase, 67
+30	534	41		set __D0CalibraFaixaBase, 97
 30	533	44	#line 533 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 30	534	44		add CorBaseEsqMax, __signed_stack_001CalibraFaixaBase, __D0CalibraFaixaBase
 30	533	48	#line 533 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
@@ -1945,7 +1945,7 @@ Clump	Line	PC	Source
 30	534	48		mov __signed_stack_001CalibraFaixaBase, __CalibraFaixaBase_7qG2_rgb_esq_7qG2_000
 30	533	50	#line 533 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 30	534	50	#line 534 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-30	535	50		set __D0CalibraFaixaBase, 67
+30	535	50		set __D0CalibraFaixaBase, 97
 30	534	53	#line 534 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 30	535	53		sub CorBaseEsqMin, __signed_stack_001CalibraFaixaBase, __D0CalibraFaixaBase
 30	534	57	#line 534 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
@@ -1954,7 +1954,7 @@ Clump	Line	PC	Source
 30	535	57		mov __signed_stack_001CalibraFaixaBase, __CalibraFaixaBase_7qG2_rgb_meio_7qG2_000
 30	534	59	#line 534 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 30	535	59	#line 535 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-30	536	59		set __D0CalibraFaixaBase, 197
+30	536	59		set __D0CalibraFaixaBase, 247
 30	535	62	#line 535 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 30	536	62		add CorBaseMeioMax, __signed_stack_001CalibraFaixaBase, __D0CalibraFaixaBase
 30	535	66	#line 535 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
@@ -1963,7 +1963,7 @@ Clump	Line	PC	Source
 30	536	66		mov __signed_stack_001CalibraFaixaBase, __CalibraFaixaBase_7qG2_rgb_meio_7qG2_000
 30	535	68	#line 535 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 30	537	68	#line 537 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
-30	538	68		set __D0CalibraFaixaBase, 197
+30	538	68		set __D0CalibraFaixaBase, 247
 30	537	71	#line 537 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
 30	538	71		sub CorBaseMeioMin, __signed_stack_001CalibraFaixaBase, __D0CalibraFaixaBase
 30	537	75	#line 537 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\consultor.nxc"
