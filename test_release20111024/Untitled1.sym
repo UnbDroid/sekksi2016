@@ -1,0 +1,387 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__CLSRMutex0	9	0	0	4	2
+1	__CLSCSMutex3	9	0	4	4	2
+2	__CLSWMutex0	9	0	8	4	2
+3	__D0main	6	1	12	4	10
+4	__CLSWMutex3	9	0	16	4	2
+5	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	20	4	2
+6	__RLSBmutex0	9	0	24	4	2
+7	__CLSRMutex3	9	0	28	4	2
+8	__RLSBmutex3	9	0	32	4	2
+9	__signed_stack_001main	6	1	36	4	4
+10	__signed_stack_002main	6	1	40	4	4
+11	__DU0SetSensorLowspeed_inline_main	5	1	44	4	10
+12	__D0SetSensorLowspeed_inline_main	6	1	48	4	4
+13	__CLSCSMutex0	9	0	52	4	2
+14	__constVal200	4	0	56	2	2
+15	____ReadLSBytes3_return	1	1	58	1	3
+16	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	59	1	4
+17	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	60	1	10
+18	__RLSBIterations0	1	1	61	1	4
+19	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	62	1	4
+20	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	63	1	4
+21	____initialize_global_data_return	1	1	64	1	3
+22	__RLSBIterations3	1	1	65	1	4
+23	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	66	1	4
+24	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	67	1	4
+25	__RLSBResult3	2	1	68	1	7
+26	__RLSBytesCount3	1	1	69	1	7
+27	__RLSBytesCount0	1	1	70	1	7
+28	__constVal3	2	0	71	1	1
+29	__LSWriteOptions0	1	1	72	1	1
+30	__ResetSensorPort	1	1	73	1	4
+31	____ResetSensorSubroutine_return	1	1	74	1	4
+32	__ResetSensorTmp	1	1	75	1	2
+33	__LSWriteOptions3	1	1	76	1	1
+34	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	77	1	2
+35	__RLSBResult0	2	1	78	1	7
+36	____ReadLSBytes0_return	1	1	79	1	3
+37	__constVal0	2	1	80	1	3
+38	__constVal1	2	0	81	1	6
+39	__CLSCSArgs0	8	0	3	4	4
+40	__CLSCSArgs0.Result	2	1	84	1	4
+41	__CLSCSArgs0.Port	1	1	85	1	4
+42	__CLSCSArgs0.BytesReady	1	1	86	1	4
+43	__CLSRArgs3	8	0	4	12	5
+44	__CLSRArgs3.Result	2	1	88	1	5
+45	__CLSRArgs3.Port	1	1	89	1	5
+46	__CLSRArgs3.Buffer	7	0	90	4	5
+47	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
+48	__CLSRArgs3.BufferLen	1	1	92	1	5
+49	__TextOutArgs	8	0	4	16	12
+50	__TextOutArgs.Result	2	1	96	1	12
+51	__TextOutArgs.Location	8	0	2	4	12
+52	__TextOutArgs.Location.X	4	1	100	2	12
+53	__TextOutArgs.Location.Y	4	1	102	2	12
+54	__TextOutArgs.Text	7	0	104	4	12
+55	__TextOutArgs.Text.Text_type	1	0	0	1	0
+56	__TextOutArgs.Options	5	1	108	4	12
+57	__PointOutArgs	8	0	3	12	4
+58	__PointOutArgs.Result	2	1	112	1	4
+59	__PointOutArgs.Location	8	0	2	4	4
+60	__PointOutArgs.Location.X	4	1	116	2	4
+61	__PointOutArgs.Location.Y	4	1	118	2	4
+62	__PointOutArgs.Options	5	1	120	4	4
+63	__CLSWArgs3	8	0	4	12	5
+64	__CLSWArgs3.Result	2	1	124	1	5
+65	__CLSWArgs3.Port	1	1	125	1	5
+66	__CLSWArgs3.Buffer	7	0	126	4	5
+67	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
+68	__CLSWArgs3.ReturnLen	1	1	128	1	5
+69	__CLSWArgs0	8	0	4	12	5
+70	__CLSWArgs0.Result	2	1	132	1	5
+71	__CLSWArgs0.Port	1	1	133	1	5
+72	__CLSWArgs0.Buffer	7	0	134	4	5
+73	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+74	__CLSWArgs0.ReturnLen	1	1	136	1	5
+75	__CLSRArgs0	8	0	4	12	5
+76	__CLSRArgs0.Result	2	1	140	1	5
+77	__CLSRArgs0.Port	1	1	141	1	5
+78	__CLSRArgs0.Buffer	7	0	142	4	5
+79	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+80	__CLSRArgs0.BufferLen	1	1	144	1	5
+81	__CLSCSArgs3	8	0	3	4	4
+82	__CLSCSArgs3.Result	2	1	148	1	4
+83	__CLSCSArgs3.Port	1	1	149	1	4
+84	__CLSCSArgs3.BytesReady	1	1	150	1	4
+85	__RLSLastGoodRead0	7	0	152	4	2
+86	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
+87	__RLSBbufLSWrite1	7	0	154	4	2
+88	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+89	__RLSReadBuf0	7	0	156	4	8
+90	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
+91	__RLSReadBuf3	7	0	158	4	8
+92	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
+93	__RLSLastGoodRead3	7	0	160	4	2
+94	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	2	0	#line 2 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	3	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	2	2	#line 2 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	2	2	#line 2 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	3	2		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 0
+0	2	5	#line 2 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	3	5	#line 3 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	4	5		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	4342	7	#line 4342 "NXCDefs.h"
+0	4343	7		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4342	9	#line 4342 "NXCDefs.h"
+0	4342	9	#line 4342 "NXCDefs.h"
+0	4343	9		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	4342	11	#line 4342 "NXCDefs.h"
+0	4343	11		tst 5, __D0SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	4342	14	#line 4342 "NXCDefs.h"
+0	4343	14		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_main
+0	4342	17	#line 4342 "NXCDefs.h"
+0	4343	17		set __DU0SetSensorLowspeed_inline_main, 11
+0	4342	20	#line 4342 "NXCDefs.h"
+0	4342	20	#line 4342 "NXCDefs.h"
+0	4343	20		jmp __004__ASM_Label_37
+0	4342	22	#line 4342 "NXCDefs.h"
+0	4343	22		set __DU0SetSensorLowspeed_inline_main, 10
+0	4342	25	#line 4342 "NXCDefs.h"
+0	4342	25	#line 4342 "NXCDefs.h"
+0	4343	25		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	4247	27	#line 4247 "NXCDefs.h"
+0	4248	27		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	4247	31	#line 4247 "NXCDefs.h"
+0	4343	31	#line 4343 "NXCDefs.h"
+0	4343	31	#line 4343 "NXCDefs.h"
+0	4344	31		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4343	33	#line 4343 "NXCDefs.h"
+0	4343	33	#line 4343 "NXCDefs.h"
+0	4344	33		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	4343	36	#line 4343 "NXCDefs.h"
+0	4260	36	#line 4260 "NXCDefs.h"
+0	4261	36		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	4260	40	#line 4260 "NXCDefs.h"
+0	4344	40	#line 4344 "NXCDefs.h"
+0	4344	40	#line 4344 "NXCDefs.h"
+0	4345	40		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4344	42	#line 4344 "NXCDefs.h"
+0	4278	42	#line 4278 "NXCDefs.h"
+0	4279	42	#pragma macro 4
+0	4279	42		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4279	44		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	6043	46	#line 6043 "NXCDefs.h"
+0	4278	46	#line 4278 "NXCDefs.h"
+0	4345	46	#line 4345 "NXCDefs.h"
+0	3	46	#line 3 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	3	46	#line 3 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	4	46		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 3
+0	3	49	#line 3 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	4	49	#line 4 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	5	49		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	4342	51	#line 4342 "NXCDefs.h"
+0	4343	51		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4342	53	#line 4342 "NXCDefs.h"
+0	4342	53	#line 4342 "NXCDefs.h"
+0	4343	53		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	4342	55	#line 4342 "NXCDefs.h"
+0	4343	55		tst 5, __D0SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	4342	58	#line 4342 "NXCDefs.h"
+0	4343	58		brtst 4, __005__ASM_Label_36, __D0SetSensorLowspeed_inline_main
+0	4342	61	#line 4342 "NXCDefs.h"
+0	4343	61		set __DU0SetSensorLowspeed_inline_main, 11
+0	4342	64	#line 4342 "NXCDefs.h"
+0	4342	64	#line 4342 "NXCDefs.h"
+0	4343	64		jmp __005__ASM_Label_37
+0	4342	66	#line 4342 "NXCDefs.h"
+0	4343	66		set __DU0SetSensorLowspeed_inline_main, 10
+0	4342	69	#line 4342 "NXCDefs.h"
+0	4342	69	#line 4342 "NXCDefs.h"
+0	4343	69		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	4247	71	#line 4247 "NXCDefs.h"
+0	4248	71		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	4247	75	#line 4247 "NXCDefs.h"
+0	4343	75	#line 4343 "NXCDefs.h"
+0	4343	75	#line 4343 "NXCDefs.h"
+0	4344	75		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4343	77	#line 4343 "NXCDefs.h"
+0	4343	77	#line 4343 "NXCDefs.h"
+0	4344	77		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	4343	80	#line 4343 "NXCDefs.h"
+0	4260	80	#line 4260 "NXCDefs.h"
+0	4261	80		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	4260	84	#line 4260 "NXCDefs.h"
+0	4344	84	#line 4344 "NXCDefs.h"
+0	4344	84	#line 4344 "NXCDefs.h"
+0	4345	84		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4344	86	#line 4344 "NXCDefs.h"
+0	4278	86	#line 4278 "NXCDefs.h"
+0	4279	86	#pragma macro 4
+0	4279	86		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	4279	88		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	6106	90	#line 6106 "NXCDefs.h"
+0	4278	90	#line 4278 "NXCDefs.h"
+0	4345	90	#line 4345 "NXCDefs.h"
+0	4	90	#line 4 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	5	90	#line 5 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	6	90		set __D0main, 1
+0	6	93	#line 6 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	7	93		tst 5, __D0main, __D0main
+0	6	96	#line 6 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	7	96		brtst 4, __ASM_Label_609, __D0main
+0	6678	99	#line 6678 "NXCDefs.h"
+0	6679	99	#pragma macro 6
+0	6679	99		mov __PointOutArgs.Location.X, __constVal200
+0	6679	101		mov __PointOutArgs.Location.Y, __constVal200
+0	6679	103		mov __PointOutArgs.Options, __constVal1
+0	6679	105		syscall 14, __PointOutArgs
+0	6118	108	#line 6118 "NXCDefs.h"
+0	6678	108	#line 6678 "NXCDefs.h"
+0	7	108	#line 7 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	7	108	#line 7 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	8	108		set __signed_stack_001main, 0
+0	7	111	#line 7 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	7	111	#line 7 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	8	111		set __signed_stack_002main, 56
+0	7	114	#line 7 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	7	114	#line 7 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	8	114	#pragma macro 26
+0	8	114		acquire __RLSBmutex0
+0	8	115		mov __RLSReadBuf0, __RLSBbufLSWrite1
+0	8	117		set __RLSBytesCount0, 1
+0	8	120		wait 15
+0	8	122		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+0	8	124		index __D0main, __RLSReadBuf0, 65535
+0	8	128		release __RLSBmutex0
+0	6132	129	#line 6132 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	8	129	#line 8 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	8	129	#line 8 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	9	129		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	8	131	#line 8 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	9	131		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	8	133	#line 8 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	9	133		set __TextOutArgs.Options, 0
+0	8	136	#line 8 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	9	136		numtostr __TextOutArgs.Text, __D0main
+0	8	139	#line 8 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	9	139		syscall 13, __TextOutArgs
+0	8	142	#line 8 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	9	142		mov __D0main, __TextOutArgs.Result
+0	8	144	#line 8 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	8	144	#line 8 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	8	144	#line 8 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	8	144	#line 8 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	9	144		set __signed_stack_001main, 1
+0	8	147	#line 8 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	8	147	#line 8 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	9	147		set __signed_stack_002main, 24
+0	8	150	#line 8 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	8	150	#line 8 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	9	150	#pragma macro 26
+0	9	150		acquire __RLSBmutex3
+0	9	151		mov __RLSReadBuf3, __RLSBbufLSWrite1
+0	9	153		set __RLSBytesCount3, 1
+0	9	156		wait 15
+0	9	158		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+0	9	160		index __D0main, __RLSReadBuf3, 65535
+0	9	164		release __RLSBmutex3
+0	6166	165	#line 6166 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	10	165	#line 10 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	10	165	#line 10 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	11	165		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	10	167	#line 10 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	11	167		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	10	169	#line 10 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	11	169		set __TextOutArgs.Options, 0
+0	10	172	#line 10 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	11	172		numtostr __TextOutArgs.Text, __D0main
+0	10	175	#line 10 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	11	175		syscall 13, __TextOutArgs
+0	10	178	#line 10 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	11	178		mov __D0main, __TextOutArgs.Result
+0	10	180	#line 10 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	10	180	#line 10 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	10	180	#line 10 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	10	180	#line 10 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	11	180		set __Wait_7qG2_ms_7qG2_000_inline_main, 100
+0	10	183	#line 10 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	8551	183	#line 8551 "NXCDefs.h"
+0	8552	183		waitv __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	185	#line 8551 "NXCDefs.h"
+0	12	185	#line 12 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	15	185	#line 15 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	16	185		jmp __ASM_Label_608
+0	15	187	#line 15 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+0	16	187		exit -1, -1
+1	5476	0		setin __constVal1, __ResetSensorPort, 5
+1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5480	11		subret ____ResetSensorSubroutine_return
+2	6281	0	#pragma macro 25
+2	6281	0		acquire __CLSWMutex0
+2	6281	1		or __CLSWArgs0.Port, __constVal0, __LSWriteOptions0
+2	6281	5		mov __CLSWArgs0.ReturnLen, __RLSBytesCount0
+2	6281	7		mov __CLSWArgs0.Buffer, __RLSReadBuf0
+2	6281	9		syscall 21, __CLSWArgs0
+2	6281	12		mov __RLSBResult0, __CLSWArgs0.Result
+2	6281	14		release __CLSWMutex0
+2	6282	15	#line 6282 "NXTDefs.h"
+2	6283	15		brtst 5, __RLSBError0, __RLSBResult0
+2	6284	18		set __RLSBIterations0, 60
+2	6286	21	#pragma macro 23
+2	6286	21		acquire __CLSCSMutex0
+2	6286	22		set __CLSCSArgs0.Port, 0
+2	6286	25		syscall 23, __CLSCSArgs0
+2	6286	28		mov __RLSBytesCount0, __CLSCSArgs0.BytesReady
+2	6286	30		mov __RLSBResult0, __CLSCSArgs0.Result
+2	6286	32		release __CLSCSMutex0
+2	6286	33	#line 6286 "NXTDefs.h"
+2	6287	33		sub __RLSBIterations0, __RLSBIterations0, __constVal1
+2	6288	37		brtst 2, __RLSBError0, __RLSBIterations0
+2	6289	40		brtst 0, __RLSBError0, __RLSBResult0
+2	6290	43		brtst 4, __RLSBReadyToRead0, __RLSBResult0
+2	6292	46		wait 1
+2	6293	48		jmp __RLSBDoCheckStatus0
+2	6295	50		brtst 4, __RLSBReturn0, __RLSBytesCount0
+2	6296	53		arrinit __RLSReadBuf0, __constVal0, __RLSBytesCount0
+2	6298	57	#pragma macro 25
+2	6298	57		acquire __CLSRMutex0
+2	6298	58		set __CLSRArgs0.Port, 0
+2	6298	61		mov __CLSRArgs0.BufferLen, __RLSBytesCount0
+2	6298	63		syscall 22, __CLSRArgs0
+2	6298	66		mov __RLSReadBuf0, __CLSRArgs0.Buffer
+2	6298	68		mov __RLSBResult0, __CLSRArgs0.Result
+2	6298	70		release __CLSRMutex0
+2	6298	71	#line 6298 "NXTDefs.h"
+2	6299	71		brtst 5, __RLSBError0, __RLSBResult0
+2	6300	74		mov __RLSLastGoodRead0, __RLSReadBuf0
+2	6301	76		jmp __RLSBDone0
+2	6303	78		mov __RLSReadBuf0, __RLSLastGoodRead0
+2	6305	80		arrsize __RLSBytesCount0, __RLSReadBuf0
+2	6307	83		subret ____ReadLSBytes0_return
+3	6393	0	#pragma macro 25
+3	6393	0		acquire __CLSWMutex3
+3	6393	1		or __CLSWArgs3.Port, __constVal3, __LSWriteOptions3
+3	6393	5		mov __CLSWArgs3.ReturnLen, __RLSBytesCount3
+3	6393	7		mov __CLSWArgs3.Buffer, __RLSReadBuf3
+3	6393	9		syscall 21, __CLSWArgs3
+3	6393	12		mov __RLSBResult3, __CLSWArgs3.Result
+3	6393	14		release __CLSWMutex3
+3	6393	15	#line 6393 "NXTDefs.h"
+3	6394	15		brtst 5, __RLSBError3, __RLSBResult3
+3	6395	18		set __RLSBIterations3, 60
+3	6397	21	#pragma macro 23
+3	6397	21		acquire __CLSCSMutex3
+3	6397	22		set __CLSCSArgs3.Port, 3
+3	6397	25		syscall 23, __CLSCSArgs3
+3	6397	28		mov __RLSBytesCount3, __CLSCSArgs3.BytesReady
+3	6397	30		mov __RLSBResult3, __CLSCSArgs3.Result
+3	6397	32		release __CLSCSMutex3
+3	6397	33	#line 6397 "NXTDefs.h"
+3	6398	33		sub __RLSBIterations3, __RLSBIterations3, __constVal1
+3	6399	37		brtst 2, __RLSBError3, __RLSBIterations3
+3	6400	40		brtst 0, __RLSBError3, __RLSBResult3
+3	6401	43		brtst 4, __RLSBReadyToRead3, __RLSBResult3
+3	6403	46		wait 1
+3	6404	48		jmp __RLSBDoCheckStatus3
+3	6406	50		brtst 4, __RLSBReturn3, __RLSBytesCount3
+3	6407	53		arrinit __RLSReadBuf3, __constVal0, __RLSBytesCount3
+3	6409	57	#pragma macro 25
+3	6409	57		acquire __CLSRMutex3
+3	6409	58		set __CLSRArgs3.Port, 3
+3	6409	61		mov __CLSRArgs3.BufferLen, __RLSBytesCount3
+3	6409	63		syscall 22, __CLSRArgs3
+3	6409	66		mov __RLSReadBuf3, __CLSRArgs3.Buffer
+3	6409	68		mov __RLSBResult3, __CLSRArgs3.Result
+3	6409	70		release __CLSRMutex3
+3	6409	71	#line 6409 "NXTDefs.h"
+3	6410	71		brtst 5, __RLSBError3, __RLSBResult3
+3	6411	74		mov __RLSLastGoodRead3, __RLSReadBuf3
+3	6412	76		jmp __RLSBDone3
+3	6414	78		mov __RLSReadBuf3, __RLSLastGoodRead3
+3	6416	80		arrsize __RLSBytesCount3, __RLSReadBuf3
+3	6418	83		subret ____ReadLSBytes3_return
+4	16	0	#line 16 "C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc"
+4	17	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc
+1	__ResetSensorSubroutine	190	NXTDefs.h
+2	__ReadLSBytes0	203	NXTDefs.h
+3	__ReadLSBytes3	288	NXTDefs.h
+4	__initialize_global_data	373	C:\Users\luan\OneDrive\Droid\bricxCC\test_release20111024\Untitled1.nxc
