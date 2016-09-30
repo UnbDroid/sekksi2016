@@ -52,7 +52,11 @@ void andaRetoEsquerda(int distParede, int distAndar);
 void andaRetoUS(int distParede, int distAndar, int lado);
 void CorDoChao(int corEsq, int corDir);
 void DaReh(int dist);
-
+void viraDir(int angulo);
+void viraEsq(int angulo);
+int distanciaGiroDireita(int grau);
+int distanciaGiroEsquerda(int grau);
+void parar();
 
 //Debug
 void RetoPID();
@@ -66,13 +70,27 @@ int poteGlobal = 90;
 int potdGlobal = 80;
 int MyTcD = 0;
 int MyTcE = 0;
+int free_to_go = 0;
 
 
 task main(){
     inicializaSensores();
-    andaRetoUS(DIST_PAREDE, DIST_1M, DIREITA);
-    DaReh(DIST_1M);
-    while(1);
+    //andaRetoUS(DIST_PAREDE+45, DIST_1M, DIREITA);
+    //viraDir(90);
+    viraEsq(90);
+    //parar();
+    //Wait(100);
+
+    //DaReh(DIST_1M/2);
+    //while(1);
+}
+
+int distanciaGiroDireita(int grau){
+	   return (((grau*17)/143));
+}
+
+int distanciaGiroEsquerda(int grau){
+	   return (((grau*17)/140));
 }
 
 int distanciaTachoCount(int grau){
@@ -372,4 +390,36 @@ void inicializaSensores()
 
 void testeParede(){
   andaRetoDireita(DIST_0_9M, DIST_1M);
+}
+
+void viraDir(int angulo){ // função que faz o robô girar para a direita o ângulo recebido
+     OnFwd(MD, -90);
+     OnFwd(ME, 90);
+
+     while(distanciaGiroDireita((- MotorTachoCount(MD) + MotorTachoCount(ME))/2) < angulo)
+     {
+      //lol
+     }
+     MyOnFwd(MD,0);
+     MyOnFwd(ME,0);
+}
+
+void viraEsq(int angulo){ // função que faz o robô girar para a esquerda o ângulo recebido
+     MyOnFwd(MD, 90);
+     MyOnFwd(ME, -90);
+
+     while(distanciaGiroEsquerda((MotorTachoCount(MD) - MotorTachoCount(ME))/2) < angulo)
+     {
+      //lol
+     }
+     MyOnFwd(MD,0);
+     MyOnFwd(ME,0);
+}
+
+void parar()
+{
+	free_to_go = 0;
+
+	MyOnFwd(MD,0);
+	MyOnFwd(ME,0);
 }

@@ -79,8 +79,6 @@ void MyResetTachoCount(int motor);
 //declaração das funções
 void executivo();
 void init();
-void DescobreBonecoAlvo();
-void RetornaBoneco(int cor);
 void desligaBlue();
 void inicializaSensores();
 void iniciaBlue();
@@ -194,43 +192,6 @@ void init()
   FecharPorta();
 	iniciaBlue();
 }
-
-
-void DescobreBonecoAlvo(){
-		int corEsq, corDir;
-
-	  corEsq = SensorHTColorNum(HTE);
-	  corDir = SensorHTColorNum(HTD);
-
-	  if((corDir == CHAO_VERDE) || (corEsq == CHAO_VERDE))
-	  {
-	    RetornaBoneco(CHAO_VERDE);
-	  }else //if((corDir == COR_AZUL) || (corEsq == COR_AZUL))
-	  {
-	    //bip();
-	    RetornaBoneco(CHAO_AZUL);
-	  }
-}
-
-void RetornaBoneco(int cor){//FUNFOU BONITO
-    int passei = 0;
-    ClearScreen();
-    do{
-      //bip();
-      if(cor == CHAO_AZUL){//BONECO COR BRANCA
-
-        SendRemoteNumber(CONEXAO, OUTBOX, BONECO_BRANCO);
-        Wait(30);
-        bip();
-      }else if(cor == CHAO_VERDE){//BONECO COR PRETA
-        SendRemoteNumber(CONEXAO, OUTBOX, BONECO_PRETO);
-        Wait(30);
-      }
-      TextOut(0, LCD_LINE4, "SINAL MANDADO");
-      ReceiveRemoteNumber(INBOX, true, passei);
-   }while(passei != SIM);
-}
-
 
 void desligaBlue()
 {
@@ -430,11 +391,11 @@ void viraDir(int angulo){ // função que faz o robô girar para a direita o ân
 }
 
 int distanciaGiroDireita(int grau){
-	   return (((grau*17)/149)); // COMO FOI FEITA ESSA CONVERSÃO??? [na base da tentativa e erro]
+	   return (((grau*17)/149));
 }
 
 int distanciaGiroEsquerda(int grau){
-	   return (((grau*17)/152));
+	   return (((grau*17)/157));
 }
 
 void MyOnFwd(int motor, int pot)
