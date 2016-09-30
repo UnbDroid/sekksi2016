@@ -10,7 +10,7 @@
 // Defines de leitura do RGB da direita do robô
     //#define COR_BASE_DIR_MAX 586
     //#define COR_BASE_DIR_MIN 229
-    
+
  // Defines de leitura do RGB da esquerda do robô
     //#define COR_BASE_ESQ_MAX 434
     //#define COR_BASE_ESQ_MIN 215
@@ -74,7 +74,7 @@
 
   //Tempos
   #define TEMPO_DEPOIS_DE_JOGAR_DENTRO 200
-  
+
   #define TEMPO_DEPOIS_DO_BONECO_ESCAPULIR 400
 
   //Defines angulos da garra
@@ -84,7 +84,7 @@
 
   #define VETOR_CALIBRACAO 11
 //mais variáveis globais
-int CorBaseDirMax, CorBaseDirMin, CorBaseEsqMax, CorBaseEsqMin, CorBaseMeioMin, CorBaseMeioMax; 
+int CorBaseDirMax, CorBaseDirMin, CorBaseEsqMax, CorBaseEsqMin, CorBaseMeioMin, CorBaseMeioMax;
 
 //declaração das variáveis globais
 int bonecoAlvo;
@@ -129,7 +129,7 @@ void  bip()
 void nbip(int n)
  {
   int i;
-  
+
   for(i=0; i<n; i++)
   {
     bip();
@@ -146,8 +146,6 @@ void consultor()
     int mensagem;
 
     init();
-
-    
 
     while(1)//void loop
     {
@@ -194,7 +192,7 @@ void BonecoAlvo()
 {
 	bonecoAlvo = RecebeBoneco();
 
-    
+
 	if(bonecoAlvo == BONECO_PRETO)
 	{
 	  BipPreto();
@@ -210,16 +208,16 @@ void BonecoAlvo()
 int TemBoneco()
 {
    int rgb_esq, rgb_dir, rgb_meio;
-   
+
    //bip();
-   
+
    rgb_dir = lerSensor(RGB_DIR);
    rgb_esq = lerSensor(RGB_ESQ);
    rgb_meio = lerSensor(RGB_MEIO);
-   
+
    //NumOut(0, LCD_LINE2, rgb_dir);
    //NumOut(0, LCD_LINE3, rgb_esq);
-   
+
    if(((rgb_dir < CorBaseDirMax) && (rgb_dir > CorBaseDirMin)) && ((rgb_esq < CorBaseEsqMax) && (rgb_esq > CorBaseEsqMin)) && ((rgb_meio < CorBaseMeioMax) && (rgb_meio > CorBaseMeioMin)))
       return NAO_ALIEN;
    return SIM_ALIEN;
@@ -230,7 +228,7 @@ int returnUS(){
   valor = SensorUS(US_FRENTE);
   Wait(30);
   NumOut(0, LCD_LINE1, valor);
-  
+
   if(valor < MENOR_DISTANCIA_US){
     return 1;
   }
@@ -244,7 +242,7 @@ int RecebeBoneco(){
      /* //função correta
      do{
           ReceiveRemoteNumber(INBOX, true, sinInicial);
-          Wait(30);   
+          Wait(30);
      }while(sinInicial == 0);
 
      SendRemoteNumber(CONEXAO, OUTBOX, SIM);
@@ -442,7 +440,7 @@ void BonecoNaFrente()
       NumOut(0,LCD_LINE1,cor);
       //debug
       //while(1){}
-      
+
       VoltaGarra();
       MandarSeguir();
       Wait(TEMPO_DEPOIS_DO_BONECO_ESCAPULIR);
@@ -521,9 +519,9 @@ void LevantaBoneco()
 void CalibraFaixaBase()
 {
   int rgb_esq, rgb_dir, rgb_meio;
-   
+
   //bip();
-   
+
   rgb_dir = lerSensor(RGB_DIR);
   rgb_esq = lerSensor(RGB_ESQ);
   rgb_meio = lerSensor(RGB_MEIO);

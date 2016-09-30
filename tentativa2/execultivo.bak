@@ -65,6 +65,7 @@
 #define REJEITAR 5
 #define DESGIREI 6
 #define CALIBRA 7
+<<<<<<< HEAD
 
 //contantes do mapeamento
 #define DISTANCIA_QUADRANTE 39 //em centimetros
@@ -78,6 +79,8 @@ int central[5][5], barreira[5][5], caverna[5][5];
 int direcao;
 int caminho[25];
 int contPassos;
+=======
+>>>>>>> 5eca14fd8d7edc04f9317eb05d35f31cf23578dc
 
 //variáveis globais
 int MyTcD;
@@ -117,7 +120,10 @@ int distanciaGiroEsquerda(int grau);
 int MediaTC();
 int distanciaTachoCount(int grau);
 void MandaCalibra();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5eca14fd8d7edc04f9317eb05d35f31cf23578dc
 
 //função para dbug
 void  bip()
@@ -206,9 +212,14 @@ void executivo()
 void init()
 {
 	desligaBlue();
+<<<<<<< HEAD
 	init_mapeamento();
   	inicializaSensores();
   	FecharPorta();
+=======
+  inicializaSensores();
+  FecharPorta();
+>>>>>>> 5eca14fd8d7edc04f9317eb05d35f31cf23578dc
 	iniciaBlue();
 }
 
@@ -251,7 +262,11 @@ void andar()//melhorar esse função - apneas testes por enquanto
 {
 	free_to_go = 1;
 
+<<<<<<< HEAD
 	if(distanciaTachoCount(MediaTC()) <= 100*DISTANCIA_QUADRANTE)
+=======
+	if(distanciaTachoCount(MediaTC()) <= 10000)//um metro
+>>>>>>> 5eca14fd8d7edc04f9317eb05d35f31cf23578dc
 	{
 		MyOnFwd(MD,84);
 		MyOnFwd(ME,90);
@@ -259,6 +274,7 @@ void andar()//melhorar esse função - apneas testes por enquanto
 	}
 	else
 	{
+<<<<<<< HEAD
 		//decide para onde vai, vira, zera os tcs e calibra.
 		//parar sem mexer na free to go
 		MyOnFwd(MD,0);
@@ -278,6 +294,11 @@ void andar()//melhorar esse função - apneas testes por enquanto
 		//nbip(3);
 		//Wait(10000);
 		/*viraEsq(90);
+=======
+		//nbip(3);
+		//Wait(10000);
+		viraEsq(90);
+>>>>>>> 5eca14fd8d7edc04f9317eb05d35f31cf23578dc
 		MandaCalibra();
 		MyResetTachoCount(ME);
 		MyResetTachoCount(MD);
@@ -427,11 +448,15 @@ void viraDir(int angulo){ // função que faz o robô girar para a direita o ân
 }
 
 int distanciaGiroDireita(int grau){
-	   return (((grau*17)/149)); // COMO FOI FEITA ESSA CONVERSÃO??? [na base da tentativa e erro]
+	   return (((grau*17)/149));
 }
 
 int distanciaGiroEsquerda(int grau){
+<<<<<<< HEAD
 	   return (((grau*17)/157));
+=======
+	   return (((grau*17)/155));
+>>>>>>> 5eca14fd8d7edc04f9317eb05d35f31cf23578dc
 }
 
 void MyOnFwd(int motor, int pot)
@@ -497,6 +522,7 @@ int distanciaTachoCount(int grau)
 void MandaCalibra()
 {
 	SendRemoteNumber(CONEXAO, OUTBOX, CALIBRA);
+<<<<<<< HEAD
 }
 
 void init_mapeamento()
@@ -619,4 +645,6 @@ void girarCardeal(int dir)
 		break;
 	}
 	return;
+=======
+>>>>>>> 5eca14fd8d7edc04f9317eb05d35f31cf23578dc
 }

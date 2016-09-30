@@ -118,7 +118,6 @@ int MediaTC();
 int distanciaTachoCount(int grau);
 void MandaCalibra();
 
-
 //função para dbug
 void  bip()
 {
@@ -206,9 +205,14 @@ void executivo()
 void init()
 {
 	desligaBlue();
+<<<<<<< HEAD
 	init_mapeamento();
   	inicializaSensores();
   	FecharPorta();
+=======
+  inicializaSensores();
+  FecharPorta();
+>>>>>>> 5eca14fd8d7edc04f9317eb05d35f31cf23578dc
 	iniciaBlue();
 }
 
@@ -427,11 +431,19 @@ void viraDir(int angulo){ // função que faz o robô girar para a direita o ân
 }
 
 int distanciaGiroDireita(int grau){
+<<<<<<< HEAD
 	   return (((grau*17)/143)); // COMO FOI FEITA ESSA CONVERSÃO??? [na base da tentativa e erro]
 }
 
 int distanciaGiroEsquerda(int grau){
 	   return (((grau*17)/143));
+=======
+	   return (((grau*17)/149));
+}
+
+int distanciaGiroEsquerda(int grau){
+	   return (((grau*17)/157));
+>>>>>>> 5eca14fd8d7edc04f9317eb05d35f31cf23578dc
 }
 
 void MyOnFwd(int motor, int pot)
