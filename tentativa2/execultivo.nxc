@@ -66,6 +66,19 @@
 #define DESGIREI 6
 #define CALIBRA 7
 
+//contantes do mapeamento
+#define DISTANCIA_QUADRANTE 39 //em centimetros
+#define NORTE 0
+#define LESTE 1
+#define SUL 2
+#define OESTE 3 
+
+//variáveis gloabais do mapeamento
+int central[5][5], barreira[5][5], caverna[5][5];
+int direcao;
+int caminho[25];
+int contPassos;
+
 //variáveis globais
 int MyTcD;
 int MyTcE;
@@ -75,6 +88,10 @@ int free_to_go;
 void MyOnFwd(int motor, int pot);
 int MyMotorTachoCount(int motor);
 void MyResetTachoCount(int motor);
+
+//funções do mapeamento
+void init_mapeamento();
+void girarCardeal(int dir);//gira para a direção desejada
 
 //declaração das funções
 void executivo();
@@ -189,6 +206,7 @@ void executivo()
 void init()
 {
 	desligaBlue();
+	init_mapeamento();
   	inicializaSensores();
   	FecharPorta();
 	iniciaBlue();
@@ -233,7 +251,7 @@ void andar()//melhorar esse função - apneas testes por enquanto
 {
 	free_to_go = 1;
 
-	if(distanciaTachoCount(MediaTC()) <= 10000)//um metro
+	if(distanciaTachoCount(MediaTC()) <= 100*DISTANCIA_QUADRANTE)
 	{
 		MyOnFwd(MD,84);
 		MyOnFwd(ME,90);
@@ -241,14 +259,31 @@ void andar()//melhorar esse função - apneas testes por enquanto
 	}
 	else
 	{
+		//decide para onde vai, vira, zera os tcs e calibra.
+		//parar sem mexer na free to go
+		MyOnFwd(MD,0);
+		MyOnFwd(ME,0);
+		if(caminho[contPassos] == -1)
+		{
+			nbip(5);
+			while(1){}
+		}
+		girarCardeal(caminho[contPassos++]);
+		MyResetTachoCount(MD);
+		MyResetTachoCount(ME);
+		MyTcD = 0;
+		MyTcE = 0;
+
+		//teste:
 		//nbip(3);
 		//Wait(10000);
-		viraEsq(90);
+		/*viraEsq(90);
 		MandaCalibra();
 		MyResetTachoCount(ME);
 		MyResetTachoCount(MD);
 		MyTcD = 0;
 		MyTcE = 0;
+	*/
 	}
 }
 
@@ -392,11 +427,11 @@ void viraDir(int angulo){ // função que faz o robô girar para a direita o ân
 }
 
 int distanciaGiroDireita(int grau){
-	   return (((grau*17)/149)); // COMO FOI FEITA ESSA CONVERSÃO??? [na base da tentativa e erro]
+	   return (((grau*17)/143)); // COMO FOI FEITA ESSA CONVERSÃO??? [na base da tentativa e erro]
 }
 
 int distanciaGiroEsquerda(int grau){
-	   return (((grau*17)/152));
+	   return (((grau*17)/143));
 }
 
 void MyOnFwd(int motor, int pot)
@@ -462,4 +497,126 @@ int distanciaTachoCount(int grau)
 void MandaCalibra()
 {
 	SendRemoteNumber(CONEXAO, OUTBOX, CALIBRA);
+}
+
+void init_mapeamento()
+{
+	int i, j;
+
+	for(i=0; i<5; i++)
+	{
+		for(j=0; j<5; j++)
+		{
+			central[i][j] = -1;
+			barreira[i][j] = -1;
+			caverna[i][j] = -1;
+		}
+	}
+
+	contPassos = 0;
+
+	direcao = NORTE;
+
+	for(i=0; i<25; i++)
+	{
+		caminho[i] = -1;
+	}
+
+	caminho[0] = LESTE;
+	caminho[1] = NORTE;
+	caminho[2] = NORTE;
+	caminho[3] = OESTE;
+	caminho[4] = SUL;
+	caminho[5] = SUL;
+	//caminho[6] = 1;
+	//caminho[7] = N;
+	//caminho[8] = N;
+}
+
+void girarCardeal(int dir)
+{
+	switch(direcao)
+	{
+		case NORTE:
+			switch(dir)
+			{
+				case NORTE:
+					direcao = NORTE;
+				break;
+				case LESTE:
+					viraDir(90);
+					direcao = LESTE;
+				break;
+				case SUL:
+					viraDir(180);
+					direcao = SUL;
+				break;
+				case OESTE:
+					viraEsq(90);
+					direcao = OESTE;
+				break;
+			}
+		break;
+		case LESTE:
+			switch(dir)
+			{
+				case NORTE:
+					viraEsq(90);
+					direcao = NORTE;
+				break;
+				case LESTE:
+					direcao = LESTE;
+				break;
+				case SUL:
+					viraDir(90);
+					direcao = SUL;
+				break;
+				case OESTE:
+					viraDir(180);
+					direcao = OESTE;
+				break;
+			}
+		break;
+		case SUL:
+			switch(dir)
+			{
+				case NORTE:
+					viraDir(180);
+					direcao = NORTE;
+				break;
+				case LESTE:
+					viraEsq(90);
+					direcao = LESTE;
+				break;
+				case SUL:
+					direcao = SUL;
+				break;
+				case OESTE:
+					viraDir(90);
+					direcao = LESTE;
+				break;
+			}
+		break;
+		case OESTE:
+			switch(dir)
+			{
+				case NORTE:
+					viraDir(90);
+					direcao = NORTE;
+				break;
+				case LESTE:
+					viraDir(180);
+					direcao = LESTE;
+				break;
+				case SUL:
+					viraEsq(90);
+					direcao = SUL;
+				break;
+				case OESTE:
+					direcao = OESTE;
+				break;
+			}
+		break;
+	}
+	return;
 }

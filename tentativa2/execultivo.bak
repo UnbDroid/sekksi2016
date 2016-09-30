@@ -1,8 +1,7 @@
 //SENSORES E MOTORES
 #define MD OUT_B //motor da direita
 #define ME OUT_A //motor da esquerda
-#define MED OUT_AB
-#define MDE OUT_AB
+#define MD_ME OUT_AB// os dois motores de movimento
 #define MP OUT_C //motor da porta
 #define USD IN_1 //Utrasonico da direita
 #define USE IN_2 //Utrasonico da esquerda
@@ -32,10 +31,16 @@
 	#define ACAO CONECTA
 	#define CONEXAO 1
 
-//cor dos boncos
+//cor dos bonecos
 #define BONECO_BRANCO 1
 #define BONECO_PRETO 2
 #define BONECO_VERMELHO 3
+
+//cor do chao
+#define CHAO_PRETO 14
+#define CHAO_BRANCO 13
+#define CHAO_VERDE 4
+#define CHAO_AZUL 2
 
 //angulos
 #define ANGULOREJEITADIREITA 1500
@@ -43,6 +48,9 @@
 
 //
 #define DIFERENCIALDEERRODOANGULO 5
+
+//
+#define ANGULO_CAGADINHA 180
 
 //
 #define NAO_ALIEN 0
@@ -56,6 +64,20 @@
 #define DESGIRAR 4
 #define REJEITAR 5
 #define DESGIREI 6
+#define CALIBRA 7
+
+//contantes do mapeamento
+#define DISTANCIA_QUADRANTE 39 //em centimetros
+#define NORTE 0
+#define LESTE 1
+#define SUL 2
+#define OESTE 3 
+
+//variáveis gloabais do mapeamento
+int central[5][5], barreira[5][5], caverna[5][5];
+int direcao;
+int caminho[25];
+int contPassos;
 
 //variáveis globais
 int MyTcD;
@@ -66,6 +88,10 @@ int free_to_go;
 void MyOnFwd(int motor, int pot);
 int MyMotorTachoCount(int motor);
 void MyResetTachoCount(int motor);
+
+//funções do mapeamento
+void init_mapeamento();
+void girarCardeal(int dir);//gira para a direção desejada
 
 //declaração das funções
 void executivo();
@@ -90,6 +116,7 @@ int distanciaGiroDireita(int grau);
 int distanciaGiroEsquerda(int grau);
 int MediaTC();
 int distanciaTachoCount(int grau);
+void MandaCalibra();
 
 
 //função para dbug
@@ -97,6 +124,15 @@ void  bip()
 {
   PlaySound(SOUND_DOWN);
 }
+ void nbip(int n)
+ {
+ 	int i;
+
+ 	for(i=0; i<n; i++)
+ 	{
+ 		bip();
+ 	}
+ }
 
 //função principal
 task main()
@@ -108,6 +144,7 @@ task main()
 void executivo()
 {
   int aux, us_frente = 200, us_frente_temp;
+  int temp_tc_D, temp_tc_E;
 
 	init();
 
@@ -130,11 +167,11 @@ void executivo()
 			break;
 			case REJEITAR:
 				parar();
-				tem_tc_D = MyTcD;
-				tem_tc_E = MyTcE;
+				temp_tc_D = MyTcD;
+				temp_tc_E = MyTcE;
 				rejeitar();
-				MyTcD = tem_tc_D;
-				MyTcE = tem_tc_E;
+				MyTcD = temp_tc_D;
+				MyTcE = temp_tc_E;
 				andar();
 			break;
 			case TESTE:
@@ -145,12 +182,15 @@ void executivo()
 				{
 					MyOnFwd(ME, 0);
 					MyOnFwd(MD,90);
-					Wait(400);
+					while(MotorTachoCount(MD) < ANGULO_CAGADINHA){}
 					MyOnFwd(MD, 0);
 					MyOnFwd(ME,90);
-					Wait(400);
+					while(MotorTachoCount(ME) < ANGULO_CAGADINHA){}
 				}
 				parar();
+				FecharPorta();
+
+
 				while(1){}
 			break;
 		}
@@ -166,6 +206,7 @@ void executivo()
 void init()
 {
 	desligaBlue();
+	init_mapeamento();
   	inicializaSensores();
   	FecharPorta();
 	iniciaBlue();
@@ -210,19 +251,39 @@ void andar()//melhorar esse função - apneas testes por enquanto
 {
 	free_to_go = 1;
 
-	if(distanciaTachoCount(MediaTC()) <= 1000)//um metro
+	if(distanciaTachoCount(MediaTC()) <= 100*DISTANCIA_QUADRANTE)
 	{
-		MyOnFwd(MD,90);
+		MyOnFwd(MD,84);
 		MyOnFwd(ME,90);
 		//bip();
 	}
 	else
 	{
-		viraEsq(90);
+		//decide para onde vai, vira, zera os tcs e calibra.
+		//parar sem mexer na free to go
+		MyOnFwd(MD,0);
+		MyOnFwd(ME,0);
+		if(caminho[contPassos] == -1)
+		{
+			nbip(5)
+			while(1){}
+		}
+		girarCardeal(caminho[contPassos++]);
+		MyResetTachoCount(MD);
+		MyResetTachoCount(ME);
+		MyTcD = 0;
+		MyTcE = 0;
+
+		//teste:
+		//nbip(3);
+		//Wait(10000);
+		/*viraEsq(90);
+		MandaCalibra();
 		MyResetTachoCount(ME);
 		MyResetTachoCount(MD);
 		MyTcD = 0;
 		MyTcE = 0;
+	*/
 	}
 }
 
@@ -319,7 +380,7 @@ void FecharPorta()
 	  tc = MotorTachoCount(MP);
 	}while(tc!=old_tc);
 
-	OnFwd(MP,0);
+	OnFwd(MP,-10);
 }
 
 int RecebeUS()
@@ -370,7 +431,7 @@ int distanciaGiroDireita(int grau){
 }
 
 int distanciaGiroEsquerda(int grau){
-	   return (((grau*17)/159));
+	   return (((grau*17)/157));
 }
 
 void MyOnFwd(int motor, int pot)
@@ -430,5 +491,132 @@ int MediaTC()
 
 int distanciaTachoCount(int grau)
 {
-	return (3*grau);                   //Distancia a ser percorrid/Raio da roda
+	return ((267*grau)/100);  //Distancia a ser percorrid/Raio da roda
+}
+
+void MandaCalibra()
+{
+	SendRemoteNumber(CONEXAO, OUTBOX, CALIBRA);
+}
+
+void init_mapeamento()
+{
+	int i, j;
+
+	for(i=0; i<5; i++)
+	{
+		for(j=0; j<5; j++)
+		{
+			central[i][j] = -1;
+			barreira[i][j] = -1;
+			caverna[i][j] = -1;
+		}
+	}
+
+	contPassos = 0;
+
+	direcao = NORTE;
+
+	for(i=0; i<25; i++)
+	{
+		caminho[i] = -1;
+	}
+
+	caminho[0] = LESTE;
+	caminho[1] = NORTE;
+	caminho[2] = NORTE;
+	caminho[3] = OESTE;
+	caminho[4] = SUL;
+	caminho[5] = SUL;
+	//caminho[6] = 1;
+	//caminho[7] = N;
+	//caminho[8] = N;
+}
+
+void girarCardeal(int dir)
+{
+	switch(direcao)
+	{
+		case NORTE:
+			switch(dir)
+			{
+				case NORTE:
+					direcao = NORTE;
+				break;
+				case LESTE:
+					viraDir(90);
+					direcao = LESTE;
+				break;
+				case SUL:
+					viraDir(180);
+					direcao = SUL;
+				break;
+				case OESTE:
+					viraEsq(90);
+					direcao = OESTE;
+				break;
+			}
+		break;
+		case LESTE:
+			switch(dir)
+			{
+				case NORTE:
+					viraEsq(90);
+					direcao = NORTE;
+				break;
+				case LESTE:
+					direcao = LESTE;
+				break;
+				case SUL:
+					viraDir(90);
+					direcao = SUL;
+				break;
+				case OESTE:
+					viraDir(180);
+					direcao = OESTE;
+				break;
+			}
+		break;
+		case SUL:
+			switch(dir)
+			{
+				case NORTE:
+					viraDir(180);
+					direcao = NORTE;
+				break;
+				case LESTE:
+					viraEsq(90);
+					direcao = LESTE;
+				break;
+				case SUL:
+					direcao = SUL;
+				break;
+				case OESTE:
+					viraDir(90);
+					direcao = LESTE;
+				break;
+			}
+		break;
+		case OESTE:
+			switch(dir)
+			{
+				case NORTE:
+					viraDir(90);
+					direcao = NORTE;
+				break;
+				case LESTE:
+					viraDir(180);
+					direcao = LESTE;
+				break;
+				case SUL:
+					viraEsq(90);
+					direcao = SUL;
+				break;
+				case OESTE:
+					direcao = OESTE;
+				break;
+			}
+		break;
+	}
+	return;
 }
