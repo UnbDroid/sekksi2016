@@ -79,6 +79,8 @@ void MyResetTachoCount(int motor);
 //declaração das funções
 void executivo();
 void init();
+void DescobreBonecoAlvo();
+void RetornaBoneco(int cor);
 void desligaBlue();
 void inicializaSensores();
 void iniciaBlue();
@@ -100,7 +102,6 @@ int distanciaGiroEsquerda(int grau);
 int MediaTC();
 int distanciaTachoCount(int grau);
 void MandaCalibra();
-
 
 //função para dbug
 void  bip()
@@ -189,10 +190,47 @@ void executivo()
 void init()
 {
 	desligaBlue();
-  	inicializaSensores();
-  	FecharPorta();
+  inicializaSensores();
+  FecharPorta();
 	iniciaBlue();
 }
+
+
+void DescobreBonecoAlvo(){
+		int corEsq, corDir;
+
+	  corEsq = SensorHTColorNum(HTE);
+	  corDir = SensorHTColorNum(HTD);
+
+	  if((corDir == CHAO_VERDE) || (corEsq == CHAO_VERDE))
+	  {
+	    RetornaBoneco(CHAO_VERDE);
+	  }else //if((corDir == COR_AZUL) || (corEsq == COR_AZUL))
+	  {
+	    //bip();
+	    RetornaBoneco(CHAO_AZUL);
+	  }
+}
+
+void RetornaBoneco(int cor){//FUNFOU BONITO
+    int passei = 0;
+    ClearScreen();
+    do{
+      //bip();
+      if(cor == CHAO_AZUL){//BONECO COR BRANCA
+
+        SendRemoteNumber(CONEXAO, OUTBOX, BONECO_BRANCO);
+        Wait(30);
+        bip();
+      }else if(cor == CHAO_VERDE){//BONECO COR PRETA
+        SendRemoteNumber(CONEXAO, OUTBOX, BONECO_PRETO);
+        Wait(30);
+      }
+      TextOut(0, LCD_LINE4, "SINAL MANDADO");
+      ReceiveRemoteNumber(INBOX, true, passei);
+   }while(passei != SIM);
+}
+
 
 void desligaBlue()
 {

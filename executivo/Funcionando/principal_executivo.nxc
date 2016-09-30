@@ -112,7 +112,7 @@ void executivo(){
   desligaBlue();
   inicializaSensores();
 	iniciaBlue();
-  
+
 	IniciaCorDoChao(corEsq, corDir);
 
   andaRetoDireita(DIST_DA_PAREDE, 50);
@@ -263,12 +263,12 @@ void Rejeitar(){// TESTAR
 }
 
 void IniciaCorDoChao(int corEsq, int corDir){//FUNFOU BONITO
-  
+
   corEsq = SensorHTColorNum(HTE);
   corDir = SensorHTColorNum(HTD);
-  
+
   //bip();
-  
+
   if((corDir == COR_VERDE) || (corEsq == COR_VERDE))
   {
     RetornaBoneco(COR_VERDE);
@@ -280,13 +280,13 @@ void IniciaCorDoChao(int corEsq, int corDir){//FUNFOU BONITO
 }
 
 void CorDoChao(int corEsq, int corDir){//TESTAR SE DA RE
-  
+
   corEsq = SensorHTColorNum(HTE);
   corDir = SensorHTColorNum(HTD);
-  
+
   if((corDir == COR_PRETA)||(corEsq == COR_PRETA)){//AREA KIEFAS == FOOOOOGE NEGADAA
     DaReh();
-  }  
+  }
 }
 
 void RetornaBoneco(int cor){//FUNFOU BONITO
@@ -299,13 +299,12 @@ void RetornaBoneco(int cor){//FUNFOU BONITO
         SendRemoteNumber(CONEXAO, OUTBOX, BONECO_BRANCO);
         Wait(30);
         bip();
-      }else if(cor == COR_VERDE){//BONECO COR PRETA      
+      }else if(cor == COR_VERDE){//BONECO COR PRETA
         SendRemoteNumber(CONEXAO, OUTBOX, BONECO_PRETO);
         Wait(30);
       }
       TextOut(0, LCD_LINE4, "SINAL MANDADO");
       ReceiveRemoteNumber(INBOX, true, passei);
-
    }while(passei != SIM);
 }
 
@@ -332,7 +331,7 @@ void DaReh(){
 
 void ViraUmaRoda(int ang){
    my_tc_d = 0;
-    
+
   OnFwd(MD, 50);
   do{
 
