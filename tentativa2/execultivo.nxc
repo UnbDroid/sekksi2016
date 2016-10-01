@@ -43,8 +43,10 @@
 #define CHAO_AZUL 2
 
 //angulos
-#define ANGULOREJEITADIREITA 1500
-#define ANGCORRECAOVOLTA 165
+#define ANGULOREJEITADIREITA 1520
+#define ANGCORRECAOVOLTADIREITA -45
+#define ANGULOREJEITAESQUERDA 1500
+#define ANGCORRECAOVOLTAESQUERDA 165
 
 //
 #define DIFERENCIALDEERRODOANGULO 5
@@ -65,6 +67,8 @@
 #define REJEITAR 5
 #define DESGIREI 6
 #define CALIBRA 7
+#define PEGUEI 8
+#define CHEIO 9
 
 //CONSTANTES PID
 #define TENDE_DIRESQ 0// de -100(vira pra direita) a 100(vira pra esquerda)
@@ -76,17 +80,28 @@
 #define D_TRAS 200
 
 //contantes do mapeamento
-#define DISTANCIA_QUADRANTE 39 //em centimetros
+#define DISTANCIA_QUADRANTE 36 //em centimetros
 #define NORTE 0
 #define LESTE 1
 #define SUL 2
 #define OESTE 3 
+
+//zonas
+#define CENTRAL 0
+#define CAVERNA 1
+#define BARREIRA 2
+#define ZONA_AZUL 3
+#define ZONA_VERDE 4
 
 //variáveis gloabais do mapeamento
 int central[5][5], barreira[5][5], caverna[5][5];
 int direcao;
 int caminho[25];
 int contPassos;
+int i_global, j_global;
+int progredi_na_tabela;
+int zona;
+
 
 //variáveis globais
 int MyTcD;
@@ -101,6 +116,11 @@ void MyResetTachoCount(int motor);
 //funções do mapeamento
 void init_mapeamento();
 void girarCardeal(int dir);//gira para a direção desejada
+void AndaNaTabela();
+int tabelaPP();
+void CalculaVolta();
+int NumeroOndeEstou();
+void vira180();
 
 //declaração das funções
 void executivo();
@@ -113,6 +133,8 @@ void parar();
 void rejeitar();
 void rejeitarDireita();
 void voltarejeitarDireita();
+void rejeitarEsquerda();
+void voltarejeitarEsquerda();
 void MandaGirei();
 void AbrirPorta();
 void FecharPorta();
@@ -129,6 +151,7 @@ void MandaCalibra();
 void MyOnRev(int motor, int pot);
 void MyOnFwdSyncPID(int motores, int pot, int turnDirEsq, int p, int i, int d);
 void MyOnRevSyncPID(int motores, int pot, int turnDirEsq, int p, int i, int d);
+int TemQueDescartarParaAEsquerda();
 
 //função para dbug
 void  bip()
@@ -167,7 +190,7 @@ void executivo()
 			us_frente = us_frente_temp;
 
 		ReceiveRemoteNumber(INBOX, true, aux);
-		//aux=TESTE;
+		
 		switch(aux)
 		{
 			case PARAR:
@@ -185,7 +208,13 @@ void executivo()
 				MyTcE = temp_tc_E;
 				andar();
 			break;
-			case TESTE:
+			case PEGUEI:
+				tabelaPP();
+			break;
+			case CHEIO:
+				caminho[contPassos] = -1;
+				andar();
+				/*
 				viraDir(180);
 				AbrirPorta();
 				//andar();
@@ -202,7 +231,7 @@ void executivo()
 				FecharPorta();
 
 
-				while(1){}
+				while(1){}*/
 			break;
 		}
 
@@ -221,7 +250,6 @@ void init()
 	init_mapeamento();
   	inicializaSensores();
   	FecharPorta();
-
 
 	iniciaBlue();
 }
@@ -263,13 +291,26 @@ void iniciaBlue()
 
 void andar()//melhorar esse função - apneas testes por enquanto
 {
+	int distancia_media;
+
 	free_to_go = 1;
 
-	if(distanciaTachoCount(MediaTC()) <= 100*DISTANCIA_QUADRANTE)
+	distancia_media = distanciaTachoCount(MediaTC());
+
+	if(distancia_media <= 100*DISTANCIA_QUADRANTE)
 	{
 		//MyOnFwdSyncPID(MD_ME, 90, TENDE_DIRESQ, P_FRENTE, I_FRENTE, D_FRENTE);
-		MyOnFwd(MD,84);
-		MyOnFwd(ME,90);
+		if((distancia_media <= 50*DISTANCIA_QUADRANTE)&&(!progredi_na_tabela))
+		{
+			AndaNaTabela();
+			progredi_na_tabela = 1;
+			if(NumeroOndeEstou() == -1)
+			{
+				tabelaPP();
+			}
+		}
+		MyOnFwd(MD,93);
+		MyOnFwd(ME,85);
 		//bip();
 	}
 	else
@@ -278,17 +319,23 @@ void andar()//melhorar esse função - apneas testes por enquanto
 		//parar sem mexer na free to go
 		MyOnFwd(MD,0);
 		MyOnFwd(ME,0);
-		Wait(50);
+		Wait(10);
+
+
+
 		if(caminho[contPassos] == -1)
 		{
-			nbip(5);
-			while(1){}
+			//while(1){}
+			CalculaVolta();
 		}
-		girarCardeal(caminho[contPassos++]);
+		girarCardeal(caminho[contPassos]);
+		contPassos++;
 		MyResetTachoCount(MD);
 		MyResetTachoCount(ME);
 		MyTcD = 0;
 		MyTcE = 0;
+
+		progredi_na_tabela = 0;
 
 		//teste:
 		//nbip(3);
@@ -313,19 +360,23 @@ void parar()
 
 void rejeitar()
 {
-	//bip();
-	//bip();
-	//implementar uma função para decidir para qual lado deve girar
-	rejeitarDireita();
-	//bip();
-	MandaGirei();
-	//bip();
-	while(!RecebeDesgirar()){}
-	//bip();
-	voltarejeitarDireita();
-	//bip();
+	if(TemQueDescartarParaAEsquerda())
+	{
+		rejeitarEsquerda();
+		MandaGirei();
+		while(!RecebeDesgirar()){}
+		voltarejeitarEsquerda();
+	}
+	else
+	{
+		rejeitarDireita();
+		MandaGirei();
+		while(!RecebeDesgirar()){}
+		voltarejeitarDireita();
+	}
+	
+	
 	MandaDesGirei();
-	//bip();
 }
 
 void rejeitarDireita()
@@ -351,7 +402,35 @@ void voltarejeitarDireita()
 
 	do {
 		tc = MotorTachoCount(ME);
-	} while(tc>(-ANGULOREJEITADIREITA)-ANGCORRECAOVOLTA);
+	} while(tc>(-ANGULOREJEITADIREITA)-ANGCORRECAOVOLTADIREITA);
+
+	parar();
+}
+
+void rejeitarEsquerda()
+{
+	int tc;
+
+	//bip();
+	MyOnFwd(MD,90);
+	//bip();
+
+	do{
+     tc = MotorTachoCount(MD);
+  	}while(tc<ANGULOREJEITAESQUERDA);
+  	//bip();
+	parar();
+}
+
+void voltarejeitarEsquerda()
+{
+	int tc;
+
+	MyOnFwd(MD,-90);
+
+	do {
+		tc = MotorTachoCount(MD);
+	} while(tc>(-ANGULOREJEITAESQUERDA)-ANGCORRECAOVOLTAESQUERDA);
 
 	parar();
 }
@@ -443,11 +522,11 @@ void viraDir(int angulo){ // função que faz o robô girar para a direita o ân
 }
 
 int distanciaGiroDireita(int grau){
-	   return (((grau*17)/142/*se girar mais diminua o denomidador*/)); // COMO FOI FEITA ESSA CONVERSÃO??? [na base da tentativa e erro]
+	   return (((grau*16)/143/*se girar mais diminua o denomidador*/)); // COMO FOI FEITA ESSA CONVERSÃO??? [na base da tentativa e erro]
 }
 
 int distanciaGiroEsquerda(int grau){
-	   return (((grau*17)/155/*se girar mais diminua o denomidador*/));
+	   return (((grau*17)/143/*se girar mais diminua o denomidador*/));
 }
 
 void MyOnFwd(int motor, int pot)
@@ -529,24 +608,39 @@ void init_mapeamento()
 		}
 	}
 
-	contPassos = 0;
-
-	direcao = NORTE;
 
 	for(i=0; i<25; i++)
 	{
 		caminho[i] = -1;
 	}
 
+	contPassos = 0;
+
+	direcao = NORTE;
+
+	i_global = -1;
+	j_global = 2;
+
+	progredi_na_tabela = 0;
+
+	zona = CENTRAL;
+
+	//teste:
 	caminho[0] = LESTE;
-	caminho[1] = NORTE;
+	caminho[1] = LESTE;
 	caminho[2] = NORTE;
-	caminho[3] = OESTE;
-	caminho[4] = SUL;
-	caminho[5] = SUL;
-	//caminho[6] = 1;
-	//caminho[7] = N;
-	//caminho[8] = N;
+	caminho[3] = NORTE;
+	caminho[4] = NORTE;
+	caminho[5] = NORTE;
+	caminho[6] = OESTE;
+	caminho[7] = OESTE;
+	caminho[8] = OESTE;
+	caminho[9] = OESTE;
+	caminho[10] = SUL;
+	caminho[11] = SUL;
+	caminho[12] = SUL;
+	caminho[13] = SUL;
+
 
 	//cont
 }
@@ -566,7 +660,7 @@ void girarCardeal(int dir)
 					direcao = LESTE;
 				break;
 				case SUL:
-					viraDir(180);
+					vira180();
 					direcao = SUL;
 				break;
 				case OESTE:
@@ -590,7 +684,7 @@ void girarCardeal(int dir)
 					direcao = SUL;
 				break;
 				case OESTE:
-					viraDir(180);
+					vira180();
 					direcao = OESTE;
 				break;
 			}
@@ -599,7 +693,7 @@ void girarCardeal(int dir)
 			switch(dir)
 			{
 				case NORTE:
-					viraDir(180);
+					vira180();
 					direcao = NORTE;
 				break;
 				case LESTE:
@@ -611,7 +705,7 @@ void girarCardeal(int dir)
 				break;
 				case OESTE:
 					viraDir(90);
-					direcao = LESTE;
+					direcao = OESTE;
 				break;
 			}
 		break;
@@ -623,7 +717,7 @@ void girarCardeal(int dir)
 					direcao = NORTE;
 				break;
 				case LESTE:
-					viraDir(180);
+					vira180();
 					direcao = LESTE;
 				break;
 				case SUL:
@@ -669,4 +763,169 @@ void MyOnRevSyncPID(int motores, int pot, int turnDirEsq, int p, int i, int d){
   MyTcD += MotorTachoCount(MD);
   MyTcE += MotorTachoCount(ME);
   OnRevSyncPID(MD_ME, pot, turnDirEsq, p, i ,d);
+}
+
+void AndaNaTabela()
+{
+	switch(direcao)
+	{
+		case NORTE:
+			i_global++;
+		break;
+		case LESTE:
+			j_global++;
+		break;
+		case SUL:
+			i_global--;
+		break;
+		case OESTE:
+			j_global--;
+		break;
+	}
+
+	
+	ClearScreen();
+	NumOut(0,LCD_LINE1,i_global);
+	NumOut(0,LCD_LINE2,j_global);
+	bip();
+}
+
+void tabelaPP()
+{
+	switch(zona)
+	{
+		case CENTRAL:
+			central[i_global][j_global]++;
+		break;
+		case CAVERNA:
+			caverna[i_global][j_global]++;
+		break;
+		case BARREIRA:
+			barreira[i_global][j_global]++;
+		break;
+	}
+}
+
+
+void CalculaVolta()
+{
+	int i, j, k;
+
+	k=0;
+
+	i = i_global;
+	j = j_global;
+
+	while(!((i == 0)&&(j == 2)))
+	{
+		if(j==2)
+		{
+			caminho[k] = LESTE;
+			j++;
+			k++;
+		}
+		else if(j > 2)
+		{
+			if(i==0)
+			{
+				caminho[k] = OESTE;
+				j--;
+				k++;
+			}
+			else//i!=0
+			{
+				if((i==4)&&(j==3))
+				{
+					caminho[k] = LESTE;
+					j++;
+					k++;
+				}
+				else
+				{
+					caminho[k] = SUL;
+					i--;
+					k++;
+				}
+			}
+		}
+		else //j<2
+		{
+			if(i==0)
+			{
+				caminho[k] = LESTE;
+				j++;
+				k++;
+			}
+			else//i!=0
+			{
+				if((i==4)&&(j==1))
+				{
+					caminho[k] = OESTE;
+					j--;
+					k++;
+				}
+				else
+				{
+					caminho[k] = SUL;
+					i--;
+					k++;
+				}
+			}
+		}
+	}
+
+	for(i=k; i<25; i++)
+	{
+		caminho[k] = -1;
+	}
+
+	contPassos = 0;
+}
+
+int NumeroOndeEstou()
+{
+	switch(zona)
+	{
+		case CENTRAL:
+			return central[i_global][j_global];
+		break;
+		case CAVERNA:
+			return caverna[i_global][j_global];
+		break;
+		case BARREIRA:
+			return barreira[i_global][j_global];
+		break;
+	}
+}
+
+int TemQueDescartarParaAEsquerda()
+{
+
+	if((i_global == 0) && (direcao == LESTE))
+		return 1;
+	if((i_global == 4) && (direcao == OESTE))
+		return 1;
+	if((j_global == 0) && (direcao == SUL))
+		return 1;
+	if((j_global == 4) && (direcao == NORTE))
+		return 1;
+
+	return 0;
+}
+void vira180()
+{
+	if((i_global == 0) && (direcao == LESTE))
+		viraEsq(180);
+	else if((i_global == 4) && (direcao == OESTE))
+		viraEsq(180);
+	else if((j_global == 0) && (direcao == SUL))
+		viraEsq(180);
+	else if((j_global == 4) && (direcao == NORTE))
+		viraEsq(180);
+	else{
+		viraDir(180);
+	}
+
+	//viraDir(180);	
+	//viraEsq(180);
 }

@@ -56,6 +56,8 @@
 #define REJEITAR 5
 #define DESGIREI 6
 #define CALIBRA 7
+#define PEGUEI 8
+#define CHEIO 9
 
 //cor dos boncos
 #define BONECO_BRANCO 1
@@ -117,9 +119,9 @@ int RecebiDesGirei();
 void MandaUs();
 void LevantaBoneco();
 void CalibraFaixaBase();
+void MandaPeguei();
+void MandaCheio();
 
-//funções de testes
-void MandaTeste();
 //função para dbug
 void  bip()
 {
@@ -143,29 +145,33 @@ task main()
 
 void consultor()
 {
-    int mensagem;
+  int mensagem;
 
-    init();
+  init();
 
-    while(1)//void loop
+  while(1)//void loop
+  {
+
+    ReceiveRemoteNumber(INBOX,true,mensagem);
+    MandaUs();
+/*
+    switch(mensagem)
     {
-
-      ReceiveRemoteNumber(INBOX,true,mensagem);
-
-      if(TemBoneco())
-      {
-      	BonecoNaFrente();
-      }
-      else//caso não tenha mais nada para fazer manda o sinal do us
-      {
-        MandaUs();
-      }
-
-      if(mensagem == CALIBRA)
-      {
+      case CALIBRA:
         CalibraFaixaBase();
-      }
+      break;
     }
+*/
+    if(mensagem == CALIBRA)
+    {
+      CalibraFaixaBase();
+    }
+
+    if(TemBoneco())
+    {
+    	BonecoNaFrente();
+    }
+  }
 }
 
 void init()
@@ -363,6 +369,7 @@ void Pega(){
     OnFwd(MOTOR_GARRA,POTENCIA_MAXIMA_GARRA);
     while(MotorTachoCount(MOTOR_GARRA)>(ANGULO_1));
     Off(MOTOR_GARRA);
+    MandaPeguei();
     Wait(TEMPO_DEPOIS_DE_JOGAR_DENTRO);
     VoltaGarra();
 }
@@ -407,8 +414,10 @@ void BonecoNaFrente()
       {
         LevantaBoneco();
         nbip(4);
-        MandaTeste();
-        while(1){}
+        MandaCheio();
+        while(1){//corrigir a contição deste whilw<<<<<<<-------------------------
+          MandaUs();
+        }
       }
       else
       {
@@ -504,9 +513,9 @@ void MandaUs()
   SendRemoteNumber(CONEXAO, OUTBOX_US, aux);
 }
 
-void MandaTeste()
+void MandaCheio()
 {
-  SendRemoteNumber(CONEXAO, OUTBOX, TESTE);
+  SendRemoteNumber(CONEXAO, OUTBOX, CHEIO);
 }
 
 void LevantaBoneco()
@@ -535,5 +544,9 @@ void CalibraFaixaBase()
 
   nbip(2);
 
+}
 
+void MandaPeguei()
+{
+  SendRemoteNumber(CONEXAO, OUTBOX, PEGUEI);
 }
