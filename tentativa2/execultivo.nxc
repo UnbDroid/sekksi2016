@@ -309,8 +309,8 @@ void andar()//melhorar esse função - apneas testes por enquanto
 				tabelaPP();
 			}
 		}
-		MyOnFwd(MD,84);
-		MyOnFwd(ME,90);
+		MyOnFwd(MD,93);
+		MyOnFwd(ME,85);
 		//bip();
 	}
 	else
@@ -363,15 +363,19 @@ void rejeitar()
 	if(TemQueDescartarParaAEsquerda())
 	{
 		rejeitarEsquerda();
+		MandaGirei();
+		while(!RecebeDesgirar()){}
+		voltarejeitarEsquerda();
 	}
 	else
 	{
 		rejeitarDireita();
+		MandaGirei();
+		while(!RecebeDesgirar()){}
+		voltarejeitarDireita();
 	}
 	
-	MandaGirei();
-	while(!RecebeDesgirar()){}
-	voltarejeitarDireita();
+	
 	MandaDesGirei();
 }
 
@@ -413,7 +417,7 @@ void rejeitarEsquerda()
 
 	do{
      tc = MotorTachoCount(MD);
-  	}while(tc<ANGULOREJEITADESQUEDA);
+  	}while(tc<ANGULOREJEITAESQUERDA);
   	//bip();
 	parar();
 }
@@ -518,11 +522,11 @@ void viraDir(int angulo){ // função que faz o robô girar para a direita o ân
 }
 
 int distanciaGiroDireita(int grau){
-	   return (((grau*17)/142/*se girar mais diminua o denomidador*/)); // COMO FOI FEITA ESSA CONVERSÃO??? [na base da tentativa e erro]
+	   return (((grau*16)/143/*se girar mais diminua o denomidador*/)); // COMO FOI FEITA ESSA CONVERSÃO??? [na base da tentativa e erro]
 }
 
 int distanciaGiroEsquerda(int grau){
-	   return (((grau*17)/153/*se girar mais diminua o denomidador*/));
+	   return (((grau*17)/143/*se girar mais diminua o denomidador*/));
 }
 
 void MyOnFwd(int motor, int pot)
