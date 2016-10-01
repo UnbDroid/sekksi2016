@@ -120,6 +120,7 @@ void AndaNaTabela();
 int tabelaPP();
 void CalculaVolta();
 int NumeroOndeEstou();
+void vira180();
 
 //declaração das funções
 void executivo();
@@ -655,7 +656,7 @@ void girarCardeal(int dir)
 					direcao = LESTE;
 				break;
 				case SUL:
-					viraDir(180);
+					vira180();
 					direcao = SUL;
 				break;
 				case OESTE:
@@ -679,7 +680,7 @@ void girarCardeal(int dir)
 					direcao = SUL;
 				break;
 				case OESTE:
-					viraDir(180);
+					vira180();
 					direcao = OESTE;
 				break;
 			}
@@ -688,7 +689,7 @@ void girarCardeal(int dir)
 			switch(dir)
 			{
 				case NORTE:
-					viraDir(180);
+					vira180();
 					direcao = NORTE;
 				break;
 				case LESTE:
@@ -712,7 +713,7 @@ void girarCardeal(int dir)
 					direcao = NORTE;
 				break;
 				case LESTE:
-					viraDir(180);
+					vira180();
 					direcao = LESTE;
 				break;
 				case SUL:
@@ -906,4 +907,21 @@ int TemQueDescartarParaAEsquerda()
 		return 1;
 
 	return 0;
+}
+void vira180()
+{
+	if((i_global == 0) && (direcao == LESTE))
+		viraEsq(180);
+	else if((i_global == 4) && (direcao == OESTE))
+		viraEsq(180);
+	else if((j_global == 0) && (direcao == SUL))
+		viraEsq(180);
+	else if((j_global == 4) && (direcao == NORTE))
+		viraEsq(180);
+	else{
+		viraDir(180);
+	}
+
+	//viraDir(180);	
+	//viraEsq(180);
 }
