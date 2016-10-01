@@ -1,0 +1,20 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# Explicit paths specified without -i or -o; assuming --only paths...
+# On branch master
+# Your branch is behind 'origin/master' by 9 commits, and can be fast-forwarded.
+#   (use "git pull" to update your local branch)
+#
+# Changes to be committed:
+#	deleted:    "tentativa2/identifica_m\303\263dulo"
+#	modified:   tentativa2/novo_anda_reto.nxc
+#
+# Untracked files:
+#	tentativa2/Angulo_volta_rejeitar.bak
+#	tentativa2/Angulo_volta_rejeitar.nxc
+#	tentativa2/arrumacao_virada.nxc
+#	"tentativa2/identifica_m\303\263dulo.nxc"
+#	"tentativa2/identifica_m\303\263dulo_com_tachocount.nxc"
+#
+
