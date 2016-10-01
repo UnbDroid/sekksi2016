@@ -153,20 +153,20 @@ void consultor()
     {
 
       ReceiveRemoteNumber(INBOX,true,mensagem);
+      MandaUs();
 
       if(TemBoneco())
       {
       	BonecoNaFrente();
       }
-      else//caso não tenha mais nada para fazer manda o sinal do us
+        
+      switch(mensagem)
       {
-        MandaUs();
+        case CALIBRA:
+          CalibraFaixaBase();;
+        break;
       }
 
-      if(mensagem == CALIBRA)
-      {
-        CalibraFaixaBase();
-      }
     }
 }
 
@@ -411,7 +411,9 @@ void BonecoNaFrente()
         LevantaBoneco();
         nbip(4);
         MandaCheio();
-        while(1){}
+        while(1){//corrigir a contição deste whilw<<<<<<<-------------------------
+          MandaUs();
+        }
       }
       else
       {

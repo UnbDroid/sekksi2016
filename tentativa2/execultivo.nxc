@@ -44,7 +44,9 @@
 
 //angulos
 #define ANGULOREJEITADIREITA 1500
-#define ANGCORRECAOVOLTA 165
+#define ANGCORRECAOVOLTADIREITA 165
+#define ANGULOREJEITAESQUERDA 1500
+#define ANGCORRECAOVOLTAESQUERDA 165
 
 //
 #define DIFERENCIALDEERRODOANGULO 5
@@ -78,7 +80,7 @@
 #define D_TRAS 200
 
 //contantes do mapeamento
-#define DISTANCIA_QUADRANTE 39 //em centimetros
+#define DISTANCIA_QUADRANTE 36 //em centimetros
 #define NORTE 0
 #define LESTE 1
 #define SUL 2
@@ -88,6 +90,8 @@
 #define CENTRAL 0
 #define CAVERNA 1
 #define BARREIRA 2
+#define ZONA_AZUL 3
+#define ZONA_VERDE 4
 
 //variáveis gloabais do mapeamento
 int central[5][5], barreira[5][5], caverna[5][5];
@@ -115,6 +119,7 @@ void girarCardeal(int dir);//gira para a direção desejada
 void AndaNaTabela();
 int tabelaPP();
 void CalculaVolta();
+int NumeroOndeEstou();
 
 //declaração das funções
 void executivo();
@@ -127,6 +132,8 @@ void parar();
 void rejeitar();
 void rejeitarDireita();
 void voltarejeitarDireita();
+void rejeitarEsquerda();
+void voltarejeitarEsquerda();
 void MandaGirei();
 void AbrirPorta();
 void FecharPorta();
@@ -143,6 +150,7 @@ void MandaCalibra();
 void MyOnRev(int motor, int pot);
 void MyOnFwdSyncPID(int motores, int pot, int turnDirEsq, int p, int i, int d);
 void MyOnRevSyncPID(int motores, int pot, int turnDirEsq, int p, int i, int d);
+int TemQueDescartarParaAEsquerda();
 
 //função para dbug
 void  bip()
@@ -203,7 +211,7 @@ void executivo()
 				tabelaPP();
 			break;
 			case CHEIO:
-				CalculaVolta();
+				caminho[contPassos] = -1;
 				andar();
 				/*
 				viraDir(180);
@@ -291,11 +299,14 @@ void andar()//melhorar esse função - apneas testes por enquanto
 	if(distancia_media <= 100*DISTANCIA_QUADRANTE)
 	{
 		//MyOnFwdSyncPID(MD_ME, 90, TENDE_DIRESQ, P_FRENTE, I_FRENTE, D_FRENTE);
-		if((distancia_media <= 100*DISTANCIA_QUADRANTE)&&(!progredi_na_tabela))
+		if((distancia_media <= 50*DISTANCIA_QUADRANTE)&&(!progredi_na_tabela))
 		{
 			AndaNaTabela();
 			progredi_na_tabela = 1;
-			tabelaPP();
+			if(NumeroOndeEstou() == -1)
+			{
+				tabelaPP();
+			}
 		}
 		MyOnFwd(MD,84);
 		MyOnFwd(ME,90);
@@ -307,16 +318,17 @@ void andar()//melhorar esse função - apneas testes por enquanto
 		//parar sem mexer na free to go
 		MyOnFwd(MD,0);
 		MyOnFwd(ME,0);
-		Wait(50);
+		Wait(10);
 
 
 
 		if(caminho[contPassos] == -1)
 		{
-			while(1){}
+			//while(1){}
 			CalculaVolta();
 		}
-		girarCardeal(caminho[contPassos++]);
+		girarCardeal(caminho[contPassos]);
+		contPassos++;
 		MyResetTachoCount(MD);
 		MyResetTachoCount(ME);
 		MyTcD = 0;
@@ -347,19 +359,19 @@ void parar()
 
 void rejeitar()
 {
-	//bip();
-	//bip();
-	//implementar uma função para decidir para qual lado deve girar
-	rejeitarDireita();
-	//bip();
+	if(TemQueDescartarParaAEsquerda())
+	{
+		rejeitarEsquerda();
+	}
+	else
+	{
+		rejeitarDireita();
+	}
+	
 	MandaGirei();
-	//bip();
 	while(!RecebeDesgirar()){}
-	//bip();
 	voltarejeitarDireita();
-	//bip();
 	MandaDesGirei();
-	//bip();
 }
 
 void rejeitarDireita()
@@ -385,7 +397,35 @@ void voltarejeitarDireita()
 
 	do {
 		tc = MotorTachoCount(ME);
-	} while(tc>(-ANGULOREJEITADIREITA)-ANGCORRECAOVOLTA);
+	} while(tc>(-ANGULOREJEITADIREITA)-ANGCORRECAOVOLTADIREITA);
+
+	parar();
+}
+
+void rejeitarEsquerda()
+{
+	int tc;
+
+	//bip();
+	MyOnFwd(MD,90);
+	//bip();
+
+	do{
+     tc = MotorTachoCount(MD);
+  	}while(tc<ANGULOREJEITADESQUEDA);
+  	//bip();
+	parar();
+}
+
+void voltarejeitarEsquerda()
+{
+	int tc;
+
+	MyOnFwd(MD,-90);
+
+	do {
+		tc = MotorTachoCount(MD);
+	} while(tc>(-ANGULOREJEITAESQUERDA)-ANGCORRECAOVOLTAESQUERDA);
 
 	parar();
 }
@@ -660,7 +700,7 @@ void girarCardeal(int dir)
 				break;
 				case OESTE:
 					viraDir(90);
-					direcao = LESTE;
+					direcao = OESTE;
 				break;
 			}
 		break;
@@ -753,10 +793,10 @@ void tabelaPP()
 			central[i_global][j_global]++;
 		break;
 		case CAVERNA:
-			barreira[i_global][j_global]++;
+			caverna[i_global][j_global]++;
 		break;
 		case BARREIRA:
-			caverna[i_global][j_global]++;
+			barreira[i_global][j_global]++;
 		break;
 	}
 }
@@ -835,4 +875,35 @@ void CalculaVolta()
 	}
 
 	contPassos = 0;
+}
+
+int NumeroOndeEstou()
+{
+	switch(zona)
+	{
+		case CENTRAL:
+			return central[i_global][j_global];
+		break;
+		case CAVERNA:
+			return caverna[i_global][j_global];
+		break;
+		case BARREIRA:
+			return barreira[i_global][j_global];
+		break;
+	}
+}
+
+int TemQueDescartarParaAEsquerda()
+{
+
+	if((i_global == 0) && (direcao == LESTE))
+		return 1;
+	if((i_global == 4) && (direcao == OESTE))
+		return 1;
+	if((j_global == 0) && (direcao == SUL))
+		return 1;
+	if((j_global == 4) && (direcao == NORTE))
+		return 1;
+
+	return 0;
 }
