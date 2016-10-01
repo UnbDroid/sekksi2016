@@ -1,0 +1,112 @@
+//SENSORES E MOTORES
+#define MD OUT_B //motor da direita
+#define ME OUT_A //motor da esquerda
+#define MD_ME OUT_AB// os dois motores de movimento
+#define MP OUT_C //motor da porta
+#define USD IN_1 //Utrasonico da direita
+#define USE IN_2 //Utrasonico da esquerda
+//pots
+#define potmax 90
+//LOGICA
+#define direita 1
+#define esquerda 2
+//constantes de controle
+#define distancia 15
+#define CORRECAO 1
+//Funcoes
+void  bip();
+void nbip(int n);
+void inicializaSensores();
+
+//variaveis globais controle
+int pot_at_e ;
+int pot_at_d ;
+
+
+void inicializaSensores()
+{
+  SetSensorLowspeed(USD);
+  SetSensorLowspeed(USE);
+}
+
+void  bip()
+{
+  PlaySound(SOUND_DOWN);
+}
+
+void nbip(int n)
+ {
+ 	int i;
+
+ 	for(i=0; i<n; i++)
+ 	{
+ 		bip();
+ 	}
+ }
+ 
+int potenciaValida(int pot)
+{
+ 		if (pot>potmax)
+ 		{
+ 			return 0;
+ 		}else{
+ 			return 1;
+ 		}
+ }
+
+void CORRIGE(int corr)
+{
+  	OnFwd(ME,pot_at_e+corr);
+  	OnFwd(MD,pot_at_d-corr);
+
+}
+
+
+int pot_erro(int ERRO){
+	int pot_corr;
+	pot_corr = (ERRO*2);
+	return pot_corr;
+}
+
+void analisa(int pot_d, int pot_e){
+	if (pot_d>90)
+	{
+		pot_d=90;
+		OnFwd(MD,pot_d);
+	}
+	if (pot_e>90)
+	{
+		pot_e = 90;
+		OnFwd(ME,pot_e);
+	}
+}
+
+void CONTROL()
+{
+ 	int us_at,corr,ERRO=0;
+ 	
+ 	while(1)
+ 	{	
+ 		OnFwd(MD_ME,80);
+ 		pot_at_d = 80;
+		pot_at_e = 80;
+ 		us_at = SensorUS(USD);
+ 		ERRO = us_at - distancia ;
+
+ 		corr = pot_erro(ERRO);
+
+ 		if (potenciaValida(pot_at_e+corr) && potenciaValida(pot_at_d-corr))
+ 		{
+ 			CORRIGE(corr);
+ 		}else{
+ 			analisa((pot_at_e + corr),(pot_at_d - corr));
+ 			nbip(1);
+ 		}
+
+ 	}
+ }
+
+ task main(){
+ 	inicializaSensores();
+ 	CONTROL();
+ }
