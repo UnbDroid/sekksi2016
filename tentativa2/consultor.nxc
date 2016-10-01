@@ -145,29 +145,33 @@ task main()
 
 void consultor()
 {
-    int mensagem;
+  int mensagem;
 
-    init();
+  init();
 
-    while(1)//void loop
+  while(1)//void loop
+  {
+
+    ReceiveRemoteNumber(INBOX,true,mensagem);
+    MandaUs();
+/*
+    switch(mensagem)
     {
-
-      ReceiveRemoteNumber(INBOX,true,mensagem);
-      MandaUs();
-
-      if(TemBoneco())
-      {
-      	BonecoNaFrente();
-      }
-        
-      switch(mensagem)
-      {
-        case CALIBRA:
-          CalibraFaixaBase();;
-        break;
-      }
-
+      case CALIBRA:
+        CalibraFaixaBase();
+      break;
     }
+*/
+    if(mensagem == CALIBRA)
+    {
+      CalibraFaixaBase();
+    }
+
+    if(TemBoneco())
+    {
+    	BonecoNaFrente();
+    }
+  }
 }
 
 void init()
