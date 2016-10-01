@@ -66,7 +66,7 @@ void  bip()
   PlaySound(SOUND_DOWN);
 }
 //Declara��o de vari�veis globais
-int poteGlobal = 90;
+int poteGlobal = 85;
 int potdGlobal = 80;
 int MyTcD = 0;
 int MyTcE = 0;
@@ -77,8 +77,7 @@ task main(){
     inicializaSensores();
     //andaRetoUS(DIST_PAREDE+45, DIST_1M, DIREITA);
     //viraDir(90);
-    viraEsq(90);
-    //parar();
+    AndaReto();
     //Wait(100);
 
     //DaReh(DIST_1M/2);
@@ -127,7 +126,7 @@ void AndaReto(){
      MyOnFwd(ME, poteGlobal);
      Regula(10);
 
-     while(distanciaTachoCount((tachoE + tachoD)/2)<DIST_2M*100){
+     while(distanciaTachoCount((tachoE + tachoD)/2)<DIST_2M*50){
         tachoE = MotorTachoCount(ME);
         tachoD = MotorTachoCount(MD);
         Regula(6);
@@ -174,14 +173,14 @@ void MyOnFwdSyncPID(int motores, int pot, int turnDirEsq, int p, int i, int d){
   MyTcE += MotorTachoCount(ME);
   bip();
   //OnFwdSyncPID(motores, pot, turnDirEsq, p, i ,d);
-  OnFwdSyncPID(MD_ME,pot,turnDirEsq,p,i,d);
+  //OnFwdSyncPID(MD_ME,pot,turnDirEsq,p,i,d);
   bip();
 }
 
 void MyOnRevSyncPID(int motores, int pot, int turnDirEsq, int p, int i, int d){
   MyTcD += MotorTachoCount(MD);
   MyTcE += MotorTachoCount(ME);
-  OnRevSyncPID(MD_ME, pot, turnDirEsq, p, i ,d);
+  //OnRevSyncPID(MD_ME, pot, turnDirEsq, p, i ,d);
 }
 
 void andaRetoDireita(int distParede, int distAndar){ // fun��o que faz o rob� andar � "distParede" cent�metros da parede por "distAndar" cent�metros
