@@ -1,0 +1,541 @@
+//Valores Calibraveis
+// Defines de leitura do RGB do meio (ainda precisa testar mais)
+    #define COR_BRANCA_MEIO_MIN 250
+    #define COR_BRANCA_MEIO_MAX 600
+    #define COR_PRETA_MEIO_MIN 10
+    #define COR_PRETA_MEIO_MAX 250
+    #define COR_VERMELHA_MEIO_MIN 78
+    #define COR_VERMELHA_MEIO_MAX 168
+
+// Defines de leitura do RGB da direita do robô
+    //#define COR_BASE_DIR_MAX 586
+    //#define COR_BASE_DIR_MIN 229
+
+ // Defines de leitura do RGB da esquerda do robô
+    //#define COR_BASE_ESQ_MAX 434
+    //#define COR_BASE_ESQ_MIN 215
+  #define FAIXA_SENSORES_LATERAL 97
+  #define FAIXA_SENSORES_MEIO 247
+
+//Bluetooth
+	#define CONEXAO 0
+	#define INBOX 2
+	#define OUTBOX 1
+  #define OUTBOX_US 3
+
+
+//IO
+// Defines de sensores
+	#define RGB_DIR IN_1
+	#define RGB_ESQ IN_2
+	#define RGB_MEIO IN_3
+	#define US_FRENTE IN_4
+
+// Defines de motores
+	#define MOTOR_GARRA OUT_A
+
+//Tempos
+    //#define TEMPO_ATE_A_GARRA_TRAVAR 2000
+    #define TEMPO_ATE_JOGAR_DENTRO 3750
+    //#define TEMPO_ATE_A_GARRA_VOLTAR 2000 //estou usando tempo... rola de usar por angulos depois
+    #define TEMPO_DEPOIS_DE_JOGAR_DENTRO_GARANTIA 800
+
+    //misc
+    #define MENOR_DISTANCIA_US 15
+
+//LOGICA
+	#define direita 1
+	#define esquerda 2
+
+//códigos para comunicação BlueTooth
+#define TESTE -1
+#define PARAR 1
+#define SEGUIR 2
+#define GIREI 3
+#define DESGIRAR 4
+#define REJEITAR 5
+#define DESGIREI 6
+#define CALIBRA 7
+
+//cor dos boncos
+#define BONECO_BRANCO 1
+#define BONECO_PRETO 2
+#define BONECO_VERMELHO 3
+
+//my boolean
+#define NAO_ALIEN 0
+#define SIM_ALIEN 1
+
+//Garra
+  //potencias
+  #define POTENCIA_MAXIMA_GARRA -70
+  #define POTENCIA_MED_GARRA -40
+  #define POTENCIA_MIN_GARRA -30
+
+  //Tempos
+  #define TEMPO_DEPOIS_DE_JOGAR_DENTRO 200
+
+  #define TEMPO_DEPOIS_DO_BONECO_ESCAPULIR 400
+
+  //Defines angulos da garra
+  #define ANGULO_1 -110 //-77
+  #define ANG_SEGURO -153
+  #define ANG_LEVANTAR -50
+
+  #define VETOR_CALIBRACAO 11
+//mais variáveis globais
+int CorBaseDirMax, CorBaseDirMin, CorBaseEsqMax, CorBaseEsqMin, CorBaseMeioMin, CorBaseMeioMax;
+
+//declaração das variáveis globais
+int bonecoAlvo;
+int bonecoNaoAlvo;
+int BonecosCapturados;
+
+//declaração das funções
+void InicializaSensores();
+int returnUS();
+int TemBoneco();
+int lerSensor(int sensor);
+int PegaBoneco();
+void VoltaGarra();
+void Pega();
+int CorBoneco();
+void init();
+void BonecoAlvo();
+int RecebeBoneco();
+void BipBranco();
+void BipPreto();
+void MandarParar();
+void MandarSeguir();
+void consultor();
+void BonecoNaFrente();
+void Rejeita();
+int RecebiGirei();
+void MandaDesgirar();
+void MandaRejeitar();
+int RecebiDesGirei();
+void MandaUs();
+void LevantaBoneco();
+void CalibraFaixaBase();
+
+//funções de testes
+void MandaTeste();
+//função para dbug
+void  bip()
+{
+  PlaySound(SOUND_DOWN);
+}
+
+void nbip(int n)
+ {
+  int i;
+
+  for(i=0; i<n; i++)
+  {
+    bip();
+  }
+ }
+
+task main()
+{
+	consultor();
+}
+
+void consultor()
+{
+    int mensagem;
+
+    init();
+
+
+
+    while(1)//void loop
+    {
+
+      ReceiveRemoteNumber(INBOX,true,mensagem);
+
+      if(TemBoneco())
+      {
+      	BonecoNaFrente();
+      }
+      else//caso não tenha mais nada para fazer manda o sinal do us
+      {
+        MandaUs();
+      }
+
+      if(mensagem == CALIBRA)
+      {
+        CalibraFaixaBase();
+      }
+    }
+}
+
+void init()
+{
+	InicializaSensores();
+	VoltaGarra();
+	BonecoAlvo();
+
+  CalibraFaixaBase();
+
+  BonecosCapturados = 0;
+
+}
+
+void InicializaSensores()
+{
+  SetSensorColorRed(RGB_DIR);
+  SetSensorColorRed(RGB_ESQ);
+  SetSensorColorGreen(RGB_MEIO);
+  SetSensorLowspeed(US_FRENTE);
+}
+
+void BonecoAlvo()
+{
+	bonecoAlvo = RecebeBoneco();
+
+
+	if(bonecoAlvo == BONECO_PRETO)
+	{
+	  BipPreto();
+	  bonecoNaoAlvo = BONECO_BRANCO;
+	}
+	else if(bonecoAlvo == BONECO_BRANCO)
+	{
+	  BipBranco();
+	  bonecoNaoAlvo = BONECO_PRETO;
+	}
+}
+
+int TemBoneco()
+{
+   int rgb_esq, rgb_dir, rgb_meio;
+
+   //bip();
+
+   rgb_dir = lerSensor(RGB_DIR);
+   rgb_esq = lerSensor(RGB_ESQ);
+   rgb_meio = lerSensor(RGB_MEIO);
+
+   //NumOut(0, LCD_LINE2, rgb_dir);
+   //NumOut(0, LCD_LINE3, rgb_esq);
+
+   if(((rgb_dir < CorBaseDirMax) && (rgb_dir > CorBaseDirMin)) && ((rgb_esq < CorBaseEsqMax) && (rgb_esq > CorBaseEsqMin)) && ((rgb_meio < CorBaseMeioMax) && (rgb_meio > CorBaseMeioMin)))
+      return NAO_ALIEN;
+   return SIM_ALIEN;
+}
+
+int returnUS(){
+  int valor = 0;
+  valor = SensorUS(US_FRENTE);
+  Wait(30);
+  NumOut(0, LCD_LINE1, valor);
+
+  if(valor < MENOR_DISTANCIA_US){
+    return 1;
+  }
+  else
+    return 0;
+}
+
+int RecebeBoneco(){
+     int sinInicial = 0;
+     //bip();
+     /* //função correta
+     do{
+          ReceiveRemoteNumber(INBOX, true, sinInicial);
+          Wait(30);
+     }while(sinInicial == 0);
+
+     SendRemoteNumber(CONEXAO, OUTBOX, SIM);
+     Wait(50);
+     LimpaBuffer();
+     if(sinInicial == BONECO_PRETO)
+          return BONECO_PRETO;
+     else if(sinInicial == BONECO_BRANCO)
+          return BONECO_BRANCO;
+      */
+
+     //função para teste
+     return BONECO_PRETO;
+
+}
+
+void LimpaBuffer()
+{
+	int i, lixo;
+
+	for(i=0; i<10; i++)
+	{
+		ReceiveRemoteNumber(INBOX, true, lixo);
+	}
+}
+
+int lerSensor(int sensor)
+{
+   int i, j, k, aux;
+   int leitura[VETOR_CALIBRACAO];
+
+   for(i=0; i<VETOR_CALIBRACAO; i++){
+      aux = SensorRaw(sensor);
+
+      j = 0;
+      while(aux < leitura[j] && j<i)
+      {
+         j++;
+      }
+
+      if(j<i){
+         for(k=i; k>j; k--){
+            leitura[k] = leitura[k-1];
+         }
+         leitura[j] = aux;
+      }
+      else{
+         leitura[i] = aux;
+      }
+   }
+
+   return leitura[(VETOR_CALIBRACAO - 1)/2];
+}
+
+int PegaBoneco()
+{
+    int tc, old_tc;
+
+    OnFwd(MOTOR_GARRA,POTENCIA_MIN_GARRA);
+    tc = MotorTachoCount(MOTOR_GARRA);
+
+    do
+      {
+        Wait(200);
+        old_tc = tc;
+        tc = MotorTachoCount(MOTOR_GARRA);
+        if(tc<ANG_SEGURO)
+        {
+            OnFwd(MOTOR_GARRA,0);
+            //Bip();//colocar uma função mais rápida de bipar
+            VoltaGarra();
+            return 0;//deu errado pegar o boneco
+        }
+      }while(tc!=old_tc);
+
+      OnFwd(MOTOR_GARRA,0);
+
+      return 1;//pegou o boneco com sucesso
+}
+
+void VoltaGarra()
+{
+    int tc, old_tc;
+
+    OnFwd(MOTOR_GARRA,-(POTENCIA_MIN_GARRA));
+      tc = MotorTachoCount(MOTOR_GARRA);
+      do
+      {
+        Wait(200);
+        old_tc = tc;
+        tc = MotorTachoCount(MOTOR_GARRA);
+      }while(tc!=old_tc);
+
+      OnFwd(MOTOR_GARRA,0);
+}
+
+int CorBoneco()//TESTAR
+{
+    int leitura;
+
+    leitura = lerSensor(RGB_MEIO);
+
+    if((leitura < COR_BRANCA_MEIO_MAX)&&(leitura > COR_BRANCA_MEIO_MIN))
+    {
+      return BONECO_BRANCO;
+    }
+    if((leitura < COR_PRETA_MEIO_MAX)&&(leitura > COR_PRETA_MEIO_MIN))
+        return BONECO_PRETO;
+    if((leitura < COR_VERMELHA_MEIO_MAX)&&(leitura > COR_VERMELHA_MEIO_MIN))
+        return BONECO_VERMELHO;
+}
+
+void Pega(){
+    while(MotorTachoCount(MOTOR_GARRA) != 0)
+    {
+      ResetTachoCount(MOTOR_GARRA);
+    }
+    OnFwd(MOTOR_GARRA,POTENCIA_MAXIMA_GARRA);
+    while(MotorTachoCount(MOTOR_GARRA)>(ANGULO_1));
+    Off(MOTOR_GARRA);
+    Wait(TEMPO_DEPOIS_DE_JOGAR_DENTRO);
+    VoltaGarra();
+}
+
+void MandarParar()
+{
+	SendRemoteNumber(CONEXAO, OUTBOX, PARAR);
+}
+
+void MandarSeguir()
+{
+	SendRemoteNumber(CONEXAO, OUTBOX, SEGUIR);
+}
+
+void BipBranco()
+{
+  PlaySound(SOUND_UP);
+  PlaySound(SOUND_DOWN);
+}
+
+void BipPreto()
+{
+
+  PlaySound(SOUND_DOWN);
+  PlaySound(SOUND_UP);
+}
+
+void BonecoNaFrente()
+{
+  int cor;
+
+  MandarParar();
+  //talvez um wait aqui
+  if(PegaBoneco())
+  {
+    cor = CorBoneco();
+    //cor = bonecoAlvo;////DEBUG
+    //BonecosCapturados = 3;////DEBUG
+    if(cor == bonecoAlvo)
+    {
+      if(BonecosCapturados == 3)
+      {
+        LevantaBoneco();
+        nbip(4);
+        MandaTeste();
+        while(1){}
+      }
+      else
+      {
+        Pega();
+        MandarSeguir();
+        BonecosCapturados++;
+        nbip(BonecosCapturados);
+      }
+    }
+    else if(cor == bonecoNaoAlvo)
+    {
+      //bip();
+      //Pega();
+      Rejeita();
+    }
+    else if(cor == BONECO_VERMELHO)
+    {
+      //bip();
+      //Pega();
+      Rejeita();
+      //MandarSeguir();
+    }
+    else//caso ele não reconheça a cor do boneco
+    {
+      bip();
+      bip();
+
+      ClearScreen();
+      NumOut(0,LCD_LINE1,cor);
+      //debug
+      //while(1){}
+
+      VoltaGarra();
+      MandarSeguir();
+      Wait(TEMPO_DEPOIS_DO_BONECO_ESCAPULIR);
+    }
+  }
+  else
+  {
+    VoltaGarra();
+    MandarSeguir();
+    Wait(TEMPO_DEPOIS_DO_BONECO_ESCAPULIR);
+  }
+}
+
+void Rejeita()
+{
+  LevantaBoneco();
+  MandaRejeitar();
+  while(!RecebiGirei()){}//espera acabar de girar
+  VoltaGarra();
+  MandaDesgirar();
+  while(!RecebiDesGirei()){}//espera acabar de desgirar
+}
+
+int RecebiGirei()
+{
+  int aux;
+  ReceiveRemoteNumber(INBOX, true, aux);
+  if(aux == GIREI)
+    return 1;
+  return 0;
+}
+
+int RecebiDesGirei()
+{
+  int aux;
+  ReceiveRemoteNumber(INBOX, true, aux);
+  if(aux == DESGIREI)
+    return 1;
+  return 0;
+}
+
+void MandaRejeitar()
+{
+  //bip();
+  //bip();
+  //bip();
+  SendRemoteNumber(CONEXAO, OUTBOX, REJEITAR);
+}
+
+void MandaDesgirar()
+{
+  SendRemoteNumber(CONEXAO, OUTBOX, DESGIRAR);
+}
+
+void MandaUs()
+{
+  int aux;
+
+  aux = SensorUS(US_FRENTE);
+
+  SendRemoteNumber(CONEXAO, OUTBOX_US, aux);
+}
+
+void MandaTeste()
+{
+  SendRemoteNumber(CONEXAO, OUTBOX, TESTE);
+}
+
+void LevantaBoneco()
+{
+  OnFwd(MOTOR_GARRA,POTENCIA_MAXIMA_GARRA);
+  while(MotorTachoCount(MOTOR_GARRA)>ANG_LEVANTAR){}
+  Off(MOTOR_GARRA);
+}
+
+void CalibraFaixaBase()
+{
+  int rgb_esq, rgb_dir, rgb_meio;
+
+  //bip();
+
+  rgb_dir = lerSensor(RGB_DIR);
+  rgb_esq = lerSensor(RGB_ESQ);
+  rgb_meio = lerSensor(RGB_MEIO);
+
+  CorBaseDirMax = rgb_dir + FAIXA_SENSORES_LATERAL;
+  CorBaseDirMin = rgb_dir - FAIXA_SENSORES_LATERAL;
+  CorBaseEsqMax = rgb_esq + FAIXA_SENSORES_LATERAL;
+  CorBaseEsqMin = rgb_esq - FAIXA_SENSORES_LATERAL;
+  CorBaseMeioMax = rgb_meio + FAIXA_SENSORES_MEIO;
+  CorBaseMeioMin = rgb_meio - FAIXA_SENSORES_MEIO;
+
+  nbip(2);
+
+
+}
