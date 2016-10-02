@@ -32,9 +32,6 @@
 #define I_TRAS 100
 #define D_TRAS 200
 
-//CONSTANTES SEGUE US
-#define DIST_LIMITE 15
-
 //DECLARA��O DE DIRE��ES
 #define ESQUERDA 2
 #define DIREITA 3
@@ -168,26 +165,20 @@ void RegulaComUS(int distParede, int direcao){
        poteGlobal = 90;
      }
      else if(distanciaAtual > distParede){
-       if(distanciaAtual < distParede + DIST_LIMITE){// diz um limite pra ignorar o sinal do US
-         if(potdGlobal < 90){//mais pot pra direita> vira esq
-              potdGlobal += 5;
-         }else{
-            if(poteGlobal > 60){
-              poteGlobal -= 5;
-            }
+       if(potdGlobal < 90){//mais pot pra direita> vira esq
+            potdGlobal += 5;
+       }else
+          if(poteGlobal > 60){
+            poteGlobal -= 5;
           }
-        }
      }
      else if(distanciaAtual < distParede){
-       if(distanciaAtual > distParede - DIST_LIMITE){
-         if(poteGlobal < 90){ // mais pot pra esquerda > vira dir
-            poteGlobal += 5;
-         }else{
-            if(potdGlobal > 60){
-              potdGlobal -= 5;
-            }
+       if(poteGlobal < 90){ // mais pot pra esquerda > vira dir
+          poteGlobal += 5;
+       }else
+          if(potdGlobal > 60){
+            potdGlobal -= 5;
           }
-        }
      }
    }else if(direcao == DIREITA){
      distanciaAtual = SensorUS(USD);
@@ -197,26 +188,20 @@ void RegulaComUS(int distParede, int direcao){
        poteGlobal = 90;
      }
      else if(distanciaAtual > distParede){
-       if(distanciaAtual < distParede + DIST_LIMITE){
-         if(poteGlobal < 90){ // mais pot pra esquerda > vira dir
-            poteGlobal += 5;
-         }else{
-            if(potdGlobal > 60){
-              potdGlobal -= 5;
-            }
+       if(poteGlobal < 90){ // mais pot pra esquerda > vira dir
+          poteGlobal += 5;
+       }else
+          if(potdGlobal > 60){
+            potdGlobal -= 5;
           }
-        }
      }
      else if(distanciaAtual < distParede){
-       if(distanciaAtual > distParede - DIST_LIMITE){
-         if(potdGlobal < 90){//mais pot pra di reita> vira esq
-              potdGlobal += 5;
-         }else{
-            if(poteGlobal > 60){
-              poteGlobal -= 5;
-            }
+       if(potdGlobal < 90){//mais pot pra di reita> vira esq
+            potdGlobal += 5;
+       }else
+          if(poteGlobal > 60){
+            poteGlobal -= 5;
           }
-        }
      }
    }
 
@@ -234,11 +219,13 @@ void soAnda(){
 
 
   for(int i = 0; i < 100; i++){
-    RegulaComUS(150 ,DIREITA);
-    RegulaComUS(7 ,ESQUERDA);
+    RegulaComUS(130 ,DIREITA);
   }
+
   Regula(10);
+
   nbip(3);
+
 }
 
 void AndaReto(){
