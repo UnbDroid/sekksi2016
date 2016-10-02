@@ -1,3 +1,8 @@
+//regulaveis
+#define POTENCIA_RETO_DIREITA 81
+#define POTENCIA_RETO_ESQUERDA 90
+#define TEMPO_DEPOIS_E_ANTES_DE_GIRAR 200
+
 //SENSORES E MOTORES
 #define MD OUT_B //motor da direita
 #define ME OUT_A //motor da esquerda
@@ -28,6 +33,7 @@
 //defines da struct
 
 	#define CONSULTOR "LECA"
+	//#define CONSULTOR "NXT"
 	#define ACAO CONECTA
 	#define CONEXAO 1
 
@@ -45,8 +51,8 @@
 //angulos
 #define ANGULOREJEITADIREITA 1520
 #define ANGCORRECAOVOLTADIREITA -45
-#define ANGULOREJEITAESQUERDA 1500
-#define ANGCORRECAOVOLTAESQUERDA 165
+#define ANGULOREJEITAESQUERDA 1520
+#define ANGCORRECAOVOLTAESQUERDA -40
 
 //
 #define DIFERENCIALDEERRODOANGULO 5
@@ -69,6 +75,8 @@
 #define CALIBRA 7
 #define PEGUEI 8
 #define CHEIO 9
+#define STOP 10
+#define START 11
 
 //CONSTANTES PID
 #define TENDE_DIRESQ 0// de -100(vira pra direita) a 100(vira pra esquerda)
@@ -152,6 +160,8 @@ void MyOnRev(int motor, int pot);
 void MyOnFwdSyncPID(int motores, int pot, int turnDirEsq, int p, int i, int d);
 void MyOnRevSyncPID(int motores, int pot, int turnDirEsq, int p, int i, int d);
 int TemQueDescartarParaAEsquerda();
+void MandaStart();
+void MandaStop();
 
 //função para dbug
 void  bip()
@@ -293,6 +303,8 @@ void andar()//melhorar esse função - apneas testes por enquanto
 {
 	int distancia_media;
 
+	int aux_dir;
+
 	free_to_go = 1;
 
 	distancia_media = distanciaTachoCount(MediaTC());
@@ -309,8 +321,8 @@ void andar()//melhorar esse função - apneas testes por enquanto
 				tabelaPP();
 			}
 		}
-		MyOnFwd(MD,93);
-		MyOnFwd(ME,85);
+		MyOnFwd(MD,POTENCIA_RETO_DIREITA);
+		MyOnFwd(ME,POTENCIA_RETO_ESQUERDA);
 		//bip();
 	}
 	else
@@ -319,16 +331,21 @@ void andar()//melhorar esse função - apneas testes por enquanto
 		//parar sem mexer na free to go
 		MyOnFwd(MD,0);
 		MyOnFwd(ME,0);
-		Wait(10);
 
+		//You think you can erase thie code line, but you con't
+		Wait(200);//nao há colher
+		MandaStop();
 
+		aux_dir = direcao;
 
 		if(caminho[contPassos] == -1)
 		{
 			//while(1){}
 			CalculaVolta();
 		}
+		Wait(TEMPO_DEPOIS_E_ANTES_DE_GIRAR);
 		girarCardeal(caminho[contPassos]);
+		Wait(TEMPO_DEPOIS_E_ANTES_DE_GIRAR);
 		contPassos++;
 		MyResetTachoCount(MD);
 		MyResetTachoCount(ME);
@@ -337,11 +354,19 @@ void andar()//melhorar esse função - apneas testes por enquanto
 
 		progredi_na_tabela = 0;
 
+		MandaStart();
+		
+		if(aux_dir != direcao)//se mudou a direção
+		{
+			Wait(200);
+			MandaCalibra();
+		}
+
 		//teste:
 		//nbip(3);
 		//Wait(10000);
 		/*viraEsq(90);
-		MandaCalibra();
+		
 		MyResetTachoCount(ME);
 		MyResetTachoCount(MD);
 		MyTcD = 0;
@@ -928,4 +953,16 @@ void vira180()
 
 	//viraDir(180);	
 	//viraEsq(180);
+}
+
+void MandaStart()
+{
+	SendRemoteNumber(CONEXAO, OUTBOX, START);
+}
+
+void MandaStop()
+{
+
+	SendRemoteNumber(CONEXAO, OUTBOX, STOP);
+	//nbip(7);
 }

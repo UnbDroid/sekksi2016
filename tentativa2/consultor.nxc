@@ -58,6 +58,8 @@
 #define CALIBRA 7
 #define PEGUEI 8
 #define CHEIO 9
+#define STOP 10
+#define START 11
 
 //cor dos boncos
 #define BONECO_BRANCO 1
@@ -121,6 +123,7 @@ void LevantaBoneco();
 void CalibraFaixaBase();
 void MandaPeguei();
 void MandaCheio();
+int RecebeStart();
 
 //função para dbug
 void  bip()
@@ -152,20 +155,23 @@ void consultor()
   while(1)//void loop
   {
 
-    ReceiveRemoteNumber(INBOX,true,mensagem);
     MandaUs();
-/*
+    ReceiveRemoteNumber(INBOX,true,mensagem);
+
     switch(mensagem)
     {
       case CALIBRA:
         CalibraFaixaBase();
       break;
+      case STOP:
+        //nbip(3);
+        while(!RecebeStart())
+        {
+          MandaUs();
+        }
+      break;
     }
-*/
-    if(mensagem == CALIBRA)
-    {
-      CalibraFaixaBase();
-    }
+
 
     if(TemBoneco())
     {
@@ -549,4 +555,15 @@ void CalibraFaixaBase()
 void MandaPeguei()
 {
   SendRemoteNumber(CONEXAO, OUTBOX, PEGUEI);
+}
+
+int RecebeStart()
+{
+  int aux;
+  ReceiveRemoteNumber(INBOX, true, aux);
+  if(aux == START){                                                                                                                                                                      
+    //nbip(7);
+    return 1;
+  }
+  return 0;
 }
