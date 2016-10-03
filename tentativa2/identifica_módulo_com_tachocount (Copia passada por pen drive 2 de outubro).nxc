@@ -1,0 +1,251 @@
+
+ //defines de motores/sensores
+#define MD OUT_B
+#define ME OUT_A
+#define MD_ME OUT_AB
+#define USD IN_1
+#define USE IN_2
+#define HT IN_3         //direita
+#define SLUZ IN_4       //esquerda
+
+        //valores dos sensores     PS: foi considerada uma margem de erro para os valores
+//HT
+#define HTPRETO1 17               //para o HT, preto e branco assumem dois valores diferentes cada
+#define HTPRETO2 12
+#define HTBRANCO1 13
+#define HTBRANCO2 14
+#define HTAZUL 2
+#define HTVERDE 4
+//SENSOR DE LUZ
+#define LUZ_PRETO_MAX 30
+#define LUZ_PRETO_MIN 15
+#define LUZ_BRANCO_MAX 65
+#define LUZ_BRANCO_MIN 35
+
+//retornos para as variáveis globais de mapeamento
+#define CAVERNA 1
+#define BARREIRA 2
+#define ZONA_AZUL 3
+#define ZONA_VERDE 4
+
+//
+#define DIFERENCIALDEERRODOANGULO 5
+
+//declaracoes das funcoes
+int MediaTC();
+void MyOnFwd(int motor, int pot);
+int distanciaTachoCount(int grau);
+void nbip(int n);
+int MyMotorTachoCount(int motor);
+void MyResetTachoCount(int motor);
+void  bip();
+//variaveis globais
+int MyTcD;
+int MyTcE;
+int potd;
+int pote;
+
+
+void  bip()
+{
+  PlaySound(SOUND_DOWN);
+}
+
+int distanciaTachoCount(int grau)
+{
+     return ((267*grau)/100);  //Distancia a ser percorrid/Raio da roda
+}
+
+int idmediaTC() {
+     int tc_e, tc_d, media;
+     tc_e = MotorTachoCount(ME);
+     tc_d = MotorTachoCount(MD);
+     media = ((tc_d+tc_e)/2);
+     return media;
+}
+
+sub printa(int ht, int luz) {
+     ClearScreen();
+     NumOut(30, LCD_LINE2, ht);
+     NumOut(30, LCD_LINE4, luz);
+}
+
+sub alinha(int s) {
+     int ht, luz;
+     ht=SensorHTColorNum(HT);
+     luz=Sensor(SLUZ);
+     while(((ht==HTBRANCO1)||(ht==HTBRANCO2))||((luz>LUZ_BRANCO_MIN)&&(luz<LUZ_BRANCO_MAX))) {    //Se algum dos sensores estiver lendo branco, entra na função
+          if((luz>LUZ_PRETO_MIN)&&(luz<LUZ_PRETO_MAX)) {       //Se o sensor de luz (esquerda) encontrar algo preto, recua a roda esquerda para girar
+               OnRev(ME, s*60);
+               Wait(200);
+               //while(MyMotorTachoCount(ME)<50);
+               Off(MD_ME);
+               //MyResetTachoCount(ME);
+               //PlayTone(TONE_B7, 500);
+          }
+          else {
+               if((ht==HTPRETO1)||(ht==HTPRETO2)) {            //Se o sensor HT (direita) encontrar algo preto, recua a roda direita para girar
+                    OnRev(MD, s*60);
+                    Wait(200);
+                    //while(MyMotorTachoCount(MD)<50);
+                    Off(MD_ME);
+                   // MyResetTachoCount(MD);
+                    //PlayTone(TONE_A3, 500);
+               }
+          }
+          OnFwd(MD_ME, s*45);                       //anda reto até que um dos dois sensores encontre algo preto
+          Wait(100);                                   //tempo para pegar leitura do sensor?!?!
+          ht=SensorHTColorNum(HT);
+          luz=Sensor(SLUZ);
+          printa(ht, luz);
+     }
+     Off(MD_ME);
+         //sai da função quando ambos os sensores estiverem lendo preto ao mesmo tempo
+}
+
+int caverna_parede() {
+     int ht;
+     OnFwd(MD_ME, 80);
+     ht=SensorHTColorNum(HT);
+     while((distanciaTachoCount(idmediaTC())<(70*100))&&((ht!=HTPRETO1)&&(ht!=HTPRETO2))) { //anda até achar a caverna e/ou até achar o centro do módulo
+          ht=SensorHTColorNum(HT);
+     }
+     Off(MD_ME);
+     if((ht==HTPRETO1)||(ht==HTPRETO2)) {
+          //PlayTone(TONE_B7, 800);            //toque de debug, será bem agudo se achar caverna
+          OnRev(MD_ME, 80);
+          while(distanciaTachoCount(idmediaTC())>(-65*100));      //alterar essa distância para o mais próximo da entrada, mas ainda dentro do modulo
+          Off(MD_ME);
+          alinha(-1);
+          return CAVERNA;
+     }
+     else {
+          //PlayTone(TONE_A3, 800);     //toque de debug, será bem grave se achar que é módulo da parede
+          OnRev(MD_ME, 80);
+          while(distanciaTachoCount(idmediaTC())>(-75*100));       //alterar essa distância para o mais próximo da entrada, mas ainda dentro do modulo
+          Off(MD_ME);
+          alinha(-1);
+          return BARREIRA;
+     }
+}
+
+int identifica_modulo() {
+     int ht, luz;
+
+     alinha(1);        //alinha com começo do novo módulo
+     OnFwd(MD_ME, 65);
+     while(distanciaTachoCount(idmediaTC())<(10*100));       //anda até um pouco depois da linha, para ver a cor além dela
+     Off(MD_ME);
+     ht=SensorHTColorNum(HT);
+
+     //se a cor achada for verde ou azul, reconhece que não é para entrar, volta ao módulo anterior e retorna o valor correspondente para as variáveis de mapeamento
+     if(ht==HTVERDE) {
+          //PlayTone(TONE_C4, 1000);
+          OnRev(MD_ME, 65);
+          while(distanciaTachoCount(idmediaTC())>(-15*100));
+          alinha(1);
+          return ZONA_VERDE;
+     }
+     else if(ht==HTAZUL) {
+          //PlayTone(TONE_C5, 1000);
+          OnRev(MD_ME, 65);
+          while(distanciaTachoCount(idmediaTC())>(-15*100));
+          alinha(1);
+          return ZONA_AZUL;
+     }
+     //se for módulo verde ou azul, sai dele e se alinha de frente logo em seguida, esperando o próximo comando
+
+
+
+     else if((ht==HTBRANCO1)||(ht==HTBRANCO2)) {        //se  encontrar branco depois da linha, sabe-se que é o módulo da caverna ou da parede, e inicia o processo para identificar qual e retornar o valore correspondente para as variáveis de mapeamento
+          return caverna_parede();
+     }
+}
+
+task main () {
+     int i=0, localizacao[4];
+     SetSensorUltrasonic(USD);
+     SetSensorLight(SLUZ);
+     SetSensorLowspeed(HT);
+     while(i<4) {                   //pega 4 leituras de ident. modulo e as guarda
+          if(SensorUS(USD)<10) {
+               localizacao[i]=identifica_modulo();
+               Off(MD_ME);
+               i++;
+          }
+          Wait(20);
+     }
+     
+
+                                 //isso aqui é so para printar os quatro modulos lidos. podia ser mais modular, mas é so teste, entao fica assim mesmo
+     ClearScreen();
+     TextOut(0, LCD_LINE1, "modulo 1:");
+     TextOut(0, LCD_LINE3, "modulo 2:");
+     TextOut(0, LCD_LINE5, "modulo 3:");
+     TextOut(0, LCD_LINE7, "modulo 4:");
+     if(localizacao[0]==1) {
+          TextOut(10, LCD_LINE2, "Caverna");
+          }
+     else if(localizacao[0]==2) {
+          TextOut(10, LCD_LINE2, "Barreira");
+     }
+     else if(localizacao[0]==3) {
+          TextOut(10, LCD_LINE2, "Zona Azul");
+     }
+     else if(localizacao[0]==4) {
+          TextOut(10, LCD_LINE2, "Zona Verde");
+     }
+
+     if(localizacao[1]==1) {
+          TextOut(10, LCD_LINE4, "Caverna");
+          }
+     else if(localizacao[1]==2) {
+          TextOut(10, LCD_LINE4, "Barreira");
+     }
+     else if(localizacao[1]==3) {
+          TextOut(10, LCD_LINE4, "Zona Azul");
+     }
+     else if(localizacao[1]==4) {
+          TextOut(10, LCD_LINE4, "Zona Verde");
+     }
+
+     if(localizacao[2]==1) {
+          TextOut(10, LCD_LINE6, "Caverna");
+          }
+     else if(localizacao[2]==2) {
+          TextOut(10, LCD_LINE6, "Barreira");
+     }
+     else if(localizacao[2]==3) {
+          TextOut(10, LCD_LINE6, "Zona Azul");
+     }
+     else if(localizacao[2]==4) {
+          TextOut(10, LCD_LINE6, "Zona Verde");
+     }
+     
+     if(localizacao[3]==1) {
+          TextOut(10, LCD_LINE8, "Caverna");
+          }
+     else if(localizacao[3]==2) {
+          TextOut(10, LCD_LINE8, "Barreira");
+     }
+     else if(localizacao[3]==3) {
+          TextOut(10, LCD_LINE8, "Zona Azul");
+     }
+     else if(localizacao[3]==4) {
+          TextOut(10, LCD_LINE8, "Zona Verde");
+     }
+
+
+
+     while(TRUE) {                                  //toque indicando que chegou ao final do código, e não fará mais nada
+          PlayTone(TONE_C4, 300);
+          Wait(300);
+          PlayTone(TONE_E4, 300);
+          Wait(300);
+          PlayTone(TONE_G4, 300);
+          Wait(300);
+          PlayTone(TONE_E4, 300);
+          Wait(300);
+     }
+     alinha(-1);
+}
