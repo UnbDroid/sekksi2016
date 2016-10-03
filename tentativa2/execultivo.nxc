@@ -7,8 +7,9 @@
 #define DISTANCIA_ENTRE_OS_SENSORES 26
 
 //Constantes de Controle
-#define KD 10
-#define DIST_LIMITE 15
+#define KP 5
+#define KD 15
+#define DIST_LIMITE 16
 
 //SENSORES E MOTORES
 #define MD OUT_B //motor da direita
@@ -95,7 +96,6 @@
 #define D_TRAS 200
 
 //contantes do mapeamento
-#define DISTANCIA_QUADRANTE 36 //em centimetros
 #define NORTE 0
 #define LESTE 1
 #define SUL 2
@@ -176,6 +176,7 @@ int TemQueDescartarParaAEsquerda();
 void MandaStart();
 void MandaStop();
 void RegulaComUS(int distParede, int direcao);
+void SeguindoRota();
 
 //função para dbug
 void  bip()
@@ -318,84 +319,7 @@ void iniciaBlue()
 
 void andar()//melhorar esse função - apneas testes por enquanto
 {
-	int distancia_media;
-
-	int aux_dir;
-
-	free_to_go = 1;
-
-	distancia_media = distanciaTachoCount(MediaTC());
-
-	if(distancia_media <= 100*DISTANCIA_QUADRANTE)
-	{
-		//MyOnFwdSyncPID(MD_ME, 90, TENDE_DIRESQ, P_FRENTE, I_FRENTE, D_FRENTE);
-		if((distancia_media >= 50*DISTANCIA_QUADRANTE)&&(!progredi_na_tabela))
-		{
-			AndaNaTabela();
-			progredi_na_tabela = 1;
-			if(NumeroOndeEstou() == -1)
-			{
-				tabelaPP();
-			}
-			//nbip(2);
-		}
-		
-		AndaFrente();
-		//nbip(3);
-		//MyOnFwd(MD,POTENCIA_RETO_DIREITA);
-		//MyOnFwd(ME,POTENCIA_RETO_ESQUERDA);
-		//bip();
-	}
-	else
-	{
-		//decide para onde vai, vira, zera os tcs e calibra.
-		//parar sem mexer na free_to_go
-		//MyOnFwd(MD,0);
-		//MyOnFwd(ME,0);
-		//Wait(10000);
-		//You think you can erase this code line, but you can't
-		Wait(200);//nao há colher
-		MandaStop();
-
-		aux_dir = direcao;
-
-		if(caminho[contPassos] == -1)
-		{
-			//while(1){}
-			CalculaVolta();
-		}
-		
-		girarCardeal(caminho[contPassos]);
-		
-		contPassos++;
-		MyResetTachoCount(MD);
-		MyResetTachoCount(ME);
-		MyTcD = 0;
-		MyTcE = 0;
-
-		progredi_na_tabela = 0;
-
-		MandaStart();
-		
-		if(aux_dir != direcao)//se mudou a direção
-		{
-			Wait(200);
-			MandaCalibra();
-			poteGlobal = POTENCIA_RETO_ESQUERDA;
-			potdGlobal = POTENCIA_RETO_DIREITA;
-		}
-
-		//teste:
-		//nbip(3);
-		//Wait(10000);
-		/*viraEsq(90);
-		
-		MyResetTachoCount(ME);
-		MyResetTachoCount(MD);
-		MyTcD = 0;
-		MyTcE = 0;
-	*/
-	}
+	SeguindoRota();
 }
 
 void parar()
@@ -676,23 +600,23 @@ void init_mapeamento()
 
 	contPassos = 0;
 
-	direcao = OESTE;
-
-	i_global = 2;
-	j_global = 4;
+	i_global = 4;
+	j_global = 2;
 
 	progredi_na_tabela = 0;
 
 	zona = CENTRAL;
 
+	direcao = SUL;
+
 	//teste:
-	caminho[0] = OESTE;
-	caminho[1] = OESTE;
-	caminho[2] = OESTE;
-	caminho[3] = LESTE;
-	caminho[4] = LESTE;
-	caminho[5] = LESTE;
-	caminho[6] = LESTE;
+	caminho[0] = SUL;
+	caminho[1] = SUL;
+	caminho[2] = SUL;
+	caminho[3] = NORTE;
+	caminho[4] = NORTE;
+	caminho[5] = NORTE;
+	caminho[6] = NORTE;
 	caminho[7] = -1;
 	caminho[8] = -1;
 	caminho[9] = -1;
@@ -1015,10 +939,10 @@ void RegulaComUS(int distParede, int direcao){
      else if(distanciaAtualEsquerda > distParede){
        if(distanciaAtualEsquerda < distParede + DIST_LIMITE){// diz um limite pra ignorar o sinal do US
          if(potdGlobal < 90){//mais pot pra direita> vira esq
-              potdGlobal += 5;
+              potdGlobal += KP;
          }else{
             if(poteGlobal > 60){
-              poteGlobal -= 5;
+              poteGlobal -= KP;
             }
           }
         }
@@ -1026,10 +950,10 @@ void RegulaComUS(int distParede, int direcao){
      else if(distanciaAtualEsquerda < distParede){
        if(distanciaAtualEsquerda > distParede - DIST_LIMITE){
          if(poteGlobal < 90){ // mais pot pra esquerda > vira dir
-            poteGlobal += 5;
+            poteGlobal += KP;
          }else{
             if(potdGlobal > 60){
-              potdGlobal -= 5;
+              potdGlobal -= KP;
             }
           }
         }
@@ -1044,10 +968,10 @@ void RegulaComUS(int distParede, int direcao){
      else if(distanciaAtualDireita > distParede){
        if(distanciaAtualDireita < distParede + DIST_LIMITE){
          if(poteGlobal < 90){ // mais pot pra esquerda > vira dir
-            poteGlobal += 5;
+            poteGlobal += KP;
          }else{
             if(potdGlobal > 60){
-              potdGlobal -= 5;
+              potdGlobal -= KP;
             }
           }
         }
@@ -1055,10 +979,10 @@ void RegulaComUS(int distParede, int direcao){
      else if(distanciaAtualDireita < distParede){
        if(distanciaAtualDireita > distParede - DIST_LIMITE){
          if(potdGlobal < 90){//mais pot pra di reita> vira esq
-              potdGlobal += 5;
+              potdGlobal += KP;
          }else{
             if(poteGlobal > 60){
-              poteGlobal -= 5;
+              poteGlobal -= KP;
             }
           }
         }
@@ -1114,9 +1038,9 @@ void AndaFrente()
 	{
 		case NORTE:
 				if(j_global<=2)
-					distancia_direita = 7+(j_global*TAMANHO_DA_ARENA)/5;
+					distancia_esquerda = 7+(j_global*TAMANHO_DA_ARENA)/5;
 				else
-					distancia_esquerda = 7+((4-j_global)*TAMANHO_DA_ARENA)/5;
+					distancia_direita = 7+((4-j_global)*TAMANHO_DA_ARENA)/5;
 		break;
 		case LESTE:
 				if(i_global<=2)
@@ -1126,9 +1050,9 @@ void AndaFrente()
 		break;
 		case SUL:
 				if(j_global<=2)
-					distancia_esquerda = 7+((j_global)*TAMANHO_DA_ARENA)/5;
+					distancia_direita = 7+((j_global)*TAMANHO_DA_ARENA)/5;
 				else
-					distancia_direita = 7+((4-j_global)*TAMANHO_DA_ARENA)/5;
+					distancia_esquerda = 7+((4-j_global)*TAMANHO_DA_ARENA)/5;
 		break;
 		case OESTE:
 				if(i_global<=2)
@@ -1145,6 +1069,63 @@ void AndaFrente()
 
 	RegulaComUS(distancia_direita, DIREITA);
 	RegulaComUS(distancia_esquerda, ESQUERDA);
+}
 
+void SeguindoRota()
+{
+	int distancia_media;
 
+	int aux_dir;
+
+	free_to_go = 1;
+
+	distancia_media = distanciaTachoCount(MediaTC());
+
+	if(distancia_media <= (100*TAMANHO_DA_ARENA)/5)
+	{
+		if((distancia_media >= (100*TAMANHO_DA_ARENA)/(5*2))&&(!progredi_na_tabela))
+		{
+			AndaNaTabela();
+			progredi_na_tabela = 1;
+			if(NumeroOndeEstou() == -1)
+			{
+				tabelaPP();
+			}
+		}
+		
+		AndaFrente();
+	}
+	else
+	{
+
+		Wait(200);//nao há colher
+		MandaStop();
+
+		aux_dir = direcao;
+
+		if(caminho[contPassos] == -1)
+		{
+			CalculaVolta();
+		}
+		
+		girarCardeal(caminho[contPassos]);
+		
+		contPassos++;
+		MyResetTachoCount(MD);
+		MyResetTachoCount(ME);
+		MyTcD = 0;
+		MyTcE = 0;
+
+		progredi_na_tabela = 0;
+
+		MandaStart();
+		
+		if(aux_dir != direcao)//se mudou a direção
+		{
+			Wait(200);
+			MandaCalibra();
+			poteGlobal = POTENCIA_RETO_ESQUERDA;
+			potdGlobal = POTENCIA_RETO_DIREITA;
+		}
+	}
 }
