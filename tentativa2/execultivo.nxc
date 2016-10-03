@@ -1,13 +1,14 @@
 //regulaveis
-#define POTENCIA_RETO_DIREITA 81
+#define POTENCIA_RETO_DIREITA 79
 #define POTENCIA_RETO_ESQUERDA 90
 #define TEMPO_DEPOIS_E_ANTES_DE_GIRAR 200
 
 #define TAMANHO_DA_ARENA 183
 #define DISTANCIA_ENTRE_OS_SENSORES 26
 
+//Constantes de Controle
+#define KD 10
 #define DIST_LIMITE 15
-
 
 //SENSORES E MOTORES
 #define MD OUT_B //motor da direita
@@ -106,6 +107,9 @@
 #define BARREIRA 2
 #define ZONA_AZUL 3
 #define ZONA_VERDE 4
+
+//variávei do controle
+int distanciaAtualDireita, distanciaAtualEsquerda, distanciaAntigaDireita, distanciaAntigaEsquerda;
 
 //variáveis gloabais do mapeamento
 int central[5][5], barreira[5][5], caverna[5][5];
@@ -325,7 +329,7 @@ void andar()//melhorar esse função - apneas testes por enquanto
 	if(distancia_media <= 100*DISTANCIA_QUADRANTE)
 	{
 		//MyOnFwdSyncPID(MD_ME, 90, TENDE_DIRESQ, P_FRENTE, I_FRENTE, D_FRENTE);
-		if((distancia_media <= 50*DISTANCIA_QUADRANTE)&&(!progredi_na_tabela))
+		if((distancia_media >= 50*DISTANCIA_QUADRANTE)&&(!progredi_na_tabela))
 		{
 			AndaNaTabela();
 			progredi_na_tabela = 1;
@@ -333,10 +337,11 @@ void andar()//melhorar esse função - apneas testes por enquanto
 			{
 				tabelaPP();
 			}
+			//nbip(2);
 		}
 		
 		AndaFrente();
-
+		//nbip(3);
 		//MyOnFwd(MD,POTENCIA_RETO_DIREITA);
 		//MyOnFwd(ME,POTENCIA_RETO_ESQUERDA);
 		//bip();
@@ -345,10 +350,10 @@ void andar()//melhorar esse função - apneas testes por enquanto
 	{
 		//decide para onde vai, vira, zera os tcs e calibra.
 		//parar sem mexer na free_to_go
-		MyOnFwd(MD,0);
-		MyOnFwd(ME,0);
-
-		//You think you can erase thie code line, but you con't
+		//MyOnFwd(MD,0);
+		//MyOnFwd(ME,0);
+		//Wait(10000);
+		//You think you can erase this code line, but you can't
 		Wait(200);//nao há colher
 		MandaStop();
 
@@ -359,9 +364,9 @@ void andar()//melhorar esse função - apneas testes por enquanto
 			//while(1){}
 			CalculaVolta();
 		}
-		Wait(TEMPO_DEPOIS_E_ANTES_DE_GIRAR);
+		
 		girarCardeal(caminho[contPassos]);
-		Wait(TEMPO_DEPOIS_E_ANTES_DE_GIRAR);
+		
 		contPassos++;
 		MyResetTachoCount(MD);
 		MyResetTachoCount(ME);
@@ -376,6 +381,8 @@ void andar()//melhorar esse função - apneas testes por enquanto
 		{
 			Wait(200);
 			MandaCalibra();
+			poteGlobal = POTENCIA_RETO_ESQUERDA;
+			potdGlobal = POTENCIA_RETO_DIREITA;
 		}
 
 		//teste:
@@ -538,6 +545,7 @@ int RecebeDesgirar()
 }
 
 void viraEsq(int angulo){ // função que faz o robô girar para a esquerda o ângulo recebido
+     Wait(TEMPO_DEPOIS_E_ANTES_DE_GIRAR);
      MyOnFwd(MD, 90);
      MyOnFwd(ME, -90);
 
@@ -547,12 +555,14 @@ void viraEsq(int angulo){ // função que faz o robô girar para a esquerda o â
      }
      MyOnFwd(MD,0);
      MyOnFwd(ME,0);
+     Wait(TEMPO_DEPOIS_E_ANTES_DE_GIRAR);
 }
 
 
 void viraDir(int angulo){ // função que faz o robô girar para a direita o ângulo recebido
-     OnFwd(MD, -90);
-     OnFwd(ME, 90);
+     Wait(TEMPO_DEPOIS_E_ANTES_DE_GIRAR);
+     MyOnFwd(MD, -90);
+     MyOnFwd(ME, 90);
 
      while(distanciaGiroDireita((- MotorTachoCount(MD) + MotorTachoCount(ME))/2) < angulo)
      {
@@ -560,6 +570,7 @@ void viraDir(int angulo){ // função que faz o robô girar para a direita o ân
      }
      MyOnFwd(MD,0);
      MyOnFwd(ME,0);
+     Wait(TEMPO_DEPOIS_E_ANTES_DE_GIRAR);
 }
 
 int distanciaGiroDireita(int grau){
@@ -608,11 +619,19 @@ int MyMotorTachoCount(int motor)
 
 void MyResetTachoCount(int motor)
 {
+	int pd, pe;
+
+	pd = MotorActualSpeed(MD);
+	pe = MotorActualSpeed(ME);
+
 	do{
 		ResetTachoCount(motor);
 		//bip();
 		//bip();
 	}while((MotorTachoCount(motor)>DIFERENCIALDEERRODOANGULO) || (MotorTachoCount(motor)<-DIFERENCIALDEERRODOANGULO));
+	MyOnFwd(MD,pd);
+	MyOnFwd(ME,pe);
+
 }
 
 int MediaTC()
@@ -657,30 +676,30 @@ void init_mapeamento()
 
 	contPassos = 0;
 
-	direcao = NORTE;
+	direcao = OESTE;
 
-	i_global = -1;
-	j_global = 2;
+	i_global = 2;
+	j_global = 4;
 
 	progredi_na_tabela = 0;
 
 	zona = CENTRAL;
 
 	//teste:
-	caminho[0] = LESTE;
-	caminho[1] = LESTE;
-	caminho[2] = NORTE;
-	caminho[3] = NORTE;
-	caminho[4] = NORTE;
-	caminho[5] = NORTE;
-	caminho[6] = OESTE;
-	caminho[7] = OESTE;
-	caminho[8] = OESTE;
-	caminho[9] = OESTE;
-	caminho[10] = SUL;
-	caminho[11] = SUL;
-	caminho[12] = SUL;
-	caminho[13] = SUL;
+	caminho[0] = OESTE;
+	caminho[1] = OESTE;
+	caminho[2] = OESTE;
+	caminho[3] = LESTE;
+	caminho[4] = LESTE;
+	caminho[5] = LESTE;
+	caminho[6] = LESTE;
+	caminho[7] = -1;
+	caminho[8] = -1;
+	caminho[9] = -1;
+	caminho[10] = -1;
+	caminho[11] = -1;
+	caminho[12] = -1;
+	caminho[13] = -1;
 
 
 	//cont
@@ -828,7 +847,7 @@ void AndaNaTabela()
 	ClearScreen();
 	NumOut(0,LCD_LINE1,i_global);
 	NumOut(0,LCD_LINE2,j_global);
-	bip();
+	//bip();
 }
 
 void tabelaPP()
@@ -984,16 +1003,17 @@ void MandaStop()
 }
 
 void RegulaComUS(int distParede, int direcao){
-  int distanciaAtual;
+  
 
    if(direcao == ESQUERDA){
-     distanciaAtual = SensorUS(USE);
-     if (distanciaAtual == distParede){
-       potdGlobal = 81;
-       poteGlobal = 90;
+   	distanciaAntigaEsquerda = distanciaAtualEsquerda;
+    distanciaAtualEsquerda = SensorUS(USE);
+    if (distanciaAtualEsquerda == distParede){
+       //potdGlobal = 81;
+       //poteGlobal = 90;
      }
-     else if(distanciaAtual > distParede){
-       if(distanciaAtual < distParede + DIST_LIMITE){// diz um limite pra ignorar o sinal do US
+     else if(distanciaAtualEsquerda > distParede){
+       if(distanciaAtualEsquerda < distParede + DIST_LIMITE){// diz um limite pra ignorar o sinal do US
          if(potdGlobal < 90){//mais pot pra direita> vira esq
               potdGlobal += 5;
          }else{
@@ -1003,8 +1023,8 @@ void RegulaComUS(int distParede, int direcao){
           }
         }
      }
-     else if(distanciaAtual < distParede){
-       if(distanciaAtual > distParede - DIST_LIMITE){
+     else if(distanciaAtualEsquerda < distParede){
+       if(distanciaAtualEsquerda > distParede - DIST_LIMITE){
          if(poteGlobal < 90){ // mais pot pra esquerda > vira dir
             poteGlobal += 5;
          }else{
@@ -1015,14 +1035,14 @@ void RegulaComUS(int distParede, int direcao){
         }
      }
    }else if(direcao == DIREITA){
-     distanciaAtual = SensorUS(USD);
-
-     if (distanciaAtual == distParede){
-       potdGlobal = 81;
-       poteGlobal = 90;
+     distanciaAntigaDireita = distanciaAtualDireita;
+     distanciaAtualDireita = SensorUS(USD);
+     if (distanciaAtualDireita == distParede){
+       //potdGlobal = 81;
+       //poteGlobal = 90;
      }
-     else if(distanciaAtual > distParede){
-       if(distanciaAtual < distParede + DIST_LIMITE){
+     else if(distanciaAtualDireita > distParede){
+       if(distanciaAtualDireita < distParede + DIST_LIMITE){
          if(poteGlobal < 90){ // mais pot pra esquerda > vira dir
             poteGlobal += 5;
          }else{
@@ -1032,8 +1052,8 @@ void RegulaComUS(int distParede, int direcao){
           }
         }
      }
-     else if(distanciaAtual < distParede){
-       if(distanciaAtual > distParede - DIST_LIMITE){
+     else if(distanciaAtualDireita < distParede){
+       if(distanciaAtualDireita > distParede - DIST_LIMITE){
          if(potdGlobal < 90){//mais pot pra di reita> vira esq
               potdGlobal += 5;
          }else{
@@ -1045,6 +1065,35 @@ void RegulaComUS(int distParede, int direcao){
      }
    }
 
+   
+   //derivativo
+   	int cond1 = ((distanciaAtualDireita < distParede + DIST_LIMITE) && (distanciaAtualDireita > distParede - DIST_LIMITE));
+   	int cond2 = ((distanciaAntigaDireita < distParede + DIST_LIMITE) && (distanciaAntigaDireita > distParede - DIST_LIMITE));
+    if(((direcao == DIREITA)&&(cond1))&&(cond2))
+    {
+    	potdGlobal -= KD*(distanciaAtualDireita - distanciaAntigaDireita);
+    	poteGlobal += KD*(distanciaAtualDireita - distanciaAntigaDireita);
+    }
+
+    int cond3 = ((distanciaAtualEsquerda < distParede + DIST_LIMITE) && (distanciaAtualEsquerda > distParede - DIST_LIMITE));
+   	int cond4 = ((distanciaAntigaEsquerda < distParede + DIST_LIMITE) && (distanciaAntigaEsquerda > distParede - DIST_LIMITE));
+    if(((direcao == ESQUERDA)&&(cond3))&&(cond4))
+    {
+    	poteGlobal -= KD*(distanciaAtualEsquerda - distanciaAntigaEsquerda);
+    	potdGlobal += KD*(distanciaAtualEsquerda - distanciaAntigaEsquerda);
+    }
+    
+    if(potdGlobal < 60)
+       potdGlobal = 60;
+   	else if(potdGlobal > 90)
+       potdGlobal = 90;
+    
+    if(poteGlobal < 60)
+       poteGlobal = 60;
+   	else if(poteGlobal > 90)
+       poteGlobal = 90;
+
+
    MyOnFwd(MD, potdGlobal);
    MyOnFwd(ME, poteGlobal);
    Wait(50);
@@ -1054,6 +1103,9 @@ void AndaFrente()
 {
 	int distancia_direita, distancia_esquerda;
 
+	distancia_direita = -1;
+	distancia_esquerda = -1;
+	
 	MyOnFwd(MD,potdGlobal);
 	MyOnFwd(ME,poteGlobal);
 
@@ -1061,20 +1113,35 @@ void AndaFrente()
 	switch(direcao)
 	{
 		case NORTE:
-				distancia_direita = 7+(j_global*TAMANHO_DA_ARENA)/5;
+				if(j_global<=2)
+					distancia_direita = 7+(j_global*TAMANHO_DA_ARENA)/5;
+				else
+					distancia_esquerda = 7+((4-j_global)*TAMANHO_DA_ARENA)/5;
 		break;
 		case LESTE:
-				distancia_direita = 7+(i_global*TAMANHO_DA_ARENA)/5;
+				if(i_global<=2)
+					distancia_direita = 7+(i_global*TAMANHO_DA_ARENA)/5;
+				else
+					distancia_esquerda = 7+((4-i_global)*TAMANHO_DA_ARENA)/5;
 		break;
 		case SUL:
-				distancia_direita = 7+((4-j_global)*TAMANHO_DA_ARENA)/5;
+				if(j_global<=2)
+					distancia_esquerda = 7+((j_global)*TAMANHO_DA_ARENA)/5;
+				else
+					distancia_direita = 7+((4-j_global)*TAMANHO_DA_ARENA)/5;
 		break;
 		case OESTE:
-				distancia_direita = 7+((4-i_global)*TAMANHO_DA_ARENA)/5;
+				if(i_global<=2)
+					distancia_esquerda = 7+((i_global)*TAMANHO_DA_ARENA)/5;
+				else
+					distancia_direita = 7+((4-i_global)*TAMANHO_DA_ARENA)/5;
 		break;
 	}
 
-	distancia_esquerda = TAMANHO_DA_ARENA -(distancia_direita + DISTANCIA_ENTRE_OS_SENSORES);
+	if(distancia_esquerda == -1)
+		distancia_esquerda = TAMANHO_DA_ARENA -(distancia_direita + DISTANCIA_ENTRE_OS_SENSORES);
+	else
+		distancia_direita = TAMANHO_DA_ARENA -(distancia_esquerda + DISTANCIA_ENTRE_OS_SENSORES);
 
 	RegulaComUS(distancia_direita, DIREITA);
 	RegulaComUS(distancia_esquerda, ESQUERDA);
