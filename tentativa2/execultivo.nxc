@@ -18,8 +18,8 @@
 #define MP OUT_C //motor da porta
 #define USD IN_1 //Utrasonico da direita
 #define USE IN_2 //Utrasonico da esquerda
-#define HTD IN_3//hitech da direita
-#define HTE IN_4//hitech da esquerda
+#define HT IN_3         //direita
+#define SLUZ IN_4       //esquerda
 
 //constantes de locomoção
 #define FATORSYNC 1
@@ -108,6 +108,26 @@
 #define ZONA_AZUL 3
 #define ZONA_VERDE 4
 
+//HT
+#define HTPRETO1 17               //para o HT, preto e branco assumem dois valores diferentes cada
+#define HTPRETO2 12
+#define HTBRANCO1 13
+#define HTBRANCO2 14
+#define HTAZUL 2
+#define HTVERDE 4
+//SENSOR DE LUZ
+#define LUZ_PRETO_MAX 30
+#define LUZ_PRETO_MIN 15
+#define LUZ_BRANCO_MAX 65
+#define LUZ_BRANCO_MIN 35
+
+#define DIFERENCIALDEERRODOANGULO 5
+
+#define PARA_FRENTE 1
+#define PARA_TRAS -1
+
+
+
 //variávei do controle
 int distanciaAtualDireita, distanciaAtualEsquerda, distanciaAntigaDireita, distanciaAntigaEsquerda;
 
@@ -177,6 +197,9 @@ void MandaStart();
 void MandaStop();
 void RegulaComUS(int distParede, int direcao);
 void SeguindoRota();
+void SairCasa();
+int idmediaTC();
+sub alinha(int s);
 
 //função para dbug
 void  bip()
@@ -274,12 +297,31 @@ void init()
 
 	init_mapeamento();
   	inicializaSensores();
+  	iniciaBlue();
+
+  	SairCasa();
+
   	FecharPorta();
+
+  	MyResetTachoCount(MD);
+	MyResetTachoCount(ME);
+	MyTcD = 0;
+	MyTcE = 0;
+
+	poteGlobal = POTENCIA_RETO_ESQUERDA;
+	potdGlobal = POTENCIA_RETO_DIREITA;
+
+	viraDir(90);
+
+	MyResetTachoCount(MD);
+	MyResetTachoCount(ME);
+	MyTcD = 0;
+	MyTcE = 0;
 
   	poteGlobal = POTENCIA_RETO_ESQUERDA;
 	potdGlobal = POTENCIA_RETO_DIREITA;
 
-	iniciaBlue();
+	
 }
 
 void desligaBlue()
@@ -301,8 +343,8 @@ void inicializaSensores()
 {
   SetSensorLowspeed(USD);
   SetSensorLowspeed(USE);
-  SetSensorLowspeed(HTD);
-  SetSensorLowspeed(HTE);
+  SetSensorLight(SLUZ);
+  SetSensorLowspeed(HT);
 }
 
 void iniciaBlue()
@@ -319,6 +361,8 @@ void iniciaBlue()
 
 void andar()//melhorar esse função - apneas testes por enquanto
 {
+	free_to_go = 1;
+
 	SeguindoRota();
 }
 
@@ -498,11 +542,11 @@ void viraDir(int angulo){ // função que faz o robô girar para a direita o ân
 }
 
 int distanciaGiroDireita(int grau){
-	   return (((grau*16)/143/*se girar mais diminua o denomidador*/)); // COMO FOI FEITA ESSA CONVERSÃO??? [na base da tentativa e erro]
+	   return (((grau*17)/170/*se girar mais diminua o denomidador*/)); // COMO FOI FEITA ESSA CONVERSÃO??? [na base da tentativa e erro]
 }
 
 int distanciaGiroEsquerda(int grau){
-	   return (((grau*17)/143/*se girar mais diminua o denomidador*/));
+	   return (((grau*17)/167/*se girar mais diminua o denomidador*/));
 }
 
 void MyOnFwd(int motor, int pot)
@@ -600,30 +644,32 @@ void init_mapeamento()
 
 	contPassos = 0;
 
-	i_global = 4;
+	i_global = 0;
 	j_global = 2;
 
 	progredi_na_tabela = 0;
 
 	zona = CENTRAL;
 
-	direcao = SUL;
+	direcao = LESTE;
 
-	//teste:
-	caminho[0] = SUL;
-	caminho[1] = SUL;
-	caminho[2] = SUL;
+	//teste
+	caminho[0] = LESTE;
+	caminho[1] = NORTE;
+	caminho[2] = NORTE;
 	caminho[3] = NORTE;
 	caminho[4] = NORTE;
-	caminho[5] = NORTE;
-	caminho[6] = NORTE;
-	caminho[7] = -1;
-	caminho[8] = -1;
+	caminho[5] = OESTE;
+	caminho[6] = OESTE;
+	caminho[7] = OESTE;
+	caminho[8] = OESTE;
 	caminho[9] = -1;
 	caminho[10] = -1;
 	caminho[11] = -1;
 	caminho[12] = -1;
 	caminho[13] = -1;
+
+
 
 
 	//cont
@@ -1077,8 +1123,6 @@ void SeguindoRota()
 
 	int aux_dir;
 
-	free_to_go = 1;
-
 	distancia_media = distanciaTachoCount(MediaTC());
 
 	if(distancia_media <= (100*TAMANHO_DA_ARENA)/5)
@@ -1128,4 +1172,86 @@ void SeguindoRota()
 			potdGlobal = POTENCIA_RETO_DIREITA;
 		}
 	}
+}
+
+void SairCasa()
+{
+	int ht, luz;
+	int distancia_esquerda, distancia_direita;
+    
+	OnFwd(MD,POTENCIA_RETO_DIREITA);
+	OnFwd(ME,POTENCIA_RETO_ESQUERDA);
+
+	ht=SensorHTColorNum(HT);
+    luz=Sensor(SLUZ);
+	while(!(((ht==HTBRANCO1)||(ht==HTBRANCO2))&&((luz>LUZ_BRANCO_MIN)&&(luz<LUZ_BRANCO_MAX))))//enquanto akgum dos dois sensores for diferente de branco
+	{
+		ht=SensorHTColorNum(HT);
+    	luz=Sensor(SLUZ);
+	}
+	Wait(400);
+	alinha(PARA_TRAS);
+	
+	potdGlobal = POTENCIA_RETO_DIREITA;
+	poteGlobal = POTENCIA_RETO_ESQUERDA;
+	distancia_esquerda = 7+(j_global*TAMANHO_DA_ARENA)/5;
+	distancia_direita = TAMANHO_DA_ARENA -(distancia_esquerda + DISTANCIA_ENTRE_OS_SENSORES);
+
+	MyResetTachoCount(MD);
+	MyResetTachoCount(ME);
+	MyTcD = 0;
+	MyTcE = 0;
+
+	while((distanciaTachoCount(MediaTC()) <= (100*TAMANHO_DA_ARENA)/10))
+	{
+		RegulaComUS(distancia_direita, DIREITA);
+		RegulaComUS(distancia_esquerda, ESQUERDA);
+
+		MyOnFwd(MD,potdGlobal);
+		MyOnFwd(ME,poteGlobal);
+	}
+
+	Off(MD);
+	Off(ME);
+}
+
+int idmediaTC()
+{
+     int tc_e, tc_d, media;
+     tc_e = MotorTachoCount(ME);
+     tc_d = MotorTachoCount(MD);
+     media = ((tc_d+tc_e)/2);
+     return media;
+}
+
+sub alinha(int s) {
+     int ht, luz;
+     ht=SensorHTColorNum(HT);
+     luz=Sensor(SLUZ);
+     while(((ht==HTBRANCO1)||(ht==HTBRANCO2))||((luz>LUZ_BRANCO_MIN)&&(luz<LUZ_BRANCO_MAX))) {    //Se algum dos sensores estiver lendo branco, entra na função
+          if((luz>LUZ_PRETO_MIN)&&(luz<LUZ_PRETO_MAX)) {       //Se o sensor de luz (esquerda) encontrar algo preto, recua a roda esquerda para girar
+               OnRev(ME, s*60);
+               Wait(200);
+               //while(MyMotorTachoCount(ME)<50);
+               Off(MD_ME);
+               //MyResetTachoCount(ME);
+               //PlayTone(TONE_B7, 500);
+          }
+          else {
+               if((ht==HTPRETO1)||(ht==HTPRETO2)) {            //Se o sensor HT (direita) encontrar algo preto, recua a roda direita para girar
+                    OnRev(MD, s*60);
+                    Wait(200);
+                    //while(MyMotorTachoCount(MD)<50);
+                    Off(MD_ME);
+                   // MyResetTachoCount(MD);
+                    //PlayTone(TONE_A3, 500);
+               }
+          }
+          OnFwd(MD_ME, s*45);                       //anda reto até que um dos dois sensores encontre algo preto
+          Wait(100);                                   //tempo para pegar leitura do sensor?!?!
+          ht=SensorHTColorNum(HT);
+          luz=Sensor(SLUZ);
+     }
+     Off(MD_ME);
+         //sai da função quando ambos os sensores estiverem lendo preto ao mesmo tempo
 }
