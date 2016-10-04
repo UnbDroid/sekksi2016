@@ -21,7 +21,7 @@
 	#define CONEXAO 0
 	#define INBOX 2
 	#define OUTBOX 1
-  #define OUTBOX_US 3
+  #define INBOX_ANG 3
 
 
 //IO
@@ -29,7 +29,9 @@
 	#define RGB_DIR IN_1
 	#define RGB_ESQ IN_2
 	#define RGB_MEIO IN_3
-	#define US_FRENTE IN_4
+	#define GYRO IN_4
+
+#define OFFSET_SAMPLES 2048
 
 // Defines de motores
 	#define MOTOR_GARRA OUT_A
@@ -60,6 +62,9 @@
 #define CHEIO 9
 #define STOP 10
 #define START 11
+#define VIRA 12
+#define COMECEAGIRAR 13
+#define PAREDEGIRAR 14
 
 //cor dos boncos
 #define BONECO_BRANCO 1
@@ -97,7 +102,6 @@ int BonecosCapturados;
 
 //declaração das funções
 void InicializaSensores();
-int returnUS();
 int TemBoneco();
 int lerSensor(int sensor);
 int PegaBoneco();
@@ -118,12 +122,16 @@ int RecebiGirei();
 void MandaDesgirar();
 void MandaRejeitar();
 int RecebiDesGirei();
-void MandaUs();
 void LevantaBoneco();
 void CalibraFaixaBase();
 void MandaPeguei();
 void MandaCheio();
 int RecebeStart();
+void virar();
+int lerAngulo();
+float GetGyroOffset();
+void MandaGirar();
+void MandaQueJaDeuPorHoje();//função apra parar de girar
 
 //função para dbug
 void  bip()
@@ -154,8 +162,6 @@ void consultor()
 
   while(1)//void loop
   {
-
-    MandaUs();
     ReceiveRemoteNumber(INBOX,true,mensagem);
 
     switch(mensagem)
@@ -165,10 +171,10 @@ void consultor()
       break;
       case STOP:
         //nbip(3);
-        while(!RecebeStart())
-        {
-          MandaUs();
-        }
+        //while(!RecebeStart()){}
+      break;
+      case VIRA:
+        virar();
       break;
     }
 
@@ -197,7 +203,7 @@ void InicializaSensores()
   SetSensorColorRed(RGB_DIR);
   SetSensorColorRed(RGB_ESQ);
   SetSensorColorGreen(RGB_MEIO);
-  SetSensorLowspeed(US_FRENTE);
+  SetSensorHTGyro(GYRO);
 }
 
 void BonecoAlvo()
@@ -233,19 +239,6 @@ int TemBoneco()
    if(((rgb_dir < CorBaseDirMax) && (rgb_dir > CorBaseDirMin)) && ((rgb_esq < CorBaseEsqMax) && (rgb_esq > CorBaseEsqMin)) && ((rgb_meio < CorBaseMeioMax) && (rgb_meio > CorBaseMeioMin)))
       return NAO_ALIEN;
    return SIM_ALIEN;
-}
-
-int returnUS(){
-  int valor = 0;
-  valor = SensorUS(US_FRENTE);
-  Wait(30);
-  NumOut(0, LCD_LINE1, valor);
-
-  if(valor < MENOR_DISTANCIA_US){
-    return 1;
-  }
-  else
-    return 0;
 }
 
 int RecebeBoneco(){
@@ -412,6 +405,7 @@ void BonecoNaFrente()
   if(PegaBoneco())
   {
     cor = CorBoneco();
+    int mensagem;
     //cor = bonecoAlvo;////DEBUG
     //BonecosCapturados = 3;////DEBUG
     if(cor == bonecoAlvo)
@@ -422,7 +416,9 @@ void BonecoNaFrente()
         nbip(4);
         MandaCheio();
         while(1){//corrigir a contição deste whilw<<<<<<<-------------------------
-          MandaUs();
+          ReceiveRemoteNumber(INBOX,true,mensagem);
+          if(mensagem == VIRA)
+            virar();
         }
       }
       else
@@ -510,15 +506,6 @@ void MandaDesgirar()
   SendRemoteNumber(CONEXAO, OUTBOX, DESGIRAR);
 }
 
-void MandaUs()
-{
-  int aux;
-
-  aux = SensorUS(US_FRENTE);
-
-  SendRemoteNumber(CONEXAO, OUTBOX_US, aux);
-}
-
 void MandaCheio()
 {
   SendRemoteNumber(CONEXAO, OUTBOX, CHEIO);
@@ -566,4 +553,63 @@ int RecebeStart()
     return 1;
   }
   return 0;
+}
+
+void virar()
+{
+  int angulo;
+  float offset;
+  unsigned long time = CurrentTick(), prev_time;
+  float aux = 0, gyro;
+  
+
+  angulo = lerAngulo();
+
+  offset = GetGyroOffset();
+
+  MandaGirar();
+
+  while(abs(aux) < abs(angulo)){
+      prev_time = time;
+      time = CurrentTick();
+      gyro = SensorHTGyro(GYRO);
+      aux += (gyro - offset) * (time - prev_time)/1000.0;
+    }
+
+  MandaQueJaDeuPorHoje();
+
+}
+
+int lerAngulo()
+{
+  int leitura;
+  
+
+  do{
+    ReceiveRemoteNumber(INBOX_ANG, true, leitura);
+  }while(!leitura);
+
+  return leitura;
+
+}
+
+float GetGyroOffset() { // FUNCIONANDO (chamar com os motores desligados)
+  float gyro_sum = 0, i;
+
+  for(i = 0; i < OFFSET_SAMPLES; ++i)
+  {
+    gyro_sum += SensorHTGyro(GYRO);
+  }
+
+  return gyro_sum/OFFSET_SAMPLES;
+}
+
+void MandaGirar()
+{
+  SendRemoteNumber(CONEXAO, OUTBOX, COMECEAGIRAR);
+}
+
+void MandaQueJaDeuPorHoje()//função apra parar de girar
+{
+  SendRemoteNumber(CONEXAO, OUTBOX, PAREDEGIRAR);
 }
