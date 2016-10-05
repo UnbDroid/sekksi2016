@@ -6,23 +6,28 @@
 #define TAMANHO_DA_ARENA 184
 #define DISTANCIA_ENTRE_OS_SENSORES 26
 
+#define ERRO_ANGULO_GYRO 7
+
 //Constantes de Controle
-#define KP 10
-#define KD 20
-#define DIST_LIMITE 16
+#define KP 7
+#define KI 11
+#define KD 5
+
 
 //SENSORES E MOTORES
 #define MD OUT_B //motor da direita
 #define ME OUT_A //motor da esquerda
 #define MD_ME OUT_AB// os dois motores de movimento
 #define MP OUT_C //motor da porta
-#define USD IN_1 //Utrasonico da direita
+#define GYRO IN_1 //Utrasonico da direita
 #define USE IN_2 //Utrasonico da esquerda
 #define HT IN_3         //direita
 #define SLUZ IN_4       //esquerda
 
 //constantes de locomoção
 #define FATORSYNC 1
+
+#define OFFSET_SAMPLES 4096//32768
 
 //LOGICA
 #define DIREITA 1
@@ -119,10 +124,10 @@
 #define HTAZUL 2
 #define HTVERDE 4
 //SENSOR DE LUZ
-#define LUZ_PRETO_MAX 30
+#define LUZ_PRETO_MAX 50
 #define LUZ_PRETO_MIN 15
 #define LUZ_BRANCO_MAX 65
-#define LUZ_BRANCO_MIN 35
+#define LUZ_BRANCO_MIN 51
 
 #define DIFERENCIALDEERRODOANGULO 5
 
@@ -132,7 +137,7 @@
 
 
 //variávei do controle
-int distanciaAtualDireita, distanciaAtualEsquerda, distanciaAntigaDireita, distanciaAntigaEsquerda;
+float gyro_atual, gyro_antigo, ref, fator_integrante, tempo_atual, tempo_antigo;
 
 //variáveis gloabais do mapeamento
 int central[5][5], barreira[5][5], caverna[5][5];
@@ -195,14 +200,15 @@ void MyOnRevSyncPID(int motores, int pot, int turnDirEsq, int p, int i, int d);
 int TemQueDescartarParaAEsquerda();
 void MandaStart();
 void MandaStop();
-void RegulaComUS(int distParede, int direcao);
+void RegulaComGyro();
 void SeguindoRota();
 void SairCasa();
 int idmediaTC();
 sub alinha(int s);
 int ReceberPareGirar();
 int ReceberComeceGirar();
-
+float GetGyroOffset();
+void reset_controle();
 
 //função para dbug
 void  bip()
@@ -312,13 +318,14 @@ void init()
 
 	viraDir(90);
 	Wait(200);
-	MandaCalibra();
+	
 	MyResetTachoCount(MD);
 	MyResetTachoCount(ME);
 	MyTcD = 0;
 	MyTcE = 0;
 
-  poteGlobal = POTENCIA_RETO_ESQUERDA;
+	reset_controle();
+  	poteGlobal = POTENCIA_RETO_ESQUERDA;
 	potdGlobal = POTENCIA_RETO_DIREITA;
 
 
@@ -341,10 +348,10 @@ void desligaBlue()
 
 void inicializaSensores()
 {
-  SetSensorLowspeed(USD);
   SetSensorLowspeed(USE);
   SetSensorLight(SLUZ);
   SetSensorLowspeed(HT);
+  SetSensorHTGyro(GYRO);
 }
 
 void iniciaBlue()
@@ -518,36 +525,62 @@ int RecebeDesgirar()
 }
 
 void viraEsq(int angulo){ // função que faz o robô girar para a esquerda o ângulo recebido
+
+ 	float offset;
+  	unsigned long time = CurrentTick(), prev_time;
+  	float aux = 0, gyro;
+
+  	//angulo -= ERRO_ANGULO_GYRO;
+
   	Off(MD);
 	Off(ME);
+	Wait(200);//Do not touch the waits
 
 	angulo = -angulo;
 
-	Wait(200);//Do not touch the waits
-	SendRemoteNumber(CONEXAO, OUTBOX_ANG, angulo);
-	Wait(200);//Do not touch the waits
-	SendRemoteNumber(CONEXAO, OUTBOX, VIRA);
-	while(!ReceberComeceGirar()){}
+	offset = GetGyroOffset();
+	
 	OnFwd(ME,-90);
  	OnFwd(MD,90);
- 	while(!ReceberPareGirar()){}
+
+ 	while(abs(aux) < abs(angulo)){
+      Wait(77);
+      prev_time = time;
+      time = CurrentTick();
+      gyro = SensorHTGyro(GYRO);
+      aux += (gyro - offset) * (time - prev_time)/1000.0;
+    }
+
  	Off(MD);
 	Off(ME);
 }
 
 
 void viraDir(int angulo){ // função que faz o robô girar para a direita o ângulo recebido
+
+ 	float offset;
+  	unsigned long time = CurrentTick(), prev_time;
+  	float aux = 0, gyro;
+
+  	//angulo-=ERRO_ANGULO_GYRO;
+
 	Off(MD);
 	Off(ME);
+	Wait(200);//Do not touch the waits
 
-	Wait(200);
-	SendRemoteNumber(CONEXAO, OUTBOX_ANG, angulo);
-	Wait(200);
-	SendRemoteNumber(CONEXAO, OUTBOX, VIRA);
-	while(!ReceberComeceGirar()){}
+	offset = GetGyroOffset();
+
 	OnFwd(ME,90);
  	OnFwd(MD,-90);
- 	while(!ReceberPareGirar()){}
+ 	
+ 	while(abs(aux) < abs(angulo)){
+       Wait(77);
+      prev_time = time;
+      time = CurrentTick();
+      gyro = SensorHTGyro(GYRO);
+      aux += (gyro - offset) * (time - prev_time)/1000.0;
+    }
+
  	Off(MD);
 	Off(ME);
 }
@@ -975,154 +1008,54 @@ void MandaStop()
 	//nbip(7);
 }
 
-void RegulaComUS(int distParede, int direcao){
+void RegulaComGyro(){
+	float fator_proporcional, fotor_derivativo;
+	float error;
 
+	tempo_antigo = tempo_atual;
+   	tempo_atual = CurrentTick();
+   	gyro_antigo = gyro_atual;
+	gyro_atual = SensorHTGyro(GYRO);
+	error = gyro_atual - ref;
+	dt = (tempo_atual - tempo_antigo)/1000.0;
+	dG = gyro_atual - gyro_antigo;
 
-   if(direcao == ESQUERDA){
-   	distanciaAntigaEsquerda = distanciaAtualEsquerda;
-    distanciaAtualEsquerda = SensorUS(USE);
-    if (distanciaAtualEsquerda == distParede){
-       //potdGlobal = 81;
-       //poteGlobal = 90;
-     }
-     else if(distanciaAtualEsquerda > distParede){
-       if(distanciaAtualEsquerda < distParede + DIST_LIMITE){// diz um limite pra ignorar o sinal do US
-         if(potdGlobal < 90){//mais pot pra direita> vira esq
-              potdGlobal += KP;
-         }else{
-            if(poteGlobal > 60){
-              poteGlobal -= KP;
-            }
-          }
-        }
-     }
-     else if(distanciaAtualEsquerda < distParede){
-       if(distanciaAtualEsquerda > distParede - DIST_LIMITE){
-         if(poteGlobal < 90){ // mais pot pra esquerda > vira dir
-            poteGlobal += KP;
-         }else{
-            if(potdGlobal > 60){
-              potdGlobal -= KP;
-            }
-          }
-        }
-     }
-   }else if(direcao == DIREITA){
-     distanciaAntigaDireita = distanciaAtualDireita;
-     distanciaAtualDireita = SensorUS(USD);
-     if (distanciaAtualDireita == distParede){
-       //potdGlobal = 81;
-       //poteGlobal = 90;
-     }
-     else if(distanciaAtualDireita > distParede){
-       if(distanciaAtualDireita < distParede + DIST_LIMITE){
-         if(poteGlobal < 90){ // mais pot pra esquerda > vira dir
-            poteGlobal += KP;
-         }else{
-            if(potdGlobal > 60){
-              potdGlobal -= KP;
-            }
-          }
-        }
-     }
-     else if(distanciaAtualDireita < distParede){
-       if(distanciaAtualDireita > distParede - DIST_LIMITE){
-         if(potdGlobal < 90){//mais pot pra di reita> vira esq
-              potdGlobal += KP;
-         }else{
-            if(poteGlobal > 60){
-              poteGlobal -= KP;
-            }
-          }
-        }
-     }
-   }
+	//proporcional
+	fator_proporcional = KP*(gyro_atual - ref);
+	potdGlobal += fator_proporcional;
+	poteGlobal -= fator_proporcional;
 
+	//integrativo
+	
+    fator_integrante += KI*error*dt;
+   	potdGlobal += fator_integrante;
+	poteGlobal -= fator_integrante;
 
-   //derivativo
-   	int cond1 = ((distanciaAtualDireita < distParede + DIST_LIMITE) && (distanciaAtualDireita > distParede - DIST_LIMITE));
-   	int cond2 = ((distanciaAntigaDireita < distParede + DIST_LIMITE) && (distanciaAntigaDireita > distParede - DIST_LIMITE));
-    if(((direcao == DIREITA)&&(cond1))&&(cond2))
-    {
-    	potdGlobal -= KD*(distanciaAtualDireita - distanciaAntigaDireita);
-    	poteGlobal += KD*(distanciaAtualDireita - distanciaAntigaDireita);
-    }
+ 
+   	//derivativo
+	fotor_derivativo = KD*(Dg/dt);
+  	potdGlobal += fotor_derivativo;
+	poteGlobal -= fotor_derivativo;
 
-    int cond3 = ((distanciaAtualEsquerda < distParede + DIST_LIMITE) && (distanciaAtualEsquerda > distParede - DIST_LIMITE));
-   	int cond4 = ((distanciaAntigaEsquerda < distParede + DIST_LIMITE) && (distanciaAntigaEsquerda > distParede - DIST_LIMITE));
-    if(((direcao == ESQUERDA)&&(cond3))&&(cond4))
-    {
-    	poteGlobal -= KD*(distanciaAtualEsquerda - distanciaAntigaEsquerda);
-    	potdGlobal += KD*(distanciaAtualEsquerda - distanciaAntigaEsquerda);
-    }
+	//saturação
+	if(potdGlobal < 60)
+	   potdGlobal = 60;
+	else if(potdGlobal > 90)
+	   potdGlobal = 90;
 
-		if(((((direcao == DIREITA)&&(!cond1))&&(!cond2)))||(((direcao == ESQUERDA)&&(!cond3))&&(!cond4))){
-			potdGlobal = POTENCIA_RETO_DIREITA;
-			poteGlobal = POTENCIA_RETO_ESQUERDA;
-		}
-
-    if(potdGlobal < 60)
-       potdGlobal = 60;
-   	else if(potdGlobal > 90)
-       potdGlobal = 90;
-
-    if(poteGlobal < 60)
-       poteGlobal = 60;
-   	else if(poteGlobal > 90)
-       poteGlobal = 90;
-
-
-   MyOnFwd(MD, potdGlobal);
-   MyOnFwd(ME, poteGlobal);
-   Wait(50);
+	if(poteGlobal < 60)
+	   poteGlobal = 60;
+	else if(poteGlobal > 90)
+	   poteGlobal = 90;
 }
 
 void AndaFrente()
 {
-	int distancia_direita, distancia_esquerda;
+	RegulaComGyro();
 
-	distancia_direita = -1;
-	distancia_esquerda = -1;
-
-	MyOnFwd(MD,potdGlobal);
-	MyOnFwd(ME,poteGlobal);
-
-
-	switch(direcao)
-	{
-		case NORTE:
-				if(j_global<=2)
-					distancia_esquerda = 7+(j_global*TAMANHO_DA_ARENA)/5;
-				else
-					distancia_direita = 7+((4-j_global)*TAMANHO_DA_ARENA)/5;
-		break;
-		case LESTE:
-				if(i_global<=2)
-					distancia_direita = 7+(i_global*TAMANHO_DA_ARENA)/5;
-				else
-					distancia_esquerda = 7+((4-i_global)*TAMANHO_DA_ARENA)/5;
-		break;
-		case SUL:
-				if(j_global<=2)
-					distancia_direita = 7+((j_global)*TAMANHO_DA_ARENA)/5;
-				else
-					distancia_esquerda = 7+((4-j_global)*TAMANHO_DA_ARENA)/5;
-		break;
-		case OESTE:
-				if(i_global<=2)
-					distancia_esquerda = 7+((i_global)*TAMANHO_DA_ARENA)/5;
-				else
-					distancia_direita = 7+((4-i_global)*TAMANHO_DA_ARENA)/5;
-		break;
-	}
-
-	if(distancia_esquerda == -1)
-		distancia_esquerda = TAMANHO_DA_ARENA -(distancia_direita + DISTANCIA_ENTRE_OS_SENSORES);
-	else
-		distancia_direita = TAMANHO_DA_ARENA -(distancia_esquerda + DISTANCIA_ENTRE_OS_SENSORES);
-
-	RegulaComUS(distancia_direita, DIREITA);
-	RegulaComUS(distancia_esquerda, ESQUERDA);
+	MyOnFwd(MD, potdGlobal);
+  	MyOnFwd(ME, poteGlobal);
+   	Wait(50);
 }
 
 void SeguindoRota()
@@ -1178,7 +1111,9 @@ void SeguindoRota()
 			MandaCalibra();
 			poteGlobal = POTENCIA_RETO_ESQUERDA;
 			potdGlobal = POTENCIA_RETO_DIREITA;
+			reset_controle();
 		}
+
 	}
 }
 
@@ -1210,13 +1145,11 @@ void SairCasa()
 	MyTcD = 0;
 	MyTcE = 0;
 
-	while((distanciaTachoCount(MediaTC()) <= (100*TAMANHO_DA_ARENA)/7))
-	{
-		RegulaComUS(distancia_direita, DIREITA);
-		RegulaComUS(distancia_esquerda, ESQUERDA);
+	reset_controle();
 
-		MyOnFwd(MD,potdGlobal);
-		MyOnFwd(ME,poteGlobal);
+	while((distanciaTachoCount(MediaTC()) <= (100*40)))
+	{
+		AndaFrente();
 	}
 
 	Off(MD);
@@ -1238,8 +1171,8 @@ sub alinha(int s) {
      luz=Sensor(SLUZ);
      while(((ht==HTBRANCO1)||(ht==HTBRANCO2))||((luz>LUZ_BRANCO_MIN)&&(luz<LUZ_BRANCO_MAX))) {    //Se algum dos sensores estiver lendo branco, entra na função
           if((luz>LUZ_PRETO_MIN)&&(luz<LUZ_PRETO_MAX)) {       //Se o sensor de luz (esquerda) encontrar algo preto, recua a roda esquerda para girar
-               OnRev(ME, s*60);
-               Wait(200);
+               OnRev(ME, s*80);
+               Wait(100);
                //while(MyMotorTachoCount(ME)<50);
                Off(MD_ME);
                //MyResetTachoCount(ME);
@@ -1247,16 +1180,18 @@ sub alinha(int s) {
           }
           else {
                if((ht==HTPRETO1)||(ht==HTPRETO2)) {            //Se o sensor HT (direita) encontrar algo preto, recua a roda direita para girar
-                    OnRev(MD, s*60);
-                    Wait(200);
+                    OnRev(MD, s*80);
+                    Wait(100);
                     //while(MyMotorTachoCount(MD)<50);
                     Off(MD_ME);
                    // MyResetTachoCount(MD);
                     //PlayTone(TONE_A3, 500);
+               }else
+               {
+               		OnFwd(MD_ME, s*55);                       //anda reto até que um dos dois sensores encontre algo preto
+          			Wait(50); //tempo para pegar leitura do sensor?!?!  
                }
-          }
-          OnFwd(MD_ME, s*45);                       //anda reto até que um dos dois sensores encontre algo preto
-          Wait(100);                                   //tempo para pegar leitura do sensor?!?!
+          }                                
           ht=SensorHTColorNum(HT);
           luz=Sensor(SLUZ);
      }
@@ -1281,4 +1216,32 @@ int ReceberComeceGirar()
   	if(aux == COMECEAGIRAR)
     	return 1;
   	return 0;
+}
+
+float GetGyroOffset() { // FUNCIONANDO (chamar com os motores desligados)
+  float gyro_sum = 0, i;
+
+  for(i = 0; i < OFFSET_SAMPLES; ++i)
+  {
+    gyro_sum += SensorHTGyro(GYRO);
+  }
+
+  return gyro_sum/OFFSET_SAMPLES;
+}
+
+void reset_controle()
+{
+	Off(MD);
+	Off(ME);
+
+	ref =  GetGyroOffset();
+	
+	gyro_atual = ref;
+	gyro_antigo = ref;
+	fator_integrante = 0;
+	tempo_antigo = CurrentTick();
+	tempo_atual = CurrentTick();
+
+
+
 }

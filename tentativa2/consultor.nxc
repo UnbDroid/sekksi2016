@@ -29,7 +29,7 @@
 	#define RGB_DIR IN_1
 	#define RGB_ESQ IN_2
 	#define RGB_MEIO IN_3
-	#define GYRO IN_4
+	#define USD IN_4
 
 #define OFFSET_SAMPLES 2048
 
@@ -203,7 +203,7 @@ void InicializaSensores()
   SetSensorColorRed(RGB_DIR);
   SetSensorColorRed(RGB_ESQ);
   SetSensorColorGreen(RGB_MEIO);
-  SetSensorHTGyro(GYRO);
+  SetSensorLowspeed(USD);
 }
 
 void BonecoAlvo()
@@ -576,63 +576,4 @@ int RecebeStart()
     return 1;
   }
   return 0;
-}
-
-void virar()
-{
-  int angulo;
-  float offset;
-  unsigned long time = CurrentTick(), prev_time;
-  float aux = 0, gyro;
-
-
-  angulo = lerAngulo();
-
-  offset = GetGyroOffset();
-
-  MandaGirar();
-
-  while(abs(aux) < abs(angulo)){
-      prev_time = time;
-      time = CurrentTick();
-      gyro = SensorHTGyro(GYRO);
-      aux += (gyro - offset) * (time - prev_time)/1000.0;
-    }
-
-  MandaQueJaDeuPorHoje();
-
-}
-
-int lerAngulo()
-{
-  int leitura;
-
-
-  do{
-    ReceiveRemoteNumber(INBOX_ANG, true, leitura);
-  }while(!leitura);
-
-  return leitura;
-
-}
-
-float GetGyroOffset() { // FUNCIONANDO (chamar com os motores desligados)
-  float gyro_sum = 0, i;
-
-  for(i = 0; i < OFFSET_SAMPLES; ++i)
-  {
-    gyro_sum += SensorHTGyro(GYRO);
-  }
-
-  return gyro_sum/OFFSET_SAMPLES;
-}
-
-void MandaGirar()
-{
-  SendRemoteNumber(CONEXAO, OUTBOX, COMECEAGIRAR);
-}
-
-void MandaQueJaDeuPorHoje()//função apra parar de girar
-{
-  SendRemoteNumber(CONEXAO, OUTBOX, PAREDEGIRAR);
 }
