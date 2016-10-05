@@ -1,8 +1,112 @@
-#define ANGULO_2 -140 //-77
+//Valores Calibraveis
+// Defines de leitura do RGB do meio (ainda precisa testar mais)
+    #define COR_BRANCA_MEIO_MIN 250
+    #define COR_BRANCA_MEIO_MAX 600
+    #define COR_PRETA_MEIO_MIN 10
+    #define COR_PRETA_MEIO_MAX 250
+    #define COR_VERMELHA_MEIO_MIN 78
+    #define COR_VERMELHA_MEIO_MAX 168
+
+// Defines de leitura do RGB da direita do robô
+    //#define COR_BASE_DIR_MAX 586
+    //#define COR_BASE_DIR_MIN 229
+
+ // Defines de leitura do RGB da esquerda do robô
+    //#define COR_BASE_ESQ_MAX 434
+    //#define COR_BASE_ESQ_MIN 215
+  #define FAIXA_SENSORES_LATERAL 97
+  #define FAIXA_SENSORES_MEIO 247
+
+//Bluetooth
+	#define CONEXAO 0
+	#define INBOX 2
+	#define OUTBOX 1
+  #define INBOX_ANG 3
+
+
+//IO
+// Defines de sensores
+	#define RGB_DIR IN_1
+	#define RGB_ESQ IN_2
+	#define RGB_MEIO IN_3
+	#define GYRO IN_4
+
+#define OFFSET_SAMPLES 2048
+
+// Defines de motores
+	#define MOTOR_GARRA OUT_A
+
+//Tempos
+    //#define TEMPO_ATE_A_GARRA_TRAVAR 2000
+    #define TEMPO_ATE_JOGAR_DENTRO 3750
+    //#define TEMPO_ATE_A_GARRA_VOLTAR 2000 //estou usando tempo... rola de usar por angulos depois
+    #define TEMPO_DEPOIS_DE_JOGAR_DENTRO_GARANTIA 800
+
+    //misc
+    #define MENOR_DISTANCIA_US 15
+
+//LOGICA
+	#define direita 1
+	#define esquerda 2
+
+//códigos para comunicação BlueTooth
+#define TESTE -1
+#define PARAR 1
+#define SEGUIR 2
+#define GIREI 3
+#define DESGIRAR 4
+#define REJEITAR 5
+#define DESGIREI 6
+#define CALIBRA 7
+#define PEGUEI 8
+#define CHEIO 9
+#define STOP 10
+#define START 11
+#define VIRA 12
+#define COMECEAGIRAR 13
+#define PAREDEGIRAR 14
+#define JOGAPRADENTRO 15
+
+//cor dos boncos
+#define BONECO_BRANCO 1
+#define BONECO_PRETO 2
+#define BONECO_VERMELHO 3
+
+//my boolean
+#define NAO_ALIEN 0
+#define SIM_ALIEN 1
+
+//Garra
+  //potencias
+  #define POTENCIA_MAXIMA_GARRA -70
+  #define POTENCIA_MED_GARRA -40
+  #define POTENCIA_MIN_GARRA -30
+
+  //Tempos
+  #define TEMPO_DEPOIS_DE_JOGAR_DENTRO 200
+
+  #define TEMPO_DEPOIS_DO_BONECO_ESCAPULIR 400
+
+  //Defines angulos da garra
+  #define ANGULO_1 -110 //-77
+  #define ANG_SEGURO -153
+  #define ANG_LEVANTAR -50
+
+  #define VETOR_CALIBRACAO 11
+
+#define ANGULO_2 -100 //-77
 #define POTENCIA_MAX2_GARRA -90
-#define MOTOR_GARRA OUT_A
-#define POTENCIA_MIN_GARRA -30
-#define TEMPO_DEPOIS_DE_JOGAR_DENTRO 200
+
+void LevantaBoneco();
+void VoltaGarra();
+void Joga_Forte();
+
+void LevantaBoneco()
+{
+  OnFwd(MOTOR_GARRA,POTENCIA_MAXIMA_GARRA);
+  while(MotorTachoCount(MOTOR_GARRA)>ANG_LEVANTAR){}
+  Off(MOTOR_GARRA);
+}
 
 void VoltaGarra()
 {
@@ -36,5 +140,16 @@ void Joga_Forte(){
 
 task main()
 {
-    Joga_Forte();
+    int aux;
+    LevantaBoneco();
+    while(1)
+    {
+      ReceiveRemoteNumber(INBOX, true, aux);
+      Wait(30);
+      if(aux == JOGAPRADENTRO)
+      {
+        Joga_Forte();
+        VoltaGarra();
+      }
+  }
 }
