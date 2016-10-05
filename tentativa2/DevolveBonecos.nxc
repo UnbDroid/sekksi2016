@@ -165,12 +165,28 @@ int MediaTC();
 int distanciaTachoCount(int grau);
 void devolve_bonecos();
 void alinha(int s);
+void desligaBlue();
+void iniciaBlue();
 
+
+task main() {
+     init();
+     PlayTone(TONE_A3, 500);
+     devolve_bonecos();//
+
+     PlayTone(TONE_B7, 500);//
+
+     while(TRUE) {
+          Wait(500);
+     }
+}
 
 void init(){
   inicializaSensores();
   MyResetTachoCount(MD);
   MyResetTachoCount(ME);
+	desligaBlue();
+	iniciaBlue();
 }
 
 void MyOnFwd(int motor, int pot)
@@ -369,38 +385,31 @@ sub devolve_bonecos() {
      Off(MD_ME);
 }
 
-task main() {
-     init();
-     PlayTone(TONE_A3, 500);
-     devolve_bonecos();//
 
-     /*MyOnFwd(MD, -90);
-     MyOnFwd(ME, -83);
-     while(distanciaTachoCount(MediaTC()) > -15*100){
-          Wait(1);           //                                   tem que ter esse Wait
-     }
-     Off(MD_ME);*/
-     
-     //alinha(PARA_TRAS);
-     
-     /*alinha(PARA_TRAS);
-     Wait(100);
-     MyOnFwd(MD, -90);
-     MyOnFwd(ME, -83);
-     Wait(1);                //tem que ter esse Wait
-     while(distanciaTachoCount(MediaTC()) > -15*100){
-          Wait(1);           //tem que ter esse Wait
-     }
-     Off(MD_ME);
-     */
-     
-     /*AbrirPorta();
-     andaBalancando();
-     FecharPorta();*/
-     
-     PlayTone(TONE_B7, 500);//
+void iniciaBlue()
+{// FUNCAO INICIA COMUNICACAO BLUETOOTH
+	CommBTConnectionType DADOS_BT;
+	DADOS_BT.Name = CONSULTOR;
+	DADOS_BT.ConnectionSlot = CONEXAO;
+	DADOS_BT.Action = ACAO;
 
-     while(TRUE) {
-          Wait(500);
-     }
+	SysCommBTConnection(DADOS_BT);
+	Wait(TEMPO_CONECTAR_BT);
+	TextOut(0, LCD_LINE2, "Conectou Bluetooth");
+}
+
+
+void desligaBlue()
+{
+	CommBTConnectionType DADOS_BT;
+	DADOS_BT.Name = CONSULTOR;
+	DADOS_BT.ConnectionSlot = CONEXAO;
+	DADOS_BT.Action = DESCONECTA;
+	do{
+	SysCommBTConnection(DADOS_BT);
+
+	Wait(30);//30 ms eh o tempo de comunicacao minima bluetooth entre dois bricks
+
+	}while(BluetoothStatus(CONEXAO)== NO_ERR);
+	TextOut(0, LCD_LINE1, "Desligou Bluetooth");
 }
