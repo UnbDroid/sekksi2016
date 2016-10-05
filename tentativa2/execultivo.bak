@@ -7,8 +7,8 @@
 #define DISTANCIA_ENTRE_OS_SENSORES 26
 
 //Constantes de Controle
-#define KP 5
-#define KD 15
+#define KP 10
+#define KD 20
 #define DIST_LIMITE 16
 
 //SENSORES E MOTORES
@@ -102,7 +102,7 @@
 #define NORTE 0
 #define LESTE 1
 #define SUL 2
-#define OESTE 3 
+#define OESTE 3
 
 //zonas
 #define CENTRAL 0
@@ -222,9 +222,7 @@ void  bip()
 //função principal
 task main()
 {
-	//executivo();
-	init();
-	viraDir(180);
+	executivo();
 }
 
 //assinatura das funções
@@ -235,11 +233,11 @@ void executivo()
 
 	init();
 
-	andar();//implementar
+	andar();//
 	while(1)//void loop
 	{
 		ReceiveRemoteNumber(INBOX, true, aux);
-		
+
 		switch(aux)
 		{
 			case PARAR:
@@ -313,7 +311,8 @@ void init()
 	potdGlobal = POTENCIA_RETO_DIREITA;
 
 	viraDir(90);
-
+	Wait(200);
+	MandaCalibra();
 	MyResetTachoCount(MD);
 	MyResetTachoCount(ME);
 	MyTcD = 0;
@@ -322,7 +321,7 @@ void init()
   	poteGlobal = POTENCIA_RETO_ESQUERDA;
 	potdGlobal = POTENCIA_RETO_DIREITA;
 
-	
+
 }
 
 void desligaBlue()
@@ -380,6 +379,7 @@ void rejeitar()
 	if(TemQueDescartarParaAEsquerda())
 	{
 		rejeitarEsquerda();
+		Wait(200);
 		MandaGirei();
 		while(!RecebeDesgirar()){}
 		voltarejeitarEsquerda();
@@ -387,69 +387,82 @@ void rejeitar()
 	else
 	{
 		rejeitarDireita();
+		Wait(200);
 		MandaGirei();
 		while(!RecebeDesgirar()){}
 		voltarejeitarDireita();
 	}
-	
-	
+
+	Wait(200);
 	MandaDesGirei();
 }
 
 void rejeitarDireita()
 {
-	int tc;
+	Off(MD);
+	Off(ME);
 
-	//bip();
-	MyOnFwd(ME,90);
-	//bip();
+	Wait(200);
+	SendRemoteNumber(CONEXAO, OUTBOX_ANG, 90);
+	Wait(200);
+	SendRemoteNumber(CONEXAO, OUTBOX, VIRA);
+	while(!ReceberComeceGirar()){}
+	OnFwd(ME,90);
+	while(!ReceberPareGirar()){}
+	Off(MD);
+	Off(ME);
 
-	do{
-     tc = MotorTachoCount(ME);
-  	}while(tc<ANGULOREJEITADIREITA);
-  	//bip();
-	parar();
 }
 
 void voltarejeitarDireita()
 {
-	int tc;
+	Off(MD);
+	Off(ME);
 
-	MyOnFwd(ME,-90);
+	Wait(200);
+	SendRemoteNumber(CONEXAO, OUTBOX_ANG, -90);
+	Wait(200);
+	SendRemoteNumber(CONEXAO, OUTBOX, VIRA);
+	while(!ReceberComeceGirar()){}
+	OnFwd(ME,-90);
+	while(!ReceberPareGirar()){}
+	Off(MD);
+	Off(ME);
 
-	do {
-		tc = MotorTachoCount(ME);
-	} while(tc>(-ANGULOREJEITADIREITA)-ANGCORRECAOVOLTADIREITA);
-
-	parar();
 }
 
 void rejeitarEsquerda()
 {
-	int tc;
+	Off(MD);
+	Off(ME);
 
-	//bip();
-	MyOnFwd(MD,90);
-	//bip();
-
-	do{
-     tc = MotorTachoCount(MD);
-  	}while(tc<ANGULOREJEITAESQUERDA);
-  	//bip();
-	parar();
+	Wait(200);
+	SendRemoteNumber(CONEXAO, OUTBOX_ANG, -90);
+	Wait(200);
+	SendRemoteNumber(CONEXAO, OUTBOX, VIRA);
+	while(!ReceberComeceGirar()){}
+	OnFwd(MD,90);
+	while(!ReceberPareGirar()){}
+	Off(MD);
+	Off(ME);
 }
 
 void voltarejeitarEsquerda()
 {
-	int tc;
+	Off(MD);
+	Off(ME);
 
-	MyOnFwd(MD,-90);
+	Wait(200);
+	SendRemoteNumber(CONEXAO, OUTBOX_ANG, 90);
+	Wait(200);
+	SendRemoteNumber(CONEXAO, OUTBOX, VIRA);
+	while(!ReceberComeceGirar()){}
+	OnFwd(MD,-90);
+	while(!ReceberPareGirar()){}
+	Off(MD);
+	Off(ME);
 
-	do {
-		tc = MotorTachoCount(MD);
-	} while(tc>(-ANGULOREJEITAESQUERDA)-ANGCORRECAOVOLTAESQUERDA);
 
-	parar();
 }
 
 void MandaGirei()
@@ -505,14 +518,29 @@ int RecebeDesgirar()
 }
 
 void viraEsq(int angulo){ // função que faz o robô girar para a esquerda o ângulo recebido
-  
+  	Off(MD);
+	Off(ME);
+
+	angulo = -angulo;
+
+	Wait(200);//Do not touch the waits
+	SendRemoteNumber(CONEXAO, OUTBOX_ANG, angulo);
+	Wait(200);//Do not touch the waits
+	SendRemoteNumber(CONEXAO, OUTBOX, VIRA);
+	while(!ReceberComeceGirar()){}
+	OnFwd(ME,-90);
+ 	OnFwd(MD,90);
+ 	while(!ReceberPareGirar()){}
+ 	Off(MD);
+	Off(ME);
 }
 
 
 void viraDir(int angulo){ // função que faz o robô girar para a direita o ângulo recebido
 	Off(MD);
 	Off(ME);
-	
+
+	Wait(200);
 	SendRemoteNumber(CONEXAO, OUTBOX_ANG, angulo);
 	Wait(200);
 	SendRemoteNumber(CONEXAO, OUTBOX, VIRA);
@@ -788,7 +816,7 @@ void AndaNaTabela()
 		break;
 	}
 
-	
+
 	ClearScreen();
 	NumOut(0,LCD_LINE1,i_global);
 	NumOut(0,LCD_LINE2,j_global);
@@ -931,7 +959,7 @@ void vira180()
 		viraDir(180);
 	}
 
-	//viraDir(180);	
+	//viraDir(180);
 	//viraEsq(180);
 }
 
@@ -948,7 +976,7 @@ void MandaStop()
 }
 
 void RegulaComUS(int distParede, int direcao){
-  
+
 
    if(direcao == ESQUERDA){
    	distanciaAntigaEsquerda = distanciaAtualEsquerda;
@@ -1010,7 +1038,7 @@ void RegulaComUS(int distParede, int direcao){
      }
    }
 
-   
+
    //derivativo
    	int cond1 = ((distanciaAtualDireita < distParede + DIST_LIMITE) && (distanciaAtualDireita > distParede - DIST_LIMITE));
    	int cond2 = ((distanciaAntigaDireita < distParede + DIST_LIMITE) && (distanciaAntigaDireita > distParede - DIST_LIMITE));
@@ -1027,12 +1055,12 @@ void RegulaComUS(int distParede, int direcao){
     	poteGlobal -= KD*(distanciaAtualEsquerda - distanciaAntigaEsquerda);
     	potdGlobal += KD*(distanciaAtualEsquerda - distanciaAntigaEsquerda);
     }
-    
+
     if(potdGlobal < 60)
        potdGlobal = 60;
    	else if(potdGlobal > 90)
        potdGlobal = 90;
-    
+
     if(poteGlobal < 60)
        poteGlobal = 60;
    	else if(poteGlobal > 90)
@@ -1050,7 +1078,7 @@ void AndaFrente()
 
 	distancia_direita = -1;
 	distancia_esquerda = -1;
-	
+
 	MyOnFwd(MD,potdGlobal);
 	MyOnFwd(ME,poteGlobal);
 
@@ -1111,7 +1139,7 @@ void SeguindoRota()
 				tabelaPP();
 			}
 		}
-		
+
 		AndaFrente();
 	}
 	else
@@ -1126,9 +1154,9 @@ void SeguindoRota()
 		{
 			CalculaVolta();
 		}
-		
+
 		girarCardeal(caminho[contPassos]);
-		
+
 		contPassos++;
 		MyResetTachoCount(MD);
 		MyResetTachoCount(ME);
@@ -1138,7 +1166,7 @@ void SeguindoRota()
 		progredi_na_tabela = 0;
 
 		MandaStart();
-		
+
 		if(aux_dir != direcao)//se mudou a direção
 		{
 			Wait(200);
@@ -1153,7 +1181,7 @@ void SairCasa()
 {
 	int ht, luz;
 	int distancia_esquerda, distancia_direita;
-    
+
 	OnFwd(MD,POTENCIA_RETO_DIREITA);
 	OnFwd(ME,POTENCIA_RETO_ESQUERDA);
 
@@ -1166,7 +1194,7 @@ void SairCasa()
 	}
 	Wait(400);
 	alinha(PARA_TRAS);
-	
+
 	potdGlobal = POTENCIA_RETO_DIREITA;
 	poteGlobal = POTENCIA_RETO_ESQUERDA;
 	distancia_esquerda = 7+(j_global*TAMANHO_DA_ARENA)/5;
@@ -1177,7 +1205,7 @@ void SairCasa()
 	MyTcD = 0;
 	MyTcE = 0;
 
-	while((distanciaTachoCount(MediaTC()) <= (100*TAMANHO_DA_ARENA)/10))
+	while((distanciaTachoCount(MediaTC()) <= (100*TAMANHO_DA_ARENA)/7))
 	{
 		RegulaComUS(distancia_direita, DIREITA);
 		RegulaComUS(distancia_esquerda, ESQUERDA);

@@ -467,12 +467,35 @@ void BonecoNaFrente()
 
 void Rejeita()
 {
+  int aux, flag = 0;
   LevantaBoneco();
   MandaRejeitar();
-  while(!RecebiGirei()){}//espera acabar de girar
+  while(!flag){
+    ReceiveRemoteNumber(INBOX, true, aux);
+    nbip(1);
+    switch (aux) {
+      case GIREI:
+        flag = 1;
+      break;
+      case VIRA:
+        virar();
+      break;
+    }
+  }//espera acabar de girar
   VoltaGarra();
   MandaDesgirar();
-  while(!RecebiDesGirei()){}//espera acabar de desgirar
+  flag = 0;
+  while(!flag){
+    ReceiveRemoteNumber(INBOX, true, aux);
+    switch (aux) {
+      case DESGIREI:
+        flag = 1;
+      break;
+      case VIRA:
+        virar();
+      break;
+    }
+  }//espera acabar de desgirar
 }
 
 int RecebiGirei()
@@ -548,7 +571,7 @@ int RecebeStart()
 {
   int aux;
   ReceiveRemoteNumber(INBOX, true, aux);
-  if(aux == START){                                                                                                                                                                      
+  if(aux == START){
     //nbip(7);
     return 1;
   }
@@ -561,7 +584,7 @@ void virar()
   float offset;
   unsigned long time = CurrentTick(), prev_time;
   float aux = 0, gyro;
-  
+
 
   angulo = lerAngulo();
 
@@ -583,7 +606,7 @@ void virar()
 int lerAngulo()
 {
   int leitura;
-  
+
 
   do{
     ReceiveRemoteNumber(INBOX_ANG, true, leitura);
