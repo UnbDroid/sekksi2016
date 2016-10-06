@@ -1,0 +1,12 @@
+#define OUTBOXUSD 4
+
+task main(){
+       SetSensorLowspeed(IN_4);
+       int us;
+       while(1){
+            us = SensorUS(IN_4);
+            Wait(50);
+            SendRemoteNumber(0,OUTBOXUSD,us);
+            Wait(15);
+       }
+}
