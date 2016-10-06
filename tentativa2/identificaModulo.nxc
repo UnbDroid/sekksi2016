@@ -38,7 +38,13 @@ void nbip(int n);
 int MyMotorTachoCount(int motor);
 void MyResetTachoCount(int motor);
 void  bip();
+int idmediaTC();
+sub alinha(int s);
+int caverna_parede();//NAO CHAMAR, É chamada em identificaModulo
+int identificaModulo(); // CHAMAR: QUANDO TIVER NUM VAO :: RETORNA ZONA
+
 //variaveis globais
+
 int MyTcD;
 int MyTcE;
 int potd;
@@ -129,7 +135,7 @@ int caverna_parede() {
      }
 }
 
-int identifica_modulo() {
+int identificaModulo() {
      int ht, luz;
 
      alinha(1);        //alinha com come�o do novo m�dulo
@@ -169,83 +175,10 @@ task main () {
      SetSensorLowspeed(HT);
      while(i<4) {                   //pega 4 leituras de ident. modulo e as guarda
           if(SensorUS(USE)<10) {
-               localizacao[i]=identifica_modulo();
+               localizacao[i]=identificaModulo();
                Off(MD_ME);
                i++;
           }
           Wait(20);
      }
-
-
-                                 //isso aqui � so para printar os quatro modulos lidos. podia ser mais modular, mas � so teste, entao fica assim mesmo
-     ClearScreen();
-     TextOut(0, LCD_LINE1, "modulo 1:");
-     TextOut(0, LCD_LINE3, "modulo 2:");
-     TextOut(0, LCD_LINE5, "modulo 3:");
-     TextOut(0, LCD_LINE7, "modulo 4:");
-     if(localizacao[0]==1) {
-          TextOut(10, LCD_LINE2, "Caverna");
-          }
-     else if(localizacao[0]==2) {
-          TextOut(10, LCD_LINE2, "Barreira");
-     }
-     else if(localizacao[0]==3) {
-          TextOut(10, LCD_LINE2, "Zona Azul");
-     }
-     else if(localizacao[0]==4) {
-          TextOut(10, LCD_LINE2, "Zona Verde");
-     }
-
-     if(localizacao[1]==1) {
-          TextOut(10, LCD_LINE4, "Caverna");
-          }
-     else if(localizacao[1]==2) {
-          TextOut(10, LCD_LINE4, "Barreira");
-     }
-     else if(localizacao[1]==3) {
-          TextOut(10, LCD_LINE4, "Zona Azul");
-     }
-     else if(localizacao[1]==4) {
-          TextOut(10, LCD_LINE4, "Zona Verde");
-     }
-
-     if(localizacao[2]==1) {
-          TextOut(10, LCD_LINE6, "Caverna");
-          }
-     else if(localizacao[2]==2) {
-          TextOut(10, LCD_LINE6, "Barreira");
-     }
-     else if(localizacao[2]==3) {
-          TextOut(10, LCD_LINE6, "Zona Azul");
-     }
-     else if(localizacao[2]==4) {
-          TextOut(10, LCD_LINE6, "Zona Verde");
-     }
-
-     if(localizacao[3]==1) {
-          TextOut(10, LCD_LINE8, "Caverna");
-          }
-     else if(localizacao[3]==2) {
-          TextOut(10, LCD_LINE8, "Barreira");
-     }
-     else if(localizacao[3]==3) {
-          TextOut(10, LCD_LINE8, "Zona Azul");
-     }
-     else if(localizacao[3]==4) {
-          TextOut(10, LCD_LINE8, "Zona Verde");
-     }
-
-
-
-     while(TRUE) {                                  //toque indicando que chegou ao final do c�digo, e n�o far� mais nada
-          PlayTone(TONE_C4, 300);
-          Wait(300);
-          PlayTone(TONE_E4, 300);
-          Wait(300);
-          PlayTone(TONE_G4, 300);
-          Wait(300);
-          PlayTone(TONE_E4, 300);
-          Wait(300);
-     }
-     alinha(-1);
 }
