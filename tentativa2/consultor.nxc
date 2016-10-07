@@ -127,7 +127,6 @@ void CalibraFaixaBase();
 void MandaPeguei();
 void MandaCheio();
 int RecebeStart();
-void virar();
 int lerAngulo();
 float GetGyroOffset();
 void MandaGirar();
@@ -172,9 +171,6 @@ void consultor()
       case STOP:
         //nbip(3);
         //while(!RecebeStart()){}
-      break;
-      case VIRA:
-        virar();
       break;
     }
 
@@ -416,9 +412,6 @@ void BonecoNaFrente()
         nbip(4);
         MandaCheio();
         while(1){//corrigir a contição deste whilw<<<<<<<-------------------------
-          ReceiveRemoteNumber(INBOX,true,mensagem);
-          if(mensagem == VIRA)
-            virar();
         }
       }
       else
@@ -477,9 +470,6 @@ void Rejeita()
       case GIREI:
         flag = 1;
       break;
-      case VIRA:
-        virar();
-      break;
     }
   }//espera acabar de girar
   VoltaGarra();
@@ -490,9 +480,6 @@ void Rejeita()
     switch (aux) {
       case DESGIREI:
         flag = 1;
-      break;
-      case VIRA:
-        virar();
       break;
     }
   }//espera acabar de desgirar

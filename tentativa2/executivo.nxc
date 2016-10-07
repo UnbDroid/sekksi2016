@@ -211,6 +211,8 @@ float GetGyroOffset();
 void reset_controle();
 void alinha_parede();
 int velocidademedia();
+int distanciaGiroDireita(int grau);
+int distanciaGiroEsquerda(int grau);
 
 //função para dbug
 void  bip()
@@ -528,64 +530,32 @@ int RecebeDesgirar()
 }
 
 void viraEsq(int angulo){ // função que faz o robô girar para a esquerda o ângulo recebido
+     Wait(TEMPO_DEPOIS_E_ANTES_DE_GIRAR);
+     MyOnFwd(MD, 90);
+     MyOnFwd(ME, -90);
 
- 	float offset;
-  	unsigned long time = CurrentTick(), prev_time;
-  	float aux = 0, gyro;
-
-  	//angulo -= ERRO_ANGULO_GYRO;
-
-  	Off(MD);
-	Off(ME);
-	Wait(200);//Do not touch the waits
-
-	angulo = -angulo;
-
-	offset = GetGyroOffset();
-	
-	OnFwd(ME,-90);
- 	OnFwd(MD,90);
-
- 	while(abs(aux) < abs(angulo)){
-      Wait(77);
-      prev_time = time;
-      time = CurrentTick();
-      gyro = SensorHTGyro(GYRO);
-      aux += (gyro - offset) * (time - prev_time)/1000.0;
-    }
-
- 	Off(MD);
-	Off(ME);
+     while(distanciaGiroEsquerda((MotorTachoCount(MD) - MotorTachoCount(ME))/2) < angulo)
+     {
+      //lol
+     }
+     MyOnFwd(MD,0);
+     MyOnFwd(ME,0);
+     Wait(TEMPO_DEPOIS_E_ANTES_DE_GIRAR);
 }
 
 
 void viraDir(int angulo){ // função que faz o robô girar para a direita o ângulo recebido
+     Wait(TEMPO_DEPOIS_E_ANTES_DE_GIRAR);
+     MyOnFwd(MD, -90);
+     MyOnFwd(ME, 90);
 
- 	float offset;
-  	unsigned long time = CurrentTick(), prev_time;
-  	float aux = 0, gyro;
-
-  	//angulo-=ERRO_ANGULO_GYRO;
-
-	Off(MD);
-	Off(ME);
-	Wait(200);//Do not touch the waits
-
-	offset = GetGyroOffset();
-
-	OnFwd(ME,90);
- 	OnFwd(MD,-90);
- 	
- 	while(abs(aux) < abs(angulo)){
-       Wait(77);
-      prev_time = time;
-      time = CurrentTick();
-      gyro = SensorHTGyro(GYRO);
-      aux += (gyro - offset) * (time - prev_time)/1000.0;
-    }
-
- 	Off(MD);
-	Off(ME);
+     while(distanciaGiroDireita((- MotorTachoCount(MD) + MotorTachoCount(ME))/2) < angulo)
+     {
+      //lol
+     }
+     MyOnFwd(MD,0);
+     MyOnFwd(ME,0);
+     Wait(TEMPO_DEPOIS_E_ANTES_DE_GIRAR);
 }
 
 void MyOnFwd(int motor, int pot)
@@ -1234,6 +1204,14 @@ float GetGyroOffset() { // FUNCIONANDO (chamar com os motores desligados)
   return gyro_sum/OFFSET_SAMPLES;
 }
 
+int distanciaGiroDireita(int grau){
+	   return (((grau*17)/170/*se girar mais diminua o denomidador*/)); // COMO FOI FEITA ESSA CONVERSÃO??? [na base da tentativa e erro]
+}
+
+int distanciaGiroEsquerda(int grau){
+	   return (((grau*17)/167/*se girar mais diminua o denomidador*/));
+}
+
 void reset_controle()
 {
 	Off(MD);
@@ -1250,36 +1228,27 @@ void reset_controle()
 
 void alinha_parede()
 {
-	int tc_old, tc;
+	int tc_vlc;
 
 	OnFwd(MD,-90);
 	OnFwd(ME,-90);
-	
-	while(1)
-	{
-		tc = velocidademedia();
-		NumOut(0,LCD_LINE1,tc);
-	}
-	/*
-	Wait(10);
-	tc_old = MediaTC();
+
+	Wait(400);
+
 	do
 	{
-		Wait(2.75);
-		tc_old = tc;
-		tc_old = MediaTC();
+		tc_vlc = (-1)*velocidademedia();
 	}
-	while(tc != tc_old)
+	while(tc_vlc >= 39)
 
 	Off(MD);
 	Off(ME);
-*/
 }
 
 int velocidademedia()
 {
 	int tc = (MotorTachoCount(MD)+MotorTachoCount(ME))/2;
 	Wait(100);
-	return (((MotorTachoCount(MD)+MotorTachoCount(ME))/2-tc)/100);
+	return (((MotorTachoCount(MD)+MotorTachoCount(ME))/2-tc));
 }
 
