@@ -1,6 +1,6 @@
 //regulaveis
 #define POTENCIA_RETO_DIREITA 79
-#define POTENCIA_RETO_ESQUERDA 93
+#define POTENCIA_RETO_ESQUERDA 90
 #define TEMPO_DEPOIS_E_ANTES_DE_GIRAR 200
 
 #define TAMANHO_DA_ARENA 184
@@ -209,8 +209,6 @@ int ReceberPareGirar();
 int ReceberComeceGirar();
 float GetGyroOffset();
 void reset_controle();
-void alinha_parede();
-int velocidademedia();
 
 //função para dbug
 void  bip()
@@ -230,7 +228,6 @@ void  bip()
 //função principal
 task main()
 {
-	//alinha_parede();
 	executivo();
 }
 
@@ -653,7 +650,7 @@ int MediaTC()
 
 int distanciaTachoCount(int grau)
 {
-	return ((76*267*grau)/10000);  //Distancia a ser percorrid/Raio da roda
+	return ((267*grau)/100);  //Distancia a ser percorrid/Raio da roda
 }
 
 void MandaCalibra()
@@ -1152,7 +1149,7 @@ void SairCasa()
 
 	reset_controle();
 
-	while((distanciaTachoCount(MediaTC()) <= (100*30)))
+	while((distanciaTachoCount(MediaTC()) <= (100*40)))
 	{
 		AndaFrente();
 	}
@@ -1246,40 +1243,7 @@ void reset_controle()
 	fator_integrante = 0;
 	tempo_antigo = CurrentTick();
 	tempo_atual = CurrentTick();
+
+
+
 }
-
-void alinha_parede()
-{
-	int tc_old, tc;
-
-	OnFwd(MD,-90);
-	OnFwd(ME,-90);
-	
-	while(1)
-	{
-		tc = velocidademedia();
-		NumOut(0,LCD_LINE1,tc);
-	}
-	/*
-	Wait(10);
-	tc_old = MediaTC();
-	do
-	{
-		Wait(2.75);
-		tc_old = tc;
-		tc_old = MediaTC();
-	}
-	while(tc != tc_old)
-
-	Off(MD);
-	Off(ME);
-*/
-}
-
-int velocidademedia()
-{
-	int tc = (MotorTachoCount(MD)+MotorTachoCount(ME))/2;
-	Wait(100);
-	return (((MotorTachoCount(MD)+MotorTachoCount(ME))/2-tc)/100);
-}
-

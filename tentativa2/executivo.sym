@@ -1,0 +1,198 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__signed_stack_002alinha_parede	6	1	0	4	2
+1	__signed_stack_001velocidademedia	6	1	4	4	12
+2	__D0alinha_parede	6	1	8	4	11
+3	__signed_stack_001alinha_parede	6	1	12	4	2
+4	__D0velocidademedia	6	1	16	4	14
+5	__TextOutMutex	9	0	20	4	2
+6	__Wait_7qG2_ms_7qG2_000_inline_velocidademedia	5	1	24	4	2
+7	__velocidademedia_7qG2_tc_7qG2_000	4	1	28	2	2
+8	__alinha_parede_7qG2_tc_7qG2_000	4	1	30	2	2
+9	__alinha_parede_return	1	1	32	1	3
+10	____initialize_global_data_return	1	1	33	1	3
+11	__constValNeg90	2	0	34	1	2
+12	__velocidademedia_return	1	1	35	1	4
+13	__constVal96	2	0	36	1	2
+14	__constVal63	2	0	37	1	2
+15	__constVal3	2	0	38	1	2
+16	__constVal5	2	0	39	1	6
+17	__PFTmp	1	1	40	1	1
+18	__constVal32	2	0	41	1	6
+19	__constVal1	2	0	42	1	3
+20	__constVal0	2	1	43	1	13
+21	__constVal25	2	0	44	1	1
+22	__iniciaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	1
+23	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Result	2	1	48	1	1
+24	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	49	1	1
+25	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	50	4	1
+26	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
+27	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	52	1	1
+28	__desligaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	1
+29	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Result	2	1	56	1	1
+30	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	57	1	1
+31	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	58	4	1
+32	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
+33	__desligaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	60	1	1
+34	__TextOutArgs	8	0	4	16	6
+35	__TextOutArgs.Result	2	1	64	1	6
+36	__TextOutArgs.Location	8	0	2	4	6
+37	__TextOutArgs.Location.X	4	1	68	2	6
+38	__TextOutArgs.Location.Y	4	1	70	2	6
+39	__TextOutArgs.Text	7	0	72	4	6
+40	__TextOutArgs.Text.Text_type	1	0	0	1	0
+41	__TextOutArgs.Options	5	1	76	4	6
+42	__barreira_2	7	0	80	4	2
+43	__barreira_2.__barreira_2_type	4	0	0	2	0
+44	__central_2	7	0	82	4	2
+45	__central_2.__central_2_type	4	0	0	2	0
+46	__caverna_2	7	0	84	4	2
+47	__caverna_2.__caverna_2_type	4	0	0	2	0
+48	barreira	7	0	86	4	1
+49	barreira.barreira_type	7	0	0	4	0
+50	barreira.barreira_type.barreira_type_type	4	0	0	2	0
+51	central	7	0	88	4	1
+52	central.central_type	7	0	0	4	0
+53	central.central_type.central_type_type	4	0	0	2	0
+54	caminho	7	0	90	4	1
+55	caminho.caminho_type	4	0	0	2	0
+56	caverna	7	0	92	4	1
+57	caverna.caverna_type	7	0	0	4	0
+58	caverna.caverna_type.caverna_type_type	4	0	0	2	0
+#SOURCES
+Clump	Line	PC	Source
+0	232	0	#line 232 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+0	233	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	232	2	#line 232 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+0	234	2	#line 234 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+0	235	2		subcall alinha_parede, __alinha_parede_return
+0	234	4	#line 234 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+0	235	4		exit -1, -1
+1	1254	0	#line 1254 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1255	0		mov __D0alinha_parede, __constValNeg90
+1	1255	2	#line 1255 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1256	2	#pragma macro 7
+1	1256	2		setout __constVal1, 2, __D0alinha_parede, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+1	13346	25	#line 13346 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1255	25	#line 1255 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1255	25	#line 1255 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1256	25		mov __D0alinha_parede, __constValNeg90
+1	1257	27	#line 1257 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1258	27	#pragma macro 7
+1	1258	27		setout __constVal0, 2, __D0alinha_parede, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+1	13351	50	#line 13351 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1257	50	#line 1257 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1258	50	#line 1258 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1259	50		set __D0alinha_parede, 1
+1	1259	53	#line 1259 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1260	53		tst 5, __D0alinha_parede, __D0alinha_parede
+1	1259	56	#line 1259 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1260	56		brtst 4, __ASM_Label_1622, __D0alinha_parede
+1	1260	59	#line 1260 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1261	59		subcall velocidademedia, __velocidademedia_return
+1	1260	61	#line 1260 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1261	61		mov __alinha_parede_7qG2_tc_7qG2_000, __D0velocidademedia
+1	1260	63	#line 1260 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1260	63	#line 1260 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1260	63	#line 1260 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1261	63		set __signed_stack_001alinha_parede, 0
+1	1260	66	#line 1260 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1260	66	#line 1260 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1261	66		set __signed_stack_002alinha_parede, 56
+1	1260	69	#line 1260 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1260	69	#line 1260 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1261	69		mov __D0alinha_parede, __alinha_parede_7qG2_tc_7qG2_000
+1	1261	71	#line 1261 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1262	71		acquire __TextOutMutex
+1	1261	72	#line 1261 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1262	72		mov __TextOutArgs.Location.X, __signed_stack_001alinha_parede
+1	1261	74	#line 1261 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1262	74		mov __TextOutArgs.Location.Y, __signed_stack_002alinha_parede
+1	1261	76	#line 1261 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1262	76		set __TextOutArgs.Options, 0
+1	1261	79	#line 1261 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1262	79		numtostr __TextOutArgs.Text, __D0alinha_parede
+1	1261	82	#line 1261 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1262	82		syscall 13, __TextOutArgs
+1	1261	85	#line 1261 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1262	85		mov __D0alinha_parede, __TextOutArgs.Result
+1	1261	87	#line 1261 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1262	87		release __TextOutMutex
+1	1261	88	#line 1261 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1278	88	#line 1278 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1279	88		jmp __ASM_Label_1621
+1	1278	90	#line 1278 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1278	90	#line 1278 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+1	1279	90		subret __alinha_parede_return
+2	1280	0	#line 1280 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1281	0		getout __signed_stack_001velocidademedia, __constVal1, 4
+2	1280	4	#line 1280 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1280	4	#line 1280 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1281	4		getout __D0velocidademedia, __constVal0, 4
+2	1280	8	#line 1280 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1281	8		add __signed_stack_001velocidademedia, __signed_stack_001velocidademedia, __D0velocidademedia
+2	1280	12	#line 1280 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1281	12	#line 1281 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1282	12		set __D0velocidademedia, 2
+2	1281	15	#line 1281 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1282	15		div __velocidademedia_7qG2_tc_7qG2_000, __signed_stack_001velocidademedia, __D0velocidademedia
+2	1281	19	#line 1281 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1281	19	#line 1281 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1282	19		set __Wait_7qG2_ms_7qG2_000_inline_velocidademedia, 100
+2	1281	22	#line 1281 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	8551	22	#line 8551 "NXCDefs.h"
+2	8552	22		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_velocidademedia
+2	8551	25	#line 8551 "NXCDefs.h"
+2	1282	25	#line 1282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1282	25	#line 1282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1283	25		getout __signed_stack_001velocidademedia, __constVal1, 4
+2	1282	29	#line 1282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1282	29	#line 1282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1283	29		getout __D0velocidademedia, __constVal0, 4
+2	1282	33	#line 1282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1283	33		add __signed_stack_001velocidademedia, __signed_stack_001velocidademedia, __D0velocidademedia
+2	1282	37	#line 1282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1282	37	#line 1282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1283	37		set __D0velocidademedia, 2
+2	1282	40	#line 1282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1283	40		div __signed_stack_001velocidademedia, __signed_stack_001velocidademedia, __D0velocidademedia
+2	1282	44	#line 1282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1282	44	#line 1282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1283	44		mov __D0velocidademedia, __velocidademedia_7qG2_tc_7qG2_000
+2	1282	46	#line 1282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1283	46		sub __signed_stack_001velocidademedia, __signed_stack_001velocidademedia, __D0velocidademedia
+2	1282	50	#line 1282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1282	50	#line 1282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1283	50		set __D0velocidademedia, 100
+2	1282	53	#line 1282 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1283	53		div __D0velocidademedia, __signed_stack_001velocidademedia, __D0velocidademedia
+2	1283	57	#line 1283 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1284	57		subret __velocidademedia_return
+2	1283	59	#line 1283 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1285	59	#line 1285 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+2	1286	59		subret __velocidademedia_return
+3	1286	0	#line 1286 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+3	1286	0	#line 1286 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+3	1287	0		arrinit __central_2, __constVal0, __constVal5
+3	1286	4	#line 1286 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+3	1287	4		arrinit central, __central_2, __constVal5
+3	1286	8	#line 1286 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+3	1286	8	#line 1286 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+3	1287	8		arrinit __barreira_2, __constVal0, __constVal5
+3	1286	12	#line 1286 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+3	1287	12		arrinit barreira, __barreira_2, __constVal5
+3	1286	16	#line 1286 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+3	1286	16	#line 1286 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+3	1287	16		arrinit __caverna_2, __constVal0, __constVal5
+3	1286	20	#line 1286 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+3	1287	20		arrinit caverna, __caverna_2, __constVal5
+3	1286	24	#line 1286 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+3	1287	24		arrinit caminho, __constVal0, __constVal25
+3	1286	28	#line 1286 "C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc"
+3	1287	28		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc
+1	alinha_parede	7	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc
+2	velocidademedia	99	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc
+3	__initialize_global_data	160	C:\Users\luan\Documents\GitHub\Droid\sekksi2016\tentativa2\executivo.nxc
