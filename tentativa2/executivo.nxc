@@ -1008,8 +1008,11 @@ void SeguindoRota()
 					nbip(3);
 					//chama a função devolveBoeco()
 				}
+				else
+				{
+					nbip(2);
+				}
 				//chama a função que decide pra onde vai
-				nbip(2);
 			}
 		}
 
