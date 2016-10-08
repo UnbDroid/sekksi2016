@@ -1,15 +1,19 @@
+
 //regulaveis
-#define POTENCIA_RETO_DIREITA 79
+#define POTENCIA_RETO_DIREITA 83
 #define POTENCIA_RETO_ESQUERDA 90
 #define TEMPO_DEPOIS_E_ANTES_DE_GIRAR 200
 
 #define TAMANHO_DA_ARENA 184
 #define DISTANCIA_ENTRE_OS_SENSORES 26
 
-//Constantes de Controle
+/*//Constantes de Controle
 #define KP 1
 #define KD 5
-#define DIST_LIMITE 16
+#define DIST_LIMITE 16*/
+
+
+
 
 //SENSORES E MOTORES
 #define MD OUT_B //motor da direita
@@ -21,8 +25,11 @@
 #define HT IN_3         //direita
 #define SLUZ IN_4       //esquerda
 
+
 //constantes de locomoção
 #define FATORSYNC 1
+
+
 
 //LOGICA
 #define DIREITA 1
@@ -49,6 +56,7 @@
 #define BONECO_BRANCO 1
 #define BONECO_PRETO 2
 #define BONECO_VERMELHO 3
+
 
 //cor do chao
 #define CHAO_PRETO 14
@@ -88,6 +96,9 @@
 #define VIRA 12
 #define COMECEAGIRAR 13
 #define PAREDEGIRAR 14
+#define TEMOUNAOBONECO 15
+#define SIMTEM 16
+#define NAOVIRGULANAOTEM 17
 
 //CONSTANTES PID
 #define TENDE_DIRESQ 0// de -100(vira pra direita) a 100(vira pra esquerda)
@@ -119,10 +130,10 @@
 #define HTAZUL 2
 #define HTVERDE 4
 //SENSOR DE LUZ
-#define LUZ_PRETO_MAX 30
+#define LUZ_PRETO_MAX 50
 #define LUZ_PRETO_MIN 15
 #define LUZ_BRANCO_MAX 65
-#define LUZ_BRANCO_MIN 35
+#define LUZ_BRANCO_MIN 51
 
 #define DIFERENCIALDEERRODOANGULO 5
 
@@ -132,7 +143,7 @@
 
 
 //variávei do controle
-int distanciaAtualDireita, distanciaAtualEsquerda, distanciaAntigaDireita, distanciaAntigaEsquerda;
+//float gyro_atual, gyro_antigo, ref, fator_integrante, tempo_atual, tempo_antigo;
 
 //variáveis gloabais do mapeamento
 int central[5][5], barreira[5][5], caverna[5][5];
@@ -195,13 +206,21 @@ void MyOnRevSyncPID(int motores, int pot, int turnDirEsq, int p, int i, int d);
 int TemQueDescartarParaAEsquerda();
 void MandaStart();
 void MandaStop();
-void RegulaComUS(int distParede, int direcao);
+//void RegulaComUS(int distParede, int direcao);
 void SeguindoRota();
 void SairCasa();
 int idmediaTC();
 sub alinha(int s);
 int ReceberPareGirar();
 int ReceberComeceGirar();
+float GetGyroOffset();
+void reset_controle();
+void alinha_parede();
+int velocidademedia();
+int distanciaGiroDireita(int grau);
+int distanciaGiroEsquerda(int grau);
+void TalvezRegulaParede();
+int TemBonecoNoConsultor();
 
 
 //função para dbug
@@ -298,7 +317,7 @@ void init()
   	inicializaSensores();
   	iniciaBlue();
 
-  	SairCasa();
+  	//SairCasa();//comentado para testes enquanto a arena não esta pronta
 
   	FecharPorta();
 
@@ -312,13 +331,16 @@ void init()
 
 	viraDir(90);
 	Wait(200);
+
 	MandaCalibra();
+
 	MyResetTachoCount(MD);
 	MyResetTachoCount(ME);
 	MyTcD = 0;
 	MyTcE = 0;
 
-  poteGlobal = POTENCIA_RETO_ESQUERDA;
+	//reset_controle();
+  	poteGlobal = POTENCIA_RETO_ESQUERDA;
 	potdGlobal = POTENCIA_RETO_DIREITA;
 
 
@@ -513,7 +535,7 @@ int RecebeDesgirar()
 	int aux;
 	ReceiveRemoteNumber(INBOX, true, aux);
 	if(aux == DESGIRAR)
-  	return 1;
+  		return 1;
 	return 0;
 }
 
@@ -1077,15 +1099,15 @@ void RegulaComUS(int distParede, int direcao){
 
 void AndaFrente()
 {
-	int distancia_direita, distancia_esquerda;
+	//int distancia_direita, distancia_esquerda;
 
-	distancia_direita = -1;
-	distancia_esquerda = -1;
+	//distancia_direita = -1;
+	//distancia_esquerda = -1;
 
-	MyOnFwd(MD,potdGlobal);
-	MyOnFwd(ME,poteGlobal);
+	MyOnFwd(MD, POTENCIA_RETO_DIREITA);//potdGlobal);
+  	MyOnFwd(ME, POTENCIA_RETO_ESQUERDA);//poteGlobal);
 
-
+	/*
 	switch(direcao)
 	{
 		case NORTE:
@@ -1121,6 +1143,7 @@ void AndaFrente()
 
 	RegulaComUS(distancia_direita, DIREITA);
 	RegulaComUS(distancia_esquerda, ESQUERDA);
+	*/
 }
 
 void SeguindoRota()
@@ -1153,6 +1176,26 @@ void SeguindoRota()
 
 		aux_dir = direcao;
 
+		if(zona == CENTRAL)
+		{
+			if((i_global == 0)&&(j_global == 2))
+			{
+				
+				if(TemBonecoNoConsultor())
+				{
+					parar();
+					free_to_go = 1;
+					girarCardeal(NORTE);
+					while(1)
+					{
+						//bip();
+					}
+					//chama a função devolveBoeco()
+				}
+				//chama a função que decide pra onde vai
+			}
+		}
+
 		if(caminho[contPassos] == -1)
 		{
 			CalculaVolta();
@@ -1176,6 +1219,8 @@ void SeguindoRota()
 			MandaCalibra();
 			poteGlobal = POTENCIA_RETO_ESQUERDA;
 			potdGlobal = POTENCIA_RETO_DIREITA;
+			//reset_controle();
+			TalvezRegulaParede();
 		}
 	}
 }
@@ -1208,13 +1253,11 @@ void SairCasa()
 	MyTcD = 0;
 	MyTcE = 0;
 
-	while((distanciaTachoCount(MediaTC()) <= (100*TAMANHO_DA_ARENA)/7))
-	{
-		RegulaComUS(distancia_direita, DIREITA);
-		RegulaComUS(distancia_esquerda, ESQUERDA);
+	reset_controle();
 
-		MyOnFwd(MD,potdGlobal);
-		MyOnFwd(ME,poteGlobal);
+	while((distanciaTachoCount(MediaTC()) <= (100*30)))
+	{
+		AndaFrente();
 	}
 
 	Off(MD);
@@ -1236,8 +1279,8 @@ sub alinha(int s) {
      luz=Sensor(SLUZ);
      while(((ht==HTBRANCO1)||(ht==HTBRANCO2))||((luz>LUZ_BRANCO_MIN)&&(luz<LUZ_BRANCO_MAX))) {    //Se algum dos sensores estiver lendo branco, entra na função
           if((luz>LUZ_PRETO_MIN)&&(luz<LUZ_PRETO_MAX)) {       //Se o sensor de luz (esquerda) encontrar algo preto, recua a roda esquerda para girar
-               OnRev(ME, s*60);
-               Wait(200);
+               OnRev(ME, s*80);
+               Wait(100);
                //while(MyMotorTachoCount(ME)<50);
                Off(MD_ME);
                //MyResetTachoCount(ME);
@@ -1245,16 +1288,18 @@ sub alinha(int s) {
           }
           else {
                if((ht==HTPRETO1)||(ht==HTPRETO2)) {            //Se o sensor HT (direita) encontrar algo preto, recua a roda direita para girar
-                    OnRev(MD, s*60);
-                    Wait(200);
+                    OnRev(MD, s*80);
+                    Wait(100);
                     //while(MyMotorTachoCount(MD)<50);
                     Off(MD_ME);
                    // MyResetTachoCount(MD);
                     //PlayTone(TONE_A3, 500);
+               }else
+               {
+               		OnFwd(MD_ME, s*55);                       //anda reto até que um dos dois sensores encontre algo preto
+          			Wait(50); //tempo para pegar leitura do sensor?!?!  
                }
-          }
-          OnFwd(MD_ME, s*45);                       //anda reto até que um dos dois sensores encontre algo preto
-          Wait(100);                                   //tempo para pegar leitura do sensor?!?!
+          }                                
           ht=SensorHTColorNum(HT);
           luz=Sensor(SLUZ);
      }
@@ -1279,4 +1324,94 @@ int ReceberComeceGirar()
   	if(aux == COMECEAGIRAR)
     	return 1;
   	return 0;
+}
+
+int distanciaGiroDireita(int grau){
+	   return (((grau*17)/170/*se girar mais diminua o denomidador*/)); // COMO FOI FEITA ESSA CONVERSÃO??? [na base da tentativa e erro]
+}
+
+int distanciaGiroEsquerda(int grau){
+	   return (((grau*17)/167/*se girar mais diminua o denomidador*/));
+}
+
+/*void reset_controle()
+{
+	Off(MD);
+	Off(ME);
+
+	ref  =  GetGyroOffset();
+	
+	gyro_atual = ref;
+	gyro_antigo = ref;
+	fator_integrante = 0;
+	tempo_antigo = CurrentTick();
+	tempo_atual = CurrentTick();
+}*/
+
+void alinha_parede()
+{
+	int tc_vlc;
+
+	OnFwd(MD,-90);
+	OnFwd(ME,-90);
+
+	Wait(400);
+
+	do
+	{
+		tc_vlc = (-1)*velocidademedia();
+	}
+	while(tc_vlc >= 39)
+
+	Off(MD);
+	Off(ME);
+}
+
+int velocidademedia()
+{
+	int tc = (MotorTachoCount(MD)+MotorTachoCount(ME))/2;
+	Wait(100);
+	return (((MotorTachoCount(MD)+MotorTachoCount(ME))/2-tc));
+}
+
+void TalvezRegulaParede()
+{
+	int cond0, cond1, cond2, cond3, cond4;
+
+	cond0 = ((i_global==2)||(j_global==2));
+	cond1 = ((i_global==4)&&(direcao==SUL));
+	cond2 = ((i_global==0)&&(direcao==NORTE));
+	cond3 = ((j_global==0)&&(direcao==LESTE));
+	cond4 = ((j_global==4)&&(direcao==OESTE));
+
+	if((!cond0)&&(cond1||cond2||cond3||cond4))
+	{
+		alinha_parede();
+	}
+}
+
+int TemBonecoNoConsultor()
+{
+	int aux = 0;
+	
+	SendRemoteNumber(CONEXAO, OUTBOX, TEMOUNAOBONECO);
+	while((aux!=SIMTEM)&&(aux!=NAOVIRGULANAOTEM))
+	{
+		//bip();
+		ReceiveRemoteNumber(INBOX, true, aux);
+	}
+	
+
+	//ReceiveRemoteNumer(INBOX_TEMBONECO, true, aux);
+	//alteração do schiavini
+
+	if(aux==SIMTEM)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+	
 }
