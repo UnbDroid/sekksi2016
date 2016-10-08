@@ -1,4 +1,3 @@
-
 //regulaveis
 #define POTENCIA_RETO_DIREITA 83
 #define POTENCIA_RETO_ESQUERDA 90
@@ -6,14 +5,6 @@
 
 #define TAMANHO_DA_ARENA 184
 #define DISTANCIA_ENTRE_OS_SENSORES 26
-
-/*//Constantes de Controle
-#define KP 1
-#define KD 5
-#define DIST_LIMITE 16*/
-
-
-
 
 //SENSORES E MOTORES
 #define MD OUT_B //motor da direita
@@ -25,11 +16,8 @@
 #define HT IN_3         //direita
 #define SLUZ IN_4       //esquerda
 
-
 //constantes de locomoção
 #define FATORSYNC 1
-
-
 
 //LOGICA
 #define DIREITA 1
@@ -141,11 +129,6 @@
 #define PARA_FRENTE 1
 #define PARA_TRAS -1
 
-
-
-//variávei do controle
-//float gyro_atual, gyro_antigo, ref, fator_integrante, tempo_atual, tempo_antigo;
-
 //variáveis gloabais do mapeamento
 int central[5][5], barreira[5][5], caverna[5][5];
 int direcao;
@@ -154,7 +137,6 @@ int contPassos;
 int i_global, j_global;
 int progredi_na_tabela;
 int zona;
-
 
 //variáveis globais
 int MyTcD;
@@ -223,7 +205,6 @@ int distanciaGiroEsquerda(int grau);
 void TalvezRegulaParede();
 int TemBonecoNoConsultor();
 
-
 //função para dbug
 void  bip()
 {
@@ -281,24 +262,6 @@ void executivo()
 			case CHEIO:
 				caminho[contPassos] = -1;
 				andar();
-				/*
-				viraDir(180);
-				AbrirPorta();
-				//andar();
-				for(int i=0;i<7;i++)
-				{
-					MyOnFwd(ME, 0);
-					MyOnFwd(MD,90);
-					while(MotorTachoCount(MD) < ANGULO_CAGADINHA){}
-					MyOnFwd(MD, 0);
-					MyOnFwd(ME,90);
-					while(MotorTachoCount(ME) < ANGULO_CAGADINHA){}
-				}
-				parar();
-				FecharPorta();
-
-
-				while(1){}*/
 			break;
 		}
 
@@ -340,7 +303,6 @@ void init()
 	MyTcD = 0;
 	MyTcE = 0;
 
-	//reset_controle();
   	poteGlobal = POTENCIA_RETO_ESQUERDA;
 	potdGlobal = POTENCIA_RETO_DIREITA;
 
@@ -997,153 +959,11 @@ void MandaStop()
 	//nbip(7);
 }
 
-/*
-void RegulaComUS(int distParede, int direcao){
-
-   if(direcao == ESQUERDA){
-   	distanciaAntigaEsquerda = distanciaAtualEsquerda;
-    distanciaAtualEsquerda = SensorUS(USE);
-    if (distanciaAtualEsquerda == distParede){
-       //potdGlobal = 81;
-       //poteGlobal = 90;
-     }
-     else if(distanciaAtualEsquerda > distParede){
-       if(distanciaAtualEsquerda < distParede + DIST_LIMITE){// diz um limite pra ignorar o sinal do US
-         if(potdGlobal < 90){//mais pot pra direita> vira esq
-              potdGlobal += KP;
-         }else{
-            if(poteGlobal > 60){
-              poteGlobal -= KP;
-            }
-          }
-        }
-     }
-     else if(distanciaAtualEsquerda < distParede){
-       if(distanciaAtualEsquerda > distParede - DIST_LIMITE){
-         if(poteGlobal < 90){ // mais pot pra esquerda > vira dir
-            poteGlobal += KP;
-         }else{
-            if(potdGlobal > 60){
-              potdGlobal -= KP;
-            }
-          }
-        }
-     }
-   }else if(direcao == DIREITA){
-     distanciaAntigaDireita = distanciaAtualDireita;
-     distanciaAtualDireita = SensorUS(USD);
-     if (distanciaAtualDireita == distParede){
-       //potdGlobal = 81;
-       //poteGlobal = 90;
-     }
-     else if(distanciaAtualDireita > distParede){
-       if(distanciaAtualDireita < distParede + DIST_LIMITE){
-         if(poteGlobal < 90){ // mais pot pra esquerda > vira dir
-            poteGlobal += KP;
-         }else{
-            if(potdGlobal > 60){
-              potdGlobal -= KP;
-            }
-          }
-        }
-     }
-     else if(distanciaAtualDireita < distParede){
-       if(distanciaAtualDireita > distParede - DIST_LIMITE){
-         if(potdGlobal < 90){//mais pot pra di reita> vira esq
-              potdGlobal += KP;
-         }else{
-            if(poteGlobal > 60){
-              poteGlobal -= KP;
-            }
-          }
-        }
-     }
-   }
-
-   //derivativo
-   	int cond1 = ((distanciaAtualDireita < distParede + DIST_LIMITE) && (distanciaAtualDireita > distParede - DIST_LIMITE));
-   	int cond2 = ((distanciaAntigaDireita < distParede + DIST_LIMITE) && (distanciaAntigaDireita > distParede - DIST_LIMITE));
-    if(((direcao == DIREITA)&&(cond1))&&(cond2))
-    {
-    	potdGlobal -= KD*(distanciaAtualDireita - distanciaAntigaDireita);
-    	poteGlobal += KD*(distanciaAtualDireita - distanciaAntigaDireita);
-    }
-
-    int cond3 = ((distanciaAtualEsquerda < distParede + DIST_LIMITE) && (distanciaAtualEsquerda > distParede - DIST_LIMITE));
-   	int cond4 = ((distanciaAntigaEsquerda < distParede + DIST_LIMITE) && (distanciaAntigaEsquerda > distParede - DIST_LIMITE));
-    if(((direcao == ESQUERDA)&&(cond3))&&(cond4))
-    {
-    	poteGlobal -= KD*(distanciaAtualEsquerda - distanciaAntigaEsquerda);
-    	potdGlobal += KD*(distanciaAtualEsquerda - distanciaAntigaEsquerda);
-    }
-
-		if(((((direcao == DIREITA)&&(!cond1))&&(!cond2)))||(((direcao == ESQUERDA)&&(!cond3))&&(!cond4))){
-			potdGlobal = POTENCIA_RETO_DIREITA;
-			poteGlobal = POTENCIA_RETO_ESQUERDA;
-		}
-
-    if(potdGlobal < 60)
-       potdGlobal = 60;
-   	else if(potdGlobal > 90)
-       potdGlobal = 90;
-
-    if(poteGlobal < 60)
-       poteGlobal = 60;
-   	else if(poteGlobal > 90)
-       poteGlobal = 90;
-
-   MyOnFwd(MD, potdGlobal);
-   MyOnFwd(ME, poteGlobal);
-   Wait(50);
-}*/
-
 void AndaFrente()
 {
-	//int distancia_direita, distancia_esquerda;
-
-	//distancia_direita = -1;
-	//distancia_esquerda = -1;
 
 	MyOnFwd(MD, POTENCIA_RETO_DIREITA);//potdGlobal);
   	MyOnFwd(ME, POTENCIA_RETO_ESQUERDA);//poteGlobal);
-
-	/*
-	switch(direcao)
-	{
-		case NORTE:
-				if(j_global<=2)
-					distancia_esquerda = 7+(j_global*TAMANHO_DA_ARENA)/5;
-				else
-					distancia_direita = 7+((4-j_global)*TAMANHO_DA_ARENA)/5;
-		break;
-		case LESTE:
-				if(i_global<=2)
-					distancia_direita = 7+(i_global*TAMANHO_DA_ARENA)/5;
-				else
-					distancia_esquerda = 7+((4-i_global)*TAMANHO_DA_ARENA)/5;
-		break;
-		case SUL:
-				if(j_global<=2)
-					distancia_direita = 7+((j_global)*TAMANHO_DA_ARENA)/5;
-				else
-					distancia_esquerda = 7+((4-j_global)*TAMANHO_DA_ARENA)/5;
-		break;
-		case OESTE:
-				if(i_global<=2)
-					distancia_esquerda = 7+((i_global)*TAMANHO_DA_ARENA)/5;
-				else
-					distancia_direita = 7+((4-i_global)*TAMANHO_DA_ARENA)/5;
-		break;
-	}
-
-	if(distancia_esquerda == -1)
-		distancia_esquerda = TAMANHO_DA_ARENA -(distancia_direita + DISTANCIA_ENTRE_OS_SENSORES);
-	else
-		distancia_direita = TAMANHO_DA_ARENA -(distancia_esquerda + DISTANCIA_ENTRE_OS_SENSORES);
-
-	RegulaComUS(distancia_direita, DIREITA);
-	RegulaComUS(distancia_esquerda, ESQUERDA);
-	*/
 }
 
 void SeguindoRota()
@@ -1180,19 +1000,16 @@ void SeguindoRota()
 		{
 			if((i_global == 0)&&(j_global == 2))
 			{
-				
+				parar();
+				free_to_go = 1;
+				girarCardeal(NORTE);
 				if(TemBonecoNoConsultor())
 				{
-					parar();
-					free_to_go = 1;
-					girarCardeal(NORTE);
-					while(1)
-					{
-						//bip();
-					}
+					nbip(3);
 					//chama a função devolveBoeco()
 				}
 				//chama a função que decide pra onde vai
+				nbip(2);
 			}
 		}
 
@@ -1334,20 +1151,6 @@ int distanciaGiroEsquerda(int grau){
 	   return (((grau*17)/167/*se girar mais diminua o denomidador*/));
 }
 
-/*void reset_controle()
-{
-	Off(MD);
-	Off(ME);
-
-	ref  =  GetGyroOffset();
-	
-	gyro_atual = ref;
-	gyro_antigo = ref;
-	fator_integrante = 0;
-	tempo_antigo = CurrentTick();
-	tempo_atual = CurrentTick();
-}*/
-
 void alinha_parede()
 {
 	int tc_vlc;
@@ -1394,6 +1197,7 @@ int TemBonecoNoConsultor()
 {
 	int aux = 0;
 	
+	Wait(200);
 	SendRemoteNumber(CONEXAO, OUTBOX, TEMOUNAOBONECO);
 	while((aux!=SIMTEM)&&(aux!=NAOVIRGULANAOTEM))
 	{
