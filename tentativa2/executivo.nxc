@@ -1,9 +1,9 @@
 //regulaveis
-#define POTENCIA_RETO_DIREITA 79
-#define POTENCIA_RETO_ESQUERDA 93
+#define POTENCIA_RETO_DIREITA 83
+#define POTENCIA_RETO_ESQUERDA 90	
 #define TEMPO_DEPOIS_E_ANTES_DE_GIRAR 200
 
-#define TAMANHO_DA_ARENA 184
+#define TAMANHO_DA_ARENA 182
 #define DISTANCIA_ENTRE_OS_SENSORES 26
 
 #define ERRO_ANGULO_GYRO 7
@@ -19,7 +19,8 @@
 #define ME OUT_A //motor da esquerda
 #define MD_ME OUT_AB// os dois motores de movimento
 #define MP OUT_C //motor da porta
-#define GYRO IN_1 //Utrasonico da direita
+//#define GYRO IN_1 //Utrasonico da direita
+#define USD IN_1 //Utrasonico da direita
 #define USE IN_2 //Utrasonico da esquerda
 #define HT IN_3         //direita
 #define SLUZ IN_4       //esquerda
@@ -42,6 +43,7 @@
 	#define INBOX 1
 	#define OUTBOX 2
 	#define OUTBOX_ANG 3
+	//#define INBOX_TEMBONECO 4
 
 //defines da struct
 
@@ -93,6 +95,9 @@
 #define VIRA 12
 #define COMECEAGIRAR 13
 #define PAREDEGIRAR 14
+#define TEMOUNAOBONECO 15
+#define SIMTEM 16
+#define NAOVIRGULANAOTEM 17
 
 //CONSTANTES PID
 #define TENDE_DIRESQ 0// de -100(vira pra direita) a 100(vira pra esquerda)
@@ -213,6 +218,8 @@ void alinha_parede();
 int velocidademedia();
 int distanciaGiroDireita(int grau);
 int distanciaGiroEsquerda(int grau);
+void TalvezRegulaParede();
+int TemBonecoNoConsultor();
 
 //função para dbug
 void  bip()
@@ -309,7 +316,7 @@ void init()
   	inicializaSensores();
   	iniciaBlue();
 
-  	SairCasa();
+  	//SairCasa();
 
   	FecharPorta();
 
@@ -318,17 +325,19 @@ void init()
 	MyTcD = 0;
 	MyTcE = 0;
 
-	/*poteGlobal = POTENCIA_RETO_ESQUERDA;
+	poteGlobal = POTENCIA_RETO_ESQUERDA;
 	potdGlobal = POTENCIA_RETO_DIREITA;
 
 	viraDir(90);
 	Wait(200);
+
+	MandaCalibra();
 	
 	MyResetTachoCount(MD);
 	MyResetTachoCount(ME);
 	MyTcD = 0;
 	MyTcE = 0;
-*/
+
 	reset_controle();
   	poteGlobal = POTENCIA_RETO_ESQUERDA;
 	potdGlobal = POTENCIA_RETO_DIREITA;
@@ -660,18 +669,18 @@ void init_mapeamento()
 
 	zona = CENTRAL;
 
-	direcao = NORTE;
+	direcao = LESTE;
 
 	//teste
-	caminho[0] = NORTE;
+	caminho[0] = LESTE;
 	caminho[1] = NORTE;
 	caminho[2] = NORTE;
-	caminho[3] = -1;
-	caminho[4] = -1;
-	caminho[5] = -1;
-	caminho[6] = -1;
-	caminho[7] = -1;
-	caminho[8] = -1;
+	caminho[3] = NORTE;
+	caminho[4] = NORTE;
+	caminho[5] = OESTE;
+	caminho[6] = OESTE;
+	caminho[7] = OESTE;
+	caminho[8] = OESTE;
 	caminho[9] = -1;
 	caminho[10] = -1;
 	caminho[11] = -1;
@@ -1028,9 +1037,9 @@ void AndaFrente()
 {
 	RegulaComGyro();
 
-	MyOnFwd(MD, potdGlobal);
-  	MyOnFwd(ME, poteGlobal);
-   	Wait(100);
+	MyOnFwd(MD, POTENCIA_RETO_DIREITA);//potdGlobal);
+  	MyOnFwd(ME, POTENCIA_RETO_ESQUERDA);//poteGlobal);
+   	//Wait(100);
 }
 
 void SeguindoRota()
@@ -1063,6 +1072,26 @@ void SeguindoRota()
 
 		aux_dir = direcao;
 
+		if(zona == CENTRAL)
+		{
+			if((i_global == 0)&&(j_global == 2))
+			{
+				
+				if(TemBonecoNoConsultor())
+				{
+					parar();
+					free_to_go = 1;
+					girarCardeal(NORTE);
+					while(1)
+					{
+						//bip();
+					}
+					//chama a função devolveBoeco()
+				}
+				//chama a função que decide pra onde vai
+			}
+		}
+
 		if(caminho[contPassos] == -1)
 		{
 			CalculaVolta();
@@ -1077,7 +1106,7 @@ void SeguindoRota()
 		MyTcE = 0;
 
 		progredi_na_tabela = 0;
-
+		
 		MandaStart();
 
 		if(aux_dir != direcao)//se mudou a direção
@@ -1087,8 +1116,8 @@ void SeguindoRota()
 			poteGlobal = POTENCIA_RETO_ESQUERDA;
 			potdGlobal = POTENCIA_RETO_DIREITA;
 			reset_controle();
+			TalvezRegulaParede();
 		}
-
 	}
 }
 
@@ -1252,3 +1281,44 @@ int velocidademedia()
 	return (((MotorTachoCount(MD)+MotorTachoCount(ME))/2-tc));
 }
 
+void TalvezRegulaParede()
+{
+	int cond0, cond1, cond2, cond3, cond4;
+
+	cond0 = ((i_global==2)||(j_global==2));
+	cond1 = ((i_global==4)&&(direcao==SUL));
+	cond2 = ((i_global==0)&&(direcao==NORTE));
+	cond3 = ((j_global==0)&&(direcao==LESTE));
+	cond4 = ((j_global==4)&&(direcao==OESTE));
+
+	if((!cond0)&&(cond1||cond2||cond3||cond4))
+	{
+		alinha_parede();
+	}
+}
+
+int TemBonecoNoConsultor()
+{
+	int aux = 0;
+	
+	SendRemoteNumber(CONEXAO, OUTBOX, TEMOUNAOBONECO);
+	while((aux!=SIMTEM)&&(aux!=NAOVIRGULANAOTEM))
+	{
+		//bip();
+		ReceiveRemoteNumber(INBOX, true, aux);
+	}
+	
+
+	//ReceiveRemoteNumer(INBOX_TEMBONECO, true, aux);
+	//alteração do schiavini
+
+	if(aux==SIMTEM)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+	
+}

@@ -22,6 +22,7 @@
 	#define INBOX 2
 	#define OUTBOX 1
   #define INBOX_ANG 3
+  //#define OUTBOX_TEMBONECO 4
 
 
 //IO
@@ -29,11 +30,12 @@
 	#define RGB_DIR IN_1
 	#define RGB_ESQ IN_2
 	#define RGB_MEIO IN_3
-	#define USD IN_4
+	//#define USD IN_4
+  #define GYRO IN_4
 
-#define OFFSET_SAMPLES 2048
+  #define OFFSET_SAMPLES 2048
 
-// Defines de motores
+  // Defines de motores
 	#define MOTOR_GARRA OUT_A
 
 //Tempos
@@ -65,6 +67,10 @@
 #define VIRA 12
 #define COMECEAGIRAR 13
 #define PAREDEGIRAR 14
+#define TEMOUNAOBONECO 15
+#define SIMTEM 16
+#define NAOVIRGULANAOTEM 17
+#define TEMBONECO 18
 
 //cor dos boncos
 #define BONECO_BRANCO 1
@@ -155,7 +161,7 @@ task main()
 
 void consultor()
 {
-  int mensagem;
+  int mensagem, flag;
 
   init();
 
@@ -170,7 +176,29 @@ void consultor()
       break;
       case STOP:
         //nbip(3);
-        //while(!RecebeStart()){}
+        flag = 0;
+        while(!flag){
+          ReceiveRemoteNumber(INBOX,true,mensagem);
+          
+          switch(mensagem)
+          {
+
+            case START:
+              flag = 1;
+            break;
+            case TEMOUNAOBONECO:
+              bip();
+              if(BonecosCapturados)
+              {
+                SendRemoteNumber(CONEXAO, OUTBOX, SIMTEM);
+              }
+              else
+              {
+                SendRemoteNumber(CONEXAO, OUTBOX, NAOVIRGULANAOTEM);
+              }
+            break;
+          }
+        }
       break;
     }
 
@@ -419,6 +447,8 @@ void BonecoNaFrente()
         Pega();
         MandarSeguir();
         BonecosCapturados++;
+        //SendRemoteNumber(CONEXAO,OUTBOX_TEMBONECO,TEMBONECO);
+        //SendRemoteNumber(CONEXAO,OUTBOX_TEMBONECO,TEMBONECO);
         nbip(BonecosCapturados);
       }
     }
