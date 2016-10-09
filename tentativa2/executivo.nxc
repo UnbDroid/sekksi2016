@@ -144,6 +144,7 @@ int MyTcE;
 int free_to_go;
 int poteGlobal;
 int potdGlobal;
+int trc_refD, trc_refE;
 
 //funções de subistituições
 void MyOnFwd(int motor, int pot);
@@ -542,14 +543,14 @@ void MyOnFwd(int motor, int pot)
 {
 	//bip();
 	//Wait(350)
-	if(motor == MD)
+	/*if(motor == MD)
 	{
 		MyTcD += MotorTachoCount(motor);
 	}
 	else if(motor == ME)
 	{
 		MyTcE += MotorTachoCount(motor);
-	}
+	}*/
 	//bip();
 	OnFwd(motor,pot);
 }
@@ -560,12 +561,12 @@ int MyMotorTachoCount(int motor)
 
 	if(motor == MD)
 	{
-		MyTcD += MotorTachoCount(motor);
+		MyTcD = MotorActualSpeed(motor) - trc_refD;
 		retorno = MyTcD;
 	}
 	else if(motor == ME)
 	{
-		MyTcE += MotorTachoCount(motor);
+		MyTcE = MotorActualSpeed(motor) - trc_refE;
 		retorno = MyTcE;
 	}
 
@@ -576,19 +577,14 @@ int MyMotorTachoCount(int motor)
 
 void MyResetTachoCount(int motor)
 {
-	int pd, pe;
-
-	pd = MotorActualSpeed(MD);
-	pe = MotorActualSpeed(ME);
-
-	do{
-		ResetTachoCount(motor);
-		//bip();
-		//bip();
-	}while((MotorTachoCount(motor)>DIFERENCIALDEERRODOANGULO) || (MotorTachoCount(motor)<-DIFERENCIALDEERRODOANGULO));
-	MyOnFwd(MD,pd);
-	MyOnFwd(ME,pe);
-
+	if(motor == MD)
+	{
+		trc_refD = MotorActualSpeed(motor);
+	}
+	else if(motor == ME)
+	{
+		trc_refE = MotorActualSpeed(motor);
+	}
 }
 
 int MediaTC()
@@ -1201,11 +1197,11 @@ int TemBonecoNoConsultor()
 {
 	int aux = 0;
 	
-	Wait(200);
+	Wait(400);
 	SendRemoteNumber(CONEXAO, OUTBOX, TEMOUNAOBONECO);
 	while((aux!=SIMTEM)&&(aux!=NAOVIRGULANAOTEM))
 	{
-		//bip();
+		bip();
 		ReceiveRemoteNumber(INBOX, true, aux);
 	}
 	
