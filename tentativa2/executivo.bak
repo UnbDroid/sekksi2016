@@ -1,5 +1,5 @@
 //regulaveis
-#define POTENCIA_RETO_DIREITA 83
+#define POTENCIA_RETO_DIREITA 77
 #define POTENCIA_RETO_ESQUERDA 90
 #define TEMPO_DEPOIS_E_ANTES_DE_GIRAR 200
 
@@ -89,15 +89,6 @@
 #define NAOVIRGULANAOTEM 17
 #define TEMBONECO 18
 
-//CONSTANTES PID
-#define TENDE_DIRESQ 0// de -100(vira pra direita) a 100(vira pra esquerda)
-#define P_FRENTE 3
-#define I_FRENTE 5
-#define D_FRENTE 3
-#define P_TRAS 200
-#define I_TRAS 100
-#define D_TRAS 200
-
 //contantes do mapeamento
 #define NORTE 0
 #define LESTE 1
@@ -129,14 +120,22 @@
 #define PARA_FRENTE 1
 #define PARA_TRAS -1
 
+//CONSTANTES PID
+#define TENDE_DIRESQ -5// de -100(vira pra direita) a 100(vira pra esquerda)
+#define P_FRENTE 300
+#define I_FRENTE 50
+#define D_FRENTE 150
+
+
 //variáveis gloabais do mapeamento
 int central[5][5], barreira[5][5], caverna[5][5];
 int direcao;
-int caminho[25];
+int caminho[125];
 int contPassos;
 int i_global, j_global;
 int progredi_na_tabela;
 int zona;
+int cheio;
 
 //variáveis globais
 int MyTcD;
@@ -144,6 +143,7 @@ int MyTcE;
 int free_to_go;
 int poteGlobal;
 int potdGlobal;
+//int ja_to_andando_poha;
 
 //funções de subistituições
 void MyOnFwd(int motor, int pot);
@@ -184,8 +184,7 @@ int MediaTC();
 int distanciaTachoCount(int grau);
 void MandaCalibra();
 void MyOnRev(int motor, int pot);
-void MyOnFwdSyncPID(int motores, int pot, int turnDirEsq, int p, int i, int d);
-void MyOnRevSyncPID(int motores, int pot, int turnDirEsq, int p, int i, int d);
+void MyOnFwdSyncPID(int pot);
 int TemQueDescartarParaAEsquerda();
 void MandaStart();
 void MandaStop();
@@ -234,8 +233,7 @@ void executivo()
   int temp_tc_D, temp_tc_E;
 
 	init();
-
-	andar();//
+	andar();
 	while(1)//void loop
 	{
 		ReceiveRemoteNumber(INBOX, true, aux);
@@ -262,6 +260,7 @@ void executivo()
 			break;
 			case CHEIO:
 				caminho[contPassos] = -1;
+				cheio = 1;
 				andar();
 			break;
 		}
@@ -282,6 +281,8 @@ void init()
   	inicializaSensores();
   	iniciaBlue();
 
+  	//ja_to_andando_poha = 0;
+  	cheio = 0;
   	//SairCasa();//comentado para testes enquanto a arena não esta pronta
 
   	FecharPorta();
@@ -298,7 +299,6 @@ void init()
 	rota(1);
 
 	MandaCalibra();
-
 	MyResetTachoCount(MD);
 	MyResetTachoCount(ME);
 	MyTcD = 0;
@@ -348,8 +348,10 @@ void iniciaBlue()
 void andar()//melhorar esse função - apneas testes por enquanto
 {
 	free_to_go = 1;
-
+	//nbip(2);
+	Wait(200);
 	SeguindoRota();
+	//nbip(3);
 }
 
 void parar()
@@ -358,6 +360,7 @@ void parar()
 
 	MyOnFwd(MD,0);
 	MyOnFwd(ME,0);
+	//ja_to_andando_poha = 0;
 }
 
 void rejeitar()
@@ -397,6 +400,8 @@ void rejeitarDireita()
 	while(!ReceberPareGirar()){}
 	Off(MD);
 	Off(ME);
+	//ja_to_andando_poha = 0;
+
 
 }
 
@@ -414,6 +419,7 @@ void voltarejeitarDireita()
 	while(!ReceberPareGirar()){}
 	Off(MD);
 	Off(ME);
+	//ja_to_andando_poha = 0;
 
 }
 
@@ -431,6 +437,7 @@ void rejeitarEsquerda()
 	while(!ReceberPareGirar()){}
 	Off(MD);
 	Off(ME);
+	//ja_to_andando_poha = 0;
 }
 
 void voltarejeitarEsquerda()
@@ -447,6 +454,7 @@ void voltarejeitarEsquerda()
 	while(!ReceberPareGirar()){}
 	Off(MD);
 	Off(ME);
+	//ja_to_andando_poha = 0;
 
 
 }
@@ -519,6 +527,7 @@ void viraEsq(int angulo){ // função que faz o robô girar para a esquerda o â
  	while(!ReceberPareGirar()){}
  	Off(MD);
 	Off(ME);
+	//ja_to_andando_poha = 0;
 }
 
 
@@ -536,6 +545,7 @@ void viraDir(int angulo){ // função que faz o robô girar para a direita o ân
  	while(!ReceberPareGirar()){}
  	Off(MD);
 	Off(ME);
+	//ja_to_andando_poha = 0;
 }
 
 void MyOnFwd(int motor, int pot)
@@ -576,18 +586,19 @@ int MyMotorTachoCount(int motor)
 
 void MyResetTachoCount(int motor)
 {
-	int pd, pe;
+	//int pd, pe;
+	//Off(MD_ME);
+//	pd = MotorActualSpeed(MD);
+//	pe = MotorActualSpeed(ME);
 
-	pd = MotorActualSpeed(MD);
-	pe = MotorActualSpeed(ME);
-
-	do{
-		ResetTachoCount(motor);
+	//do{
+	//	ResetTachoCount(motor);
 		//bip();
 		//bip();
-	}while((MotorTachoCount(motor)>DIFERENCIALDEERRODOANGULO) || (MotorTachoCount(motor)<-DIFERENCIALDEERRODOANGULO));
-	MyOnFwd(MD,pd);
-	MyOnFwd(ME,pe);
+	//}while((MotorTachoCount(motor)>DIFERENCIALDEERRODOANGULO) || (MotorTachoCount(motor)<-DIFERENCIALDEERRODOANGULO));
+	//MyOnFwd(MD,pd);
+	//MyOnFwd(ME,pe);
+	//MyOnFwdSyncPID(90);
 
 }
 
@@ -626,7 +637,7 @@ void init_mapeamento()
 	}
 
 
-	for(i=0; i<25; i++)
+	for(i=0; i<125; i++)
 	{
 		caminho[i] = -1;
 	}
@@ -641,27 +652,6 @@ void init_mapeamento()
 	zona = CENTRAL;
 
 	direcao = LESTE;
-
-	//teste do luan
-	caminho[0] = LESTE;
-	caminho[1] = NORTE;
-	caminho[2] = NORTE;
-	caminho[3] = NORTE;
-	caminho[4] = NORTE;
-	caminho[5] = OESTE;
-	caminho[6] = OESTE;
-	caminho[7] = OESTE;
-	caminho[8] = OESTE;
-	caminho[9] = -1;
-	caminho[10] = -1;
-	caminho[11] = -1;
-	caminho[12] = -1;
-	caminho[13] = -1;
-
-
-
-
-	//cont
 }
 
 void girarCardeal(int dir)
@@ -767,22 +757,6 @@ void MyOnRev(int motor, int pot)
   //bip();
   OnRev(motor,pot);
   }
-
-void MyOnFwdSyncPID(int motores, int pot, int turnDirEsq, int p, int i, int d){
-
-  MyTcD += MotorTachoCount(MD);
-  MyTcE += MotorTachoCount(ME);
-  //bip();
-  //OnFwdSyncPID(motores, pot, turnDirEsq, p, i ,d);
-  OnFwdSyncPID(MD_ME,pot,turnDirEsq,p,i,d);
-  //bip();
-}
-
-void MyOnRevSyncPID(int motores, int pot, int turnDirEsq, int p, int i, int d){
-  MyTcD += MotorTachoCount(MD);
-  MyTcE += MotorTachoCount(ME);
-  OnRevSyncPID(MD_ME, pot, turnDirEsq, p, i ,d);
-}
 
 void AndaNaTabela()
 {
@@ -892,7 +866,7 @@ void CalculaVolta()
 		}
 	}
 
-	for(i=k; i<25; i++)
+	for(i=k; i<125; i++)
 	{
 		caminho[k] = -1;
 	}
@@ -962,9 +936,13 @@ void MandaStop()
 
 void AndaFrente()
 {
-
-	MyOnFwd(MD, POTENCIA_RETO_DIREITA);//potdGlobal);
-  	MyOnFwd(ME, POTENCIA_RETO_ESQUERDA);//poteGlobal);
+	if((!(MotorActualSpeed(MD)))&&(!(MotorActualSpeed(ME))))
+	{
+		MyOnFwdSyncPID(90);
+		//ja_to_andando_poha = 1;
+	}
+	/*MyOnFwd(MD, POTENCIA_RETO_DIREITA);//potdGlobal);
+  	MyOnFwd(ME, POTENCIA_RETO_ESQUERDA);//poteGlobal);*/
 }
 
 void SeguindoRota()
@@ -981,7 +959,7 @@ void SeguindoRota()
 		{
 			AndaNaTabela();
 			progredi_na_tabela = 1;
-			if(NumeroOndeEstou() == -1)
+			if((NumeroOndeEstou() == -1)&&(!cheio))
 			{
 				tabelaPP();
 			}
@@ -991,9 +969,6 @@ void SeguindoRota()
 	}
 	else
 	{
-
-		Wait(200);//nao há colher
-		MandaStop();
 
 		aux_dir = direcao;
 
@@ -1032,14 +1007,12 @@ void SeguindoRota()
 
 		progredi_na_tabela = 0;
 
-		MandaStart();
-
 		if(aux_dir != direcao)//se mudou a direção
 		{
 			Wait(200);
 			MandaCalibra();
-			poteGlobal = POTENCIA_RETO_ESQUERDA;
-			potdGlobal = POTENCIA_RETO_DIREITA;
+			//poteGlobal = POTENCIA_RETO_ESQUERDA;
+			//potdGlobal = POTENCIA_RETO_DIREITA;
 			//reset_controle();
 			TalvezRegulaParede();
 		}
@@ -1083,6 +1056,7 @@ void SairCasa()
 
 	Off(MD);
 	Off(ME);
+	//ja_to_andando_poha = 0;
 }
 
 int idmediaTC()
@@ -1125,6 +1099,7 @@ sub alinha(int s) {
           luz=Sensor(SLUZ);
      }
      Off(MD_ME);
+     //ja_to_andando_poha = 0;
          //sai da função quando ambos os sensores estiverem lendo preto ao mesmo tempo
 }
 
@@ -1168,10 +1143,11 @@ void alinha_parede()
 	{
 		tc_vlc = (-1)*velocidademedia();
 	}
-	while(tc_vlc >= 39)
-
+	//while(tc_vlc >= 39)
+	while(tc_vlc >= 20);
 	Off(MD);
 	Off(ME);
+	//ja_to_andando_poha = 0;
 }
 
 int velocidademedia()
@@ -1202,7 +1178,7 @@ int TemBonecoNoConsultor()
 	int aux = 0;
 	
 	Wait(200);
-	SendRemoteNumber(CONEXAO, OUTBOX, TEMOUNAOBONECO);
+	SendRemoteNumber(CONEXAO, OUTBOX,TEMOUNAOBONECO);
 	while((aux!=SIMTEM)&&(aux!=NAOVIRGULANAOTEM))
 	{
 		//bip();
@@ -1222,6 +1198,18 @@ int TemBonecoNoConsultor()
 		return 0;
 	}
 	
+}
+
+void MyOnFwdSyncPID(int pot){
+
+  //MyTcD += MotorTachoCount(MD);
+  //MyTcE += MotorTachoCount(ME);
+  //MyResetTachoCount(MD);
+  //  MyResetTachoCount(ME);
+  //bip();
+  //OnFwdSyncPID(motores, pot, turnDirEsq, p, i ,d);
+  OnFwdSyncPID(MD_ME,pot,TENDE_DIRESQ,P_FRENTE,I_FRENTE,D_FRENTE);
+  //bip();
 }
 
 void rota(int n)

@@ -162,6 +162,7 @@ task main()
 void consultor()
 {
   int mensagem;
+  int flag = 0;
 
   init();
 
@@ -175,31 +176,21 @@ void consultor()
         CalibraFaixaBase();
       break;
       case STOP:
-        //nbip(3);
-        /*flag = 0;NÃO VAI TER ESSA PARTE
-        while(!flag){
-          ReceiveRemoteNumber(INBOX,true,mensagem);
-          
-          switch(mensagem)
-          {
-
-            case START:
-              flag = 1;
-            break;
-            case TEMOUNAOBONECO:
-              bip();
-              if(BonecosCapturados)
-              {
-                SendRemoteNumber(CONEXAO, OUTBOX, SIMTEM);
-              }
-              else
-              {
-                SendRemoteNumber(CONEXAO, OUTBOX, NAOVIRGULANAOTEM);
-              }
-            break;
-          }
-        }*/
+        //Não usa mais essa parada
       break;
+      case TEMOUNAOBONECO:
+        bip();
+        Wait(50);
+        if(BonecosCapturados)
+        {
+          SendRemoteNumber(CONEXAO, OUTBOX, SIMTEM);
+        }
+        else
+        {
+          SendRemoteNumber(CONEXAO, OUTBOX, NAOVIRGULANAOTEM);
+        }
+      break;
+
       case VIRA:
         virar();
       break;
@@ -227,9 +218,9 @@ void init()
 
 void InicializaSensores()
 {
-  SetSensorColorRed(RGB_DIR);
-  SetSensorColorRed(RGB_ESQ);
-  SetSensorColorGreen(RGB_MEIO);
+  //SetSensorColorRed(RGB_DIR);
+  //SetSensorColorRed(RGB_ESQ);
+  //SetSensorColorGreen(RGB_MEIO);
   SetSensorHTGyro(GYRO);
 }
 
