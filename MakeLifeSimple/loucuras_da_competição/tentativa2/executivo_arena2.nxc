@@ -1,6 +1,6 @@
 //regulaveis
-#define CORRECAO_ANDA_QUADRANTE 695//10^-7 metros
-#define CONSTANTE_DIST_TC 11
+#define CORRECAO_ANDA_QUADRANTE 703 //num anterior 695//10^-7 metros
+#define CONSTANTE_DIST_TC 10//num anterior 11
 
 #define POTENCIA_RETO_DIREITA 83
 #define POTENCIA_RETO_ESQUERDA 90
@@ -151,6 +151,7 @@ int contPassos;
 int i_global, j_global;
 int progredi_na_tabela;
 int zona;
+int corDaBase;
 
 //variáveis globais
 int MyTcD;
@@ -223,6 +224,8 @@ void rota(int n);
 int TachoCountDistancia(int dist);
 void regulaTC(int dir_antiga);
 void inicializaBoneco();
+void decideOQueFazer();
+void SairModulo();
 
 //função para dbug
 void  bip()
@@ -320,9 +323,6 @@ void init()
 
 	direcao = NORTE;
 	rota(2);
-
-	Wait(400);
-	MandaCalibra();
 
 	MyResetTachoCount(MD);
 	MyResetTachoCount(ME);
@@ -623,7 +623,7 @@ int MediaTC()
 
 	aux_tc_d = MyMotorTachoCount(MD);
 	aux_tc_e = MyMotorTachoCount(ME);
-	
+
 	return((aux_tc_d+aux_tc_e)/2);
 }
 
@@ -993,7 +993,7 @@ void MandaStop()
 
 void AndaFrente()
 {
-	MyOnFwdSyncPID(90);	
+	MyOnFwdSyncPID(90);
   	//OnFwdReg(MD_ME,90,OUT_REGMODE_SPEED);
 
 
@@ -1030,49 +1030,16 @@ void SeguindoRota()
 	}
 	else
 	{
+
 		aux_dir = direcao;
 
-		if(zona == CENTRAL)
-		{
-			if((i_global == 0)&&(j_global == 2))
-			{
-				parar();
-				free_to_go = 1;
-				girarCardeal(NORTE);
-				//if(TemBonecoNoConsultor())
-				{
-					  alinha(PARA_TRAS);
-					  OnFwd(MD, -90);
-					  OnFwd(ME, -90);
-					  while(distanciaTachoCount(MediaTC()) > -27*100) {
-					       Wait(1);
-					  }
-					  Off(MD_ME);
-					  AbrirPorta();
-					  AndaFrente();
-					  Wait(1000);
-					  Off(MD_ME);
-					
-					//nbip(3);
-
-					//chama a função devolveBoeco()
-				}
-				//else
-				{
-					  
-				}
-				//chama a função que decide pra onde vai
-				SairCasa();
-				FecharPorta();
-				direcao = NORTE;
-				rota(1);
-			}
-		}
+		decideOQueFazer();
 
 		if(caminho[contPassos] == -1)
 		{
 			CalculaVolta();
 		}
+		nbip(contPassos);
 
 		girarCardeal(caminho[contPassos]);
 
@@ -1102,9 +1069,8 @@ void SairCasa()
 	int ht, luz;
 	int distancia_esquerda, distancia_direita;
 
-	MyOnFwdSyncPID(90);
-	//OnFwd(MD,POTENCIA_RETO_DIREITA);
-	//OnFwd(ME,POTENCIA_RETO_ESQUERDA);
+	AndaFrente();
+	while((distanciaTachoCount(MediaTC()) <= (100*20))){}
 
 	ReadSensorHTColor2Active(HT, ht_colornum, ht_red, ht_green, ht_blue, ht_white);
     luz=Sensor(SLUZ);
@@ -1163,9 +1129,9 @@ sub alinha(int s) {
                }else
                {
                		OnFwd(MD_ME, s*55);                       //anda reto até que um dos dois sensores encontre algo preto
-          			Wait(50); //tempo para pegar leitura do sensor/*?0/*/650*?0 */650 
+          			Wait(50); //tempo para pegar leitura do sensor/*?0/*/650*?0 */650
                }
-          }                                
+          }
           //ht=SensorHTColorNum(HT);
           ReadSensorHTColor2Active(HT, ht_colornum, ht_red, ht_green, ht_blue, ht_white);
           luz=Sensor(SLUZ);
@@ -1251,7 +1217,7 @@ int TalvezRegulaParede()
 int TemBonecoNoConsultor()
 {
 	int aux = 0;
-	
+
 	Wait(400);
 	SendRemoteNumber(CONEXAO, OUTBOX, TEMOUNAOBONECO);
 	while((aux!=SIMTEM)&&(aux!=NAOVIRGULANAOTEM))
@@ -1259,7 +1225,7 @@ int TemBonecoNoConsultor()
 		bip();
 		ReceiveRemoteNumber(INBOX, true, aux);
 	}
-	
+
 
 	//ReceiveRemoteNumer(INBOX_TEMBONECO, true, aux);
 	//alteração do schiavini
@@ -1272,7 +1238,7 @@ int TemBonecoNoConsultor()
 	{
 		return 0;
 	}
-	
+
 }
 
 void rota(int n)
@@ -1281,6 +1247,12 @@ void rota(int n)
 	progredi_na_tabela = 0;
 	i_global = 0;
 	j_global = 2;
+	direcao = NORTE;
+	MyResetTachoCount(MD);
+	MyResetTachoCount(ME);
+	MyTcD = 0;
+	MyTcE = 0;
+
 
 	switch(n)
 	{
@@ -1405,7 +1377,7 @@ void rota(int n)
 			caminho[31] = -1;
 			caminho[32] = -1;
 			caminho[33] = -1;
-			
+
 		break;
 
 		/////DOIDO ISSO AQUI È SÒ PRA HOJE
@@ -1496,4 +1468,125 @@ void inicializaBoneco(){
 	}else{
 		SendRemoteNumber(CONEXAO, OUTBOX_CORBONECO, BONECO_BRANCO);
 	}
+	corDaBase = aux;
+}
+
+void decideOQueFazer()
+{
+	int arena = 2;
+	int condBase = ((i_global == 0)&&(j_global == 2));
+	int condCaverna1;
+	int condCaverna2;
+
+	if(arena == 2){
+		condCaverna1 = (((i_global == 4)&&(j_global == 2))&&(corDaBase == CHAO_AZUL));//NORTE
+		condCaverna2 = (((i_global == 2)&&(j_global == 4))&&(corDaBase == CHAO_VERDE));//LESTE
+	}else{
+		condCaverna1 = (((i_global == 4)&&(j_global == 2))&&(corDaBase == CHAO_VERDE));//NORTE
+		condCaverna2 = (((i_global == 2)&&(j_global == 4))&&(corDaBase == CHAO_AZUL));//LESTE
+	}
+
+	switch(zona){
+		case CENTRAL:
+			if(condBase)//CASO FRENTE A BASE
+			{
+				parar();
+				free_to_go = 1;
+				girarCardeal(NORTE);
+				//if(TemBonecoNoConsultor())
+				{
+						alinha(PARA_TRAS);
+						OnFwd(MD, -90);
+						OnFwd(ME, -90);
+						while(distanciaTachoCount(MediaTC()) > -27*100) {
+								 Wait(1);
+						}
+						Off(MD_ME);
+						AbrirPorta();
+						AndaFrente();
+						Wait(1000);
+						Off(MD_ME);
+
+					//nbip(3);
+
+					//chama a função devolveBoeco()
+				}
+				//else
+				{
+
+				}
+				//chama a função que decide pra onde vai
+				SairCasa();
+				FecharPorta();
+				direcao = NORTE;
+				rota(2);
+			}
+			else if(condCaverna1 || condCaverna2)// PARA A ARENA 2
+			{
+				if(condCaverna1)
+				{
+					girarCardeal(NORTE);
+				}else
+				{
+					girarCardeal(LESTE);
+				}
+			  SairModulo();
+			  //FecharPorta();
+			  zona = CAVERNA;
+
+
+
+
+			  rota(2);
+			}
+		break;
+		case CAVERNA:
+			if(condBase)
+			{
+				girarCardeal(SUL);
+				alinha(PARA_FRENTE);
+				AndaFrente();
+				while((distanciaTachoCount(MediaTC()) <= (100*20))){}
+				girarCardeal(LESTE);
+				if(corDaBase == CHAO_AZUL)
+				{
+					i_global = 4;
+					j_global = 2;
+				}
+				else
+				{
+					i_global = 2;
+					j_global = 4;
+				}
+				
+				for(i=0; i<25; i++)
+				{
+					caminho[i] = -1;
+				}
+
+				contPassos = 0;
+				AndaFrente();
+			}
+		break;
+		case BARREIRA:
+		break;
+
+	}
+}
+
+void SairModulo()
+{
+	int ht, luz;
+	int distancia_esquerda, distancia_direita;
+	alinha(PARA_FRENTE);
+	MyResetTachoCount(MD);
+	MyResetTachoCount(ME);
+	MyTcD = 0;
+	MyTcE = 0;
+	AndaFrente();
+
+	while((distanciaTachoCount(MediaTC()) <= (100*30))){}
+
+	Off(MD);
+	Off(ME);
 }

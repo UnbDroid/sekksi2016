@@ -19,7 +19,7 @@
 #define HT IN_3         //direita
 #define SLUZ IN_4       //esquerda
 
-//constantes de locomoÃ§Ã£o
+//constantes de locomoção
 #define FATORSYNC 1
 
 //LOGICA
@@ -72,7 +72,7 @@
 #define NAO_ALIEN 0
 #define SIM_ALIEN 1
 
-//cÃ³digos para comunicaÃ§Ã£o BlueTooth
+//códigos para comunicação BlueTooth
 #define TESTE -1
 #define PARAR 1
 #define SEGUIR 2
@@ -140,10 +140,10 @@
 
 #define PARA_FRENTE 1
 #define PARA_TRAS -1
-//VariÃ¡veis do HT
+//Variáveis do HT
 int ht_colornum, ht_red, ht_green, ht_blue, ht_white;
 
-//variÃ¡veis gloabais do mapeamento
+//variáveis gloabais do mapeamento
 int central[5][5], barreira[5][5], caverna[5][5];
 int direcao;
 int caminho[25];
@@ -152,7 +152,7 @@ int i_global, j_global;
 int progredi_na_tabela;
 int zona;
 
-//variÃ¡veis globais
+//variáveis globais
 int MyTcD;
 int MyTcE;
 int free_to_go;
@@ -160,14 +160,14 @@ int poteGlobal;
 int potdGlobal;
 int trc_refD, trc_refE;
 
-//funÃ§Ãµes de subistituiÃ§Ãµes
+//funções de subistituições
 void MyOnFwd(int motor, int pot);
 int MyMotorTachoCount(int motor);
 void MyResetTachoCount(int motor);
 
-//funÃ§Ãµes do mapeamento
+//funções do mapeamento
 void init_mapeamento();
-void girarCardeal(int dir);//gira para a direÃ§Ã£o desejada
+void girarCardeal(int dir);//gira para a direção desejada
 void AndaNaTabela();
 int tabelaPP();
 void CalculaVolta();
@@ -175,7 +175,7 @@ int NumeroOndeEstou();
 void vira180();
 void AndaFrente();
 
-//declaraÃ§Ã£o das funÃ§Ãµes
+//declaração das funções
 void executivo();
 void init();
 void desligaBlue();
@@ -224,7 +224,7 @@ int TachoCountDistancia(int dist);
 void regulaTC(int dir_antiga);
 void inicializaBoneco();
 
-//funÃ§Ã£o para dbug
+//função para dbug
 void  bip()
 {
   PlaySound(SOUND_DOWN);
@@ -239,7 +239,7 @@ void  bip()
  	}
  }
 
-//funÃ§Ã£o principal
+//função principal
 task main()
 {
 	/*desligaBlue();
@@ -249,7 +249,7 @@ task main()
 	executivo();
 }
 
-//assinatura das funÃ§Ãµes
+//assinatura das funções
 void executivo()
 {
   int aux;
@@ -306,7 +306,7 @@ void init()
 
   	inicializaBoneco();
 
-  	SairCasa();//comentado para testes enquanto a arena nÃ£o esta pronta
+  	SairCasa();//comentado para testes enquanto a arena não esta pronta
 
   	FecharPorta();
 
@@ -319,7 +319,7 @@ void init()
 	potdGlobal = POTENCIA_RETO_DIREITA;
 
 	direcao = NORTE;
-	rota(2);
+	rota(1);
 
 	Wait(400);
 	MandaCalibra();
@@ -371,7 +371,7 @@ void iniciaBlue()
 	TextOut(0, LCD_LINE2, "Conectou Bluetooth");
 }
 
-void andar()//melhorar esse funÃ§Ã£o - apneas testes por enquanto
+void andar()//melhorar esse função - apneas testes por enquanto
 {
 	free_to_go = 1;
 
@@ -529,7 +529,7 @@ int RecebeDesgirar()
 	return 0;
 }
 
-void viraEsq(int angulo){ // funÃ§Ã£o que faz o robÃ´ girar para a esquerda o Ã¢ngulo recebido
+void viraEsq(int angulo){ // função que faz o robô girar para a esquerda o ângulo recebido
   Off(MD);
 	Off(ME);
 
@@ -548,7 +548,7 @@ void viraEsq(int angulo){ // funÃ§Ã£o que faz o robÃ´ girar para a esquerda o Ã¢
 }
 
 
-void viraDir(int angulo){ // funÃ§Ã£o que faz o robÃ´ girar para a direita o Ã¢ngulo recebido
+void viraDir(int angulo){ // função que faz o robô girar para a direita o ângulo recebido
 	Off(MD);
 	Off(ME);
 
@@ -623,7 +623,7 @@ int MediaTC()
 
 	aux_tc_d = MyMotorTachoCount(MD);
 	aux_tc_e = MyMotorTachoCount(ME);
-	
+
 	return((aux_tc_d+aux_tc_e)/2);
 }
 
@@ -993,7 +993,7 @@ void MandaStop()
 
 void AndaFrente()
 {
-	MyOnFwdSyncPID(90);	
+	MyOnFwdSyncPID(90);
   	//OnFwdReg(MD_ME,90,OUT_REGMODE_SPEED);
 
 
@@ -1030,6 +1030,10 @@ void SeguindoRota()
 	}
 	else
 	{
+
+		Wait(200);//nao há colher
+//		MandaStop();
+
 		aux_dir = direcao;
 
 		if(zona == CENTRAL)
@@ -1052,20 +1056,19 @@ void SeguindoRota()
 					  AndaFrente();
 					  Wait(1000);
 					  Off(MD_ME);
-					
+
 					//nbip(3);
 
-					//chama a funÃ§Ã£o devolveBoeco()
+					//chama a função devolveBoeco()
 				}
 				//else
 				{
-					  
+
 				}
-				//chama a funÃ§Ã£o que decide pra onde vai
+				//chama a função que decide pra onde vai
 				SairCasa();
-				FecharPorta();
 				direcao = NORTE;
-				rota(1);
+				rota(2);
 			}
 		}
 
@@ -1086,8 +1089,13 @@ void SeguindoRota()
 
 		MandaStart();
 
-		if(aux_dir != direcao)//se mudou a direÃ§Ã£o
+		if(aux_dir != direcao)//se mudou a direção
 		{
+			Wait(200);
+			MandaCalibra();
+			poteGlobal = POTENCIA_RETO_ESQUERDA;
+			potdGlobal = POTENCIA_RETO_DIREITA;
+			//reset_controle();
 			if(!TalvezRegulaParede())
 			{
 				regulaTC(aux_dir);
@@ -1143,7 +1151,7 @@ sub alinha(int s) {
      //ht=SensorHTColorNum(HT);
      ReadSensorHTColor2Active(HT, ht_colornum, ht_red, ht_green, ht_blue, ht_white);
      luz=Sensor(SLUZ);
-     while((ht_white > HTBRANCOMIN)||((luz>LUZ_BRANCO_MIN)&&(luz<LUZ_BRANCO_MAX))) {    //Se algum dos sensores estiver lendo branco, entra na funÃ§Ã£o
+     while((ht_white > HTBRANCOMIN)||((luz>LUZ_BRANCO_MIN)&&(luz<LUZ_BRANCO_MAX))) {    //Se algum dos sensores estiver lendo branco, entra na função
           if((luz>LUZ_PRETO_MIN)&&(luz<LUZ_PRETO_MAX)) {       //Se o sensor de luz (esquerda) encontrar algo preto, recua a roda esquerda para girar
                OnRev(ME, s*80);
                Wait(100);
@@ -1162,16 +1170,16 @@ sub alinha(int s) {
                     //PlayTone(TONE_A3, 500);
                }else
                {
-               		OnFwd(MD_ME, s*55);                       //anda reto atÃ© que um dos dois sensores encontre algo preto
-          			Wait(50); //tempo para pegar leitura do sensor/*?0/*/650*?0 */650 
+               		OnFwd(MD_ME, s*55);                       //anda reto até que um dos dois sensores encontre algo preto
+          			Wait(50); //tempo para pegar leitura do sensor/*?0/*/650*?0 */650
                }
-          }                                
+          }
           //ht=SensorHTColorNum(HT);
           ReadSensorHTColor2Active(HT, ht_colornum, ht_red, ht_green, ht_blue, ht_white);
           luz=Sensor(SLUZ);
      }
      Off(MD_ME);
-         //sai da funÃ§Ã£o quando ambos os sensores estiverem lendo preto ao mesmo tempo
+         //sai da função quando ambos os sensores estiverem lendo preto ao mesmo tempo
 }
 
 
@@ -1194,7 +1202,7 @@ int ReceberComeceGirar()
 }
 
 int distanciaGiroDireita(int grau){
-	   return (((grau*17)/170/*se girar mais diminua o denomidador*/)); // COMO FOI FEITA ESSA CONVERSÃƒO/*?0**/650?0**/650?0[*/650na base da tentativa e erro]
+	   return (((grau*17)/170/*se girar mais diminua o denomidador*/)); // COMO FOI FEITA ESSA CONVERSÃO/*?0**/650?0**/650?0[*/650na base da tentativa e erro]
 }
 
 int distanciaGiroEsquerda(int grau){
@@ -1251,7 +1259,7 @@ int TalvezRegulaParede()
 int TemBonecoNoConsultor()
 {
 	int aux = 0;
-	
+
 	Wait(400);
 	SendRemoteNumber(CONEXAO, OUTBOX, TEMOUNAOBONECO);
 	while((aux!=SIMTEM)&&(aux!=NAOVIRGULANAOTEM))
@@ -1259,10 +1267,10 @@ int TemBonecoNoConsultor()
 		bip();
 		ReceiveRemoteNumber(INBOX, true, aux);
 	}
-	
+
 
 	//ReceiveRemoteNumer(INBOX_TEMBONECO, true, aux);
-	//alteraÃ§Ã£o do schiavini
+	//alteração do schiavini
 
 	if(aux==SIMTEM)
 	{
@@ -1272,15 +1280,13 @@ int TemBonecoNoConsultor()
 	{
 		return 0;
 	}
-	
+
 }
 
 void rota(int n)
 {
 	contPassos = 0;
 	progredi_na_tabela = 0;
-	i_global = 0;
-	j_global = 2;
 
 	switch(n)
 	{
@@ -1405,10 +1411,10 @@ void rota(int n)
 			caminho[31] = -1;
 			caminho[32] = -1;
 			caminho[33] = -1;
-			
+
 		break;
 
-		/////DOIDO ISSO AQUI Ãˆ SÃ’ PRA HOJE
+		/////DOIDO ISSO AQUI È SÒ PRA HOJE
 		FecharPorta();
 	}
 }
@@ -1497,3 +1503,4 @@ void inicializaBoneco(){
 		SendRemoteNumber(CONEXAO, OUTBOX_CORBONECO, BONECO_BRANCO);
 	}
 }
+

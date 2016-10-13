@@ -1,0 +1,1602 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__DU0SetSensorLight_inline_inicializaSensores	5	1	0	4	5
+1	__D0SetSensorLowspeed_inline_inicializaSensores	6	1	4	4	6
+2	__D0SetSensorLight_inline_inicializaSensores	6	1	8	4	2
+3	__D0MyOnFwd	6	1	12	4	14
+4	__D0MyResetTachoCount	6	1	16	4	8
+5	__signed_stack_001andaBalancando	6	1	20	4	10
+6	__signed_stack_002andaBalancando	6	1	24	4	2
+7	__signed_stack_001alinha	6	1	28	4	22
+8	__DU0SetSensorLowspeed_inline_inicializaSensores	5	1	32	4	15
+9	__signed_stack_001AbrirPorta	6	1	36	4	2
+10	__D0desligaBlue	6	1	40	4	5
+11	__D0devolve_bonecos	6	1	44	4	12
+12	__D0andaBalancando	6	1	48	4	22
+13	__D0AbrirPorta	6	1	52	4	8
+14	__D0alinha	6	1	56	4	48
+15	__D0MediaTC	6	1	60	4	6
+16	__D0MyMotorTachoCount	6	1	64	4	15
+17	__D0main	6	1	68	4	10
+18	__D0distanciaTachoCount	6	1	72	4	8
+19	__D0FecharPorta	6	1	76	4	8
+20	__signed_stack_001desligaBlue	6	1	80	4	4
+21	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	84	4	2
+22	__Wait_7qG2_ms_7qG2_000_inline_AbrirPorta	5	1	88	4	2
+23	__signed_stack_001MyResetTachoCount	6	1	92	4	4
+24	__signed_stack_001MyMotorTachoCount	6	1	96	4	4
+25	__signed_stack_001MyOnFwd	6	1	100	4	4
+26	__Wait_7qG2_ms_7qG2_000_inline_iniciaBlue	5	1	104	4	2
+27	__Wait_7qG2_ms_7qG2_000_inline_desligaBlue	5	1	108	4	2
+28	__Wait_7qG2_ms_7qG2_000_inline_devolve_bonecos	5	1	112	4	12
+29	__Wait_7qG2_ms_7qG2_000_inline_FecharPorta	5	1	116	4	2
+30	__Wait_7qG2_ms_7qG2_000_inline_alinha	5	1	120	4	6
+31	__signed_stack_001FecharPorta	6	1	124	4	2
+32	__signed_stack_001iniciaBlue	6	1	128	4	2
+33	__signed_stack_001distanciaTachoCount	6	1	132	4	6
+34	__signed_stack_002desligaBlue	6	1	136	4	2
+35	__signed_stack_001devolve_bonecos	6	1	140	4	6
+36	__signed_stack_003main	6	1	144	4	4
+37	__signed_stack_001MediaTC	6	1	148	4	2
+38	__signed_stack_002main	6	1	152	4	4
+39	__signed_stack_002iniciaBlue	6	1	156	4	2
+40	__signed_stack_001main	6	1	160	4	4
+41	__TextOutMutex	9	0	164	4	4
+42	__RLSBmutex2	9	0	168	4	4
+43	__SRSTmpLongVal	6	1	172	4	2
+44	__CLSCSMutex2	9	0	176	4	2
+45	__CLSWMutex2	9	0	180	4	2
+46	__CLSRMutex2	9	0	184	4	2
+47	__SPTArgsMutex	9	0	188	4	4
+48	__constValNeg2000	4	0	192	2	1
+49	__MyResetTachoCount_7qG2_motor_7qG2_000	4	1	194	2	6
+50	__MyMotorTachoCount_7qG2_motor_7qG2_000	4	1	196	2	7
+51	__constValNeg2700	4	0	198	2	1
+52	__alinha_7qG2_s_7qG2_000	4	1	200	2	6
+53	__distanciaTachoCount_7qG2_grau_7qG2_000	4	1	202	2	4
+54	MyTcD	4	1	204	2	5
+55	__MyResetTachoCount_7qG2_pd_7qG2_000	4	1	206	2	2
+56	__MyResetTachoCount_7qG2_pe_7qG2_000	4	1	208	2	2
+57	__MyOnFwd_7qG2_pot_7qG2_000	4	1	210	2	17
+58	__MyOnFwd_7qG2_motor_7qG2_000	4	1	212	2	21
+59	MyTcE	4	1	214	2	5
+60	__alinha_7qG2_ht_7qG2_000	4	1	216	2	6
+61	__AbrirPorta_7qG2_old_tc_7qG2_000	4	1	218	2	2
+62	__MediaTC_7qG2_aux_tc_d_7qG2_000	4	1	220	2	2
+63	__andaBalancando_7qG2_i_7qG2_001	4	1	222	2	4
+64	__AbrirPorta_7qG2_tc_7qG2_000	4	1	224	2	4
+65	__alinha_7qG2_luz_7qG2_000	4	1	226	2	6
+66	__FecharPorta_7qG2_tc_7qG2_000	4	1	228	2	4
+67	__FecharPorta_7qG2_old_tc_7qG2_000	4	1	230	2	2
+68	__MyMotorTachoCount_7qG2_retorno_7qG2_000	4	1	232	2	3
+69	__constValNeg70	2	0	234	1	1
+70	__constValNeg10	2	0	235	1	1
+71	__constValNeg5	2	0	236	1	1
+72	__andaBalancando_return	1	1	237	1	4
+73	__constVal1	2	0	238	1	14
+74	__constVal3	2	0	239	1	18
+75	__AbrirPorta_return	1	1	240	1	4
+76	__FecharPorta_return	1	1	241	1	4
+77	__MyMotorTachoCount_return	1	1	242	1	5
+78	__MediaTC_return	1	1	243	1	6
+79	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_inicializaSensores	1	1	244	1	2
+80	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_inicializaSensores	1	1	245	1	2
+81	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_inicializaSensores	1	1	246	1	2
+82	__distanciaTachoCount_return	1	1	247	1	6
+83	__constValNeg1	2	0	248	1	3
+84	__constValNeg90	2	0	249	1	4
+85	__constVal0	2	1	250	1	61
+86	__alinha_return	1	1	251	1	5
+87	__constVal32	2	0	252	1	45
+88	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_inicializaSensores	1	1	253	1	2
+89	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	254	1	6
+90	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	255	1	6
+91	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	256	1	6
+92	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	257	1	15
+93	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores	1	1	258	1	6
+94	__constVal25	2	0	259	1	1
+95	__SetSensorLight_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	260	1	4
+96	__SetSensorLight_7qG2_bActive_7qG2_000_inline_inicializaSensores	1	1	261	1	2
+97	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	262	1	3
+98	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	263	1	6
+99	__OnRev_Tmp	2	1	264	1	4
+100	__ResetSensorTmp	1	1	265	1	2
+101	____ResetSensorSubroutine_return	1	1	266	1	6
+102	__ResetSensorPort	1	1	267	1	6
+103	__constVal8	2	0	268	1	1
+104	__constVal15	2	0	269	1	1
+105	__constVal2	2	0	270	1	12
+106	__RLSBResult2	2	1	271	1	7
+107	____ReadLSBytes2_return	1	1	272	1	4
+108	__RLSBytesCount2	1	1	273	1	8
+109	__RLSBIterations2	1	1	274	1	4
+110	__LSWriteOptionsVar	1	1	275	1	2
+111	__PFTmp	1	1	276	1	1
+112	__MyOnFwd_return	1	1	277	1	18
+113	__constVal96	2	0	278	1	15
+114	__MyResetTachoCount_return	1	1	279	1	5
+115	__iniciaBlue_return	1	1	280	1	3
+116	__desligaBlue_return	1	1	281	1	3
+117	__inicializaSensores_return	1	1	282	1	3
+118	__constVal63	2	0	283	1	15
+119	____initialize_global_data_return	1	1	284	1	3
+120	__init_return	1	1	285	1	3
+121	__constVal5	2	0	286	1	7
+122	__devolve_bonecos_return	1	1	287	1	3
+123	__iniciaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	5
+124	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Result	2	1	288	1	5
+125	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	289	1	5
+126	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	290	4	5
+127	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
+128	__iniciaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	292	1	5
+129	__CBTWArgs	8	0	3	8	3
+130	__CBTWArgs.Result	2	1	296	1	3
+131	__CBTWArgs.Connection	1	1	297	1	3
+132	__CBTWArgs.Buffer	7	0	298	4	3
+133	__CBTWArgs.Buffer.Buffer_type	1	0	0	1	0
+134	__CBTCSArgs	8	0	2	4	3
+135	__CBTCSArgs.Result	2	1	300	1	3
+136	__CBTCSArgs.Connection	1	1	301	1	3
+137	__desligaBlue_7qG2_DADOS_BT_7qG2_000	8	0	4	12	5
+138	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Result	2	1	304	1	5
+139	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Action	1	1	305	1	5
+140	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name	7	0	306	4	5
+141	__desligaBlue_7qG2_DADOS_BT_7qG2_000.Name.Name_type	1	0	0	1	0
+142	__desligaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot	1	1	308	1	5
+143	__CLSWArgs2	8	0	4	12	5
+144	__CLSWArgs2.Result	2	1	312	1	5
+145	__CLSWArgs2.Port	1	1	313	1	5
+146	__CLSWArgs2.Buffer	7	0	314	4	5
+147	__CLSWArgs2.Buffer.Buffer_type	1	0	0	1	0
+148	__CLSWArgs2.ReturnLen	1	1	316	1	5
+149	__CLSRArgs2	8	0	4	12	5
+150	__CLSRArgs2.Result	2	1	320	1	5
+151	__CLSRArgs2.Port	1	1	321	1	5
+152	__CLSRArgs2.Buffer	7	0	322	4	5
+153	__CLSRArgs2.Buffer.Buffer_type	1	0	0	1	0
+154	__CLSRArgs2.BufferLen	1	1	324	1	5
+155	__SPTArgs	8	0	5	8	12
+156	__SPTArgs.Result	2	1	328	1	12
+157	__SPTArgs.Frequency	3	1	330	2	12
+158	__SPTArgs.Duration	3	1	332	2	12
+159	__SPTArgs.Loop	1	1	334	1	12
+160	__SPTArgs.Volume	1	1	335	1	12
+161	__CLSCSArgs2	8	0	3	4	4
+162	__CLSCSArgs2.Result	2	1	336	1	4
+163	__CLSCSArgs2.Port	1	1	337	1	4
+164	__CLSCSArgs2.BytesReady	1	1	338	1	4
+165	__TextOutArgs	8	0	4	16	11
+166	__TextOutArgs.Result	2	1	340	1	11
+167	__TextOutArgs.Location	8	0	2	4	11
+168	__TextOutArgs.Location.X	4	1	344	2	11
+169	__TextOutArgs.Location.Y	4	1	346	2	11
+170	__TextOutArgs.Text	7	0	348	4	11
+171	__TextOutArgs.Text.Text_type	1	0	0	1	0
+172	__TextOutArgs.Options	5	1	352	4	11
+173	__caverna_2	7	0	356	4	2
+174	__caverna_2.__caverna_2_type	4	0	0	2	0
+175	__barreira_2	7	0	358	4	2
+176	__barreira_2.__barreira_2_type	4	0	0	2	0
+177	__strbufdesligaBlue	7	0	360	4	4
+178	__strbufdesligaBlue.__strbufdesligaBlue_type	1	0	0	1	0
+179	__OUT_AB	7	0	362	4	8
+180	__OUT_AB.__OUT_AB_type	1	0	0	1	0
+181	__constStr0011	7	0	364	4	1
+182	__constStr0011.__constStr0011_type	1	1	0	1	0
+183	__constStr0010	7	0	366	4	1
+184	__constStr0010.__constStr0010_type	1	1	0	1	0
+185	__constStr0009	7	0	368	4	2
+186	__constStr0009.__constStr0009_type	1	1	0	1	0
+187	__central_2	7	0	370	4	2
+188	__central_2.__central_2_type	4	0	0	2	0
+189	central	7	0	372	4	1
+190	central.central_type	7	0	0	4	0
+191	central.central_type.central_type_type	4	0	0	2	0
+192	__LSWriteOptions	7	0	374	4	1
+193	__LSWriteOptions.__LSWriteOptions_type	1	0	0	1	0
+194	__RLSBbufLSWrite1	7	0	376	4	2
+195	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+196	caminho	7	0	378	4	1
+197	caminho.caminho_type	4	0	0	2	0
+198	caverna	7	0	380	4	1
+199	caverna.caverna_type	7	0	0	4	0
+200	caverna.caverna_type.caverna_type_type	4	0	0	2	0
+201	barreira	7	0	382	4	1
+202	barreira.barreira_type	7	0	0	4	0
+203	barreira.barreira_type.barreira_type_type	4	0	0	2	0
+204	__RLSLastGoodRead2	7	0	384	4	2
+205	__RLSLastGoodRead2.__RLSLastGoodRead2_type	1	0	0	1	0
+206	__strbufiniciaBlue	7	0	386	4	4
+207	__strbufiniciaBlue.__strbufiniciaBlue_type	1	0	0	1	0
+208	__SRSFlattenBuf	7	0	388	4	2
+209	__SRSFlattenBuf.__SRSFlattenBuf_type	1	0	0	1	0
+210	__DCMessageWritePacket	7	0	390	4	1
+211	__DCMessageWritePacket.__DCMessageWritePacket_type	1	0	0	1	0
+212	__RLSReadBuf2	7	0	392	4	10
+213	__RLSReadBuf2.__RLSReadBuf2_type	1	0	0	1	0
+214	__SRSTmpBuf	7	0	394	4	6
+215	__SRSTmpBuf.__SRSTmpBuf_type	1	0	0	1	0
+216	__SRSSendBuf	7	0	396	4	2
+217	__SRSSendBuf.__SRSSendBuf_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	172	0	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	173	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	172	2	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	172	2	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	173	2		subcall init, __init_return
+0	172	4	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	173	4	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	174	4		set __signed_stack_001main, 220
+0	173	7	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	173	7	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	174	7		set __signed_stack_002main, 500
+0	173	10	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	173	10	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	174	10		set __signed_stack_003main, 4
+0	173	13	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	173	13	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	174	13		set __D0main, 0
+0	173	16	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	174	16		acquire __SPTArgsMutex
+0	173	17	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	174	17		mov __SPTArgs.Frequency, __signed_stack_001main
+0	173	19	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	174	19		mov __SPTArgs.Duration, __signed_stack_002main
+0	173	21	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	174	21		mov __SPTArgs.Volume, __signed_stack_003main
+0	173	23	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	174	23		mov __SPTArgs.Loop, __D0main
+0	173	26	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	174	26		syscall 10, __SPTArgs
+0	173	29	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	174	29		mov __D0main, __SPTArgs.Result
+0	173	32	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	174	32		release __SPTArgsMutex
+0	173	33	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	174	33	#line 174 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	175	33		subcall devolve_bonecos, __devolve_bonecos_return
+0	174	35	#line 174 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	176	35	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	177	35		set __signed_stack_001main, 3951
+0	176	38	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	176	38	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	177	38		set __signed_stack_002main, 500
+0	176	41	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	176	41	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	177	41		set __signed_stack_003main, 4
+0	176	44	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	176	44	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	177	44		set __D0main, 0
+0	176	47	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	177	47		acquire __SPTArgsMutex
+0	176	48	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	177	48		mov __SPTArgs.Frequency, __signed_stack_001main
+0	176	50	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	177	50		mov __SPTArgs.Duration, __signed_stack_002main
+0	176	52	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	177	52		mov __SPTArgs.Volume, __signed_stack_003main
+0	176	54	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	177	54		mov __SPTArgs.Loop, __D0main
+0	176	57	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	177	57		syscall 10, __SPTArgs
+0	176	60	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	177	60		mov __D0main, __SPTArgs.Result
+0	176	63	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	177	63		release __SPTArgsMutex
+0	176	64	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	178	64	#line 178 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	179	64		set __D0main, 1
+0	179	67	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	180	67		tst 5, __D0main, __D0main
+0	179	70	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	180	70		brtst 4, __ASM_Label_575, __D0main
+0	179	73	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	180	73		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
+0	179	76	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	8869	76	#line 8869 "NXCDefs.h"
+0	8870	76		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8869	79	#line 8869 "NXCDefs.h"
+0	179	79	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	183	79	#line 183 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	184	79		jmp __ASM_Label_574
+0	183	81	#line 183 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+0	184	81		exit -1, -1
+1	5724	0		setin __constVal1, __ResetSensorPort, 5
+1	5726	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5727	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5728	11		subret ____ResetSensorSubroutine_return
+2	6595	0	#pragma macro 27
+2	6595	0		acquire __CLSWMutex2
+2	6595	1		index __LSWriteOptionsVar, __LSWriteOptions, __constVal2
+2	6595	5		or __CLSWArgs2.Port, __constVal2, __LSWriteOptionsVar
+2	6595	9		mov __CLSWArgs2.ReturnLen, __RLSBytesCount2
+2	6595	11		mov __CLSWArgs2.Buffer, __RLSReadBuf2
+2	6595	13		syscall 21, __CLSWArgs2
+2	6595	16		mov __RLSBResult2, __CLSWArgs2.Result
+2	6595	18		release __CLSWMutex2
+2	6595	19	#line 6595 "NXTDefs.h"
+2	6596	19		brtst 5, __RLSBError2, __RLSBResult2
+2	6597	22		set __RLSBIterations2, 60
+2	6599	25	#pragma macro 23
+2	6599	25		acquire __CLSCSMutex2
+2	6599	26		set __CLSCSArgs2.Port, 2
+2	6599	29		syscall 23, __CLSCSArgs2
+2	6599	32		mov __RLSBytesCount2, __CLSCSArgs2.BytesReady
+2	6599	34		mov __RLSBResult2, __CLSCSArgs2.Result
+2	6599	36		release __CLSCSMutex2
+2	6599	37	#line 6599 "NXTDefs.h"
+2	6600	37		sub __RLSBIterations2, __RLSBIterations2, __constVal1
+2	6601	41		brtst 2, __RLSBError2, __RLSBIterations2
+2	6602	44		brtst 0, __RLSBError2, __RLSBResult2
+2	6603	47		brtst 4, __RLSBReadyToRead2, __RLSBResult2
+2	6605	50		wait2 NA, __constVal1
+2	6606	53		jmp __RLSBDoCheckStatus2
+2	6608	55		brtst 4, __RLSBReturn2, __RLSBytesCount2
+2	6609	58		arrinit __RLSReadBuf2, __constVal0, __RLSBytesCount2
+2	6611	62	#pragma macro 25
+2	6611	62		acquire __CLSRMutex2
+2	6611	63		set __CLSRArgs2.Port, 2
+2	6611	66		mov __CLSRArgs2.BufferLen, __RLSBytesCount2
+2	6611	68		syscall 22, __CLSRArgs2
+2	6611	71		mov __RLSReadBuf2, __CLSRArgs2.Buffer
+2	6611	73		mov __RLSBResult2, __CLSRArgs2.Result
+2	6611	75		release __CLSRMutex2
+2	6611	76	#line 6611 "NXTDefs.h"
+2	6612	76		brtst 5, __RLSBError2, __RLSBResult2
+2	6613	79		mov __RLSLastGoodRead2, __RLSReadBuf2
+2	6614	81		jmp __RLSBDone2
+2	6616	83		mov __RLSReadBuf2, __RLSLastGoodRead2
+2	6618	85		arrsize __RLSBytesCount2, __RLSReadBuf2
+2	6620	88		subret ____ReadLSBytes2_return
+3	184	0	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+3	185	0		subcall inicializaSensores, __inicializaSensores_return
+3	184	2	#line 184 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+3	185	2	#line 185 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+3	186	2		set __MyResetTachoCount_7qG2_motor_7qG2_000, 1
+3	185	5	#line 185 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+3	185	5	#line 185 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+3	186	5		subcall MyResetTachoCount, __MyResetTachoCount_return
+3	185	7	#line 185 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+3	186	7	#line 186 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+3	187	7		set __MyResetTachoCount_7qG2_motor_7qG2_000, 0
+3	186	10	#line 186 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+3	186	10	#line 186 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+3	187	10		subcall MyResetTachoCount, __MyResetTachoCount_return
+3	186	12	#line 186 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+3	187	12	#line 187 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+3	188	12		subcall desligaBlue, __desligaBlue_return
+3	187	14	#line 187 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+3	188	14	#line 188 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+3	189	14		subcall iniciaBlue, __iniciaBlue_return
+3	188	16	#line 188 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+3	191	16	#line 191 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+3	192	16		subret __init_return
+4	195	0	#line 195 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+4	196	0		mov __signed_stack_001MyOnFwd, __MyOnFwd_7qG2_motor_7qG2_000
+4	195	2	#line 195 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+4	196	2	#line 196 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+4	197	2		set __D0MyOnFwd, 1
+4	196	5	#line 196 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+4	197	5		cmp 4, __D0MyOnFwd, __signed_stack_001MyOnFwd, __D0MyOnFwd
+4	197	9	#line 197 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+4	198	9		brtst 4, __ASM_Label_586, __D0MyOnFwd
+4	197	12	#line 197 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+4	198	12		getout __D0MyOnFwd, __MyOnFwd_7qG2_motor_7qG2_000, 4
+4	197	16	#line 197 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+4	198	16		add MyTcD, MyTcD, __D0MyOnFwd
+4	197	20	#line 197 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+4	199	20	#line 199 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+4	200	20		jmp __ASM_Label_589
+4	199	22	#line 199 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+4	200	22		mov __signed_stack_001MyOnFwd, __MyOnFwd_7qG2_motor_7qG2_000
+4	199	24	#line 199 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+4	200	24	#line 200 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+4	201	24		set __D0MyOnFwd, 0
+4	200	27	#line 200 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+4	201	27		cmp 4, __D0MyOnFwd, __signed_stack_001MyOnFwd, __D0MyOnFwd
+4	201	31	#line 201 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+4	202	31		brtst 4, __ASM_Label_592, __D0MyOnFwd
+4	201	34	#line 201 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+4	202	34		getout __D0MyOnFwd, __MyOnFwd_7qG2_motor_7qG2_000, 4
+4	201	38	#line 201 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+4	202	38		add MyTcE, MyTcE, __D0MyOnFwd
+4	201	42	#line 201 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+4	204	42	#line 204 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+4	204	42	#line 204 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+4	204	42	#line 204 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+4	205	42		mov __D0MyOnFwd, __MyOnFwd_7qG2_pot_7qG2_000
+4	204	44	#line 204 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+4	205	44	#pragma macro 7
+4	205	44		setout __MyOnFwd_7qG2_motor_7qG2_000, 2, __D0MyOnFwd, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	4923	67	#line 4923 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+4	204	67	#line 204 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+4	207	67	#line 207 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+4	208	67		subret __MyOnFwd_return
+5	209	0	#line 209 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	210	0		set __MyOnFwd_7qG2_motor_7qG2_000, 1
+5	209	3	#line 209 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	209	3	#line 209 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	210	3		set __MyOnFwd_7qG2_pot_7qG2_000, 0
+5	209	6	#line 209 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	209	6	#line 209 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	210	6		subcall MyOnFwd, __MyOnFwd_return
+5	209	8	#line 209 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	210	8	#line 210 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	211	8		set __MyOnFwd_7qG2_motor_7qG2_000, 0
+5	210	11	#line 210 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	210	11	#line 210 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	211	11		set __MyOnFwd_7qG2_pot_7qG2_000, 90
+5	210	14	#line 210 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	210	14	#line 210 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	211	14		subcall MyOnFwd, __MyOnFwd_return
+5	210	16	#line 210 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	211	16	#line 211 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	212	16		getout __signed_stack_001andaBalancando, __constVal0, 4
+5	211	20	#line 211 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	211	20	#line 211 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	212	20		set __D0andaBalancando, 90
+5	211	23	#line 211 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	212	23		cmp 0, __D0andaBalancando, __signed_stack_001andaBalancando, __D0andaBalancando
+5	211	27	#line 211 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	212	27		brtst 4, __ASM_Label_606, __D0andaBalancando
+5	212	30	#line 212 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	213	30		jmp __ASM_Label_605
+5	212	32	#line 212 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	212	32	#line 212 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	213	32		set __andaBalancando_7qG2_i_7qG2_001, 0
+5	212	35	#line 212 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	212	35	#line 212 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	213	35		mov __signed_stack_001andaBalancando, __andaBalancando_7qG2_i_7qG2_001
+5	212	37	#line 212 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	212	37	#line 212 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	213	37		set __D0andaBalancando, 6
+5	212	40	#line 212 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	213	40		cmp 0, __D0andaBalancando, __signed_stack_001andaBalancando, __D0andaBalancando
+5	212	44	#line 212 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	213	44		brtst 4, __ASM_Label_610, __D0andaBalancando
+5	212	47	#line 212 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	213	47		jmp __ASM_Label_611
+5	213	49	#line 213 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	214	49		add __andaBalancando_7qG2_i_7qG2_001, __andaBalancando_7qG2_i_7qG2_001, __constVal1
+5	214	53	#line 214 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	215	53		jmp __ASM_Label_609
+5	214	55	#line 214 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	215	55		set __MyOnFwd_7qG2_motor_7qG2_000, 0
+5	214	58	#line 214 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	214	58	#line 214 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	215	58		set __MyOnFwd_7qG2_pot_7qG2_000, 0
+5	214	61	#line 214 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	214	61	#line 214 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	215	61		subcall MyOnFwd, __MyOnFwd_return
+5	214	63	#line 214 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	215	63	#line 215 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	216	63		set __MyOnFwd_7qG2_motor_7qG2_000, 1
+5	215	66	#line 215 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	215	66	#line 215 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	216	66		set __MyOnFwd_7qG2_pot_7qG2_000, 90
+5	215	69	#line 215 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	215	69	#line 215 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	216	69		subcall MyOnFwd, __MyOnFwd_return
+5	215	71	#line 215 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	216	71	#line 216 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	217	71		getout __signed_stack_001andaBalancando, __constVal1, 4
+5	216	75	#line 216 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	216	75	#line 216 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	217	75		set __D0andaBalancando, 180
+5	216	78	#line 216 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	217	78		cmp 0, __D0andaBalancando, __signed_stack_001andaBalancando, __D0andaBalancando
+5	216	82	#line 216 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	217	82		brtst 4, __ASM_Label_626, __D0andaBalancando
+5	217	85	#line 217 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	218	85		jmp __ASM_Label_625
+5	217	87	#line 217 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	217	87	#line 217 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	218	87		set __MyOnFwd_7qG2_motor_7qG2_000, 1
+5	217	90	#line 217 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	217	90	#line 217 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	218	90		set __MyOnFwd_7qG2_pot_7qG2_000, 0
+5	217	93	#line 217 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	217	93	#line 217 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	218	93		subcall MyOnFwd, __MyOnFwd_return
+5	217	95	#line 217 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	218	95	#line 218 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	219	95		set __MyOnFwd_7qG2_motor_7qG2_000, 0
+5	218	98	#line 218 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	218	98	#line 218 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	219	98		set __MyOnFwd_7qG2_pot_7qG2_000, 90
+5	218	101	#line 218 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	218	101	#line 218 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	219	101		subcall MyOnFwd, __MyOnFwd_return
+5	218	103	#line 218 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	219	103	#line 219 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	220	103		getout __signed_stack_001andaBalancando, __constVal0, 4
+5	219	107	#line 219 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	219	107	#line 219 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	220	107		set __D0andaBalancando, 180
+5	219	110	#line 219 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	220	110		cmp 0, __D0andaBalancando, __signed_stack_001andaBalancando, __D0andaBalancando
+5	219	114	#line 219 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	220	114		brtst 4, __ASM_Label_638, __D0andaBalancando
+5	221	117	#line 221 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	222	117		jmp __ASM_Label_637
+5	221	119	#line 221 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	221	119	#line 221 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	222	119		jmp __ASM_Label_612
+5	221	121	#line 221 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	221	121	#line 221 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	222	121		set __MyOnFwd_7qG2_motor_7qG2_000, 0
+5	221	124	#line 221 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	221	124	#line 221 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	222	124		set __MyOnFwd_7qG2_pot_7qG2_000, 0
+5	221	127	#line 221 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	221	127	#line 221 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	222	127		subcall MyOnFwd, __MyOnFwd_return
+5	221	129	#line 221 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	222	129	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	223	129		set __MyOnFwd_7qG2_motor_7qG2_000, 1
+5	222	132	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	222	132	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	223	132		set __MyOnFwd_7qG2_pot_7qG2_000, 90
+5	222	135	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	222	135	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	223	135		subcall MyOnFwd, __MyOnFwd_return
+5	222	137	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	223	137	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	224	137		getout __signed_stack_001andaBalancando, __constVal1, 4
+5	223	141	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	223	141	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	224	141		set __signed_stack_002andaBalancando, 180
+5	223	144	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	223	144	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	224	144		set __D0andaBalancando, 2
+5	223	147	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	224	147		div __D0andaBalancando, __signed_stack_002andaBalancando, __D0andaBalancando
+5	223	151	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	224	151		cmp 0, __D0andaBalancando, __signed_stack_001andaBalancando, __D0andaBalancando
+5	223	155	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	224	155		brtst 4, __ASM_Label_650, __D0andaBalancando
+5	224	158	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	225	158		jmp __ASM_Label_649
+5	224	160	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	224	160	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	225	160	#pragma macro 7
+5	225	160		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	5138	183	#line 5138 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	224	183	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	227	183	#line 227 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+5	228	183		subret __andaBalancando_return
+6	231	0	#line 231 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	232	0		set __D0AbrirPorta, 70
+6	231	3	#line 231 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	232	3	#pragma macro 7
+6	232	3		setout __constVal2, 2, __D0AbrirPorta, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	5156	26	#line 5156 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	231	26	#line 231 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	232	26	#line 232 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	233	26		getout __AbrirPorta_7qG2_tc_7qG2_000, __constVal2, 4
+6	232	30	#line 232 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	232	30	#line 232 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	235	30	#line 235 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	236	30		set __Wait_7qG2_ms_7qG2_000_inline_AbrirPorta, 200
+6	235	33	#line 235 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	8869	33	#line 8869 "NXCDefs.h"
+6	8870	33		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_AbrirPorta
+6	8869	36	#line 8869 "NXCDefs.h"
+6	235	36	#line 235 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	236	36	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	237	36		mov __AbrirPorta_7qG2_old_tc_7qG2_000, __AbrirPorta_7qG2_tc_7qG2_000
+6	236	38	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	236	38	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	237	38	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	238	38		getout __AbrirPorta_7qG2_tc_7qG2_000, __constVal2, 4
+6	237	42	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	237	42	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	238	42	#line 238 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	239	42		mov __signed_stack_001AbrirPorta, __AbrirPorta_7qG2_tc_7qG2_000
+6	238	44	#line 238 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	238	44	#line 238 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	239	44		mov __D0AbrirPorta, __AbrirPorta_7qG2_old_tc_7qG2_000
+6	238	46	#line 238 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	239	46		cmp 5, __D0AbrirPorta, __signed_stack_001AbrirPorta, __D0AbrirPorta
+6	238	50	#line 238 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	239	50		brtst 4, __ASM_Label_660, __D0AbrirPorta
+6	238	53	#line 238 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	239	53		jmp __ASM_Label_659
+6	238	55	#line 238 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	238	55	#line 238 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	240	55	#line 240 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	241	55		set __D0AbrirPorta, 0
+6	240	58	#line 240 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	241	58	#pragma macro 7
+6	241	58		setout __constVal2, 2, __D0AbrirPorta, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	5214	81	#line 5214 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	240	81	#line 240 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	243	81	#line 243 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+6	244	81		subret __AbrirPorta_return
+7	247	0	#line 247 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	248	0		mov __D0FecharPorta, __constValNeg70
+7	247	2	#line 247 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	248	2	#pragma macro 7
+7	248	2		setout __constVal2, 2, __D0FecharPorta, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	5232	25	#line 5232 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	247	25	#line 247 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	248	25	#line 248 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	249	25		getout __FecharPorta_7qG2_tc_7qG2_000, __constVal2, 4
+7	248	29	#line 248 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	248	29	#line 248 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	251	29	#line 251 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	252	29		set __Wait_7qG2_ms_7qG2_000_inline_FecharPorta, 200
+7	251	32	#line 251 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	8869	32	#line 8869 "NXCDefs.h"
+7	8870	32		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_FecharPorta
+7	8869	35	#line 8869 "NXCDefs.h"
+7	251	35	#line 251 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	252	35	#line 252 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	253	35		mov __FecharPorta_7qG2_old_tc_7qG2_000, __FecharPorta_7qG2_tc_7qG2_000
+7	252	37	#line 252 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	252	37	#line 252 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	253	37	#line 253 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	254	37		getout __FecharPorta_7qG2_tc_7qG2_000, __constVal2, 4
+7	253	41	#line 253 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	253	41	#line 253 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	254	41	#line 254 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	255	41		mov __signed_stack_001FecharPorta, __FecharPorta_7qG2_tc_7qG2_000
+7	254	43	#line 254 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	254	43	#line 254 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	255	43		mov __D0FecharPorta, __FecharPorta_7qG2_old_tc_7qG2_000
+7	254	45	#line 254 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	255	45		cmp 5, __D0FecharPorta, __signed_stack_001FecharPorta, __D0FecharPorta
+7	254	49	#line 254 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	255	49		brtst 4, __ASM_Label_676, __D0FecharPorta
+7	254	52	#line 254 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	255	52		jmp __ASM_Label_675
+7	254	54	#line 254 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	254	54	#line 254 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	256	54	#line 256 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	257	54		mov __D0FecharPorta, __constValNeg10
+7	256	56	#line 256 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	257	56	#pragma macro 7
+7	257	56		setout __constVal2, 2, __D0FecharPorta, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	5290	79	#line 5290 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	256	79	#line 256 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	259	79	#line 259 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+7	260	79		subret __FecharPorta_return
+8	263	0	#line 263 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	264	0		getout __MyResetTachoCount_7qG2_pd_7qG2_000, __constVal1, 3
+8	263	4	#line 263 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	263	4	#line 263 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	264	4	#line 264 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	265	4		getout __MyResetTachoCount_7qG2_pe_7qG2_000, __constVal0, 3
+8	264	8	#line 264 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	264	8	#line 264 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	267	8	#line 267 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	268	8	#pragma macro 7
+8	268	8		setout __MyResetTachoCount_7qG2_motor_7qG2_000, 0, __constVal8
+8	5321	13	#line 5321 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	267	13	#line 267 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	270	13	#line 270 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	271	13		getout __signed_stack_001MyResetTachoCount, __MyResetTachoCount_7qG2_motor_7qG2_000, 4
+8	270	17	#line 270 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	270	17	#line 270 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	271	17		set __D0MyResetTachoCount, 5
+8	270	20	#line 270 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	271	20		cmp 1, __D0MyResetTachoCount, __signed_stack_001MyResetTachoCount, __D0MyResetTachoCount
+8	270	24	#line 270 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	271	24		brtst 5, __ASM_Label_693, __D0MyResetTachoCount
+8	270	27	#line 270 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	271	27		getout __signed_stack_001MyResetTachoCount, __MyResetTachoCount_7qG2_motor_7qG2_000, 4
+8	270	31	#line 270 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	270	31	#line 270 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	271	31		mov __D0MyResetTachoCount, __constValNeg5
+8	270	33	#line 270 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	271	33		cmp 0, __D0MyResetTachoCount, __signed_stack_001MyResetTachoCount, __D0MyResetTachoCount
+8	270	37	#line 270 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	271	37		brtst 4, __ASM_Label_692, __D0MyResetTachoCount
+8	270	40	#line 270 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	271	40		jmp __ASM_Label_691
+8	270	42	#line 270 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	270	42	#line 270 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	271	42	#line 271 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	272	42		set __MyOnFwd_7qG2_motor_7qG2_000, 1
+8	271	45	#line 271 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	271	45	#line 271 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	272	45		mov __MyOnFwd_7qG2_pot_7qG2_000, __MyResetTachoCount_7qG2_pd_7qG2_000
+8	271	47	#line 271 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	271	47	#line 271 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	272	47		subcall MyOnFwd, __MyOnFwd_return
+8	271	49	#line 271 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	272	49	#line 272 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	273	49		set __MyOnFwd_7qG2_motor_7qG2_000, 0
+8	272	52	#line 272 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	272	52	#line 272 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	273	52		mov __MyOnFwd_7qG2_pot_7qG2_000, __MyResetTachoCount_7qG2_pe_7qG2_000
+8	272	54	#line 272 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	272	54	#line 272 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	273	54		subcall MyOnFwd, __MyOnFwd_return
+8	272	56	#line 272 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	276	56	#line 276 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+8	277	56		subret __MyResetTachoCount_return
+9	278	0	#line 278 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+9	279	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 0
+9	278	3	#line 278 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+9	278	3	#line 278 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+9	279	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+9	4523	5	#line 4523 "NXCDefs.h"
+9	4524	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+9	4523	7	#line 4523 "NXCDefs.h"
+9	4523	7	#line 4523 "NXCDefs.h"
+9	4524	7		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+9	4523	9	#line 4523 "NXCDefs.h"
+9	4524	9		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+9	4523	12	#line 4523 "NXCDefs.h"
+9	4524	12		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+9	4523	15	#line 4523 "NXCDefs.h"
+9	4524	15		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+9	4523	18	#line 4523 "NXCDefs.h"
+9	4523	18	#line 4523 "NXCDefs.h"
+9	4524	18		jmp __004__ASM_Label_37
+9	4523	20	#line 4523 "NXCDefs.h"
+9	4524	20		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+9	4523	23	#line 4523 "NXCDefs.h"
+9	4523	23	#line 4523 "NXCDefs.h"
+9	4524	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+9	4428	25	#line 4428 "NXCDefs.h"
+9	4429	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+9	4428	29	#line 4428 "NXCDefs.h"
+9	4523	29	#line 4523 "NXCDefs.h"
+9	4524	29	#line 4524 "NXCDefs.h"
+9	4525	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+9	4524	31	#line 4524 "NXCDefs.h"
+9	4524	31	#line 4524 "NXCDefs.h"
+9	4525	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+9	4524	34	#line 4524 "NXCDefs.h"
+9	4441	34	#line 4441 "NXCDefs.h"
+9	4442	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+9	4441	38	#line 4441 "NXCDefs.h"
+9	4524	38	#line 4524 "NXCDefs.h"
+9	4525	38	#line 4525 "NXCDefs.h"
+9	4526	38		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+9	4525	40	#line 4525 "NXCDefs.h"
+9	4459	40	#line 4459 "NXCDefs.h"
+9	4460	40	#pragma macro 4
+9	4460	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+9	4460	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+9	5477	44	#line 5477 "NXCDefs.h"
+9	4459	44	#line 4459 "NXCDefs.h"
+9	4525	44	#line 4525 "NXCDefs.h"
+9	278	44	#line 278 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+9	279	44	#line 279 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+9	280	44		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 1
+9	279	47	#line 279 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+9	279	47	#line 279 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+9	280	47		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+9	4523	49	#line 4523 "NXCDefs.h"
+9	4524	49		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+9	4523	51	#line 4523 "NXCDefs.h"
+9	4523	51	#line 4523 "NXCDefs.h"
+9	4524	51		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+9	4523	53	#line 4523 "NXCDefs.h"
+9	4524	53		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+9	4523	56	#line 4523 "NXCDefs.h"
+9	4524	56		brtst 4, __005__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+9	4523	59	#line 4523 "NXCDefs.h"
+9	4524	59		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+9	4523	62	#line 4523 "NXCDefs.h"
+9	4523	62	#line 4523 "NXCDefs.h"
+9	4524	62		jmp __005__ASM_Label_37
+9	4523	64	#line 4523 "NXCDefs.h"
+9	4524	64		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+9	4523	67	#line 4523 "NXCDefs.h"
+9	4523	67	#line 4523 "NXCDefs.h"
+9	4524	67		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+9	4428	69	#line 4428 "NXCDefs.h"
+9	4429	69		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+9	4428	73	#line 4428 "NXCDefs.h"
+9	4523	73	#line 4523 "NXCDefs.h"
+9	4524	73	#line 4524 "NXCDefs.h"
+9	4525	73		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+9	4524	75	#line 4524 "NXCDefs.h"
+9	4524	75	#line 4524 "NXCDefs.h"
+9	4525	75		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+9	4524	78	#line 4524 "NXCDefs.h"
+9	4441	78	#line 4441 "NXCDefs.h"
+9	4442	78		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+9	4441	82	#line 4441 "NXCDefs.h"
+9	4524	82	#line 4524 "NXCDefs.h"
+9	4525	82	#line 4525 "NXCDefs.h"
+9	4526	82		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+9	4525	84	#line 4525 "NXCDefs.h"
+9	4459	84	#line 4459 "NXCDefs.h"
+9	4460	84	#pragma macro 4
+9	4460	84		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+9	4460	86		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+9	5540	88	#line 5540 "NXCDefs.h"
+9	4459	88	#line 4459 "NXCDefs.h"
+9	4525	88	#line 4525 "NXCDefs.h"
+9	279	88	#line 279 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+9	280	88	#line 280 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+9	281	88		set __SetSensorLight_7qG2_port_7qG2_000_inline_inicializaSensores, 3
+9	280	91	#line 280 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+9	280	91	#line 280 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+9	281	91		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_inicializaSensores, __constVal1
+9	4494	93	#line 4494 "NXCDefs.h"
+9	4495	93		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_inicializaSensores, __SetSensorLight_7qG2_port_7qG2_000_inline_inicializaSensores
+9	4494	95	#line 4494 "NXCDefs.h"
+9	4494	95	#line 4494 "NXCDefs.h"
+9	4495	95		mov __DU0SetSensorLight_inline_inicializaSensores, __SetSensorLight_7qG2_bActive_7qG2_000_inline_inicializaSensores
+9	4494	97	#line 4494 "NXCDefs.h"
+9	4495	97		tst 5, __D0SetSensorLight_inline_inicializaSensores, __DU0SetSensorLight_inline_inicializaSensores
+9	4494	100	#line 4494 "NXCDefs.h"
+9	4495	100		brtst 4, __001__ASM_Label_4, __D0SetSensorLight_inline_inicializaSensores
+9	4494	103	#line 4494 "NXCDefs.h"
+9	4495	103		set __DU0SetSensorLight_inline_inicializaSensores, 5
+9	4494	106	#line 4494 "NXCDefs.h"
+9	4494	106	#line 4494 "NXCDefs.h"
+9	4495	106		jmp __001__ASM_Label_5
+9	4494	108	#line 4494 "NXCDefs.h"
+9	4495	108		set __DU0SetSensorLight_inline_inicializaSensores, 6
+9	4494	111	#line 4494 "NXCDefs.h"
+9	4494	111	#line 4494 "NXCDefs.h"
+9	4495	111		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_inicializaSensores, __DU0SetSensorLight_inline_inicializaSensores
+9	4428	113	#line 4428 "NXCDefs.h"
+9	4429	113		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_inicializaSensores, 0
+9	4428	117	#line 4428 "NXCDefs.h"
+9	4494	117	#line 4494 "NXCDefs.h"
+9	4495	117	#line 4495 "NXCDefs.h"
+9	4496	117		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_inicializaSensores, __SetSensorLight_7qG2_port_7qG2_000_inline_inicializaSensores
+9	4495	119	#line 4495 "NXCDefs.h"
+9	4495	119	#line 4495 "NXCDefs.h"
+9	4496	119		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_inicializaSensores, 128
+9	4495	122	#line 4495 "NXCDefs.h"
+9	4441	122	#line 4441 "NXCDefs.h"
+9	4442	122		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_inicializaSensores, 1
+9	4441	126	#line 4441 "NXCDefs.h"
+9	4495	126	#line 4495 "NXCDefs.h"
+9	4496	126	#line 4496 "NXCDefs.h"
+9	4496	126	#line 4496 "NXCDefs.h"
+9	4459	126	#line 4459 "NXCDefs.h"
+9	4460	126	#pragma macro 4
+9	4460	126		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_inicializaSensores
+9	4460	128		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+9	5631	130	#line 5631 "NXCDefs.h"
+9	4459	130	#line 4459 "NXCDefs.h"
+9	4496	130	#line 4496 "NXCDefs.h"
+9	280	130	#line 280 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+9	281	130	#line 281 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+9	282	130		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 2
+9	281	133	#line 281 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+9	281	133	#line 281 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+9	282	133		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+9	4523	135	#line 4523 "NXCDefs.h"
+9	4524	135		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+9	4523	137	#line 4523 "NXCDefs.h"
+9	4523	137	#line 4523 "NXCDefs.h"
+9	4524	137		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+9	4523	139	#line 4523 "NXCDefs.h"
+9	4524	139		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+9	4523	142	#line 4523 "NXCDefs.h"
+9	4524	142		brtst 4, __006__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+9	4523	145	#line 4523 "NXCDefs.h"
+9	4524	145		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+9	4523	148	#line 4523 "NXCDefs.h"
+9	4523	148	#line 4523 "NXCDefs.h"
+9	4524	148		jmp __006__ASM_Label_37
+9	4523	150	#line 4523 "NXCDefs.h"
+9	4524	150		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+9	4523	153	#line 4523 "NXCDefs.h"
+9	4523	153	#line 4523 "NXCDefs.h"
+9	4524	153		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+9	4428	155	#line 4428 "NXCDefs.h"
+9	4429	155		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+9	4428	159	#line 4428 "NXCDefs.h"
+9	4523	159	#line 4523 "NXCDefs.h"
+9	4524	159	#line 4524 "NXCDefs.h"
+9	4525	159		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+9	4524	161	#line 4524 "NXCDefs.h"
+9	4524	161	#line 4524 "NXCDefs.h"
+9	4525	161		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+9	4524	164	#line 4524 "NXCDefs.h"
+9	4441	164	#line 4441 "NXCDefs.h"
+9	4442	164		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+9	4441	168	#line 4441 "NXCDefs.h"
+9	4524	168	#line 4524 "NXCDefs.h"
+9	4525	168	#line 4525 "NXCDefs.h"
+9	4526	168		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+9	4525	170	#line 4525 "NXCDefs.h"
+9	4459	170	#line 4459 "NXCDefs.h"
+9	4460	170	#pragma macro 4
+9	4460	170		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+9	4460	172		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+9	5694	174	#line 5694 "NXCDefs.h"
+9	4459	174	#line 4459 "NXCDefs.h"
+9	4525	174	#line 4525 "NXCDefs.h"
+9	281	174	#line 281 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+9	284	174	#line 284 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+9	285	174		subret __inicializaSensores_return
+10	288	0	#line 288 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	289	0		mov __signed_stack_001MyMotorTachoCount, __MyMotorTachoCount_7qG2_motor_7qG2_000
+10	288	2	#line 288 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	289	2	#line 289 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	290	2		set __D0MyMotorTachoCount, 1
+10	289	5	#line 289 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	290	5		cmp 4, __D0MyMotorTachoCount, __signed_stack_001MyMotorTachoCount, __D0MyMotorTachoCount
+10	290	9	#line 290 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	291	9		brtst 4, __ASM_Label_718, __D0MyMotorTachoCount
+10	290	12	#line 290 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	291	12		getout __D0MyMotorTachoCount, __MyMotorTachoCount_7qG2_motor_7qG2_000, 4
+10	290	16	#line 290 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	291	16		add MyTcD, MyTcD, __D0MyMotorTachoCount
+10	290	20	#line 290 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	291	20	#line 291 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	292	20		mov __MyMotorTachoCount_7qG2_retorno_7qG2_000, MyTcD
+10	291	22	#line 291 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	291	22	#line 291 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	293	22	#line 293 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	294	22		jmp __ASM_Label_723
+10	293	24	#line 293 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	294	24		mov __signed_stack_001MyMotorTachoCount, __MyMotorTachoCount_7qG2_motor_7qG2_000
+10	293	26	#line 293 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	294	26	#line 294 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	295	26		set __D0MyMotorTachoCount, 0
+10	294	29	#line 294 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	295	29		cmp 4, __D0MyMotorTachoCount, __signed_stack_001MyMotorTachoCount, __D0MyMotorTachoCount
+10	295	33	#line 295 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	296	33		brtst 4, __ASM_Label_726, __D0MyMotorTachoCount
+10	295	36	#line 295 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	296	36		getout __D0MyMotorTachoCount, __MyMotorTachoCount_7qG2_motor_7qG2_000, 4
+10	295	40	#line 295 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	296	40		add MyTcE, MyTcE, __D0MyMotorTachoCount
+10	295	44	#line 295 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	296	44	#line 296 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	297	44		mov __MyMotorTachoCount_7qG2_retorno_7qG2_000, MyTcE
+10	296	46	#line 296 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	296	46	#line 296 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	299	46	#line 299 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	299	46	#line 299 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	299	46	#line 299 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	300	46		mov __MyResetTachoCount_7qG2_motor_7qG2_000, __MyMotorTachoCount_7qG2_motor_7qG2_000
+10	299	48	#line 299 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	299	48	#line 299 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	300	48		subcall MyResetTachoCount, __MyResetTachoCount_return
+10	299	50	#line 299 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	301	50	#line 301 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	302	50		mov __D0MyMotorTachoCount, __MyMotorTachoCount_7qG2_retorno_7qG2_000
+10	301	52	#line 301 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	302	52		subret __MyMotorTachoCount_return
+10	301	54	#line 301 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	304	54	#line 304 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+10	305	54		subret __MyMotorTachoCount_return
+11	308	0	#line 308 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+11	309	0		set __MyMotorTachoCount_7qG2_motor_7qG2_000, 1
+11	308	3	#line 308 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+11	308	3	#line 308 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+11	309	3		subcall MyMotorTachoCount, __MyMotorTachoCount_return
+11	308	5	#line 308 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+11	309	5		mov __MediaTC_7qG2_aux_tc_d_7qG2_000, __D0MyMotorTachoCount
+11	308	7	#line 308 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+11	308	7	#line 308 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+11	309	7	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+11	310	7		set __MyMotorTachoCount_7qG2_motor_7qG2_000, 0
+11	309	10	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+11	309	10	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+11	310	10		subcall MyMotorTachoCount, __MyMotorTachoCount_return
+11	309	12	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+11	309	12	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+11	309	12	#line 309 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+11	311	12	#line 311 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+11	311	12	#line 311 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+11	311	12	#line 311 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+11	311	12	#line 311 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+11	312	12		add __signed_stack_001MediaTC, __MediaTC_7qG2_aux_tc_d_7qG2_000, __D0MyMotorTachoCount
+11	311	16	#line 311 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+11	311	16	#line 311 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+11	312	16		set __D0MediaTC, 2
+11	311	19	#line 311 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+11	312	19		div __D0MediaTC, __signed_stack_001MediaTC, __D0MediaTC
+11	311	23	#line 311 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+11	312	23		subret __MediaTC_return
+11	311	25	#line 311 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+11	314	25	#line 314 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+11	315	25		subret __MediaTC_return
+12	316	0	#line 316 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+12	317	0		set __signed_stack_001distanciaTachoCount, 76
+12	316	3	#line 316 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+12	316	3	#line 316 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+12	317	3		set __D0distanciaTachoCount, 267
+12	316	6	#line 316 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+12	317	6		mul __signed_stack_001distanciaTachoCount, __signed_stack_001distanciaTachoCount, __D0distanciaTachoCount
+12	316	10	#line 316 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+12	316	10	#line 316 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+12	316	10	#line 316 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+12	317	10		mul __signed_stack_001distanciaTachoCount, __signed_stack_001distanciaTachoCount, __distanciaTachoCount_7qG2_grau_7qG2_000
+12	316	14	#line 316 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+12	316	14	#line 316 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+12	317	14		set __D0distanciaTachoCount, 10000
+12	316	17	#line 316 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+12	317	17		div __D0distanciaTachoCount, __signed_stack_001distanciaTachoCount, __D0distanciaTachoCount
+12	316	21	#line 316 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+12	317	21		subret __distanciaTachoCount_return
+12	316	23	#line 316 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+12	320	23	#line 320 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+12	321	23		subret __distanciaTachoCount_return
+13	322	0	#line 322 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	323	0	#pragma macro 24
+13	323	0		acquire __RLSBmutex2
+13	323	1		mov __RLSReadBuf2, __RLSBbufLSWrite1
+13	323	3		set __RLSBytesCount2, 1
+13	323	6		subcall __ReadLSBytes2, ____ReadLSBytes2_return
+13	323	8		index __D0alinha, __RLSReadBuf2, 65535
+13	323	12		release __RLSBmutex2
+13	5908	13	#line 5908 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	322	13	#line 322 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	323	13		mov __alinha_7qG2_ht_7qG2_000, __D0alinha
+13	322	15	#line 322 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	322	15	#line 322 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	323	15	#line 323 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	324	15		getin __alinha_7qG2_luz_7qG2_000, __constVal3, 4
+13	323	19	#line 323 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	323	19	#line 323 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	323	19	#line 323 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	324	19	#line 324 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	325	19		mov __signed_stack_001alinha, __alinha_7qG2_ht_7qG2_000
+13	324	21	#line 324 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	324	21	#line 324 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	325	21		set __D0alinha, 13
+13	324	24	#line 324 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	325	24		cmp 4, __D0alinha, __signed_stack_001alinha, __D0alinha
+13	324	28	#line 324 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	325	28		brtst 5, __ASM_Label_765, __D0alinha
+13	324	31	#line 324 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	325	31		mov __signed_stack_001alinha, __alinha_7qG2_ht_7qG2_000
+13	324	33	#line 324 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	324	33	#line 324 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	325	33		set __D0alinha, 14
+13	324	36	#line 324 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	325	36		cmp 4, __D0alinha, __signed_stack_001alinha, __D0alinha
+13	324	40	#line 324 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	325	40		brtst 5, __ASM_Label_763, __D0alinha
+13	324	43	#line 324 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	325	43		mov __signed_stack_001alinha, __alinha_7qG2_luz_7qG2_000
+13	324	45	#line 324 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	324	45	#line 324 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	325	45		set __D0alinha, 51
+13	324	48	#line 324 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	325	48		cmp 1, __D0alinha, __signed_stack_001alinha, __D0alinha
+13	324	52	#line 324 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	325	52		brtst 4, __ASM_Label_774, __D0alinha
+13	324	55	#line 324 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	325	55		mov __signed_stack_001alinha, __alinha_7qG2_luz_7qG2_000
+13	324	57	#line 324 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	324	57	#line 324 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	325	57		set __D0alinha, 65
+13	324	60	#line 324 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	325	60		cmp 0, __D0alinha, __signed_stack_001alinha, __D0alinha
+13	325	64	#line 325 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	326	64		brtst 4, __ASM_Label_762, __D0alinha
+13	325	67	#line 325 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	326	67		mov __signed_stack_001alinha, __alinha_7qG2_luz_7qG2_000
+13	325	69	#line 325 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	325	69	#line 325 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	326	69		set __D0alinha, 15
+13	325	72	#line 325 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	326	72		cmp 1, __D0alinha, __signed_stack_001alinha, __D0alinha
+13	325	76	#line 325 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	326	76		brtst 4, __ASM_Label_780, __D0alinha
+13	325	79	#line 325 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	326	79		mov __signed_stack_001alinha, __alinha_7qG2_luz_7qG2_000
+13	325	81	#line 325 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	325	81	#line 325 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	326	81		set __D0alinha, 50
+13	325	84	#line 325 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	326	84		cmp 0, __D0alinha, __signed_stack_001alinha, __D0alinha
+13	326	88	#line 326 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	327	88		brtst 4, __ASM_Label_785, __D0alinha
+13	326	91	#line 326 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	327	91		mov __signed_stack_001alinha, __alinha_7qG2_s_7qG2_000
+13	326	93	#line 326 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	326	93	#line 326 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	327	93		set __D0alinha, 80
+13	326	96	#line 326 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	327	96		mul __D0alinha, __signed_stack_001alinha, __D0alinha
+13	326	100	#line 326 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	327	100	#pragma macro 10
+13	327	100		neg __OnRev_Tmp, __D0alinha
+13	327	103		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+13	6031	126	#line 6031 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	326	126	#line 326 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	327	126	#line 327 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	328	126		set __Wait_7qG2_ms_7qG2_000_inline_alinha, 200
+13	327	129	#line 327 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	8869	129	#line 8869 "NXCDefs.h"
+13	8870	129		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_alinha
+13	8869	132	#line 8869 "NXCDefs.h"
+13	327	132	#line 327 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	329	132	#line 329 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	330	132	#pragma macro 7
+13	330	132		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+13	6046	155	#line 6046 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	329	155	#line 329 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	334	155	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	335	155		jmp __ASM_Label_790
+13	334	157	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	335	157		mov __signed_stack_001alinha, __alinha_7qG2_ht_7qG2_000
+13	334	159	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	334	159	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	335	159		set __D0alinha, 17
+13	334	162	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	335	162		cmp 4, __D0alinha, __signed_stack_001alinha, __D0alinha
+13	334	166	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	335	166		brtst 5, __ASM_Label_791, __D0alinha
+13	334	169	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	335	169		mov __signed_stack_001alinha, __alinha_7qG2_ht_7qG2_000
+13	334	171	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	334	171	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	335	171		set __D0alinha, 12
+13	334	174	#line 334 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	335	174		cmp 4, __D0alinha, __signed_stack_001alinha, __D0alinha
+13	335	178	#line 335 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	336	178		brtst 4, __ASM_Label_798, __D0alinha
+13	335	181	#line 335 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	336	181		mov __signed_stack_001alinha, __alinha_7qG2_s_7qG2_000
+13	335	183	#line 335 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	335	183	#line 335 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	336	183		set __D0alinha, 80
+13	335	186	#line 335 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	336	186		mul __D0alinha, __signed_stack_001alinha, __D0alinha
+13	335	190	#line 335 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	336	190	#pragma macro 10
+13	336	190		neg __OnRev_Tmp, __D0alinha
+13	336	193		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+13	6095	216	#line 6095 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	335	216	#line 335 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	336	216	#line 336 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	337	216		set __Wait_7qG2_ms_7qG2_000_inline_alinha, 200
+13	336	219	#line 336 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	8869	219	#line 8869 "NXCDefs.h"
+13	8870	219		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_alinha
+13	8869	222	#line 8869 "NXCDefs.h"
+13	336	222	#line 336 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	338	222	#line 338 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	339	222	#pragma macro 7
+13	339	222		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+13	6106	245	#line 6106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	338	245	#line 338 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	343	245	#line 343 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	343	245	#line 343 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	343	245	#line 343 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	344	245		mov __signed_stack_001alinha, __alinha_7qG2_s_7qG2_000
+13	343	247	#line 343 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	343	247	#line 343 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	344	247		set __D0alinha, 55
+13	343	250	#line 343 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	344	250		mul __D0alinha, __signed_stack_001alinha, __D0alinha
+13	343	254	#line 343 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	344	254	#pragma macro 7
+13	344	254		setout __OUT_AB, 2, __D0alinha, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+13	6125	277	#line 6125 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	343	277	#line 343 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	344	277	#line 344 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	345	277		set __Wait_7qG2_ms_7qG2_000_inline_alinha, 100
+13	344	280	#line 344 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	8869	280	#line 8869 "NXCDefs.h"
+13	8870	280		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_alinha
+13	8869	283	#line 8869 "NXCDefs.h"
+13	344	283	#line 344 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	345	283	#line 345 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	346	283	#pragma macro 24
+13	346	283		acquire __RLSBmutex2
+13	346	284		mov __RLSReadBuf2, __RLSBbufLSWrite1
+13	346	286		set __RLSBytesCount2, 1
+13	346	289		subcall __ReadLSBytes2, ____ReadLSBytes2_return
+13	346	291		index __D0alinha, __RLSReadBuf2, 65535
+13	346	295		release __RLSBmutex2
+13	6136	296	#line 6136 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	345	296	#line 345 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	346	296		mov __alinha_7qG2_ht_7qG2_000, __D0alinha
+13	345	298	#line 345 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	345	298	#line 345 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	346	298	#line 346 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	347	298		getin __alinha_7qG2_luz_7qG2_000, __constVal3, 4
+13	346	302	#line 346 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	346	302	#line 346 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	346	302	#line 346 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	349	302	#line 349 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	350	302		jmp __ASM_Label_761
+13	349	304	#line 349 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	349	304	#line 349 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	350	304	#pragma macro 7
+13	350	304		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+13	6156	327	#line 6156 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	349	327	#line 349 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	353	327	#line 353 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+13	354	327		subret __alinha_return
+14	354	0	#line 354 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	355	0		mov __alinha_7qG2_s_7qG2_000, __constValNeg1
+14	354	2	#line 354 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	354	2	#line 354 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	355	2		subcall alinha, __alinha_return
+14	354	4	#line 354 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	355	4	#line 355 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	356	4		set __MyOnFwd_7qG2_motor_7qG2_000, 1
+14	355	7	#line 355 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	355	7	#line 355 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	356	7		mov __MyOnFwd_7qG2_pot_7qG2_000, __constValNeg90
+14	355	9	#line 355 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	355	9	#line 355 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	356	9		subcall MyOnFwd, __MyOnFwd_return
+14	355	11	#line 355 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	356	11	#line 356 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	357	11		set __MyOnFwd_7qG2_motor_7qG2_000, 0
+14	356	14	#line 356 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	356	14	#line 356 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	357	14		mov __MyOnFwd_7qG2_pot_7qG2_000, __constValNeg90
+14	356	16	#line 356 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	356	16	#line 356 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	357	16		subcall MyOnFwd, __MyOnFwd_return
+14	356	18	#line 356 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	357	18	#line 357 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	358	18		set __Wait_7qG2_ms_7qG2_000_inline_devolve_bonecos, 1
+14	357	21	#line 357 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	8869	21	#line 8869 "NXCDefs.h"
+14	8870	21		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_devolve_bonecos
+14	8869	24	#line 8869 "NXCDefs.h"
+14	357	24	#line 357 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	358	24	#line 358 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	359	24		subcall MediaTC, __MediaTC_return
+14	358	26	#line 358 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	359	26		mov __distanciaTachoCount_7qG2_grau_7qG2_000, __D0MediaTC
+14	358	28	#line 358 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	358	28	#line 358 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	359	28		subcall distanciaTachoCount, __distanciaTachoCount_return
+14	358	30	#line 358 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	359	30		mov __signed_stack_001devolve_bonecos, __D0distanciaTachoCount
+14	358	32	#line 358 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	358	32	#line 358 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	359	32		mov __D0devolve_bonecos, __constValNeg2700
+14	358	34	#line 358 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	359	34		cmp 1, __D0devolve_bonecos, __signed_stack_001devolve_bonecos, __D0devolve_bonecos
+14	359	38	#line 359 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	360	38		brtst 4, __ASM_Label_824, __D0devolve_bonecos
+14	359	41	#line 359 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	360	41		set __Wait_7qG2_ms_7qG2_000_inline_devolve_bonecos, 1
+14	359	44	#line 359 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	8869	44	#line 8869 "NXCDefs.h"
+14	8870	44		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_devolve_bonecos
+14	8869	47	#line 8869 "NXCDefs.h"
+14	359	47	#line 359 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	361	47	#line 361 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	362	47		jmp __ASM_Label_823
+14	361	49	#line 361 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	361	49	#line 361 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	362	49	#pragma macro 7
+14	362	49		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+14	6242	72	#line 6242 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	361	72	#line 361 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	362	72	#line 362 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	363	72		subcall AbrirPorta, __AbrirPorta_return
+14	362	74	#line 362 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	363	74	#line 363 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	364	74		subcall andaBalancando, __andaBalancando_return
+14	363	76	#line 363 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	364	76	#line 364 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	365	76		subcall FecharPorta, __FecharPorta_return
+14	364	78	#line 364 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	365	78	#line 365 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	366	78		mov __alinha_7qG2_s_7qG2_000, __constValNeg1
+14	365	80	#line 365 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	365	80	#line 365 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	366	80		subcall alinha, __alinha_return
+14	365	82	#line 365 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	366	82	#line 366 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	367	82	#pragma macro 14
+14	367	82		mov __SRSTmpBuf, __DCMessageWritePacket
+14	367	84		replace __SRSTmpBuf, __SRSTmpBuf, __constVal2, __constVal2
+14	367	89		replace __SRSTmpBuf, __SRSTmpBuf, __constVal3, __constVal5
+14	367	94		mov __SRSTmpLongVal, __constVal15
+14	367	96		flatten __SRSFlattenBuf, __SRSTmpLongVal
+14	367	99		arrbuild __SRSSendBuf, __SRSTmpBuf, __SRSFlattenBuf
+14	367	104		mov __CBTWArgs.Connection, __constVal1
+14	367	106		mov __CBTWArgs.Buffer, __SRSSendBuf
+14	367	108		syscall 29, __CBTWArgs
+14	6261	111	#line 6261 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	366	111	#line 366 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	366	111	#line 366 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	367	111	#line 367 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	368	111		set __MyOnFwd_7qG2_motor_7qG2_000, 1
+14	367	114	#line 367 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	367	114	#line 367 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	368	114		mov __MyOnFwd_7qG2_pot_7qG2_000, __constValNeg90
+14	367	116	#line 367 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	367	116	#line 367 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	368	116		subcall MyOnFwd, __MyOnFwd_return
+14	367	118	#line 367 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	368	118	#line 368 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	369	118		set __MyOnFwd_7qG2_motor_7qG2_000, 0
+14	368	121	#line 368 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	368	121	#line 368 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	369	121		mov __MyOnFwd_7qG2_pot_7qG2_000, __constValNeg90
+14	368	123	#line 368 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	368	123	#line 368 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	369	123		subcall MyOnFwd, __MyOnFwd_return
+14	368	125	#line 368 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	369	125	#line 369 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	370	125		set __Wait_7qG2_ms_7qG2_000_inline_devolve_bonecos, 1
+14	369	128	#line 369 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	8869	128	#line 8869 "NXCDefs.h"
+14	8870	128		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_devolve_bonecos
+14	8869	131	#line 8869 "NXCDefs.h"
+14	369	131	#line 369 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	370	131	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	371	131		subcall MediaTC, __MediaTC_return
+14	370	133	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	371	133		mov __distanciaTachoCount_7qG2_grau_7qG2_000, __D0MediaTC
+14	370	135	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	370	135	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	371	135		subcall distanciaTachoCount, __distanciaTachoCount_return
+14	370	137	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	371	137		mov __signed_stack_001devolve_bonecos, __D0distanciaTachoCount
+14	370	139	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	370	139	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	371	139		mov __D0devolve_bonecos, __constValNeg2000
+14	370	141	#line 370 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	371	141		cmp 1, __D0devolve_bonecos, __signed_stack_001devolve_bonecos, __D0devolve_bonecos
+14	371	145	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	372	145		brtst 4, __ASM_Label_844, __D0devolve_bonecos
+14	371	148	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	372	148		set __Wait_7qG2_ms_7qG2_000_inline_devolve_bonecos, 1
+14	371	151	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	8869	151	#line 8869 "NXCDefs.h"
+14	8870	151		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_devolve_bonecos
+14	8869	154	#line 8869 "NXCDefs.h"
+14	371	154	#line 371 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	373	154	#line 373 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	374	154		jmp __ASM_Label_843
+14	373	156	#line 373 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	373	156	#line 373 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	374	156	#pragma macro 7
+14	374	156		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+14	6332	179	#line 6332 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	373	179	#line 373 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	374	179	#line 374 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	375	179		subcall AbrirPorta, __AbrirPorta_return
+14	374	181	#line 374 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	375	181	#line 375 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	376	181		subcall andaBalancando, __andaBalancando_return
+14	375	183	#line 375 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	376	183	#line 376 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	377	183		subcall FecharPorta, __FecharPorta_return
+14	376	185	#line 376 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	377	185	#line 377 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	378	185		mov __alinha_7qG2_s_7qG2_000, __constValNeg1
+14	377	187	#line 377 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	377	187	#line 377 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	378	187		subcall alinha, __alinha_return
+14	377	189	#line 377 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	378	189	#line 378 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	379	189		set __MyOnFwd_7qG2_motor_7qG2_000, 1
+14	378	192	#line 378 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	378	192	#line 378 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	379	192		set __MyOnFwd_7qG2_pot_7qG2_000, 90
+14	378	195	#line 378 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	378	195	#line 378 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	379	195		subcall MyOnFwd, __MyOnFwd_return
+14	378	197	#line 378 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	379	197	#line 379 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	380	197		set __MyOnFwd_7qG2_motor_7qG2_000, 0
+14	379	200	#line 379 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	379	200	#line 379 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	380	200		set __MyOnFwd_7qG2_pot_7qG2_000, 90
+14	379	203	#line 379 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	379	203	#line 379 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	380	203		subcall MyOnFwd, __MyOnFwd_return
+14	379	205	#line 379 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	380	205	#line 380 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	381	205		set __Wait_7qG2_ms_7qG2_000_inline_devolve_bonecos, 1
+14	380	208	#line 380 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	8869	208	#line 8869 "NXCDefs.h"
+14	8870	208		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_devolve_bonecos
+14	8869	211	#line 8869 "NXCDefs.h"
+14	380	211	#line 380 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	381	211	#line 381 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	382	211		subcall MediaTC, __MediaTC_return
+14	381	213	#line 381 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	382	213		mov __distanciaTachoCount_7qG2_grau_7qG2_000, __D0MediaTC
+14	381	215	#line 381 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	381	215	#line 381 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	382	215		subcall distanciaTachoCount, __distanciaTachoCount_return
+14	381	217	#line 381 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	382	217		mov __signed_stack_001devolve_bonecos, __D0distanciaTachoCount
+14	381	219	#line 381 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	381	219	#line 381 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	382	219		set __D0devolve_bonecos, 2000
+14	381	222	#line 381 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	382	222		cmp 0, __D0devolve_bonecos, __signed_stack_001devolve_bonecos, __D0devolve_bonecos
+14	382	226	#line 382 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	383	226		brtst 4, __ASM_Label_864, __D0devolve_bonecos
+14	382	229	#line 382 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	383	229		set __Wait_7qG2_ms_7qG2_000_inline_devolve_bonecos, 1
+14	382	232	#line 382 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	8869	232	#line 8869 "NXCDefs.h"
+14	8870	232		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_devolve_bonecos
+14	8869	235	#line 8869 "NXCDefs.h"
+14	382	235	#line 382 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	384	235	#line 384 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	385	235		jmp __ASM_Label_863
+14	384	237	#line 384 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	384	237	#line 384 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	385	237	#pragma macro 7
+14	385	237		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+14	6418	260	#line 6418 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	384	260	#line 384 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	388	260	#line 388 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+14	389	260		subret __devolve_bonecos_return
+15	391	0	#line 391 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	392	0		strcat __strbufiniciaBlue, __constStr0009
+15	391	4	#line 391 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	392	4		mov __iniciaBlue_7qG2_DADOS_BT_7qG2_000.Name, __strbufiniciaBlue
+15	391	6	#line 391 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	392	6	#line 392 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	393	6		set __iniciaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot, 1
+15	392	9	#line 392 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	392	9	#line 392 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	393	9	#line 393 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	394	9		set __iniciaBlue_7qG2_DADOS_BT_7qG2_000.Action, 1
+15	393	12	#line 393 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	393	12	#line 393 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	396	12	#line 396 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	397	12	#pragma macro 4
+15	397	12	#line 397 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	397	12		syscall 36, __iniciaBlue_7qG2_DADOS_BT_7qG2_000
+15	395	15	#line 395 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	395	15	#line 395 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	395	15	#line 395 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	395	15	#line 395 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	396	15	#line 396 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	396	15	#line 396 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	396	15	#line 396 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	397	15		set __Wait_7qG2_ms_7qG2_000_inline_iniciaBlue, 4000
+15	396	18	#line 396 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	8869	18	#line 8869 "NXCDefs.h"
+15	8870	18		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_iniciaBlue
+15	8869	21	#line 8869 "NXCDefs.h"
+15	396	21	#line 396 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	397	21	#line 397 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	398	21		set __signed_stack_001iniciaBlue, 0
+15	397	24	#line 397 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	397	24	#line 397 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	398	24		set __signed_stack_002iniciaBlue, 48
+15	397	27	#line 397 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	397	27	#line 397 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	398	27		strcat __strbufiniciaBlue, __constStr0010
+15	397	31	#line 397 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	398	31		acquire __TextOutMutex
+15	397	32	#line 397 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	398	32		mov __TextOutArgs.Location.X, __signed_stack_001iniciaBlue
+15	397	35	#line 397 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	398	35		mov __TextOutArgs.Location.Y, __signed_stack_002iniciaBlue
+15	397	38	#line 397 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	398	38		set __TextOutArgs.Options, 0
+15	397	41	#line 397 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	398	41		mov __TextOutArgs.Text, __strbufiniciaBlue
+15	397	43	#line 397 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	398	43		syscall 13, __TextOutArgs
+15	397	46	#line 397 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	397	46	#line 397 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	398	46		release __TextOutMutex
+15	397	47	#line 397 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	401	47	#line 401 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+15	402	47		subret __iniciaBlue_return
+16	404	0	#line 404 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	405	0		strcat __strbufdesligaBlue, __constStr0009
+16	404	4	#line 404 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	405	4		mov __desligaBlue_7qG2_DADOS_BT_7qG2_000.Name, __strbufdesligaBlue
+16	404	6	#line 404 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	405	6	#line 405 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	406	6		set __desligaBlue_7qG2_DADOS_BT_7qG2_000.ConnectionSlot, 1
+16	405	9	#line 405 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	405	9	#line 405 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	406	9	#line 406 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	407	9		set __desligaBlue_7qG2_DADOS_BT_7qG2_000.Action, 0
+16	406	12	#line 406 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	406	12	#line 406 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	409	12	#line 409 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	410	12	#pragma macro 4
+16	410	12	#line 410 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	410	12		syscall 36, __desligaBlue_7qG2_DADOS_BT_7qG2_000
+16	408	15	#line 408 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	408	15	#line 408 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	408	15	#line 408 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	408	15	#line 408 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	410	15	#line 410 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	409	15	#line 409 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	410	15	#line 410 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	411	15		set __Wait_7qG2_ms_7qG2_000_inline_desligaBlue, 30
+16	410	18	#line 410 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	8869	18	#line 8869 "NXCDefs.h"
+16	8870	18		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_desligaBlue
+16	8869	21	#line 8869 "NXCDefs.h"
+16	410	21	#line 410 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	412	21	#line 412 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	413	21	#pragma macro 5
+16	413	21		mov __CBTCSArgs.Connection, __constVal1
+16	413	23		syscall 28, __CBTCSArgs
+16	413	26		mov __signed_stack_001desligaBlue, __CBTCSArgs.Result
+16	6547	28	#line 6547 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	412	28	#line 412 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	412	28	#line 412 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	413	28		set __D0desligaBlue, 0
+16	412	31	#line 412 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	413	31		cmp 4, __D0desligaBlue, __signed_stack_001desligaBlue, __D0desligaBlue
+16	412	35	#line 412 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	413	35		brtst 4, __ASM_Label_886, __D0desligaBlue
+16	412	38	#line 412 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	413	38		jmp __ASM_Label_885
+16	412	40	#line 412 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	412	40	#line 412 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	413	40	#line 413 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	414	40		set __signed_stack_001desligaBlue, 0
+16	413	43	#line 413 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	413	43	#line 413 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	414	43		set __signed_stack_002desligaBlue, 56
+16	413	46	#line 413 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	413	46	#line 413 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	414	46		strcat __strbufdesligaBlue, __constStr0011
+16	413	50	#line 413 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	414	50		acquire __TextOutMutex
+16	413	51	#line 413 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	414	51		mov __TextOutArgs.Location.X, __signed_stack_001desligaBlue
+16	413	54	#line 413 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	414	54		mov __TextOutArgs.Location.Y, __signed_stack_002desligaBlue
+16	413	57	#line 413 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	414	57		set __TextOutArgs.Options, 0
+16	413	60	#line 413 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	414	60		mov __TextOutArgs.Text, __strbufdesligaBlue
+16	413	62	#line 413 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	414	62		syscall 13, __TextOutArgs
+16	413	65	#line 413 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	414	65		mov __D0desligaBlue, __TextOutArgs.Result
+16	413	68	#line 413 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	414	68		release __TextOutMutex
+16	413	69	#line 413 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	416	69	#line 416 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+16	417	69		subret __desligaBlue_return
+17	417	0	#line 417 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+17	417	0	#line 417 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+17	418	0		arrinit __central_2, __constVal0, __constVal5
+17	417	4	#line 417 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+17	418	4		arrinit central, __central_2, __constVal5
+17	417	8	#line 417 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+17	417	8	#line 417 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+17	418	8		arrinit __barreira_2, __constVal0, __constVal5
+17	417	12	#line 417 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+17	418	12		arrinit barreira, __barreira_2, __constVal5
+17	417	16	#line 417 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+17	417	16	#line 417 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+17	418	16		arrinit __caverna_2, __constVal0, __constVal5
+17	417	20	#line 417 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+17	418	20		arrinit caverna, __caverna_2, __constVal5
+17	417	24	#line 417 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+17	418	24		arrinit caminho, __constVal0, __constVal25
+17	417	28	#line 417 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc"
+17	418	28		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc
+1	__ResetSensorSubroutine	84	NXTDefs.h
+2	__ReadLSBytes2	97	NXTDefs.h
+3	init	187	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc
+4	MyOnFwd	205	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc
+5	andaBalancando	274	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc
+6	AbrirPorta	459	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc
+7	FecharPorta	542	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc
+8	MyResetTachoCount	623	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc
+9	inicializaSensores	681	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc
+10	MyMotorTachoCount	857	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc
+11	MediaTC	913	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc
+12	distanciaTachoCount	940	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc
+13	alinha	965	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc
+14	devolve_bonecos	1294	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc
+15	iniciaBlue	1556	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc
+16	desligaBlue	1605	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc
+17	__initialize_global_data	1676	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecos.nxc

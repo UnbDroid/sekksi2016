@@ -1,0 +1,101 @@
+//angulos
+#define ANGULOREJEITADIREITA 1520
+#define ANGCORRECAOVOLTA -45
+#define ANGULOREJEITAESQUERDA 1520
+#define ANGCORRECAOVOLTAESQUERDA -40
+
+#define MD OUT_B //motor da direita
+#define ME OUT_A //motor da esquerda
+#define MD_ME OUT_AB// os dois motores de movimento
+//declaracoes das funcoes
+void rejeitar();
+void rejeitarDireita();
+void voltarejeitarDireita();
+void rejeitarEsquerda();
+void voltarejeitarEsquerda();
+
+void parar()
+{
+	OnFwd(MD,0);
+	OnFwd(ME,0);
+}
+
+task main(){
+	rejeitar();
+}
+
+void rejeitarEsquerda()
+{
+	int tc;
+
+	//bip();
+	OnFwd(MD,90);
+	//bip();
+
+	do{
+     tc = MotorTachoCount(MD);
+  	}while(tc<ANGULOREJEITAESQUERDA);
+  	//bip();
+	parar();
+}
+
+void voltarejeitarEsquerda()
+{
+	int tc;
+
+	OnFwd(MD,-90);
+
+	do {
+		tc = MotorTachoCount(MD);
+	} while(tc>(-ANGULOREJEITAESQUERDA)-ANGCORRECAOVOLTAESQUERDA);
+
+	parar();
+}
+
+void rejeitar()
+{
+	//bip();
+	//bip();
+	//implementar uma função para decidir para qual lado deve girar
+	//rejeitarDireita();
+	//bip();
+	//MandaGirei();
+	//bip();
+	//while(!RecebeDesgirar()){}
+	//bip();
+	rejeitarEsquerda();
+	Wait(2000);
+	voltarejeitarEsquerda();
+	//voltarejeitarDireita();
+	//bip();
+	//MandaDesGirei();
+	//bip();
+}
+
+void rejeitarDireita()
+{
+	int tc;
+
+	//bip();
+	OnFwd(ME,90);
+	//bip();
+
+	do{
+     tc = MotorTachoCount(ME);
+  	}while(tc<ANGULOREJEITADIREITA);
+  	//bip();
+	parar();
+}
+
+void voltarejeitarDireita()
+{
+	int tc;
+
+	OnFwd(ME,-90);
+
+	do {
+		tc = MotorTachoCount(ME);
+	} while(tc>(-ANGULOREJEITADIREITA)-ANGCORRECAOVOLTA);
+
+	parar();
+}

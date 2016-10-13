@@ -1,13 +1,15 @@
 //regulaveis
-#define CORRECAO_ANDA_QUADRANTE 695//10^-7 metros
-#define CONSTANTE_DIST_TC 11
-
-#define POTENCIA_RETO_DIREITA 83
+#define POTENCIA_RETO_DIREITA 79
 #define POTENCIA_RETO_ESQUERDA 90
 #define TEMPO_DEPOIS_E_ANTES_DE_GIRAR 200
 
-#define TAMANHO_DA_ARENA 177
+#define TAMANHO_DA_ARENA 183
 #define DISTANCIA_ENTRE_OS_SENSORES 26
+
+//Constantes de Controle
+#define KP 10
+#define KD 20
+#define DIST_LIMITE 16
 
 //SENSORES E MOTORES
 #define MD OUT_B //motor da direita
@@ -35,7 +37,6 @@
 	#define INBOX 1
 	#define OUTBOX 2
 	#define OUTBOX_ANG 3
-	#define OUTBOX_CORBONECO 4
 
 //defines da struct
 
@@ -48,7 +49,6 @@
 #define BONECO_BRANCO 1
 #define BONECO_PRETO 2
 #define BONECO_VERMELHO 3
-
 
 //cor do chao
 #define CHAO_PRETO 14
@@ -88,28 +88,15 @@
 #define VIRA 12
 #define COMECEAGIRAR 13
 #define PAREDEGIRAR 14
-#define TEMOUNAOBONECO 15
-#define SIMTEM 16
-#define NAOVIRGULANAOTEM 17
-#define TEMBONECO 18
 
-/*//CONSTANTES PID
-#define TENDE_DIRESQ -39/100     // de -100(vira pra direita) a 100(vira pra esquerda)
-#define P_FRENTE 350
-#define I_FRENTE 50
-#define D_FRENTE 150
+//CONSTANTES PID
+#define TENDE_DIRESQ 0// de -100(vira pra direita) a 100(vira pra esquerda)
+#define P_FRENTE 3
+#define I_FRENTE 5
+#define D_FRENTE 3
 #define P_TRAS 200
 #define I_TRAS 100
 #define D_TRAS 200
-*/
-
-//PID MAIS RETO
-#define TENDE_DIRESQ 0   // de -100(vira pra direita) a 100(vira pra esquerda)
-#define P_FRENTE 350
-#define I_FRENTE 100       //     50
-#define D_FRENTE 150      //       150
-
-
 
 //contantes do mapeamento
 #define NORTE 0
@@ -126,22 +113,26 @@
 
 //HT
 #define HTPRETO1 17               //para o HT, preto e branco assumem dois valores diferentes cada
-#define HTPRETO2 17//12
-#define HTBRANCOMIN 245
+#define HTPRETO2 12
+#define HTBRANCO1 13
+#define HTBRANCO2 14
 #define HTAZUL 2
 #define HTVERDE 4
 //SENSOR DE LUZ
-#define LUZ_PRETO_MAX 50
+#define LUZ_PRETO_MAX 30
 #define LUZ_PRETO_MIN 15
-#define LUZ_BRANCO_MAX 100
-#define LUZ_BRANCO_MIN 51
+#define LUZ_BRANCO_MAX 65
+#define LUZ_BRANCO_MIN 35
 
 #define DIFERENCIALDEERRODOANGULO 5
 
 #define PARA_FRENTE 1
 #define PARA_TRAS -1
-//Variáveis do HT
-int ht_colornum, ht_red, ht_green, ht_blue, ht_white;
+
+
+
+//variávei do controle
+int distanciaAtualDireita, distanciaAtualEsquerda, distanciaAntigaDireita, distanciaAntigaEsquerda;
 
 //variáveis gloabais do mapeamento
 int central[5][5], barreira[5][5], caverna[5][5];
@@ -152,13 +143,13 @@ int i_global, j_global;
 int progredi_na_tabela;
 int zona;
 
+
 //variáveis globais
 int MyTcD;
 int MyTcE;
 int free_to_go;
 int poteGlobal;
 int potdGlobal;
-int trc_refD, trc_refE;
 
 //funções de subistituições
 void MyOnFwd(int motor, int pot);
@@ -199,30 +190,19 @@ int MediaTC();
 int distanciaTachoCount(int grau);
 void MandaCalibra();
 void MyOnRev(int motor, int pot);
-void MyOnFwdSyncPID(int pot);
+void MyOnFwdSyncPID(int motores, int pot, int turnDirEsq, int p, int i, int d);
 void MyOnRevSyncPID(int motores, int pot, int turnDirEsq, int p, int i, int d);
 int TemQueDescartarParaAEsquerda();
 void MandaStart();
 void MandaStop();
-//void RegulaComUS(int distParede, int direcao);
+void RegulaComUS(int distParede, int direcao);
 void SeguindoRota();
 void SairCasa();
 int idmediaTC();
 sub alinha(int s);
 int ReceberPareGirar();
 int ReceberComeceGirar();
-float GetGyroOffset();
-void reset_controle();
-void alinha_parede();
-int velocidademedia();
-int distanciaGiroDireita(int grau);
-int distanciaGiroEsquerda(int grau);
-int TalvezRegulaParede();
-int TemBonecoNoConsultor();
-void rota(int n);
-int TachoCountDistancia(int dist);
-void regulaTC(int dir_antiga);
-void inicializaBoneco();
+
 
 //função para dbug
 void  bip()
@@ -242,10 +222,6 @@ void  bip()
 //função principal
 task main()
 {
-	/*desligaBlue();
-	iniciaBlue();
-	viraDir(90);
-	*/
 	executivo();
 }
 
@@ -285,6 +261,24 @@ void executivo()
 			case CHEIO:
 				caminho[contPassos] = -1;
 				andar();
+				/*
+				viraDir(180);
+				AbrirPorta();
+				//andar();
+				for(int i=0;i<7;i++)
+				{
+					MyOnFwd(ME, 0);
+					MyOnFwd(MD,90);
+					while(MotorTachoCount(MD) < ANGULO_CAGADINHA){}
+					MyOnFwd(MD, 0);
+					MyOnFwd(ME,90);
+					while(MotorTachoCount(ME) < ANGULO_CAGADINHA){}
+				}
+				parar();
+				FecharPorta();
+
+
+				while(1){}*/
 			break;
 		}
 
@@ -304,9 +298,7 @@ void init()
   	inicializaSensores();
   	iniciaBlue();
 
-  	inicializaBoneco();
-
-  	SairCasa();//comentado para testes enquanto a arena não esta pronta
+  	SairCasa();
 
   	FecharPorta();
 
@@ -318,12 +310,9 @@ void init()
 	poteGlobal = POTENCIA_RETO_ESQUERDA;
 	potdGlobal = POTENCIA_RETO_DIREITA;
 
-	direcao = NORTE;
-	rota(2);
-
-	Wait(400);
+	viraDir(90);
+	Wait(200);
 	MandaCalibra();
-
 	MyResetTachoCount(MD);
 	MyResetTachoCount(ME);
 	MyTcD = 0;
@@ -356,7 +345,6 @@ void inicializaSensores()
   SetSensorLowspeed(USE);
   SetSensorLight(SLUZ);
   SetSensorLowspeed(HT);
-  SetHTColor2Mode(HT, HT_CMD_COLOR2_ACTIVE);
 }
 
 void iniciaBlue()
@@ -523,14 +511,14 @@ void FecharPorta()
 int RecebeDesgirar()
 {
 	int aux;
-	ReceiveRemoteNumber(INBOX, true, aux);
-	if(aux == DESGIRAR)
-  		return 1;
-	return 0;
+  	ReceiveRemoteNumber(INBOX, true, aux);
+  	if(aux == DESGIRAR)
+    	return 1;
+  	return 0;
 }
 
 void viraEsq(int angulo){ // função que faz o robô girar para a esquerda o ângulo recebido
-  Off(MD);
+  	Off(MD);
 	Off(ME);
 
 	angulo = -angulo;
@@ -568,14 +556,14 @@ void MyOnFwd(int motor, int pot)
 {
 	//bip();
 	//Wait(350)
-	/*if(motor == MD)
+	if(motor == MD)
 	{
 		MyTcD += MotorTachoCount(motor);
 	}
 	else if(motor == ME)
 	{
 		MyTcE += MotorTachoCount(motor);
-	}*/
+	}
 	//bip();
 	OnFwd(motor,pot);
 }
@@ -586,35 +574,35 @@ int MyMotorTachoCount(int motor)
 
 	if(motor == MD)
 	{
-		MyTcD = MotorRotationCount(motor) - trc_refD;
+		MyTcD += MotorTachoCount(motor);
 		retorno = MyTcD;
-		/*ClearScreen();
-		NumOut(0,LCD_LINE1,MotorActualSpeed(motor));
-		NumOut(0,LCD_LINE2,trc_refD);
-		NumOut(0,LCD_LINE3,retorno);*/
-
 	}
 	else if(motor == ME)
 	{
-		MyTcE = MotorRotationCount(motor) - trc_refE;
+		MyTcE += MotorTachoCount(motor);
 		retorno = MyTcE;
 	}
 
-	//MyResetTachoCount(motor);
+	MyResetTachoCount(motor);
 
 	return (retorno);
 }
 
 void MyResetTachoCount(int motor)
 {
-	if(motor == MD)
-	{
-		trc_refD = MotorRotationCount(motor);
-	}
-	else if(motor == ME)
-	{
-		trc_refE = MotorRotationCount(motor);
-	}
+	int pd, pe;
+
+	pd = MotorActualSpeed(MD);
+	pe = MotorActualSpeed(ME);
+
+	do{
+		ResetTachoCount(motor);
+		//bip();
+		//bip();
+	}while((MotorTachoCount(motor)>DIFERENCIALDEERRODOANGULO) || (MotorTachoCount(motor)<-DIFERENCIALDEERRODOANGULO));
+	MyOnFwd(MD,pd);
+	MyOnFwd(ME,pe);
+
 }
 
 int MediaTC()
@@ -623,18 +611,13 @@ int MediaTC()
 
 	aux_tc_d = MyMotorTachoCount(MD);
 	aux_tc_e = MyMotorTachoCount(ME);
-	
+
 	return((aux_tc_d+aux_tc_e)/2);
 }
 
 int distanciaTachoCount(int grau)
 {
-	return ((267*CONSTANTE_DIST_TC*grau)/1000);  //Distancia a ser percorrid/Raio da roda
-}
-
-int TachoCountDistancia(int dist)
-{
-	return ((1000*dist)/267*CONSTANTE_DIST_TC);  //Distancia a ser percorrid/Raio da roda
+	return ((267*grau)/100);  //Distancia a ser percorrid/Raio da roda
 }
 
 void MandaCalibra()
@@ -673,7 +656,7 @@ void init_mapeamento()
 
 	direcao = LESTE;
 
-	//teste do luan
+	//teste
 	caminho[0] = LESTE;
 	caminho[1] = NORTE;
 	caminho[2] = NORTE;
@@ -787,31 +770,31 @@ void MyOnRev(int motor, int pot)
 {
   //bip();
   //Wait(350)
-  /*if(motor == MD)
+  if(motor == MD)
   {
     MyTcD += MotorTachoCount(motor);
   }
   else if(motor == ME)
   {
     MyTcE += MotorTachoCount(motor);
-  }*/
+  }
   //bip();
   OnRev(motor,pot);
   }
 
-void MyOnFwdSyncPID(int pot){
+void MyOnFwdSyncPID(int motores, int pot, int turnDirEsq, int p, int i, int d){
 
-  //MyTcD += MotorTachoCount(MD);
-  //MyTcE += MotorTachoCount(ME);
+  MyTcD += MotorTachoCount(MD);
+  MyTcE += MotorTachoCount(ME);
   //bip();
   //OnFwdSyncPID(motores, pot, turnDirEsq, p, i ,d);
-  OnFwdSyncPID(MD_ME,pot,TENDE_DIRESQ,P_FRENTE,I_FRENTE,D_FRENTE);
+  OnFwdSyncPID(MD_ME,pot,turnDirEsq,p,i,d);
   //bip();
 }
 
 void MyOnRevSyncPID(int motores, int pot, int turnDirEsq, int p, int i, int d){
-  //MyTcD += MotorTachoCount(MD);
-  //MyTcE += MotorTachoCount(ME);
+  MyTcD += MotorTachoCount(MD);
+  MyTcE += MotorTachoCount(ME);
   OnRevSyncPID(MD_ME, pot, turnDirEsq, p, i ,d);
 }
 
@@ -832,6 +815,7 @@ void AndaNaTabela()
 			j_global--;
 		break;
 	}
+
 
 	ClearScreen();
 	NumOut(0,LCD_LINE1,i_global);
@@ -991,14 +975,149 @@ void MandaStop()
 	//nbip(7);
 }
 
+void RegulaComUS(int distParede, int direcao){
+
+
+   if(direcao == ESQUERDA){
+   	distanciaAntigaEsquerda = distanciaAtualEsquerda;
+    distanciaAtualEsquerda = SensorUS(USE);
+    if (distanciaAtualEsquerda == distParede){
+       //potdGlobal = 81;
+       //poteGlobal = 90;
+     }
+     else if(distanciaAtualEsquerda > distParede){
+       if(distanciaAtualEsquerda < distParede + DIST_LIMITE){// diz um limite pra ignorar o sinal do US
+         if(potdGlobal < 90){//mais pot pra direita> vira esq
+              potdGlobal += KP;
+         }else{
+            if(poteGlobal > 60){
+              poteGlobal -= KP;
+            }
+          }
+        }
+     }
+     else if(distanciaAtualEsquerda < distParede){
+       if(distanciaAtualEsquerda > distParede - DIST_LIMITE){
+         if(poteGlobal < 90){ // mais pot pra esquerda > vira dir
+            poteGlobal += KP;
+         }else{
+            if(potdGlobal > 60){
+              potdGlobal -= KP;
+            }
+          }
+        }
+     }
+   }else if(direcao == DIREITA){
+     distanciaAntigaDireita = distanciaAtualDireita;
+     distanciaAtualDireita = SensorUS(USD);
+     if (distanciaAtualDireita == distParede){
+       //potdGlobal = 81;
+       //poteGlobal = 90;
+     }
+     else if(distanciaAtualDireita > distParede){
+       if(distanciaAtualDireita < distParede + DIST_LIMITE){
+         if(poteGlobal < 90){ // mais pot pra esquerda > vira dir
+            poteGlobal += KP;
+         }else{
+            if(potdGlobal > 60){
+              potdGlobal -= KP;
+            }
+          }
+        }
+     }
+     else if(distanciaAtualDireita < distParede){
+       if(distanciaAtualDireita > distParede - DIST_LIMITE){
+         if(potdGlobal < 90){//mais pot pra di reita> vira esq
+              potdGlobal += KP;
+         }else{
+            if(poteGlobal > 60){
+              poteGlobal -= KP;
+            }
+          }
+        }
+     }
+   }
+
+
+   //derivativo
+   	int cond1 = ((distanciaAtualDireita < distParede + DIST_LIMITE) && (distanciaAtualDireita > distParede - DIST_LIMITE));
+   	int cond2 = ((distanciaAntigaDireita < distParede + DIST_LIMITE) && (distanciaAntigaDireita > distParede - DIST_LIMITE));
+    if(((direcao == DIREITA)&&(cond1))&&(cond2))
+    {
+    	potdGlobal -= KD*(distanciaAtualDireita - distanciaAntigaDireita);
+    	poteGlobal += KD*(distanciaAtualDireita - distanciaAntigaDireita);
+    }
+
+    int cond3 = ((distanciaAtualEsquerda < distParede + DIST_LIMITE) && (distanciaAtualEsquerda > distParede - DIST_LIMITE));
+   	int cond4 = ((distanciaAntigaEsquerda < distParede + DIST_LIMITE) && (distanciaAntigaEsquerda > distParede - DIST_LIMITE));
+    if(((direcao == ESQUERDA)&&(cond3))&&(cond4))
+    {
+    	poteGlobal -= KD*(distanciaAtualEsquerda - distanciaAntigaEsquerda);
+    	potdGlobal += KD*(distanciaAtualEsquerda - distanciaAntigaEsquerda);
+    }
+
+    if(potdGlobal < 60)
+       potdGlobal = 60;
+   	else if(potdGlobal > 90)
+       potdGlobal = 90;
+
+    if(poteGlobal < 60)
+       poteGlobal = 60;
+   	else if(poteGlobal > 90)
+       poteGlobal = 90;
+
+
+   MyOnFwd(MD, potdGlobal);
+   MyOnFwd(ME, poteGlobal);
+   Wait(50);
+}
+
 void AndaFrente()
 {
-	MyOnFwdSyncPID(90);	
-  	//OnFwdReg(MD_ME,90,OUT_REGMODE_SPEED);
+	int distancia_direita, distancia_esquerda;
+
+	distancia_direita = -1;
+	distancia_esquerda = -1;
+
+	MyOnFwd(MD,potdGlobal);
+	MyOnFwd(ME,poteGlobal);
 
 
-	//MyOnFwd(MD, POTENCIA_RETO_DIREITA);//potdGlobal);
-  	//MyOnFwd(ME, POTENCIA_RETO_ESQUERDA);//poteGlobal);
+	switch(direcao)
+	{
+		case NORTE:
+				if(j_global<=2)
+					distancia_esquerda = 7+(j_global*TAMANHO_DA_ARENA)/5;
+				else
+					distancia_direita = 7+((4-j_global)*TAMANHO_DA_ARENA)/5;
+		break;
+		case LESTE:
+				if(i_global<=2)
+					distancia_direita = 7+(i_global*TAMANHO_DA_ARENA)/5;
+				else
+					distancia_esquerda = 7+((4-i_global)*TAMANHO_DA_ARENA)/5;
+		break;
+		case SUL:
+				if(j_global<=2)
+					distancia_direita = 7+((j_global)*TAMANHO_DA_ARENA)/5;
+				else
+					distancia_esquerda = 7+((4-j_global)*TAMANHO_DA_ARENA)/5;
+		break;
+		case OESTE:
+				if(i_global<=2)
+					distancia_esquerda = 7+((i_global)*TAMANHO_DA_ARENA)/5;
+				else
+					distancia_direita = 7+((4-i_global)*TAMANHO_DA_ARENA)/5;
+		break;
+	}
+
+	if(distancia_esquerda == -1)
+		distancia_esquerda = TAMANHO_DA_ARENA -(distancia_direita + DISTANCIA_ENTRE_OS_SENSORES);
+	else
+		distancia_direita = TAMANHO_DA_ARENA -(distancia_esquerda + DISTANCIA_ENTRE_OS_SENSORES);
+
+	RegulaComUS(distancia_direita, DIREITA);
+	RegulaComUS(distancia_esquerda, ESQUERDA);
 }
 
 void SeguindoRota()
@@ -1009,11 +1128,9 @@ void SeguindoRota()
 
 	distancia_media = distanciaTachoCount(MediaTC());
 
-	//if(distancia_media <= ((100*TAMANHO_DA_ARENA)/5) - CORRECAO_ANDA_QUADRANTE)
-	if(distancia_media <= (((100*TAMANHO_DA_ARENA)/5) - CORRECAO_ANDA_QUADRANTE))
+	if(distancia_media <= (100*TAMANHO_DA_ARENA)/5)
 	{
-		//if((distancia_media >= (100*TAMANHO_DA_ARENA)/(5*2))&&(!progredi_na_tabela) - CORRECAO_ANDA_QUADRANTE/2)
-		if((distancia_media >= (((100*TAMANHO_DA_ARENA)/(5*2)) - CORRECAO_ANDA_QUADRANTE/2) )&&(!progredi_na_tabela))
+		if((distancia_media >= (100*TAMANHO_DA_ARENA)/(5*2))&&(!progredi_na_tabela))
 		{
 			AndaNaTabela();
 			progredi_na_tabela = 1;
@@ -1023,51 +1140,15 @@ void SeguindoRota()
 			}
 		}
 
-		if((!MotorActualSpeed(MD))&&(!MotorActualSpeed(ME)))
-		{
-			AndaFrente();
-		}
+		AndaFrente();
 	}
 	else
 	{
+
+		Wait(200);//nao há colher
+		MandaStop();
+
 		aux_dir = direcao;
-
-		if(zona == CENTRAL)
-		{
-			if((i_global == 0)&&(j_global == 2))
-			{
-				parar();
-				free_to_go = 1;
-				girarCardeal(NORTE);
-				//if(TemBonecoNoConsultor())
-				{
-					  alinha(PARA_TRAS);
-					  OnFwd(MD, -90);
-					  OnFwd(ME, -90);
-					  while(distanciaTachoCount(MediaTC()) > -27*100) {
-					       Wait(1);
-					  }
-					  Off(MD_ME);
-					  AbrirPorta();
-					  AndaFrente();
-					  Wait(1000);
-					  Off(MD_ME);
-					
-					//nbip(3);
-
-					//chama a função devolveBoeco()
-				}
-				//else
-				{
-					  
-				}
-				//chama a função que decide pra onde vai
-				SairCasa();
-				FecharPorta();
-				direcao = NORTE;
-				rota(1);
-			}
-		}
 
 		if(caminho[contPassos] == -1)
 		{
@@ -1088,11 +1169,10 @@ void SeguindoRota()
 
 		if(aux_dir != direcao)//se mudou a direção
 		{
-			if(!TalvezRegulaParede())
-			{
-				regulaTC(aux_dir);
-			}
-
+			Wait(200);
+			MandaCalibra();
+			poteGlobal = POTENCIA_RETO_ESQUERDA;
+			potdGlobal = POTENCIA_RETO_DIREITA;
 		}
 	}
 }
@@ -1102,28 +1182,37 @@ void SairCasa()
 	int ht, luz;
 	int distancia_esquerda, distancia_direita;
 
-	MyOnFwdSyncPID(90);
-	//OnFwd(MD,POTENCIA_RETO_DIREITA);
-	//OnFwd(ME,POTENCIA_RETO_ESQUERDA);
+	OnFwd(MD,POTENCIA_RETO_DIREITA);
+	OnFwd(ME,POTENCIA_RETO_ESQUERDA);
 
-	ReadSensorHTColor2Active(HT, ht_colornum, ht_red, ht_green, ht_blue, ht_white);
+	ht=SensorHTColorNum(HT);
     luz=Sensor(SLUZ);
-	while(!((ht_white > HTBRANCOMIN)&&((luz>LUZ_BRANCO_MIN)&&(luz<LUZ_BRANCO_MAX))))//enquanto akgum dos dois sensores for diferente de branco
+	while(!(((ht==HTBRANCO1)||(ht==HTBRANCO2))&&((luz>LUZ_BRANCO_MIN)&&(luz<LUZ_BRANCO_MAX))))//enquanto akgum dos dois sensores for diferente de branco
 	{
-		ReadSensorHTColor2Active(HT, ht_colornum, ht_red, ht_green, ht_blue, ht_white);
+		ht=SensorHTColorNum(HT);
     	luz=Sensor(SLUZ);
 	}
 	Wait(400);
 	alinha(PARA_TRAS);
+
+	potdGlobal = POTENCIA_RETO_DIREITA;
+	poteGlobal = POTENCIA_RETO_ESQUERDA;
+	distancia_esquerda = 7+(j_global*TAMANHO_DA_ARENA)/5;
+	distancia_direita = TAMANHO_DA_ARENA -(distancia_esquerda + DISTANCIA_ENTRE_OS_SENSORES);
 
 	MyResetTachoCount(MD);
 	MyResetTachoCount(ME);
 	MyTcD = 0;
 	MyTcE = 0;
 
-	AndaFrente();
+	while((distanciaTachoCount(MediaTC()) <= (100*TAMANHO_DA_ARENA)/7))
+	{
+		RegulaComUS(distancia_direita, DIREITA);
+		RegulaComUS(distancia_esquerda, ESQUERDA);
 
-	while((distanciaTachoCount(MediaTC()) <= (100*30))){}
+		MyOnFwd(MD,potdGlobal);
+		MyOnFwd(ME,poteGlobal);
+	}
 
 	Off(MD);
 	Off(ME);
@@ -1132,42 +1221,38 @@ void SairCasa()
 int idmediaTC()
 {
      int tc_e, tc_d, media;
-     tc_e = /*My*/MotorTachoCount(ME);
-     tc_d = /*My*/MotorTachoCount(MD);
+     tc_e = MotorTachoCount(ME);
+     tc_d = MotorTachoCount(MD);
      media = ((tc_d+tc_e)/2);
      return media;
 }
 
 sub alinha(int s) {
      int ht, luz;
-     //ht=SensorHTColorNum(HT);
-     ReadSensorHTColor2Active(HT, ht_colornum, ht_red, ht_green, ht_blue, ht_white);
+     ht=SensorHTColorNum(HT);
      luz=Sensor(SLUZ);
-     while((ht_white > HTBRANCOMIN)||((luz>LUZ_BRANCO_MIN)&&(luz<LUZ_BRANCO_MAX))) {    //Se algum dos sensores estiver lendo branco, entra na função
+     while(((ht==HTBRANCO1)||(ht==HTBRANCO2))||((luz>LUZ_BRANCO_MIN)&&(luz<LUZ_BRANCO_MAX))) {    //Se algum dos sensores estiver lendo branco, entra na função
           if((luz>LUZ_PRETO_MIN)&&(luz<LUZ_PRETO_MAX)) {       //Se o sensor de luz (esquerda) encontrar algo preto, recua a roda esquerda para girar
-               OnRev(ME, s*80);
-               Wait(100);
+               OnRev(ME, s*60);
+               Wait(200);
                //while(MyMotorTachoCount(ME)<50);
                Off(MD_ME);
                //MyResetTachoCount(ME);
                //PlayTone(TONE_B7, 500);
           }
           else {
-               if(ht_white < HTBRANCOMIN) {            //Se o sensor HT (direita) encontrar algo preto, recua a roda direita para girar
-                    OnRev(MD, s*80);
-                    Wait(100);
+               if((ht==HTPRETO1)||(ht==HTPRETO2)) {            //Se o sensor HT (direita) encontrar algo preto, recua a roda direita para girar
+                    OnRev(MD, s*60);
+                    Wait(200);
                     //while(MyMotorTachoCount(MD)<50);
                     Off(MD_ME);
                    // MyResetTachoCount(MD);
                     //PlayTone(TONE_A3, 500);
-               }else
-               {
-               		OnFwd(MD_ME, s*55);                       //anda reto até que um dos dois sensores encontre algo preto
-          			Wait(50); //tempo para pegar leitura do sensor/*?0/*/650*?0 */650 
                }
-          }                                
-          //ht=SensorHTColorNum(HT);
-          ReadSensorHTColor2Active(HT, ht_colornum, ht_red, ht_green, ht_blue, ht_white);
+          }
+          OnFwd(MD_ME, s*45);                       //anda reto até que um dos dois sensores encontre algo preto
+          Wait(100);                                   //tempo para pegar leitura do sensor?!?!
+          ht=SensorHTColorNum(HT);
           luz=Sensor(SLUZ);
      }
      Off(MD_ME);
@@ -1191,309 +1276,4 @@ int ReceberComeceGirar()
   	if(aux == COMECEAGIRAR)
     	return 1;
   	return 0;
-}
-
-int distanciaGiroDireita(int grau){
-	   return (((grau*17)/170/*se girar mais diminua o denomidador*/)); // COMO FOI FEITA ESSA CONVERSÃO/*?0**/650?0**/650?0[*/650na base da tentativa e erro]
-}
-
-int distanciaGiroEsquerda(int grau){
-	   return (((grau*17)/167/*se girar mais diminua o denomidador*/));
-}
-
-void alinha_parede()
-{
-	int tc_vlc;
-
-	OnFwd(MD,-90);
-	OnFwd(ME,-90);
-
-	Wait(400);
-
-	do
-	{
-		tc_vlc = (-1)*velocidademedia();
-	}
-	while(tc_vlc >= 27)
-
-	Off(MD);
-	Off(ME);
-}
-
-int velocidademedia()
-{
-	int tc = (MotorTachoCount(MD)+MotorTachoCount(ME))/2;
-	Wait(100);
-	return (((MotorTachoCount(MD)+MotorTachoCount(ME))/2-tc));
-}
-
-int TalvezRegulaParede()
-{
-	int cond0, cond1, cond2, cond3, cond4;
-
-	cond0 = ((i_global==2)||(j_global==2));
-	cond1 = ((i_global==4)&&(direcao==SUL));
-	cond2 = ((i_global==0)&&(direcao==NORTE));
-	cond3 = ((j_global==0)&&(direcao==LESTE));
-	cond4 = ((j_global==4)&&(direcao==OESTE));
-
-	if((!cond0)&&(cond1||cond2||cond3||cond4))
-	{
-		alinha_parede();
-		return 1;
-	}
-	else
-	{
-		return 0;
-	}
-}
-
-int TemBonecoNoConsultor()
-{
-	int aux = 0;
-	
-	Wait(400);
-	SendRemoteNumber(CONEXAO, OUTBOX, TEMOUNAOBONECO);
-	while((aux!=SIMTEM)&&(aux!=NAOVIRGULANAOTEM))
-	{
-		bip();
-		ReceiveRemoteNumber(INBOX, true, aux);
-	}
-	
-
-	//ReceiveRemoteNumer(INBOX_TEMBONECO, true, aux);
-	//alteração do schiavini
-
-	if(aux==SIMTEM)
-	{
-		return 1;
-	}
-	else
-	{
-		return 0;
-	}
-	
-}
-
-void rota(int n)
-{
-	contPassos = 0;
-	progredi_na_tabela = 0;
-	i_global = 0;
-	j_global = 2;
-
-	switch(n)
-	{
-		case 1:
-			girarCardeal(LESTE);
-			caminho[0] = LESTE;
-			caminho[1] = NORTE;
-			caminho[2] = NORTE;
-			caminho[3] = NORTE;
-			caminho[4] = NORTE;
-			caminho[5] = OESTE;
-			caminho[6] = OESTE;
-			caminho[7] = OESTE;
-			caminho[8] = OESTE;
-			caminho[9] = SUL;
-			caminho[10] = SUL;
-			caminho[11] = SUL;
-			caminho[12] = SUL;
-			caminho[13] = LESTE;
-			caminho[14] = LESTE;
-			caminho[15] = -1;
-			caminho[16] = -1;
-			caminho[17] = -1;
-			caminho[18] = -1;
-			caminho[19] = -1;
-			caminho[20] = -1;
-		break;
-		case 2:
-			girarCardeal(OESTE);
-			caminho[0] = OESTE;
-			caminho[1] = NORTE;
-			caminho[2] = NORTE;
-			caminho[3] = NORTE;
-			caminho[4] = NORTE;
-			caminho[5] = LESTE;
-			caminho[6] = LESTE;
-			caminho[7] = LESTE;
-			caminho[8] = LESTE;
-			caminho[9] = SUL;
-			caminho[10] = SUL;
-			caminho[11] = SUL;
-			caminho[12] = SUL;
-			caminho[13] = OESTE;
-			caminho[14] = OESTE;
-			caminho[15] = -1;
-			caminho[16] = -1;
-			caminho[17] = -1;
-			caminho[18] = -1;
-			caminho[19] = -1;
-			caminho[20] = -1;
-		break;
-		case 3:
-			girarCardeal(NORTE);
-			caminho[0] = NORTE;
-			caminho[1] = NORTE;
-			caminho[2] = LESTE;
-			caminho[3] = LESTE;
-			caminho[4] = NORTE;
-			caminho[5] = OESTE;
-			caminho[6] = SUL;
-			caminho[7] = SUL;
-			caminho[8] = SUL;
-			caminho[9] = SUL;
-			caminho[10] = LESTE;
-			caminho[11] = NORTE;
-			caminho[12] = OESTE;
-			caminho[13] = OESTE;
-			caminho[14] = OESTE;
-			caminho[15] = OESTE;
-			caminho[16] = SUL;
-			caminho[17] = LESTE;
-			caminho[18] = NORTE;
-			caminho[19] = NORTE;
-			caminho[20] = NORTE;
-			caminho[21] = NORTE;
-			caminho[22] = OESTE;
-			caminho[23] = -1;
-			caminho[24] = -1;
-			caminho[25] = -1;
-			caminho[26] = -1;
-			caminho[27] = -1;
-			caminho[28] = -1;
-			caminho[29] = -1;
-			caminho[30] = -1;
-			caminho[31] = -1;
-			caminho[32] = -1;
-			caminho[33] = -1;
-		break;
-		case 4:
-			girarCardeal(NORTE);
-			caminho[0] = NORTE;
-			caminho[1] = NORTE;
-			caminho[2] = OESTE;
-			caminho[3] = OESTE;
-			caminho[4] = NORTE;
-			caminho[5] = LESTE;
-			caminho[6] = SUL;
-			caminho[7] = SUL;
-			caminho[8] = SUL;
-			caminho[9] = SUL;
-			caminho[10] = OESTE;
-			caminho[11] = NORTE;
-			caminho[12] = LESTE;
-			caminho[13] = LESTE;
-			caminho[14] = LESTE;
-			caminho[15] = LESTE;
-			caminho[16] = SUL;
-			caminho[17] = OESTE;
-			caminho[18] = NORTE;
-			caminho[19] = NORTE;
-			caminho[20] = NORTE;
-			caminho[21] = NORTE;
-			caminho[22] = LESTE;
-			caminho[23] = -1;
-			caminho[24] = -1;
-			caminho[25] = -1;
-			caminho[26] = -1;
-			caminho[27] = -1;
-			caminho[28] = -1;
-			caminho[29] = -1;
-			caminho[30] = -1;
-			caminho[31] = -1;
-			caminho[32] = -1;
-			caminho[33] = -1;
-			
-		break;
-
-		/////DOIDO ISSO AQUI È SÒ PRA HOJE
-		FecharPorta();
-	}
-}
-
-void regulaTC(int dir_antiga)
-{
-	switch(dir_antiga)
-	{
-		case NORTE:
-			switch(direcao)
-			{
-				case SUL:
-					trc_refD += TachoCountDistancia(1800);
-					trc_refE += TachoCountDistancia(1800);
-				break;
-				case LESTE:
-					trc_refD += TachoCountDistancia(/*?00*/1000);
-					trc_refE += TachoCountDistancia(/*?00*/1000);
-				break;
-				case OESTE:
-					trc_refD += TachoCountDistancia(650);
-					trc_refE += TachoCountDistancia(650);
-				break;
-			}
-		break;
-		case SUL:
-			switch(direcao)
-			{
-				case NORTE:
-					trc_refD += TachoCountDistancia(1800);
-					trc_refE += TachoCountDistancia(1800);
-				break;
-				case LESTE:
-					trc_refD += TachoCountDistancia(650);
-					trc_refE += TachoCountDistancia(650);
-				break;
-				case OESTE:
-					trc_refD += TachoCountDistancia(/*?00*/1000);
-					trc_refE += TachoCountDistancia(/*?00*/1000);
-				break;
-			}
-		break;
-		case LESTE:
-			switch(direcao)
-			{
-				case SUL:
-					trc_refD += TachoCountDistancia(/*?00*/1000);
-					trc_refE += TachoCountDistancia(/*?00*/1000);
-				break;
-				case NORTE:
-					trc_refD += TachoCountDistancia(650);
-					trc_refE += TachoCountDistancia(650);
-				break;
-				case OESTE:
-					trc_refD += TachoCountDistancia(1800);
-					trc_refE += TachoCountDistancia(1800);
-				break;
-			}
-		break;
-		case OESTE:
-			switch(direcao)
-			{
-				case SUL:
-					trc_refD += TachoCountDistancia(650);
-					trc_refE += TachoCountDistancia(650);
-				break;
-				case LESTE:
-					trc_refD += TachoCountDistancia(1800);
-					trc_refE += TachoCountDistancia(1800);
-				break;
-				case NORTE:
-					trc_refD += TachoCountDistancia(/*?00*/1000);
-					trc_refE += TachoCountDistancia(/*?00*/1000);
-				break;
-			}
-		break;
-	}
-}
-
-void inicializaBoneco(){
-	int aux;
-	aux = SensorHTColorNum(HT);
-	if(aux == CHAO_VERDE){
-		SendRemoteNumber(CONEXAO, OUTBOX_CORBONECO, BONECO_PRETO);
-	}else{
-		SendRemoteNumber(CONEXAO, OUTBOX_CORBONECO, BONECO_BRANCO);
-	}
 }

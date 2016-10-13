@@ -1,0 +1,578 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__Wait_7qG2_ms_7qG2_000_inline_PrintaSensores	5	1	0	4	2
+1	__TextOutMutex	9	0	4	4	8
+2	__PointOutMutex	9	0	8	4	2
+3	__CLSCSMutex3	9	0	12	4	2
+4	__CLSWMutex3	9	0	16	4	2
+5	__CLSRMutex3	9	0	20	4	2
+6	__RLSBmutex2	9	0	24	4	2
+7	__DU0SetSensorLowspeed_inline_inicializaSensores	5	1	28	4	20
+8	__signed_stack_001PrintaSensores	6	1	32	4	8
+9	__signed_stack_002PrintaSensores	6	1	36	4	8
+10	__RLSBmutex3	9	0	40	4	2
+11	__D0PrintaSensores	6	1	44	4	16
+12	__D0SetSensorLowspeed_inline_inicializaSensores	6	1	48	4	8
+13	__CLSRMutex2	9	0	52	4	2
+14	__CLSWMutex2	9	0	56	4	2
+15	__CLSCSMutex2	9	0	60	4	2
+16	__PrintaSensores_7qG2_dir_7qG2_000	4	1	64	2	2
+17	__constVal200	4	0	66	2	2
+18	__PrintaSensores_7qG2_esq_7qG2_000	4	1	68	2	2
+19	__RLSBResult3	2	1	70	1	7
+20	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	71	1	8
+21	__ResetSensorTmp	1	1	72	1	2
+22	__RLSBytesCount3	1	1	73	1	7
+23	__RLSBIterations3	1	1	74	1	4
+24	__PFTmp	1	1	75	1	1
+25	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	76	1	4
+26	__PrintaSensores_return	1	1	77	1	3
+27	__inicializaSensores_return	1	1	78	1	3
+28	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	79	1	20
+29	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	80	1	8
+30	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores	1	1	81	1	8
+31	__constVal3	2	0	82	1	2
+32	__ResetSensorPort	1	1	83	1	6
+33	__constVal1	2	0	84	1	10
+34	____initialize_global_data_return	1	1	85	1	3
+35	__constVal0	2	1	86	1	2
+36	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	87	1	8
+37	__RLSBResult2	2	1	88	1	7
+38	____ReadLSBytes2_return	1	1	89	1	3
+39	__LSWriteOptionsVar	1	1	90	1	4
+40	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	91	1	8
+41	__constVal2	2	0	92	1	2
+42	____ReadLSBytes3_return	1	1	93	1	3
+43	____ResetSensorSubroutine_return	1	1	94	1	6
+44	__RLSBIterations2	1	1	95	1	4
+45	__RLSBytesCount2	1	1	96	1	7
+46	__CLSRArgs2	8	0	4	12	5
+47	__CLSRArgs2.Result	2	1	100	1	5
+48	__CLSRArgs2.Port	1	1	101	1	5
+49	__CLSRArgs2.Buffer	7	0	102	4	5
+50	__CLSRArgs2.Buffer.Buffer_type	1	0	0	1	0
+51	__CLSRArgs2.BufferLen	1	1	104	1	5
+52	__CLSRArgs3	8	0	4	12	5
+53	__CLSRArgs3.Result	2	1	108	1	5
+54	__CLSRArgs3.Port	1	1	109	1	5
+55	__CLSRArgs3.Buffer	7	0	110	4	5
+56	__CLSRArgs3.Buffer.Buffer_type	1	0	0	1	0
+57	__CLSRArgs3.BufferLen	1	1	112	1	5
+58	__CLSCSArgs3	8	0	3	4	4
+59	__CLSCSArgs3.Result	2	1	116	1	4
+60	__CLSCSArgs3.Port	1	1	117	1	4
+61	__CLSCSArgs3.BytesReady	1	1	118	1	4
+62	__CLSWArgs3	8	0	4	12	5
+63	__CLSWArgs3.Result	2	1	120	1	5
+64	__CLSWArgs3.Port	1	1	121	1	5
+65	__CLSWArgs3.Buffer	7	0	122	4	5
+66	__CLSWArgs3.Buffer.Buffer_type	1	0	0	1	0
+67	__CLSWArgs3.ReturnLen	1	1	124	1	5
+68	__PointOutArgs	8	0	3	12	4
+69	__PointOutArgs.Result	2	1	128	1	4
+70	__PointOutArgs.Location	8	0	2	4	4
+71	__PointOutArgs.Location.X	4	1	132	2	4
+72	__PointOutArgs.Location.Y	4	1	134	2	4
+73	__PointOutArgs.Options	5	1	136	4	4
+74	__CLSCSArgs2	8	0	3	4	4
+75	__CLSCSArgs2.Result	2	1	140	1	4
+76	__CLSCSArgs2.Port	1	1	141	1	4
+77	__CLSCSArgs2.BytesReady	1	1	142	1	4
+78	__CLSWArgs2	8	0	4	12	5
+79	__CLSWArgs2.Result	2	1	144	1	5
+80	__CLSWArgs2.Port	1	1	145	1	5
+81	__CLSWArgs2.Buffer	7	0	146	4	5
+82	__CLSWArgs2.Buffer.Buffer_type	1	0	0	1	0
+83	__CLSWArgs2.ReturnLen	1	1	148	1	5
+84	__TextOutArgs	8	0	4	16	24
+85	__TextOutArgs.Result	2	1	152	1	24
+86	__TextOutArgs.Location	8	0	2	4	24
+87	__TextOutArgs.Location.X	4	1	156	2	24
+88	__TextOutArgs.Location.Y	4	1	158	2	24
+89	__TextOutArgs.Text	7	0	160	4	24
+90	__TextOutArgs.Text.Text_type	1	0	0	1	0
+91	__TextOutArgs.Options	5	1	164	4	24
+92	__constStr0010	7	0	168	4	1
+93	__constStr0010.__constStr0010_type	1	1	0	1	0
+94	__constStr0009	7	0	170	4	1
+95	__constStr0009.__constStr0009_type	1	1	0	1	0
+96	__RLSLastGoodRead2	7	0	172	4	2
+97	__RLSLastGoodRead2.__RLSLastGoodRead2_type	1	0	0	1	0
+98	__RLSBbufLSWrite1	7	0	174	4	2
+99	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+100	__LSWriteOptions	7	0	176	4	2
+101	__LSWriteOptions.__LSWriteOptions_type	1	0	0	1	0
+102	__RLSReadBuf2	7	0	178	4	8
+103	__RLSReadBuf2.__RLSReadBuf2_type	1	0	0	1	0
+104	__strbufPrintaSensores	7	0	180	4	4
+105	__strbufPrintaSensores.__strbufPrintaSensores_type	1	0	0	1	0
+106	__RLSReadBuf3	7	0	182	4	8
+107	__RLSReadBuf3.__RLSReadBuf3_type	1	0	0	1	0
+108	__RLSLastGoodRead3	7	0	184	4	2
+109	__RLSLastGoodRead3.__RLSLastGoodRead3_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	16	0	#line 16 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+0	17	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	16	2	#line 16 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+0	16	2	#line 16 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+0	17	2		subcall inicializaSensores, __inicializaSensores_return
+0	16	4	#line 16 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+0	17	4	#line 17 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+0	18	4		subcall PrintaSensores, __PrintaSensores_return
+0	17	6	#line 17 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+0	18	6		exit -1, -1
+1	5724	0		setin __constVal1, __ResetSensorPort, 5
+1	5726	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5727	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5728	11		subret ____ResetSensorSubroutine_return
+2	6595	0	#pragma macro 27
+2	6595	0		acquire __CLSWMutex2
+2	6595	1		index __LSWriteOptionsVar, __LSWriteOptions, __constVal2
+2	6595	5		or __CLSWArgs2.Port, __constVal2, __LSWriteOptionsVar
+2	6595	9		mov __CLSWArgs2.ReturnLen, __RLSBytesCount2
+2	6595	11		mov __CLSWArgs2.Buffer, __RLSReadBuf2
+2	6595	13		syscall 21, __CLSWArgs2
+2	6595	16		mov __RLSBResult2, __CLSWArgs2.Result
+2	6595	18		release __CLSWMutex2
+2	6595	19	#line 6595 "NXTDefs.h"
+2	6596	19		brtst 5, __RLSBError2, __RLSBResult2
+2	6597	22		set __RLSBIterations2, 60
+2	6599	25	#pragma macro 23
+2	6599	25		acquire __CLSCSMutex2
+2	6599	26		set __CLSCSArgs2.Port, 2
+2	6599	29		syscall 23, __CLSCSArgs2
+2	6599	32		mov __RLSBytesCount2, __CLSCSArgs2.BytesReady
+2	6599	34		mov __RLSBResult2, __CLSCSArgs2.Result
+2	6599	36		release __CLSCSMutex2
+2	6599	37	#line 6599 "NXTDefs.h"
+2	6600	37		sub __RLSBIterations2, __RLSBIterations2, __constVal1
+2	6601	41		brtst 2, __RLSBError2, __RLSBIterations2
+2	6602	44		brtst 0, __RLSBError2, __RLSBResult2
+2	6603	47		brtst 4, __RLSBReadyToRead2, __RLSBResult2
+2	6605	50		wait2 NA, __constVal1
+2	6606	53		jmp __RLSBDoCheckStatus2
+2	6608	55		brtst 4, __RLSBReturn2, __RLSBytesCount2
+2	6609	58		arrinit __RLSReadBuf2, __constVal0, __RLSBytesCount2
+2	6611	62	#pragma macro 25
+2	6611	62		acquire __CLSRMutex2
+2	6611	63		set __CLSRArgs2.Port, 2
+2	6611	66		mov __CLSRArgs2.BufferLen, __RLSBytesCount2
+2	6611	68		syscall 22, __CLSRArgs2
+2	6611	71		mov __RLSReadBuf2, __CLSRArgs2.Buffer
+2	6611	73		mov __RLSBResult2, __CLSRArgs2.Result
+2	6611	75		release __CLSRMutex2
+2	6611	76	#line 6611 "NXTDefs.h"
+2	6612	76		brtst 5, __RLSBError2, __RLSBResult2
+2	6613	79		mov __RLSLastGoodRead2, __RLSReadBuf2
+2	6614	81		jmp __RLSBDone2
+2	6616	83		mov __RLSReadBuf2, __RLSLastGoodRead2
+2	6618	85		arrsize __RLSBytesCount2, __RLSReadBuf2
+2	6620	88		subret ____ReadLSBytes2_return
+3	6632	0	#pragma macro 27
+3	6632	0		acquire __CLSWMutex3
+3	6632	1		index __LSWriteOptionsVar, __LSWriteOptions, __constVal3
+3	6632	5		or __CLSWArgs3.Port, __constVal3, __LSWriteOptionsVar
+3	6632	9		mov __CLSWArgs3.ReturnLen, __RLSBytesCount3
+3	6632	11		mov __CLSWArgs3.Buffer, __RLSReadBuf3
+3	6632	13		syscall 21, __CLSWArgs3
+3	6632	16		mov __RLSBResult3, __CLSWArgs3.Result
+3	6632	18		release __CLSWMutex3
+3	6632	19	#line 6632 "NXTDefs.h"
+3	6633	19		brtst 5, __RLSBError3, __RLSBResult3
+3	6634	22		set __RLSBIterations3, 60
+3	6636	25	#pragma macro 23
+3	6636	25		acquire __CLSCSMutex3
+3	6636	26		set __CLSCSArgs3.Port, 3
+3	6636	29		syscall 23, __CLSCSArgs3
+3	6636	32		mov __RLSBytesCount3, __CLSCSArgs3.BytesReady
+3	6636	34		mov __RLSBResult3, __CLSCSArgs3.Result
+3	6636	36		release __CLSCSMutex3
+3	6636	37	#line 6636 "NXTDefs.h"
+3	6637	37		sub __RLSBIterations3, __RLSBIterations3, __constVal1
+3	6638	41		brtst 2, __RLSBError3, __RLSBIterations3
+3	6639	44		brtst 0, __RLSBError3, __RLSBResult3
+3	6640	47		brtst 4, __RLSBReadyToRead3, __RLSBResult3
+3	6642	50		wait2 NA, __constVal1
+3	6643	53		jmp __RLSBDoCheckStatus3
+3	6645	55		brtst 4, __RLSBReturn3, __RLSBytesCount3
+3	6646	58		arrinit __RLSReadBuf3, __constVal0, __RLSBytesCount3
+3	6648	62	#pragma macro 25
+3	6648	62		acquire __CLSRMutex3
+3	6648	63		set __CLSRArgs3.Port, 3
+3	6648	66		mov __CLSRArgs3.BufferLen, __RLSBytesCount3
+3	6648	68		syscall 22, __CLSRArgs3
+3	6648	71		mov __RLSReadBuf3, __CLSRArgs3.Buffer
+3	6648	73		mov __RLSBResult3, __CLSRArgs3.Result
+3	6648	75		release __CLSRMutex3
+3	6648	76	#line 6648 "NXTDefs.h"
+3	6649	76		brtst 5, __RLSBError3, __RLSBResult3
+3	6650	79		mov __RLSLastGoodRead3, __RLSReadBuf3
+3	6651	81		jmp __RLSBDone3
+3	6653	83		mov __RLSReadBuf3, __RLSLastGoodRead3
+3	6655	85		arrsize __RLSBytesCount3, __RLSReadBuf3
+3	6657	88		subret ____ReadLSBytes3_return
+4	24	0	#line 24 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+4	25	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 0
+4	24	3	#line 24 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+4	24	3	#line 24 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+4	25	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+4	4523	5	#line 4523 "NXCDefs.h"
+4	4524	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4523	7	#line 4523 "NXCDefs.h"
+4	4523	7	#line 4523 "NXCDefs.h"
+4	4524	7		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+4	4523	9	#line 4523 "NXCDefs.h"
+4	4524	9		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4523	12	#line 4523 "NXCDefs.h"
+4	4524	12		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+4	4523	15	#line 4523 "NXCDefs.h"
+4	4524	15		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+4	4523	18	#line 4523 "NXCDefs.h"
+4	4523	18	#line 4523 "NXCDefs.h"
+4	4524	18		jmp __004__ASM_Label_37
+4	4523	20	#line 4523 "NXCDefs.h"
+4	4524	20		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+4	4523	23	#line 4523 "NXCDefs.h"
+4	4523	23	#line 4523 "NXCDefs.h"
+4	4524	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4428	25	#line 4428 "NXCDefs.h"
+4	4429	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4428	29	#line 4428 "NXCDefs.h"
+4	4523	29	#line 4523 "NXCDefs.h"
+4	4524	29	#line 4524 "NXCDefs.h"
+4	4525	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4524	31	#line 4524 "NXCDefs.h"
+4	4524	31	#line 4524 "NXCDefs.h"
+4	4525	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4524	34	#line 4524 "NXCDefs.h"
+4	4441	34	#line 4441 "NXCDefs.h"
+4	4442	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+4	4441	38	#line 4441 "NXCDefs.h"
+4	4524	38	#line 4524 "NXCDefs.h"
+4	4525	38	#line 4525 "NXCDefs.h"
+4	4526	38		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4525	40	#line 4525 "NXCDefs.h"
+4	4459	40	#line 4459 "NXCDefs.h"
+4	4460	40	#pragma macro 4
+4	4460	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4460	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+4	4101	44	#line 4101 "NXCDefs.h"
+4	4459	44	#line 4459 "NXCDefs.h"
+4	4525	44	#line 4525 "NXCDefs.h"
+4	24	44	#line 24 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+4	25	44	#line 25 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+4	26	44		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 1
+4	25	47	#line 25 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+4	25	47	#line 25 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+4	26	47		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+4	4523	49	#line 4523 "NXCDefs.h"
+4	4524	49		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4523	51	#line 4523 "NXCDefs.h"
+4	4523	51	#line 4523 "NXCDefs.h"
+4	4524	51		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+4	4523	53	#line 4523 "NXCDefs.h"
+4	4524	53		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4523	56	#line 4523 "NXCDefs.h"
+4	4524	56		brtst 4, __005__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+4	4523	59	#line 4523 "NXCDefs.h"
+4	4524	59		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+4	4523	62	#line 4523 "NXCDefs.h"
+4	4523	62	#line 4523 "NXCDefs.h"
+4	4524	62		jmp __005__ASM_Label_37
+4	4523	64	#line 4523 "NXCDefs.h"
+4	4524	64		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+4	4523	67	#line 4523 "NXCDefs.h"
+4	4523	67	#line 4523 "NXCDefs.h"
+4	4524	67		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4428	69	#line 4428 "NXCDefs.h"
+4	4429	69		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4428	73	#line 4428 "NXCDefs.h"
+4	4523	73	#line 4523 "NXCDefs.h"
+4	4524	73	#line 4524 "NXCDefs.h"
+4	4525	73		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4524	75	#line 4524 "NXCDefs.h"
+4	4524	75	#line 4524 "NXCDefs.h"
+4	4525	75		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4524	78	#line 4524 "NXCDefs.h"
+4	4441	78	#line 4441 "NXCDefs.h"
+4	4442	78		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+4	4441	82	#line 4441 "NXCDefs.h"
+4	4524	82	#line 4524 "NXCDefs.h"
+4	4525	82	#line 4525 "NXCDefs.h"
+4	4526	82		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4525	84	#line 4525 "NXCDefs.h"
+4	4459	84	#line 4459 "NXCDefs.h"
+4	4460	84	#pragma macro 4
+4	4460	84		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4460	86		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+4	4164	88	#line 4164 "NXCDefs.h"
+4	4459	88	#line 4459 "NXCDefs.h"
+4	4525	88	#line 4525 "NXCDefs.h"
+4	25	88	#line 25 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+4	26	88	#line 26 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+4	27	88		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 2
+4	26	91	#line 26 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+4	26	91	#line 26 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+4	27	91		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+4	4523	93	#line 4523 "NXCDefs.h"
+4	4524	93		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4523	95	#line 4523 "NXCDefs.h"
+4	4523	95	#line 4523 "NXCDefs.h"
+4	4524	95		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+4	4523	97	#line 4523 "NXCDefs.h"
+4	4524	97		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4523	100	#line 4523 "NXCDefs.h"
+4	4524	100		brtst 4, __006__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+4	4523	103	#line 4523 "NXCDefs.h"
+4	4524	103		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+4	4523	106	#line 4523 "NXCDefs.h"
+4	4523	106	#line 4523 "NXCDefs.h"
+4	4524	106		jmp __006__ASM_Label_37
+4	4523	108	#line 4523 "NXCDefs.h"
+4	4524	108		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+4	4523	111	#line 4523 "NXCDefs.h"
+4	4523	111	#line 4523 "NXCDefs.h"
+4	4524	111		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4428	113	#line 4428 "NXCDefs.h"
+4	4429	113		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4428	117	#line 4428 "NXCDefs.h"
+4	4523	117	#line 4523 "NXCDefs.h"
+4	4524	117	#line 4524 "NXCDefs.h"
+4	4525	117		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4524	119	#line 4524 "NXCDefs.h"
+4	4524	119	#line 4524 "NXCDefs.h"
+4	4525	119		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4524	122	#line 4524 "NXCDefs.h"
+4	4441	122	#line 4441 "NXCDefs.h"
+4	4442	122		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+4	4441	126	#line 4441 "NXCDefs.h"
+4	4524	126	#line 4524 "NXCDefs.h"
+4	4525	126	#line 4525 "NXCDefs.h"
+4	4526	126		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4525	128	#line 4525 "NXCDefs.h"
+4	4459	128	#line 4459 "NXCDefs.h"
+4	4460	128	#pragma macro 4
+4	4460	128		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4460	130		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+4	4227	132	#line 4227 "NXCDefs.h"
+4	4459	132	#line 4459 "NXCDefs.h"
+4	4525	132	#line 4525 "NXCDefs.h"
+4	26	132	#line 26 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+4	27	132	#line 27 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+4	28	132		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 3
+4	27	135	#line 27 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+4	27	135	#line 27 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+4	28	135		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+4	4523	137	#line 4523 "NXCDefs.h"
+4	4524	137		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4523	139	#line 4523 "NXCDefs.h"
+4	4523	139	#line 4523 "NXCDefs.h"
+4	4524	139		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+4	4523	141	#line 4523 "NXCDefs.h"
+4	4524	141		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4523	144	#line 4523 "NXCDefs.h"
+4	4524	144		brtst 4, __007__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+4	4523	147	#line 4523 "NXCDefs.h"
+4	4524	147		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+4	4523	150	#line 4523 "NXCDefs.h"
+4	4523	150	#line 4523 "NXCDefs.h"
+4	4524	150		jmp __007__ASM_Label_37
+4	4523	152	#line 4523 "NXCDefs.h"
+4	4524	152		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+4	4523	155	#line 4523 "NXCDefs.h"
+4	4523	155	#line 4523 "NXCDefs.h"
+4	4524	155		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+4	4428	157	#line 4428 "NXCDefs.h"
+4	4429	157		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4428	161	#line 4428 "NXCDefs.h"
+4	4523	161	#line 4523 "NXCDefs.h"
+4	4524	161	#line 4524 "NXCDefs.h"
+4	4525	161		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4524	163	#line 4524 "NXCDefs.h"
+4	4524	163	#line 4524 "NXCDefs.h"
+4	4525	163		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+4	4524	166	#line 4524 "NXCDefs.h"
+4	4441	166	#line 4441 "NXCDefs.h"
+4	4442	166		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+4	4441	170	#line 4441 "NXCDefs.h"
+4	4524	170	#line 4524 "NXCDefs.h"
+4	4525	170	#line 4525 "NXCDefs.h"
+4	4526	170		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4525	172	#line 4525 "NXCDefs.h"
+4	4459	172	#line 4459 "NXCDefs.h"
+4	4460	172	#pragma macro 4
+4	4460	172		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+4	4460	174		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+4	4290	176	#line 4290 "NXCDefs.h"
+4	4459	176	#line 4459 "NXCDefs.h"
+4	4525	176	#line 4525 "NXCDefs.h"
+4	27	176	#line 27 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+4	30	176	#line 30 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+4	31	176		subret __inicializaSensores_return
+5	32	0	#line 32 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	33	0		set __D0PrintaSensores, 1
+5	33	3	#line 33 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	34	3		tst 5, __D0PrintaSensores, __D0PrintaSensores
+5	33	6	#line 33 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	34	6		brtst 4, __ASM_Label_567, __D0PrintaSensores
+5	6921	9	#line 6921 "NXCDefs.h"
+5	6922	9	#pragma macro 6
+5	6922	9		acquire __PointOutMutex
+5	6922	10		mov __PointOutArgs.Location.X, __constVal200
+5	6922	12		mov __PointOutArgs.Location.Y, __constVal200
+5	6922	14		mov __PointOutArgs.Options, __constVal1
+5	6922	16		syscall 14, __PointOutArgs
+5	6922	19		release __PointOutMutex
+5	4315	20	#line 4315 "NXCDefs.h"
+5	6921	20	#line 6921 "NXCDefs.h"
+5	33	20	#line 33 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	34	20	#line 34 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	35	20	#pragma macro 24
+5	35	20		acquire __RLSBmutex3
+5	35	21		mov __RLSReadBuf3, __RLSBbufLSWrite1
+5	35	23		set __RLSBytesCount3, 1
+5	35	26		subcall __ReadLSBytes3, ____ReadLSBytes3_return
+5	35	28		index __D0PrintaSensores, __RLSReadBuf3, 65535
+5	35	32		release __RLSBmutex3
+5	4319	33	#line 4319 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	34	33	#line 34 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	35	33		mov __PrintaSensores_7qG2_esq_7qG2_000, __D0PrintaSensores
+5	34	35	#line 34 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	34	35	#line 34 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	35	35	#line 35 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	36	35	#pragma macro 24
+5	36	35		acquire __RLSBmutex2
+5	36	36		mov __RLSReadBuf2, __RLSBbufLSWrite1
+5	36	38		set __RLSBytesCount2, 1
+5	36	41		subcall __ReadLSBytes2, ____ReadLSBytes2_return
+5	36	43		index __D0PrintaSensores, __RLSReadBuf2, 65535
+5	36	47		release __RLSBmutex2
+5	4327	48	#line 4327 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	35	48	#line 35 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	36	48		mov __PrintaSensores_7qG2_dir_7qG2_000, __D0PrintaSensores
+5	35	50	#line 35 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	35	50	#line 35 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	36	50	#line 36 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	37	50		set __signed_stack_001PrintaSensores, 0
+5	36	53	#line 36 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	36	53	#line 36 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	37	53		set __signed_stack_002PrintaSensores, 56
+5	36	56	#line 36 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	36	56	#line 36 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	37	56		strcat __strbufPrintaSensores, __constStr0009
+5	36	60	#line 36 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	37	60		acquire __TextOutMutex
+5	36	61	#line 36 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	37	61		mov __TextOutArgs.Location.X, __signed_stack_001PrintaSensores
+5	36	63	#line 36 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	37	63		mov __TextOutArgs.Location.Y, __signed_stack_002PrintaSensores
+5	36	65	#line 36 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	37	65		set __TextOutArgs.Options, 0
+5	36	68	#line 36 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	37	68		mov __TextOutArgs.Text, __strbufPrintaSensores
+5	36	70	#line 36 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	37	70		syscall 13, __TextOutArgs
+5	36	73	#line 36 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	37	73		mov __D0PrintaSensores, __TextOutArgs.Result
+5	36	75	#line 36 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	37	75		release __TextOutMutex
+5	36	76	#line 36 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	37	76	#line 37 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	38	76		set __signed_stack_001PrintaSensores, 0
+5	37	79	#line 37 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	37	79	#line 37 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	38	79		set __signed_stack_002PrintaSensores, 48
+5	37	82	#line 37 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	37	82	#line 37 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	38	82		mov __D0PrintaSensores, __PrintaSensores_7qG2_dir_7qG2_000
+5	37	84	#line 37 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	38	84		acquire __TextOutMutex
+5	37	85	#line 37 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	38	85		mov __TextOutArgs.Location.X, __signed_stack_001PrintaSensores
+5	37	87	#line 37 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	38	87		mov __TextOutArgs.Location.Y, __signed_stack_002PrintaSensores
+5	37	89	#line 37 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	38	89		set __TextOutArgs.Options, 0
+5	37	92	#line 37 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	38	92		numtostr __TextOutArgs.Text, __D0PrintaSensores
+5	37	95	#line 37 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	38	95		syscall 13, __TextOutArgs
+5	37	98	#line 37 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	38	98		mov __D0PrintaSensores, __TextOutArgs.Result
+5	37	100	#line 37 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	38	100		release __TextOutMutex
+5	37	101	#line 37 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	38	101	#line 38 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	39	101		set __signed_stack_001PrintaSensores, 0
+5	38	104	#line 38 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	38	104	#line 38 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	39	104		set __signed_stack_002PrintaSensores, 40
+5	38	107	#line 38 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	38	107	#line 38 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	39	107		strcat __strbufPrintaSensores, __constStr0010
+5	38	111	#line 38 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	39	111		acquire __TextOutMutex
+5	38	112	#line 38 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	39	112		mov __TextOutArgs.Location.X, __signed_stack_001PrintaSensores
+5	38	114	#line 38 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	39	114		mov __TextOutArgs.Location.Y, __signed_stack_002PrintaSensores
+5	38	116	#line 38 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	39	116		set __TextOutArgs.Options, 0
+5	38	119	#line 38 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	39	119		mov __TextOutArgs.Text, __strbufPrintaSensores
+5	38	121	#line 38 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	39	121		syscall 13, __TextOutArgs
+5	38	124	#line 38 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	39	124		mov __D0PrintaSensores, __TextOutArgs.Result
+5	38	126	#line 38 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	39	126		release __TextOutMutex
+5	38	127	#line 38 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	39	127	#line 39 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	40	127		set __signed_stack_001PrintaSensores, 0
+5	39	130	#line 39 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	39	130	#line 39 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	40	130		set __signed_stack_002PrintaSensores, 32
+5	39	133	#line 39 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	39	133	#line 39 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	40	133		mov __D0PrintaSensores, __PrintaSensores_7qG2_esq_7qG2_000
+5	39	135	#line 39 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	40	135		acquire __TextOutMutex
+5	39	136	#line 39 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	40	136		mov __TextOutArgs.Location.X, __signed_stack_001PrintaSensores
+5	39	138	#line 39 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	40	138		mov __TextOutArgs.Location.Y, __signed_stack_002PrintaSensores
+5	39	140	#line 39 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	40	140		set __TextOutArgs.Options, 0
+5	39	143	#line 39 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	40	143		numtostr __TextOutArgs.Text, __D0PrintaSensores
+5	39	146	#line 39 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	40	146		syscall 13, __TextOutArgs
+5	39	149	#line 39 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	40	149		mov __D0PrintaSensores, __TextOutArgs.Result
+5	39	151	#line 39 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	40	151		release __TextOutMutex
+5	39	152	#line 39 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	40	152	#line 40 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	41	152		set __Wait_7qG2_ms_7qG2_000_inline_PrintaSensores, 50
+5	40	155	#line 40 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	8869	155	#line 8869 "NXCDefs.h"
+5	8870	155		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_PrintaSensores
+5	8869	158	#line 8869 "NXCDefs.h"
+5	40	158	#line 40 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	44	158	#line 44 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	45	158		jmp __ASM_Label_566
+5	44	160	#line 44 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	44	160	#line 44 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+5	45	160		subret __PrintaSensores_return
+6	65	0	#line 65 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc"
+6	66	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc
+1	__ResetSensorSubroutine	9	NXTDefs.h
+2	__ReadLSBytes2	22	NXTDefs.h
+3	__ReadLSBytes3	112	NXTDefs.h
+4	inicializaSensores	202	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc
+5	PrintaSensores	380	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc
+6	__initialize_global_data	542	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\Calib_cor_chao.nxc

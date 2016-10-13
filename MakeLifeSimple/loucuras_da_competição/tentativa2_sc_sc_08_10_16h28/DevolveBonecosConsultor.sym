@@ -1,0 +1,330 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__signed_stack_001Joga_Forte	6	1	0	4	4
+1	__signed_stack_001LevantaBoneco	6	1	4	4	2
+2	__signed_stack_001main	6	1	8	4	2
+3	__D0main	6	1	12	4	12
+4	__D0PegaBoneco	6	1	16	4	17
+5	__D0VoltaGarra	6	1	20	4	8
+6	__Wait_7qG2_ms_7qG2_000_inline_VoltaGarra	5	1	24	4	2
+7	__Wait_7qG2_ms_7qG2_000_inline_Joga_Forte	5	1	28	4	2
+8	__Wait_7qG2_ms_7qG2_000_inline_PegaBoneco	5	1	32	4	2
+9	__signed_stack_001PegaBoneco	6	1	36	4	4
+10	__signed_stack_001VoltaGarra	6	1	40	4	4
+11	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	44	4	2
+12	__D0LevantaBoneco	6	1	48	4	6
+13	__RRNTmpVal	6	1	52	4	4
+14	__D0Joga_Forte	6	1	56	4	10
+15	__constValNeg153	4	0	60	2	1
+16	__main_7qG2_aux_7qG2_000	4	1	62	2	2
+17	__VoltaGarra_7qG2_tc_7qG2_000	4	1	64	2	4
+18	__VoltaGarra_7qG2_old_tc_7qG2_000	4	1	66	2	2
+19	__PegaBoneco_7qG2_old_tc_7qG2_000	4	1	68	2	2
+20	__PegaBoneco_7qG2_tc_7qG2_000	4	1	70	2	5
+21	__constVal96	2	0	72	1	9
+22	__constVal63	2	0	73	1	9
+23	__constValNeg50	2	0	74	1	1
+24	__constVal0	2	1	75	1	46
+25	__constVal32	2	0	76	1	27
+26	__constValNeg90	2	0	77	1	1
+27	__constValNeg30	2	0	78	1	2
+28	__constVal1	2	0	79	1	1
+29	__RRNErr	1	1	80	1	1
+30	__constVal2	2	0	81	1	1
+31	____initialize_global_data_return	1	1	82	1	3
+32	__constVal8	2	0	83	1	1
+33	__PFTmp	1	1	84	1	1
+34	__constValNeg100	2	0	85	1	1
+35	__Joga_Forte_return	1	1	86	1	3
+36	__VoltaGarra_return	1	1	87	1	5
+37	__constValNeg70	2	0	88	1	1
+38	__constVal3	2	0	89	1	9
+39	__PegaBoneco_return	1	1	90	1	5
+40	__LevantaBoneco_return	1	1	91	1	3
+41	__MRArgs	8	0	4	8	4
+42	__MRArgs.Result	2	1	92	1	4
+43	__MRArgs.QueueID	1	1	93	1	4
+44	__MRArgs.Remove	1	1	94	1	4
+45	__MRArgs.Message	7	0	96	4	4
+46	__MRArgs.Message.Message_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	106	0	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	107	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	106	2	#line 106 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	107	2	#line 107 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	108	2		subcall PegaBoneco, __PegaBoneco_return
+0	107	4	#line 107 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	108	4		mov __D0main, __D0PegaBoneco
+0	108	6	#line 108 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	109	6		tst 5, __D0main, __D0main
+0	108	9	#line 108 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	109	9		brtst 4, __ASM_Label_560, __D0main
+0	108	12	#line 108 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	109	12		subcall LevantaBoneco, __LevantaBoneco_return
+0	108	14	#line 108 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	110	14	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	111	14	#line 111 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	112	14		set __D0main, 1
+0	112	17	#line 112 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	113	17		tst 5, __D0main, __D0main
+0	112	20	#line 112 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	113	20		brtst 4, __ASM_Label_562, __D0main
+0	112	23	#line 112 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	113	23	#pragma macro 9
+0	113	23		mov __MRArgs.QueueID, __constVal2
+0	113	25		mov __MRArgs.Remove, __constVal1
+0	113	27		set __RRNTmpVal, 0
+0	113	30		syscall 27, __MRArgs
+0	113	33		unflatten __RRNTmpVal, __RRNErr, __MRArgs.Message, __RRNTmpVal
+0	113	38		mov __main_7qG2_aux_7qG2_000, __RRNTmpVal
+0	4032	40	#line 4032 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	112	40	#line 112 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	112	40	#line 112 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	113	40	#line 113 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	114	40		set __Wait_7qG2_ms_7qG2_000_inline_main, 30
+0	113	43	#line 113 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	8869	43	#line 8869 "NXCDefs.h"
+0	8870	43		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8869	46	#line 8869 "NXCDefs.h"
+0	113	46	#line 113 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	114	46	#line 114 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	115	46		mov __signed_stack_001main, __main_7qG2_aux_7qG2_000
+0	114	48	#line 114 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	115	48	#line 115 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	116	48		set __D0main, 15
+0	115	51	#line 115 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	116	51		cmp 4, __D0main, __signed_stack_001main, __D0main
+0	116	55	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	117	55		brtst 4, __ASM_Label_569, __D0main
+0	116	58	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	117	58		subcall Joga_Forte, __Joga_Forte_return
+0	116	60	#line 116 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	117	60	#line 117 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	118	60		subcall VoltaGarra, __VoltaGarra_return
+0	117	62	#line 117 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	120	62	#line 120 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	123	62	#line 123 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	124	62		jmp __ASM_Label_561
+0	123	64	#line 123 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+0	124	64		exit -1, -1
+1	125	0	#line 125 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+1	126	0		mov __D0LevantaBoneco, __constValNeg70
+1	125	2	#line 125 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+1	126	2	#pragma macro 7
+1	126	2		setout __constVal0, 2, __D0LevantaBoneco, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+1	4079	25	#line 4079 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+1	125	25	#line 125 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+1	126	25	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+1	127	25		getout __signed_stack_001LevantaBoneco, __constVal0, 4
+1	126	29	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+1	126	29	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+1	127	29		mov __D0LevantaBoneco, __constValNeg50
+1	126	31	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+1	127	31		cmp 1, __D0LevantaBoneco, __signed_stack_001LevantaBoneco, __D0LevantaBoneco
+1	126	35	#line 126 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+1	127	35		brtst 4, __ASM_Label_573, __D0LevantaBoneco
+1	127	38	#line 127 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+1	128	38		jmp __ASM_Label_572
+1	127	40	#line 127 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+1	127	40	#line 127 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+1	128	40	#pragma macro 7
+1	128	40		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+1	4101	63	#line 4101 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+1	127	63	#line 127 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+1	130	63	#line 130 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+1	131	63		subret __LevantaBoneco_return
+2	134	0	#line 134 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	135	0		set __signed_stack_001VoltaGarra, 0
+2	134	3	#line 134 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	134	3	#line 134 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	134	3	#line 134 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	135	3		sub __D0VoltaGarra, __signed_stack_001VoltaGarra, __constValNeg30
+2	134	7	#line 134 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	135	7	#pragma macro 7
+2	135	7		setout __constVal0, 2, __D0VoltaGarra, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+2	4129	30	#line 4129 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	134	30	#line 134 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	135	30	#line 135 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	136	30		getout __VoltaGarra_7qG2_tc_7qG2_000, __constVal0, 4
+2	135	34	#line 135 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	135	34	#line 135 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	138	34	#line 138 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	139	34		set __Wait_7qG2_ms_7qG2_000_inline_VoltaGarra, 200
+2	138	37	#line 138 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	8869	37	#line 8869 "NXCDefs.h"
+2	8870	37		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_VoltaGarra
+2	8869	40	#line 8869 "NXCDefs.h"
+2	138	40	#line 138 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	139	40	#line 139 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	140	40		mov __VoltaGarra_7qG2_old_tc_7qG2_000, __VoltaGarra_7qG2_tc_7qG2_000
+2	139	42	#line 139 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	139	42	#line 139 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	140	42	#line 140 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	141	42		getout __VoltaGarra_7qG2_tc_7qG2_000, __constVal0, 4
+2	140	46	#line 140 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	140	46	#line 140 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	141	46	#line 141 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	142	46		mov __signed_stack_001VoltaGarra, __VoltaGarra_7qG2_tc_7qG2_000
+2	141	48	#line 141 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	141	48	#line 141 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	142	48		mov __D0VoltaGarra, __VoltaGarra_7qG2_old_tc_7qG2_000
+2	141	50	#line 141 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	142	50		cmp 5, __D0VoltaGarra, __signed_stack_001VoltaGarra, __D0VoltaGarra
+2	141	54	#line 141 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	142	54		brtst 4, __ASM_Label_583, __D0VoltaGarra
+2	141	57	#line 141 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	142	57		jmp __ASM_Label_582
+2	141	59	#line 141 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	141	59	#line 141 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	143	59	#line 143 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	144	59		set __D0VoltaGarra, 0
+2	143	62	#line 143 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	144	62	#pragma macro 7
+2	144	62		setout __constVal0, 2, __D0VoltaGarra, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+2	4187	85	#line 4187 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	143	85	#line 143 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	147	85	#line 147 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+2	148	85		subret __VoltaGarra_return
+3	148	0	#line 148 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	149	0		getout __signed_stack_001Joga_Forte, __constVal0, 4
+3	148	4	#line 148 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	149	4	#line 149 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	150	4		set __D0Joga_Forte, 0
+3	149	7	#line 149 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	150	7		cmp 5, __D0Joga_Forte, __signed_stack_001Joga_Forte, __D0Joga_Forte
+3	150	11	#line 150 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	151	11		brtst 4, __ASM_Label_595, __D0Joga_Forte
+3	150	14	#line 150 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	151	14	#pragma macro 7
+3	151	14		setout __constVal0, 0, __constVal8
+3	4210	19	#line 4210 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	150	19	#line 150 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	152	19	#line 152 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	153	19		jmp __ASM_Label_594
+3	152	21	#line 152 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	152	21	#line 152 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	153	21		mov __D0Joga_Forte, __constValNeg90
+3	152	23	#line 152 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	153	23	#pragma macro 7
+3	153	23		setout __constVal0, 2, __D0Joga_Forte, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	4219	46	#line 4219 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	152	46	#line 152 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	153	46	#line 153 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	154	46		getout __signed_stack_001Joga_Forte, __constVal0, 4
+3	153	50	#line 153 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	153	50	#line 153 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	154	50		mov __D0Joga_Forte, __constValNeg100
+3	153	52	#line 153 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	154	52		cmp 1, __D0Joga_Forte, __signed_stack_001Joga_Forte, __D0Joga_Forte
+3	153	56	#line 153 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	154	56		brtst 4, __ASM_Label_601, __D0Joga_Forte
+3	153	59	#line 153 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	153	59	#line 153 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	154	59		jmp __ASM_Label_600
+3	153	61	#line 153 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	154	61	#line 154 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	155	61	#pragma macro 7
+3	155	61		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	4242	84	#line 4242 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	154	84	#line 154 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	156	84	#line 156 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	157	84		set __Wait_7qG2_ms_7qG2_000_inline_Joga_Forte, 200
+3	156	87	#line 156 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	8869	87	#line 8869 "NXCDefs.h"
+3	8870	87		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_Joga_Forte
+3	8869	90	#line 8869 "NXCDefs.h"
+3	156	90	#line 156 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	157	90	#line 157 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	158	90		subcall VoltaGarra, __VoltaGarra_return
+3	157	92	#line 157 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	160	92	#line 160 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+3	161	92		subret __Joga_Forte_return
+4	164	0	#line 164 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	165	0		mov __D0PegaBoneco, __constValNeg30
+4	164	2	#line 164 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	165	2	#pragma macro 7
+4	165	2		setout __constVal0, 2, __D0PegaBoneco, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	4275	25	#line 4275 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	164	25	#line 164 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	165	25	#line 165 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	166	25		getout __PegaBoneco_7qG2_tc_7qG2_000, __constVal0, 4
+4	165	29	#line 165 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	165	29	#line 165 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	169	29	#line 169 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	170	29		set __Wait_7qG2_ms_7qG2_000_inline_PegaBoneco, 200
+4	169	32	#line 169 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	8869	32	#line 8869 "NXCDefs.h"
+4	8870	32		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_PegaBoneco
+4	8869	35	#line 8869 "NXCDefs.h"
+4	169	35	#line 169 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	170	35	#line 170 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	171	35		mov __PegaBoneco_7qG2_old_tc_7qG2_000, __PegaBoneco_7qG2_tc_7qG2_000
+4	170	37	#line 170 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	170	37	#line 170 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	171	37	#line 171 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	172	37		getout __PegaBoneco_7qG2_tc_7qG2_000, __constVal0, 4
+4	171	41	#line 171 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	171	41	#line 171 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	172	41	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	173	41		mov __signed_stack_001PegaBoneco, __PegaBoneco_7qG2_tc_7qG2_000
+4	172	43	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	173	43	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	174	43		mov __D0PegaBoneco, __constValNeg153
+4	173	45	#line 173 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	174	45		cmp 0, __D0PegaBoneco, __signed_stack_001PegaBoneco, __D0PegaBoneco
+4	174	49	#line 174 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	175	49		brtst 4, __ASM_Label_622, __D0PegaBoneco
+4	174	52	#line 174 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	175	52		set __D0PegaBoneco, 0
+4	174	55	#line 174 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	175	55	#pragma macro 7
+4	175	55		setout __constVal0, 2, __D0PegaBoneco, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	4328	78	#line 4328 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	174	78	#line 174 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	176	78	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	177	78		subcall VoltaGarra, __VoltaGarra_return
+4	176	80	#line 176 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	177	80	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	178	80		set __D0PegaBoneco, 0
+4	177	83	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	178	83		subret __PegaBoneco_return
+4	177	85	#line 177 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	179	85	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	179	85	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	180	85		mov __signed_stack_001PegaBoneco, __PegaBoneco_7qG2_tc_7qG2_000
+4	179	87	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	179	87	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	180	87		mov __D0PegaBoneco, __PegaBoneco_7qG2_old_tc_7qG2_000
+4	179	89	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	180	89		cmp 5, __D0PegaBoneco, __signed_stack_001PegaBoneco, __D0PegaBoneco
+4	179	93	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	180	93		brtst 4, __ASM_Label_613, __D0PegaBoneco
+4	179	96	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	180	96		jmp __ASM_Label_612
+4	179	98	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	179	98	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	181	98	#line 181 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	182	98		set __D0PegaBoneco, 0
+4	181	101	#line 181 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	182	101	#pragma macro 7
+4	182	101		setout __constVal0, 2, __D0PegaBoneco, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	4362	124	#line 4362 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	181	124	#line 181 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	183	124	#line 183 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	184	124		set __D0PegaBoneco, 1
+4	183	127	#line 183 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	184	127		subret __PegaBoneco_return
+4	183	129	#line 183 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	186	129	#line 186 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+4	187	129		subret __PegaBoneco_return
+5	187	0	#line 187 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc"
+5	188	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc
+1	LevantaBoneco	67	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc
+2	VoltaGarra	132	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc
+3	Joga_Forte	219	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc
+4	PegaBoneco	313	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc
+5	__initialize_global_data	444	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\DevolveBonecosConsultor.nxc

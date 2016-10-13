@@ -1,0 +1,1138 @@
+//CODIGO SIMPLIFICADO EXECUTIVO
+
+//funcoes Bluetooth
+
+  //Conecta e desconecta
+  //pega usFrente
+  //para quando pegar boneco-> onfwd(MD, 0);
+  //giroscopio -> virar e rejeitar
+  //CorBoneco
+
+//funcoes anda reto
+  //andaReto com TachoCount
+  //corrige com a parede
+  //alinha
+//funcoes sensores
+  //seta sensores
+  //pega valor Us lado
+  //pega valor do chao
+
+//CONSTANTES QUE VARIAM -----> TESTE ANDAR CM CERTOS
+  #define CORRECAO_ANDA_QUADRANTE 700 //num anterior 695//10^-7 metros
+  #define CONSTANTE_DIST_TC 11//num anterior 11
+
+//PID MAIS RETO
+  #define TENDE_DIRESQ -1   // de -100(vira pra direita) a 100(vira pra esquerda)
+  #define P_FRENTE 350
+  #define I_FRENTE 100       //     50
+  #define D_FRENTE 150      //       150
+
+
+//SENSORES E MOTORES
+  #define MD OUT_B //motor da direita
+  #define ME OUT_A //motor da esquerda
+  #define MD_ME OUT_AB// os dois motores de movimento
+  #define MP OUT_C //motor da porta
+
+  #define USD_FRONTAL IN_1 //Utrasonico da direita
+  #define USE_FRONTAL IN_2 //Utrasonico da esquerda
+  #define HT IN_3         //direita
+  #define SLUZ IN_4       //esquerda
+
+//DEFINES BLUETOOTH
+  	#define CONECTA TRUE
+  	#define DESCONECTA FALSE
+  	#define TEMPO_CONECTAR_BT 4000
+  	//defines da conexao
+  	#define CONN 1
+  	#define INBOX 1
+  	#define OUTBOX 2
+  	#define OUTBOX_ANG 3
+  	#define OUTBOX_CORBONECO 4
+  	#define INBOX_US 5
+    //defines da struct
+    	#define CONSULTOR "LECA"
+    	#define ACAO CONECTA
+    	#define CONEXAO 1
+
+    //VALORES DE COMUNICACAO
+    //códigos para comunicação BlueTooth
+    #define TESTE -1
+    #define PARAR 1
+    #define SEGUIR 2
+    #define GIREI 3
+    #define DESGIRAR 4
+    #define REJEITAR 5
+    #define DESGIREI 6
+    #define CALIBRA 7
+    #define PEGUEI 8
+    #define CHEIO 9
+    #define STOP 10
+    #define START 11
+    #define VIRA 12
+    #define COMECEAGIRAR 13
+    #define PAREDEGIRAR 14
+
+//cor do chao
+    #define CHAO_PRETO 14
+    #define CHAO_BRANCO 13
+    #define CHAO_VERDE 4
+    #define CHAO_AZUL 2
+
+//HT
+    #define HTPRETO1 17               //para o HT, preto e branco assumem dois valores diferentes cada
+    #define HTPRETO2 17//12
+    #define HTBRANCOMIN 245
+    #define HTAZUL 2
+    #define HTVERDE 4
+
+//SENSOR DE LUZ
+    #define LUZ_PRETO_MAX 50
+    #define LUZ_PRETO_MIN 15
+    #define LUZ_BRANCO_MAX 100
+    #define LUZ_BRANCO_MIN 51
+
+//LOGICA
+    #define DIREITA 1
+    #define ESQUERDA 2
+    #define PARA_FRENTE 1
+    #define PARA_TRAS -1
+    //cor dos bonecos
+      #define BONECO_BRANCO 1
+      #define BONECO_PRETO 2
+      #define BONECO_VERMELHO 3
+
+//POTENCIAS E TEMPOS
+    #define POTENCIA_RETO_DIREITA 83
+    #define POTENCIA_RETO_ESQUERDA 90
+    #define TEMPO_DEPOIS_E_ANTES_DE_GIRAR 200
+
+
+    //declaracao de funcoes
+    //BLUETOOTH
+      void iniciaBlue();
+      void desligaBlue();
+      void MandaStart();
+      void RecebeUS();
+      void checaBluetooth();
+      void rejeitarDireita();
+      void voltarejeitarDireita();
+      void rejeitarEsquerda();
+      void voltarejeitarEsquerda();
+      void MandaGirei();
+      void MandaDesGirei();
+      int RecebeDesgirar();
+      int ReceberPareGirar();
+      int ReceberComeceGirar();
+    //TACHOCOUNT
+      int MyMotorTachoCount(int motor);
+      void MyResetTachoCount(int motor);
+      void MyOnFwdSyncPID(int pot);
+      int MediaTC();
+      int distanciaTachoCount(int grau);
+      int WaitTacho(int dist);//--------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+    //MOVIMENTO
+      void parar();//-------------------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void andar();//-------------------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void DaReh();//-------------------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void GetMotorSpeed();
+      void viraEsq(int angulo);//-------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void viraDir(int angulo);//-------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void ViraDeReh(int angulo);//------------------------------------>FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void rejeitar(int lado);//--------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void AbrirPorta();//--------------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void FecharPorta();//-------------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      sub alinha(int s);//PARA_FRENTE ou PARA_TRAS--------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void SairCasa();//----------------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void alinha_parede();//------------------------------------------>FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      int velocidademedia();
+
+    //LOGICA PRINCIPAL
+      void init();//--------------------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void inicializaSensores();//------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void inicializaBoneco();
+      void leUSFRENTE();//--------------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void filterUSESQ();
+      void filterUSDIR();
+      //DEBUG
+
+      void  bip();
+      void nbip(int n);
+      void StartCounter();
+      int GetTime();
+      void testeUS();
+      void testeAndaAlinhaParede();
+      void testeRehComTacho();
+
+      //
+      void PercorreCentral();
+      void PercorreCaverna();
+      int ParedeNaFrente();
+      void SeAlinhaComOVao();
+
+      void PassaPorta();
+      void DevolveBonecos();
+
+
+    //declaracao de variaveis globais
+    int distLado;
+    int distFrenteDIR;
+    int distFrenteESQ;
+    int cheio;
+    int zona;
+    int corDaBase;
+    //tachocount
+      int MyTcD;
+      int MyTcE;
+      int poteGlobal;
+      int potdGlobal;
+      int trc_refD, trc_refE;
+    //Variáveis do HT
+      int ht_colornum, ht_red, ht_green, ht_blue, ht_white;
+    //CRONOMETRO
+      unsigned long int count0, countAtual;
+    //LOGICA
+
+      //função para dbug
+void  bip(){
+  PlaySound(SOUND_DOWN);
+}
+void nbip(int n){
+  int i;
+  for(i=0; i<n; i++)
+  {
+    bip();
+  }
+ }
+
+ void StartCounter(){
+   count0 = CurrentTick();
+ }
+ int GetTime(){
+   countAtual = CurrentTick() - count0;
+ }
+
+
+
+task main(){
+  //PercorreCentral();
+  PercorreCaverna();
+}
+
+void init()
+{
+	desligaBlue();
+
+	inicializaSensores();
+	iniciaBlue();
+
+	inicializaBoneco();
+  
+	FecharPorta();
+
+	MyResetTachoCount(MD);
+	MyResetTachoCount(ME);
+	MyTcD = 0;
+	MyTcE = 0;
+}
+
+void inicializaSensores()
+{
+  SetSensorLowspeed(USD_FRONTAL);
+  SetSensorLowspeed(USE_FRONTAL);
+  SetSensorLight(SLUZ);
+  SetSensorLowspeed(HT);
+  SetHTColor2Mode(HT, HT_CMD_COLOR2_ACTIVE);
+}
+
+
+void testeUS(){
+  init();
+  //viraDir(90);
+  andar();
+  leUSFRENTE();
+
+  while((distFrenteDIR > 20)&&(distFrenteESQ > 20)){
+    leUSFRENTE();
+  }
+  parar();
+  ViraDeReh(90);
+  parar();
+}
+
+void testeAndaAlinhaParede(){
+  int condUSViuParede = ((distFrenteDIR > 20)&&(distFrenteESQ > 20));// Ve se a distancia dos US frontais é menor que 20 cm
+
+  init();
+  andar();
+  leUSFRENTE();
+  //while(/*WaitTacho(30) ||*/condUSViuParede){leUSFRENTE();nbip(1);}//WaitTacho(dist cm)
+  WaitTacho(30);
+  parar();
+  viraDir(180);
+  parar();
+  andar();
+  WaitTacho(30);
+  parar();
+  //Wait(500);
+  //ViraDeReh(90);
+  alinha_parede();
+  parar();
+}
+
+
+void PercorreCentral(){//NAO TESTADO, UMA DAS ROTINAS POSSIVEIS
+  int i, j, mensagem;
+
+  init();
+  int paredes = 0;
+  SairCasa();
+  viraDir(85);
+
+  for(i=0; (i<5); i++)
+  {
+    andar();
+    while(!ParedeNaFrente()){
+      checaBluetooth();
+    }
+    parar();
+    viraEsq(90);
+    alinha_parede();
+  }
+
+  andar();
+  WaitTacho(25);
+  parar();
+
+
+  viraEsq(90);
+  alinha_parede();
+
+  if(i<5)
+  {
+    for(j=i; (j>0); j--)
+    {
+      andar();
+      while(!ParedeNaFrente()){}
+      parar();
+      viraEsq(90);
+      alinha_parede();
+    }
+  }
+
+  //nbip(3);
+  //Wait(3000);//<<<<-----------------------------------------------<<<<-----------------------------------------------<<<<----------------------------------------------- 
+
+
+  andar();
+  checaBluetooth();
+  while(distLado < 30)
+  {
+    checaBluetooth();
+  }
+  parar();
+  //nbip(3);
+  //Wait(3000);//<<<<-----------------------------------------------<<<<-----------------------------------------------<<<<----------------------------------------------- 
+
+
+  //viraDir(90);
+
+  SeAlinhaComOVao();
+  viraEsq(90);
+  PassaPorta();
+  DevolveBonecos();
+  //alinha(PARA_TRAS);
+  
+}
+
+void testeRehComTacho(){
+  DaReh();
+  WaitTacho(30);
+}
+
+
+
+  void iniciaBlue()
+  {// FUNCAO INICIA COMUNICACAO BLUETOOTH
+  	CommBTConnectionType DADOS_BT;
+  	DADOS_BT.Name = CONSULTOR;
+  	DADOS_BT.ConnectionSlot = CONEXAO;
+  	DADOS_BT.Action = ACAO;
+
+  	SysCommBTConnection(DADOS_BT);
+  	Wait(TEMPO_CONECTAR_BT);
+  	TextOut(0, LCD_LINE2, "Conectou Bluetooth");
+  }
+
+  void desligaBlue()
+  {
+  	CommBTConnectionType DADOS_BT;
+  	DADOS_BT.Name = CONSULTOR;
+  	DADOS_BT.ConnectionSlot = CONEXAO;
+  	DADOS_BT.Action = DESCONECTA;
+  	do{
+  	SysCommBTConnection(DADOS_BT);
+
+  	Wait(30);//30 ms eh o tempo de comunicacao minima bluetooth entre dois bricks
+
+  	}while(BluetoothStatus(CONEXAO)== NO_ERR);
+  	TextOut(0, LCD_LINE1, "Desligou Bluetooth");
+  }
+
+  void MandaStart()
+  {
+  	SendRemoteNumber(CONEXAO, OUTBOX, START);
+  }
+
+  void RecebeUS(){
+  	int aux;
+  	ReceiveRemoteNumber(INBOX_US, true, aux);
+  	if (aux != 0){
+  		distLado = aux;
+  	}
+  }
+
+  void checaBluetooth(){
+    int mensagem;
+    int temp_tc_D, temp_tc_E;
+
+    RecebeUS();
+    ReceiveRemoteNumber(INBOX, true, mensagem);
+
+    switch(mensagem){
+      case PARAR:
+				parar();
+			break;
+			case SEGUIR:
+				andar();
+			break;
+			case REJEITAR:
+				parar();
+				temp_tc_D = MyTcD;
+				temp_tc_E = MyTcE;
+				rejeitar(ESQUERDA);//---------------------------CONDICIONAL ADICIONAR PRA QUAL LADO VIRAR
+				MyTcD = temp_tc_D;
+				MyTcE = temp_tc_E;
+				andar();
+			break;
+			case CHEIO:
+				cheio = 1;
+				//andar();
+			break;
+    }
+
+  }
+  void rejeitarDireita()
+  {
+    Off(MD);
+    Off(ME);
+
+    Wait(200);
+    SendRemoteNumber(CONEXAO, OUTBOX_ANG, 90);
+    Wait(200);
+    SendRemoteNumber(CONEXAO, OUTBOX, VIRA);
+    while(!ReceberComeceGirar()){}
+    OnFwd(ME,90);
+    while(!ReceberPareGirar()){}
+    Off(MD);
+    Off(ME);
+
+  }
+
+  void voltarejeitarDireita()
+  {
+    Off(MD);
+    Off(ME);
+
+    Wait(200);
+    SendRemoteNumber(CONEXAO, OUTBOX_ANG, -90);
+    Wait(200);
+    SendRemoteNumber(CONEXAO, OUTBOX, VIRA);
+    while(!ReceberComeceGirar()){}
+    OnFwd(ME,-90);
+    while(!ReceberPareGirar()){}
+    Off(MD);
+    Off(ME);
+
+  }
+
+  void rejeitarEsquerda()
+  {
+    Off(MD);
+    Off(ME);
+
+    Wait(200);
+    SendRemoteNumber(CONEXAO, OUTBOX_ANG, -90);
+    Wait(200);
+    SendRemoteNumber(CONEXAO, OUTBOX, VIRA);
+    while(!ReceberComeceGirar()){}
+    OnFwd(MD,90);
+    while(!ReceberPareGirar()){}
+    Off(MD);
+    Off(ME);
+  }
+
+  void voltarejeitarEsquerda()
+  {
+    Off(MD);
+    Off(ME);
+
+    Wait(200);
+    SendRemoteNumber(CONEXAO, OUTBOX_ANG, 90);
+    Wait(200);
+    SendRemoteNumber(CONEXAO, OUTBOX, VIRA);
+    while(!ReceberComeceGirar()){}
+    OnFwd(MD,-90);
+    while(!ReceberPareGirar()){}
+    Off(MD);
+    Off(ME);
+  }
+
+  void MandaGirei()
+  {
+    SendRemoteNumber(CONEXAO, OUTBOX, GIREI);
+  }
+
+  void MandaDesGirei()
+  {
+    SendRemoteNumber(CONEXAO, OUTBOX, DESGIREI);
+  }
+
+  int RecebeDesgirar()
+  {
+  	int aux;
+  	ReceiveRemoteNumber(INBOX, true, aux);
+  	if(aux == DESGIRAR)
+    		return 1;
+  	return 0;
+  }
+
+  int ReceberPareGirar()
+  {
+  	int aux;
+    	ReceiveRemoteNumber(INBOX, true, aux);
+    	if(aux == PAREDEGIRAR)
+      	return 1;
+    	return 0;
+  }
+
+  int ReceberComeceGirar()
+  {
+  	int aux;
+    	ReceiveRemoteNumber(INBOX, true, aux);
+    	if(aux == COMECEAGIRAR)
+      	return 1;
+    	return 0;
+  }
+
+
+
+  int MyMotorTachoCount(int motor)
+  {
+  	int retorno;
+
+  	if(motor == MD)
+  	{
+  		MyTcD = MotorRotationCount(motor) - trc_refD;
+  		retorno = MyTcD;
+  		/*ClearScreen();
+  		NumOut(0,LCD_LINE1,MotorActualSpeed(motor));
+  		NumOut(0,LCD_LINE2,trc_refD);
+  		NumOut(0,LCD_LINE3,retorno);*/
+
+  	}
+  	else if(motor == ME)
+  	{
+  		MyTcE = MotorRotationCount(motor) - trc_refE;
+  		retorno = MyTcE;
+  	}
+
+  	//MyResetTachoCount(motor);
+
+  	return (retorno);
+  }
+
+  void MyResetTachoCount(int motor)
+  {
+  	if(motor == MD)
+  	{
+  		trc_refD = MotorRotationCount(motor);
+  	}
+  	else if(motor == ME)
+  	{
+  		trc_refE = MotorRotationCount(motor);
+  	}
+  }
+
+  void MyOnFwdSyncPID(int pot){
+    OnFwdSyncPID(MD_ME,pot,TENDE_DIRESQ,P_FRENTE,I_FRENTE,D_FRENTE);
+  }
+
+  int MediaTC()
+  {
+    int aux_tc_d, aux_tc_e;
+
+    aux_tc_d = MyMotorTachoCount(MD);
+    aux_tc_e = MyMotorTachoCount(ME);
+
+    return((aux_tc_d+aux_tc_e)/2);
+  }
+
+  int distanciaTachoCount(int grau)
+  {
+    return ((267*CONSTANTE_DIST_TC*grau)/1000);  //Distancia a ser percorrid/Raio da roda
+  }
+
+  int WaitTacho(int dist){
+    MyResetTachoCount(MD);
+    MyResetTachoCount(ME);
+    if(dist > 0){
+      while((distanciaTachoCount(MediaTC()) <= (100*dist))){}
+    }else{
+      while((distanciaTachoCount(MediaTC()) >= (100*dist))){}
+    }
+    return 1;
+  }
+
+
+  void parar()
+  {
+  	OnFwd(MD,0);
+  	OnFwd(ME,0);
+  }
+
+  void andar()
+  {
+      MyOnFwdSyncPID(90);
+  }
+
+  void DaReh(){
+    OnRev(MD, 79);
+    OnRev(ME, 90);
+  }
+
+  void GetMotorSpeed(){
+    potdGlobal = MotorActualSpeed(MD);
+    poteGlobal = MotorActualSpeed(ME);
+  }
+
+  //FUNCOES DE VIRAR
+  void viraEsq(int angulo){ // função que faz o robô girar para a esquerda o ângulo recebido
+    Wait(TEMPO_DEPOIS_E_ANTES_DE_GIRAR);
+    Off(MD);
+  	Off(ME);
+  	angulo = -angulo;
+  	Wait(200);//Do not touch the waits
+  	SendRemoteNumber(CONEXAO, OUTBOX_ANG, angulo);
+  	Wait(200);//Do not touch the waits
+  	SendRemoteNumber(CONEXAO, OUTBOX, VIRA);
+  	while(!ReceberComeceGirar()){}
+  	OnFwd(ME,-90);
+   	OnFwd(MD,90);
+   	while(!ReceberPareGirar()){}
+   	Off(MD);
+  	Off(ME);
+    Wait(TEMPO_DEPOIS_E_ANTES_DE_GIRAR);
+  }
+  void viraDir(int angulo){ // função que faz o robô girar para a direita o ângulo recebido
+    Wait(TEMPO_DEPOIS_E_ANTES_DE_GIRAR);
+    Off(MD);
+  	Off(ME);
+
+  	Wait(200);
+  	SendRemoteNumber(CONEXAO, OUTBOX_ANG, angulo);
+  	Wait(200);
+  	SendRemoteNumber(CONEXAO, OUTBOX, VIRA);
+
+  	while(!ReceberComeceGirar()){}
+  	OnFwd(ME,90);
+   	OnFwd(MD,-90);
+   	while(!ReceberPareGirar()){}
+   	Off(MD);
+  	Off(ME);
+    Wait(TEMPO_DEPOIS_E_ANTES_DE_GIRAR);
+  }
+  void ViraDeReh(int angulo){
+    Wait(TEMPO_DEPOIS_E_ANTES_DE_GIRAR);
+    Off(MD);
+  	Off(ME);
+
+  	Wait(200);
+  	SendRemoteNumber(CONEXAO, OUTBOX_ANG, angulo);
+  	Wait(200);
+  	SendRemoteNumber(CONEXAO, OUTBOX, VIRA);
+  	while(!ReceberComeceGirar()){}
+    OnFwd(ME,-90);
+    //OnFwd(MD,-40);
+   	while(!ReceberPareGirar()){}
+   	Off(MD);
+  	Off(ME);
+    Wait(TEMPO_DEPOIS_E_ANTES_DE_GIRAR);
+  }
+
+  void rejeitar(int lado)
+  {
+  	if(ESQUERDA)
+  	{
+  		rejeitarEsquerda();
+  		Wait(200);
+  		MandaGirei();
+  		while(!RecebeDesgirar()){}
+  		voltarejeitarEsquerda();
+  	}
+  	else
+  	{
+  		rejeitarDireita();
+  		Wait(200);
+  		MandaGirei();
+  		while(!RecebeDesgirar()){}
+  		voltarejeitarDireita();
+  	}
+
+  	Wait(200);
+  	MandaDesGirei();
+  }
+
+  void AbrirPorta()
+  {
+      int tc, old_tc;
+
+     	OnFwd(MP,70);
+  	tc = MotorTachoCount(MP);
+  	do
+  	 {
+  	  Wait(200);
+  	  old_tc = tc;
+  	  tc = MotorTachoCount(MP);
+  	}while(tc!=old_tc);
+
+  	OnFwd(MP,0);
+  }
+
+  void FecharPorta()
+  {
+  	int tc, old_tc;
+
+     	OnFwd(MP,-70);
+  	tc = MotorTachoCount(MP);
+  	do
+  	 {
+  	  Wait(200);
+  	  old_tc = tc;
+  	  tc = MotorTachoCount(MP);
+  	}while(tc!=old_tc);
+
+  	OnFwd(MP,-10);
+  }
+
+  sub alinha(int s) {
+       int ht, luz;
+       //ht=SensorHTColorNum(HT);
+       ReadSensorHTColor2Active(HT, ht_colornum, ht_red, ht_green, ht_blue, ht_white);
+       luz=Sensor(SLUZ);
+       while((ht_white > HTBRANCOMIN)||((luz>LUZ_BRANCO_MIN)&&(luz<LUZ_BRANCO_MAX))) {    //Se algum dos sensores estiver lendo branco, entra na função
+            if((luz>LUZ_PRETO_MIN)&&(luz<LUZ_PRETO_MAX)) {       //Se o sensor de luz (esquerda) encontrar algo preto, recua a roda esquerda para girar
+                 OnRev(ME, s*80);
+                 Wait(100);
+                 //while(MyMotorTachoCount(ME)<50);
+                 Off(MD_ME);
+                 //MyResetTachoCount(ME);
+                 //PlayTone(TONE_B7, 500);
+            }
+            else {
+                 if(ht_white < HTBRANCOMIN) {            //Se o sensor HT (direita) encontrar algo preto, recua a roda direita para girar
+                      OnRev(MD, s*80);
+                      Wait(100);
+                      //while(MyMotorTachoCount(MD)<50);
+                      Off(MD_ME);
+                     // MyResetTachoCount(MD);
+                      //PlayTone(TONE_A3, 500);
+                 }else
+                 {
+                 		OnFwd(MD_ME, s*55);                       //anda reto até que um dos dois sensores encontre algo preto
+            			Wait(50); //tempo para pegar leitura do sensor/*?0/*/650*?0 */650
+                 }
+            }
+            //ht=SensorHTColorNum(HT);
+            ReadSensorHTColor2Active(HT, ht_colornum, ht_red, ht_green, ht_blue, ht_white);
+            luz=Sensor(SLUZ);
+       }
+       Off(MD_ME);
+           //sai da função quando ambos os sensores estiverem lendo preto ao mesmo tempo
+  }
+
+  void inicializaBoneco(){
+  	int aux;
+  	aux = SensorHTColorNum(HT);
+  	if(aux == CHAO_VERDE){
+  		SendRemoteNumber(CONEXAO, OUTBOX_CORBONECO, BONECO_PRETO);
+  	}else{
+  		SendRemoteNumber(CONEXAO, OUTBOX_CORBONECO, BONECO_BRANCO);
+  	}
+  	corDaBase = aux;
+  }
+
+  void SairCasa()
+  {
+  	int ht, luz;
+  	int distancia_esquerda, distancia_direita;
+
+  	andar();
+  	while((distanciaTachoCount(MediaTC()) <= (100*20))){}
+
+  	ReadSensorHTColor2Active(HT, ht_colornum, ht_red, ht_green, ht_blue, ht_white);
+      luz=Sensor(SLUZ);
+  	while(!((ht_white > HTBRANCOMIN)&&((luz>LUZ_BRANCO_MIN)&&(luz<LUZ_BRANCO_MAX))))//enquanto akgum dos dois sensores for diferente de branco
+  	{
+  		ReadSensorHTColor2Active(HT, ht_colornum, ht_red, ht_green, ht_blue, ht_white);
+      	luz=Sensor(SLUZ);
+  	}
+  	Wait(400);
+  	alinha(PARA_TRAS);
+
+  	MyResetTachoCount(MD);
+  	MyResetTachoCount(ME);
+  	MyTcD = 0;
+  	MyTcE = 0;
+
+  	andar();
+
+  	while((distanciaTachoCount(MediaTC()) <= (100*30))){}
+
+  	Off(MD);
+  	Off(ME);
+  }
+
+  void leUSFRENTE(){
+    filterUSESQ();
+    filterUSDIR();
+  }
+
+void filterUSESQ()
+  {
+    //float alfa = 0.4;
+    int leitura,i=0;
+    leitura= SensorUS(USE_FRONTAL);
+
+    while(leitura==0 || leitura >= 250 || abs(distFrenteESQ-leitura)>15 && i<3){
+      leitura= SensorUS(USE_FRONTAL);
+      i++;
+      Wait(30);
+    }
+    distFrenteESQ = ((6*distFrenteESQ)/10)+(4*leitura/10);
+  }
+
+
+  void filterUSDIR()
+    {
+      //float alfa = 0.4;
+      int leitura,i=0;
+      leitura= SensorUS(USD_FRONTAL);
+
+      while(leitura==0 || leitura >= 250 || abs(distFrenteDIR-leitura)>15 && i<3){
+        leitura= SensorUS(USD_FRONTAL);
+        i++;
+        Wait(30);
+      }
+      distFrenteDIR = ((6*distFrenteDIR)/10)+(4*leitura/10);
+    }
+
+   void alinha_parede()
+   {
+   	int tc_vlc;
+
+   	OnFwd(MD,-90);
+   	OnFwd(ME,-90);
+
+   	Wait(400);
+
+   	do
+   	{
+   		tc_vlc = (-1)*velocidademedia();
+   	}
+   	while(tc_vlc >= 27)
+
+   	Off(MD);
+   	Off(ME);
+   }
+
+   int velocidademedia()
+   {
+   	int tc = (MotorTachoCount(MD)+MotorTachoCount(ME))/2;
+   	Wait(100);
+   	return (((MotorTachoCount(MD)+MotorTachoCount(ME))/2-tc));
+   }
+
+int ParedeNaFrente()
+{
+  int i;
+  leUSFRENTE();
+  for(i=0;i<3;i++)
+  {
+    leUSFRENTE();
+    if(distFrenteESQ > 7 || distFrenteDIR > 7)
+    {
+      return 0;
+    }
+  }
+  return 1;
+
+}
+
+void SeAlinhaComOVao(){
+  //MyResetTachoCount(MD);
+  //MyResetTachoCount(MD);
+  MyOnFwdSyncPID(90);
+  while((distanciaTachoCount(MediaTC()) <= (100*30))&&(distLado<35)){
+        RecebeUS();
+        ClearScreen();
+        //NumOut(30, LCD_LINE4, distUSDIR);
+  }
+  Off(MD_ME);
+  PlayTone(TONE_A3, 1000);
+  if (distLado>35){
+    MyOnFwdSyncPID(90);
+    while(distLado>35){
+        RecebeUS();
+        ClearScreen();
+        //NumOut(30, LCD_LINE4, distUSDIR);
+    }
+    Off(MD_ME);
+    PlayTone(TONE_B7, 1000);
+  }else if (distLado<35){
+      OnRev(MD,79);
+      OnRev(ME,90);
+      while((distLado<35)){
+          RecebeUS();
+      }
+      Off(MD_ME);
+  }
+    //***mandar recuar 13 centimetros***
+    OnRev(MD,79);
+    OnRev(ME,90);
+    //////////////////////////////coloca PID pq n compila
+    WaitTacho(-13);
+    Off(MD_ME);
+    //***girar 90 graus para a direita***
+    /*OnRev(MD,90);
+    OnFwd(ME,90);
+    Wait(9000);*/
+    Off(MD_ME);
+}
+
+void PercorreCaverna()
+{
+  int i, j;
+
+  init();
+  int paredes = 0;
+  SairCasa();
+  viraDir(85);
+
+  if(corDaBase == CHAO_VERDE)
+  {
+    for(i=0; (i<1); i++)
+    {
+      andar();
+      while(!ParedeNaFrente()){
+        checaBluetooth();
+      }
+      parar();
+      viraEsq(90);
+      alinha_parede();
+    }
+  }
+  else
+  {
+    for(i=0; (i<2); i++)
+    {
+      andar();
+      while(!ParedeNaFrente()){
+        checaBluetooth();
+      }
+      parar();
+      viraEsq(90);
+      alinha_parede();
+    }
+  }
+
+  andar();
+  checaBluetooth();
+  while(distLado < 30)
+  {
+    checaBluetooth();
+  }
+  parar();
+  SeAlinhaComOVao();
+
+  viraDir(90);
+
+  PassaPorta();
+
+  viraEsq(85);
+
+  for(i=0; (i<5); i++)
+  {
+    andar();
+    while(!ParedeNaFrente()){
+      checaBluetooth();
+    }
+    parar();
+    viraDir(90);
+    alinha_parede();
+  }
+
+  andar();
+  WaitTacho(25);
+  parar();
+
+
+  viraDir(90);
+  alinha_parede();
+
+  if(i<5)
+  {
+    for(j=i; (j>0); j--)
+    {
+      andar();
+      while(!ParedeNaFrente()){}
+      parar();
+      viraDir(90);
+      alinha_parede();
+    }
+  }
+
+  //nbip(3);
+  //Wait(3000);//<<<<-----------------------------------------------<<<<-----------------------------------------------<<<<----------------------------------------------- 
+
+
+  andar();
+  checaBluetooth();
+  while(distLado < 30)
+  {
+    checaBluetooth();
+  }
+  parar();
+  //nbip(3);
+  //Wait(3000);//<<<<-----------------------------------------------<<<<-----------------------------------------------<<<<----------------------------------------------- 
+
+
+  //viraDir(90);
+
+  SeAlinhaComOVao();
+  viraDir(90);
+  PassaPorta();
+
+  if(corDaBase == CHAO_VERDE)
+  {
+    viraEsq(90);
+    for(i=0; (i<2); i++)
+    {
+      andar();
+      while(!ParedeNaFrente()){
+        //checaBluetooth();
+      }
+      parar();
+      viraEsq(90);
+      alinha_parede();
+    }
+
+    andar();
+    WaitTacho(25);
+    parar();
+
+    viraEsq(90);
+    alinha_parede();
+  }
+  else
+  {
+    viraDir(90);
+    for(i=0; (i<3); i++)
+    {
+      andar();
+      while(!ParedeNaFrente()){
+        //checaBluetooth();
+      }
+      parar();
+      viraDir(90);
+      alinha_parede();
+    }
+  }
+
+  andar();
+  checaBluetooth();
+  while(distLado < 30)
+  {
+    checaBluetooth();
+  }
+  parar();
+
+  SeAlinhaComOVao();
+  viraDir(90);
+  PassaPorta();
+  DevolveBonecos();
+
+}
+
+void PassaPorta()
+{
+  int luzviupreto = 0;
+  int htviupreto = 0;
+  int luz;
+
+  leUSFRENTE();//autalizando os valores dos sensores para a nova direção de vista
+  leUSFRENTE();//como o filtro usa media ponderada, a função roda mais de uma vez para ficar o mais proximo do valor certo
+  leUSFRENTE();
+
+  MyOnFwdSyncPID(65);
+  while((!luzviupreto) || (!htviupreto))
+  {
+    leUSFRENTE();
+    if(distFrenteDIR < 10)
+    {
+      parar();
+      viraDir(30);
+      OnRev(MD,79);
+      OnRev(ME,90);
+      WaitTacho(-20);
+      viraEsq(30);
+      MyOnFwdSyncPID(65);
+    }else if(distFrenteESQ < 10)
+    {
+      parar();
+      viraEsq(30);
+      OnRev(MD,79);
+      OnRev(ME,90);
+      WaitTacho(-20);
+      viraDir(30);
+      MyOnFwdSyncPID(65);
+    }
+
+
+    ReadSensorHTColor2Active(HT, ht_colornum, ht_red, ht_green, ht_blue, ht_white);
+    luz=Sensor(SLUZ);
+    if((luz>LUZ_PRETO_MIN)&&(luz<LUZ_PRETO_MAX))
+    {
+      luzviupreto = 1;
+    }
+    if(ht_white < HTBRANCOMIN)
+    {
+      htviupreto = 1; 
+    }
+  }
+
+  WaitTacho(15);
+
+  alinha(PARA_TRAS);
+  andar();
+
+  while((distanciaTachoCount(MediaTC()) <= (100*30))){}
+}
+
+void DevolveBonecos(){
+    parar();
+    AbrirPorta();
+    andar();
+    Wait(10000);
+    Off(MD_ME);
+}

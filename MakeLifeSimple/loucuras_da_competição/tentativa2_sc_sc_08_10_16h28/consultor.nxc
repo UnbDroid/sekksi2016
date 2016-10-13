@@ -1,11 +1,9 @@
 //Valores Calibraveis
-#define MAX_BONECOS_DENTRO 4
-
 // Defines de leitura do RGB do meio (ainda precisa testar mais)
-    #define COR_BRANCA_MEIO_MIN 190
-    #define COR_BRANCA_MEIO_MAX 256
-    #define COR_PRETA_MEIO_MIN 2
-    #define COR_PRETA_MEIO_MAX 180
+    #define COR_BRANCA_MEIO_MIN 250
+    #define COR_BRANCA_MEIO_MAX 600
+    #define COR_PRETA_MEIO_MIN 10
+    #define COR_PRETA_MEIO_MAX 250
     #define COR_VERMELHA_MEIO_MIN 78
     #define COR_VERMELHA_MEIO_MAX 168
 
@@ -17,22 +15,21 @@
     //#define COR_BASE_ESQ_MAX 434
     //#define COR_BASE_ESQ_MIN 215
   #define FAIXA_SENSORES_LATERAL 97
-  //#define FAIXA_SENSORES_MEIO 247
+  #define FAIXA_SENSORES_MEIO 247
 
 //Bluetooth
 	#define CONEXAO 0
 	#define INBOX 2
 	#define OUTBOX 1
   #define INBOX_ANG 3
-  #define INBOX_CORBONECO 4
   //
 
 
 //IO
 // Defines de sensores
-	#define US_BONECO IN_1
+	#define RGB_DIR IN_1
 	#define RGB_ESQ IN_2
-	#define HT_MEIO IN_3
+	#define RGB_MEIO IN_3
 	#define GYRO IN_4
 
 #define OFFSET_SAMPLES 2048
@@ -100,12 +97,6 @@
   #define ANG_LEVANTAR -50
 
   #define VETOR_CALIBRACAO 11
-//US
-int distUS;
-
-//Variáveis do HT
-int ht_colornum, ht_red, ht_green, ht_blue, ht_white;
-
 //mais variáveis globais
 int CorBaseDirMax, CorBaseDirMin, CorBaseEsqMax, CorBaseEsqMin, CorBaseMeioMin, CorBaseMeioMax;
 
@@ -146,7 +137,6 @@ int lerAngulo();
 float GetGyroOffset();
 void MandaGirar();
 void MandaQueJaDeuPorHoje();//função apra parar de girar
-void filterUS(int SENSOR);
 
 //função para dbug
 void  bip()
@@ -172,7 +162,6 @@ task main()
 void consultor()
 {
   int mensagem;
-  int flag = 0;
 
   init();
 
@@ -186,21 +175,31 @@ void consultor()
         CalibraFaixaBase();
       break;
       case STOP:
-        //Não usa mais essa parada
-      break;
-      case TEMOUNAOBONECO:
-        bip();
-        Wait(50);
-        if(BonecosCapturados)
-        {
-          SendRemoteNumber(CONEXAO, OUTBOX, SIMTEM);
-        }
-        else
-        {
-          SendRemoteNumber(CONEXAO, OUTBOX, NAOVIRGULANAOTEM);
-        }
-      break;
+        //nbip(3);
+        /*flag = 0;NÃO VAI TER ESSA PARTE
+        while(!flag){
+          ReceiveRemoteNumber(INBOX,true,mensagem);
+          
+          switch(mensagem)
+          {
 
+            case START:
+              flag = 1;
+            break;
+            case TEMOUNAOBONECO:
+              bip();
+              if(BonecosCapturados)
+              {
+                SendRemoteNumber(CONEXAO, OUTBOX, SIMTEM);
+              }
+              else
+              {
+                SendRemoteNumber(CONEXAO, OUTBOX, NAOVIRGULANAOTEM);
+              }
+            break;
+          }
+        }*/
+      break;
       case VIRA:
         virar();
       break;
@@ -220,8 +219,7 @@ void init()
 	VoltaGarra();
 	BonecoAlvo();
 
-  distUS=20;
-  //CalibraFaixaBase();
+  CalibraFaixaBase();
 
   BonecosCapturados = 0;
 
@@ -229,10 +227,9 @@ void init()
 
 void InicializaSensores()
 {
-  SetSensorUltrasonic(US_BONECO);
-  //SetSensorColorRed(RGB_ESQ);
-  SetSensorLowspeed(HT_MEIO);
-  SetHTColor2Mode(HT_MEIO, HT_CMD_COLOR2_ACTIVE);
+  SetSensorColorRed(RGB_DIR);
+  SetSensorColorRed(RGB_ESQ);
+  SetSensorColorGreen(RGB_MEIO);
   SetSensorHTGyro(GYRO);
 }
 
@@ -251,52 +248,46 @@ void BonecoAlvo()
 	  BipBranco();
 	  bonecoNaoAlvo = BONECO_PRETO;
 	}
-
-  //bonecoAlvo = BONECO_BRANCO;
-
 }
 
 int TemBoneco()
 {
-   //int rgb_esq, rgb_dir, ht_meio;
+   int rgb_esq, rgb_dir, rgb_meio;
 
    //bip();
 
+   rgb_dir = lerSensor(RGB_DIR);
+   rgb_esq = lerSensor(RGB_ESQ);
+   rgb_meio = lerSensor(RGB_MEIO);
+
    //NumOut(0, LCD_LINE2, rgb_dir);
    //NumOut(0, LCD_LINE3, rgb_esq);
-   
-   filterUS(US_BONECO);
-   Wait(50);
-    //if(((rgb_dir < CorBaseDirMax) && (rgb_dir > CorBaseDirMin)) && ((rgb_esq < CorBaseEsqMax) && (rgb_esq > CorBaseEsqMin)))
-   /*if(((rgb_dir < CorBaseDirMax) && (rgb_dir > CorBaseDirMin)) && ((rgb_esq < CorBaseEsqMax) && (rgb_esq > CorBaseEsqMin)) && (ht_white != 255))
+
+   if(((rgb_dir < CorBaseDirMax) && (rgb_dir > CorBaseDirMin)) && ((rgb_esq < CorBaseEsqMax) && (rgb_esq > CorBaseEsqMin)) && ((rgb_meio < CorBaseMeioMax) && (rgb_meio > CorBaseMeioMin)))
       return NAO_ALIEN;
    return SIM_ALIEN;
-  */
-   if((distUS==6)||(distUS==7)||(distUS==10)||(distUS==11)||(distUS==12)||(distUS==13)) {
-      return SIM_ALIEN;
-    }
-
-   return NAO_ALIEN; 
 }
 
 int RecebeBoneco(){
      int sinInicial = 0;
      //bip();
-      //função correta
-     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---
+     /* //função correta
      do{
-          ReceiveRemoteNumber(INBOX_CORBONECO, true, sinInicial);
+          ReceiveRemoteNumber(INBOX, true, sinInicial);
           Wait(30);
      }while(sinInicial == 0);
- //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---
-     //SendRemoteNumber(CONEXAO, OUTBOX, 1);
+
+     SendRemoteNumber(CONEXAO, OUTBOX, SIM);
      Wait(50);
-     //LimpaBuffer();
+     LimpaBuffer();
      if(sinInicial == BONECO_PRETO)
           return BONECO_PRETO;
      else if(sinInicial == BONECO_BRANCO)
           return BONECO_BRANCO;
-      
+      */
+
+     //função para teste
+     return BONECO_PRETO;
 
 }
 
@@ -382,15 +373,17 @@ void VoltaGarra()
 
 int CorBoneco()//TESTAR
 {
-    ReadSensorHTColor2Active(HT_MEIO, ht_colornum, ht_red, ht_green, ht_blue, ht_white);
+    int leitura;
 
-    if((ht_white < COR_BRANCA_MEIO_MAX)&&(ht_white > COR_BRANCA_MEIO_MIN))
+    leitura = lerSensor(RGB_MEIO);
+
+    if((leitura < COR_BRANCA_MEIO_MAX)&&(leitura > COR_BRANCA_MEIO_MIN))
     {
       return BONECO_BRANCO;
     }
-    if((ht_white < COR_PRETA_MEIO_MAX)&&(ht_white > COR_PRETA_MEIO_MIN))
+    if((leitura < COR_PRETA_MEIO_MAX)&&(leitura > COR_PRETA_MEIO_MIN))
         return BONECO_PRETO;
-    if((ht_white < COR_VERMELHA_MEIO_MAX)&&(ht_white > COR_VERMELHA_MEIO_MIN))
+    if((leitura < COR_VERMELHA_MEIO_MAX)&&(leitura > COR_VERMELHA_MEIO_MIN))
         return BONECO_VERMELHO;
 }
 
@@ -439,13 +432,12 @@ void BonecoNaFrente()
   if(PegaBoneco())
   {
     cor = CorBoneco();
-    //cor = bonecoAlvo;//<_____________________________________________________________________________________________________________MUDA ISSO HOJE
     int mensagem;
     //cor = bonecoAlvo;////DEBUG
     //BonecosCapturados = 3;////DEBUG
     if(cor == bonecoAlvo)
     {
-      if(BonecosCapturados == MAX_BONECOS_DENTRO)
+      if(BonecosCapturados == 3)
       {
         LevantaBoneco();
         nbip(4);
@@ -483,7 +475,7 @@ void BonecoNaFrente()
       bip();
 
       ClearScreen();
-      NumOut(0,LCD_LINE1,ht_white);
+      NumOut(0,LCD_LINE1,cor);
       //debug
       //while(1){}
 
@@ -578,19 +570,22 @@ void LevantaBoneco()
 
 void CalibraFaixaBase()
 {
-  /*int rgb_esq, rgb_dir;
+  int rgb_esq, rgb_dir, rgb_meio;
 
   //bip();
 
   rgb_dir = lerSensor(RGB_DIR);
   rgb_esq = lerSensor(RGB_ESQ);
+  rgb_meio = lerSensor(RGB_MEIO);
 
   CorBaseDirMax = rgb_dir + FAIXA_SENSORES_LATERAL;
   CorBaseDirMin = rgb_dir - FAIXA_SENSORES_LATERAL;
   CorBaseEsqMax = rgb_esq + FAIXA_SENSORES_LATERAL;
   CorBaseEsqMin = rgb_esq - FAIXA_SENSORES_LATERAL;
+  CorBaseMeioMax = rgb_meio + FAIXA_SENSORES_MEIO;
+  CorBaseMeioMin = rgb_meio - FAIXA_SENSORES_MEIO;
 
-  nbip(2);*/
+  nbip(2);
 
 }
 
@@ -667,18 +662,4 @@ void MandaGirar()
 void MandaQueJaDeuPorHoje()//função apra parar de girar
 {
   SendRemoteNumber(CONEXAO, OUTBOX, PAREDEGIRAR);
-}
-
-void filterUS(int SENSOR)
-{
-  //float alfa = 0.4;
-  int leitura,i=0;
-  leitura= SensorUS(SENSOR);
-
-  while(leitura==0 || leitura >= 250 || abs(distUS-leitura)>15 && i<5){
-    leitura= SensorUS(SENSOR);
-    i++;
-    Wait(30);
-  }
-  distUS = ((6*distUS)/10)+(4*leitura/10);
 }

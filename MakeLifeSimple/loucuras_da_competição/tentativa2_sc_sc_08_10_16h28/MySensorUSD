@@ -1,0 +1,14 @@
+
+int MySensorUSD(int distanciaAtualDireita) {
+     int aux;
+     ReceiveRemoteNumber(INBOXUSD, true, aux);
+     if(aux==0) {
+          return distanciaAtualDireita;              //se nao tiver lido nenhum valor, retorna o valor armazenado anteriormente
+     }
+     else {
+          return aux;
+     }
+}
+task main() {
+
+}

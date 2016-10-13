@@ -1,0 +1,40 @@
+#define ANGULO_1 -110 //-77
+#define POTENCIA_MAXIMA_GARRA -90
+#define MOTOR_GARRA OUT_A
+#define POTENCIA_MIN_GARRA -30
+#define TEMPO_DEPOIS_DE_JOGAR_DENTRO 200
+
+void VoltaGarra()
+{
+    int tc, old_tc;
+
+    OnFwd(MOTOR_GARRA,-(POTENCIA_MIN_GARRA));
+      tc = MotorTachoCount(MOTOR_GARRA);
+      do
+      {
+        Wait(200);
+        old_tc = tc;
+        tc = MotorTachoCount(MOTOR_GARRA);
+      }while(tc!=old_tc);
+
+      OnFwd(MOTOR_GARRA,0);
+}
+
+
+void Pega(){
+    while(MotorTachoCount(MOTOR_GARRA) != 0)
+    {
+      ResetTachoCount(MOTOR_GARRA);
+    }
+    OnFwd(MOTOR_GARRA,POTENCIA_MAXIMA_GARRA);
+    while(MotorTachoCount(MOTOR_GARRA)>(ANGULO_1));
+    Off(MOTOR_GARRA);
+    //MandaPeguei();
+    Wait(TEMPO_DEPOIS_DE_JOGAR_DENTRO);
+    VoltaGarra();
+}
+
+task main()
+{
+    Pega();
+}

@@ -1,0 +1,1503 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0RegulaComUS	6	1	0	4	110
+1	__D0Regula	6	1	4	4	36
+2	__D0soAnda	6	1	8	4	4
+3	__DU0SetSensorLowspeed_inline_inicializaSensores	5	1	12	4	20
+4	__D0SetSensorLowspeed_inline_inicializaSensores	6	1	16	4	8
+5	__D0PlaySound	6	1	20	4	63
+6	__RLSBmutex1	9	0	24	4	2
+7	__RLSBmutex0	9	0	28	4	2
+8	__SPTArgsMutex	9	0	32	4	14
+9	__D0nbip	6	1	36	4	4
+10	__D0MyOnFwd	6	1	40	4	12
+11	__signed_stack_001MyOnFwd	6	1	44	4	4
+12	__signed_stack_001soAnda	6	1	48	4	2
+13	__signed_stack_002RegulaComUS	6	1	52	4	8
+14	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	56	4	2
+15	__Wait_7qG2_ms_7qG2_000_inline_RegulaComUS	5	1	60	4	2
+16	__Wait_7qG2_ms_7qG2_000_inline_Regula	5	1	64	4	2
+17	__signed_stack_001RegulaComUS	6	1	68	4	40
+18	__signed_stack_001PlaySound	6	1	72	4	44
+19	__signed_stack_001nbip	6	1	76	4	2
+20	__signed_stack_002PlaySound	6	1	80	4	14
+21	__signed_stack_001Regula	6	1	84	4	14
+22	__signed_stack_003PlaySound	6	1	88	4	14
+23	__CLSRMutex0	9	0	92	4	2
+24	__CLSWMutex0	9	0	96	4	2
+25	__CLSCSMutex0	9	0	100	4	2
+26	__CLSWMutex1	9	0	104	4	2
+27	__CLSRMutex1	9	0	108	4	2
+28	__CLSCSMutex1	9	0	112	4	2
+29	__constVal500	4	0	116	2	1
+30	__MyOnFwd_7qG2_motor_7qG2_000	4	1	118	2	13
+31	__PlaySound_7qG2_i_7qG2_001	4	1	120	2	15
+32	__PlaySound_7qG2_aCode_7qG2_000	4	1	122	2	7
+33	__constVal150	4	0	124	2	1
+34	__nbip_7qG2_i_7qG2_000	4	1	126	2	4
+35	potdGlobal	4	0	128	2	24
+36	__Regula_7qG2_i_7qG2_000	4	1	130	2	4
+37	__soAnda_7qG2_i_7qG2_001	4	1	132	2	4
+38	__RegulaComUS_7qG2_distanciaAtual_7qG2_000	4	1	134	2	10
+39	poteGlobal	4	0	136	2	24
+40	__Regula_7qG2_iteracoes_7qG2_000	4	1	138	2	2
+41	__MyOnFwd_7qG2_pot_7qG2_000	4	1	140	2	9
+42	__RegulaComUS_7qG2_distParede_7qG2_000	4	1	142	2	12
+43	__nbip_7qG2_n_7qG2_000	4	1	144	2	2
+44	__RegulaComUS_7qG2_direcao_7qG2_000	4	1	146	2	4
+45	__constVal200	4	0	148	2	1
+46	__RLSBResult0	2	1	150	1	7
+47	__nbip_return	1	1	151	1	3
+48	__parar_return	1	1	152	1	3
+49	__MyOnFwd_return	1	1	153	1	10
+50	__constValNeg90	2	0	154	1	2
+51	__Regula_return	1	1	155	1	3
+52	__inicializaSensores_return	1	1	156	1	3
+53	____initialize_global_data_return	1	1	157	1	3
+54	__RLSBytesCount0	1	1	158	1	7
+55	__RLSBIterations0	1	1	159	1	4
+56	__constVal1	2	0	160	1	19
+57	__soAnda_return	1	1	161	1	3
+58	__constVal0	2	1	162	1	9
+59	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	163	1	8
+60	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	164	1	8
+61	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores	1	1	165	1	8
+62	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	166	1	4
+63	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	167	1	8
+64	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores	1	1	168	1	8
+65	____ReadLSBytes0_return	1	1	169	1	3
+66	__constVal32	2	0	170	1	3
+67	__RegulaComUS_return	1	1	171	1	4
+68	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores	1	1	172	1	20
+69	__constVal63	2	0	173	1	1
+70	__constVal96	2	0	174	1	1
+71	__bip_return	1	1	175	1	3
+72	__constVal50	2	0	176	1	1
+73	__constVal3	2	0	177	1	1
+74	__PlaySound_return	1	1	178	1	3
+75	__PFTmp	1	1	179	1	1
+76	____ResetSensorSubroutine_return	1	1	180	1	6
+77	__constVal15	2	0	181	1	2
+78	__ResetSensorPort	1	1	182	1	6
+79	__ResetSensorTmp	1	1	183	1	2
+80	__constVal100	2	0	184	1	2
+81	__RLSBResult1	2	1	185	1	7
+82	__LSWriteOptionsVar	1	1	186	1	4
+83	____ReadLSBytes1_return	1	1	187	1	3
+84	__RLSBytesCount1	1	1	188	1	7
+85	__RLSBIterations1	1	1	189	1	4
+86	__SPTArgs	8	0	5	8	42
+87	__SPTArgs.Result	2	1	192	1	42
+88	__SPTArgs.Frequency	3	1	194	2	42
+89	__SPTArgs.Duration	3	1	196	2	42
+90	__SPTArgs.Loop	1	1	198	1	42
+91	__SPTArgs.Volume	1	1	199	1	42
+92	__CLSCSArgs0	8	0	3	4	4
+93	__CLSCSArgs0.Result	2	1	200	1	4
+94	__CLSCSArgs0.Port	1	1	201	1	4
+95	__CLSCSArgs0.BytesReady	1	1	202	1	4
+96	__CLSRArgs0	8	0	4	12	5
+97	__CLSRArgs0.Result	2	1	204	1	5
+98	__CLSRArgs0.Port	1	1	205	1	5
+99	__CLSRArgs0.Buffer	7	0	206	4	5
+100	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+101	__CLSRArgs0.BufferLen	1	1	208	1	5
+102	__CLSWArgs0	8	0	4	12	5
+103	__CLSWArgs0.Result	2	1	212	1	5
+104	__CLSWArgs0.Port	1	1	213	1	5
+105	__CLSWArgs0.Buffer	7	0	214	4	5
+106	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+107	__CLSWArgs0.ReturnLen	1	1	216	1	5
+108	__CLSWArgs1	8	0	4	12	5
+109	__CLSWArgs1.Result	2	1	220	1	5
+110	__CLSWArgs1.Port	1	1	221	1	5
+111	__CLSWArgs1.Buffer	7	0	222	4	5
+112	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
+113	__CLSWArgs1.ReturnLen	1	1	224	1	5
+114	__CLSRArgs1	8	0	4	12	5
+115	__CLSRArgs1.Result	2	1	228	1	5
+116	__CLSRArgs1.Port	1	1	229	1	5
+117	__CLSRArgs1.Buffer	7	0	230	4	5
+118	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
+119	__CLSRArgs1.BufferLen	1	1	232	1	5
+120	__CLSCSArgs1	8	0	3	4	4
+121	__CLSCSArgs1.Result	2	1	236	1	4
+122	__CLSCSArgs1.Port	1	1	237	1	4
+123	__CLSCSArgs1.BytesReady	1	1	238	1	4
+124	__LSWriteOptions	7	0	240	4	2
+125	__LSWriteOptions.__LSWriteOptions_type	1	0	0	1	0
+126	__RLSBbufLSWrite1	7	0	242	4	2
+127	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+128	__RLSLastGoodRead1	7	0	244	4	2
+129	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
+130	__RLSLastGoodRead0	7	0	246	4	2
+131	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
+132	__RLSReadBuf0	7	0	248	4	8
+133	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
+134	__RLSReadBuf1	7	0	250	4	8
+135	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	85	0	#line 85 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+0	86	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	85	2	#line 85 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+0	85	2	#line 85 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+0	86	2		subcall inicializaSensores, __inicializaSensores_return
+0	85	4	#line 85 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+0	96	4	#line 96 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+0	97	4		subcall soAnda, __soAnda_return
+0	96	6	#line 96 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+0	97	6	#line 97 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+0	98	6		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	97	9	#line 97 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+0	8869	9	#line 8869 "NXCDefs.h"
+0	8870	9		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8869	12	#line 8869 "NXCDefs.h"
+0	97	12	#line 97 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+0	98	12	#line 98 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+0	99	12		subcall parar, __parar_return
+0	98	14	#line 98 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+0	99	14		exit -1, -1
+1	5724	0		setin __constVal1, __ResetSensorPort, 5
+1	5726	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5727	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5728	11		subret ____ResetSensorSubroutine_return
+2	6520	0	#pragma macro 27
+2	6520	0		acquire __CLSWMutex0
+2	6520	1		index __LSWriteOptionsVar, __LSWriteOptions, __constVal0
+2	6520	5		or __CLSWArgs0.Port, __constVal0, __LSWriteOptionsVar
+2	6520	9		mov __CLSWArgs0.ReturnLen, __RLSBytesCount0
+2	6520	11		mov __CLSWArgs0.Buffer, __RLSReadBuf0
+2	6520	13		syscall 21, __CLSWArgs0
+2	6520	16		mov __RLSBResult0, __CLSWArgs0.Result
+2	6520	18		release __CLSWMutex0
+2	6521	19	#line 6521 "NXTDefs.h"
+2	6522	19		brtst 5, __RLSBError0, __RLSBResult0
+2	6523	22		set __RLSBIterations0, 60
+2	6525	25	#pragma macro 23
+2	6525	25		acquire __CLSCSMutex0
+2	6525	26		set __CLSCSArgs0.Port, 0
+2	6525	29		syscall 23, __CLSCSArgs0
+2	6525	32		mov __RLSBytesCount0, __CLSCSArgs0.BytesReady
+2	6525	34		mov __RLSBResult0, __CLSCSArgs0.Result
+2	6525	36		release __CLSCSMutex0
+2	6525	37	#line 6525 "NXTDefs.h"
+2	6526	37		sub __RLSBIterations0, __RLSBIterations0, __constVal1
+2	6527	41		brtst 2, __RLSBError0, __RLSBIterations0
+2	6528	44		brtst 0, __RLSBError0, __RLSBResult0
+2	6529	47		brtst 4, __RLSBReadyToRead0, __RLSBResult0
+2	6531	50		wait2 NA, __constVal1
+2	6532	53		jmp __RLSBDoCheckStatus0
+2	6534	55		brtst 4, __RLSBReturn0, __RLSBytesCount0
+2	6535	58		arrinit __RLSReadBuf0, __constVal0, __RLSBytesCount0
+2	6537	62	#pragma macro 25
+2	6537	62		acquire __CLSRMutex0
+2	6537	63		set __CLSRArgs0.Port, 0
+2	6537	66		mov __CLSRArgs0.BufferLen, __RLSBytesCount0
+2	6537	68		syscall 22, __CLSRArgs0
+2	6537	71		mov __RLSReadBuf0, __CLSRArgs0.Buffer
+2	6537	73		mov __RLSBResult0, __CLSRArgs0.Result
+2	6537	75		release __CLSRMutex0
+2	6537	76	#line 6537 "NXTDefs.h"
+2	6538	76		brtst 5, __RLSBError0, __RLSBResult0
+2	6539	79		mov __RLSLastGoodRead0, __RLSReadBuf0
+2	6540	81		jmp __RLSBDone0
+2	6542	83		mov __RLSReadBuf0, __RLSLastGoodRead0
+2	6544	85		arrsize __RLSBytesCount0, __RLSReadBuf0
+2	6546	88		subret ____ReadLSBytes0_return
+3	6558	0	#pragma macro 27
+3	6558	0		acquire __CLSWMutex1
+3	6558	1		index __LSWriteOptionsVar, __LSWriteOptions, __constVal1
+3	6558	5		or __CLSWArgs1.Port, __constVal1, __LSWriteOptionsVar
+3	6558	9		mov __CLSWArgs1.ReturnLen, __RLSBytesCount1
+3	6558	11		mov __CLSWArgs1.Buffer, __RLSReadBuf1
+3	6558	13		syscall 21, __CLSWArgs1
+3	6558	16		mov __RLSBResult1, __CLSWArgs1.Result
+3	6558	18		release __CLSWMutex1
+3	6558	19	#line 6558 "NXTDefs.h"
+3	6559	19		brtst 5, __RLSBError1, __RLSBResult1
+3	6560	22		set __RLSBIterations1, 60
+3	6562	25	#pragma macro 23
+3	6562	25		acquire __CLSCSMutex1
+3	6562	26		set __CLSCSArgs1.Port, 1
+3	6562	29		syscall 23, __CLSCSArgs1
+3	6562	32		mov __RLSBytesCount1, __CLSCSArgs1.BytesReady
+3	6562	34		mov __RLSBResult1, __CLSCSArgs1.Result
+3	6562	36		release __CLSCSMutex1
+3	6562	37	#line 6562 "NXTDefs.h"
+3	6563	37		sub __RLSBIterations1, __RLSBIterations1, __constVal1
+3	6564	41		brtst 2, __RLSBError1, __RLSBIterations1
+3	6565	44		brtst 0, __RLSBError1, __RLSBResult1
+3	6566	47		brtst 4, __RLSBReadyToRead1, __RLSBResult1
+3	6568	50		wait2 NA, __constVal1
+3	6569	53		jmp __RLSBDoCheckStatus1
+3	6571	55		brtst 4, __RLSBReturn1, __RLSBytesCount1
+3	6572	58		arrinit __RLSReadBuf1, __constVal0, __RLSBytesCount1
+3	6574	62	#pragma macro 25
+3	6574	62		acquire __CLSRMutex1
+3	6574	63		set __CLSRArgs1.Port, 1
+3	6574	66		mov __CLSRArgs1.BufferLen, __RLSBytesCount1
+3	6574	68		syscall 22, __CLSRArgs1
+3	6574	71		mov __RLSReadBuf1, __CLSRArgs1.Buffer
+3	6574	73		mov __RLSBResult1, __CLSRArgs1.Result
+3	6574	75		release __CLSRMutex1
+3	6574	76	#line 6574 "NXTDefs.h"
+3	6575	76		brtst 5, __RLSBError1, __RLSBResult1
+3	6576	79		mov __RLSLastGoodRead1, __RLSReadBuf1
+3	6577	81		jmp __RLSBDone1
+3	6579	83		mov __RLSReadBuf1, __RLSLastGoodRead1
+3	6581	85		arrsize __RLSBytesCount1, __RLSReadBuf1
+3	6583	88		subret ____ReadLSBytes1_return
+4	7372	0	#line 7372 "NXCDefs.h"
+4	7373	0		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+4	7372	2	#line 7372 "NXCDefs.h"
+4	7373	2	#line 7373 "NXCDefs.h"
+4	7374	2		set __D0PlaySound, 0
+4	7373	5	#line 7373 "NXCDefs.h"
+4	7374	5		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+4	7373	9	#line 7373 "NXCDefs.h"
+4	7374	9		brtst 4, __ASM_Label_56, __D0PlaySound
+4	7373	12	#line 7373 "NXCDefs.h"
+4	7374	12		set __signed_stack_001PlaySound, 600
+4	7373	15	#line 7373 "NXCDefs.h"
+4	7373	15	#line 7373 "NXCDefs.h"
+4	7374	15		set __signed_stack_002PlaySound, 200
+4	7373	18	#line 7373 "NXCDefs.h"
+4	7373	18	#line 7373 "NXCDefs.h"
+4	7374	18		set __signed_stack_003PlaySound, 4
+4	7373	21	#line 7373 "NXCDefs.h"
+4	7373	21	#line 7373 "NXCDefs.h"
+4	7374	21		set __D0PlaySound, 0
+4	7373	24	#line 7373 "NXCDefs.h"
+4	7374	24		acquire __SPTArgsMutex
+4	7373	25	#line 7373 "NXCDefs.h"
+4	7374	25		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+4	7373	27	#line 7373 "NXCDefs.h"
+4	7374	27		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+4	7373	29	#line 7373 "NXCDefs.h"
+4	7374	29		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+4	7373	31	#line 7373 "NXCDefs.h"
+4	7374	31		mov __SPTArgs.Loop, __D0PlaySound
+4	7373	33	#line 7373 "NXCDefs.h"
+4	7374	33		syscall 10, __SPTArgs
+4	7373	36	#line 7373 "NXCDefs.h"
+4	7374	36		mov __D0PlaySound, __SPTArgs.Result
+4	7373	38	#line 7373 "NXCDefs.h"
+4	7374	38		release __SPTArgsMutex
+4	7373	39	#line 7373 "NXCDefs.h"
+4	7374	39	#line 7374 "NXCDefs.h"
+4	7375	39		jmp __ASM_Label_65
+4	7374	41	#line 7374 "NXCDefs.h"
+4	7375	41		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+4	7374	43	#line 7374 "NXCDefs.h"
+4	7375	43	#line 7375 "NXCDefs.h"
+4	7376	43		set __D0PlaySound, 1
+4	7375	46	#line 7375 "NXCDefs.h"
+4	7376	46		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+4	7376	50	#line 7376 "NXCDefs.h"
+4	7377	50		brtst 4, __ASM_Label_68, __D0PlaySound
+4	7376	53	#line 7376 "NXCDefs.h"
+4	7377	53		set __signed_stack_001PlaySound, 600
+4	7376	56	#line 7376 "NXCDefs.h"
+4	7376	56	#line 7376 "NXCDefs.h"
+4	7377	56		set __signed_stack_002PlaySound, 150
+4	7376	59	#line 7376 "NXCDefs.h"
+4	7376	59	#line 7376 "NXCDefs.h"
+4	7377	59		set __signed_stack_003PlaySound, 4
+4	7376	62	#line 7376 "NXCDefs.h"
+4	7376	62	#line 7376 "NXCDefs.h"
+4	7377	62		set __D0PlaySound, 0
+4	7376	65	#line 7376 "NXCDefs.h"
+4	7377	65		acquire __SPTArgsMutex
+4	7376	66	#line 7376 "NXCDefs.h"
+4	7377	66		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+4	7376	68	#line 7376 "NXCDefs.h"
+4	7377	68		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+4	7376	70	#line 7376 "NXCDefs.h"
+4	7377	70		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+4	7376	72	#line 7376 "NXCDefs.h"
+4	7377	72		mov __SPTArgs.Loop, __D0PlaySound
+4	7376	74	#line 7376 "NXCDefs.h"
+4	7377	74		syscall 10, __SPTArgs
+4	7376	77	#line 7376 "NXCDefs.h"
+4	7377	77		mov __D0PlaySound, __SPTArgs.Result
+4	7376	79	#line 7376 "NXCDefs.h"
+4	7377	79		release __SPTArgsMutex
+4	7376	80	#line 7376 "NXCDefs.h"
+4	7377	80	#line 7377 "NXCDefs.h"
+4	7378	80		wait2 NA, __constVal200
+4	7377	83	#line 7377 "NXCDefs.h"
+4	7377	83	#line 7377 "NXCDefs.h"
+4	7378	83	#line 7378 "NXCDefs.h"
+4	7379	83		set __signed_stack_001PlaySound, 600
+4	7378	86	#line 7378 "NXCDefs.h"
+4	7378	86	#line 7378 "NXCDefs.h"
+4	7379	86		set __signed_stack_002PlaySound, 150
+4	7378	89	#line 7378 "NXCDefs.h"
+4	7378	89	#line 7378 "NXCDefs.h"
+4	7379	89		set __signed_stack_003PlaySound, 4
+4	7378	92	#line 7378 "NXCDefs.h"
+4	7378	92	#line 7378 "NXCDefs.h"
+4	7379	92		set __D0PlaySound, 0
+4	7378	95	#line 7378 "NXCDefs.h"
+4	7379	95		acquire __SPTArgsMutex
+4	7378	96	#line 7378 "NXCDefs.h"
+4	7379	96		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+4	7378	98	#line 7378 "NXCDefs.h"
+4	7379	98		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+4	7378	100	#line 7378 "NXCDefs.h"
+4	7379	100		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+4	7378	102	#line 7378 "NXCDefs.h"
+4	7379	102		mov __SPTArgs.Loop, __D0PlaySound
+4	7378	104	#line 7378 "NXCDefs.h"
+4	7379	104		syscall 10, __SPTArgs
+4	7378	107	#line 7378 "NXCDefs.h"
+4	7379	107		mov __D0PlaySound, __SPTArgs.Result
+4	7378	109	#line 7378 "NXCDefs.h"
+4	7379	109		release __SPTArgsMutex
+4	7378	110	#line 7378 "NXCDefs.h"
+4	7379	110	#line 7379 "NXCDefs.h"
+4	7380	110		wait2 NA, __constVal150
+4	7379	113	#line 7379 "NXCDefs.h"
+4	7379	113	#line 7379 "NXCDefs.h"
+4	7381	113	#line 7381 "NXCDefs.h"
+4	7382	113		jmp __ASM_Label_85
+4	7381	115	#line 7381 "NXCDefs.h"
+4	7382	115		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+4	7381	117	#line 7381 "NXCDefs.h"
+4	7382	117	#line 7382 "NXCDefs.h"
+4	7383	117		set __D0PlaySound, 3
+4	7382	120	#line 7382 "NXCDefs.h"
+4	7383	120		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+4	7382	124	#line 7382 "NXCDefs.h"
+4	7383	124		brtst 4, __ASM_Label_88, __D0PlaySound
+4	7382	127	#line 7382 "NXCDefs.h"
+4	7383	127		set __PlaySound_7qG2_i_7qG2_001, 4
+4	7382	130	#line 7382 "NXCDefs.h"
+4	7382	130	#line 7382 "NXCDefs.h"
+4	7383	130		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+4	7382	132	#line 7382 "NXCDefs.h"
+4	7382	132	#line 7382 "NXCDefs.h"
+4	7383	132		set __D0PlaySound, 8
+4	7382	135	#line 7382 "NXCDefs.h"
+4	7383	135		cmp 0, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+4	7382	139	#line 7382 "NXCDefs.h"
+4	7383	139		brtst 4, __ASM_Label_90, __D0PlaySound
+4	7382	142	#line 7382 "NXCDefs.h"
+4	7383	142		jmp __ASM_Label_91
+4	7383	144	#line 7383 "NXCDefs.h"
+4	7384	144		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
+4	7384	148	#line 7384 "NXCDefs.h"
+4	7385	148		jmp __ASM_Label_89
+4	7384	150	#line 7384 "NXCDefs.h"
+4	7385	150		set __signed_stack_001PlaySound, 523
+4	7384	153	#line 7384 "NXCDefs.h"
+4	7384	153	#line 7384 "NXCDefs.h"
+4	7384	153	#line 7384 "NXCDefs.h"
+4	7385	153		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+4	7384	157	#line 7384 "NXCDefs.h"
+4	7384	157	#line 7384 "NXCDefs.h"
+4	7385	157		set __D0PlaySound, 4
+4	7384	160	#line 7384 "NXCDefs.h"
+4	7385	160		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+4	7384	164	#line 7384 "NXCDefs.h"
+4	7384	164	#line 7384 "NXCDefs.h"
+4	7385	164		set __signed_stack_002PlaySound, 100
+4	7384	167	#line 7384 "NXCDefs.h"
+4	7384	167	#line 7384 "NXCDefs.h"
+4	7385	167		set __signed_stack_003PlaySound, 4
+4	7384	170	#line 7384 "NXCDefs.h"
+4	7384	170	#line 7384 "NXCDefs.h"
+4	7385	170		set __D0PlaySound, 0
+4	7384	173	#line 7384 "NXCDefs.h"
+4	7385	173		acquire __SPTArgsMutex
+4	7384	174	#line 7384 "NXCDefs.h"
+4	7385	174		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+4	7384	176	#line 7384 "NXCDefs.h"
+4	7385	176		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+4	7384	178	#line 7384 "NXCDefs.h"
+4	7385	178		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+4	7384	180	#line 7384 "NXCDefs.h"
+4	7385	180		mov __SPTArgs.Loop, __D0PlaySound
+4	7384	182	#line 7384 "NXCDefs.h"
+4	7385	182		syscall 10, __SPTArgs
+4	7384	185	#line 7384 "NXCDefs.h"
+4	7385	185		mov __D0PlaySound, __SPTArgs.Result
+4	7384	187	#line 7384 "NXCDefs.h"
+4	7385	187		release __SPTArgsMutex
+4	7384	188	#line 7384 "NXCDefs.h"
+4	7385	188	#line 7385 "NXCDefs.h"
+4	7386	188		wait2 NA, __constVal100
+4	7385	191	#line 7385 "NXCDefs.h"
+4	7385	191	#line 7385 "NXCDefs.h"
+4	7387	191	#line 7387 "NXCDefs.h"
+4	7388	191		jmp __ASM_Label_92
+4	7387	193	#line 7387 "NXCDefs.h"
+4	7387	193	#line 7387 "NXCDefs.h"
+4	7388	193		jmp __ASM_Label_105
+4	7387	195	#line 7387 "NXCDefs.h"
+4	7388	195		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+4	7387	197	#line 7387 "NXCDefs.h"
+4	7388	197	#line 7388 "NXCDefs.h"
+4	7389	197		set __D0PlaySound, 2
+4	7388	200	#line 7388 "NXCDefs.h"
+4	7389	200		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+4	7388	204	#line 7388 "NXCDefs.h"
+4	7389	204		brtst 4, __ASM_Label_108, __D0PlaySound
+4	7388	207	#line 7388 "NXCDefs.h"
+4	7389	207		set __PlaySound_7qG2_i_7qG2_001, 7
+4	7388	210	#line 7388 "NXCDefs.h"
+4	7388	210	#line 7388 "NXCDefs.h"
+4	7389	210		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+4	7388	212	#line 7388 "NXCDefs.h"
+4	7388	212	#line 7388 "NXCDefs.h"
+4	7389	212		set __D0PlaySound, 3
+4	7388	215	#line 7388 "NXCDefs.h"
+4	7389	215		cmp 1, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+4	7388	219	#line 7388 "NXCDefs.h"
+4	7389	219		brtst 4, __ASM_Label_110, __D0PlaySound
+4	7388	222	#line 7388 "NXCDefs.h"
+4	7389	222		jmp __ASM_Label_111
+4	7389	224	#line 7389 "NXCDefs.h"
+4	7390	224		sub __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
+4	7390	228	#line 7390 "NXCDefs.h"
+4	7391	228		jmp __ASM_Label_109
+4	7390	230	#line 7390 "NXCDefs.h"
+4	7391	230		set __signed_stack_001PlaySound, 523
+4	7390	233	#line 7390 "NXCDefs.h"
+4	7390	233	#line 7390 "NXCDefs.h"
+4	7390	233	#line 7390 "NXCDefs.h"
+4	7391	233		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+4	7390	237	#line 7390 "NXCDefs.h"
+4	7390	237	#line 7390 "NXCDefs.h"
+4	7391	237		set __D0PlaySound, 4
+4	7390	240	#line 7390 "NXCDefs.h"
+4	7391	240		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+4	7390	244	#line 7390 "NXCDefs.h"
+4	7390	244	#line 7390 "NXCDefs.h"
+4	7391	244		set __signed_stack_002PlaySound, 100
+4	7390	247	#line 7390 "NXCDefs.h"
+4	7390	247	#line 7390 "NXCDefs.h"
+4	7391	247		set __signed_stack_003PlaySound, 4
+4	7390	250	#line 7390 "NXCDefs.h"
+4	7390	250	#line 7390 "NXCDefs.h"
+4	7391	250		set __D0PlaySound, 0
+4	7390	253	#line 7390 "NXCDefs.h"
+4	7391	253		acquire __SPTArgsMutex
+4	7390	254	#line 7390 "NXCDefs.h"
+4	7391	254		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+4	7390	256	#line 7390 "NXCDefs.h"
+4	7391	256		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+4	7390	258	#line 7390 "NXCDefs.h"
+4	7391	258		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+4	7390	260	#line 7390 "NXCDefs.h"
+4	7391	260		mov __SPTArgs.Loop, __D0PlaySound
+4	7390	262	#line 7390 "NXCDefs.h"
+4	7391	262		syscall 10, __SPTArgs
+4	7390	265	#line 7390 "NXCDefs.h"
+4	7391	265		mov __D0PlaySound, __SPTArgs.Result
+4	7390	267	#line 7390 "NXCDefs.h"
+4	7391	267		release __SPTArgsMutex
+4	7390	268	#line 7390 "NXCDefs.h"
+4	7391	268	#line 7391 "NXCDefs.h"
+4	7392	268		wait2 NA, __constVal100
+4	7391	271	#line 7391 "NXCDefs.h"
+4	7391	271	#line 7391 "NXCDefs.h"
+4	7393	271	#line 7393 "NXCDefs.h"
+4	7394	271		jmp __ASM_Label_112
+4	7393	273	#line 7393 "NXCDefs.h"
+4	7393	273	#line 7393 "NXCDefs.h"
+4	7394	273		jmp __ASM_Label_125
+4	7393	275	#line 7393 "NXCDefs.h"
+4	7394	275		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+4	7393	277	#line 7393 "NXCDefs.h"
+4	7394	277	#line 7394 "NXCDefs.h"
+4	7395	277		set __D0PlaySound, 4
+4	7394	280	#line 7394 "NXCDefs.h"
+4	7395	280		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+4	7395	284	#line 7395 "NXCDefs.h"
+4	7396	284		brtst 4, __ASM_Label_128, __D0PlaySound
+4	7395	287	#line 7395 "NXCDefs.h"
+4	7396	287		set __signed_stack_001PlaySound, 100
+4	7395	290	#line 7395 "NXCDefs.h"
+4	7395	290	#line 7395 "NXCDefs.h"
+4	7396	290		set __signed_stack_002PlaySound, 500
+4	7395	293	#line 7395 "NXCDefs.h"
+4	7395	293	#line 7395 "NXCDefs.h"
+4	7396	293		set __signed_stack_003PlaySound, 4
+4	7395	296	#line 7395 "NXCDefs.h"
+4	7395	296	#line 7395 "NXCDefs.h"
+4	7396	296		set __D0PlaySound, 0
+4	7395	299	#line 7395 "NXCDefs.h"
+4	7396	299		acquire __SPTArgsMutex
+4	7395	300	#line 7395 "NXCDefs.h"
+4	7396	300		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+4	7395	302	#line 7395 "NXCDefs.h"
+4	7396	302		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+4	7395	304	#line 7395 "NXCDefs.h"
+4	7396	304		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+4	7395	306	#line 7395 "NXCDefs.h"
+4	7396	306		mov __SPTArgs.Loop, __D0PlaySound
+4	7395	308	#line 7395 "NXCDefs.h"
+4	7396	308		syscall 10, __SPTArgs
+4	7395	311	#line 7395 "NXCDefs.h"
+4	7396	311		mov __D0PlaySound, __SPTArgs.Result
+4	7395	313	#line 7395 "NXCDefs.h"
+4	7396	313		release __SPTArgsMutex
+4	7395	314	#line 7395 "NXCDefs.h"
+4	7396	314	#line 7396 "NXCDefs.h"
+4	7397	314		wait2 NA, __constVal500
+4	7396	317	#line 7396 "NXCDefs.h"
+4	7396	317	#line 7396 "NXCDefs.h"
+4	7398	317	#line 7398 "NXCDefs.h"
+4	7399	317		jmp __ASM_Label_137
+4	7398	319	#line 7398 "NXCDefs.h"
+4	7399	319		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+4	7398	321	#line 7398 "NXCDefs.h"
+4	7399	321	#line 7399 "NXCDefs.h"
+4	7400	321		set __D0PlaySound, 5
+4	7399	324	#line 7399 "NXCDefs.h"
+4	7400	324		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+4	7399	328	#line 7399 "NXCDefs.h"
+4	7400	328		brtst 4, __ASM_Label_140, __D0PlaySound
+4	7399	331	#line 7399 "NXCDefs.h"
+4	7400	331		set __PlaySound_7qG2_i_7qG2_001, 4
+4	7399	334	#line 7399 "NXCDefs.h"
+4	7399	334	#line 7399 "NXCDefs.h"
+4	7400	334		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+4	7399	336	#line 7399 "NXCDefs.h"
+4	7399	336	#line 7399 "NXCDefs.h"
+4	7400	336		set __D0PlaySound, 8
+4	7399	339	#line 7399 "NXCDefs.h"
+4	7400	339		cmp 0, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+4	7399	343	#line 7399 "NXCDefs.h"
+4	7400	343		brtst 4, __ASM_Label_142, __D0PlaySound
+4	7399	346	#line 7399 "NXCDefs.h"
+4	7400	346		jmp __ASM_Label_143
+4	7400	348	#line 7400 "NXCDefs.h"
+4	7401	348		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
+4	7401	352	#line 7401 "NXCDefs.h"
+4	7402	352		jmp __ASM_Label_141
+4	7401	354	#line 7401 "NXCDefs.h"
+4	7402	354		set __signed_stack_001PlaySound, 523
+4	7401	357	#line 7401 "NXCDefs.h"
+4	7401	357	#line 7401 "NXCDefs.h"
+4	7401	357	#line 7401 "NXCDefs.h"
+4	7402	357		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+4	7401	361	#line 7401 "NXCDefs.h"
+4	7401	361	#line 7401 "NXCDefs.h"
+4	7402	361		set __D0PlaySound, 4
+4	7401	364	#line 7401 "NXCDefs.h"
+4	7402	364		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+4	7401	368	#line 7401 "NXCDefs.h"
+4	7401	368	#line 7401 "NXCDefs.h"
+4	7402	368		set __signed_stack_002PlaySound, 50
+4	7401	371	#line 7401 "NXCDefs.h"
+4	7401	371	#line 7401 "NXCDefs.h"
+4	7402	371		set __signed_stack_003PlaySound, 4
+4	7401	374	#line 7401 "NXCDefs.h"
+4	7401	374	#line 7401 "NXCDefs.h"
+4	7402	374		set __D0PlaySound, 0
+4	7401	377	#line 7401 "NXCDefs.h"
+4	7402	377		acquire __SPTArgsMutex
+4	7401	378	#line 7401 "NXCDefs.h"
+4	7402	378		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+4	7401	380	#line 7401 "NXCDefs.h"
+4	7402	380		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+4	7401	382	#line 7401 "NXCDefs.h"
+4	7402	382		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+4	7401	384	#line 7401 "NXCDefs.h"
+4	7402	384		mov __SPTArgs.Loop, __D0PlaySound
+4	7401	386	#line 7401 "NXCDefs.h"
+4	7402	386		syscall 10, __SPTArgs
+4	7401	389	#line 7401 "NXCDefs.h"
+4	7402	389		mov __D0PlaySound, __SPTArgs.Result
+4	7401	391	#line 7401 "NXCDefs.h"
+4	7402	391		release __SPTArgsMutex
+4	7401	392	#line 7401 "NXCDefs.h"
+4	7402	392	#line 7402 "NXCDefs.h"
+4	7403	392		wait2 NA, __constVal50
+4	7402	395	#line 7402 "NXCDefs.h"
+4	7402	395	#line 7402 "NXCDefs.h"
+4	7414	395	#line 7414 "NXCDefs.h"
+4	7415	395		jmp __ASM_Label_144
+4	7414	397	#line 7414 "NXCDefs.h"
+4	7414	397	#line 7414 "NXCDefs.h"
+4	7414	397	#line 7414 "NXCDefs.h"
+4	7414	397	#line 7414 "NXCDefs.h"
+4	7414	397	#line 7414 "NXCDefs.h"
+4	7414	397	#line 7414 "NXCDefs.h"
+4	7414	397	#line 7414 "NXCDefs.h"
+4	7414	397	#line 7414 "NXCDefs.h"
+4	7415	397		subret __PlaySound_return
+5	74	0	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+5	75	0		set __PlaySound_7qG2_aCode_7qG2_000, 2
+5	74	3	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+5	74	3	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+5	75	3		subcall PlaySound, __PlaySound_return
+5	74	5	#line 74 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+5	77	5	#line 77 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+5	78	5		subret __bip_return
+6	110	0	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+6	111	0		set __nbip_7qG2_i_7qG2_000, 0
+6	110	3	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+6	110	3	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+6	111	3		mov __signed_stack_001nbip, __nbip_7qG2_i_7qG2_000
+6	110	5	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+6	110	5	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+6	111	5		mov __D0nbip, __nbip_7qG2_n_7qG2_000
+6	110	7	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+6	111	7		cmp 0, __D0nbip, __signed_stack_001nbip, __D0nbip
+6	110	11	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+6	111	11		brtst 4, __ASM_Label_563, __D0nbip
+6	110	14	#line 110 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+6	111	14		jmp __ASM_Label_564
+6	111	16	#line 111 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+6	112	16		add __nbip_7qG2_i_7qG2_000, __nbip_7qG2_i_7qG2_000, __constVal1
+6	112	20	#line 112 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+6	113	20		jmp __ASM_Label_562
+6	112	22	#line 112 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+6	113	22		subcall bip, __bip_return
+6	112	24	#line 112 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+6	117	24	#line 117 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+6	118	24		jmp __ASM_Label_565
+6	117	26	#line 117 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+6	117	26	#line 117 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+6	118	26		subret __nbip_return
+7	134	0	#line 134 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	135	0		set __Regula_7qG2_i_7qG2_000, 0
+7	134	3	#line 134 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	136	3	#line 136 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	137	3		mov __signed_stack_001Regula, __Regula_7qG2_i_7qG2_000
+7	136	5	#line 136 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	136	5	#line 136 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	137	5		mov __D0Regula, __Regula_7qG2_iteracoes_7qG2_000
+7	136	7	#line 136 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	137	7		cmp 0, __D0Regula, __signed_stack_001Regula, __D0Regula
+7	137	11	#line 137 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	138	11		brtst 4, __ASM_Label_601, __D0Regula
+7	137	14	#line 137 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	138	14		getout __signed_stack_001Regula, __constVal1, 4
+7	137	18	#line 137 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	137	18	#line 137 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	138	18		getout __D0Regula, __constVal0, 4
+7	137	22	#line 137 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	138	22		cmp 1, __D0Regula, __signed_stack_001Regula, __D0Regula
+7	138	26	#line 138 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	139	26		brtst 4, __ASM_Label_606, __D0Regula
+7	138	29	#line 138 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	139	29		mov __signed_stack_001Regula, poteGlobal
+7	138	31	#line 138 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	138	31	#line 138 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	139	31		set __D0Regula, 90
+7	138	34	#line 138 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	139	34		cmp 0, __D0Regula, __signed_stack_001Regula, __D0Regula
+7	139	38	#line 139 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	140	38		brtst 4, __ASM_Label_609, __D0Regula
+7	139	41	#line 139 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	140	41		set __D0Regula, 1
+7	139	44	#line 139 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	140	44		add poteGlobal, poteGlobal, __D0Regula
+7	139	48	#line 139 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	141	48	#line 141 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	142	48		jmp __ASM_Label_612
+7	141	50	#line 141 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	142	50		mov __signed_stack_001Regula, potdGlobal
+7	141	52	#line 141 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	141	52	#line 141 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	142	52		mov __D0Regula, __constValNeg90
+7	141	54	#line 141 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	142	54		cmp 1, __D0Regula, __signed_stack_001Regula, __D0Regula
+7	142	58	#line 142 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	143	58		brtst 4, __ASM_Label_615, __D0Regula
+7	142	61	#line 142 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	143	61		set __D0Regula, 1
+7	142	64	#line 142 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	143	64		sub potdGlobal, potdGlobal, __D0Regula
+7	142	68	#line 142 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	145	68	#line 145 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	145	68	#line 145 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	145	68	#line 145 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	146	68		jmp __ASM_Label_618
+7	145	70	#line 145 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	146	70		getout __signed_stack_001Regula, __constVal1, 4
+7	145	74	#line 145 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	145	74	#line 145 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	146	74		getout __D0Regula, __constVal0, 4
+7	145	78	#line 145 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	146	78		cmp 0, __D0Regula, __signed_stack_001Regula, __D0Regula
+7	146	82	#line 146 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	147	82		brtst 4, __ASM_Label_621, __D0Regula
+7	146	85	#line 146 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	147	85		mov __signed_stack_001Regula, potdGlobal
+7	146	87	#line 146 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	146	87	#line 146 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	147	87		set __D0Regula, 90
+7	146	90	#line 146 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	147	90		cmp 0, __D0Regula, __signed_stack_001Regula, __D0Regula
+7	147	94	#line 147 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	148	94		brtst 4, __ASM_Label_624, __D0Regula
+7	147	97	#line 147 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	148	97		set __D0Regula, 1
+7	147	100	#line 147 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	148	100		add potdGlobal, potdGlobal, __D0Regula
+7	147	104	#line 147 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	149	104	#line 149 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	150	104		jmp __ASM_Label_627
+7	149	106	#line 149 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	150	106		mov __signed_stack_001Regula, poteGlobal
+7	149	108	#line 149 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	149	108	#line 149 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	150	108		mov __D0Regula, __constValNeg90
+7	149	110	#line 149 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	150	110		cmp 1, __D0Regula, __signed_stack_001Regula, __D0Regula
+7	150	114	#line 150 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	151	114		brtst 4, __ASM_Label_630, __D0Regula
+7	150	117	#line 150 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	151	117		set __D0Regula, 1
+7	150	120	#line 150 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	151	120		sub poteGlobal, poteGlobal, __D0Regula
+7	150	124	#line 150 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	153	124	#line 153 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	153	124	#line 153 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	153	124	#line 153 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	153	124	#line 153 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	153	124	#line 153 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	154	124		add __Regula_7qG2_i_7qG2_000, __Regula_7qG2_i_7qG2_000, __constVal1
+7	153	128	#line 153 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	154	128	#line 154 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	155	128		set __MyOnFwd_7qG2_motor_7qG2_000, 1
+7	154	131	#line 154 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	154	131	#line 154 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	155	131		mov __MyOnFwd_7qG2_pot_7qG2_000, potdGlobal
+7	154	133	#line 154 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	154	133	#line 154 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	155	133		subcall MyOnFwd, __MyOnFwd_return
+7	154	135	#line 154 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	155	135	#line 155 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	156	135		set __MyOnFwd_7qG2_motor_7qG2_000, 0
+7	155	138	#line 155 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	155	138	#line 155 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	156	138		mov __MyOnFwd_7qG2_pot_7qG2_000, poteGlobal
+7	155	140	#line 155 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	155	140	#line 155 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	156	140		subcall MyOnFwd, __MyOnFwd_return
+7	155	142	#line 155 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	156	142	#line 156 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	157	142		set __Wait_7qG2_ms_7qG2_000_inline_Regula, 50
+7	156	145	#line 156 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	8869	145	#line 8869 "NXCDefs.h"
+7	8870	145		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_Regula
+7	8869	148	#line 8869 "NXCDefs.h"
+7	156	148	#line 156 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	160	148	#line 160 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	161	148		jmp __ASM_Label_600
+7	160	150	#line 160 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	160	150	#line 160 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+7	161	150		subret __Regula_return
+8	163	0	#line 163 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	164	0		mov __signed_stack_001RegulaComUS, __RegulaComUS_7qG2_direcao_7qG2_000
+8	163	2	#line 163 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	163	2	#line 163 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	164	2		set __D0RegulaComUS, 2
+8	163	5	#line 163 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	164	5		cmp 4, __D0RegulaComUS, __signed_stack_001RegulaComUS, __D0RegulaComUS
+8	164	9	#line 164 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	165	9		brtst 4, __ASM_Label_645, __D0RegulaComUS
+8	164	12	#line 164 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	165	12	#pragma macro 26
+8	165	12		acquire __RLSBmutex1
+8	165	13		mov __RLSReadBuf1, __RLSBbufLSWrite1
+8	165	15		set __RLSBytesCount1, 1
+8	165	18		wait2 NA, __constVal15
+8	165	21		subcall __ReadLSBytes1, ____ReadLSBytes1_return
+8	165	23		index __D0RegulaComUS, __RLSReadBuf1, 65535
+8	165	27		release __RLSBmutex1
+8	5931	28	#line 5931 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	164	28	#line 164 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	165	28		mov __RegulaComUS_7qG2_distanciaAtual_7qG2_000, __D0RegulaComUS
+8	164	30	#line 164 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	164	30	#line 164 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	165	30	#line 165 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	165	30	#line 165 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	166	30		mov __signed_stack_001RegulaComUS, __D0RegulaComUS
+8	165	32	#line 165 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	166	32		mov __D0RegulaComUS, __RegulaComUS_7qG2_distParede_7qG2_000
+8	165	34	#line 165 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	166	34		cmp 4, __D0RegulaComUS, __signed_stack_001RegulaComUS, __D0RegulaComUS
+8	166	38	#line 166 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	167	38		brtst 4, __ASM_Label_650, __D0RegulaComUS
+8	166	41	#line 166 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	167	41		set potdGlobal, 81
+8	166	44	#line 166 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	166	44	#line 166 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	167	44	#line 167 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	168	44		set poteGlobal, 90
+8	167	47	#line 167 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	167	47	#line 167 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	169	47	#line 169 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	170	47		jmp __ASM_Label_655
+8	169	49	#line 169 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	170	49		mov __signed_stack_001RegulaComUS, __RegulaComUS_7qG2_distanciaAtual_7qG2_000
+8	169	51	#line 169 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	169	51	#line 169 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	170	51		mov __D0RegulaComUS, __RegulaComUS_7qG2_distParede_7qG2_000
+8	169	53	#line 169 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	170	53		cmp 1, __D0RegulaComUS, __signed_stack_001RegulaComUS, __D0RegulaComUS
+8	170	57	#line 170 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	171	57		brtst 4, __ASM_Label_658, __D0RegulaComUS
+8	170	60	#line 170 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	171	60		mov __signed_stack_001RegulaComUS, __RegulaComUS_7qG2_distanciaAtual_7qG2_000
+8	170	62	#line 170 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	170	62	#line 170 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	171	62		mov __signed_stack_002RegulaComUS, __RegulaComUS_7qG2_distParede_7qG2_000
+8	170	64	#line 170 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	170	64	#line 170 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	171	64		set __D0RegulaComUS, 15
+8	170	67	#line 170 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	171	67		add __D0RegulaComUS, __signed_stack_002RegulaComUS, __D0RegulaComUS
+8	170	71	#line 170 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	171	71		cmp 0, __D0RegulaComUS, __signed_stack_001RegulaComUS, __D0RegulaComUS
+8	171	75	#line 171 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	172	75		brtst 4, __ASM_Label_661, __D0RegulaComUS
+8	171	78	#line 171 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	172	78		mov __signed_stack_001RegulaComUS, potdGlobal
+8	171	80	#line 171 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	171	80	#line 171 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	172	80		set __D0RegulaComUS, 90
+8	171	83	#line 171 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	172	83		cmp 0, __D0RegulaComUS, __signed_stack_001RegulaComUS, __D0RegulaComUS
+8	172	87	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	173	87		brtst 4, __ASM_Label_664, __D0RegulaComUS
+8	172	90	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	173	90		set __D0RegulaComUS, 5
+8	172	93	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	173	93		add potdGlobal, potdGlobal, __D0RegulaComUS
+8	172	97	#line 172 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	174	97	#line 174 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	175	97		jmp __ASM_Label_667
+8	174	99	#line 174 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	175	99		mov __signed_stack_001RegulaComUS, poteGlobal
+8	174	101	#line 174 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	174	101	#line 174 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	175	101		set __D0RegulaComUS, 60
+8	174	104	#line 174 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	175	104		cmp 1, __D0RegulaComUS, __signed_stack_001RegulaComUS, __D0RegulaComUS
+8	175	108	#line 175 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	176	108		brtst 4, __ASM_Label_670, __D0RegulaComUS
+8	175	111	#line 175 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	176	111		set __D0RegulaComUS, 5
+8	175	114	#line 175 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	176	114		sub poteGlobal, poteGlobal, __D0RegulaComUS
+8	175	118	#line 175 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	178	118	#line 178 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	179	118	#line 179 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	180	118	#line 180 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	180	118	#line 180 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	181	118		jmp __ASM_Label_673
+8	180	120	#line 180 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	181	120		mov __signed_stack_001RegulaComUS, __RegulaComUS_7qG2_distanciaAtual_7qG2_000
+8	180	122	#line 180 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	180	122	#line 180 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	181	122		mov __D0RegulaComUS, __RegulaComUS_7qG2_distParede_7qG2_000
+8	180	124	#line 180 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	181	124		cmp 0, __D0RegulaComUS, __signed_stack_001RegulaComUS, __D0RegulaComUS
+8	181	128	#line 181 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	182	128		brtst 4, __ASM_Label_676, __D0RegulaComUS
+8	181	131	#line 181 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	182	131		mov __signed_stack_001RegulaComUS, __RegulaComUS_7qG2_distanciaAtual_7qG2_000
+8	181	133	#line 181 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	181	133	#line 181 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	182	133		mov __signed_stack_002RegulaComUS, __RegulaComUS_7qG2_distParede_7qG2_000
+8	181	135	#line 181 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	181	135	#line 181 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	182	135		set __D0RegulaComUS, 15
+8	181	138	#line 181 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	182	138		sub __D0RegulaComUS, __signed_stack_002RegulaComUS, __D0RegulaComUS
+8	181	142	#line 181 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	182	142		cmp 1, __D0RegulaComUS, __signed_stack_001RegulaComUS, __D0RegulaComUS
+8	182	146	#line 182 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	183	146		brtst 4, __ASM_Label_679, __D0RegulaComUS
+8	182	149	#line 182 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	183	149		mov __signed_stack_001RegulaComUS, poteGlobal
+8	182	151	#line 182 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	182	151	#line 182 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	183	151		set __D0RegulaComUS, 90
+8	182	154	#line 182 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	183	154		cmp 0, __D0RegulaComUS, __signed_stack_001RegulaComUS, __D0RegulaComUS
+8	183	158	#line 183 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	184	158		brtst 4, __ASM_Label_682, __D0RegulaComUS
+8	183	161	#line 183 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	184	161		set __D0RegulaComUS, 5
+8	183	164	#line 183 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	184	164		add poteGlobal, poteGlobal, __D0RegulaComUS
+8	183	168	#line 183 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	185	168	#line 185 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	186	168		jmp __ASM_Label_685
+8	185	170	#line 185 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	186	170		mov __signed_stack_001RegulaComUS, potdGlobal
+8	185	172	#line 185 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	185	172	#line 185 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	186	172		set __D0RegulaComUS, 60
+8	185	175	#line 185 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	186	175		cmp 1, __D0RegulaComUS, __signed_stack_001RegulaComUS, __D0RegulaComUS
+8	186	179	#line 186 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	187	179		brtst 4, __ASM_Label_688, __D0RegulaComUS
+8	186	182	#line 186 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	187	182		set __D0RegulaComUS, 5
+8	186	185	#line 186 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	187	185		sub potdGlobal, potdGlobal, __D0RegulaComUS
+8	186	189	#line 186 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	189	189	#line 189 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	190	189	#line 190 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	191	189	#line 191 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	191	189	#line 191 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	191	189	#line 191 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	191	189	#line 191 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	191	189	#line 191 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	192	189		jmp __ASM_Label_691
+8	191	191	#line 191 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	192	191		mov __signed_stack_001RegulaComUS, __RegulaComUS_7qG2_direcao_7qG2_000
+8	191	193	#line 191 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	191	193	#line 191 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	192	193		set __D0RegulaComUS, 3
+8	191	196	#line 191 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	192	196		cmp 4, __D0RegulaComUS, __signed_stack_001RegulaComUS, __D0RegulaComUS
+8	192	200	#line 192 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	193	200		brtst 4, __ASM_Label_694, __D0RegulaComUS
+8	192	203	#line 192 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	193	203	#pragma macro 26
+8	193	203		acquire __RLSBmutex0
+8	193	204		mov __RLSReadBuf0, __RLSBbufLSWrite1
+8	193	206		set __RLSBytesCount0, 1
+8	193	209		wait2 NA, __constVal15
+8	193	212		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+8	193	214		index __D0RegulaComUS, __RLSReadBuf0, 65535
+8	193	218		release __RLSBmutex0
+8	6158	219	#line 6158 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	192	219	#line 192 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	193	219		mov __RegulaComUS_7qG2_distanciaAtual_7qG2_000, __D0RegulaComUS
+8	192	221	#line 192 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	192	221	#line 192 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	194	221	#line 194 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	194	221	#line 194 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	195	221		mov __signed_stack_001RegulaComUS, __D0RegulaComUS
+8	194	223	#line 194 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	195	223		mov __D0RegulaComUS, __RegulaComUS_7qG2_distParede_7qG2_000
+8	194	225	#line 194 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	195	225		cmp 4, __D0RegulaComUS, __signed_stack_001RegulaComUS, __D0RegulaComUS
+8	195	229	#line 195 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	196	229		brtst 4, __ASM_Label_699, __D0RegulaComUS
+8	195	232	#line 195 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	196	232		set potdGlobal, 81
+8	195	235	#line 195 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	195	235	#line 195 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	196	235	#line 196 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	197	235		set poteGlobal, 90
+8	196	238	#line 196 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	196	238	#line 196 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	198	238	#line 198 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	199	238		jmp __ASM_Label_704
+8	198	240	#line 198 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	199	240		mov __signed_stack_001RegulaComUS, __RegulaComUS_7qG2_distanciaAtual_7qG2_000
+8	198	242	#line 198 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	198	242	#line 198 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	199	242		mov __D0RegulaComUS, __RegulaComUS_7qG2_distParede_7qG2_000
+8	198	244	#line 198 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	199	244		cmp 1, __D0RegulaComUS, __signed_stack_001RegulaComUS, __D0RegulaComUS
+8	199	248	#line 199 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	200	248		brtst 4, __ASM_Label_707, __D0RegulaComUS
+8	199	251	#line 199 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	200	251		mov __signed_stack_001RegulaComUS, __RegulaComUS_7qG2_distanciaAtual_7qG2_000
+8	199	253	#line 199 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	199	253	#line 199 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	200	253		mov __signed_stack_002RegulaComUS, __RegulaComUS_7qG2_distParede_7qG2_000
+8	199	255	#line 199 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	199	255	#line 199 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	200	255		set __D0RegulaComUS, 15
+8	199	258	#line 199 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	200	258		add __D0RegulaComUS, __signed_stack_002RegulaComUS, __D0RegulaComUS
+8	199	262	#line 199 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	200	262		cmp 0, __D0RegulaComUS, __signed_stack_001RegulaComUS, __D0RegulaComUS
+8	200	266	#line 200 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	201	266		brtst 4, __ASM_Label_710, __D0RegulaComUS
+8	200	269	#line 200 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	201	269		mov __signed_stack_001RegulaComUS, poteGlobal
+8	200	271	#line 200 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	200	271	#line 200 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	201	271		set __D0RegulaComUS, 90
+8	200	274	#line 200 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	201	274		cmp 0, __D0RegulaComUS, __signed_stack_001RegulaComUS, __D0RegulaComUS
+8	201	278	#line 201 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	202	278		brtst 4, __ASM_Label_713, __D0RegulaComUS
+8	201	281	#line 201 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	202	281		set __D0RegulaComUS, 5
+8	201	284	#line 201 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	202	284		add poteGlobal, poteGlobal, __D0RegulaComUS
+8	201	288	#line 201 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	203	288	#line 203 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	204	288		jmp __ASM_Label_716
+8	203	290	#line 203 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	204	290		mov __signed_stack_001RegulaComUS, potdGlobal
+8	203	292	#line 203 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	203	292	#line 203 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	204	292		set __D0RegulaComUS, 60
+8	203	295	#line 203 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	204	295		cmp 1, __D0RegulaComUS, __signed_stack_001RegulaComUS, __D0RegulaComUS
+8	204	299	#line 204 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	205	299		brtst 4, __ASM_Label_719, __D0RegulaComUS
+8	204	302	#line 204 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	205	302		set __D0RegulaComUS, 5
+8	204	305	#line 204 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	205	305		sub potdGlobal, potdGlobal, __D0RegulaComUS
+8	204	309	#line 204 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	207	309	#line 207 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	208	309	#line 208 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	209	309	#line 209 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	209	309	#line 209 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	210	309		jmp __ASM_Label_722
+8	209	311	#line 209 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	210	311		mov __signed_stack_001RegulaComUS, __RegulaComUS_7qG2_distanciaAtual_7qG2_000
+8	209	313	#line 209 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	209	313	#line 209 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	210	313		mov __D0RegulaComUS, __RegulaComUS_7qG2_distParede_7qG2_000
+8	209	315	#line 209 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	210	315		cmp 0, __D0RegulaComUS, __signed_stack_001RegulaComUS, __D0RegulaComUS
+8	210	319	#line 210 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	211	319		brtst 4, __ASM_Label_725, __D0RegulaComUS
+8	210	322	#line 210 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	211	322		mov __signed_stack_001RegulaComUS, __RegulaComUS_7qG2_distanciaAtual_7qG2_000
+8	210	324	#line 210 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	210	324	#line 210 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	211	324		mov __signed_stack_002RegulaComUS, __RegulaComUS_7qG2_distParede_7qG2_000
+8	210	326	#line 210 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	210	326	#line 210 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	211	326		set __D0RegulaComUS, 15
+8	210	329	#line 210 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	211	329		sub __D0RegulaComUS, __signed_stack_002RegulaComUS, __D0RegulaComUS
+8	210	333	#line 210 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	211	333		cmp 1, __D0RegulaComUS, __signed_stack_001RegulaComUS, __D0RegulaComUS
+8	211	337	#line 211 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	212	337		brtst 4, __ASM_Label_728, __D0RegulaComUS
+8	211	340	#line 211 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	212	340		mov __signed_stack_001RegulaComUS, potdGlobal
+8	211	342	#line 211 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	211	342	#line 211 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	212	342		set __D0RegulaComUS, 90
+8	211	345	#line 211 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	212	345		cmp 0, __D0RegulaComUS, __signed_stack_001RegulaComUS, __D0RegulaComUS
+8	212	349	#line 212 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	213	349		brtst 4, __ASM_Label_731, __D0RegulaComUS
+8	212	352	#line 212 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	213	352		set __D0RegulaComUS, 5
+8	212	355	#line 212 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	213	355		add potdGlobal, potdGlobal, __D0RegulaComUS
+8	212	359	#line 212 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	214	359	#line 214 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	215	359		jmp __ASM_Label_734
+8	214	361	#line 214 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	215	361		mov __signed_stack_001RegulaComUS, poteGlobal
+8	214	363	#line 214 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	214	363	#line 214 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	215	363		set __D0RegulaComUS, 60
+8	214	366	#line 214 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	215	366		cmp 1, __D0RegulaComUS, __signed_stack_001RegulaComUS, __D0RegulaComUS
+8	215	370	#line 215 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	216	370		brtst 4, __ASM_Label_737, __D0RegulaComUS
+8	215	373	#line 215 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	216	373		set __D0RegulaComUS, 5
+8	215	376	#line 215 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	216	376		sub poteGlobal, poteGlobal, __D0RegulaComUS
+8	215	380	#line 215 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	218	380	#line 218 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	219	380	#line 219 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	220	380	#line 220 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	222	380	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	222	380	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	222	380	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	222	380	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	222	380	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	222	380	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	223	380		set __MyOnFwd_7qG2_motor_7qG2_000, 1
+8	222	383	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	222	383	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	223	383		mov __MyOnFwd_7qG2_pot_7qG2_000, potdGlobal
+8	222	385	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	222	385	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	223	385		subcall MyOnFwd, __MyOnFwd_return
+8	222	387	#line 222 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	223	387	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	224	387		set __MyOnFwd_7qG2_motor_7qG2_000, 0
+8	223	390	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	223	390	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	224	390		mov __MyOnFwd_7qG2_pot_7qG2_000, poteGlobal
+8	223	392	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	223	392	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	224	392		subcall MyOnFwd, __MyOnFwd_return
+8	223	394	#line 223 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	224	394	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	225	394		set __Wait_7qG2_ms_7qG2_000_inline_RegulaComUS, 50
+8	224	397	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	8869	397	#line 8869 "NXCDefs.h"
+8	8870	397		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_RegulaComUS
+8	8869	400	#line 8869 "NXCDefs.h"
+8	224	400	#line 224 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	228	400	#line 228 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+8	229	400		subret __RegulaComUS_return
+9	229	0	#line 229 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	230	0		set potdGlobal, 81
+9	229	3	#line 229 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	229	3	#line 229 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	230	3	#line 230 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	231	3		set poteGlobal, 90
+9	230	6	#line 230 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	230	6	#line 230 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	231	6	#line 231 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	232	6		set __MyOnFwd_7qG2_motor_7qG2_000, 1
+9	231	9	#line 231 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	231	9	#line 231 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	232	9		mov __MyOnFwd_7qG2_pot_7qG2_000, potdGlobal
+9	231	11	#line 231 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	231	11	#line 231 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	232	11		subcall MyOnFwd, __MyOnFwd_return
+9	231	13	#line 231 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	232	13	#line 232 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	233	13		set __MyOnFwd_7qG2_motor_7qG2_000, 0
+9	232	16	#line 232 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	232	16	#line 232 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	233	16		mov __MyOnFwd_7qG2_pot_7qG2_000, poteGlobal
+9	232	18	#line 232 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	232	18	#line 232 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	233	18		subcall MyOnFwd, __MyOnFwd_return
+9	232	20	#line 232 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	235	20	#line 235 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	236	20		set __soAnda_7qG2_i_7qG2_001, 0
+9	235	23	#line 235 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	235	23	#line 235 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	236	23		mov __signed_stack_001soAnda, __soAnda_7qG2_i_7qG2_001
+9	235	25	#line 235 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	235	25	#line 235 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	236	25		set __D0soAnda, 100
+9	235	28	#line 235 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	236	28		cmp 0, __D0soAnda, __signed_stack_001soAnda, __D0soAnda
+9	235	32	#line 235 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	236	32		brtst 4, __ASM_Label_763, __D0soAnda
+9	235	35	#line 235 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	236	35		jmp __ASM_Label_764
+9	235	37	#line 235 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	236	37		add __soAnda_7qG2_i_7qG2_001, __soAnda_7qG2_i_7qG2_001, __constVal1
+9	236	41	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	237	41		jmp __ASM_Label_762
+9	236	43	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	237	43		set __RegulaComUS_7qG2_distParede_7qG2_000, 150
+9	236	46	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	236	46	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	237	46		set __RegulaComUS_7qG2_direcao_7qG2_000, 3
+9	236	49	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	236	49	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	237	49		subcall RegulaComUS, __RegulaComUS_return
+9	236	51	#line 236 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	237	51	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	238	51		set __RegulaComUS_7qG2_distParede_7qG2_000, 7
+9	237	54	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	237	54	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	238	54		set __RegulaComUS_7qG2_direcao_7qG2_000, 2
+9	237	57	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	237	57	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	238	57		subcall RegulaComUS, __RegulaComUS_return
+9	237	59	#line 237 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	239	59	#line 239 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	240	59		jmp __ASM_Label_765
+9	239	61	#line 239 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	239	61	#line 239 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	240	61		set __Regula_7qG2_iteracoes_7qG2_000, 10
+9	239	64	#line 239 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	239	64	#line 239 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	240	64		subcall Regula, __Regula_return
+9	239	66	#line 239 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	240	66	#line 240 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	241	66		set __nbip_7qG2_n_7qG2_000, 3
+9	240	69	#line 240 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	240	69	#line 240 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	241	69		subcall nbip, __nbip_return
+9	240	71	#line 240 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	243	71	#line 243 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+9	244	71		subret __soAnda_return
+10	264	0	#line 264 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+10	265	0		mov __signed_stack_001MyOnFwd, __MyOnFwd_7qG2_motor_7qG2_000
+10	264	2	#line 264 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+10	265	2	#line 265 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+10	266	2		set __D0MyOnFwd, 1
+10	265	5	#line 265 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+10	266	5		cmp 4, __D0MyOnFwd, __signed_stack_001MyOnFwd, __D0MyOnFwd
+10	266	9	#line 266 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+10	267	9		brtst 4, __ASM_Label_826, __D0MyOnFwd
+10	266	12	#line 266 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+10	267	12		getout __D0MyOnFwd, __MyOnFwd_7qG2_motor_7qG2_000, 4
+10	266	16	#line 266 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+10	266	16	#line 266 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+10	268	16	#line 268 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+10	269	16		jmp __ASM_Label_829
+10	268	18	#line 268 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+10	269	18		mov __signed_stack_001MyOnFwd, __MyOnFwd_7qG2_motor_7qG2_000
+10	268	20	#line 268 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+10	269	20	#line 269 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+10	270	20		set __D0MyOnFwd, 0
+10	269	23	#line 269 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+10	270	23		cmp 4, __D0MyOnFwd, __signed_stack_001MyOnFwd, __D0MyOnFwd
+10	270	27	#line 270 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+10	271	27		brtst 4, __ASM_Label_832, __D0MyOnFwd
+10	270	30	#line 270 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+10	271	30		getout __D0MyOnFwd, __MyOnFwd_7qG2_motor_7qG2_000, 4
+10	270	34	#line 270 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+10	270	34	#line 270 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+10	273	34	#line 273 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+10	273	34	#line 273 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+10	273	34	#line 273 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+10	274	34		mov __D0MyOnFwd, __MyOnFwd_7qG2_pot_7qG2_000
+10	273	36	#line 273 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+10	274	36	#pragma macro 7
+10	274	36		setout __MyOnFwd_7qG2_motor_7qG2_000, 2, __D0MyOnFwd, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+10	6736	59	#line 6736 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+10	273	59	#line 273 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+10	276	59	#line 276 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+10	277	59		subret __MyOnFwd_return
+11	433	0	#line 433 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+11	434	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 0
+11	433	3	#line 433 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+11	433	3	#line 433 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+11	434	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+11	4523	5	#line 4523 "NXCDefs.h"
+11	4524	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+11	4523	7	#line 4523 "NXCDefs.h"
+11	4523	7	#line 4523 "NXCDefs.h"
+11	4524	7		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+11	4523	9	#line 4523 "NXCDefs.h"
+11	4524	9		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+11	4523	12	#line 4523 "NXCDefs.h"
+11	4524	12		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+11	4523	15	#line 4523 "NXCDefs.h"
+11	4524	15		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+11	4523	18	#line 4523 "NXCDefs.h"
+11	4523	18	#line 4523 "NXCDefs.h"
+11	4524	18		jmp __004__ASM_Label_37
+11	4523	20	#line 4523 "NXCDefs.h"
+11	4524	20		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+11	4523	23	#line 4523 "NXCDefs.h"
+11	4523	23	#line 4523 "NXCDefs.h"
+11	4524	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+11	4428	25	#line 4428 "NXCDefs.h"
+11	4429	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+11	4428	29	#line 4428 "NXCDefs.h"
+11	4523	29	#line 4523 "NXCDefs.h"
+11	4524	29	#line 4524 "NXCDefs.h"
+11	4525	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+11	4524	31	#line 4524 "NXCDefs.h"
+11	4524	31	#line 4524 "NXCDefs.h"
+11	4525	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+11	4524	34	#line 4524 "NXCDefs.h"
+11	4441	34	#line 4441 "NXCDefs.h"
+11	4442	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+11	4441	38	#line 4441 "NXCDefs.h"
+11	4524	38	#line 4524 "NXCDefs.h"
+11	4525	38	#line 4525 "NXCDefs.h"
+11	4526	38		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+11	4525	40	#line 4525 "NXCDefs.h"
+11	4459	40	#line 4459 "NXCDefs.h"
+11	4460	40	#pragma macro 4
+11	4460	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+11	4460	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+11	8072	44	#line 8072 "NXCDefs.h"
+11	4459	44	#line 4459 "NXCDefs.h"
+11	4525	44	#line 4525 "NXCDefs.h"
+11	433	44	#line 433 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+11	434	44	#line 434 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+11	435	44		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 1
+11	434	47	#line 434 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+11	434	47	#line 434 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+11	435	47		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+11	4523	49	#line 4523 "NXCDefs.h"
+11	4524	49		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+11	4523	51	#line 4523 "NXCDefs.h"
+11	4523	51	#line 4523 "NXCDefs.h"
+11	4524	51		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+11	4523	53	#line 4523 "NXCDefs.h"
+11	4524	53		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+11	4523	56	#line 4523 "NXCDefs.h"
+11	4524	56		brtst 4, __005__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+11	4523	59	#line 4523 "NXCDefs.h"
+11	4524	59		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+11	4523	62	#line 4523 "NXCDefs.h"
+11	4523	62	#line 4523 "NXCDefs.h"
+11	4524	62		jmp __005__ASM_Label_37
+11	4523	64	#line 4523 "NXCDefs.h"
+11	4524	64		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+11	4523	67	#line 4523 "NXCDefs.h"
+11	4523	67	#line 4523 "NXCDefs.h"
+11	4524	67		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+11	4428	69	#line 4428 "NXCDefs.h"
+11	4429	69		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+11	4428	73	#line 4428 "NXCDefs.h"
+11	4523	73	#line 4523 "NXCDefs.h"
+11	4524	73	#line 4524 "NXCDefs.h"
+11	4525	73		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+11	4524	75	#line 4524 "NXCDefs.h"
+11	4524	75	#line 4524 "NXCDefs.h"
+11	4525	75		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+11	4524	78	#line 4524 "NXCDefs.h"
+11	4441	78	#line 4441 "NXCDefs.h"
+11	4442	78		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+11	4441	82	#line 4441 "NXCDefs.h"
+11	4524	82	#line 4524 "NXCDefs.h"
+11	4525	82	#line 4525 "NXCDefs.h"
+11	4526	82		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+11	4525	84	#line 4525 "NXCDefs.h"
+11	4459	84	#line 4459 "NXCDefs.h"
+11	4460	84	#pragma macro 4
+11	4460	84		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+11	4460	86		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+11	8135	88	#line 8135 "NXCDefs.h"
+11	4459	88	#line 4459 "NXCDefs.h"
+11	4525	88	#line 4525 "NXCDefs.h"
+11	434	88	#line 434 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+11	435	88	#line 435 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+11	436	88		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 2
+11	435	91	#line 435 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+11	435	91	#line 435 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+11	436	91		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+11	4523	93	#line 4523 "NXCDefs.h"
+11	4524	93		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+11	4523	95	#line 4523 "NXCDefs.h"
+11	4523	95	#line 4523 "NXCDefs.h"
+11	4524	95		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+11	4523	97	#line 4523 "NXCDefs.h"
+11	4524	97		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+11	4523	100	#line 4523 "NXCDefs.h"
+11	4524	100		brtst 4, __006__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+11	4523	103	#line 4523 "NXCDefs.h"
+11	4524	103		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+11	4523	106	#line 4523 "NXCDefs.h"
+11	4523	106	#line 4523 "NXCDefs.h"
+11	4524	106		jmp __006__ASM_Label_37
+11	4523	108	#line 4523 "NXCDefs.h"
+11	4524	108		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+11	4523	111	#line 4523 "NXCDefs.h"
+11	4523	111	#line 4523 "NXCDefs.h"
+11	4524	111		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+11	4428	113	#line 4428 "NXCDefs.h"
+11	4429	113		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+11	4428	117	#line 4428 "NXCDefs.h"
+11	4523	117	#line 4523 "NXCDefs.h"
+11	4524	117	#line 4524 "NXCDefs.h"
+11	4525	117		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+11	4524	119	#line 4524 "NXCDefs.h"
+11	4524	119	#line 4524 "NXCDefs.h"
+11	4525	119		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+11	4524	122	#line 4524 "NXCDefs.h"
+11	4441	122	#line 4441 "NXCDefs.h"
+11	4442	122		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+11	4441	126	#line 4441 "NXCDefs.h"
+11	4524	126	#line 4524 "NXCDefs.h"
+11	4525	126	#line 4525 "NXCDefs.h"
+11	4526	126		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+11	4525	128	#line 4525 "NXCDefs.h"
+11	4459	128	#line 4459 "NXCDefs.h"
+11	4460	128	#pragma macro 4
+11	4460	128		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+11	4460	130		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+11	8198	132	#line 8198 "NXCDefs.h"
+11	4459	132	#line 4459 "NXCDefs.h"
+11	4525	132	#line 4525 "NXCDefs.h"
+11	435	132	#line 435 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+11	436	132	#line 436 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+11	437	132		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores, 3
+11	436	135	#line 436 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+11	436	135	#line 436 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+11	437	135		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores, __constVal1
+11	4523	137	#line 4523 "NXCDefs.h"
+11	4524	137		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+11	4523	139	#line 4523 "NXCDefs.h"
+11	4523	139	#line 4523 "NXCDefs.h"
+11	4524	139		mov __DU0SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_inicializaSensores
+11	4523	141	#line 4523 "NXCDefs.h"
+11	4524	141		tst 5, __D0SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+11	4523	144	#line 4523 "NXCDefs.h"
+11	4524	144		brtst 4, __007__ASM_Label_36, __D0SetSensorLowspeed_inline_inicializaSensores
+11	4523	147	#line 4523 "NXCDefs.h"
+11	4524	147		set __DU0SetSensorLowspeed_inline_inicializaSensores, 11
+11	4523	150	#line 4523 "NXCDefs.h"
+11	4523	150	#line 4523 "NXCDefs.h"
+11	4524	150		jmp __007__ASM_Label_37
+11	4523	152	#line 4523 "NXCDefs.h"
+11	4524	152		set __DU0SetSensorLowspeed_inline_inicializaSensores, 10
+11	4523	155	#line 4523 "NXCDefs.h"
+11	4523	155	#line 4523 "NXCDefs.h"
+11	4524	155		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __DU0SetSensorLowspeed_inline_inicializaSensores
+11	4428	157	#line 4428 "NXCDefs.h"
+11	4429	157		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+11	4428	161	#line 4428 "NXCDefs.h"
+11	4523	161	#line 4523 "NXCDefs.h"
+11	4524	161	#line 4524 "NXCDefs.h"
+11	4525	161		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+11	4524	163	#line 4524 "NXCDefs.h"
+11	4524	163	#line 4524 "NXCDefs.h"
+11	4525	163		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 0
+11	4524	166	#line 4524 "NXCDefs.h"
+11	4441	166	#line 4441 "NXCDefs.h"
+11	4442	166		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, 1
+11	4441	170	#line 4441 "NXCDefs.h"
+11	4524	170	#line 4524 "NXCDefs.h"
+11	4525	170	#line 4525 "NXCDefs.h"
+11	4526	170		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_inicializaSensores, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+11	4525	172	#line 4525 "NXCDefs.h"
+11	4459	172	#line 4459 "NXCDefs.h"
+11	4460	172	#pragma macro 4
+11	4460	172		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_inicializaSensores
+11	4460	174		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+11	8261	176	#line 8261 "NXCDefs.h"
+11	4459	176	#line 4459 "NXCDefs.h"
+11	4525	176	#line 4525 "NXCDefs.h"
+11	436	176	#line 436 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+11	441	176	#line 441 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+11	442	176		subret __inicializaSensores_return
+12	476	0	#line 476 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+12	476	0	#line 476 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+12	476	0	#line 476 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+12	478	0	#line 478 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+12	479	0		set __MyOnFwd_7qG2_motor_7qG2_000, 1
+12	478	3	#line 478 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+12	478	3	#line 478 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+12	479	3		set __MyOnFwd_7qG2_pot_7qG2_000, 0
+12	478	6	#line 478 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+12	478	6	#line 478 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+12	479	6		subcall MyOnFwd, __MyOnFwd_return
+12	478	8	#line 478 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+12	479	8	#line 479 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+12	480	8		set __MyOnFwd_7qG2_motor_7qG2_000, 0
+12	479	11	#line 479 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+12	479	11	#line 479 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+12	480	11		set __MyOnFwd_7qG2_pot_7qG2_000, 0
+12	479	14	#line 479 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+12	479	14	#line 479 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+12	480	14		subcall MyOnFwd, __MyOnFwd_return
+12	479	16	#line 479 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+12	482	16	#line 482 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+12	483	16		subret __parar_return
+13	492	0	#line 492 "C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc"
+13	493	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc
+1	__ResetSensorSubroutine	17	NXTDefs.h
+2	__ReadLSBytes0	30	NXTDefs.h
+3	__ReadLSBytes1	120	NXTDefs.h
+4	PlaySound	210	NXCDefs.h
+5	bip	609	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc
+6	nbip	616	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc
+7	Regula	644	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc
+8	RegulaComUS	796	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc
+9	soAnda	1198	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc
+10	MyOnFwd	1271	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc
+11	inicializaSensores	1332	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc
+12	parar	1510	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc
+13	__initialize_global_data	1528	C:\Users\Lucas\Desktop\UnB\Droid\sekksi2016\tentativa2\func_anda_reto_regula.nxc

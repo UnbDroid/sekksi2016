@@ -1,0 +1,16 @@
+void DevolveBonecos(){
+    parar();
+    alinha(PARA_TRAS);
+    OnFwd(MD, -90);
+    OnFwd(ME, -90);
+    while(distanciaTachoCount(MediaTC()) > -27*100) {
+         Wait(1);
+    }
+    Off(MD_ME);
+    AbrirPorta();
+    andar();
+    Wait(1000);
+    Off(MD_ME);
+    SairCasa();
+    FecharPorta();
+}

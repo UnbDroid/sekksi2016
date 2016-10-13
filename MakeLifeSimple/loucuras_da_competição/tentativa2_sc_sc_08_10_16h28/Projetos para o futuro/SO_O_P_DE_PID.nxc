@@ -1,0 +1,133 @@
+//SENSORES E MOTORES
+#define MD OUT_B //motor da direita
+#define ME OUT_A //motor da esquerda
+#define MD_ME OUT_AB// os dois motores de movimento
+#define MP OUT_C //motor da porta
+#define USD IN_1 //Utrasonico da direita
+#define USE IN_2 //Utrasonico da esquerda
+//pots
+#define potmax 90
+//LOGICA
+#define direita 1
+#define esquerda 2
+//constantes de controle
+#define distancia 15
+#define CORRECAO 1
+//Funcoes
+void  bip();
+void nbip(int n);
+void inicializaSensores();
+
+//variaveis globais controle
+int pot_at_e ;
+int pot_at_d ;
+
+
+void inicializaSensores()
+{
+  SetSensorLowspeed(USD);
+  SetSensorLowspeed(USE);
+}
+
+void  bip()
+{
+  PlaySound(SOUND_DOWN);
+}
+
+void nbip(int n)
+ {
+ 	int i;
+
+ 	for(i=0; i<n; i++)
+ 	{
+ 		bip();
+ 	}
+ }
+ 
+int potenciaValida(int pot)
+{
+ 		if (pot>potmax)
+ 		{
+ 			return 0;
+ 		}else{
+ 			return 1;
+ 		}
+ }
+
+void CORRIGE_pos(int n)
+{
+  int FATOR_CORR;
+ 	FATOR_CORR=(n*CORRECAO);
+ 	if (potenciaValida(pot_at_e+FATOR_CORR))
+ 	{
+ 		OnFwd(ME,(pot_at_e+FATOR_CORR));
+ 		OnFwd(MD,(pot_at_d-FATOR_CORR));
+ 		pot_at_e = (pot_at_e+FATOR_CORR);
+ 		pot_at_d = (pot_at_d-FATOR_CORR);
+ 	}else{
+ 		nbip(3);
+ 		Off(MD_ME);
+ 	}
+
+
+}
+
+void CORRIGE_neg(int n)
+{
+  int FATOR_CORR;
+ 	FATOR_CORR=(n*CORRECAO);
+ 	if (potenciaValida(pot_at_d+FATOR_CORR))
+ 	{
+ 		OnFwd(ME,(pot_at_e-FATOR_CORR));
+ 		OnFwd(MD,(pot_at_d+FATOR_CORR));
+ 		pot_at_e = (pot_at_e-FATOR_CORR);
+ 		pot_at_d = (pot_at_d+FATOR_CORR);
+ 	}else{
+ 		nbip(3);
+ 		Off(MD_ME);
+ 	}
+}
+
+
+void CONTROL()
+{
+ 	int us_at,ERRO=0;
+ 	OnFwd(MD_ME,80);
+ 	pot_at_d = 80;
+	pot_at_e = 80;
+ 	while(1)
+ 	{
+ 		us_at = SensorUS(USD);
+ 		ERRO = us_at - distancia ;
+ 		if (ERRO>0)
+ 		{
+ 			if (ERRO<3)
+ 			{
+ 				CORRIGE_pos(1);					
+ 			}else if (ERRO<6 && ERRO>3)
+ 			{
+				CORRIGE_pos(2);	
+ 			}else if (ERRO<9 && ERRO>6)
+ 			{
+ 				CORRIGE_pos(3);	
+ 			}
+ 		}else if (ERRO<0)
+ 		{
+ 			if (ERRO>(-3))
+ 			{
+ 				CORRIGE_neg(1);
+ 			}else if (ERRO<(-3)&&ERRO>(-6))
+ 			{
+ 				CORRIGE_neg(2);
+ 			}else if (ERRO<(-6)&&ERRO>(-9))
+ 			{
+ 				CORRIGE_neg(3);
+ 			}
+ 		}
+ 	}
+ }
+
+ task main(){
+ 	inicializaSensores();
+ 	CONTROL();
+ }

@@ -1,0 +1,561 @@
+/////////////
+#define CONEXAO 0
+#define OUTBOX 1
+#define INBOX 2
+#define INBOX_ANG 3
+#define INBOX_CORBONECO 4
+#define OUTBOX_US 5
+
+//SENSORES E MOTORES
+#define US_BONECO IN_1
+#define HT_MEIO IN_2
+#define US_LATERAL IN_3
+#define GYRO IN_4
+#define MOTOR_GARRA OUT_A
+/////////////
+#define OFFSET_SAMPLES 2048
+/////////////////
+
+//códigos para comunicação BlueTooth
+#define TESTE -1
+#define PARAR 1
+#define SEGUIR 2
+#define GIREI 3
+#define DESGIRAR 4
+#define REJEITAR 5
+#define DESGIREI 6
+#define CALIBRA 7
+#define PEGUEI 8
+#define CHEIO 9
+#define STOP 10
+#define START 11
+#define VIRA 12
+#define COMECEAGIRAR 13
+#define PAREDEGIRAR 14
+
+//CONSTANTES REGULAR sensores
+// Defines de leitura do RGB do meio (ainda precisa testar mais)
+    #define COR_BRANCA_MEIO_MIN 190
+    #define COR_BRANCA_MEIO_MAX 256
+    #define COR_PRETA_MEIO_MIN 2
+    #define COR_PRETA_MEIO_MAX 120
+    #define COR_VERMELHA_MEIO_MIN 78
+    #define COR_VERMELHA_MEIO_MAX 168
+
+//CONSTANTES GARRA
+	//potencias
+	#define POTENCIA_MAXIMA_GARRA -70
+	#define POTENCIA_MED_GARRA -40
+	#define POTENCIA_MIN_GARRA -22 // era -25
+
+	//Tempos
+	#define TEMPO_DEPOIS_DE_JOGAR_DENTRO 200
+
+	#define TEMPO_DEPOIS_DO_BONECO_ESCAPULIR 400
+	//Defines angulos da garra
+	#define ANGULO_1 -110 //-77
+	#define ANG_SEGURO -153
+	#define ANG_LEVANTAR -35// era -50
+
+
+//LOGICA
+#define MAX_BONECOS_DENTRO 5
+	//cor dos boncos
+	#define BONECO_BRANCO 1
+	#define BONECO_PRETO 2
+	#define BONECO_VERMELHO 3
+
+	#define NAO_ALIEN 0
+	#define SIM_ALIEN 1
+
+////////////
+//Declaracao de funcoes
+int lerAngulo();
+float GetGyroOffset();
+void MandaGirar();
+void filterUS(int SENSOR);
+void MandarParar();
+void MandarSeguir();
+void virar();
+int RecebeStart();
+void InicializaSensores();
+int PegaBoneco();
+void VoltaGarra();
+void Pega();
+void MandaCheio();
+int CorBoneco();
+int TemBoneco();
+void BonecoNaFrente();
+void LevantaBoneco();
+void MandaRejeitar();
+void MandaDesgirar();
+int RecebeBoneco();
+void BonecoAlvo();
+void init();
+
+
+//TERMINAR DE COPIAR
+void Rejeita();
+//-------------------
+
+
+
+//Declaração de variaveis globais
+int us_lateral;
+int BonecosCapturados;
+int bonecoAlvo;
+int bonecoNaoAlvo;
+
+//US
+int distUS;
+
+//Variáveis do HT
+int ht_colornum, ht_red, ht_green, ht_blue, ht_white;
+
+//funcoes debug
+void  bip();
+void nbip(int n);
+void testaReh();
+void testeGarra();
+
+void  bip()
+{
+	PlaySound(SOUND_DOWN);
+}
+
+void nbip(int n)
+ {
+	int i;
+
+	for(i=0; i<n; i++)
+	{
+		bip();
+	}
+ }
+
+ void InicializaSensores()
+ {
+	 SetSensorUltrasonic(US_BONECO);
+	 //SetSensorColorRed(RGB_ESQ);
+	 SetSensorUltrasonic(US_LATERAL);
+	 SetSensorLowspeed(HT_MEIO);
+	 SetHTColor2Mode(HT_MEIO, HT_CMD_COLOR2_ACTIVE);
+	 SetSensorHTGyro(GYRO);
+ }
+
+
+void testeGarra(){
+	InicializaSensores();
+	VoltaGarra();
+	PegaBoneco();
+	Pega();
+	VoltaGarra();
+}
+
+void testaReh(){
+	InicializaSensores();
+	int mensagem;
+	us_lateral=10;
+	//while(!(RecebeStart()));
+
+	while(1){
+		filterUS(US_LATERAL);
+		SendRemoteNumber(CONEXAO,OUTBOX_US,us_lateral);
+		Wait(50);
+		ReceiveRemoteNumber(INBOX, true, mensagem);
+		Wait(50);
+		NumOut(0, LCD_LINE1, mensagem);
+		switch(mensagem){
+			case VIRA:
+				//nbip(3);
+				virar();
+				break;
+		}
+		if(TemBoneco())//TESTAR -----> HITTECNIC SO VE PRETO
+		{
+      nbip(2);
+			BonecoNaFrente();//TESTAR
+		}
+	}
+}
+
+void testeCor()
+{
+  init();
+  //while(!(RecebeStart()));
+  while(1)
+  {
+    if(TemBoneco())//TESTAR -----> HITTECNIC SO VE PRETO
+    {
+      BonecoNaFrente();//TESTAR
+    }
+  }
+}
+
+task main(){
+	//testeGarra();
+	testaReh();
+  //testeCor();
+}
+
+void MandarParar()
+{
+	SendRemoteNumber(CONEXAO, OUTBOX, PARAR);
+}
+
+void MandarSeguir()
+{
+	SendRemoteNumber(CONEXAO, OUTBOX, SEGUIR);
+}
+
+void MandaRejeitar()
+{
+  SendRemoteNumber(CONEXAO, OUTBOX, REJEITAR);
+}
+
+void MandaDesgirar()
+{
+  SendRemoteNumber(CONEXAO, OUTBOX, DESGIRAR);
+}
+
+void filterUS(int SENSOR)
+{
+  //float alfa = 0.4;
+  int leitura, i = 0;
+  leitura = SensorUS(SENSOR);
+
+  while(((leitura==0 || leitura >= 250) || abs(us_lateral-leitura)>15) && i<3){/////////MUDADO PARA 3------- ERA 5
+		leitura= SensorUS(SENSOR);
+		i++;
+    Wait(30);
+  }
+  us_lateral = ((6*us_lateral)/10)+(4*leitura/10);
+}
+
+
+int lerAngulo()
+{
+  int leitura;
+
+
+  do{
+    ReceiveRemoteNumber(INBOX_ANG, true, leitura);
+  }while(!leitura);
+
+  return leitura;
+
+}
+
+float GetGyroOffset() { // FUNCIONANDO (chamar com os motores desligados)
+  float gyro_sum = 0, i;
+
+  for(i = 0; i < OFFSET_SAMPLES; ++i)
+  {
+    gyro_sum += SensorHTGyro(GYRO);
+  }
+
+  return gyro_sum/OFFSET_SAMPLES;
+}
+
+void MandaGirar()
+{
+  SendRemoteNumber(CONEXAO, OUTBOX, COMECEAGIRAR);
+}
+
+void MandaQueJaDeuPorHoje()//função apra parar de girar
+{
+  SendRemoteNumber(CONEXAO, OUTBOX, PAREDEGIRAR);
+}
+
+int RecebeStart()
+{
+  int aux;
+  ReceiveRemoteNumber(INBOX, true, aux);
+  if(aux == START){
+    //nbip(7);
+    return 1;
+  }
+  return 0;
+}
+
+
+void virar()
+{
+  int angulo;
+  float offset;
+  unsigned long time = CurrentTick(), prev_time;
+  float aux = 0, gyro;
+
+
+  angulo = lerAngulo();
+
+  offset = GetGyroOffset();
+
+  MandaGirar();
+
+  while(abs(aux) < abs(angulo)){
+      prev_time = time;
+      time = CurrentTick();
+      gyro = SensorHTGyro(GYRO);
+      aux += (gyro - offset) * (time - prev_time)/1000.0;
+    }
+
+  MandaQueJaDeuPorHoje();
+
+}
+
+int PegaBoneco()
+{
+    int tc, old_tc;
+
+    OnFwd(MOTOR_GARRA,POTENCIA_MIN_GARRA);
+    tc = MotorTachoCount(MOTOR_GARRA);
+
+    do
+      {
+        Wait(200);
+        old_tc = tc;
+        tc = MotorTachoCount(MOTOR_GARRA);
+        if(tc<ANG_SEGURO)
+        {
+            OnFwd(MOTOR_GARRA,0);
+            //Bip();//colocar uma função mais rápida de bipar
+            VoltaGarra();
+            return 0;//deu errado pegar o boneco
+        }
+      }while(tc!=old_tc);
+
+      OnFwd(MOTOR_GARRA,0);
+
+      return 1;//pegou o boneco com sucesso
+}
+
+void VoltaGarra()
+{
+    int tc, old_tc;
+
+    OnFwd(MOTOR_GARRA,-(POTENCIA_MIN_GARRA));
+      tc = MotorTachoCount(MOTOR_GARRA);
+      do
+      {
+        Wait(200);
+        old_tc = tc;
+        tc = MotorTachoCount(MOTOR_GARRA);
+      }while(tc!=old_tc);
+
+      OnFwd(MOTOR_GARRA,0);
+}
+
+void Pega(){
+    while(MotorTachoCount(MOTOR_GARRA) != 0)
+    {
+      ResetTachoCount(MOTOR_GARRA);
+    }
+    OnFwd(MOTOR_GARRA,POTENCIA_MAXIMA_GARRA);
+    while(MotorTachoCount(MOTOR_GARRA)>(ANGULO_1));
+    Off(MOTOR_GARRA);
+    //MandaPeguei();
+    Wait(TEMPO_DEPOIS_DE_JOGAR_DENTRO);
+    VoltaGarra();
+}
+
+int TemBoneco()
+{
+   filterUS(US_BONECO);
+   Wait(50);
+
+   distUS = us_lateral;
+   if((distUS==6)||(distUS==7)||(distUS==10)||(distUS==11)||(distUS==12)||(distUS==13)/*distUS<17&&distUS>5*/) {
+      return SIM_ALIEN;
+    }
+
+   return NAO_ALIEN;
+}
+
+void BonecoNaFrente()
+{
+  int cor;
+  MandarParar();
+  //bonecoAlvo = BONECO_BRANCO;
+  //bonecoNaoAlvo = BONECO_PRETO;
+  //talvez um wait aqui
+  if(PegaBoneco())
+  {
+    cor = CorBoneco();
+    
+    int mensagem;
+
+    if(cor == bonecoAlvo)
+    {
+      if(BonecosCapturados == MAX_BONECOS_DENTRO  - 1)
+      {
+        //LevantaBoneco();
+        Pega();
+        //nbip(4);
+        MandaCheio();
+        while(1){//corrigir a contição deste whilw<<<<<<<---------------------------------------------
+          ReceiveRemoteNumber(INBOX,true,mensagem);
+          if(mensagem == VIRA)
+            virar();
+        }
+      }
+      else
+      {
+        Pega();
+        MandarSeguir();
+        BonecosCapturados++;
+        nbip(BonecosCapturados);
+      }
+    }
+    else if(cor == bonecoNaoAlvo)
+    {
+      nbip(2);
+      //Pega();
+      Rejeita();
+    }
+    else if(cor == BONECO_VERMELHO)
+    {
+      nbip(3);
+      //bip();
+      //Pega();
+      Rejeita();
+      //MandarSeguir();
+    }
+    else//caso ele não reconheça a cor do boneco
+    {
+      bip();
+      bip();
+
+      ClearScreen();
+      NumOut(0,LCD_LINE1,ht_white);
+      //debug
+      //while(1){}
+
+      VoltaGarra();
+      MandarSeguir();
+      Wait(TEMPO_DEPOIS_DO_BONECO_ESCAPULIR);
+    }
+  }
+  else
+  {
+    VoltaGarra();
+    MandarSeguir();
+    Wait(TEMPO_DEPOIS_DO_BONECO_ESCAPULIR);
+  }
+}
+
+int CorBoneco()
+{
+    ReadSensorHTColor2Active(HT_MEIO, ht_colornum, ht_red, ht_green, ht_blue, ht_white);
+    ClearScreen();
+    NumOut(0, LCD_LINE2, ht_white);
+    if((ht_white < COR_BRANCA_MEIO_MAX)&&(ht_white > COR_BRANCA_MEIO_MIN))
+    {
+
+      TextOut(0, LCD_LINE1, "BONECO BRANCO");
+      return BONECO_BRANCO;
+    }
+    if((ht_white < COR_PRETA_MEIO_MAX)&&(ht_white > COR_PRETA_MEIO_MIN)){
+
+        TextOut(0, LCD_LINE1, "BONECO PRETO");
+        return BONECO_PRETO;
+    }
+    if((ht_white < COR_VERMELHA_MEIO_MAX)&&(ht_white > COR_VERMELHA_MEIO_MIN)){
+
+        TextOut(0, LCD_LINE1, "BONECO VERMELHO");
+        return BONECO_VERMELHO;
+    }else{
+
+      TextOut(0, LCD_LINE1, "NAO SEI");
+    }
+}
+
+void MandaCheio()
+{
+  SendRemoteNumber(CONEXAO, OUTBOX, CHEIO);
+}
+
+void Rejeita()
+{
+  int aux, flag = 0;
+  LevantaBoneco();
+  MandaRejeitar();
+  while(!flag){
+    ReceiveRemoteNumber(INBOX, true, aux);
+    nbip(1);
+    switch (aux) {
+      case GIREI:
+        flag = 1;
+      break;
+      case VIRA:
+        virar();
+      break;
+    }
+  }//espera acabar de girar
+  VoltaGarra();
+  MandaDesgirar();
+  flag = 0;
+  while(!flag){
+    ReceiveRemoteNumber(INBOX, true, aux);
+    switch (aux) {
+      case DESGIREI:
+        flag = 1;
+      break;
+      case VIRA:
+        virar();
+      break;
+    }
+  }//espera acabar de desgirar
+}
+
+void LevantaBoneco()
+{
+  OnFwd(MOTOR_GARRA,POTENCIA_MAXIMA_GARRA);
+  while(MotorTachoCount(MOTOR_GARRA)>ANG_LEVANTAR){}
+  Off(MOTOR_GARRA);
+}
+
+void BonecoAlvo()
+{
+  bonecoAlvo = RecebeBoneco();
+
+
+  if(bonecoAlvo == BONECO_PRETO)
+  {
+    bonecoNaoAlvo = BONECO_BRANCO;
+  }
+  else if(bonecoAlvo == BONECO_BRANCO)
+  {
+    bonecoNaoAlvo = BONECO_PRETO;
+  }
+
+  //bonecoAlvo = BONECO_BRANCO;
+
+}
+
+int RecebeBoneco(){
+     int sinInicial = 0;
+     //bip();
+      //função correta
+     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---
+     do{
+          ReceiveRemoteNumber(INBOX_CORBONECO, true, sinInicial);
+          Wait(30);
+     }while(sinInicial == 0);
+ //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---
+     //SendRemoteNumber(CONEXAO, OUTBOX, 1);
+     Wait(50);
+     //LimpaBuffer();
+     if(sinInicial == BONECO_PRETO)
+          return BONECO_PRETO;
+     else if(sinInicial == BONECO_BRANCO)
+          return BONECO_BRANCO;
+
+
+}
+void init(){
+  InicializaSensores();
+  int mensagem;
+  us_lateral=10;
+  BonecoAlvo();
+}

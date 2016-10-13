@@ -1,0 +1,248 @@
+//CONSTANTES QUE VARIAM -----> TESTE ANDAR CM CERTOS
+  #define CORRECAO_ANDA_QUADRANTE 700 //num anterior 695//10^-7 metros
+  #define CONSTANTE_DIST_TC 11//num anterior 11
+
+//PID MAIS RETO
+  #define TENDE_DIRESQ 0   // de -100(vira pra direita) a 100(vira pra esquerda)
+  #define P_FRENTE 350
+  #define I_FRENTE 100       //     50
+  #define D_FRENTE 150      //       150
+
+
+//SENSORES E MOTORES
+  #define MD OUT_B //motor da direita
+  #define ME OUT_A //motor da esquerda
+  #define MD_ME OUT_AB// os dois motores de movimento
+  #define MP OUT_C //motor da porta
+
+  #define USD_FRONTAL IN_1 //Utrasonico da direita
+  #define USE_FRONTAL IN_2 //Utrasonico da esquerda
+  #define HT IN_3         //direita
+  #define SLUZ IN_4       //esquerda
+
+//DEFINES BLUETOOTH
+  	#define CONECTA TRUE
+  	#define DESCONECTA FALSE
+  	#define TEMPO_CONECTAR_BT 4000
+  	//defines da conexao
+  	#define CONN 1
+  	#define INBOX 1
+  	#define OUTBOX 2
+  	#define OUTBOX_ANG 3
+  	#define OUTBOX_CORBONECO 4
+  	#define INBOX_US 5
+    //defines da struct
+    	#define CONSULTOR "LECA"
+    	#define ACAO CONECTA
+    	#define CONEXAO 1
+
+    //VALORES DE COMUNICACAO
+    //códigos para comunicação BlueTooth
+    #define TESTE -1
+    #define PARAR 1
+    #define SEGUIR 2
+    #define GIREI 3
+    #define DESGIRAR 4
+    #define REJEITAR 5
+    #define DESGIREI 6
+    #define CALIBRA 7
+    #define PEGUEI 8
+    #define CHEIO 9
+    #define STOP 10
+    #define START 11
+    #define VIRA 12
+    #define COMECEAGIRAR 13
+    #define PAREDEGIRAR 14
+
+//cor do chao
+    #define CHAO_PRETO 14
+    #define CHAO_BRANCO 13
+    #define CHAO_VERDE 4
+    #define CHAO_AZUL 2
+
+//HT
+    #define HTPRETO1 17               //para o HT, preto e branco assumem dois valores diferentes cada
+    #define HTPRETO2 17//12
+    #define HTBRANCOMIN 245
+    #define HTAZUL 2
+    #define HTVERDE 4
+
+//SENSOR DE LUZ
+    #define LUZ_PRETO_MAX 50
+    #define LUZ_PRETO_MIN 15
+    #define LUZ_BRANCO_MAX 100
+    #define LUZ_BRANCO_MIN 51
+
+//LOGICA
+    #define DIREITA 1
+    #define ESQUERDA 2
+    #define PARA_FRENTE 1
+    #define PARA_TRAS -1
+    //cor dos bonecos
+      #define BONECO_BRANCO 1
+      #define BONECO_PRETO 2
+      #define BONECO_VERMELHO 3
+
+//POTENCIAS E TEMPOS
+    #define POTENCIA_RETO_DIREITA 83
+    #define POTENCIA_RETO_ESQUERDA 90
+    #define TEMPO_DEPOIS_E_ANTES_DE_GIRAR 200
+
+
+    int distFrenteESQ=20;
+    int distFrenteDIR=20;
+
+    //declaracao de funcoes
+    //BLUETOOTH
+      void iniciaBlue();
+      void desligaBlue();
+      void MandaStart();
+      void RecebeUS();
+      void checaBluetooth();
+      void rejeitarDireita();
+      void voltarejeitarDireita();
+      void rejeitarEsquerda();
+      void voltarejeitarEsquerda();
+      void MandaGirei();
+      void MandaDesGirei();
+      int RecebeDesgirar();
+      int ReceberPareGirar();
+      int ReceberComeceGirar();
+    //TACHOCOUNT
+      int MyMotorTachoCount(int motor);
+      void MyResetTachoCount(int motor);
+      void MyOnFwdSyncPID(int pot);
+      int MediaTC();
+      int distanciaTachoCount(int grau);
+      int WaitTacho(int dist);//--------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+    //MOVIMENTO
+      void parar();//-------------------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void andar();//-------------------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void DaReh();//-------------------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void GetMotorSpeed();
+      void viraEsq(int angulo);//-------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void viraDir(int angulo);//-------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void ViraDeReh(int angulo);//------------------------------------>FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void rejeitar(int lado);//--------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void AbrirPorta();//--------------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void FecharPorta();//-------------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      sub alinha(int s);//PARA_FRENTE ou PARA_TRAS--------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void SairCasa();//----------------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void alinha_parede();//------------------------------------------>FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      int velocidademedia();
+
+    //LOGICA PRINCIPAL
+      void init();//--------------------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void inicializaSensores();//------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void inicializaBoneco();
+      void leUSFRENTE();//--------------------------------------------->FUNCOES QUE PODEM SER CHAMADAS DIRETO NO CODIGO
+      void filterUSESQ();
+      void filterUSDIR();
+      //DEBUG
+
+      void  bip();
+      void nbip(int n);
+      void StartCounter();
+      int GetTime();
+      void testeUS();
+      void testeAndaAlinhaParede();
+      void testeRehComTacho();
+
+      //
+      void testePercorreArena();
+
+void leUSFRENTE(){
+    filterUSESQ();
+    filterUSDIR();
+}
+
+void filterUSESQ()
+  {
+    //float alfa = 0.4;
+    int leitura,i=0;
+    leitura= SensorUS(USE_FRONTAL);
+
+    while(leitura==0 || leitura >= 250 || abs(distFrenteESQ-leitura)>15 && i<3){
+      leitura= SensorUS(USE_FRONTAL);
+      i++;
+      Wait(30);
+    }
+    distFrenteESQ = ((6*distFrenteESQ)/10)+(4*leitura/10);
+}
+
+
+void filterUSDIR()
+    {
+      //float alfa = 0.4;
+      int leitura,i=0;
+      leitura= SensorUS(USD_FRONTAL);
+
+      while(leitura==0 || leitura >= 250 || abs(distFrenteDIR-leitura)>15 && i<3){
+        leitura= SensorUS(USD_FRONTAL);
+        i++;
+        Wait(30);
+      }
+      distFrenteDIR = ((6*distFrenteDIR)/10)+(4*leitura/10);
+}
+
+void DaReh(){
+    OnRev(MD, 79);
+    OnRev(ME, 90);
+}
+  
+void parar()
+  {
+  	OnFwd(MD,0);
+  	OnFwd(ME,0);
+}
+
+void CheckIfStopped(){
+  unsigned long int temp0, temp1;
+  leUSFRENTE();//autalizando os valores dos sensores para a nova direção de vista
+  leUSFRENTE();//como o filtro usa media ponderada, a função roda mais de uma vez para ficar o mais proximo do valor certo
+  leUSFRENTE();
+  int condDir;
+  int condEsq;
+  int i=1;
+
+  temp0 = CurrentTick();
+  temp1 = temp0;
+  while(temp1 - temp0 < 1000){
+    temp1 = CurrentTick();
+    leUSFRENTE();
+    condDir = (distFrenteDIR < 7*i);
+    condEsq = (distFrenteESQ < 7*i);
+    if((condEsq)||(condDir)){
+      if(condDir && !condEsq){
+        //parar();
+        OnRev(ME, 90);
+        Wait(100);
+        //parar();
+      }else
+      if(!condDir && condEsq){
+        OnRev(MD, 90);
+        Wait(100);
+        //parar();
+      }else
+      if(condDir && condEsq){
+        parar();
+        DaReh();
+        Wait(1000);
+        //parar();
+        temp1 = 2000;
+        i=3;
+      }
+      else {
+        parar();
+      }
+    }
+    //parar();
+  }
+  parar();
+}
+
+task main() {
+  SetSensorUltrasonic(USD_FRONTAL);
+  SetSensorUltrasonic(USE_FRONTAL);
+  CheckIfStopped();
+}

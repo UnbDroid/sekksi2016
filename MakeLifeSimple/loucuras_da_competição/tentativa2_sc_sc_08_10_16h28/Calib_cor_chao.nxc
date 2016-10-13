@@ -1,0 +1,63 @@
+//SENSORES E MOTORES
+#define MD OUT_B //motor da direita
+#define ME OUT_A //motor da esquerda
+#define MED OUT_AB
+#define MDE OUT_AB
+#define MP OUT_C //motor da porta
+#define USD IN_1 //Utrasonico da direita
+#define USE IN_2 //Utrasonico da esquerda
+#define HTD IN_3//hitech da direita
+#define HTE IN_4//hitech da esquerda
+
+void inicializaSensores();
+void PrintaSensoresRaw();
+void PrintaSensores();
+
+task main(){
+	inicializaSensores();
+	PrintaSensores();
+	/*while(1) {
+  PrintaSensoresRaw();
+  } */
+}
+
+void inicializaSensores(){
+  SetSensorLowspeed(USD);
+  SetSensorLowspeed(USE);
+  SetSensorLowspeed(HTD);
+  SetSensorLowspeed(HTE);
+}
+
+void PrintaSensores(){
+	int esq, dir;
+	while(1){
+		ClearScreen();
+		esq = SensorHTColorNum(HTE);
+		dir = SensorHTColorNum(HTD);
+		TextOut(0, LCD_LINE1, "Dir");
+		NumOut(0, LCD_LINE2, dir);
+		TextOutt(0, LCD_LINE3, "Esq");
+		NumOut(0, LCD_LINE4, esq);
+		Wait(50);
+	}
+}
+
+void PrintaSensoresRaw()
+{
+    int rd, gd, bd, re, ge, be;
+
+	ReadSensorHTRawColor(HTD, rd, gd, bd);
+	ReadSensorHTRawColor(HTE, re, ge, be);
+
+    ClearScreen();
+    TextOut(0, LCD_LINE1, "Dir: r g b");
+    NumOut(0, LCD_LINE2, rd);
+    NumOut(0, LCD_LINE3, gd);
+    NumOut(0, LCD_LINE4, bd);
+    TextOut(0, LCD_LINE5, "Esq: r g b");
+    NumOut(0, LCD_LINE6, re);
+    NumOut(0, LCD_LINE7, ge);
+    NumOut(0, LCD_LINE8, be);
+    
+    Wait(70);
+}

@@ -1,11 +1,9 @@
 //Valores Calibraveis
-#define MAX_BONECOS_DENTRO 4
-
 // Defines de leitura do RGB do meio (ainda precisa testar mais)
-    #define COR_BRANCA_MEIO_MIN 190
-    #define COR_BRANCA_MEIO_MAX 256
-    #define COR_PRETA_MEIO_MIN 2
-    #define COR_PRETA_MEIO_MAX 180
+    #define COR_BRANCA_MEIO_MIN 250
+    #define COR_BRANCA_MEIO_MAX 600
+    #define COR_PRETA_MEIO_MIN 10
+    #define COR_PRETA_MEIO_MAX 250
     #define COR_VERMELHA_MEIO_MIN 78
     #define COR_VERMELHA_MEIO_MAX 168
 
@@ -17,25 +15,21 @@
     //#define COR_BASE_ESQ_MAX 434
     //#define COR_BASE_ESQ_MIN 215
   #define FAIXA_SENSORES_LATERAL 97
-  //#define FAIXA_SENSORES_MEIO 247
+  #define FAIXA_SENSORES_MEIO 247
 
 //Bluetooth
 	#define CONEXAO 0
 	#define INBOX 2
 	#define OUTBOX 1
-  #define INBOX_ANG 3
-  #define INBOX_CORBONECO 4
-  //
+  #define OUTBOX_US 3
 
 
 //IO
 // Defines de sensores
-	#define US_BONECO IN_1
+	#define RGB_DIR IN_1
 	#define RGB_ESQ IN_2
-	#define HT_MEIO IN_3
-	#define GYRO IN_4
-
-#define OFFSET_SAMPLES 2048
+	#define RGB_MEIO IN_3
+	#define US_FRENTE IN_4
 
 // Defines de motores
 	#define MOTOR_GARRA OUT_A
@@ -66,13 +60,6 @@
 #define CHEIO 9
 #define STOP 10
 #define START 11
-#define VIRA 12
-#define COMECEAGIRAR 13
-#define PAREDEGIRAR 14
-#define TEMOUNAOBONECO 15
-#define SIMTEM 16
-#define NAOVIRGULANAOTEM 17
-#define TEMBONECO 18
 
 //cor dos boncos
 #define BONECO_BRANCO 1
@@ -100,12 +87,6 @@
   #define ANG_LEVANTAR -50
 
   #define VETOR_CALIBRACAO 11
-//US
-int distUS;
-
-//Variáveis do HT
-int ht_colornum, ht_red, ht_green, ht_blue, ht_white;
-
 //mais variáveis globais
 int CorBaseDirMax, CorBaseDirMin, CorBaseEsqMax, CorBaseEsqMin, CorBaseMeioMin, CorBaseMeioMax;
 
@@ -116,6 +97,7 @@ int BonecosCapturados;
 
 //declaração das funções
 void InicializaSensores();
+int returnUS();
 int TemBoneco();
 int lerSensor(int sensor);
 int PegaBoneco();
@@ -136,17 +118,12 @@ int RecebiGirei();
 void MandaDesgirar();
 void MandaRejeitar();
 int RecebiDesGirei();
+void MandaUs();
 void LevantaBoneco();
 void CalibraFaixaBase();
 void MandaPeguei();
 void MandaCheio();
 int RecebeStart();
-void virar();
-int lerAngulo();
-float GetGyroOffset();
-void MandaGirar();
-void MandaQueJaDeuPorHoje();//função apra parar de girar
-void filterUS(int SENSOR);
 
 //função para dbug
 void  bip()
@@ -172,13 +149,21 @@ task main()
 void consultor()
 {
   int mensagem;
-  int flag = 0;
 
   init();
 
   while(1)//void loop
   {
+
+    MandaUs();
     ReceiveRemoteNumber(INBOX,true,mensagem);
+
+    if(mensagen != 0)
+    {
+      ClearScreen();
+      NumOut(0,LCD_LINE1,mensagem);
+      while(1){}
+    }
 
     switch(mensagem)
     {
@@ -186,23 +171,11 @@ void consultor()
         CalibraFaixaBase();
       break;
       case STOP:
-        //Não usa mais essa parada
-      break;
-      case TEMOUNAOBONECO:
-        bip();
-        Wait(50);
-        if(BonecosCapturados)
+        nbip(3);
+        while(!RecebeStart())
         {
-          SendRemoteNumber(CONEXAO, OUTBOX, SIMTEM);
+          MandaUs();
         }
-        else
-        {
-          SendRemoteNumber(CONEXAO, OUTBOX, NAOVIRGULANAOTEM);
-        }
-      break;
-
-      case VIRA:
-        virar();
       break;
     }
 
@@ -220,8 +193,7 @@ void init()
 	VoltaGarra();
 	BonecoAlvo();
 
-  distUS=20;
-  //CalibraFaixaBase();
+  CalibraFaixaBase();
 
   BonecosCapturados = 0;
 
@@ -229,11 +201,10 @@ void init()
 
 void InicializaSensores()
 {
-  SetSensorUltrasonic(US_BONECO);
-  //SetSensorColorRed(RGB_ESQ);
-  SetSensorLowspeed(HT_MEIO);
-  SetHTColor2Mode(HT_MEIO, HT_CMD_COLOR2_ACTIVE);
-  SetSensorHTGyro(GYRO);
+  SetSensorColorRed(RGB_DIR);
+  SetSensorColorRed(RGB_ESQ);
+  SetSensorColorGreen(RGB_MEIO);
+  SetSensorLowspeed(US_FRENTE);
 }
 
 void BonecoAlvo()
@@ -251,52 +222,59 @@ void BonecoAlvo()
 	  BipBranco();
 	  bonecoNaoAlvo = BONECO_PRETO;
 	}
-
-  //bonecoAlvo = BONECO_BRANCO;
-
 }
 
 int TemBoneco()
 {
-   //int rgb_esq, rgb_dir, ht_meio;
+   int rgb_esq, rgb_dir, rgb_meio;
 
    //bip();
 
+   rgb_dir = lerSensor(RGB_DIR);
+   rgb_esq = lerSensor(RGB_ESQ);
+   rgb_meio = lerSensor(RGB_MEIO);
+
    //NumOut(0, LCD_LINE2, rgb_dir);
    //NumOut(0, LCD_LINE3, rgb_esq);
-   
-   filterUS(US_BONECO);
-   Wait(50);
-    //if(((rgb_dir < CorBaseDirMax) && (rgb_dir > CorBaseDirMin)) && ((rgb_esq < CorBaseEsqMax) && (rgb_esq > CorBaseEsqMin)))
-   /*if(((rgb_dir < CorBaseDirMax) && (rgb_dir > CorBaseDirMin)) && ((rgb_esq < CorBaseEsqMax) && (rgb_esq > CorBaseEsqMin)) && (ht_white != 255))
+
+   if(((rgb_dir < CorBaseDirMax) && (rgb_dir > CorBaseDirMin)) && ((rgb_esq < CorBaseEsqMax) && (rgb_esq > CorBaseEsqMin)) && ((rgb_meio < CorBaseMeioMax) && (rgb_meio > CorBaseMeioMin)))
       return NAO_ALIEN;
    return SIM_ALIEN;
-  */
-   if((distUS==6)||(distUS==7)||(distUS==10)||(distUS==11)||(distUS==12)||(distUS==13)) {
-      return SIM_ALIEN;
-    }
+}
 
-   return NAO_ALIEN; 
+int returnUS(){
+  int valor = 0;
+  valor = SensorUS(US_FRENTE);
+  Wait(30);
+  NumOut(0, LCD_LINE1, valor);
+
+  if(valor < MENOR_DISTANCIA_US){
+    return 1;
+  }
+  else
+    return 0;
 }
 
 int RecebeBoneco(){
      int sinInicial = 0;
      //bip();
-      //função correta
-     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---
+     /* //função correta
      do{
-          ReceiveRemoteNumber(INBOX_CORBONECO, true, sinInicial);
+          ReceiveRemoteNumber(INBOX, true, sinInicial);
           Wait(30);
      }while(sinInicial == 0);
- //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---<<<<<<<<<<<<<<<<<<<<---
-     //SendRemoteNumber(CONEXAO, OUTBOX, 1);
+
+     SendRemoteNumber(CONEXAO, OUTBOX, SIM);
      Wait(50);
-     //LimpaBuffer();
+     LimpaBuffer();
      if(sinInicial == BONECO_PRETO)
           return BONECO_PRETO;
      else if(sinInicial == BONECO_BRANCO)
           return BONECO_BRANCO;
-      
+      */
+
+     //função para teste
+     return BONECO_PRETO;
 
 }
 
@@ -382,15 +360,17 @@ void VoltaGarra()
 
 int CorBoneco()//TESTAR
 {
-    ReadSensorHTColor2Active(HT_MEIO, ht_colornum, ht_red, ht_green, ht_blue, ht_white);
+    int leitura;
 
-    if((ht_white < COR_BRANCA_MEIO_MAX)&&(ht_white > COR_BRANCA_MEIO_MIN))
+    leitura = lerSensor(RGB_MEIO);
+
+    if((leitura < COR_BRANCA_MEIO_MAX)&&(leitura > COR_BRANCA_MEIO_MIN))
     {
       return BONECO_BRANCO;
     }
-    if((ht_white < COR_PRETA_MEIO_MAX)&&(ht_white > COR_PRETA_MEIO_MIN))
+    if((leitura < COR_PRETA_MEIO_MAX)&&(leitura > COR_PRETA_MEIO_MIN))
         return BONECO_PRETO;
-    if((ht_white < COR_VERMELHA_MEIO_MAX)&&(ht_white > COR_VERMELHA_MEIO_MIN))
+    if((leitura < COR_VERMELHA_MEIO_MAX)&&(leitura > COR_VERMELHA_MEIO_MIN))
         return BONECO_VERMELHO;
 }
 
@@ -439,21 +419,17 @@ void BonecoNaFrente()
   if(PegaBoneco())
   {
     cor = CorBoneco();
-    //cor = bonecoAlvo;//<_____________________________________________________________________________________________________________MUDA ISSO HOJE
-    int mensagem;
     //cor = bonecoAlvo;////DEBUG
     //BonecosCapturados = 3;////DEBUG
     if(cor == bonecoAlvo)
     {
-      if(BonecosCapturados == MAX_BONECOS_DENTRO)
+      if(BonecosCapturados == 3)
       {
         LevantaBoneco();
         nbip(4);
         MandaCheio();
         while(1){//corrigir a contição deste whilw<<<<<<<-------------------------
-          ReceiveRemoteNumber(INBOX,true,mensagem);
-          if(mensagem == VIRA)
-            virar();
+          MandaUs();
         }
       }
       else
@@ -483,7 +459,7 @@ void BonecoNaFrente()
       bip();
 
       ClearScreen();
-      NumOut(0,LCD_LINE1,ht_white);
+      NumOut(0,LCD_LINE1,cor);
       //debug
       //while(1){}
 
@@ -502,35 +478,12 @@ void BonecoNaFrente()
 
 void Rejeita()
 {
-  int aux, flag = 0;
   LevantaBoneco();
   MandaRejeitar();
-  while(!flag){
-    ReceiveRemoteNumber(INBOX, true, aux);
-    nbip(1);
-    switch (aux) {
-      case GIREI:
-        flag = 1;
-      break;
-      case VIRA:
-        virar();
-      break;
-    }
-  }//espera acabar de girar
+  while(!RecebiGirei()){}//espera acabar de girar
   VoltaGarra();
   MandaDesgirar();
-  flag = 0;
-  while(!flag){
-    ReceiveRemoteNumber(INBOX, true, aux);
-    switch (aux) {
-      case DESGIREI:
-        flag = 1;
-      break;
-      case VIRA:
-        virar();
-      break;
-    }
-  }//espera acabar de desgirar
+  while(!RecebiDesGirei()){}//espera acabar de desgirar
 }
 
 int RecebiGirei()
@@ -564,6 +517,15 @@ void MandaDesgirar()
   SendRemoteNumber(CONEXAO, OUTBOX, DESGIRAR);
 }
 
+void MandaUs()
+{
+  int aux;
+
+  aux = SensorUS(US_FRENTE);
+
+  SendRemoteNumber(CONEXAO, OUTBOX_US, aux);
+}
+
 void MandaCheio()
 {
   SendRemoteNumber(CONEXAO, OUTBOX, CHEIO);
@@ -578,19 +540,22 @@ void LevantaBoneco()
 
 void CalibraFaixaBase()
 {
-  /*int rgb_esq, rgb_dir;
+  int rgb_esq, rgb_dir, rgb_meio;
 
   //bip();
 
   rgb_dir = lerSensor(RGB_DIR);
   rgb_esq = lerSensor(RGB_ESQ);
+  rgb_meio = lerSensor(RGB_MEIO);
 
   CorBaseDirMax = rgb_dir + FAIXA_SENSORES_LATERAL;
   CorBaseDirMin = rgb_dir - FAIXA_SENSORES_LATERAL;
   CorBaseEsqMax = rgb_esq + FAIXA_SENSORES_LATERAL;
   CorBaseEsqMin = rgb_esq - FAIXA_SENSORES_LATERAL;
+  CorBaseMeioMax = rgb_meio + FAIXA_SENSORES_MEIO;
+  CorBaseMeioMin = rgb_meio - FAIXA_SENSORES_MEIO;
 
-  nbip(2);*/
+  nbip(2);
 
 }
 
@@ -603,82 +568,9 @@ int RecebeStart()
 {
   int aux;
   ReceiveRemoteNumber(INBOX, true, aux);
-  if(aux == START){
-    //nbip(7);
+  if(aux == START){                                                                                                                                                                      
     return 1;
+    nbip(7);
   }
   return 0;
-}
-
-void virar()
-{
-  int angulo;
-  float offset;
-  unsigned long time = CurrentTick(), prev_time;
-  float aux = 0, gyro;
-
-
-  angulo = lerAngulo();
-
-  offset = GetGyroOffset();
-
-  MandaGirar();
-
-  while(abs(aux) < abs(angulo)){
-      prev_time = time;
-      time = CurrentTick();
-      gyro = SensorHTGyro(GYRO);
-      aux += (gyro - offset) * (time - prev_time)/1000.0;
-    }
-
-  MandaQueJaDeuPorHoje();
-
-}
-
-int lerAngulo()
-{
-  int leitura;
-
-
-  do{
-    ReceiveRemoteNumber(INBOX_ANG, true, leitura);
-  }while(!leitura);
-
-  return leitura;
-
-}
-
-float GetGyroOffset() { // FUNCIONANDO (chamar com os motores desligados)
-  float gyro_sum = 0, i;
-
-  for(i = 0; i < OFFSET_SAMPLES; ++i)
-  {
-    gyro_sum += SensorHTGyro(GYRO);
-  }
-
-  return gyro_sum/OFFSET_SAMPLES;
-}
-
-void MandaGirar()
-{
-  SendRemoteNumber(CONEXAO, OUTBOX, COMECEAGIRAR);
-}
-
-void MandaQueJaDeuPorHoje()//função apra parar de girar
-{
-  SendRemoteNumber(CONEXAO, OUTBOX, PAREDEGIRAR);
-}
-
-void filterUS(int SENSOR)
-{
-  //float alfa = 0.4;
-  int leitura,i=0;
-  leitura= SensorUS(SENSOR);
-
-  while(leitura==0 || leitura >= 250 || abs(distUS-leitura)>15 && i<5){
-    leitura= SensorUS(SENSOR);
-    i++;
-    Wait(30);
-  }
-  distUS = ((6*distUS)/10)+(4*leitura/10);
 }

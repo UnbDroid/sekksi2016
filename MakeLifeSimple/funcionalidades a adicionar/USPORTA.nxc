@@ -1,0 +1,73 @@
+void UsPorta(int SENSOR){
+	MyResetTachoCount(MD);
+	MyResetTachoCount(MD);
+	MyOnFwdSyncPID(90);
+	if (SENSOR==USD){
+		while((distanciaTachoCount(MediaTC()) <= (100*30))&&(distUSDIR<35)){
+			filterUSDIR();
+      ClearScreen();
+      NumOut(30, LCD_LINE4, distUSDIR);
+		}
+		Off(MD_ME);
+    PlayTone(TONE_A3, 1000);
+		if (distUSDIR>35){
+			MyOnFwdSyncPID(90);
+			while(distUSDIR>35){
+			    filterUSDIR();
+          ClearScreen();
+			    NumOut(30, LCD_LINE4, distUSDIR);
+		    }
+		    Off(MD_ME);
+		    PlayTone(TONE_B7, 1000);
+		}else if (distUSDIR<35){
+        OnRev(MD,79);
+		    OnRev(ME,90);
+		    while((distUSDIR<35)){
+				filterUSDIR();
+			  }
+			Off(MD_ME);
+		}
+		//***mandar recuar 13 centimetros***
+		OnRev(MD,79);
+		OnRev(ME,90);
+		//while((distanciaTachoCount(MediaTC()) >= (-100*10)));
+		Wait(1000);
+		Off(MD_ME);
+		//***girar 90 graus para a direita***
+		/*OnRev(MD,90);
+		OnFwd(ME,90);
+		Wait(9000);*/
+		Off(MD_ME);
+	}else if (SENSOR==USE){
+		while((distanciaTachoCount(MediaTC()) <= (100*30))&& (distUSESQ<35)){
+			filterUSDIR();
+		}
+		Off(MD_ME);
+		if (distUSESQ>35){
+			MyOnFwdSyncPID(90);
+			while(distUSESQ>35){
+			    filterUSDIR();
+		    }
+		    Off(MD_ME);
+		}else if (distUSESQ<35){
+        OnRev(MD,79);
+		    OnRev(ME,90);
+		    while((distUSESQ<35)){
+				filterUSDIR();
+			}
+			Off(MD_ME);
+		}
+		//***mandar recuar 13 centimetros***
+		OnRev(MD,79);
+		OnRev(ME,90);
+		//while((distanciaTachoCount(MediaTC()) >= -(100*10)));
+		Wait(1000);
+    Off(MD_ME);
+    //***girar 90 graus para a esquerda***
+    /*OnFwd(MD,90);
+		OnRev(ME,90);
+		Wait(9000);
+		Off(MD_ME);
+		*/
+	}
+}

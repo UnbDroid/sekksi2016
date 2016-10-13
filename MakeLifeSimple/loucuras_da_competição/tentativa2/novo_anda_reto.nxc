@@ -1,0 +1,457 @@
+//SENSORES E MOTORES
+#define MD OUT_B //motor da direita
+#define ME OUT_A //motor da esquerda
+#define MP OUT_C //motor da porta
+#define USD IN_1 //Utrasonico da direita
+#define USE IN_2 //Utrasonico da esquerda
+#define HTD IN_3//hitech da direita
+#define HTE IN_4//hitech da esquerda
+#define MD_ME OUT_AB// os dois motores de movimento
+
+//cor do chao
+#define CHAO_PRETO 14
+#define CHAO_BRANCO 13
+#define CHAO_VERDE 4
+#define CHAO_AZUL 2
+
+//CONSTANTES ANDAR
+#define DIST_0_9M 90
+#define DIST_1M 100
+#define DIST_2M 200
+#define DIST_2_95M 295
+#define DIST_PAREDE 10
+#define DIST_RE 30
+
+
+//CONSTANTES PID
+#define TENDE_DIRESQ 1// de -100(vira pra direita) a 100(vira pra esquerda)
+#define P_FRENTE 300
+#define I_FRENTE 50
+#define D_FRENTE 150
+#define P_TRAS 200
+#define I_TRAS 100
+#define D_TRAS 200
+
+//DECLARA��O DE DIRE��ES
+#define ESQUERDA 2
+#define DIREITA 3
+
+//Declara��o de fun��es
+
+void inicializaSensores();
+int distanciaTachoCount(int grau);
+int distanciaGiro(int grau);
+void AndaReto();
+void Regula(int iteracoes);
+void MyOnFwd(int motor, int pot);
+void MyOnRev(int motor, int pot);
+void MyOnFwdSyncPID(int pot, int turnDirEsq, int p, int i, int d);
+void MyOnRevSyncPID(int pot, int turnDirEsq, int p, int i, int d);
+void andaRetoDireita(int distParede, int distAndar);
+void andaRetoEsquerda(int distParede, int distAndar);
+void andaRetoUS(int distParede, int distAndar, int lado);
+void CorDoChao(int corEsq, int corDir);
+void DaReh(int dist);
+void viraDir(int angulo);
+void viraEsq(int angulo);
+int distanciaGiroDireita(int grau);
+int distanciaGiroEsquerda(int grau);
+void parar();
+
+//Debug
+void RetoPID();
+void testeParede();
+void  bip()
+{
+  PlaySound(SOUND_DOWN);
+}
+//Declara��o de vari�veis globais
+int poteGlobal = 85;
+int potdGlobal = 80;
+int MyTcD = 0;
+int MyTcE = 0;
+int free_to_go = 0;
+
+
+task main(){
+    inicializaSensores();
+    //andaRetoUS(DIST_PAREDE+45, DIST_1M, DIREITA);
+    viraDir(90);
+    viraEsq(90);
+    //AndaReto();
+
+    //viraDir(90);
+    //AndaReto();
+    Wait(100);
+    viraDir(180);
+    bip();
+    Wait(100);
+    AndaReto();
+    bip();
+    bip();
+    Wait(100);
+    viraDir(180);
+    bip();
+    bip();
+    bip();
+    MyOnFwd(MD, potdGlobal);
+    MyOnFwd(MD, poteGlobal);
+    NumOut(0, LCD_LINE1, potdGlobal);
+    NumOut(0, LCD_LINE2, poteGlobal);
+
+    //AndaReto();
+    Wait(1000);
+
+    Off(MD_ME);
+    //Wait(100);
+
+    //DaReh(DIST_1M/2);
+    while(1);
+}
+
+int distanciaGiroDireita(int grau){
+	   return (((grau*17)/143));// se vira antes, diminuir constante
+}								// se vira mais, aumentar constante
+
+int distanciaGiroEsquerda(int grau){
+	   return (((grau*17)/143));
+}
+
+int distanciaTachoCount(int grau){
+     return (3*grau);                   //Distancia a ser percorrid/Raio da roda
+}
+
+int distanciaGiro(int grau){
+     return (((grau*17)/149)); // COMO FOI FEITA ESSA CONVERS�O??? [na base da tentativa e erro]
+}
+
+void Regula(int iteracoes){
+     int i = 0;
+     while((MotorTachoCount(MD) != 0)&&((MotorTachoCount(ME) != 0))){
+        ResetTachoCount(MD);
+        ResetTachoCount(ME);
+     }
+     while(i < iteracoes){
+        if(MotorTachoCount(MD) > MotorTachoCount(ME)){
+            if(poteGlobal < 90){
+               poteGlobal += 1;
+            }else
+               if(potdGlobal > -90){
+                 potdGlobal -= 1;
+               }
+
+        }else if(MotorTachoCount(MD) < MotorTachoCount(ME)){
+            if(potdGlobal < 90){
+                 potdGlobal += 1;
+            }else
+               if(poteGlobal > -90){
+                 poteGlobal -= 1;
+               }
+        }
+        i++;
+     }
+     
+}
+
+void AndaReto(){
+     int tachoE = 0, tachoD = 0;
+     MyOnFwd(MD, potdGlobal);
+     MyOnFwd(ME, poteGlobal);
+     Regula(10);
+
+     while(distanciaTachoCount((tachoE + tachoD)/2)<DIST_2M*25){
+        tachoE = MotorTachoCount(ME);
+        tachoD = MotorTachoCount(MD);
+        Regula(6);
+     }
+     MyOnFwd(MD, 0);
+     MyOnFwd(ME, 0);
+}
+
+void MyOnFwd(int motor, int pot)
+{
+  //bip();
+  //Wait(350)
+  if(motor == MD)
+  {
+    MyTcD += MotorTachoCount(motor);
+  }
+  else if(motor == ME)
+  {
+    MyTcE += MotorTachoCount(motor);
+  }
+  //bip();
+  OnFwd(motor,pot);
+}
+
+void MyOnRev(int motor, int pot)
+{
+  //bip();
+  //Wait(350)
+  if(motor == MD)
+  {
+    MyTcD -= MotorTachoCount(motor);
+  }
+  else if(motor == ME)
+  {
+    MyTcE -= MotorTachoCount(motor);
+  }
+  //bip();
+  OnRev(motor,pot);
+  }
+
+void MyOnFwdSyncPID(int pot, int turnDirEsq, int p, int i, int d){
+
+  MyTcD += MotorTachoCount(MD);
+  MyTcE += MotorTachoCount(ME);
+  bip();
+  //OnFwdSyncPID(motores, pot, turnDirEsq, p, i ,d);
+  OnFwdSyncPID(MD_ME,pot,turnDirEsq,p,i,d);
+  bip();
+}
+
+void MyOnRevSyncPID(int pot, int turnDirEsq, int p, int i, int d){
+  MyTcD += MotorTachoCount(MD);
+  MyTcE += MotorTachoCount(ME);
+  OnRevSyncPID(MD_ME, pot, turnDirEsq, p, i ,d);
+}
+
+void andaRetoDireita(int distParede, int distAndar){ // fun��o que faz o rob� andar � "distParede" cent�metros da parede por "distAndar" cent�metros
+     int distanciaAtual, potd, pote;
+     int corEsq, corDir;
+     MyTcD = 0;
+     MyTcE = 0;
+
+     while(distanciaTachoCount((MyTcD + MyTcE)/2) < (distAndar*100)){
+       distanciaAtual = SensorUS(USD);
+       //bip();
+       //bip();
+       //CorDoChao(corEsq, corDir);
+
+       if (distanciaAtual == distParede){
+         potd = 90;
+         pote = 90;
+       }
+       else if(distanciaAtual > distParede){
+         pote = 90;
+         potd = 75;
+       }
+       else if(distanciaAtual < distParede){
+         pote = 75;
+         potd = 90;
+       }
+
+       MyTcD += MotorTachoCount(MD);
+       OnFwd(MD, potd);
+       MyTcE += MotorTachoCount(ME);
+       OnFwd(ME, pote);
+
+     }
+
+     Off(MD);
+     Off(ME);
+}
+
+void andaRetoEsquerda(int distParede, int distAndar){ // fun��o que faz o rob� andar � "distParede" cent�metros da parede por "distAndar" cent�metros
+     int distanciaAtual, potd, pote;
+     int corEsq, corDir;
+     MyTcD = 0;
+     MyTcE = 0;
+
+     while(distanciaTachoCount((MyTcD + MyTcE)/2) < (distAndar*100)){
+       distanciaAtual = SensorUS(USE);
+
+       //bip();
+       //bip();
+       CorDoChao(corEsq, corDir);
+
+       if (distanciaAtual == distParede){
+         potd = 90;
+         pote = 90;
+       }
+       else if(distanciaAtual > distParede){
+         potd = 90;
+         pote = 75;
+       }
+       else if(distanciaAtual < distParede){
+         potd = 75;
+         pote = 90;
+       }
+
+       MyTcD += MotorTachoCount(MD);
+       OnFwd(MD, potd);
+       MyTcE += MotorTachoCount(ME);
+       OnFwd(ME, pote);
+
+     }
+
+     Off(MD);
+     Off(ME);
+}
+
+void andaRetoUS(int distParede, int distAndar, int lado){ // fun��o que faz o rob� andar � "distParede" cent�metros da parede por "distAndar" cent�metros
+     int distanciaAtual, potd, pote;
+     int corEsq, corDir, tachoD = 0, tachoE = 0;
+     //CorDoChao(corEsq, corDir);
+
+     if(lado == ESQUERDA){
+while(distanciaTachoCount((tachoD + tachoE)/2) < (distAndar*100)){
+       distanciaAtual = SensorUS(USE);
+
+       //bip();
+       //bip();
+
+
+       if (distanciaAtual == distParede){
+         potd = 90;
+         pote = 90;
+       }
+       else if(distanciaAtual > distParede){
+         potd = 90;
+         pote = 70;
+       }
+       else if(distanciaAtual < distParede){
+         potd = 70;
+         pote = 90;
+       }
+
+       //MyTcD += MotorTachoCount(MD);
+       tachoD += MotorTachoCount(MD);
+       MyOnFwd(MD, potd);
+       //MyTcE += MotorTachoCount(ME);
+       tachoE += MotorTachoCount(ME);
+       MyOnFwd(ME, pote);
+
+     }
+
+     Off(MD);
+     Off(ME);
+     }
+    else if(lado == DIREITA){
+       while(distanciaTachoCount((tachoD + tachoE)/2) < (distAndar*100)){
+       distanciaAtual = SensorUS(USD);
+
+       //bip();
+       //bip();
+
+       if (distanciaAtual == distParede){
+         potd = 90;
+         pote = 90;
+       }
+       else if(distanciaAtual > distParede){
+         pote = 90;
+         potd = 70;
+       }
+       else if(distanciaAtual < distParede){
+         pote = 70;
+         potd = 90;
+       }
+
+       //MyTcD += MotorTachoCount(MD);
+       tachoD += MotorTachoCount(MD);
+       MyOnFwd(MD, potd);
+       //MyTcE += MotorTachoCount(ME);
+       tachoE += MotorTachoCount(ME);
+       MyOnFwd(ME, pote);
+     }
+
+     Off(MD);
+     Off(ME);
+     TextOut(0, LCD_LINE1, "TachoD");
+     NumOut(0, LCD_LINE2, tachoD);
+     TextOut(0, LCD_LINE3, "TachoE");
+     NumOut(0, LCD_LINE4, tachoE);
+     while(1);
+
+    }
+}
+
+void CorDoChao(int corEsq, int corDir){//TESTAR SE DA RE
+
+  corEsq = SensorHTColorNum(HTE);
+  corDir = SensorHTColorNum(HTD);
+
+  if((corDir == CHAO_PRETO)||(corEsq == CHAO_PRETO)){//AREA KIEFAS == FOOOOOGE NEGADAA
+    DaReh(DIST_RE);
+  }
+}
+
+void DaReh(int dist){
+    int tachoE = 0, tachoD = 0;
+    MyOnRevSyncPID(potdGlobal, TENDE_DIRESQ, P_TRAS, I_TRAS, D_TRAS);
+
+    while(distanciaTachoCount((tachoE + tachoD)/2)> - dist*100){
+       tachoE = MotorTachoCount(ME);
+       tachoD = MotorTachoCount(MD);
+    }
+    MyOnFwd(MD, 0);
+    MyOnFwd(ME, 0);
+}
+
+void RetoPID()
+{
+  int tachoE = 0, tachoD = 0;
+  MyOnFwdSyncPID(potdGlobal,TENDE_DIRESQ,P_FRENTE,I_FRENTE,D_FRENTE);
+
+
+  while(distanciaTachoCount((tachoE + tachoD)/2)<DIST_2_95M*100){
+      tachoE = MotorTachoCount(ME);
+      tachoD = MotorTachoCount(MD);
+   }
+   MyOnFwd(MD, 0);
+   MyOnFwd(ME, 0);
+   Wait(100);
+   tachoE = 0;
+   tachoD = 0;
+   MyOnRevSyncPID(potdGlobal,TENDE_DIRESQ,P_TRAS,I_TRAS,D_TRAS);
+   while(distanciaTachoCount((tachoE + tachoD)/2)> - DIST_2_95M*100){
+      tachoE = MotorTachoCount(ME);
+      tachoD = MotorTachoCount(MD);
+   }
+   MyOnFwd(MD, 0);
+   MyOnFwd(ME, 0);
+}
+
+void inicializaSensores()
+{
+  SetSensorLowspeed(USD);
+  SetSensorLowspeed(USE);
+  SetSensorLowspeed(HTD);
+  SetSensorLowspeed(HTE);
+}
+
+void testeParede(){
+  andaRetoDireita(DIST_0_9M, DIST_1M);
+}
+
+void viraDir(int angulo){ // função que faz o robô girar para a direita o ângulo recebido
+     MyOnFwd(MD, -90);
+     MyOnFwd(ME, 90);
+
+     while(distanciaGiroDireita((- MotorTachoCount(MD) + MotorTachoCount(ME))/2) < angulo)
+     {
+      //lol
+     }
+     MyOnFwd(MD,0);
+     MyOnFwd(ME,0);
+}
+
+void viraEsq(int angulo){ // função que faz o robô girar para a esquerda o ângulo recebido
+     MyOnFwd(MD, 90);
+     MyOnFwd(ME, -90);
+
+     while(distanciaGiroEsquerda((MotorTachoCount(MD) - MotorTachoCount(ME))/2) < angulo)
+     {
+      //lol
+     }
+     MyOnFwd(MD,0);
+     MyOnFwd(ME,0);
+}
+
+void parar()
+{
+	free_to_go = 0;
+
+	MyOnFwd(MD,0);
+	MyOnFwd(ME,0);
+}
